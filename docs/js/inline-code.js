@@ -58,8 +58,11 @@ function copyText(e) {
         }, 5000, popupElement);
     }
 
-    //console.log(innerText);
-    navigator.clipboard.writeText(innerText);
+    console.log(innerText);
+    var re = new RegExp(String.fromCharCode(160), "g");
+    var cleanText = innerText.replace(re, " ");
+    console.log(cleanText);
+    navigator.clipboard.writeText(cleanText);
 }
 
 window.customElements.define('inline-code', InlineCode);
