@@ -1,5 +1,5 @@
 ---
-title: Intelligently remediating incidents in Instana by leveraging Ansible <br/>300-level live demo
+title: Intelligently remediate incidents in Instana using Ansible <br/>300-level live demo
 layout: demoscript
 banner: images/temp-banner.jpg
 browsingselfservice: 2
