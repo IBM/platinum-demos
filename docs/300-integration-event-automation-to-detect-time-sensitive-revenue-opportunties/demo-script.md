@@ -85,12 +85,35 @@ Focus Corp’s integration team exposes the enterprise’s data using event stre
  **Action** &nbsp; 1.5.1 | Return to the IBM Event Streams console and show that the messages are being streamed into the topic. Click the topic icon (1), and select the **ORDERS** (2) topic. <br/> <br/><img src="images/1-5-NavigateToTopic.png" width="800" /> |
  **Action** &nbsp; 1.5.2 | All of the messages since the MQ streaming queue configuration update will be available. Click on one to view the details. <br/> <br/><img src="images/1-5-ViewEvent.png" width="800" /> |
 
-| **1.6** | **Publishing the orders stream** |
+| **1.6** | **Importing the streams into IBM Event Endpoint Management** |
 | :--- | :--- |
-| **Narration** | Next the integration team open the IBM Event Endpoint Management console. The console supports two usages, one for teams publishing event streams, and a second for those consuming. The integration team publish the order stream by discovering the topic on IBM Event Streams. They include a description, example message and publish the topic for subscribers.  |
+| **Narration** | Next the integration team open the IBM Event Endpoint Management console. The console supports two usages, one for teams publishing event streams, and a second for those consuming. The integration team import the order and customer streams by discovering the topic on IBM Event Streams.  |
 | **Action** &nbsp; 1.6.1 | In the IBM Event Endpoint Management console click on the **topic** (1) icon and select the **Add topic** (2) button. <br/> <img src="images/1-6-ViewTopics.png" width="800" /> |
 | **Action** &nbsp; 1.6.2 | No Apache Kafka clusters have been configured, the IBM Event Streams environment will be added. Click **Add new cluster**. <br/> <img src="images/1-6-AddClusterWizard.png" width="800" /> |
-| **Action** &nbsp; 1.6.2 | No Apache Kafka clusters have been configured, the IBM Event Streams environment will be added. Click **Add new cluster**. <br/> <img src="images/1-6-AddClusterWizard.png" width="800" /> |
+| **Action** &nbsp; 1.6.3 | Specify **IBM Event Streams** (1) for the cluster name and click **Next** (2). <br/> <img src="images/1-6-ClusterName.png" width="800" /> |
+| **Action** &nbsp; 1.6.4 | Specify **ademo-es-kafka-bootstrap.cp4i.svc:9095** (1) for the servers and click **Next** (2). <br/> <img src="images/1-6-ClusterAddress.png" width="800" /> |
+| **Action** &nbsp; 1.6.5 | Check the **Accept all certificates** (1) box and click **Next** (2). <br/> <img src="images/1-6-ClusterCert.png" width="800" /> |
+| **Action** &nbsp; 1.6.6 | Specify **es-admin** (1) for the username, the password (2) value was outputted in the preparation section, and click **Next** (3). <br/> <img src="images/1-6-ClusterCredentials.png" width="800" /> |
+| **Action** &nbsp; 1.6.7 | Select **IBM Event Streams** (1) and click **Next** (2). <br/> <img src="images/1-6-ClusterSelection.png" width="800" /> |
+| **Action** &nbsp; 1.6.8 | Check **CUSTOMERS** (1) and **ORDERS** (2), and click **Add topic** (2). <br/> <img src="images/1-6-SelectTopics.png" width="800" /> |
+
+| **1.7** | **Importing the streams into IBM Event Endpoint Management** |
+| :--- | :--- |
+| **Narration** | Next the integration team describe the order and customer streams, providing a description and example message. These topics can then be published for subscribers.  |
+| **Action** &nbsp; 1.7.1 | Click on the **CUSTOMERS** (1) topic. <br/> <img src="images/1-7-SelectCustomerTopic.png" width="800" /> |
+| **Action** &nbsp; 1.7.2 | Click on the **Edit information** (1) button. <br/> <img src="images/1-7-EditCustomer.png" width="800" /> |
+| **Action** &nbsp; 1.7.3 | Enter **Events from the customer service system when a customer contacts the help portal.** (1) as the description. <br/> <img src="images/1-7-CustomerDescription.png" width="800" /> |
+| **Action** &nbsp; 1.7.4 | Scroll down and enter **customer** (1) as a tag and **customerservice@focus.corp** as the contact email. <br/> <img src="images/1-7-CustomerContact.png" width="800" /> |
+| **Action** &nbsp; 1.7.5 | Select the **Event information** tab, scroll down to the sample message text box (2) and copy the content from below, and click **Save** (3). <br/> <br/><inline-code code="{<br/>&nbsp;&nbsp;&quot;customerid&quot;: &quot;acb3eb65-98a1-45c2-84d4-f5df157862b4&quot;,<br/>&nbsp;&nbsp;&quot;customername&quot;: &quot;Emilio Quitzon&quot;,<br/>&nbsp;&nbsp;&quot;registered&quot;: &quot;2023-10-24 19:20:35.638&quot;<br/>}"></inline-code> <img src="images/1-7-SampleCustomer.png" width="800" /> |
+| **Action** &nbsp; 1.7.6 | Select the **Manage** (1) tab and click on the **Publish topic +** (2) button. <br/> <img src="images/1-7-ManageCustomer.png" width="800" /> |
+| **Action** &nbsp; 1.7.7 | Check the **production** (1) gateway group and click on **Publish topic** (2). <br/> <img src="images/1-7-PublishCustomer.png" width="800" /> |
+| **Action** &nbsp; 1.7.8 | Click on the **ORDERS** (1) topic. <br/> <img src="images/1-7-SelectOrderTopic.png" width="800" /> |
+| **Action** &nbsp; 1.7.9 | Click on the **Edit information** (1) button. <br/> <img src="images/1-7-EditOrder.png" width="800" /> |
+| **Action** &nbsp; 1.7.10 | Enter **Events from the Focus Corp order management system. An event will be emitted for every new order that is made.** (1) as the description. <br/> <img src="images/1-7-OrderDescription.png" width="800" /> |
+| **Action** &nbsp; 1.7.11 | Scroll down and enter **order** (1) as a tag and **order@focus.corp** as the contact email. <br/> <img src="images/1-7-OrderContact.png" width="800" /> |
+| **Action** &nbsp; 1.7.12 | Select the **Event information** tab, scroll down to the sample message text box (2) and copy the content from below, and click **Save** (3). <br/> <br/><inline-code code="{<br/>&nbsp;&nbsp;&quot;quantity&quot;: 9,<br/>&nbsp;&nbsp;&quot;price&quot;: 197.09,<br/>&nbsp;&nbsp;&quot;customerid&quot;: &quot;a7d1586b-ced1-462f-9e44-14e9e5013540&quot;,<br/>&nbsp;&nbsp;&quot;description&quot;: &quot;Composite Oversize 28in Tennis Racket&quot;,<br/>&nbsp;&nbsp;&quot;id&quot;: &quot;1eba7af9-b748-4754-b750-3459e589dccf&quot;,<br/>&nbsp;&nbsp;&quot;region&quot;: &quot;EMEA&quot;,<br/>&nbsp;&nbsp;&quot;ordertime&quot;: &quot;2023-10-24 19:26:04.839&quot;,<br/>&nbsp;&nbsp;&quot;customer&quot;: &quot;Reed McKenzie DDS&quot;<br/>}"></inline-code> <img src="images/1-7-SampleOrder.png" width="800" /> |
+| **Action** &nbsp; 1.7.13 | Select the **Manage** (1) tab and click on the **Publish topic +** (2) button. <br/> <img src="images/1-7-ManageOrder.png" width="800" /> |
+| **Action** &nbsp; 1.7.14 | Check the **production** (1) gateway group and click on **Publish topic** (2). <br/> <img src="images/1-7-PublishCustomer.png" width="800" /> |
 
 <br/>
 
