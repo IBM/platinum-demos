@@ -17,7 +17,7 @@ In this demo, we will see how the new IBM Instana Automation framework can lever
 
 Let’s get started!
 
-<br/><br/>
+<br/>
 
 </details>
 
@@ -127,8 +127,6 @@ Let’s get started!
 <details markdown="1">
 
 <summary>Summary</summary>
-
-<br/>
 
 In this demo, we showed how the new Automation Framework elevates Instana beyond just an observability tool that does rapid root cause analysis to also include resolving the IT incidents. The Instana-Ansible integration enables IT ops teams take automatically execute remedial actions right from within Instana without having to hop across other automation tools. This feature accelerates the time to fix an incident and drastically reduces down time.
 
