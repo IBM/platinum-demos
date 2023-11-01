@@ -31,8 +31,8 @@ Let’s look at a customer outreach activity that typically consumes a few hours
 | **1.1** | **Introduce Salesforce skill invocation using chat prompt** |
 | :--- | :--- |
 | **Narration** | The first step of the upsell task is to search Salesforce for clients that are upsell opportunities. <br/><br/> We invoke the customer upsell task using a chat prompt. |
-| **Action** &nbsp; 1.1.1 | Type a natural language command **'Fetch my customers with recent life changes'** to pull a customer list from Salesforce. <br/> <img src="images/1-1-1.png" width="800" /> |
-| **Narration** | watsonx Orchestrate understands the request automatically and connects to Salesforce data using an API in the back end to retrieve the customer list. The data shows a list of all customers with recent life change events. The customer data is neatly displayed in a built-in table within the chat interface. |
+| **Action** &nbsp; 1.1.1 | Type a natural language command **'Upsell my customers with recent life changes'** to pull a customer list from Salesforce. <br/> <img src="images/1-1-1.png" width="800" /> |
+| **Narration** | watsonx Orchestrate understands the request automatically and connects to Salesforce data using an API in the back end to retrieve a customer list. The data shows a list of all customers with recent life events. The customer data is neatly displayed in a built-in table within the chat interface. |
 
 <br/>
 
@@ -74,10 +74,14 @@ Let’s look at a customer outreach activity that typically consumes a few hours
 
 | **3.1** | **Use generative AI to create a personalized email** |
 | :--- | :--- |
-| **Narration** | watsonx Orchestrate uses one of 20 Large Language Models (LLMs) available in watsonx to generate a personalized email. The generated email contains client-specific content that references the client's recent history and why the policy change has been recommended. |
-| **Action** &nbsp; 3.1.1 | Click the **Generate Email** button in the watsonx Orchestrate chat window. <br/> <img src="images/3-1-1.png" width="800" /> |
-| **Action** &nbsp; 3.1.2 | Review the email. <br/><br/> Click the **Send Email** button in the watsonx Orchestrate chat window. <br/><br/> Open an email client to show the sent email. <br/> <img src="images/3-1-2-click-scale.png" width="800" /> |
-| **Narration** | watsonx Orchestrate comes with a pre-built email editor that allows the seller to further customize or change the email to their preferences, like adding a signature. When they are happy with the email format, they can send the email directly from watsonx Orchestrate without having to open their email client. As you can see here in one of their inboxes, the email was sent successfully. |
+| **Narration** | watsonx Orchestrate uses one of 20 Large Language Models (LLMs) available in watsonx to generate a personalized email. The generative AI input prompt is automatically created based on the customer’s life event. The products recommended by the decision engine are inserted into the prompt. |
+| **Action** &nbsp; 3.1.1 | In the prompt field, highlight the embedded recommended products. <br/> <img src="images/3-1-1.png" width="800" /> |
+| **Action** &nbsp; 3.1.2 | Scroll down and click **Apply**. <br/> <img src="images/3-1-2.png" width="800" /> |
+| **Narration** | watsonx Orchestrate connects to watsonx.ai to generate an email containing the upsell offer. The generated email contains client-specific content that references the client’s recent history and why the recommended policy change has been recommended. <br/><br/> watsonx Orchestrate comes with a pre-built email editor that allows the seller to further customize or change the email to their preferences, like adding a signature. When they are happy with the email format, they can send the email directly from watsonx Orchestrate without having to open their email client. |
+| **Action** &nbsp; 3.1.3 | Change the email address in the **To** field to your own email and review the email. <br/> <img src="images/3-1-3.png" width="800" /> |
+| **Action** &nbsp; 3.1.4 | Review the email. <br/><br/> Scroll down and click **Apply** in the watsonx Orchestrate chat window. <br/> <img src="images/3-1-4.png" width="800" /> |
+| **Action** &nbsp; 3.1.5 | Open an email client to show the sent email. <br/> <img src="images/3-1-5-click-scale.png" width="800" /> |
+| **Narration** | As you can see here in one of their inboxes, the email was sent successfully. |
   
 <br/>
 
