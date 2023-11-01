@@ -31,7 +31,7 @@ Let’s look at a customer outreach activity that typically consumes a few hours
 | **1.1** | **Introduce Salesforce skill invocation using chat prompt** |
 | :--- | :--- |
 | **Narration** | The first step of the upsell task is to search Salesforce for clients that are upsell opportunities. <br/><br/> We invoke the customer upsell task using a chat prompt. |
-| **Action** &nbsp; 1.1.1 | Type a natural language command **'Fetch my customers with recent life changes'** to pull a customer list from Salesforce. <br/> <img src="images/1-1-1-applications-dashboard.png" width="800" /> |
+| **Action** &nbsp; 1.1.1 | Type a natural language command **'Fetch my customers with recent life changes'** to pull a customer list from Salesforce. <br/> <img src="images/1-1-1.png" width="800" /> |
 | **Narration** | watsonx Orchestrate understands the request automatically and connects to Salesforce data using an API in the back end to retrieve the customer list. The data shows a list of all customers with recent life change events. The customer data is neatly displayed in a built-in table within the chat interface. |
 
 <br/>
@@ -53,7 +53,7 @@ Let’s look at a customer outreach activity that typically consumes a few hours
 | **2.1** | **Select a customer for cross-sell / upsell** |
 | :--- | :--- |
 | **Narration** | The next step of the task is to determine the products to recommend to the selected customer. This skill makes a product recommendation based on the customer’s situation. |
-| **Action** &nbsp; 2.1.1 | Select **John Collins** (1) from the table and click **Apply** (2) in the chat window. <br/> <img src="images/2-1-1-alter-line.png" width="800" /> |
+| **Action** &nbsp; 2.1.1 | Select **John Collins** (1) from the table and click **Apply** (2) in the chat window. <br/> <img src="images/2-1-1.png" width="800" /> |
 | **Narration** | watsonx Orchestrate uses the built-in decision automation capabilities to determine cross-sell / upsell recommendations for the selected customer. <br/><br/> The decision engine applies business logic that considers many different customer factors in order to make a product recommendation. In this case, the decision recognizes that the customer, John Collins, has a child who recently turned twenty-six. In the US, twenty-six is a milestone requiring children to acquire independent health insurance care coverage. Therefore, the decision will recommend a few suitable health coverage products for John’s child. |
 
 <br/>
@@ -75,7 +75,7 @@ Let’s look at a customer outreach activity that typically consumes a few hours
 | **3.1** | **Use generative AI to create a personalized email** |
 | :--- | :--- |
 | **Narration** | watsonx Orchestrate uses one of 20 Large Language Models (LLMs) available in watsonx to generate a personalized email. The generated email contains client-specific content that references the client's recent history and why the policy change has been recommended. |
-| **Action** &nbsp; 3.1.1 | Click the **Generate Email** button in the watsonx Orchestrate chat window. <br/> <img src="images/3-1-1-click-scale.png" width="800" /> |
+| **Action** &nbsp; 3.1.1 | Click the **Generate Email** button in the watsonx Orchestrate chat window. <br/> <img src="images/3-1-1.png" width="800" /> |
 | **Action** &nbsp; 3.1.2 | Review the email. <br/><br/> Click the **Send Email** button in the watsonx Orchestrate chat window. <br/><br/> Open an email client to show the sent email. <br/> <img src="images/3-1-2-click-scale.png" width="800" /> |
 | **Narration** | watsonx Orchestrate comes with a pre-built email editor that allows the seller to further customize or change the email to their preferences, like adding a signature. When they are happy with the email format, they can send the email directly from watsonx Orchestrate without having to open their email client. As you can see here in one of their inboxes, the email was sent successfully. |
   
