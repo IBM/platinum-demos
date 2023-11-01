@@ -6,6 +6,10 @@ banner: images/scalable-resilient-integration-banner-SCRIPT-5-25-23.jpg
 
 <span id="top"></span>
 
+This 100-level demo, designed for sellers and tech sellers, does not require technical skills and deployment skills, and it only covers the end user view. 
+
+A more in-depth 300-level demo, designed for tech sellers, is coming soon that will cover both the end user view and builder view. <br/><br/>
+
 <details markdown="1">
 
 <summary>Introduction</summary>
