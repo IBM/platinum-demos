@@ -80,7 +80,7 @@ Let’s look at a customer outreach activity that typically consumes a few hours
 | **Narration** | watsonx Orchestrate connects to watsonx.ai to generate an email containing the upsell offer. The generated email contains client-specific content that references the client’s recent history and why the recommended policy change has been recommended. <br/><br/> watsonx Orchestrate comes with a pre-built email editor that allows the seller to further customize or change the email to their preferences, like adding a signature. When they are happy with the email format, they can send the email directly from watsonx Orchestrate without having to open their email client. |
 | **Action** &nbsp; 3.1.3 | Change the email address in the **To** field to your own email and review the email. <br/> <img src="images/3-1-3.png" width="800" /> |
 | **Action** &nbsp; 3.1.4 | Review the email. <br/><br/> Scroll down and click **Apply** in the watsonx Orchestrate chat window. <br/> <img src="images/3-1-4.png" width="800" /> |
-| **Action** &nbsp; 3.1.5 | Open an email client to show the sent email. <br/> <img src="images/3-1-5-click-scale.png" width="800" /> |
+| **Action** &nbsp; 3.1.5 | Open an email client to show the sent email. <br/> <img src="images/3-1-5.jpg" width="800" /> |
 | **Narration** | As you can see here in one of their inboxes, the email was sent successfully. |
   
 <br/>
