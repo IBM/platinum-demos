@@ -31,7 +31,7 @@ Let’s look at a customer outreach activity that typically consumes a few hours
 | **1.1** | **Introduce Salesforce skill invocation using chat prompt** |
 | :--- | :--- |
 | **Narration** | The first step of the upsell task is to search Salesforce for clients that are upsell opportunities. <br/><br/> We invoke the customer upsell task using a chat prompt. |
-| **Action** &nbsp; 1.1.1 | Type a natural language command **'Upsell my customers with recent life changes'** to pull a customer list from Salesforce. <br/> <img src="images/1-1-1.png" width="800" /> |
+| **Action** &nbsp; 1.1.1 | Type a natural language command **'Write upsell email to customers who have experienced recent life changes'** to pull a customer list from Salesforce. <br/> <img src="images/1-1-1.png" width="800" /> |
 | **Narration** | watsonx Orchestrate understands the request automatically and connects to Salesforce data using an API in the back end to retrieve a customer list. The data shows a list of all customers with recent life events. The customer data is neatly displayed in a built-in table within the chat interface. |
 
 <br/>
