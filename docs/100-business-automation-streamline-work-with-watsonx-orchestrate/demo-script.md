@@ -1,7 +1,7 @@
 ---
 title: Streamline work with watsonx Orchestrate <br/> 100-level live demo
 layout: demoscript
-banner: images/scalable-resilient-integration-banner-SCRIPT-5-25-23.jpg
+banner: images/wxo_100_script_banner.jpg
 ---
 
 <span id="top"></span>
@@ -10,11 +10,17 @@ banner: images/scalable-resilient-integration-banner-SCRIPT-5-25-23.jpg
 
 <summary>Introduction</summary>
 
-Today we’ll look at how watsonx Orchestrate uses conversational AI to help a salesperson get work done quickly.
+Today we’ll see how IBM watsonx Orchestrate uses conversational AI to help sales professionals get their work done quickly.
 
-A high priority task for sellers can be to implement an effective marketing strategy to upsell/cross-sell to their existing client base. Identifying the right potential clients and doing personalized outreach achieves the best results. However, this requires sellers to work across various systems, including a CRM tool like Salesforce, a product upsell recommendation engine, and an email tool like Outlook. It can become a daunting task because every outreach activity is best done when personalized.
+Sellers in every industry perform many different tasks each day in their effort to upsell and cross-sell. In today's example, we'll look at an insurance sales representative... , including making customer offers, updating policies, and processing claims. Each of these tasks require the use of multiple systems, making it challenging to remember which applications are required and how they are used.
 
-Let’s look at a customer outreach activity that typically consumes a few hours. We’ll see how a seller is able to reduce that time down to 5 minutes or less. Let’s get started.
+Let’s look at how we can help reps become more efficient and effective in carrying out these daily responsibilities. Prior to watsonx Orchestrate, sales reps in a brokerage office dedicated a few hours per week to sending prospecting emails for upsell and cross-sell. The steps of this process were: 
+1.	Search the CRM system for customers that meet certain criteria.
+2.	Determine the best upsell and cross-sell products to offer each customer.
+3.	Write a customized email to each customer.
+4.	Send each e-mail.
+
+We will see in the demo how quickly IBM watsonx Orchestrate can assist insurance sellers in performing this sequence of tasks. 
 
 <br/><br/>
 
@@ -28,7 +34,7 @@ Let’s look at a customer outreach activity that typically consumes a few hours
 
 <br/>
 
-| **1.1** | **Introduce Salesforce skill invocation using chat prompt** |
+| **1.1** | **Invoke Salesforce skill using conversational AI** |
 | :--- | :--- |
 | **Narration** | The first step of the upsell task is to search Salesforce for clients that are upsell opportunities. <br/><br/> We invoke the customer upsell task using a chat prompt. |
 | **Action** &nbsp; 1.1.1 | Type a natural language command **'Write upsell email to customers who have experienced recent life changes'** to pull a customer list from Salesforce. <br/> <img src="images/1-1-1.png" width="800" /> |
@@ -50,11 +56,11 @@ Let’s look at a customer outreach activity that typically consumes a few hours
 
 <br/>
 
-| **2.1** | **Select a customer for cross-sell / upsell** |
+| **2.1** | **Identify a customer for cross-sell / upsell** |
 | :--- | :--- |
 | **Narration** | The next step of the task is to determine the products to recommend to the selected customer. This skill makes a product recommendation based on the customer’s situation. |
 | **Action** &nbsp; 2.1.1 | Select **John Collins** (1) from the table and click **Apply** (2) in the chat window. <br/> <img src="images/2-1-1.png" width="800" /> |
-| **Narration** | watsonx Orchestrate uses the built-in decision automation capabilities to determine cross-sell / upsell recommendations for the selected customer. <br/><br/> The decision engine applies business logic that considers many different customer factors in order to make a product recommendation. In this case, the decision recognizes that the customer, John Collins, has a child who recently turned twenty-six. In the US, twenty-six is a milestone requiring children to acquire independent health insurance care coverage. Therefore, the decision will recommend a few suitable health coverage products for John’s child. |
+| **Narration** | watsonx Orchestrate uses the built-in decision automation capabilities to determine cross-sell / upsell recommendations for the selected customer. <br/><br/> The decision engine applies business logic that considers many different customer factors in order to make a product recommendation. In this case, the decision recognizes that the customer, John Collins, has a child who recently turned twenty-five. In the US, twenty-six is a milestone requiring children to acquire independent health insurance care coverage. Therefore, the decision will recommend a few suitable health coverage products for John’s child. |
 
 <br/>
 
