@@ -30,7 +30,7 @@ We will see in the demo how quickly IBM watsonx Orchestrate can assist insurance
 
 <details markdown="1">
 
-<summary>1 - Retrieving a customer list from Salesforce using conversational AI</summary>
+<summary>1 - Retrieving a customer list from a CRM using conversational AI</summary>
 
 <br/>
 
