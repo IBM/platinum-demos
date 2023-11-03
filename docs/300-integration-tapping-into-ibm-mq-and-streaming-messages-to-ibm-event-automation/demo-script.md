@@ -1,5 +1,5 @@
 ---
-title: Tapping into IBM MQ communication and streaming messages to IBM Event Automation <br/>300-level live demo
+title: Tapping into IBM MQ and streaming messages to IBM Event Automation <br/>300-level live demo
 layout: demoscript
 banner: images/temp-banner.jpg
 browsingselfservice: 2
@@ -46,27 +46,29 @@ Focus Corp’s integration team exposes the enterprise’s data using event stre
 | :--- | :--- |
 | **Narration** | Focus Corp’s integration team log into the IBM MQ console. They create a new queue called TO.KAFKA to store the cloned order messages before they are published to Apache Kafka. |
 | **Action** &nbsp; 1.1.1 | In the IBM MQ console click on **manage**.<br/> <img src="images/1-1-MQ-Console.png" width="800" /> |
-| **Action** &nbsp; 1.1.2 | Click on the **Create** button to start creating the new queue.<br/> <img src="images/1-1-MQ-Console-CreateQ-Button.png" width="800" /> |
+| **Action** &nbsp; 1.1.2 | Define a new queue by clicking on the **Create** button.<br/> <img src="images/1-1-MQ-Console-CreateQ-Button.png" width="800" /> |
 | **Action** &nbsp; 1.1.3 | Click on the **Local** tile.<br/> <img src="images/1-1-MQ-Console-LocalQ.png" width="800" /> |
 | **Action** &nbsp; 1.1.4 | Fill in **TO.KAFKA** (1) as the queue name and click **Create** (2).<br/> <img src="images/1-1-MQ-Console-CreateQ.png" width="800" /> |
-| **Action** &nbsp; 1.1.4 | See the newly created queue in the table.<br/> <img src="images/1-1-MQ-Console-SeeNewQ.png" width="800" /> |
+| **Action** &nbsp; 1.1.5 | See the new queue in the table.<br/> <img src="images/1-1-MQ-Console-SeeNewQ.png" width="800" /> |
 
 | **1.2** | **Configure IBM MQ to clone the orders** |
 | :--- | :--- |
-| **Narration** | Next the integration team identify the queue being used between the order management system and its payment gateway. They update the configuration to specify TO.KAFKA as the streaming queue. This causes IBM MQ to clone all new messages put to the queue. Once saved the new configuration is live, and the integration team can see cloned order messages stacking up in the TO.KAFKA queue. |
+| **Narration** | Next the integration team identify the queue being used between the order management system and its payment gateway. They review the messages as they are passing through MQ to verify they contain the expected payload. |
 | **Action** &nbsp; 1.2.1 | Click on the **PAYMENT.REQ** queue.<br/> <img src="images/1-2-ClickQ.png" width="800" /> |
 | **Action** &nbsp; 1.2.2 | Click on a message (1), scroll down (2) and show the order details (3).<br/> <img src="images/1-2-ShowMessage.png" width="800" /> |
 | **Action** &nbsp; 1.2.3 | Click **Close**.<br/> <img src="images/1-2-CloseMessage.png" width="800" /> |
+| **Narration** | They update the configuration to specify TO.KAFKA as the streaming queue. This causes IBM MQ to clone new messages put to the PAYMENT.REQ queue. |
 | **Action** &nbsp; 1.2.4 | Click the **Actions** button and select **View configuration**.<br/> <img src="images/1-2-ViewConfig.png" width="800" /> |
 | **Action** &nbsp; 1.2.5 | Click the **Edit** button.<br/> <img src="images/1-2-EditConfig.png" width="800" /> |
 | **Action** &nbsp; 1.2.6 | Select the **Storage** (1) section, in the Streaming queue name field type **TO.KAFKA** (2), and click **Save** (3).<br/> <img src="images/1-2-SaveConfig.png" width="800" /> |
+| **Narration** | Once saved the new configuration is live, and the integration team can see cloned order messages in the TO.KAFKA queue. |
 | **Action** &nbsp; 1.2.7 | Scroll to the top of the page (1), and select **Manage** (2).<br/> <img src="images/1-2-ViewQueues.png" width="800" /> |
 | **Action** &nbsp; 1.2.8 | Click on the **TO.KAFKA** (1) queue.<br/> <img src="images/1-2-ViewStreamedMessages.png" width="800" /> |
 | **Action** &nbsp; 1.2.9 | View the order messages building up on the queue.<br/> <img src="images/1-2-ViewClonedMessages.png" width="800" /> |
 
 | **1.3** | **Define the orders event stream** |
 | :--- | :--- |
-| **Narration** | Next the integration team open the IBM Event Streams console to create the orders stream where the messages will be published. They have options to customize the replication and retention settings that control the redundancy and volume of data held.  |
+| **Narration** | Next the integration team open the IBM Event Streams console to create the orders stream where messages will be published. Options are provided to customize the data replication and retention settings. The team use the default values as their standard policy is to retain data for a week and to replicate for high availability.  |
 | **Action** &nbsp; 1.3.1 | In the IBM Event Streams console click on the **Create a topic** tile.<br/> <img src="images/1-3-CreateTile.png" width="800" /> |
 | **Action** &nbsp; 1.3.2 | Specify **ORDERS** (1) as the Topic name, and click **Next** (2).<br/> <img src="images/1-3-TopicName.png" width="800" /> |
 | **Action** &nbsp; 1.3.3 | Leave the number of partitions as the default and click **Next** (1).<br/> <img src="images/1-3-Partitions.png" width="800" /> |
@@ -81,32 +83,36 @@ Focus Corp’s integration team exposes the enterprise’s data using event stre
 
 | **1.5** | **View the orders in the stream** |
 | :--- | :--- |
-| **Narration** | The integration team return to the IBM Event Streams console to view the order stream. They see the events since they configured the streaming queue in IBM MQ. |
+| **Narration** | The integration team return to the IBM Event Streams console to view the orders. They see the events since they configured the streaming queue in IBM MQ. |
  **Action** &nbsp; 1.5.1 | Return to the IBM Event Streams console and show that the messages are being streamed into the topic. Click the topic icon (1), and select the **ORDERS** (2) topic. <br/> <br/><img src="images/1-5-NavigateToTopic.png" width="800" /> |
- **Action** &nbsp; 1.5.2 | All of the messages since the MQ streaming queue configuration update will be available. Click on one to view the details. <br/> <br/><img src="images/1-5-ViewEvent.png" width="800" /> |
+ **Action** &nbsp; 1.5.2 | All messages since the MQ streaming queue configuration update are seen. Click on one to view the details. <br/> <br/><img src="images/1-5-ViewEvent.png" width="800" /> |
 
 | **1.6** | **Importing the streams into IBM Event Endpoint Management** |
 | :--- | :--- |
-| **Narration** | Next the integration team open the IBM Event Endpoint Management console. The console supports two usages, one for teams publishing event streams, and a second for those consuming. The integration team import the order and customer streams by discovering the topic on IBM Event Streams.  |
+| **Narration** | Next the integration team open the IBM Event Endpoint Management console. The console supports two usages, one for teams publishing event streams, and a second for those consuming. The integration team want to import the order and customer streams by discovering the topic on IBM Event Streams. As this is the first time they have imported from IBM Event Streams they need to register the cluster.|
 | **Action** &nbsp; 1.6.1 | In the IBM Event Endpoint Management console click on the **topic** (1) icon and select the **Add topic** (2) button. <br/> <img src="images/1-6-ViewTopics.png" width="800" /> |
 | **Action** &nbsp; 1.6.2 | No Apache Kafka clusters have been configured, the IBM Event Streams environment will be added. Click **Add new cluster**. <br/> <img src="images/1-6-AddClusterWizard.png" width="800" /> |
 | **Action** &nbsp; 1.6.3 | Specify **IBM Event Streams** (1) for the cluster name and click **Next** (2). <br/> <img src="images/1-6-ClusterName.png" width="800" /> |
-| **Action** &nbsp; 1.6.4 | Specify **ademo-es-kafka-bootstrap.cp4i.svc:9095** (1) for the servers and click **Next** (2). <br/> <img src="images/1-6-ClusterAddress.png" width="800" /> |
+| **Narration** | They enter the cluster connectivity details including the endpoint, certificates for secure communication and username / password credentials.|
+| **Action** &nbsp; 1.6.4 | Specify **ademo-es-kafka-bootstrap.cp4i.svc:9095** (1) for the servers field and click **Next** (2). <br/> <img src="images/1-6-ClusterAddress.png" width="800" /> |
 | **Action** &nbsp; 1.6.5 | Check the **Accept all certificates** (1) box and click **Next** (2). <br/> <img src="images/1-6-ClusterCert.png" width="800" /> |
-| **Action** &nbsp; 1.6.6 | Specify **es-admin** (1) for the username, the password (2) value was outputted in the preparation section, and click **Next** (3). <br/> <img src="images/1-6-ClusterCredentials.png" width="800" /> |
+| **Action** &nbsp; 1.6.6 | Specify **es-admin** (1) for the username, use the value outputted in the preparation section for the password (2), and click **Next** (3). <br/> <img src="images/1-6-ClusterCredentials.png" width="800" /> |
+| **Narration** | The available topics are discovered, and the team select to import both the CUSTOMERS and ORDERS streams.|
 | **Action** &nbsp; 1.6.7 | Select **IBM Event Streams** (1) and click **Next** (2). <br/> <img src="images/1-6-ClusterSelection.png" width="800" /> |
 | **Action** &nbsp; 1.6.8 | Check **CUSTOMERS** (1) and **ORDERS** (2), and click **Add topic** (2). <br/> <img src="images/1-6-SelectTopics.png" width="800" /> |
 
 | **1.7** | **Importing the streams into IBM Event Endpoint Management** |
 | :--- | :--- |
-| **Narration** | Next the integration team describe the order and customer streams, providing a description and example message. These topics can then be published for subscribers.  |
+| **Narration** | Next the integration team describe the streams, providing a description and example message. This information is displayed to consumers when they discover and subscribe to the event stream. They start by editing the CUSTOMERS stream. |
 | **Action** &nbsp; 1.7.1 | Click on the **CUSTOMERS** (1) topic. <br/> <img src="images/1-7-SelectCustomerTopic.png" width="800" /> |
 | **Action** &nbsp; 1.7.2 | Click on the **Edit information** (1) button. <br/> <img src="images/1-7-EditCustomer.png" width="800" /> |
-| **Action** &nbsp; 1.7.3 | Enter **Events from the customer service system when a customer contacts the help portal.** (1) as the description. <br/> <img src="images/1-7-CustomerDescription.png" width="800" /> |
+| **Action** &nbsp; 1.7.3 | Enter **Events generated by the customer management system. A new event is created for each new user registration.** (1) as the description. <br/> <img src="images/1-7-CustomerDescription.png" width="800" /> |
 | **Action** &nbsp; 1.7.4 | Scroll down and enter **customer** (1) as a tag and **customerservice@focus.corp** as the contact email. <br/> <img src="images/1-7-CustomerContact.png" width="800" /> |
 | **Action** &nbsp; 1.7.5 | Select the **Event information** tab, scroll down to the sample message text box (2) and copy the content from below, and click **Save** (3). <br/> <br/><inline-code code="{<br/>&nbsp;&nbsp;&quot;customerid&quot;: &quot;acb3eb65-98a1-45c2-84d4-f5df157862b4&quot;,<br/>&nbsp;&nbsp;&quot;customername&quot;: &quot;Emilio Quitzon&quot;,<br/>&nbsp;&nbsp;&quot;registered&quot;: &quot;2023-10-24 19:20:35.638&quot;<br/>}"></inline-code> <img src="images/1-7-SampleCustomer.png" width="800" /> |
+| **Narration** | The integration team publish the event stream which allows consumers to view and subscribe. |
 | **Action** &nbsp; 1.7.6 | Select the **Manage** (1) tab and click on the **Publish topic +** (2) button. <br/> <img src="images/1-7-ManageCustomer.png" width="800" /> |
 | **Action** &nbsp; 1.7.7 | Check the **production** (1) gateway group and click on **Publish topic** (2). <br/> <img src="images/1-7-PublishCustomer.png" width="800" /> |
+| **Narration** | They repeat the same process for the ORDERS stream. |
 | **Action** &nbsp; 1.7.8 | Click on the **ORDERS** (1) topic. <br/> <img src="images/1-7-SelectOrderTopic.png" width="800" /> |
 | **Action** &nbsp; 1.7.9 | Click on the **Edit information** (1) button. <br/> <img src="images/1-7-EditOrder.png" width="800" /> |
 | **Action** &nbsp; 1.7.10 | Enter **Events from the Focus Corp order management system. An event will be emitted for every new order that is made.** (1) as the description. <br/> <img src="images/1-7-OrderDescription.png" width="800" /> |
@@ -133,8 +139,7 @@ Focus Corp’s integration team exposes the enterprise’s data using event stre
 
 <br/>
 
-In this demo we showed how ...
-
+In this demo we showed how Focus Corps used IBM MQ and IBM Event Automation to capitalize on time-sensitive revenue opportunities. Specifically, we looked at how IBM MQ can be configured to clone messages, and IBM Event Automation setup to publish them to an event stream. This and other streams were published to an Event catalog allowing consumers to discover and subscribe. The marketing team then used these streams to build an event processing flow. The flow detects in real-time which customers should receive the high value discount. This has transformed how quickly the marketing team can create new features and freed them up from requesting this from other teams.
 
 Thank you for attending today’s presentation.
 
