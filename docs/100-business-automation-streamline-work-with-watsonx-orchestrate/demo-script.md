@@ -30,11 +30,11 @@ We will see in the demo how quickly IBM watsonx Orchestrate can assist insurance
 
 <details markdown="1">
 
-<summary>1 - Retrieving a customer list from a CRM using conversational AI</summary>
+<summary>1 - Retrieving a customer list from Salesforce using conversational AI</summary>
 
 <br/>
 
-| **1.1** | **Invoke Salesforce skill using conversational AI** |
+| **1.1** | **Invoke Salesforce skill using natural language** |
 | :--- | :--- |
 | **Narration** | A common task for an insurance seller is to periodically search the Salesforce CRM system for customers with recent life changes and identify upsell/cross-sell opportunities.<br/><br/>In watsonx Orchestrate the upsell task is invoked by using a natural language phrase. Orchestrate uses AI to understand the user’s intent and can perform the correct action even when the request is ambiguous.|
 | **Action** &nbsp; 1.1.1 | Type a natural language command **'Write upsell email to customers who have experienced recent life changes'** to pull a customer list from Salesforce. <br/> <img src="images/1-1-1.png" width="800" /> |
