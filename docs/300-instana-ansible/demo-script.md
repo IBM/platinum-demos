@@ -1,5 +1,5 @@
 ---
-title: Intelligently remediating IT incidents with Instana and Ansible <br/>300-level live demo
+title: Intelligently remediate incidents in Instana using Ansible <br/>300-level live demo
 layout: demoscript
 banner: images/temp-banner.jpg
 browsingselfservice: 2
@@ -109,7 +109,7 @@ Let’s get started!
 
 | **4.1** | **Check Instana's action execution logs** |
 | :--- | :--- |
-| **Action** &nbsp; 4.1.1 | Click **Action History page**. <br/> <img src="images/4-1-1.png" width="800" /> |
+| **Action** &nbsp; 4.1.1 | Click **Action History page**. <br/> <img src="images/4-1-1.png" width="400" /> |
 
 | **4.2** | **Check Ansible job execution logs** |
 | :--- | :--- |
