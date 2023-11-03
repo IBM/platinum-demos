@@ -59,9 +59,9 @@ We will see in the demo how quickly IBM watsonx Orchestrate can assist insurance
 
 | **2.1** | **Identify products for cross-sell / upsell** |
 | :--- | :--- |
-| **Narration** | The next step is to determine which products to recommend to the selected customer.<br/><br/>To do this task, watsonx Orchestrate automatically invokes a product recommendation skill that uses built-in decisioning capabilities to apply business logic that considers many different factors, such as the child’s age, pre-existing conditions, and current coverage, to determine the best products to recommend to the customer.<br/><br/>In the case of John Collins, the decision engine recommends three health insurance plans suitable for his young adult: Bronze-level Marketplace Plan, Silver-level Marketplace Plan and Short-term Health Insurance.|
+| **Narration** | The next step is to determine which products to recommend for the selected customer.<br/><br/>To do this task, watsonx Orchestrate automatically invokes a product recommendation skill that uses built-in decisioning capabilities to apply business logic that considers many different factors, such as the child’s age, pre-existing conditions, and current coverage, to determine the best products to recommend to the customer.<br/><br/>In the case of John Collins, the decision engine recommends three health insurance plans suitable for his young adult: Bronze-level Marketplace Plan, Silver-level Marketplace Plan and Short-term Health Insurance.|
 
-| **Action** &nbsp; 2.1.1 | The customer details are submitted into the built-in decision engine and the upsell recommendations are displayed. Note that this form would usually be hidden as it is an intermediate step, but it’s shown here for clarity. <br/> <img src="images/1-1-1.png" width="800" /> |
+| **Action** &nbsp; 2.1.1 | The customer details are submitted into the built-in decision engine and the upsell recommendations are displayed. Note that this form would usually be hidden as it is an intermediate step, but it’s shown here for clarity. <br/> <img src="images/2-1-1.png" width="800" /> |
 
 <br/>
 
