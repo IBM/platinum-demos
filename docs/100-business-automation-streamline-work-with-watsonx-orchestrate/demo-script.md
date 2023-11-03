@@ -12,7 +12,7 @@ banner: images/wxo_100_script_banner.jpg
 
 Today we’ll see how IBM watsonx Orchestrate uses conversational AI to help sales professionals get their work done quickly.
 
-Sellers in every industry perform many different tasks each day in their effort to upsell and cross-sell. In today's example, we'll look at an insurance sales representative... , including making customer offers, updating policies, and processing claims. Each of these tasks require the use of multiple systems, making it challenging to remember which applications are required and how they are used.
+Sellers in every industry perform many different tasks each day in their effort to upsell and cross-sell including making customer offers, updating policies, and processing claims. In today's example, we'll look at an insurance sales representative perform a series of tasks that require the use of multiple systems, making it challenging to remember which applications are required and how they are used.
 
 Let’s look at how we can help reps become more efficient and effective in carrying out these daily responsibilities. Prior to watsonx Orchestrate, sales reps in a brokerage office dedicated a few hours per week to sending prospecting emails for upsell and cross-sell. The steps of this process were: 
 1.	Search the CRM system for customers that meet certain criteria.
