@@ -24,7 +24,7 @@ banner: images/scalable-resilient-integration-banner-PREP-5-25-23.jpg
 
 <summary>Access Demo Tenant</summary>
 
-Log into the demo tenant with your IBM email. You must be invited to a demo tenant by a tenant admin to view and run the demo skills.
+You will need access to the [production tenant](https://dl.watson-orchestrate.ibm.com/home) for sales enablement. The name of the tenant is **BP Enablement NA EE**.<br/>If you are already onboarded to the tenant, you can login with your IBM email.<br/><br/>If you are not onboarded to the demo tenant, contact one of the admins listed here.
 </details>
 
 <p/>
