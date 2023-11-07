@@ -24,7 +24,7 @@ To provision your Cloud Pak for Integration environment, follow these steps: <br
 <br/><img src="../integration/images/prep-image001.png" width="800" />
 <br/>
 
-2. If you do not have a sales opportunity, select the purpose **Practice / Self-Education** (1) for a 3-day reservation (which can be extended to 8 days) and fill in the **Purpose description** (2).
+2. If you do not have a sales opportunity, select the purpose **Practice / Self-Education** (1) for a 2-day reservation (which can be extended without any approvals to 6 days) and fill in the **Purpose description** (2).
 <br/><img src="../integration/images/prep-image002.png" width="800" />
 <br/>
 

@@ -1,10 +1,10 @@
 ---
-title: Tapping into IBM MQ communication and streaming messages to IBM Event Automation <br/>300-level live demo
+title: Tapping into IBM MQ and streaming messages to IBM Event Automation <br/>300-level live demo
 layout: preparation
 banner: images/temp-banner.jpg
-overview: overviewtest
-product: producttest
-capabilities: capabilitiestest
+overview: In this demo we will see how Focus Corp, an online retailer, uses real-time MQ transaction data to capitalize on time-sensitive revenue opportunities.
+product: IBM Event Automation, Cloud Pak for Integration
+capabilities: Event Streaming, Event Endpoint Management, Event Processing and IBM MQ
 boxIntroPresentationUrl: https://somewhere.com
 boxPdfScript: https://somewhere2.com
 gitHubUrl: https://github.com/IBM/platinum-demo-code-event-automation.git
