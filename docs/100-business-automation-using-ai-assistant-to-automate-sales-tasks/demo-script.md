@@ -12,15 +12,15 @@ banner: images/wxo_100_script_banner.jpg
 
 Today we’ll see how IBM watsonx Orchestrate uses conversational AI to help sales professionals get their work done quickly.
 
-Sales representatives spend their days doing many tasks. Much of their time is spent taking care of existing clients. But an important part of being a sales representative is finding new customers. This is a time-consuming but critical part of a sales representative's daily routine.<br/><br/>We’ll look at how watsonx Orchestrate plays the role of a digital assistant to reduce the time required to perform a repetitive task. In today's example, we'll see how an insurance sales representative performs a series of tasks that traditionally require the use of multiple systems. Because they use so many systems and applications in a day, sales representatives find it cumbersome to constantly switch between them.
+Insurance sales agents spend their days doing many tasks. Much of their time is spent taking care of existing clients, but an important part of being an insurance agent is finding new customers.<br/><br/>We’ll look at how watsonx Orchestrate plays the role of a digital assistant to reduce the time required to perform repetitive tasks. In today's example, we'll see how an agent performs a series of tasks that traditionally require the use of multiple systems. Because they use so many systems and applications in a day, agents find it cumbersome to constantly switch between them.
 
-Let’s look at how we can help sales reps become more efficient and effective in carrying out these daily responsibilities. Prior to watsonx Orchestrate, sales reps in a brokerage office dedicated a few hours per week to sending prospecting emails for upsell and cross-sell. The steps of this process were: 
+Let’s look at how we can help agents become more efficient and effective in carrying out these daily responsibilities. Prior to watsonx Orchestrate, agents in an insurance office dedicated a few hours per week to sending prospecting emails for upsell and cross-sell. The steps of this process were: 
 1.	Search the CRM system for customers that meet certain criteria.
 2.	Determine the best upsell and cross-sell products to offer each customer.
 3.	Write a customized email to each customer.
 4.	Send each customer an e-mail.
 
-We will see in the demo how quickly IBM watsonx Orchestrate can assist insurance sellers in performing this sequence of tasks. 
+We will see in the demo how quickly IBM watsonx Orchestrate can assist agents in performing this sequence of tasks. 
 
 <br/>
 </details>
