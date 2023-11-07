@@ -96,7 +96,7 @@ Focus Corp’s integration team exposes the enterprise’s data using event stre
 | **Narration** | They enter the cluster connectivity details including the endpoint, certificates for secure communication and username / password credentials.|
 | **Action** &nbsp; 1.6.4 | Specify **ademo-es-kafka-bootstrap.cp4i.svc:9095** (1) for the servers field and click **Next** (2). <br/> <img src="images/1-6-ClusterAddress.png" width="800" /> |
 | **Action** &nbsp; 1.6.5 | Check the **Accept all certificates** (1) box and click **Next** (2). <br/> <img src="images/1-6-ClusterCert.png" width="800" /> |
-| **Action** &nbsp; 1.6.6 | Specify **es-admin** (1) for the username, use the value outputted in the preparation section for the password (2), and click **Next** (3). <br/> <img src="images/1-6-ClusterCredentials.png" width="800" /> |
+| **Action** &nbsp; 1.6.6 | Specify **es-admin** (1) for the username, use the value outputted in the preparation section for the password (2), and click **Add cluster** (3). <br/> <img src="images/1-6-ClusterCredentials.png" width="800" /> |
 | **Narration** | The available topics are discovered, and the team select to import both the CUSTOMERS and ORDERS streams.|
 | **Action** &nbsp; 1.6.7 | Select **IBM Event Streams** (1) and click **Next** (2). <br/> <img src="images/1-6-ClusterSelection.png" width="800" /> |
 | **Action** &nbsp; 1.6.8 | Check **CUSTOMERS** (1) and **ORDERS** (2), and click **Add topic** (2). <br/> <img src="images/1-6-SelectTopics.png" width="800" /> |
@@ -113,7 +113,7 @@ Focus Corp’s integration team exposes the enterprise’s data using event stre
 | **Action** &nbsp; 1.7.6 | Select the **Manage** (1) tab and click on the **Publish topic +** (2) button. <br/> <img src="images/1-7-ManageCustomer.png" width="800" /> |
 | **Action** &nbsp; 1.7.7 | Check the **production** (1) gateway group and click on **Publish topic** (2). <br/> <img src="images/1-7-PublishCustomer.png" width="800" /> |
 | **Narration** | They repeat the same process for the ORDERS stream. |
-| **Action** &nbsp; 1.7.8 | Click on the **ORDERS** (1) topic. <br/> <img src="images/1-7-SelectOrderTopic.png" width="800" /> |
+| **Action** &nbsp; 1.7.8 | Select the **topics** (1) icon and click on the **ORDERS** (2) topic. <br/> <img src="images/1-7-SelectOrderTopic.png" width="800" /> |
 | **Action** &nbsp; 1.7.9 | Click on the **Edit information** (1) button. <br/> <img src="images/1-7-EditOrder.png" width="800" /> |
 | **Action** &nbsp; 1.7.10 | Enter **Events from the Focus Corp order management system. An event will be emitted for every new order that is made.** (1) as the description. <br/> <img src="images/1-7-OrderDescription.png" width="800" /> |
 | **Action** &nbsp; 1.7.11 | Scroll down and enter **order** (1) as a tag and **order@focus.corp** as the contact email. <br/> <img src="images/1-7-OrderContact.png" width="800" /> |
