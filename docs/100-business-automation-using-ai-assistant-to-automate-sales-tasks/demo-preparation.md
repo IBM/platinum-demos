@@ -25,9 +25,9 @@ banner: images/wxo_100_prep_banner.jpg
 <summary>Access Demo Tenant</summary>
 
 You will need access to the [production tenant](https://dl.watson-orchestrate.ibm.com/home) for sales enablement. 
-<br/>If you have been added to multiple accounts on the above production tenant, you will see a list of available account names. Select the **BP Enablement NA EE** and login with your IBM email.<br/><img src="images/prep-1-1-tenants.jpg" width="600" /><br/>If you have been added to a single account on the above production tenant, you won't be shown a list of available accounts and will be logged straight into the account after entering your IBM email.
+<br/><br/>If you have been added to multiple accounts on the above production tenant, you will see a list of available account names.<br/> Select the **BP Enablement NA EE** and login with your IBM email.<br/><img src="images/prep-1-1-tenants.jpg" width="600" /><br/>If you have been added to a single account on the above production tenant, you won't be shown a list of available accounts and will be logged straight into the account after entering your IBM email.<br/><br/>
 
-If you are not onboarded to the demo tenant or account, contact one of the admins listed [here](https://ibm.ent.box.com/notes/1288049469199?s=abq1otgk14w5dnfveyz6hry7lgu1pt3r).
+**If you are not onboarded to the demo tenant or account**, contact one of the admins listed [here](https://ibm.ent.box.com/notes/1288049469199?s=abq1otgk14w5dnfveyz6hry7lgu1pt3r).
 </details>
 
 <p/>
@@ -35,7 +35,7 @@ If you are not onboarded to the demo tenant or account, contact one of the admin
 
 <summary>Navigate to Team Skills</summary>
 
-When you log into watsonx Orchestrate, the default view is 'personal skills'. To run the demo, change the view to 'team skills'.<br/><img src="images/prep-1-2-teamskills.jpg" width="600" />
+When you log into watsonx Orchestrate, the default view is **personal skills**. To run the demo, change the view to **team skills**.<br/><img src="images/prep-1-2-teamskills.jpg" width="600" />
 </details>
 
 <p/>

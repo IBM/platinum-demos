@@ -22,8 +22,7 @@ Let’s look at how we can help sales reps become more efficient and effective i
 
 We will see in the demo how quickly IBM watsonx Orchestrate can assist insurance sellers in performing this sequence of tasks. 
 
-<br/><br/>
-
+<br/>
 </details>
 
 <p/>
