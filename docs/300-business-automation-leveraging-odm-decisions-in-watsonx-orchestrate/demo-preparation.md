@@ -138,6 +138,120 @@ After 4-5 hours, your Cloud Pak for Business Automation (CP4BA) should be ready.
 
 2. For the **Username** and **Password** fields (1), use the **Decisions Admin Username** and **Decisions Admin Password** credentials from your notebook. Click **Log in** (2). <br/> <img src="images/Prep-2-2-2.png" width="800" /><br/>
 
+3. Right-click your **avatar** icon (1). Click **Profile and settings** (2). <br/> <img src="images/Prep-2-2-3.png" width="800" /><br/>
+
+4. Click **API key**. <br/> <img src="images/Prep-2-2-4.png" width="800" /><br/>
+
+5. Click **Generate new key**. <br/> <img src="images/Prep-2-2-5.png" width="800" /><br/>
+
+6. Click **Generate**. <br/> <img src="images/Prep-2-2-6.png" width="800" /><br/>
+
+7. Click the **eye** icon to show the API key. <br/> <img src="images/Prep-2-2-7.png" width="800" /><br/>
+
+8. Copy and paste the **API key** into your notebook (1). Click **Close** (2). <br/> <img src="images/Prep-2-2-8.png" width="800" /><br/>
+
+<br/>
+
+**[Go to top](#top)**
+
+<br/><br/>
+
+</details>
+
+<p/>
+
+<details markdown="1">
+
+<summary>3 - Generate your ZEN API key</summary>
+
+1. Open a terminal window. <br/> <img src="images/Prep-2-3-1.png" width="800" /><br/>
+
+2. Type the following command: <br/> `echo -n "cp4admin:<your API key>" | base64` <br/> <img src="images/Prep-2-3-2.png" width="800" /><br/>
+
+3. Copy and paste your ZEN API key (highlighted in blue) in your notebook using the format '**ZenApiKey + [your generated ZEN API key]**'  <br/> <img src="images/Prep-2-3-3.png" width="800" /><br/>
+
+4. Check your notebook to make sure you have all the following information noted. <br/> <inline-notification text="Please note the format of the ZEN API key (highlighted in orange), which you will have to use in the discovery service."></inline-notification> <img src="images/Prep-2-4-1.png" width="800" /><br/>
+
+<br/>
+
+**[Go to top](#top)**
+
+<br/><br/>
+
+</details>
+
+### **CONFIGURE ODM**
+
+<details markdown="1">
+
+<summary>1 - Import the ‘Get Request Details’ decision service</summary>
+
+1. Log in to the **Decision Center** using the URL and credentials from your notebook. <br/> <img src="images/Prep-3-1-1.png" width="800" /><br/>
+
+2. Click the **LIBRARY** tab. <br/> <img src="images/Prep-3-1-2.png" width="800" /><br/>
+
+3. Click the **import** icon. <br/> <img src="images/Prep-3-1-3.png" width="800" /><br/>
+
+4. Click **Choose**. <br/> <img src="images/Prep-3-1-4.png" width="800" /><br/>
+
+5. In your local folder, select **Get Request Details.zip** (1). Click **Open** (2). <br/> <img src="images/Prep-3-1-5.png" width="800" /><br/>
+
+6. Click **Import**. <br/> <img src="images/Prep-3-1-6.png" width="800" /><br/>
+
+7. Click the **LIBRARY** tab. <br/> <img src="images/Prep-3-1-7.png" width="800" /><br/>
+
+8. Repeat from **Step 3** and import the **Customer Service.zip** file. <br/>
+
+9. Click **Get Request Details**. <br/> <img src="images/Prep-3-1-9.png" width="800" /><br/>
+
+10. Click **main**. <br/> <img src="images/Prep-3-1-10.png" width="800" /><br/>
+
+11. Click the **Deployments** tab. <br/> <img src="images/Prep-3-1-11.png" width="800" /><br/>
+
+12. Click the **Configurations** tab. <br/> <img src="images/Prep-3-1-12.png" width="800" /><br/>
+
+13. Click the **+** button. <br/> <img src="images/Prep-3-1-13.png" width="800" /><br/>
+
+14. For the **Configuration name**, enter ‘**wxoDeploy**’ (1). For the **RuleApp name**, enter ‘**FocusCorp_GetRequestDetails**’ (2). Click the **Operations** tab (3). <br/> <inline-notification text="Make sure to use the same name and letter case for the ruleapp name."></inline-notification> <img src="images/Prep-3-1-14.png" width="800" /><br/>
+
+15. Select the **FocusCorp_Get_request_details** operation (1). Click the **Targets** tab (2). <br/> <img src="images/Prep-3-1-15.png" width="800" /><br/>
+
+16. Select the **Decision Service Execution** target server (1). Click the **save** icon (2). <br/> <img src="images/Prep-3-1-16.png" width="800" /><br/>
+
+17. Click **Create new version**. <br/> <img src="images/Prep-3-1-17.png" width="800" /><br/>
+
+18. Hover your mouse over the **wxoDeploy** row and click the **deploy** icon. <br/> <img src="images/Prep-3-1-18.png" width="800" /><br/>
+
+19. Click **Deploy**. <br/> <img src="images/Prep-3-1-19.png" width="800" /><br/>
+
+20. Click **OK**. <br/> <img src="images/Prep-3-1-20.png" width="800" /><br/>
+
+21. Wait for the service to be deployed. <br/> <img src="images/Prep-3-1-21.png" width="800" /><br/>
+
+22. Click the **LIBRARY** tab. <br/> <img src="images/Prep-3-1-22.png" width="800" /><br/>
+
+<br/>
+
+**[Go to top](#top)**
+
+<br/><br/>
+
+</details>
+
+<p/>
+
+<details markdown="1">
+
+<summary>2 - Import the ‘Customer Service’ decision service</summary>
+
+Let's deploy the decision service driving the ‘Customer Service’ decision of the demo.
+
+For this service, we are going to deploy two different instances with two different operations. One will be used by the finalized 'Customer Service' skill; the other one will be used to show how to create a skill step by step in watsonx Orchestrate. For this second one, you will have to update the ruleapp name with your own ‘XXX’ initials in order to not conflict with some skills that may have already been published by other users of your watsonx Orchestrate tenant.
+
+1. Click the **Customer Service** decision service. <br/> <img src="images/Prep-3-2-1.png" width="800" /><br/>
+
+2. Click the **main**. <br/> <img src="images/Prep-3-2-2.png" width="800" /><br/>
+
 <br/>
 
 **[Go to top](#top)**

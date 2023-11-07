@@ -138,8 +138,8 @@ Let’s get started!
 | **Action** &nbsp; 2.4.3 | Type your ‘**XXX**’ in the search field ('XXX' being your own initals). <br/> <img src="images/2-4-3.png" width="800" /> |
 | **Action** &nbsp; 2.4.4 | Click your ‘**XXX_FC_customerService**’ ('XXX' being your own initials). <br/> <img src="images/2-4-4.png" width="800" /> |
 | **Action** &nbsp; 2.4.5 | Click **Connect app**. <br/> <img src="images/2-4-5.png" width="800" /> |
-| **Narration** | To be able to connect to the execution server, I must connect my skill to the Rule Execution Server. I can use the Zen API key that was provided by the ODM administrator to connect to the deployed rule service. |
-| **Action** &nbsp; 2.4.6 | Enter the **Zen API key** (1) you copied in your notebook. Click **Connect app** (2). <br/> <img src="images/2-4-6.png" width="800" /> |
+| **Narration** | To be able to connect to the execution server, I must connect my skill to the Rule Execution Server. I can use the ZEN API key that was provided by the ODM administrator to connect to the deployed rule service. |
+| **Action** &nbsp; 2.4.6 | Enter the **ZEN API key** (1) you copied in your notebook. Click **Connect app** (2). <br/> <img src="images/2-4-6.png" width="800" /> |
 | **Narration** | My skill is connected, and I can now add it into my personal catalog. |
 | **Action** &nbsp; 2.4.7 | Click **Add skill +** (2). <br/> <img src="images/2-4-7.png" width="800" /> |
 | **Action** &nbsp; 2.4.8 | Check that your skill is added. <br/> <img src="images/2-4-8.png" width="800" /> |
