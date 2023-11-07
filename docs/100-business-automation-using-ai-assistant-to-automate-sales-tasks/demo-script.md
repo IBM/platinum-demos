@@ -109,8 +109,6 @@ To summarize, in today’s demo we saw an insurance seller use watsonx Orchestra
 
 That’s because watsonx Orchestrate comes with a catalog of pre-built skills and the ability to create custom ones. Instead of manually moving data between applications, users only need to interact conversationally to invoke their tasks.
 
-For multiple customers, this is equivalent to saving days of work. From an IT perspective, you are creating more efficient ways of doing work for end users and developers alike, and getting more out of your existing investments.
-
 Thank you for attending today’s presentation.
 
 **[Go to top](#place1)**
