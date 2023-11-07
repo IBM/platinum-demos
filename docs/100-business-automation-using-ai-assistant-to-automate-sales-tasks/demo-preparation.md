@@ -1,7 +1,7 @@
 ---
-title: Streamline work with watsonx Orchestrate <br/> 100-level live demo
+title: Using an AI assitant to automate sales tasks <br/> 100-level live demo
 layout: preparation
-banner: images/scalable-resilient-integration-banner-PREP-5-25-23.jpg
+banner: images/wxo_100_prep_banner.jpg
 ---
 
 <span id="place1"></span>
@@ -10,7 +10,7 @@ banner: images/scalable-resilient-integration-banner-PREP-5-25-23.jpg
 
 | **DEMO OVERVIEW** | | 
 | :---         | :--- |
-| **Scenario overview** | This demo shows how watsonx Orchestrate can be used by a sales representative to send a customized upsell/cross-sell email to a client. To illustrate this, an insurance seller's cross-sell automation is invoked using natural language commands.|
+| **Scenario overview** | This demo shows how watsonx Orchestrate can be used by sales representatives to send a customized upsell/cross-sell email to a client. To illustrate this, an insurance seller's cross-sell automation is invoked using a natural language command.|
 | **Demo products** | watsonx Orchestrate |
 | **Demo capabilities** | Integrations with Salesforce; Unified Automation Builder (UAB), watsonx.ai; Microsoft Outlook |
 | **Demo script** | A complete demo script is on the second tab above. <br/><br/> This demo script has multiple tasks that each have multiple steps. In each step, you have the details about what you need to do (**Actions**), what you can say while delivering this demo step (**Narration**), and what diagrams and screenshots you will see.<br/><br/>This demo script is a suggestion, and you are welcome to customize based in your sales opportunity. Most importantly, practice this demo in advance. If the demo seems easy for you to execute, the customer will focus on the content. If it seems difficult for you to execute, the customer will focus on your delivery. |
@@ -24,7 +24,10 @@ banner: images/scalable-resilient-integration-banner-PREP-5-25-23.jpg
 
 <summary>Access Demo Tenant</summary>
 
-You will need access to the [production tenant](https://dl.watson-orchestrate.ibm.com/home) for sales enablement. The name of the tenant is **BP Enablement NA EE**.<br/>If you are already onboarded to the tenant, you can login with your IBM email.<br/><br/>If you are not onboarded to the demo tenant, contact one of the admins listed here.
+You will need access to the [production tenant](https://dl.watson-orchestrate.ibm.com/home) for sales enablement. 
+<br/>If you have been added to multiple accounts on the above production tenant, you will see a list of available account names. Select the **BP Enablement NA EE** and login with your IBM email.<br/><img src="images/prep-1-1-tenants.jpg" width="600" /><br/>If you have been added to a single account on the above production tenant, you won't be shown a list of available accounts and will be logged straight into the account after entering your IBM email.
+
+If you are not onboarded to the demo tenant or account, contact one of the admins listed [here](https://ibm.ent.box.com/notes/1288049469199?s=abq1otgk14w5dnfveyz6hry7lgu1pt3r).
 </details>
 
 <p/>
@@ -32,7 +35,7 @@ You will need access to the [production tenant](https://dl.watson-orchestrate.ib
 
 <summary>Navigate to Team Skills</summary>
 
-When you log into watsonx Orchestrate, the default view is 'personal skills'. To run the demo, change the view to 'team skills'.
+When you log into watsonx Orchestrate, the default view is 'personal skills'. To run the demo, change the view to 'team skills'.<br/><img src="images/prep-1-2-teamskills.jpg" width="600" />
 </details>
 
 <p/>
