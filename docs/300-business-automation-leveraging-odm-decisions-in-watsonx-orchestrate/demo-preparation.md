@@ -18,8 +18,6 @@ banner: images/scalable-resilient-integration-banner-PREP-5-25-23.jpg
 | **Required versions** | IBM Operational Decision Manager 8.11.1.0 on IBM Cloud, watsonx Orchestrate SaaS (Standard or Enterprise edition) |
 | **How to get support** | • Open a support case at <a href="https://techzone.ibm.com/help" target="_blank" rel="noreferrer">IBM Technology Zone Help</a> regarding issues with reserving and provisioning Tech Zone environments.<br/>• Contact <a href="https://ibm-cloud.slack.com/archives/C0216F39ACU" target="_blank" rel="noreferrer">#platinumdemos-automation-support</a> regarding issues with setting up and running this demo. |
 
-### **DEMO INSTALLATION AND SETUP**
-
 <inline-notification text="You are going to deliver a demo on a watsonx Orchestrate shared environment. watsonx Orchestrate environments are single-tenant. To prevent conflicts and to easily access your different artifacts, you will have to pre-fix or update some skills and artifacts with your own initials. <br/><br/> In this documentation, we will use ‘<strong>XXX</strong>’. You are asked to use your own 3-letter initials that are not yet used on your watsonx Orchestrate instance."></inline-notification>
 
 <details markdown="1">
@@ -31,6 +29,114 @@ Before starting the installation of this demo, make sure you have been granted a
 • Business Partners: Contact your local IBM Ecosystem representative
 
 It is also required that you have a text editor that's able to edit .json files. In this documentation, we will use Microsoft™ Visual Studio Code.
+
+<br/>
+
+**[Go to top](#top)**
+
+<br/><br/>
+
+</details>
+
+### **PROVISION AN OPENSHIFT ENVIRONMENT AND DEPLOY CLOUD PAK FOR BUSINESS AUTOMATION**
+
+<details markdown="1">
+
+<summary>1 - Prepare your Cloud Pak for Business Automation environment</summary>
+
+1. Visit the <a href="https://techzone.ibm.com/collection/PakInstaller/journey-cloud-pak-for-business-automation" target="_blank" rel="noreferrer">Pak Installer</a> page. <br/><br/>
+
+2. Click the **Cloud Pak for Business Automation 23.0.1 IF001 - VMWare Public (OCP 4.12) (Powered by Pak Installer)** tile. <br/> <img src="images/Prep-1-1-2.png" width="800" /><br/>
+
+3. Select **Reserve now** tile. <br/> <img src="images/Prep-1-1-3.png" width="800" /><br/><br/>
+
+4. Select **Practice / Self-Education** <br/> <img src="images/Prep-1-1-4.png" width="800" /><br/><br/>
+
+5. Enter a **Purpose description** <br/> <img src="images/Prep-1-1-5.png" width="800" /><br/><br/>
+
+6. Select your **Preferred Geography** <br/> <img src="images/Prep-1-1-6.png" width="800" /><br/><br/>
+
+7. Select **decisions** as the **Starter service** <br/> <img src="images/Prep-1-1-7.png" width="800" /><br/><br/>
+
+8. Read and agree to **IBM Technology Zone's Terms and Conditions and End User Security Policies** (1). Click **Submit** (2). <br/> <img src="images/Prep-1-1-8.png" width="800" /><br/><br/>
+
+9. Check that the request was correctly submitted, and wait for the confirmation emails. <br/> <img src="images/Prep-1-1-9.png" width="800" /><br/><br/>
+
+<br/>
+
+**[Go to top](#top)**
+
+<br/><br/>
+
+</details>
+
+<p/>
+
+<details markdown="1">
+
+<summary>2 - Download the installation files</summary>
+
+Four installation files are required for the setup of this demonstration.
+
+To set up IBM Operational Decision Manager (ODM): <br/>
+• <a href="./files/Customer Service.zip" target="_blank" rel="noreferrer">Customer Service.zip</a> <br/>
+• <a href="./files/Get Request Details.zip" target="_blank" rel="noreferrer">Get Request Details.zip</a>
+
+To set up watsonx Orchestrate: <br/>
+• <a href="./files/XXX FocusCorp Customer Service.json" target="_blank" rel="noreferrer">XXX FocusCorp Customer Service.json</a> <br/> 
+• <a href="./files/XXX FocusCorp Get data from CRM.json" target="_blank" rel="noreferrer">XXX FocusCorp Get data from CRM.json</a>
+
+**Customer Service.zip** contains the business rule decision service driving the customer service decisions. **Get Request Details.zip** contains some rules that are used to simulate access to the FocusCorp CRM. The rules are simply providing the customer and purchase details based on a customer and purchase ID. This service is used to create the ‘FocusCorp get data from CRM’ skill. The two .json files (**XXX FocusCorp Customer Service.json** and **XXX FocusCorp Get data from CRM.json**) are the skills configuration files that are used to make the skill creation faster in watsonx Orchestrate.
+
+Download these four files on your computer to have them ready to configure these two components.
+
+<br/>
+
+**[Go to top](#top)**
+
+<br/><br/>
+
+</details>
+
+### **VALIDATE YOUR ENVIRONMENT AND BOOKMARK YOUR IDS / URLS**
+
+<details markdown="1">
+
+<summary>1 - Check your Cloud Pak for Business Automation install</summary>
+
+After 4-5 hours, your Cloud Pak for Business Automation (CP4BA) should be ready. After requesting your CP4BA, you will receive a series of emails from IBM Technology Zone regarding the progress of your request.
+
+1. Check for an email with the subject **Pak Installer – CloudPakInstalled** (1). Add your **Pak Installer Portal URL** (2) into your notebook. <br/> <img src="images/Prep-2-1-1.png" width="800" /><br/>
+
+2. Wait for ODM to be installed. <br/> <inline-notification text="At this stage, it will take around 3-4 hours to have ODM fully installed onto your environment."></inline-notification>
+
+3. Click your **Pak Installer Portal URL**. <br/> <img src="images/Prep-2-1-3.png" width="800" /><br/>
+
+4. Click the **Cloud Pak Console** tab. <br/> <img src="images/Prep-2-1-4.png" width="800" /><br/>
+
+5. Check that the **Decision Console ODM** credentials and URLs are available. <br/> <inline-notification text="If nothing is displayed in this section, you will have to wait a bit more for the installation to be completed."></inline-notification> <br/> <img src="images/Prep-2-1-5.png" width="800" /><br/>
+
+6. Add the following information to your notebook: **Decisions Admin Username** and **Decisions Admin Password** (1), **Decision Center URL** (2), **Decision Server Console URL** (3), **Designer URL** (4). <br/> <img src="images/Prep-2-1-6.png" width="800" /><br/>
+
+7. Add the CPD URL of your CP4BA install to your notebook. <br/> <inline-notification text="Copy only the section highlighted in blue. It will be used to configure the discovery service in watsonx Orchestrate."></inline-notification> <br/> <img src="images/Prep-2-1-7.png" width="800" /><br/>
+
+<br/>
+
+**[Go to top](#top)**
+
+<br/><br/>
+
+</details>
+
+<p/>
+
+<details markdown="1">
+
+<summary>2 - Generate your API key</summary>
+
+1. Open the **Designer URL** from your notebook and select **Enterprise LDAP**. <br/> <img src="images/Prep-2-2-1.png" width="800" /><br/>
+
+2. For the **Username** and **Password** fields (1), use the **Decisions Admin Username** and **Decisions Admin Password** credentials from your notebook. Click **Log in** (2). <br/> <img src="images/Prep-2-2-2.png" width="800" /><br/>
 
 <br/>
 
