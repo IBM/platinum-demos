@@ -12,15 +12,16 @@ banner: images/wxo_100_script_banner.jpg
 
 Today we’ll see how IBM watsonx Orchestrate uses conversational AI to help sales professionals get their work done quickly.
 
-Insurance sales agents spend their days doing many tasks. Much of their time is spent taking care of existing clients, but an important part of being an insurance agent is finding new customers.<br/><br/>We’ll look at how watsonx Orchestrate performs a series of tasks that traditionally require the use of multiple systems. Because they use so many systems and applications in a day, agents find it cumbersome to constantly switch between them.
+Insurance sales agents spend their days doing many tasks. Much of their time is spent taking care of existing clients, but an important part of being an insurance agent is finding new customers.<br/><br/>We’ll look at how watsonx Orchestrate performs a series of tasks that traditionally require the use of multiple systems. Because agents use so many systems and applications in a day, they find it cumbersome to constantly switch between them.
 
 Let’s look at how we can help agents become more efficient and effective in carrying out these daily responsibilities. Prior to watsonx Orchestrate, agents in an insurance office dedicated a few hours per week to sending prospecting emails for upsell and cross-sell. The steps of this process were: 
 1.	Search Salesforce for customers that meet certain criteria.
 2.	Determine the best cross-sell products to offer each customer.
-3.	Write a customized email to each customer.
-4.	Send each customer an e-mail.
+3.	Send a customized email to each customer.
 
-We will see in the demo how IBM watsonx Orchestrate can assist agents in performing this sequence of tasks. 
+We will see in the demo how IBM watsonx Orchestrate can assist agents in performing this sequence of tasks within a single chat interface. <br/><br/>
+
+Let's get started.
 
 <br/>
 </details>
@@ -33,9 +34,9 @@ We will see in the demo how IBM watsonx Orchestrate can assist agents in perform
 
 <br/>
 
-| **1.1** | **Invoke Salesforce skill using natural language** |
+| **1.1** | **Invoke a Salesforce skill using natural language** |
 | :--- | :--- |
-| **Narration** | A common task for an insurance seller is to periodically search the Salesforce CRM system for customers with recent life changes and identify upsell/cross-sell opportunities. Traditionally this step involves creating custom Salesforce reports and downloading them offline for manual review by the seller.<br/><br/> Now let’s invoke the Salesforce task using a simple natural language phrase. Orchestrate will use AI to understand our intent and can perform the correct action even when the request is ambiguous.|
+| **Narration** | A common task for an insurance agent is to periodically search the Salesforce CRM for customers with recent life changes and identify upsell/cross-sell opportunities. Traditionally this task involves creating custom Salesforce reports and downloading them offline for manual review by the agent.<br/><br/> In Orchestrate we invoke the Salesforce task using a simple natural language phrase like "Write upsell email to customers". Orchestrate will use AI to understand our intent and peform the correct action even when the request phrase is ambiguous.|
 | **Action** &nbsp; 1.1.1 | Type a natural language command **'Write upsell email to customers'**<br/> <img src="images/1-1-1.png" width="800" /> |
 | **Narration** | In this first step of the upsell automation, watsonx Orchestrate automatically connects to Salesforce using an API to query multiple data fields and retrieve a list of customers with recent life changes. Instead of offline reports, the customer data is neatly displayed in a table within Orchestrate's chat interface.<br/><br/>In this case, the agent reviews the list of customers and decides on a cross-sell opportunity with John Collins because he has a child who is about to turn twenty-six. In the US, twenty-six is a milestone requiring children to acquire independent health insurance coverage. Other countries set different age limits for various family milestones.|
 | **Action** &nbsp; 1.1.2 | Select **John Collins** (1) from the table and click **Apply** (2) in the chat window. <br/> <img src="images/1-1-2.png" width="800" /> |
