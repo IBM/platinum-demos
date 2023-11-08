@@ -36,9 +36,9 @@ Let's get started.
 
 | **1.1** | **Invoke a Salesforce skill using natural language** |
 | :--- | :--- |
-| **Narration** | A common task for an insurance agent is to periodically search the Salesforce CRM for customers with recent life changes and identify upsell/cross-sell opportunities. Traditionally this task involves creating custom Salesforce reports and downloading them offline for manual review by the agent.<br/><br/> In Orchestrate we invoke the Salesforce task using a simple natural language phrase like "Write upsell email to customers". Orchestrate will use AI to understand our intent and peform the correct action even when the request phrase is ambiguous.|
+| **Narration** | A common task for an insurance agent is to periodically search the Salesforce CRM for customers with recent life changes and identify upsell/cross-sell opportunities. Traditionally this task involves creating custom Salesforce reports and downloading them offline for manual review by the agent.<br/><br/> In Orchestrate, we invoke the Salesforce task using a simple natural language phrase like "Write upsell email to customers". Orchestrate will use AI to understand our intent and peform the correct action even when the request phrase is ambiguous.|
 | **Action** &nbsp; 1.1.1 | Type a natural language command **'Write upsell email to customers'** (1) and click the **Send arrow** (2) in the chat window.<br/><img src="images/1-1-1.png" width="800" /> |
-| **Narration** | Orchestrate runs the Salesforce task by automatically connecting to an API in the backend that queries multiple data fields and retrieves a list of customers with recent life changes. Instead of offline reports, the customer data is neatly displayed in a table within Orchestrate's chat interface.<br/><br/>In our case, the agent reviews the list of customers and decides on a cross-sell opportunity with the customer John Collins because he has a child who is about to turn twenty-six. In the US, twenty-six is a milestone requiring children to acquire independent health insurance coverage. Other countries set different age limits for various family milestones.|
+| **Narration** | Orchestrate runs the Salesforce task by automatically connecting to an API in the backend that queries multiple data fields and retrieves a list of customers with recent life changes. Instead of offline reports, the customer data is neatly displayed in a table within Orchestrate's chat interface.<br/><br/>In our case, the agent reviews the list of customers and decides on a cross-sell opportunity with the customer John Collins because he has a child that is about to turn twenty-six. In the US, twenty-six is a milestone requiring children to acquire independent health insurance coverage. Other countries set different age limits for various family milestones.|
 | **Action** &nbsp; 1.1.2 | Select **John Collins** (1) from the table and click **Apply** (2) in the chat window. <br/> <img src="images/1-1-2.png" width="800" /> |
 
 <br/>
@@ -62,11 +62,9 @@ Let's get started.
 | **Narration** | The next task is to determine which products to recommend for the selected customer.<br/><br/> The customer details from Salesforce are automatically submitted into Orchestrate's built-in decision engine and the upsell recommendations are displayed.
 Behind the scenes, the recommendation engine applies business logic to many different factors specific to the selected customer, such as the child’s age, pre-existing conditions, and current coverage.<br/><br/>In the case of John Collins, the decision engine recommends three health insurance plans suitable for his child: Bronze-level Marketplace Plan, Silver-level Marketplace Plan and Short-term Health Insurance.| 
 
-| **Action** &nbsp; 2.1.1 | Highlight the three insurance plans recommended by the decision skill.
+| **Action** &nbsp; 2.1.1 | Highlight the three insurance plans recommended by the decision skill.<br/> <img src="images/2-1-1.png" width="800" /> |
 
 <inline-notification text="Note that this form would usually be hidden as it is an intermediate step, but it’s shown here for clarity."></inline-notification>
-
-<br/> <img src="images/2-1-1.png" width="800" /> |
 
 <br/>
 
