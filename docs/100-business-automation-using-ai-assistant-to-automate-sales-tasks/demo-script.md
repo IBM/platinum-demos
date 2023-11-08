@@ -1,5 +1,5 @@
 ---
-title: Automating sales with watsonx Orchestrate <br/> 100-level live demo
+title: Improving sales productivity with watsonx Orchestrate <br/> 100-level live demo
 layout: demoscript
 banner: images/wxo_100_script_banner.jpg
 ---
@@ -10,7 +10,7 @@ banner: images/wxo_100_script_banner.jpg
 
 <summary>Introduction</summary>
 
-Today we’ll see how IBM watsonx Orchestrate uses conversational AI to help sales professionals get their work done quickly.
+Today we’ll see how IBM watsonx Orchestrate uses conversational AI to help sales professionals be more productive.
 
 Insurance sales agents spend their days doing many tasks. Much of their time is spent taking care of existing clients, but an important part of being an insurance agent is finding new customers.<br/><br/>We’ll look at how watsonx Orchestrate performs a series of tasks that traditionally require the use of multiple systems. Because agents use so many systems and applications in a day, they find it cumbersome to constantly switch between them.
 
