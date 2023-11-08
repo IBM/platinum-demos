@@ -35,6 +35,8 @@ Let’s get started!
 | **Action** &nbsp; 1.1.1 | On the RHAAP console, click **Templates**. <br/> <img src="images/1-1-1.png" width="800" /> |
 | **Narration** | The job template defines how automations run and leverage Ansible playbooks that specify the detailed steps of an IT task. Ansible playbooks make it easier for IT teams to codify operational knowledge and ensure that the same actions are performed consistently with minimal to no operator intervention. |
 
+<br/>
+
 | **1.2** | **Understand XYZ application dependencies** |
 | :--- | :--- |
 | **Narration** | The Instana Action Framework integrates with the Ansible automation platform. You can use this framework to create and manage user-defined automation actions or leverage any automations already defined in Ansible to automatically remediate incoming events. |
@@ -123,6 +125,8 @@ Let’s get started!
 | **5.1** | **Verify remediation execution status in Instana** |
 | :--- | :--- |
 | **Action** &nbsp; 5.1.1 | Click **Action History page**. <br/> <img src="images/4-1-1.png" width="400" /> |
+
+<br/>
 
 | **5.2** | **Verify remediation execution status in Ansible** |
 | :--- | :--- |

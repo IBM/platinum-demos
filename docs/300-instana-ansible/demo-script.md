@@ -35,6 +35,8 @@ Let’s get started!
 | **Action** &nbsp; 1.1.1 | On the RHAAP console, click **Templates**. <br/> <img src="images/1-1-1.png" width="800" /> |
 | **Narration** | The job template defines how automations run and leverage Ansible playbooks that specify the detailed steps of an IT task. Ansible playbooks make it easier for IT teams to codify operational knowledge and ensure that the same actions are performed consistently with minimal to no operator intervention. |
 
+<br/>
+
 | **1.2** | **Explore the action framework in Instana** |
 | :--- | :--- |
 | **Narration** | The Instana Action Framework integrates with the Ansible automation platform. You can use this framework to create and manage user-defined automation actions or leverage any automations already defined in Ansible to automatically remediate incoming events. |
@@ -88,6 +90,8 @@ Let’s get started!
 | **Action** &nbsp; 3.1.1 | Click **Run** in the **Associated Actions** tile. <br/> <img src="images/3-1-1.png" width="800" /> |
 | **Narration** | Each Instana issue contains the severity, start/end times, metric charts showing metric values relevant to the problem. It also lists the actions that can be taken to remediate this event. |
 
+<br/>
+
 | **3.2** | **Understand the execution flow of the remediation** |
 | :--- | :--- |
 | **Action** &nbsp; 3.2.1 | Select the **Hosts Limit** (1) and **Target Agent** (2) values. Click **Run action** (3). <br/> <img src="images/3-2-1.png" width="800" /> |
@@ -110,6 +114,8 @@ Let’s get started!
 | **4.1** | **Check Instana's action execution logs** |
 | :--- | :--- |
 | **Action** &nbsp; 4.1.1 | Click **Action History page**. <br/> <img src="images/4-1-1.png" width="400" /> |
+
+<br/>
 
 | **4.2** | **Check Ansible job execution logs** |
 | :--- | :--- |
