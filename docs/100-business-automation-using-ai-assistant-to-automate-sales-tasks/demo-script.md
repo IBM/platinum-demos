@@ -1,5 +1,5 @@
 ---
-title: Improving sales productivity with watsonx Orchestrate <br/> 100-level live demo
+title: Using watsonx Orchestrate to improve sales productivity<br/> 100-level live demo
 layout: demoscript
 banner: images/wxo_100_script_banner.jpg
 ---
