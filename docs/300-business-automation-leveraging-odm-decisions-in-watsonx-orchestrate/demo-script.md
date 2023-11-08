@@ -13,9 +13,9 @@ outputtomarketing: 4
 
 <summary>Introduction</summary>
 
-Today we’ll see how IBM’s watsonx Orchestrate capabilities are used to manage and secure content across an organization at scale. We’ll see how using IBM watsonx Orchestrate  enhances call center agents' productivity, increases compliance with the organization business procedures, and reduces risk of inconsistency in the decision making process.
+Today we’ll see how watsonx Orchestrate can be used to enhance call center agents' productivity, increase compliance with the organization's business procedures, and reduce risk of inconsistency in the decision making process.
 
-Using a customer service scenario, we’ll see how to easily create a new decision automation skill from a deployed IBM Operational Decision Manager (ODM) application using a watsonx Orchestrate discovery service. We’ll look at how to create a new watsonx Orchestrate skill in just a few clicks, starting from an existing ODM service deployed on premises. Then, we’ll see how the built-in skills workflow capability is used to feed that new skill with existing data.
+Using a customer service scenario, we’ll see how to easily create a new decision automation skill from a deployed IBM Operational Decision Manager (ODM) application using a watsonx Orchestrate discovery service. We’ll look at how to create a new watsonx Orchestrate skill in just a few clicks, starting from an existing ODM service deployed on premises. Then, we’ll see how the built-in skillflow capability is used to ...
 
 We’re using a customer service example, but the same discovery service can be used to leverage existing deployed decision services across your enterprise.
 
@@ -29,43 +29,44 @@ Let’s get started!
 
 <details markdown="1">
 
-<summary>1 - Introducing the deployed decision service</summary>
+<summary>1 - Reviewing the Operational Decision Manager decision</summary>
 
 <br/>
 
 | **1.1** | **Introduce the customer service decision** |
 | :--- | :--- |
-| **Narration** | When receiving a customer claim through the call center, agents must recover the customer data and access different systems to register the claim, as well as explain to their customers if they will be reimbursed or what to do to return an item. FocusCorp wants to improve their employee productivity by providing them a way to have direct access to the same information that they have in their backend systems. The item return validation is one of them. <br/><br/> FocusCorp uses ODM to process their customer return request validation. FocusCorp has deployed a decision service on their backend system to manage the return policy for their customers' mobile application, as well as a backend application that processes the return requests in batch mode each night. <br/><br/> FocusCorp is going to expose this automated decision as a skill to make it easily accessible to the call center agents. Before seeing how to create such a skill, let’s have a look to the existing deployed application developed with ODM. |
+| **Narration** | When receiving a customer claim through the call center, agents must retrieve customer data and access different systems to register the claim, as well as explain to their customers if they will be reimbursed or what to do to return an item. FocusCorp wants to improve employee productivity by providing employees direct access to information in their backend systems. (For example, customer service reps need to know immediately whether a return is approved, so they can communicate this over the phone with the customer.) <br/><br/> FocusCorp uses ODM to process their customer return request validation. (They've deployed an ODM decision service that approves return requests that come from all the different applications..."approval") <br/><br/> FocusCorp wants to make the automated approval decision easily accessible to call center agents through a watsonx Orchestrate skill. Before seeing how to create such a skill, let’s look at the existing application in ODM. |
 | **Action** &nbsp; 1.1.1 | Show the ODM business console screen that was opened during the demo preparation. Select **Enterprise LDAP** (1), enter the Username **cp4admin** (2), enter the **password** (3) you copied in your notebook, and click **Log in** (4). <inline-notification text="The Decision Center console will start from the last page you were in when you left during your last connection."></inline-notification> <img src="images/1-1-1.png" width="800" /> |
 | **Action** &nbsp; 1.1.2 | Click the **LIBRARY** tab. <br/> <img src="images/1-1-2.png" width="800" /> |
-| **Narration** | The return policy is managed by FocusCorp's subject mater experts. The return validation policy is defined in a dedicated business console called the Decision Center. Let’s see how the return policy is implemented in ODM. |
-| **Action** &nbsp; 1.1.3 | Click the **Customer service** decision service. <br/> <img src="images/1-1-3.png" width="800" /> |
+| **Narration** | The return policy is managed in ODM by FocusCorp's retail business experts, using a dedicated business console called Decision Center. Let’s see how the return policy is implemented in ODM. |
+| **Action** &nbsp; 1.1.3 | Click the **Customer Service** decision service. <br/> <img src="images/1-1-3.png" width="800" /> |
 | **Action** &nbsp; 1.1.4 | Click the **main** branch. <br/> <img src="images/1-1-4.png" width="800" /> |
 | **Action** &nbsp; 1.1.5 | Click the **Decision Artifacts** tab, if you are not already on that tab. <br/> <img src="images/1-1-5.png" width="800" /> |
 | **Action** &nbsp; 1.1.6 | Click the **X** to remove any decision artifact filters (if any). <br/> <img src="images/1-1-6.png" width="800" /> |
 | **Action** &nbsp; 1.1.7 | Click **Main customer service flow**. <br/> <img src="images/1-1-7.png" width="800" /> |
 
-| **1.2** | **Give a decision service overview** |
+| **1.2** | **Provide an overview of the decision service** |
 | :--- | :--- |
-| **Narration** | The return validation policy is managed end to end using ODM. The business logic is composed of different rule artifacts like ruleflows, decision tables and business rules expressed in natural language. <br/><br/> The main rule flow is the backbone of the decision services. It synchronizes the rules guiding the fraud detection, the warranty validation, the items return policy as well as the refund conditions. |
+| **Narration** | The return validation policy is managed end to end using ODM. The business logic is composed of different rule artifacts like ruleflows, decision tables and business rules expressed in natural language. <br/><br/> The main rule flow is the backbone of the decision service. It synchronizes a variety of rules that cover fraud detection, warranty validation, return policy and refund conditions. |
 | **Action** &nbsp; 1.2.1 | Select the **Issue refund** box (1) and then the **Refund flow** link (2). <br/> <img src="images/1-2-1.png" width="800" /> |
-| **Action** &nbsp; 1.2.2 | Select the **Shipment fee** box (1) and then the **Shipment fee** link (2) to open the decision table. <br/> <img src="images/1-2-2.png" width="800" /> |
-| **Narration** | Let’s have a look at one of the decision artifacts. The 'Shipment fee' decision table defined the fixed return fee depending on the location of the customer and the type of item being returned. |
+| **Action** &nbsp; 1.2.2 | Select the **Shipping fee** box (1) and then the **Shipping fee** link (2) to open the decision table. <br/> <img src="images/1-2-2.png" width="800" /> |
+| **Narration** | Let’s look at one of the decision artifacts. The 'Shipping fee' decision table defines the fixed return fee depending on the location of the customer and the type of item being returned. |
 | **Action** &nbsp; 1.2.3 | Hover your cursor over the row header to display the business rule. <br/> <img src="images/1-2-3.png" width="800" /> |
 | **Narration** | Each row of the table corresponds to a specific business rule that can also be seen in natural language. In this rule, the return fee for grocery items in the USA is 15 dollars. A message is also concatenated to the response to document the decision. |
 | **Action** &nbsp; 1.2.4 | Click **Main customer service flow**. <br/> <img src="images/1-2-4.png" width="800" /> |
-| **Narration** | The end-to-end return policy is managed by a flow of business rules and decisions tables that assess the fraud, evaluate the warranty conditions, decide if a product can or cannot be returned, and compute the return fee and reimbursement amount. This decision service is deployed in a production environment and is used by the FocusCorp customer portal, as well as the FocusCorp business process. Let’s have a look at the execution server. |
+| **Narration** | The end-to-end return policy is managed by a flow of business rules and decisions tables that assess the fraud, evaluate the warranty conditions, decide if a product can or cannot be returned, and compute the return fee and reimbursement amount. This decision service is deployed in a production environment and is invoked by FocusCorp's customer portal and by its business processes. Let’s look at the execution server. |
 
-| **1.3** | **Introduce the production rule execution server** |
+| **1.3** | **Introduce the production Rule Execution Server** |
 | :--- | :--- |
 | **Action** &nbsp; 1.3.1 | Show the ODM **Rule Execution Server** screen that was opened during the demo preparation. <br/> <img src="images/1-3-1.png" width="800" /> |
-| **Narration** | The ODM Rule Execution Server is a console to monitor the rule applications that have been deployed on a given server. From this console, the rule administrator can test a rule application, trace its usage, run diagnostics, and access some execution traces when required. |
+| **Narration** | The ODM Rule Execution Server is a console to monitor rule applications deployed on a given server. From this console, the rule administrator can test a rule application, trace its usage, run diagnostics, and access execution traces when required. |
 | **Action** &nbsp; 1.3.2 | Click the **Explorer** tab. <br/> <img src="images/1-3-2.png" width="800" /> |
 | **Action** &nbsp; 1.3.3 | Click **FocusCorp_CustomerService**. <br/> <img src="images/1-3-3.png" width="800" /> |
 | **Narration** | Two RuleApps are deployed on this production environment. The 'customer service' RuleApp is driving the return policy that we have just seen in the business console. |
 | **Action** &nbsp; 1.3.4 | Click **FocusCorp_Customer_Service**. <br/> <img src="images/1-3-4.png" width="800" /> |
+| **Narration** | The customer service application has one ruleset with two input parameters (the customer and the purchase to be returned) and one output parameter (the return decision). The decision service and the ruleset it contains are versioned, so a user can decide to use a very specific version, or the latest deployed version of the RuleApp. |
 | **Action** &nbsp; 1.3.5 | Point out and explain the **FocusCorp_Customer_Service** ruleset. <br/> <img src="images/1-3-5.png" width="800" /> |
-| **Narration** | The customer service application has one ruleset with two input parameters (the customer and the purchase to be returned) and one output parameter (the return decision). The decision service and the ruleset that it contains are versioned, so a user can decide to use a very specific version, or the latest deployed version of the RuleApp. <br/><br/> Let’s now see how to reuse these deployed decisions using watsonx Orchestrate to improve the productivity of the call center agents. |
+| **Narration** | Let’s now see how to leverage these deployed decisions using watsonx Orchestrate to improve the productivity of call center agents. |
 
 **[Go to top](#place1)**
 
@@ -84,13 +85,13 @@ Let’s get started!
 | **2.1** | **Connect the discovery service to the ODM Rule Execution Server** |
 | :--- | :--- |
 | **Action** &nbsp; 2.1.1 | Log in to your watsonx Orchestrate instance. <br/> <img src="images/2-1-1.png" width="800" /> |
-| **Narration** | Let’s now log in to watsonx Orchestrate. As a citizen developer, I have the ‘Builder’ profile in Orchestrate. This means that I’m entitled to create new skills and enhance them at any time. I can then access the skills capabilities in watsonx Orchestrate. |
+| **Narration** | Let’s now log in to watsonx Orchestrate. As a citizen developer, I have the ‘Builder’ profile in Orchestrate. This means I’m entitled to create new skills, and enrich and publish them at any time. |
 | **Action** &nbsp; 2.1.2 | Click the **menu slider** icon. <br/> <img src="images/2-1-2.png" width="800" /> |
 | **Action** &nbsp; 2.1.3 | Click **Skills**. <br/> <img src="images/2-1-3.png" width="800" /> |
 | **Action** &nbsp; 2.1.4 | Click **Add skills**. <br/> <img src="images/2-1-4.png" width="800" /> |
-| **Narration** | watsonx Orchestrate offers a wide variety of skills that can be added as a personal or team skill. Let’s create a new skill. |
+| **Narration** | watsonx Orchestrate offers a wide variety of skills that can be added for an individual or the whole team. Let’s create a new skill. |
 | **Action** &nbsp; 2.1.5 | Click the **IBM Cloud Pak for Business Automation - On premises** tile. <br/> <img src="images/2-1-5.png" width="800" /> |
-| **Narration** | There are various ways to create a skill in watsonx Orchestrate. One of them is to use Automation Discovery Services (ADS). These services allow you to create new skills from IBM Cloud Pak for Business Automation that are deployed on SaaS, on premises or from RPA ones. The automation services that we want to leverage are deployed on a containerized version of ODM on premises deployed on an IBM Cloud cluster. <br/><br/> To access this environment, an API key has been generated by the Cloud Pak for Business Automation cluster administrator. With this API key and the cluster URL, I can set up the discovery service and let it access all the deployed automation on this specific environment. |
+| **Narration** | There are various ways to create a skill in watsonx Orchestrate. One of them is to use discovery services to create new skills from IBM Cloud Pak for Business Automation that are deployed on SaaS, on premises or from RPA ones. The automation services that we want to leverage are deployed on a containerized version of ODM on premises deployed on an IBM Cloud cluster. <br/><br/> To access this environment, an API key has been generated by the Cloud Pak for Business Automation cluster administrator. With this API key and the cluster URL, I can set up the discovery service and let it access all the deployed automation on this specific environment. |
 | **Action** &nbsp; 2.1.6 | Enter your **Username** (1), **API key** (2) and **Connection URL** (3) you stored in your notebook in the demo preparation. Click **Connect** (4). <br/> <img src="images/2-1-6.png" width="800" /> |
 
 | **2.2** | **Create the customer service skill from the ODM RuleApp** |
