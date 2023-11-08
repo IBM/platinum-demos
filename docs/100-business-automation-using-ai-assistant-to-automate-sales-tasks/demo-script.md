@@ -61,7 +61,6 @@ Let's get started.
 | :--- | :--- |
 | **Narration** | The next task is to determine which products to recommend for the selected customer.<br/><br/> The customer details from Salesforce are automatically submitted into Orchestrate's built-in decision engine and the upsell recommendations are displayed.
 Behind the scenes, the recommendation engine applies business logic to many different factors specific to the selected customer, such as the child’s age, pre-existing conditions, and current coverage.<br/><br/>In the case of John Collins, the decision engine recommends three health insurance plans suitable for his child: Bronze-level Marketplace Plan, Silver-level Marketplace Plan and Short-term Health Insurance.| 
-
 | **Action** &nbsp; 2.1.1 | Highlight the three insurance plans recommended by the decision skill.<br/> <img src="images/2-1-1.png" width="800" /> |
 
 <inline-notification text="Note that this form would usually be hidden as it is an intermediate step, but it’s shown here for clarity."></inline-notification>
