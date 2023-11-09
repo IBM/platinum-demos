@@ -71,13 +71,13 @@ Let's get started.
 
 <details markdown="1">
 
-<summary>3 - Sending a personalized email for athe cross-sell opportunity</summary>
+<summary>3 - Sending a personalized email for the cross-sell opportunity</summary>
 
 <br/>
 
 | **3.1** | **Use generative AI to write a personalized email** |
 | :--- | :--- |
-| **Narration** | Personalized emails increase the likelihood of conversion. watsonx Orchestrate uses one of IBM's Large Language Models (LLMs) via the watsonx.ai platform to generate a targeted email for the selected customer.<br/> Perfecting the AI prompt to generate a properly formatted email is typically a time-consuming activity, however, Orchestrate automatically inserts a pre-written AI prompt for the agent which includes dynamically inserted customer data in the prompt input field.|
+| **Narration** | Personalized emails increase the likelihood of conversion. watsonx Orchestrate uses one of IBM's Large Language Models (LLMs) via the watsonx.ai platform to generate a targeted email for the selected customer.<br/> Perfecting the AI prompt to generate a properly formatted email is typically a time-consuming activity. To make this quicker, Orchestrate automatically inserts a pre-written AI prompt that includes dynamically inserted customer data in the prompt input field.|
 | **Action** &nbsp; 3.1.1 | In the prompt field, **highlight** the input text with embedded recommended products to show how the prompt has been populated using data taken from the decision engine.<br/> <img src="images/3-1-1.png" width="800" /> |
 | **Action** &nbsp; 3.1.2 |  <br/> <img src="images/3-1-2.png" width="800" /> |
 
