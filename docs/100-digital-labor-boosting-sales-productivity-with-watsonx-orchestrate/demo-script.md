@@ -18,7 +18,7 @@ Prior to watsonx Orchestrate, agents in an insurance office dedicated a few hour
 2.	Determine the best cross-sell products to offer each customer.
 3.	Send a customized email to each customer.
 
-Let’s look at how watsonx Orchestrate can assist agents in performing this sequence of tasks. <br/>
+We'll look at how watsonx Orchestrate can assist agents in performing this sequence of tasks. <br/>
 Let's get started.
 
 <br/>
@@ -34,9 +34,9 @@ Let's get started.
 
 | **1.1** | **Invoke a Salesforce skill using natural language** |
 | :--- | :--- |
-| **Narration** | A common task for an insurance agent is to periodically search the Salesforce CRM for customers with recent life changes and identify upsell/cross-sell opportunities. Traditionally this task involves creating custom Salesforce reports and downloading them offline for manual review by the agent.<br/><br/> In Orchestrate, the agent invokes the Salesforce task using the simple natural language phrase: "Write upsell email to customers". Orchestrate uses AI to understand our intent and peform the correct action, even when the request phrase is ambiguous.|
+| **Narration** | A common task for an insurance agent is to periodically search the Salesforce CRM for customers with recent life changes to whom they can make upsell/cross-sell offers. Traditionally this task involves creating custom Salesforce reports and downloading them offline for manual review by the agent.<br/><br/> In Orchestrate, the agent invokes the Salesforce task using the simple natural language phrase: "Write upsell email to customers". Orchestrate uses AI to understand the sales agent's intent and peform the correct action, even when the request phrase is ambiguous.|
 | **Action** &nbsp; 1.1.1 | Type the natural language command **'Write upsell email to customers'** (1) and click the **Send arrow** (2) in the chat window.<br/><img src="images/1-1-1.png" width="800" /> |
-| **Narration** | Orchestrate runs the Salesforce task by connecting in the backend to an API that queries multiple data fields and retrieves a list of customers with recent life changes. The returned customer data is neatly displayed in a table within Orchestrate's chat interface.<br/><br/>The agent reviews the list of customers and pursues a cross-sell opportunity with John Collins who has a child that is about to turn twenty-six. In the US, twenty-six is a milestone requiring children to acquire independent health insurance coverage (other countries set different age limits for various family milestones).|
+| **Narration** | Orchestrate runs the Salesforce task by connecting to a backend API that retrieves a list of customers with recent life changes. The returned customer data is neatly displayed in a table within Orchestrate's chat interface.<br/><br/>The agent reviews the list of customers and pursues a cross-sell opportunity with John Collins who has a child that is about to turn twenty-six. In the US, twenty-six is a milestone requiring children to acquire independent health insurance coverage (other countries set different age limits for various family milestones).|
 | **Action** &nbsp; 1.1.2 | Select **John Collins** (1) from the table and click **Apply** (2) in the chat window. <br/> <img src="images/1-1-2.png" width="800" /> |
 
 <br/>
