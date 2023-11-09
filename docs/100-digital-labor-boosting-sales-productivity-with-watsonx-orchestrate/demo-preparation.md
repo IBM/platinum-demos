@@ -16,18 +16,19 @@ banner: images/wxo_100_prep_banner.jpg
 | **Demo products** | watsonx Orchestrate |
 | **Demo capabilities** | Salesforce skill; watsonx.ai generative AI skill; Microsoft Outlook skill; Embedded decision engine skill|
 | **Demo script** | A complete demo script is on the second tab above. <br/><br/> This demo script has multiple tasks that each have multiple steps. In each step, you have the details about what you need to do (**Actions**), what you can say while delivering this demo step (**Narration**), and what screenshots you will see.<br/><br/>This demo script is a suggestion, and you are welcome to customize based in your sales opportunity. Most importantly, practice this demo in advance. If the demo seems easy for you to execute, the customer will focus on the content. If it seems difficult for you to execute, the customer will focus on your delivery. |
-| **Required versions** | watsonx Orchestrate tenant on Enterprise Edition. |
 | **How to get support** | • Open a support case at <a href="https://techzone.ibm.com/help" target="_blank" rel="noreferrer">IBM Technology Zone Help</a> regarding issues with reserving and provisioning Tech Zone environments.<br/>• Contact <a href="https://ibm-cloud.slack.com/archives/C0216F39ACU" target="_blank" rel="noreferrer">#platinumdemos-automation-support</a> regarding issues with setting up and running this demo. |
 
 ### **PREPARE TO GIVE THE DEMO**
 <details markdown="1">
 
-<summary>Access Demo Tenant</summary>
+<summary>Access demo tenant</summary>
+**For IBM Employees:** If you are not onboarded to the demo tenant or account, contact one of the admins listed [here](https://ibm.ent.box.com/notes/1288049469199?s=abq1otgk14w5dnfveyz6hry7lgu1pt3r).<br/>
+**For Business Partners:** Contact Burt Hughes (buhughes@us.ibm.com)
 
-You will need access to the [production tenant](https://dl.watson-orchestrate.ibm.com/home) for sales enablement. 
+You will need access to a [production tenant](https://dl.watson-orchestrate.ibm.com/home). 
 <br/><br/>If you have been added to multiple accounts on the above production tenant, you will see a list of available account names.<br/> Select the **BP Enablement NA EE** and login with your IBM email.<br/><img src="images/prep-1-1-tenants.jpg" width="600" /><br/>If you have been added to a single account on the above production tenant, you won't be shown a list of available accounts and will be logged straight into the account after entering your IBM email.<br/><br/>
 
-**If you are not onboarded to the demo tenant or account**, contact one of the admins listed [here](https://ibm.ent.box.com/notes/1288049469199?s=abq1otgk14w5dnfveyz6hry7lgu1pt3r).
+
 </details>
 
 <p/>
