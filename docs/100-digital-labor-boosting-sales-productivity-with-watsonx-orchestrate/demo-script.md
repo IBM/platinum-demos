@@ -12,15 +12,13 @@ banner: images/wxo_100_script_banner.jpg
 
 Today we’ll see how watsonx Orchestrate uses conversational AI to help sales professionals be more productive.
 
-Insurance sales agents spend their days doing many tasks while constantly switching between multiple applications. Much of their time is spent taking care of existing clients, but an important part of being a sales agent is finding new customers.<br/><br/>
-
+Insurance sales agents spend their days doing many tasks while constantly switching between multiple applications. Much of their time is spent servicing existing clients, but an important part of being a sales agent is finding new business.<br/>
 Prior to watsonx Orchestrate, agents in an insurance office dedicated a few hours per week to sending prospecting emails for upsell and cross-sell. The steps of this process are: 
 1.	Search Salesforce for customers that meet certain cross-sell criteria.
 2.	Determine the best cross-sell products to offer each customer.
 3.	Send a customized email to each customer.
 
-Let’s look at how watsonx Orchestrate can assist agents in performing this sequence of tasks. <br/><br/>
-
+Let’s look at how watsonx Orchestrate can assist agents in performing this sequence of tasks. <br/>
 Let's get started.
 
 <br/>
