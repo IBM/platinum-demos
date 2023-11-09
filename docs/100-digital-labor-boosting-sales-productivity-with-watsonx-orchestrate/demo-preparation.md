@@ -21,7 +21,7 @@ banner: images/wxo_100_prep_banner.jpg
 ### **PREPARE TO GIVE THE DEMO**
 <details markdown="1">
 
-<summary>Access demo tenant</summary>
+<summary>Access the demo tenant</summary>
 
 **For IBM Employees:** If you are not onboarded to a demo tenant or account, contact one of the admins listed [here](https://ibm.ent.box.com/notes/1288049469199?s=abq1otgk14w5dnfveyz6hry7lgu1pt3r).<br/>
 
@@ -37,7 +37,7 @@ You will need access to a [production tenant](https://dl.watson-orchestrate.ibm.
 <p/>
 <details markdown="1">
 
-<summary>Navigate to Team Skills</summary>
+<summary>Navigate to team skills</summary>
 
 When you log into watsonx Orchestrate, the default view is **personal skills**. To run the demo, change the view to **team skills**.<br/><img src="images/prep-1-2-teamskills.jpg" width="600" />
 </details>
