@@ -8,7 +8,7 @@ banner: images/wxo_100_prep_banner.jpg
 
 <span id="top"></span>
 
-<inline-notification text="<strong>This 100-level demo is appropriate for both Sellers and Tech Sellers, and does not require technical skills.</strong> This demo only covers the end user view. <br/> A more in-depth 300-level demo, designed for tech sellers, will be available shortly."></inline-notification>
+<inline-notification text="<strong>This 100-level demo does not require technical skills and is appropriate for both Sellers and Tech Sellers.</strong> The demo covers the end user view. <br/> A more in-depth 300-level demo, designed for Tech Sellers, will be available shortly."></inline-notification>
 
 | **DEMO OVERVIEW** | | 
 | :---         | :--- |
