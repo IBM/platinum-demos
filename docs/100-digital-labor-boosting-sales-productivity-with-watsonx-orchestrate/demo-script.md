@@ -107,7 +107,7 @@ Let's get started.
 <br/> 
 Using an upsell/cross-sell example, we demonstrated how watsonx Orchestrate provides a conversational interface for sales agents to perform their repetitive tasks.
 
-By providing a catalog of pre-built skills, Orchestrate eliminated the need to manually move data between different backend applications. Watsonx Orchestrate streamlined the agent's work by sequencing a series of skills within a single unified interface.
+By providing a catalog of pre-built skills, Orchestrate eliminated the need to manually move data between different backend applications. Watsonx Orchestrate streamlined the agent's work by sequencing a series of skills within a single unified interface, boosting the agent's productivity and enabling them to focus on higher value work.
 
 Thank you for attending today’s presentation.
 
