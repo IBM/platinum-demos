@@ -110,7 +110,7 @@ Behind the scenes, the recommendation engine applied business logic using many d
 <br/> 
 Using watsonx Orchestrate as their AI assistant, the insurance agent had everything they needed to automate their daily repetitive task of sending a cross-sell email to an existing customer. The agent used Orchestrate's natural language chat environment to interact conversationally and perform actions in only five minutes.
 
-Using Orchestrate also eliminated the need to manually move data between systems by allowing the agent to invoke a catalog of pre-built skills that are connected to different backend applications. The agent boosted their productivity by executing a series of tasks sequentially within a single unified interface.
+Orchestrate also eliminated the need to manually move data between systems by allowing the agent to invoke a catalog of pre-built skills that are connected to different backend applications. The agent boosted their productivity by executing a series of tasks sequentially within a single unified interface.
 
 Thank you for attending today’s presentation.
 
