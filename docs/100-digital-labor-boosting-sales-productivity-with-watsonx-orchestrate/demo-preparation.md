@@ -1,5 +1,5 @@
 ---
-title: Using an AI assitant to automate sales tasks <br/> 100-level live demo
+title: Boosting sales productivity with watsonx Orchestrate<br/> 100-level live demo
 layout: preparation
 banner: images/wxo_100_prep_banner.jpg
 ---
