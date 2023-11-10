@@ -24,7 +24,7 @@ banner: images/wxo_100_prep_banner.jpg
 
 This demo is available on the Sales tenants and Enablement tenants.<br/><br/>
    **Sales tenants:** Use your IBM email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here.</a> Select the **BA Tech Sales Demo EE** account.<br/><img src="images/prep-1-2-sales-tenant.png" width="400" /><br/>If you have been added to only one account on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your IBM email.<br/><br/>
-   **Enablement tenants:** Short-term access (two week maximum) to a demo environment for enablement. Use your IBM email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here.</a> Select the **Tech Enablement 10** account.<br/>If you have been added to only one account on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your email.<br/><br/>
+   **Enablement tenants:** Short-term access (two week maximum) to a demo environment for enablement. Use your IBM email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>. Select the **Tech Enablement 10** account.<br/>If you have been added to only one account on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your email.<br/><br/>
 
 **Requesting Access**
 
@@ -40,8 +40,6 @@ If you don't have access to a tenant you can request access by submitting a <a h
 
 Use your Company email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>.<br/><br/>
 
-**Requesting Access**
-
 If you do not have access to a tenant, you can request access for your organization by submitting a <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">request here</a>.<br/><br/>
 
 </details>
@@ -52,7 +50,7 @@ If you do not have access to a tenant, you can request access for your organizat
 
 <summary>Prepare to give the demo</summary>
 
-When you log into watsonx Orchestrate, the default view is **personal skills**. To run the demo, change the view to **team skills**.<br/><img src="images/prep-1-2-teamskills.jpg" width="600" />
+When you log into watsonx Orchestrate, the default view is **Personal skills**. To run the demo, change the view to **Team skills**.<br/><img src="images/prep-1-2-teamskills.jpg" width="600" />
 </details>
 
 <p/>
