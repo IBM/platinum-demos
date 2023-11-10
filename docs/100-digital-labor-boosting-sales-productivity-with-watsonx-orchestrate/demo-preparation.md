@@ -38,7 +38,7 @@ If you don't have access to a tenant you can request access by submitting a <a h
 
 <summary>Access the demo (Business Partners)</summary>
 
-**Enablement tenants:** Short-term access (two week maximum) to a demo environment. Use your Company email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here.</a><br/><br/>Select the **BP Enablement NA EE** account.<br/><img src="images/prep-1-3-enablement-tenant.png" width="400" /><br/>If you have been added to only **one account** on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your email.<br/><br/>
+Use your Company email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here.</a> Select the **BP Enablement NA EE** account.<br/><img src="images/prep-1-3-enablement-tenant.png" width="400" /><br/>If you have been added to only **one account** on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your email.<br/><br/>
 
 **Requesting Access**
 
