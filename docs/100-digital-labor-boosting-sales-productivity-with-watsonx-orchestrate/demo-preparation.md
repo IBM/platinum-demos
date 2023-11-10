@@ -38,7 +38,7 @@ If you don't have access to a tenant you can request access by submitting a <a h
 
 <summary>Access the demo environment (Business Partners)</summary>
 
-Use your Company email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>.<br/><br/>
+Use your Company email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>.<br/>
 
 If you do not have access to a tenant, you can request access for your organization by submitting a <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">request here</a>.<br/><br/>
 
