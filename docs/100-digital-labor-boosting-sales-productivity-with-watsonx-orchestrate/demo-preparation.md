@@ -23,10 +23,11 @@ banner: images/wxo_100_prep_banner.jpg
 
 <summary>Access the demo tenant</summary>
 
-**For IBM Employees:** You will need access to an account on a [production tenant](https://dl.watson-orchestrate.ibm.com/home). If you are not onboarded to a production tenant and account, contact one of the admins listed [here](https://ibm.ent.box.com/notes/1288049469199?s=abq1otgk14w5dnfveyz6hry7lgu1pt3r).<br/>
+**For IBM Employees:** You will need access to an account on a [production tenant](https://dl.watson-orchestrate.ibm.com/home). If you are not onboarded to a production tenant account, contact one of the admins listed [here](https://ibm.ent.box.com/notes/1288049469199?s=abq1otgk14w5dnfveyz6hry7lgu1pt3r).<br/>
 
 
-If you have been added to multiple accounts on the production tenant, you will see a list of available account names.<br/> Select the **BP Enablement NA EE** account and login with your IBM email.<br/><img src="images/prep-1-1-tenants.jpg" width="600" /><br/>If you have been added to a single account on the production tenant, you won't be shown a list of available accounts and will be logged straight into the account after entering your IBM email.<br/><br/>
+Use your IBM email to log into the account.
+If you have been added to **multiple** accounts on the production tenant, you will see a list of available account names.<br/> Select the **BP Enablement NA EE** account.<br/><img src="images/prep-1-1-tenants.jpg" width="600" /><br/>If you have been added to only **one account** on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your IBM email.<br/><br/>
 
 **For Business Partners:** If you are not onboarded to a demo tenant or account, contact Burt Hughes (buhughes@us.ibm.com)
 
