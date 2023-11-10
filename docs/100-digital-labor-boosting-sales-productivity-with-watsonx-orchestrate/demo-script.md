@@ -19,7 +19,7 @@ Prior to watsonx Orchestrate, agents in an insurance office dedicated a few hour
 2.	Determine the best cross-sell products to offer each customer.
 3.	Send a customized email to each customer.
 
-We'll look at how watsonx Orchestrate can assist agents in performing this sequence of tasks. <br/></br/>
+We'll look at how watsonx Orchestrate can assist agents in performing this sequence of tasks. <br/><br/>
 Let's get started.
 
 <br/>
@@ -58,7 +58,7 @@ Let's get started.
 
 | **2.1** | **Identify products for cross-sell / upsell** |
 | :--- | :--- |
-| **Narration** | The next task is to determine which products to recommend for the selected customer.<br/><br/> The customer details from Salesforce are automatically submitted into Orchestrate's built-in decision engine and the upsell recommendations are displayed.<br/><br/> Behind the scenes, the decision engine applied business logic using many different factors specific to this customer, such as the child’s age, pre-existing conditions, and current coverage.<br/><br/>In the case of John Collins, the decision engine recommends three health insurance plans suitable for his child: Bronze-level Marketplace Plan, Silver-level Marketplace Plan and Short-term Health Insurance.| 
+| **Narration** | The next task is to determine which products to recommend for the selected customer.<br/><br/> The customer details from Salesforce are automatically submitted into Orchestrate's built-in decision engine and the upsell recommendations are displayed.Behind the scenes, the decision engine applied business logic using many different factors specific to this customer, such as the child’s age, pre-existing conditions, and current coverage.<br/><br/>In the case of John Collins, the decision engine recommends three health insurance plans suitable for his child: Bronze-level Marketplace Plan, Silver-level Marketplace Plan and Short-term Health Insurance.| 
 | **Action** &nbsp; 2.1.1 | Highlight the three insurance plans recommended by the decision skill.<br/><img src="images/2-1-1.png" width="800" /> |
 
 <br/>
@@ -79,9 +79,8 @@ Let's get started.
 
 | **3.1** | **Use generative AI to write a personalized email** |
 | :--- | :--- |
-| **Narration** | Personalized emails increase the likelihood of conversion. watsonx Orchestrate uses one of IBM's Large Language Models (LLMs) via the watsonx.ai platform to generate a targeted email for the selected customer.<br/> Perfecting the AI prompt to generate a properly formatted email is typically a time-consuming activity. To make this quicker, Orchestrate automatically inserts a pre-written AI prompt that includes dynamically inserted customer data in the prompt input field.|
-| **Action** &nbsp; 3.1.1 | In the prompt field, **highlight** the input text with embedded recommended products to show how the prompt has been populated using data taken from the decision engine.<br/> <img src="images/3-1-1.png" width="800" /> |
-| **Action** &nbsp; 3.1.2 |  <br/> <img src="images/3-1-2.png" width="800" /> |
+| **Narration** | Personalized emails increase the likelihood of conversion. Watsonx Orchestrate uses one of IBM's Large Language Models (LLMs) via the watsonx.ai platform to generate a targeted email for the selected customer.<br/> Perfecting the AI prompt to generate a properly formatted email is typically a time-consuming activity. To make this quicker, Orchestrate automatically inserts a pre-written AI prompt that includes dynamically inserted customer data in the prompt input field.|
+| **Action** &nbsp; 3.1.1 | In the prompt field, **highlight** (1) the input text with embedded recommended products to show how data from the decision engine has been automatically inserted. Click **Apply** (2) <br/> <img src="images/3-1-1.png" width="800" /> |
 
 <br/>
 
