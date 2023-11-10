@@ -23,17 +23,32 @@ banner: images/wxo_100_prep_banner.jpg
 
 <summary>Access the demo tenant</summary>
 
-**For IBM Employees:** You will need access to an account on a [production tenant](https://dl.watson-orchestrate.ibm.com/home). If you are not onboarded to a production tenant account, contact one of the admins listed [here](https://ibm.ent.box.com/notes/1288049469199?s=abq1otgk14w5dnfveyz6hry7lgu1pt3r).<br/>
+IBM maintains multiple watsonx Orchestrate production tenants that can be accessed by IBMers or Business Partners.
 
+This demo is available on both **sales demo** tenants and **enablement** tenants. Use your IBM email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a><br/><br/> 
+   • **Sales demo tenants**: These tenants are for IBMers who require longer term access to a demo environment for sales opportunities..<br/>
+   • **Enablement tenants**: These tenants are for IBMers and Business Partners who require short-term access (two week maximum) to a demo environment for enablement and sales activities.<br/><br/>&nbsp;If you have been added to **multiple** accounts on the enablement tenant, you will see a list of available account names. <br/>IBMers select the **BP Enablement NA EE** account.<br/><img src="images/prep-1-1-tenants.jpg" width="600" /><br/>If you have been added to only **one account** on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your IBM email.<br/><br/>
 
-Use your IBM email to log into the account.<br/>If you have been added to **multiple** accounts on the production tenant, you will see a list of available account names. Select the **BP Enablement NA EE** account.<br/><img src="images/prep-1-1-tenants.jpg" width="600" /><br/>If you have been added to only **one account** on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your IBM email.<br/><br/>
+**Requesting Access**
 
-**For Business Partners:** If you are not onboarded to a demo tenant or account, contact Burt Hughes (buhughes@us.ibm.com)
-
-
+IBMers and Business Partners who do not already have access to a tenant can request access for your organization.<br/><br/>
+To submit a request for tenant access, provide the following:<br/>   
+   **Subject line:** watsonx Orchestrate Access Request<br/>
+   **Demo type:** 100-LEVEL or 300-LEVEL<br/>
+   **Environment:** TECHSALES (IBMers only) or ENABLEMENT (access will only be given for two weeks)<br/>
+   **Company Name:**<br/>
+   **CEID:** (required for Business Partners only - this can be found in your PartnerWorld profile)<br/>
+   **Full Name:** (first and last) of the individual<br/>
+   **Company email:** Email address of the individual listed above (non-company email addresses will be rejected)<br/>
+   **Data Geography choice:** (Only Americas available, more locations coming soon)<br/>
+   **Purpose for request:**
+   <br/><br/>
+   Send an email to **xyz@email.com** 
+   
 </details>
 
 <p/>
+
 <details markdown="1">
 
 <summary>Navigate to team skills</summary>
