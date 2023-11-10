@@ -27,7 +27,7 @@ IBM maintains multiple watsonx Orchestrate production tenants that can be access
 
 This demo is available on both **sales demo** tenants and **enablement** tenants. Use your IBM email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a><br/><br/> 
    • **Sales demo tenants**: These tenants are for IBMers who require longer term access to a demo environment for sales opportunities..<br/>
-   • **Enablement tenants**: These tenants are for IBMers and Business Partners who require short-term access (two week maximum) to a demo environment for enablement and sales activities.<br/><br/>&nbsp;If you have been added to **multiple** accounts on the enablement tenant, you will see a list of available account names. Select the **BP Enablement NA EE** account.<br/><img src="images/prep-1-1-tenants.jpg" width="600" /><br/>If you have been added to only **one account** on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your IBM email.<br/><br/>
+   • **Enablement tenants**: These tenants are for IBMers and Business Partners who require short-term access (two week maximum) to a demo environment for enablement and sales activities.<br/><br/>&nbsp;If you have been added to **multiple** accounts on the enablement tenant, you will see a list of available account names. <br/>IBMers select the **BP Enablement NA EE** account.<br/><img src="images/prep-1-1-tenants.jpg" width="600" /><br/>If you have been added to only **one account** on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your IBM email.<br/><br/>
 
 **Requesting Access**
 
