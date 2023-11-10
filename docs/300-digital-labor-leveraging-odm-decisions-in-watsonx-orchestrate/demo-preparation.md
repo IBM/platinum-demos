@@ -20,6 +20,8 @@ banner: images/scalable-resilient-integration-banner-PREP-5-25-23.jpg
 
 <inline-notification text="You are going to deliver a demo on a watsonx Orchestrate shared environment. watsonx Orchestrate environments are single-tenant. To prevent conflicts and to easily access your different artifacts, you will have to pre-fix or update some skills and artifacts with your own initials. <br/><br/> In this documentation, we will use ‘<strong>XXX</strong>’. You are asked to use your own 3-letter initials that are not yet used on your watsonx Orchestrate instance."></inline-notification>
 
+<br/>
+
 <details markdown="1">
 
 <summary>Prerequisites</summary>
@@ -37,6 +39,8 @@ It is also required that you have a text editor that's able to edit JSON files. 
 <br/><br/>
 
 </details>
+
+<br/>
 
 ### **PROVISION AN OPENSHIFT ENVIRONMENT AND DEPLOY CLOUD PAK FOR BUSINESS AUTOMATION**
 
@@ -97,6 +101,8 @@ Download these four files on your computer to have them ready to configure these
 <br/><br/>
 
 </details>
+
+<br/>
 
 ### **VALIDATE YOUR ENVIRONMENT AND BOOKMARK YOUR IDS / URLS**
 
@@ -179,6 +185,8 @@ After 4-5 hours, your Cloud Pak for Business Automation (CP4BA) should be ready.
 <br/><br/>
 
 </details>
+
+<br/>
 
 ### **CONFIGURE ODM**
 
@@ -326,6 +334,8 @@ Let’s now make sure the two decision services are correctly deployed on the Ru
 
 </details>
 
+<br/>
+
 ### **CONFIGURE WATSONX ORCHESTRATE**
 
 <details markdown="1">
@@ -438,6 +448,8 @@ You are now ready to demo!
 
 </details>
 
+<br/>
+
 ### **AFTER EACH DEMO**
 
 <details markdown="1">
@@ -469,6 +481,8 @@ After each demo, you must remove the **NEW XXX FC FocusCorp CustomerService** sk
 <br/><br/>
 
 </details>
+
+<br/>
 
 ### **UNINSTALL THE DEMO**
 

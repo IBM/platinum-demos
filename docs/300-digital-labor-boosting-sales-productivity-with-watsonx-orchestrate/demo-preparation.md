@@ -20,7 +20,7 @@ banner: images/wxo_300_prep_banner.png
 
 New users will have access to pre-connected "Team Skills” to perform Part 1 of the demo that uses an existing skill flow. 
 
-<img src="images/Prep-0-1.png" width="600" />
+<img src="images/Prep-0-1.png" width="300" />
 
 For Part 2, it will be necessary to set up two “Personal Skills” that can be used to build a new skill flow.
 
@@ -54,6 +54,28 @@ When you log into watsonx Orchestrate, the default view is **personal skills**. 
 
 </details>
 
-<p/>
+<br/>
+
+### **PREPARATION REQUIRED TO GIVE THIS DEMO AGAIN**
+
+<details markdown="1">
+
+<summary>Repeat the demo</summary>
+
+
+
+</details>
+
+<br/>
+
+### **AFTER EACH DEMO**
+
+<details markdown="1">
+
+<summary>Final cleanup</summary>
+
+
+
+</details>
 
 Click [here](demo-script) to go to the **Demo script** on the next tab.
