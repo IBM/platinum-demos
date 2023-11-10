@@ -18,7 +18,6 @@ banner: images/wxo_100_prep_banner.jpg
 | **Demo script** | A complete demo script is on the second tab above. <br/><br/> This demo script has multiple tasks that each have multiple steps. In each step, you have the details about what you need to do (**Actions**), what you can say while delivering this demo step (**Narration**), and what screenshots you will see.<br/><br/>This demo script is a suggestion, and you are welcome to customize based in your sales opportunity. Most importantly, practice this demo in advance. If the demo seems easy for you to execute, the customer will focus on the content. If it seems difficult for you to execute, the customer will focus on your delivery. |
 | **How to get support** | • Open a support case at <a href="https://techzone.ibm.com/help" target="_blank" rel="noreferrer">IBM Technology Zone Help</a> regarding issues with reserving and provisioning Tech Zone environments.<br/>• Contact <a href="https://ibm-cloud.slack.com/archives/C0216F39ACU" target="_blank" rel="noreferrer">#platinumdemos-automation-support</a> regarding issues with setting up and running this demo. |
 
-### **PREPARE TO GIVE THE DEMO**
 <details markdown="1">
 
 <summary>Access the demo (IBMers)</summary>
@@ -51,7 +50,7 @@ If you do not have access to a tenant, you can request access for your organizat
 
 <details markdown="1">
 
-<summary>Navigate to team skills</summary>
+<summary>Prepare to give the demo</summary>
 
 When you log into watsonx Orchestrate, the default view is **personal skills**. To run the demo, change the view to **team skills**.<br/><img src="images/prep-1-2-teamskills.jpg" width="600" />
 </details>
