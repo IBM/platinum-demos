@@ -190,7 +190,7 @@ Let’s get started!
 | **Action** &nbsp; 3.1.2 | Click **Skills**. <br/> <img src="images/3-1-2.png" width="800" /> |
 | **Action** &nbsp; 3.1.3 | Expand the **Add skills** menu (1). Click **Create a skill flow** (2). <br/> <img src="images/3-1-3.png" width="800" /> |
 | **Narration** | Let’s now work on this composite skill. As an automation builder, I can create composite skills in Orchestrate. <br/><br/> The first step is to give a name and description to the skills so that users can easily recognize it in the catalog. The description is important to understand the precise actions that are performed by the composite skill. |
-| **Action** &nbsp; 3.1.4 | Click the **pen** icon to name the ruleflow. <br/> <img src="images/3-1-4.png" width="800" /> |
+| **Action** &nbsp; 3.1.4 | Click the **pencil** icon to name the ruleflow. <br/> <img src="images/3-1-4.png" width="800" /> |
 | **Action** &nbsp; 3.1.5 | Enter a skill name that contains your 'XXX' initials (e.g., '**XXX FocusCorp Register claim**) (1). In the **Description** field, enter ‘**Get the customer and purchase details from the CRM - Validates de return conditions and refunds**’ (2). Click **Save** (3). <br/> <img src="images/3-1-5.png" width="800" /> |
 | **Action** &nbsp; 3.1.6 | Click the **+** button. <br/> <img src="images/3-1-6.png" width="800" /> |
 | **Narration** | Let’s now add the two skills that will compose this flow. The first one will collect the data from the CRM. The second one, which we created from the ODM deployment, will analyze them and provide the return decision. |
