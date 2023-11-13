@@ -428,7 +428,7 @@ We are also going to update the server URL with the URL of your own ODM Rule Exe
 
 6. Click **Add skill +**. <br/> <img src="images/Prep-4-3-6.png" width="800" /><br/>
 
-7. Click **Home**. <br/> <img src="images/Prep-4-3-7.png" width="800" /><br/>
+7. Check that your skill is added. Click **Home**. <br/> <img src="images/Prep-4-3-7.png" width="800" /><br/>
 
 8. Repeat from **Step 1** and add the **XXX FocusCorp Customer Service** skill. <br/>
 

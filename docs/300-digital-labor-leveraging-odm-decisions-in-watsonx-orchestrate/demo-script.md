@@ -146,7 +146,7 @@ Let’s get started!
 | **Action** &nbsp; 2.4.1 | Click **Home**. <br/> <img src="images/2-4-1.png" width="800" /> |
 | **Narration** | I can now add this new skill into my personal catalog. |
 | **Action** &nbsp; 2.4.2 | Click **Add skills from the catalog**. <br/> <img src="images/2-4-2.png" width="800" /> |
-| **Action** &nbsp; 2.4.3 | Type your ‘**XXX**’ in the search field ('XXX' being your own initals). <br/> <img src="images/2-4-3.png" width="800" /> |
+| **Action** &nbsp; 2.4.3 | Type your ‘**XXX**’ in the search field ('XXX' being your own initials). <br/> <img src="images/2-4-3.png" width="800" /> |
 | **Action** &nbsp; 2.4.4 | Click your ‘**XXX_FC_customerService**’ ('XXX' being your own initials). <br/> <img src="images/2-4-4.png" width="800" /> |
 | **Action** &nbsp; 2.4.5 | Click **Connect app**. <br/> <img src="images/2-4-5.png" width="800" /> |
 | **Narration** | To be able to connect to the execution server, I must connect my skill to the Rule Execution Server. I can use the ZEN API key that was provided by the ODM administrator to connect to the deployed rule service. |
@@ -160,11 +160,11 @@ Let’s get started!
 
 | **2.5** | **Show the customer service skill** |
 | :--- | :--- |
-| **Action** &nbsp; 2.5.1 | Click the **New XXX FocusCorp customer service** tile ('XXX' being your own initals). <br/> <img src="images/2-5-1.png" width="800" /> |
+| **Action** &nbsp; 2.5.1 | Click the **New XXX FocusCorp customer service** tile ('XXX' being your own initials). <br/> <img src="images/2-5-1.png" width="800" /> |
 | **Narration** | The new skill is now listed in my personal skills list. In one click, I can invoke it. |
 | **Action** &nbsp; 2.5.2 | Scroll through the set of required inputs. <br/> <img src="images/2-5-2.png" width="800" /> |
 | **Narration** | With ODM, the decisions require different input data describing the customer and the item to be returned. It would take too much time for an agent to fill all these fields manually. For this reason, we are going to create a composite skill that will get all the customer and item information from the FocusCorp CRM. <br/><br/> In this effort, we have already created a skill that is able to recover all this information with only the customer ID and purchase ID. |
-| **Action** &nbsp; 2.5.3 | Click the **XXX FocusCorp Get data from CRM** skill ('XXX' being your own initals). <br/> <img src="images/2-5-3.png" width="800" /> |
+| **Action** &nbsp; 2.5.3 | Click the **XXX FocusCorp Get data from CRM** skill ('XXX' being your own initials). <br/> <img src="images/2-5-3.png" width="800" /> |
 | **Narration** | Let’s use a customer ID and a purchase ID, just like a call center agent would do. |
 | **Action** &nbsp; 2.5.4 | Enter ‘**CU-001**’ as the **customer ID** (1). Enter ‘**PO-001**’ as the **purchase ID** (2). Click **Apply** (3). <br/> <img src="images/2-5-4.png" width="800" /> |
 | **Action** &nbsp; 2.5.5 | Scroll through the result to show the data recovered from the back-end system. <br/> <img src="images/2-5-5.png" width="800" /> |
