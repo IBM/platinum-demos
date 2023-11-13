@@ -50,10 +50,10 @@ Let’s get started!
 | **1.2** | **Provide an overview of the decision service** |
 | :--- | :--- |
 | **Narration** | The return validation policy is managed end to end using ODM. The business logic is composed of different rule artifacts like ruleflows, decision tables and business rules expressed in natural language. <br/><br/> The main rule flow is the backbone of the decision service. It synchronizes a variety of rules that cover fraud detection, warranty validation, return policy and refund conditions. |
-| **Action** &nbsp; 1.2.1 | Select the **Issue refund** box (1) and then the **Refund flow** link (2). <br/> <img src="images/1-2-1.png" width="800" /> |
-| **Action** &nbsp; 1.2.2 | Select the **Shipping fee** box (1) and then the **Shipping fee** link (2) to open the decision table. <br/> <img src="images/1-2-2.png" width="800" /> |
+| **Action** &nbsp; 1.2.1 | Select the **Compute refund** box (1) and then the **Refund flow** link (2). <br/> <img src="images/1-2-1.png" width="800" /> |
+| **Action** &nbsp; 1.2.2 | Select the **Estimate shipping fee** box (1) and then the **Shipping fee** link (2) to open the decision table. <br/> <img src="images/1-2-2.png" width="800" /> |
 | **Narration** | Let’s look at one of the decision artifacts. The 'Shipping fee' decision table defines the fixed return fee depending on the location of the customer and the type of item being returned. |
-| **Action** &nbsp; 1.2.3 | Hover your cursor over the row header to display the business rule. <br/> <img src="images/1-2-3.png" width="800" /> |
+| **Action** &nbsp; 1.2.3 | Hover your cursor over the header of row 4 to display the business rule. <br/> <img src="images/1-2-3.png" width="800" /> |
 | **Narration** | Each row of the table corresponds to a specific business rule that can also be seen in natural language. In this rule, the return fee for grocery items in the USA is 15 dollars. A message is also concatenated to the response to document the decision. |
 | **Action** &nbsp; 1.2.4 | Click **Main customer service flow**. <br/> <img src="images/1-2-4.png" width="800" /> |
 | **Narration** | The end-to-end return policy is managed by a flow of business rules and decisions tables that assess the fraud, evaluate the warranty conditions, decide if a product can or cannot be returned, and compute the return fee and reimbursement amount. This decision service is deployed in a production environment and is invoked by FocusCorp's customer portal and by its business processes. Let’s look at the execution server. |
@@ -68,7 +68,7 @@ Let’s get started!
 | **Action** &nbsp; 1.3.3 | Click **FocusCorp_CustomerService**. <br/> <img src="images/1-3-3.png" width="800" /> |
 | **Narration** | Two RuleApps are deployed on this production environment. The 'customer service' RuleApp is driving the return policy that we have just seen in the business console. |
 | **Action** &nbsp; 1.3.4 | Click **FocusCorp_Customer_Service**. <br/> <img src="images/1-3-4.png" width="800" /> |
-| **Narration** | The customer service application has one ruleset with two input parameters (the customer and the purchase to be returned) and one output parameter (the return decision). The decision service and the ruleset it contains are versioned, so a user can decide to use a very specific version, or the latest deployed version of the RuleApp. |
+| **Narration** | The customer service application has one ruleset with two input parameters -- the customer and the purchase to be returned -- (1) and one output parameter -- the return decision (2). The decision service and the ruleset it contains are versioned (3), so a user can decide to use a very specific version, or the latest deployed version of the RuleApp. |
 | **Action** &nbsp; 1.3.5 | Point out and explain the **FocusCorp_Customer_Service** ruleset. <br/> <img src="images/1-3-5.png" width="800" /> |
 | **Narration** | Let’s now see how to leverage these deployed decisions using watsonx Orchestrate to improve the productivity of call center agents. |
 
@@ -167,7 +167,7 @@ Let’s get started!
 | **Action** &nbsp; 2.5.3 | Click the **XXX FocusCorp Get data from CRM** skill ('XXX' being your own initals). <br/> <img src="images/2-5-3.png" width="800" /> |
 | **Narration** | Let’s use a customer ID and a purchase ID, just like a call center agent would do. |
 | **Action** &nbsp; 2.5.4 | Enter ‘**CU-001**’ as the **customer ID** (1). Enter ‘**PO-001**’ as the **purchase ID** (2). Click **Apply** (3). <br/> <img src="images/2-5-4.png" width="800" /> |
-| **Action** &nbsp; 2.5.5 | Scroll through the result to show the data recovered from the back-end system. |
+| **Action** &nbsp; 2.5.5 | Scroll through the result to show the data recovered from the back-end system. <br/> <img src="images/2-5-5.png" width="800" /> |
 | **Narration** | This skill has correctly recovered the customer and item details from the FocusCorp CRM. I can now use that skill to recover the data and feed my customer request decision skill with this data. To do so, I will use a skill flow to create a composite skill. |
 
 **[Go to top](#place1)**
@@ -190,18 +190,18 @@ Let’s get started!
 | **Action** &nbsp; 3.1.2 | Click **Skills**. <br/> <img src="images/3-1-2.png" width="800" /> |
 | **Action** &nbsp; 3.1.3 | Expand the **Add skills** menu (1). Click **Create a skill flow** (2). <br/> <img src="images/3-1-3.png" width="800" /> |
 | **Narration** | Let’s now work on this composite skill. As an automation builder, I can create composite skills in Orchestrate. <br/><br/> The first step is to give a name and description to the skills so that users can easily recognize it in the catalog. The description is important to understand the precise actions that are performed by the composite skill. |
-| **Action** &nbsp; 3.1.4 | Click the **pencil** icon to name the ruleflow. <br/> <img src="images/3-1-4.png" width="800" /> |
+| **Action** &nbsp; 3.1.4 | Click the **pencil** icon to name the skill flow. <br/> <img src="images/3-1-4.png" width="800" /> |
 | **Action** &nbsp; 3.1.5 | Enter a skill name that contains your 'XXX' initials (e.g., '**XXX FocusCorp Register claim**) (1). In the **Description** field, enter ‘**Get the customer and purchase details from the CRM - Validates de return conditions and refunds**’ (2). Click **Save** (3). <br/> <img src="images/3-1-5.png" width="800" /> |
 | **Action** &nbsp; 3.1.6 | Click the **+** button. <br/> <img src="images/3-1-6.png" width="800" /> |
 | **Narration** | Let’s now add the two skills that will compose this flow. The first one will collect the data from the CRM. The second one, which we created from the ODM deployment, will analyze them and provide the return decision. |
-| **Action** &nbsp; 3.1.7 | Type your '**XXX**' initials to find all your skills from the catalog. <br/> <img src="images/3-1-7.png" width="800" /> |
-| **Action** &nbsp; 3.1.8 | Click the **XXX FocusCorp_Get_Data_from_CRM** skill ('XXX' being your own initals). <br/> <img src="images/3-1-8.png" width="800" /> |
+| **Action** &nbsp; 3.1.7 | Search for '**XXX**' to find all your skills from the catalog ('XXX' being your own initials). <br/> <img src="images/3-1-7.png" width="800" /> |
+| **Action** &nbsp; 3.1.8 | Click the **XXX FocusCorp_Get_Data_from_CRM** skill ('XXX' being your own initials). <br/> <img src="images/3-1-8.png" width="800" /> |
 | **Narration** | Let’s search for the skills we have added in our personal skills. |
 | **Action** &nbsp; 3.1.9 | Click **Add skill +**. <br/> <img src="images/3-1-9.png" width="800" /> |
 | **Action** &nbsp; 3.1.10 | Click **+** button. <br/> <img src="images/3-1-10.png" width="800" /> |
 | **Narration** | Now that we have the data recovery skill in our flow, let’s search for the decisioning one. |
-| **Action** &nbsp; 3.1.11 | Type your '**XXX**' initials to find all your skills from the catalog. <br/> <img src="images/3-1-11.png" width="800" /> |
-| **Action** &nbsp; 3.1.12 | Click the **XXX FocusCorp_CustomerService** skill. <br/> <img src="images/3-1-12.png" width="800" /> |
+| **Action** &nbsp; 3.1.11 | Search for '**XXX**' to find all your skills from the catalog ('XXX' being your own initials). <br/> <img src="images/3-1-11.png" width="800" /> |
+| **Action** &nbsp; 3.1.12 | Click the **XXX FocusCorp_CustomerService** skill ('XXX' being your own initials). <br/> <img src="images/3-1-12.png" width="800" /> |
 | **Narration** | Let’s use this finalized version of our skill. This version is the exact same version of the skill we just imported but with more detailed enhancements. All its fields have been assigned a label to provide the call center agents an easy-to-understand interface. |
 | **Action** &nbsp; 3.1.13 | Click **Add skill +**. <br/> <img src="images/3-1-13.png" width="800" /> |
 | **Action** &nbsp; 3.1.14 | Click the second skill in the flow. <br/> <img src="images/3-1-14.png" width="800" /> |
@@ -239,9 +239,9 @@ Let’s get started!
 | **Action** &nbsp; 4.1.2 | Type your '**XXX**' initials to find all your skills from the catalog. <br/> <img src="images/4-1-2.png" width="800" /> |
 | **Narration** | We are looking for a composite skill. There is one that matches our search. Let’s add it into the personal catalog. |
 | **Action** &nbsp; 4.1.3 | Click the **Composite** tile. <br/> <img src="images/4-1-3.png" width="800" /> |
-| **Action** &nbsp; 4.1.4 | Click **Add skill +**. <br/> <img src="images/4-1-4.png" width="800" /> |
+| **Action** &nbsp; 4.1.4 | Search for ‘**XXX**’ (‘XXX’ being your own initials). <br/> <img src="images/4-1-4.png" width="800" /> |
 | **Action** &nbsp; 4.1.5 | Click **Add skill +**. <br/> <img src="images/4-1-5.png" width="800" /> |
-| **Action** &nbsp; 4.1.6 | Check that your skill is added. <br/> <img src="images/4-1-6.png" width="800" /> |
+| **Action** &nbsp; 4.1.6 | Check that your skill is added. Click **Home**. <br/> <img src="images/4-1-6.png" width="800" /> |
 
 <br/>
 
