@@ -29,7 +29,7 @@ Let's get started.
 
 <details markdown="1">
 
-<summary>1 - Retrieving a customer list from Salesforce using conversational AI</summary>
+<summary>1 - Retrieving a customer list from Salesforce</summary>
 
 <br/>
 
@@ -52,7 +52,7 @@ Let's get started.
 
 <details markdown="1">
 
-<summary>2 - Running a decision engine for a recommendation</summary>
+<summary>2 - Automating the product recommendation</summary>
 
 <br/>
 
@@ -73,7 +73,7 @@ Let's get started.
 
 <details markdown="1">
 
-<summary>3 - Sending a personalized email for the cross-sell opportunity</summary>
+<summary>3 - Generating and sending a personalized email</summary>
 
 <br/>
 
