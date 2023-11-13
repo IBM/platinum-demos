@@ -30,7 +30,9 @@ The OpenAPI file for the custom Salesforce skill will also require an update bef
 
 <summary>1 - Add Salesforce API as personal skill</summary>
 
-1. Click the **Team skills** drop-down menu (1) and click **Personal skills** (2). <br/> <img src="images/Prep-1-1-1.png" width="800" /><br/>
+1. Click the **Team skills** drop-down menu (1) and click **Personal skills** (2). <br/> <img src="images/Prep-1-1.png" width="800" /><br/>
+
+2. 
    
 </details>
 
