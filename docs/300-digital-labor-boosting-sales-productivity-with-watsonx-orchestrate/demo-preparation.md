@@ -18,13 +18,13 @@ banner: images/wxo_300_prep_banner.png
 
 ### **PREPARE TO GIVE THE DEMO**
 
-New users will have access to pre-connected "Team Skills” to perform Part 1 of the demo that uses an existing skill flow. 
+New users will have access to pre-connected "team skills” to perform Part 1 of the demo that uses an existing skill flow. 
 
 <img src="images/Prep-0-1.png" width="300" />
 
-For Part 2, it will be necessary to set up two “Personal Skills” that can be used to build a new skill flow.
+For Part 2, it will be necessary to set up two “personal skills” that can be used to build a new skill flow.
 
-The OpenAPI file for the custom Salesforce skill will also require an update before we can re-import it. (This API has already been imported, so it is necessary to change the API signature before we can repeat the import process).
+The OpenAPI file for the custom Salesforce skill will also require an update before we can re-import it. (This API has already been imported, so it is necessary to change the API signature before we can repeat the import process.)
 
 <details markdown="1">
 
