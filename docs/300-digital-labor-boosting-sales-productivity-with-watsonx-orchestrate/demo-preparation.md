@@ -124,34 +124,6 @@ The next personal skill to add will be based on a decision model imported into A
 
 1. In a multi-user environment, we must provide unique values for the API. There are four attributes to update: **x-ibm-application-name**, **description**, **summary** and **operationId**. <br/> <img src="images/Prep-3-1.png" width="800" /><br/><br/> Add your initials and date to the four attributes. <br/><br/> Please test you can import the API as a skill before starting the demo. These steps are taken from the demo script and are duplicated here for convenience. <br/>
 
-2. Click the **menu slider** icon (1). Click **Skills** (2). <br/> <img src="images/Prep-3-2.png" width="800" /><br/>
-
-3. Click **Add skills**. <br/> <img src="images/Prep-3-3.png" width="800" /><br/>
-
-4. Click **From Files**. <br/> <img src="images/Prep-3-4.png" width="800" /><br/>
-
-5. Upload the **Find Customers.json** file. <br/> <img src="images/Prep-3-5.png" width="800" /><br/>
-
-6. The API will be inspected, and the status should read '**The OpenAPI file or skill package is good to go!**' (1). Click **Next** (2). <br/> <img src="images/Prep-3-6.png" width="800" /><br/>
-
-7. Select the skill (1). Click **Save as draft** (2). <br/> <img src="images/Prep-3-7.png" width="800" /><br/>
-
-8. Search for the unique ID you added to the OpenAPI file (1). Click the **ellipsis** icon (2). Click **Enhance this skill** (3). <inline-notification text="Unless a unique ID is used, it is highly likely that there will be many duplicates. Confirm the identify of your skill by expanding the details and verifying you are the author."></inline-notification> <img src="images/Prep-3-8.png" width="800" /><br/>
-
-9. In the **Phrases** tab, enter a unique phrase for the skill, such as the author's initials and date (1). Click **Publish** (2). <br/> <img src="images/Prep-3-9.png" width="800" /><br/>
-
-10. Click **Home**. <br/> <img src="images/Prep-3-10.png" width="800" /><br/>
-
-11. Click **Add skills from the catalog**. <br/> <img src="images/Prep-3-11.png" width="800" /><br/>
-
-12. Search for your unique ID again to filter the list of skills (1). Click the card (2). <br/> <img src="images/Prep-3-12.png" width="800" /><br/>
-
-13. Search for your unique ID again, if required (1). Click **Add skill +** (2). Click **Connect app** (3). <br/> <img src="images/Prep-3-13.png" width="800" /><br/>
-
-14. Provide the **Client ID** and **Client Secret** (1). Click **Connect app** (3). <br/> <img src="images/Prep-3-14.png" width="400" /><br/>
-
-15. Return to the home screen and your new personal skill should be visible. Click the card to test the skill. <br/> <img src="images/Prep-3-15.png" width="800" /><br/>
-
 </details>
 
 <br/>
