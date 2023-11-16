@@ -22,9 +22,9 @@ banner: images/wxo_100_prep_banner.jpg
 
 <summary>Access the demo environment (IBMers)</summary>
 
-This demo is available on the Sales tenants and Enablement tenants.<br/><br/>
-   **Sales tenants:** Use your IBM email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here.</a> Select the **BA Tech Sales Demo EE** account.<br/><img src="images/prep-1-2-sales-tenant.png" width="400" /><br/>If you have been added to only one account on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your IBM email.<br/><br/>
-   **Enablement tenants:** Short-term access (two week maximum) to a demo environment for enablement. Use your IBM email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>. Select the **Tech Enablement 10** account.<br/>If you have been added to only one account on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your email.<br/>
+This demo is available on Sales production tenants and Enablement production tenants.<br/><br/>
+   **Sales tenants:** Use your IBM email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>. Select the **BA Tech Sales Production EE** account.<br/><img src="images/prep-1-2-sales-tenant.png" width="400" /><br/>**Note:** If you have been added to only one account on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your IBM email.<br/><br/>
+   **Enablement tenants:** Short-term access (two week maximum) to a demo environment for enablement. Use your IBM email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>. Select the **Tech Enablement 10** account.<br/><img src="images/prep-1-3-enablement-tenant.png" width="400" /><br/>**Note:** If you have been added to only one account on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your email.<br/>
 
 **Requesting Access**
 
