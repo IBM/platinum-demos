@@ -40,7 +40,7 @@ If you don't have access to a tenant you can request access by submitting a <a h
 
 <summary>2 - Access the demo environment (Business Partners)</summary>
 
-Use your Company email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>.<br/>
+For Business Partners, use your Company email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>.<br/>
 
 If you do not have access to a tenant, you can request access for your organization by submitting a <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">request here</a>.<br/><br/>
 
@@ -99,9 +99,10 @@ The next personal skill to add will be based on a decision model imported into A
 
 <summary>5 - Update the Salesforce OpenAPI file</summary>
 
-<inline-notification text="The OpenAPI file must be updated before it can be used to import a new skill. This is necessary as Orchestrate uses two attributes as the unique ID for the skill and the skill has already been imported as a team skill. We recommend using Microsoft VSCode editor to edit the OpenAPI file."></inline-notification>
+<inline-notification text="The OpenAPI file must be updated before it can be used to import a new skill. This is necessary as Orchestrate uses two attributes as the unique ID for the skill and the skill has already been imported as a team skill.<br/> We recommend using Microsoft VSCode editor to edit the OpenAPI file."></inline-notification>
 
-1. In a multi-user environment, we must provide unique values for the API. There are four attributes to update: **x-ibm-application-name**, **description**, **summary** and **operationId**. <br/> <img src="images/Prep-3-1.png" width="800" /><br/><br/> Add your initials and date to the four attributes. <br/><br/> Please test you can import the API as a skill before starting the demo. These steps are taken from the demo script and are duplicated here for convenience. <br/>
+1. Download the OpenAPI file:<a href="./files/XYZ.zip" target="_blank" rel="noreferrer">GetSalesforceCustomers.json</a><br/>
+2. In a multi-user environment, we must provide unique values for the API. There are four attributes to update: **x-ibm-application-name**, **description**, **summary** and **operationId**. <br/> <img src="images/Prep-3-1.png" width="800" /><br/><br/> Add your initials and date to the four attributes. <br/><br/> Please test you can import the API as a skill before starting the demo. These steps are taken from the demo script and are duplicated here for convenience. <br/>
 
 </details>
 
