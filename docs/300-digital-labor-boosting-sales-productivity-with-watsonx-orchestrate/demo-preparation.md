@@ -60,7 +60,7 @@ The next personal skill to add will be based on a decision model imported into A
 
 3. Click **Product Upsell**. <br/> <img src="images/Prep-2-3.jpg" width="700" /><br/>
 
-4. Click **Add skill +**. <br/> <img src="images/Prep-2-4.jpg" width="600" /><br/>
+4. Click **Add skill +**. <br/> <img src="images/Prep-2-4.jpg" width="500" /><br/>
 
 5. Click **Product Upsell** within the card to open the Product Upsell automation. <br/> <img src="images/Prep-2-5.png" width="300" /><br/>
 
