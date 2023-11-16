@@ -62,50 +62,6 @@ The next personal skill to add will be based on a decision model imported into A
 
 4. Click **Add skill +**. <br/> <img src="images/Prep-2-4.jpg" width="500" /><br/>
 
-5. Click **Product Upsell** within the card to open the Product Upsell automation. <br/> <img src="images/Prep-2-5.png" width="300" /><br/>
-
-6. Click the **Share changes** tab. <br/> <img src="images/Prep-2-6.png" width="800" /><br/>
-
-7. Click **Share**. <br/> <img src="images/Prep-2-7.png" width="800" /><br/>
-
-8. In the Share window, click **Share**. <br/> <img src="images/Prep-2-8.png" width="500" /><br/>
-
-9. Click the **View history** tab. <br/> <img src="images/Prep-2-9.png" width="800" /><br/>
-
-10. Click **Version +**. <br/> <img src="images/Prep-2-10.png" width="800" /><br/>
-
-11. In the **Name** field, enter the version number '**1.0.0**' (1). Click **Create** (2). <br/> <img src="images/Prep-2-11.png" width="500" /><br/>
-
-12. Click the **Publish** tab. <br/> <img src="images/Prep-2-12.png" width="800" /><br/>
-
-13. Expand version **1.0.0** (1). Click **Publish** (2). <br/> <img src="images/Prep-2-13.png" width="800" /><br/>
-
-14. In the Publish automation window, click **Publish**. <br/> <img src="images/Prep-2-14.png" width="500" /><br/>
-
-15. After a few minutes, check that the **Publish status** updated (1). Click the **menu slider** icon (2). <br/> <img src="images/Prep-2-15.png" width="800" /><br/>
-
-16. Click **Skills** (2). <br/> <img src="images/Prep-2-16.png" width="500" /><br/>
-
-17. The new skill is shown in the Skills and apps panel. <inline-notification text="With many users running the demo, there may be several copies of the same skill already present. Confirm the identity of your skill by expanding its details (1) and confirming the timestamp and author (2)."></inline-notification> The skill should have a status of **Ready to publish** (3). Click the **ellipsis** icon (4). Click **Enhance this skill** (5). <br/> <img src="images/Prep-2-17.png" width="800" /><br/>
-
-18. Click the **Phrases** tab (1) and enter the phrases '**Get upsell products**' and '**Fetch recommended products**' (2). Click **Publish** (3). <br/> <img src="images/Prep-2-18.png" width="800" /><br/>
-
-19. Click **Home**. <br/> <img src="images/Prep-2-19.png" width="500" /><br/>
-
-20. Click **Add skills from the catalog**. <br/> <img src="images/Prep-2-20.png" width="500" /><br/>
-
-21. Search for '**product**' in the search panel (1). Click the **Product Upsell** card (2). <br/> <img src="images/Prep-2-21.png" width="500" /><br/>
-
-22. Click **Add skill +**. <br/> <img src="images/Prep-2-22.png" width="500" /><br/>
-
-23. Click **Home**. <br/> <img src="images/Prep-2-23.png" width="500" /><br/>
-
-24. Click **Execute Product Upsell Operation**. <br/> <img src="images/Prep-2-24.png" width="700" /><br/>
-
-25. Enter values for the **customer.childAge** (1) and **customer.name** (2) fields. Click **Apply** (3). <br/> <img src="images/Prep-2-25.png" width="500" /><br/>
-
-26. Confirm the output is received from the decision. <br/> <img src="images/Prep-2-26.png" width="500" /><br/>
-
 </details>
 
 <p/>
