@@ -10,45 +10,39 @@ banner: images/wxo_300_prep_banner.png
 
 | **DEMO OVERVIEW** | | 
 | :---         | :--- |
-| **Scenario overview** | This demo shows how watsonx Orchestrate can be used by sales representatives to assist with the upsell/cross-sell process. To illustrate this, an insurance seller uses watsonx Orchestrate to retrieve a list of customers from Salesforce and automatically send a customized offer.|
+| **Scenario overview** | This demo shows how watsonx Orchestrate can be used by sales representatives to assist with the upsell / cross-sell process. To illustrate this, an insurance seller uses watsonx Orchestrate to retrieve a list of customers from Salesforce and automatically send a customized offer. Developers, called ‘builders’ in watsonx Orchestrate, create the customized skills used by the agents. |
 | **Demo products** | watsonx Orchestrate |
 | **Demo capabilities** | Salesforce skill; watsonx.ai generative AI skill; Microsoft Outlook skill; Embedded decision engine skill|
 | **Demo script** | A complete demo script is on the second tab above. <br/><br/> This demo script has multiple tasks that each have multiple steps. In each step, you have the details about what you need to do (**Actions**), what you can say while delivering this demo step (**Narration**), and what screenshots you will see.<br/><br/>This demo script is a suggestion, and you are welcome to customize based in your sales opportunity. Most importantly, practice this demo in advance. If the demo seems easy for you to execute, the customer will focus on the content. If it seems difficult for you to execute, the customer will focus on your delivery. |
 | **How to get support** | • Open a support case at <a href="https://techzone.ibm.com/help" target="_blank" rel="noreferrer">IBM Technology Zone Help</a> regarding issues with reserving and provisioning Tech Zone environments.<br/>• Contact <a href="https://ibm-cloud.slack.com/archives/C0216F39ACU" target="_blank" rel="noreferrer">#platinumdemos-automation-support</a> regarding issues with setting up and running this demo. |
 
+<br/>
+
 ### **PREPARE TO GIVE THE DEMO**
-
-New users will have access to pre-connected "team skills” to perform Part 1 of the demo that uses an existing skill flow. 
-
-<img src="images/Prep-0-1.png" width="300" />
-
-For Part 2, it will be necessary to set up two “personal skills” that can be used to build a new skill flow.
-
-The OpenAPI file for the custom Salesforce skill will also require an update before we can re-import it. (This API has already been imported, so it is necessary to change the API signature before we can repeat the import process.)
 
 <details markdown="1">
 
-<summary>1 - Add Salesforce API as personal skill</summary>
+<summary>1 - Add Salesforce API skill</summary>
 
 1. Click the **Team skills** drop-down menu (1) and click **Personal skills** (2). <br/> <img src="images/Prep-1-1.png" width="500" /><br/>
 
 2. Click the **Add skills from the catalog** tile. <br/> <img src="images/Prep-1-2.png" width="500" /><br/>
 
-3. Search for '**retrieve**' in the search panel. <br/> <img src="images/Prep-1-3.png" width="800" /><br/>
+3. Search for '**life**' in the search panel. <br/> <img src="images/Prep-1-3.jpg" width="800" /><br/>
 
-4. The list of apps is filtered to only show apps that contain skills containing the word 'retrieve.' Click the **Salesforce – Get customers with recent life changes** card. <br/> <img src="images/Prep-1-4.png" width="800" /><br/>
+4. The list of apps is filtered to only show apps that contain skills containing the word 'retrieve.' Click the **Salesforce – Get customers with recent life changes** card. <br/> <img src="images/Prep-1-4.jpg" width="800" /><br/>
 
-5. Click **Add skill +** (1). Click **Connect app** (2). <br/> <img src="images/Prep-1-5.png" width="800" /><br/>
+5. Click **Add skill +** (1). Click **Connect app** (2). <br/> <img src="images/Prep-1-5.jpg" width="800" /><br/>
 
-6. Use the credentials provided and enter the **Client ID** (1) and **Client Secret** (2). Click **Connect app** (3). <br/> <img src="images/Prep-1-6.png" width="800" /><br/>
+6. Use the following credentials: <br/><br/> • **Client ID** (1): 3MVG9HB6vm3GZZR_fBoKSxSomjQ8ZaShg9mWyjw2pJak55hcL8KGtUjjkooS7wpLD25QraIBxop4ThrTPK237 <br/> • **Client Secret** (2): 34CB8CCE1E4495C0CAE6A921A5FC7D17CC6CE614152175D20F5B00F8B250626C <br/><br/> Click **Connect app** (3). <br/> <img src="images/Prep-1-6.jpg" width="800" /><br/>
 
-7. Click the **menu slider** icon. <br/> <img src="images/Prep-1-7.png" width="500" /><br/>
+7. Click the **menu slider** icon. <br/> <img src="images/Prep-1-7.jpg" width="500" /><br/>
 
-8. Click **Home**. <br/> <img src="images/Prep-1-8.png" width="500" /><br/>
+8. Click **Home**. <br/> <img src="images/Prep-1-8.jpg" width="500" /><br/>
 
-9. Test the skill works correctly by clicking the skill tile. <br/> <img src="images/Prep-1-9.png" width="500" /><br/>
+9. Test the skill works correctly by clicking the skill tile. <br/> <img src="images/Prep-1-9.jpg" width="500" /><br/>
 
-10. A table should be shown containing the data from Salesforce. <br/> <img src="images/Prep-1-10.png" width="500" /><br/>
+10. A table should be shown containing the data from Salesforce. <br/> <img src="images/Prep-1-10.jpg" width="500" /><br/>
    
 </details>
 
@@ -56,17 +50,17 @@ The OpenAPI file for the custom Salesforce skill will also require an update bef
 
 <details markdown="1">
 
-<summary>2 - Add personal skill with Automation Builder</summary>
+<summary>2 - Add product upsell skill</summary>
 
 The next personal skill to add will be based on a decision model imported into Automation Builder.
 
-1. Click the **menu slider** icon (1). Click **Automation Builder** (2). <br/> <img src="images/Prep-2-1.png" width="800" /><br/>
+1. Click **Add skills from the catalog**. <br/> <img src="images/Prep-2-1.jpg" width="700" /><br/>
 
-2. Click **New**. <br/> <img src="images/Prep-2-2.png" width="300" /><br/>
+2. Search for '**Product**' in the search panel. <br/> <img src="images/Prep-2-2.jpg" width="700" /><br/>
 
-3. Click **Import automation** (1). Click **Browse** (2). <br/> <img src="images/Prep-2-3.png" width="700" /><br/>
+3. Click **Product Upsell**. <br/> <img src="images/Prep-2-3.jpg" width="700" /><br/>
 
-4. Select the **Product Upsell.zip** file provided with this demo and click **Save**. <br/> <img src="images/Prep-2-4.png" width="800" /><br/>
+4. Click **Add skill +**. <br/> <img src="images/Prep-2-4.jpg" width="600" /><br/>
 
 5. Click **Product Upsell** within the card to open the Product Upsell automation. <br/> <img src="images/Prep-2-5.png" width="300" /><br/>
 
