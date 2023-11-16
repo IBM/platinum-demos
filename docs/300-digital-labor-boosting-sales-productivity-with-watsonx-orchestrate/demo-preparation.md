@@ -18,11 +18,40 @@ banner: images/wxo_300_prep_banner.png
 
 <br/>
 
-### **PREPARE TO GIVE THE DEMO**
+### **SETUP THE DEMO**
 
 <details markdown="1">
 
-<summary>1 - Add Salesforce API skill</summary>
+<summary>1 - Access the demo environment (IBMers)</summary>
+
+This demo is available on Sales production tenants and Enablement production tenants.<br/><br/>
+   **Sales tenants:** Use your IBM email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>. Select the **BA Tech Sales Production EE** account.<br/><img src="images/prep-1-2-sales-tenant.png" width="400" /><br/>**Note:** If you have been added to only one account on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your IBM email.<br/><br/>
+   **Enablement tenants:** Short-term access (two week maximum) to a demo environment for enablement. Use your IBM email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>. Select the **Tech Enablement 10** account.<br/><img src="images/prep-1-3-enablement-tenant.png" width="400" /><br/>**Note:** If you have been added to only one account on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your email.<br/>
+
+**Requesting Access**
+
+If you don't have access to a tenant you can request access by submitting a <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">request here</a>.<br/><br/>
+
+</details>
+
+<p/>
+
+<details markdown="1">
+
+<summary>2 - Access the demo environment (Business Partners)</summary>
+
+Use your Company email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>.<br/>
+
+If you do not have access to a tenant, you can request access for your organization by submitting a <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">request here</a>.<br/><br/>
+
+</details>
+
+<p/>
+
+
+<details markdown="1">
+
+<summary>3 - Add custom Salesforce skill</summary>
 
 1. Click the **Team skills** drop-down menu (1) and click **Personal skills** (2). <br/> <img src="images/Prep-1-1.png" width="500" /><br/>
 
@@ -50,7 +79,7 @@ banner: images/wxo_300_prep_banner.png
 
 <details markdown="1">
 
-<summary>2 - Add product upsell skill</summary>
+<summary>4 - Add product upsell skill</summary>
 
 The next personal skill to add will be based on a decision model imported into Automation Builder.
 
@@ -68,9 +97,9 @@ The next personal skill to add will be based on a decision model imported into A
 
 <details markdown="1">
 
-<summary>3 - Update the OpenAPI file</summary>
+<summary>5 - Update the Salesforce OpenAPI file</summary>
 
-<inline-notification text="The OpenAPI file must be updated before it can be used to import a new skill. This is necessary as Orchestrate uses two attributes as the unique ID for the skill and the skill has already been imported as a team skill."></inline-notification>
+<inline-notification text="The OpenAPI file must be updated before it can be used to import a new skill. This is necessary as Orchestrate uses two attributes as the unique ID for the skill and the skill has already been imported as a team skill. We recommend using Microsoft VSCode editor to edit the OpenAPI file."></inline-notification>
 
 1. In a multi-user environment, we must provide unique values for the API. There are four attributes to update: **x-ibm-application-name**, **description**, **summary** and **operationId**. <br/> <img src="images/Prep-3-1.png" width="800" /><br/><br/> Add your initials and date to the four attributes. <br/><br/> Please test you can import the API as a skill before starting the demo. These steps are taken from the demo script and are duplicated here for convenience. <br/>
 
