@@ -81,7 +81,7 @@ Let’s get started.
 
 <br/>
 
-| **3.1** | **Choose a remediation to execute** |
+| **3.1** | **Review remediation recommendations** |
 | :--- | :--- |
 | **Narration** | Before we take a look at the specific event remediations, let’s first understand how Instana goes beyond pure observability to enable you to take remedial action on an incoming event without ever leaving Instana. <br/><br/> This new incident remediation feature is referred to as the Action Framework. The Action Framework is a collection of capabilities that allows you to define and manage a remediation. The Action Catalog is a central component of the Action Framework that allows you to manage the lifecycle of the remediations. The Action Framework can also interoperate and leverage external automation platforms like Ansible. <br/><br/> The event page lists the details behind the event. By leveraging the Action Framework, Instana goes beyond pure observability to actually resolve the issue. This page is now enriched with a list of potential remedial actions that can be executed right from within Instana to actually resolve this issue. |
 | **Action** &nbsp; 3.1.1 | Select the **Recommended Actions** tab. <br/> <img src="images/3-1-1.png" width="800" /> |
