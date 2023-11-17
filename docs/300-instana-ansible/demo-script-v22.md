@@ -151,7 +151,7 @@ Let’s get started.
 
 | **5.2** | **Monitor the status of the Ansible playbook execution** |
 | :--- | :--- |
-| **Narration** | This step is optional. The SRE does not really need to go to Ansible at all. The SRE can stay within Instana to perform all the remediation work. However, if there are failures, it helps to understand the state of Ansible and ensure that the connectivity between Instana and Ansible is properly synchronized. |
+| **Narration** | The SRE does not really need to go to Ansible at all. The SRE can stay within Instana to perform all the remediation work. However, if there are failures, it helps to understand the state of Ansible and ensure that the connectivity between Instana and Ansible is properly synchronized. |
 | **Action** &nbsp; 5.2.1 | On the Ansible console tab, click **Dashboard** (1) and then **Jobs** (2). Look for **list-cpu-processes** (3). <br/> <img src="images/5-2-1.png" width="800" /> <br/> <img src="images/5-2-2.png" width="800" /> |
 
 **[Go to top](#place1)**
