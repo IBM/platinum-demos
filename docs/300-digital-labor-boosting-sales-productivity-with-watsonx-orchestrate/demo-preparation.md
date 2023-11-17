@@ -20,10 +20,10 @@ banner: images/wxo_300_prep_banner.png
 
 <details markdown="1">
 
-<summary>Access the demo environment (IBMers)</summary>
+<summary>1 - Access the demo environment (IBMers)</summary>
 
 This demo is available on Sales production tenants and Enablement production tenants.<br/><br/>
-   **Sales tenants:** Use your IBM email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>. Select the **BA Tech Sales Production EE** account.<br/><img src="images/prep-1-2-sales-tenant.png" width="400" /><br/>**Note:** If you have been added to only one account on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your IBM email.<br/><br/>
+   **Sales tenants:** Use your IBM email to log in to an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>. Select the **BA Tech Sales Production EE** account.<br/><img src="images/prep-1-2-sales-tenant.png" width="400" /><br/>**Note:** If you have been added to only one account on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your IBM email.<br/><br/>
    **Enablement tenants:** Short-term access (two week maximum) to a demo environment for enablement. Use your IBM email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>. Select the **Tech Enablement 10** account.<br/><img src="images/prep-1-3-enablement-tenant.png" width="400" /><br/>**Note:** If you have been added to only one account on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your email.<br/>
 
 **Requesting Access**
@@ -36,41 +36,11 @@ If you don't have access to a tenant you can request access by submitting a requ
 
 <details markdown="1">
 
-<summary>Access the demo environment (Business Partners)</summary>
-
-Use your company email to log in to an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>.<br/>
-
-If you do not have access to a tenant, you can request access for your organization by submitting a request <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">here</a>.<br/><br/>
-
-</details>
-
-<p/>
-
-### **SETUP THE DEMO**
-
-<details markdown="1">
-
-<summary>1 - Access the demo environment (IBMers)</summary>
-
-This demo is available on Sales production tenants and Enablement production tenants.<br/><br/>
-   **Sales tenants:** Use your IBM email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>. Select the **BA Tech Sales Production EE** account.<br/><img src="images/prep-1-2-sales-tenant.png" width="400" /><br/>**Note:** If you have been added to only one account on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your IBM email.<br/><br/>
-   **Enablement tenants:** Short-term access (two week maximum) to a demo environment for enablement. Use your IBM email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>. Select the **Tech Enablement 10** account.<br/><img src="images/prep-1-3-enablement-tenant.png" width="400" /><br/>**Note:** If you have been added to only one account on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your email.<br/>
-
-**Requesting Access**
-
-If you don't have access to a tenant you can request access by submitting a <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">request here</a>.<br/><br/>
-
-</details>
-
-<p/>
-
-<details markdown="1">
-
 <summary>2 - Access the demo environment (Business Partners)</summary>
 
-For Business Partners, use your Company email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>.<br/>
+For Business Partners, use your company email to log in to an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>.<br/>
 
-If you do not have access to a tenant, you can request access for your organization by submitting a <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">request here</a>.<br/><br/>
+If you do not have access to a tenant, you can request access for your organization by submitting a request <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">here</a>.<br/><br/>
 
 </details>
 
