@@ -2,9 +2,6 @@
 title: Leveraging ODM decisions in watsonx Orchestrate <br/> 300-level live demo
 layout: demoscript
 banner: images/temp-banner.jpg
-browsingselfservice: 2
-nocodeeditor: 3
-outputtomarketing: 4
 ---
 
 <span id="top"></span>
@@ -13,13 +10,14 @@ outputtomarketing: 4
 
 <summary>Introduction</summary>
 
-Today we’ll see how watsonx Orchestrate can be used to enhance call center agents' productivity, increase compliance with the organization's business procedures, and reduce risk of inconsistency in the decision making process.
+Today we’ll see how IBM’s watsonx Orchestrate capabilities are used to manage and secure content across an organization at scale. We’ll see how using IBM watsonx Orchestrate  enhances call center agents productivity, increases compliance with the organization business procedures, and reduces risk of inconsistency in the decision making process.
 
-Using a customer service scenario, we’ll see how to easily create a new decision automation skill from a deployed IBM Operational Decision Manager (ODM) application using a watsonx Orchestrate discovery service. We’ll look at how to create a new watsonx Orchestrate skill in just a few clicks, starting from an existing ODM service deployed on premises. Then, we’ll see how the built-in skillflow capability is used to ...
+Using a customer service scenario, we’ll see how to easily create a new decision automation skill from a deployed IBM Operational Decision Manager (ODM) application using a watsonx Orchestrate discovery service. We’ll look at how to create a new watsonx Orchestrate skill in just a few clicks, starting from an existing ODM service deployed on premises. Then, we’ll see how the built-in skill flow capability is used to orchestrate several skills into one single activity to increase user’s productivity.
 
-We’re using a customer service example, but the same discovery service can be used to leverage existing deployed decision services across your enterprise.
+We’re using a Customer Service example, but the same discovery service can be used to leverage existing deployed decision services across your enterprise.
 
 Let’s get started!
+
 
 <br/>
 
@@ -35,10 +33,10 @@ Let’s get started!
 
 | **1.1** | **Introduce the customer service decision** |
 | :--- | :--- |
-| **Narration** | When receiving a customer claim through the call center, agents must retrieve customer data and access different systems to register the claim, as well as explain to their customers if they will be reimbursed or what to do to return an item. FocusCorp wants to improve employee productivity by providing employees direct access to information in their backend systems. (For example, customer service reps need to know immediately whether a return is approved, so they can communicate this over the phone with the customer.) <br/><br/> FocusCorp uses ODM to process their customer return request validation. (They've deployed an ODM decision service that approves return requests that come from all the different applications..."approval") <br/><br/> FocusCorp wants to make the automated approval decision easily accessible to call center agents through a watsonx Orchestrate skill. Before seeing how to create such a skill, let’s look at the existing application in ODM. |
+| **Narration** | When receiving a customer claim through the call center, agents must retrieve customer data and access different systems to register the claim, as well as explain to their customers if they will be reimbursed or what to do to return an item. FocusCorp wants to improve employee productivity by providing employees direct access to information in their backend systems. For example, customer service reps need to know immediately whether a return is approved, so they can communicate this over the phone to the customer. <br/><br/> FocusCorp uses Operational Decision Manager (ODM) to validate the return request from the customer. The company has previously deployed an ODM decision service that approves return requests from multiple enterprise applications requiring validation. <br/><br/> FocusCorp wants to make the automated approval decision easily accessible to call center agents through a watsonx Orchestrate skill. Before seeing how to create such a skill, let’s look at the existing application in ODM. |
 | **Action** &nbsp; 1.1.1 | Show the ODM business console screen that was opened during the demo preparation. Select **Enterprise LDAP** (1), enter the Username **cp4admin** (2), enter the **password** (3) you copied in your notebook, and click **Log in** (4). <inline-notification text="The Decision Center console will start from the last page you were in when you left during your last connection."></inline-notification> <img src="images/1-1-1.png" width="800" /> |
 | **Action** &nbsp; 1.1.2 | Click the **LIBRARY** tab. <br/> <img src="images/1-1-2.png" width="800" /> |
-| **Narration** | The return policy is managed in ODM by FocusCorp's retail business experts, using a dedicated business console called Decision Center. Let’s see how the return policy is implemented in ODM. |
+| **Narration** | The return policy is managed in ODM by FocusCorp's retail business team, using a dedicated business console called Decision Center. Let’s see how the return policy is implemented in ODM. |
 | **Action** &nbsp; 1.1.3 | Click the **Customer Service** decision service. <br/> <img src="images/1-1-3.png" width="800" /> |
 | **Action** &nbsp; 1.1.4 | Click the **main** branch. <br/> <img src="images/1-1-4.png" width="800" /> |
 | **Action** &nbsp; 1.1.5 | Click the **Decision Artifacts** tab, if you are not already on that tab. <br/> <img src="images/1-1-5.png" width="800" /> |
@@ -49,14 +47,14 @@ Let’s get started!
 
 | **1.2** | **Provide an overview of the decision service** |
 | :--- | :--- |
-| **Narration** | The return validation policy is managed end to end using ODM. The business logic is composed of different rule artifacts like ruleflows, decision tables and business rules expressed in natural language. <br/><br/> The main rule flow is the backbone of the decision service. It synchronizes a variety of rules that cover fraud detection, warranty validation, return policy and refund conditions. |
-| **Action** &nbsp; 1.2.1 | Select the **Compute refund** box (1) and then the **Refund flow** link (2). <br/> <img src="images/1-2-1.png" width="800" /> |
-| **Action** &nbsp; 1.2.2 | Select the **Estimate shipping fee** box (1) and then the **Shipping fee** link (2) to open the decision table. <br/> <img src="images/1-2-2.png" width="800" /> |
+| **Narration** | The return validation policy is managed using ODM. The business logic is composed of rule artifacts like ruleflows, decision tables and business rules. <br/><br/> The main rule flow is the backbone of the decision service. It synchronizes a variety of rules that cover fraud detection, warranty validation, return policy and refund conditions. |
+| **Action** &nbsp; 1.2.1 | Click the **Compute refund** box (1) and then the **Refund flow** link (2). <br/> <img src="images/1-2-1.png" width="800" /> |
+| **Action** &nbsp; 1.2.2 | Click the **Estimate shipping fee** box (1) and then the **Shipping fee** link (2) to open the decision table. <br/> <img src="images/1-2-2.png" width="800" /> |
 | **Narration** | Let’s look at one of the decision artifacts. The 'Shipping fee' decision table defines the fixed return fee depending on the location of the customer and the type of item being returned. |
-| **Action** &nbsp; 1.2.3 | Hover your cursor over the header of row 4 to display the business rule. <br/> <img src="images/1-2-3.png" width="800" /> |
-| **Narration** | Each row of the table corresponds to a specific business rule that can also be seen in natural language. In this rule, the return fee for grocery items in the USA is 15 dollars. A message is also concatenated to the response to document the decision. |
+| **Action** &nbsp; 1.2.3 | Hover your cursor over the header of row 4 to display the 'grocery' business rule. <br/> <img src="images/1-2-3.png" width="800" /> |
+| **Narration** | Each row of the table corresponds to a specific business rule that can also be seen in natural language. In this rule, the return fee for grocery items in the United States is $15 dollars. A message is also concatenated to the response to document the decision. |
 | **Action** &nbsp; 1.2.4 | Click **Main customer service flow**. <br/> <img src="images/1-2-4.png" width="800" /> |
-| **Narration** | The end-to-end return policy is managed by a flow of business rules and decisions tables that assess the fraud, evaluate the warranty conditions, decide if a product can or cannot be returned, and compute the return fee and reimbursement amount. This decision service is deployed in a production environment and is invoked by FocusCorp's customer portal and by its business processes. Let’s look at the execution server. |
+| **Narration** | The end-to-end return policy is managed by a flow of business rules and decisions tables that assess the fraud, evaluate the warranty conditions, decide if a product can or cannot be returned, and compute the return fee and reimbursement amount. This decision service is deployed in a production environment and is invoked by FocusCorp's enterprise applications. Let’s look at the deployment environment. |
 
 <br/>
 
@@ -66,11 +64,11 @@ Let’s get started!
 | **Narration** | The ODM Rule Execution Server is a console to monitor rule applications deployed on a given server. From this console, the rule administrator can test a rule application, trace its usage, run diagnostics, and access execution traces when required. |
 | **Action** &nbsp; 1.3.2 | Click the **Explorer** tab. <br/> <img src="images/1-3-2.png" width="800" /> |
 | **Action** &nbsp; 1.3.3 | Click **FocusCorp_CustomerService**. <br/> <img src="images/1-3-3.png" width="800" /> |
-| **Narration** | Two RuleApps are deployed on this production environment. The 'customer service' RuleApp is driving the return policy that we have just seen in the business console. |
+| **Narration** | Two RuleApps are deployed in this production environment. The 'Customer Service' RuleApp manages the return policy we just looked at in the Business Console. |
 | **Action** &nbsp; 1.3.4 | Click **FocusCorp_Customer_Service**. <br/> <img src="images/1-3-4.png" width="800" /> |
-| **Narration** | The customer service application has one ruleset with two input parameters -- the customer and the purchase to be returned -- (1) and one output parameter -- the return decision (2). The decision service and the ruleset it contains are versioned (3), so a user can decide to use a very specific version, or the latest deployed version of the RuleApp. |
-| **Action** &nbsp; 1.3.5 | Point out and explain the **FocusCorp_Customer_Service** ruleset. <br/> <img src="images/1-3-5.png" width="800" /> |
-| **Narration** | Let’s now see how to leverage these deployed decisions using watsonx Orchestrate to improve the productivity of call center agents. |
+| **Narration** | The customer service application has one ruleset with two input parameters -- the customer and the purchase to be returned. The decision service and the ruleset it contains are versioned (3), so a user can decide to use a very specific version, or the latest deployed version of the RuleApp. |
+| **Action** &nbsp; 1.3.5 | Point out and explain the **FocusCorp_Customer_Service** ruleset. One output parameter (1) the return decision (2). <br/> <img src="images/1-3-5.png" width="800" /> |
+| **Narration** | Let’s now see how to leverage these deployed decisions using watsonx Orchestrate to make these return decisions visible to call center agents. |
 
 **[Go to top](#place1)**
 
@@ -95,7 +93,7 @@ Let’s get started!
 | **Action** &nbsp; 2.1.4 | Click **Add skills**. <br/> <img src="images/2-1-4.png" width="800" /> |
 | **Narration** | watsonx Orchestrate offers a wide variety of skills that can be added for an individual or the whole team. Let’s create a new skill. |
 | **Action** &nbsp; 2.1.5 | Click the **IBM Cloud Pak for Business Automation - On premises** tile. <br/> <img src="images/2-1-5.png" width="800" /> |
-| **Narration** | There are various ways to create a skill in watsonx Orchestrate. One of them is to use discovery services to create new skills from IBM Cloud Pak for Business Automation that are deployed on SaaS, on premises or from RPA ones. The automation services that we want to leverage are deployed on a containerized version of ODM on premises deployed on an IBM Cloud cluster. <br/><br/> To access this environment, an API key has been generated by the Cloud Pak for Business Automation cluster administrator. With this API key and the cluster URL, I can set up the discovery service and let it access all the deployed automation on this specific environment. |
+| **Narration** | There are various ways to create a skill in watsonx Orchestrate. One of them is to use discovery services to create new skills from IBM Cloud Pak for Business Automation that are deployed on SaaS, on premises or from RPA. The automation services that we want to leverage are deployed on a containerized version of ODM on premises, deployed on an IBM Cloud cluster. <br/><br/> To access this environment, an API key has been generated by the Cloud Pak for Business Automation cluster administrator. With this API key and the cluster URL, we can set up the discovery service and let it access all the deployed automation on this specific environment. |
 | **Action** &nbsp; 2.1.6 | Enter your **Username** (1), **API key** (2) and **Connection URL** (3) you stored in your notebook in the demo preparation. Click **Connect** (4). <br/> <img src="images/2-1-6.png" width="800" /> |
 
 <br/>
@@ -103,13 +101,13 @@ Let’s get started!
 | **2.2** | **Create the customer service skill from the ODM RuleApp** |
 | :--- | :--- |
 | **Action** &nbsp; 2.2.1 | Expand the **Automations** folder. <br/> <img src="images/2-2-1.png" width="800" /> |
-| **Narration** | The discovery service now lets me see all the deployed business automation that I can leverage to create a new skill. |
+| **Narration** | The discovery service lets us see all the deployed business automation that we can leverage to create a new skill. |
 | **Action** &nbsp; 2.2.2 | Select **FC_CustomerService**. <br/> <img src="images/2-2-2.png" width="800" /> |
-| **Narration** | 'FC_CustomerService' is one of the deployed ODM applications that I can leverage to create a new skill. Let’s use this application. My skill will then use exactly the same business rules as the ones that were recently deployed on the rule execution server that we saw earlier in this demo. |
+| **Narration** | 'FC_CustomerService' is one of the deployed ODM applications that we can leverage to create a new skill. The skill will use exactly the same business rules as the ones that were recently deployed on the rule execution server that we saw earlier. |
 | **Action** &nbsp; 2.2.3 | Select the '**Invokes the execution..**' skill (1) and click **Save as draft** (2). <br/> <img src="images/2-2-3.png" width="800" /> |
-| **Narration** | Saving as a draft creates a skill in watsonx Orchestrate that will use the same input data and provide the same output results as the selected automation service. The next step is to enhance the skill to personalize the way the skill will ask for the input and display the output. The sentences used to train the NLP engine to invoke the skill are also specified during the skill enhancement. <br/><br/> Let’s search for our recently added skill. |
+| **Narration** | Saving as a draft creates a skill in watsonx Orchestrate that will use the same input data and provide the same output results as the selected decision service. Next, we'll enhance the skill to personalize how it asks for the input and displays the output. We'll also train the natural language processing (NLP) engine on the phrases that can be used to invoke the skill.<br/><br/> Let’s search for our recently added skill. |
 | **Action** &nbsp; 2.2.4 | Search for ‘**FC**’ to access the recently imported skill. <br/> <img src="images/2-2-4.png" width="800" /> |
-| **Action** &nbsp; 2.2.5 | Expand the **Invokes the execution of the decision service operation XXX_FC_CustomerService** skill (XXX being your initials used during the setup phase). <inline-notification text="The <strong>Step in the process</strong> for this skill should read '<strong>Just 1 step away to be ready</strong>'. The <strong>Status</strong> for this skill should read '<strong>Ready to publish</strong>'."></inline-notification> <img src="images/2-2-5.png" width="800" /> |
+| **Action** &nbsp; 2.2.5 | Expand the **Invokes the execution of the decision service operation XXX_FC_CustomerService** skill (XXX are your initials used during demo prep). <inline-notification text="The <strong>Step in the process</strong> for this skill should read '<strong>Just 1 step away to be ready</strong>'. The <strong>Status</strong> for this skill should read '<strong>Ready to publish</strong>'."></inline-notification> <img src="images/2-2-5.png" width="800" /> |
 | **Narration** | The discovery service has correctly created the skill in the catalog. As we can see, it is not yet ready to be published and exposed to the other users in Orchestrate. |
 | **Action** &nbsp; 2.2.6 | Make sure you are on the right skill by checking you are the author of the skill. <br/> <img src="images/2-2-6.png" width="800" /> |
 | **Action** &nbsp; 2.2.7 | Click the corresponding **ellipsis** icon. <br/> <img src="images/2-2-7.png" width="800" /> |
@@ -118,23 +116,23 @@ Let’s get started!
 
 <br/>
 
-| **2.3** | **Enhance the customer service skill to your personal skills** |
+| **2.3** | **Publish the customer service skill to your personal skills** |
 | :--- | :--- |
 | **Action** &nbsp; 2.3.1 | Enter an easy-to-find skill name (e.g., '**NEW XXX FocusCorp customer service**' – XXX being your own initials) <br/> <img src="images/2-3-1.png" width="800" /> |
-| **Narration** | The first customization is for the skill title. On the right, I can see precisely how the skill will be displayed to the users. As this demo environment is shared across various users, let me add my initials to easily find my skill in the catalog. |
+| **Narration** | The first thing we'll customize is title of the skill. On the right we see how the skill will be displayed to users. As this demo environment is shared across various users, we'll add initials to easily find the skill in the catalog. |
 | **Action** &nbsp; 2.3.2 | Click the **Input** tab. <br/> <img src="images/2-3-2.png" width="800" /> |
-| **Narration** | I can also customize the way my inputs will be displayed and edit a specific label for each entry. I can also specify what attributes will be required to invoke the skill. Each required field will have to be provided in order to have the ‘Invoke’ button active. |
+| **Narration** | We can also customize how the inputs will be displayed and edit a specific label for each entry. We can also specify what attributes will be required to invoke the skill. We'll have to fill in the required fields for the 'invoke' button to become active.|
 | **Action** &nbsp; 2.3.3 | Scroll down to the **customer.name** field. <br/> <img src="images/2-3-3.png" width="800" /> |
 | **Action** &nbsp; 2.3.4 | Enter ‘**Customer name**’ in the **customer.name** field. <br/> <img src="images/2-3-4.png" width="800" /> |
-| **Narration** | We will do the exact same procedure for the other remaining fields. To shorten this demo, we have already performed this enhancement in a ready-to-use skill. <inline-notification text="If you are not willing to show the entire skill enhancement, you can jump to <strong>Action 2.3.10</strong>."></inline-notification> |
+| **Narration** | We will do the exact same procedure for the other remaining fields. To shorten this demo, we have already performed this enhancement. <inline-notification text="If you prefer to not show the entire skill enhancement, you can skip to <strong>Action 2.3.10</strong>."></inline-notification> |
 | **Action** &nbsp; 2.3.5 <br/> (Optional) | Repeat **Action 2.3.4** for each input field by adding the corresponding text: <br/> <img src="images/2-3-5.png" width="800" /> |
 | **Action** &nbsp; 2.3.6 <br/> (Optional) | Click the **Output** tab. <br/> <img src="images/2-3-6.png" width="800" /> |
 | **Action** &nbsp; 2.3.7 <br/> (Optional) | Click **Edit response**. <br/> <img src="images/2-3-7.png" width="800" /> |
-| **Narration** | In the same way I've customized the input data, I can customize the way the skill will display the results. In this demo, we only need to provide the different column headers corresponding to the different fields of the ODM response. |
+| **Narration** | In the same way we've customized the input data, we can customize the way the skill will display the results. In this scenario, we only need to provide the column headers corresponding to the different fields of the ODM response. |
 | **Action** &nbsp; 2.3.8 <br/> (Optional) | Type ‘**Return decision**’ in the **decision.returnStatus** header field. <br/> <img src="images/2-3-8.png" width="800" /> |
 | **Action** &nbsp; 2.3.9 <br/> (Optional) | Repeat **Action 2.3.8** by adding the following column headers to the corresponding fields: <br/> <img src="images/2-3-9.png" width="800" /> |
 | **Action** &nbsp; 2.3.10 | Click the **Phrases** tab. <br/> <img src="images/2-3-10.png" width="800" /> |
-| **Action** &nbsp; 2.3.11 | Type ‘**register a claim**’ as a new phrase. Hit the enter/return key on your keyboard to validate. <br/> <img src="images/2-3-11.png" width="800" /> |
+| **Action** &nbsp; 2.3.11 | Type ‘**register a claim**’ as a new phrase. Press the enter/return key on your keyboard to validate. <br/> <img src="images/2-3-11.png" width="800" /> |
 | **Narration** | Finally, I can provide different phrases that can be used in the conversation to invoke the skill. |
 | **Action** &nbsp; 2.3.12 | Click **Publish**. <br/> <img src="images/2-3-12.png" width="800" /> |
 | **Narration** | My skill is now ready to be published in the watsonx Orchestrate catalog. Any user will now be able to add this new automation skill into their own skills sets. <br/> <img src="images/2-3-13.png" width="800" /> |
