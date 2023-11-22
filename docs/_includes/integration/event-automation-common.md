@@ -5,17 +5,17 @@
 Focus Corp’s marketing team wants to offer a high-value promotion to specific first-time customers immediately after their initial order.
 <br/>
 
-| **{{ page.browsingselfservice }}.1** | **Subscribe to the customer and order topics** |
+| **{{ page.browsingselfservice }}.1** | **Subscribe to the Customer and Order topics** |
 | :--- | :--- |
-| **Narration** | The marketing team browse the self-service catalog to find the event streams they need.   |
+| **Narration** | The marketing team browses the self-service catalog to find the event streams they need.   |
 | **Action** &nbsp; {{ page.browsingselfservice }}.1.1 | Open the IBM Event Endpoint Management console. Select the **catalog** (1) icon and click on **CUSTOMERS** (2).<br/> <img src="../300-integration-event-automation-common/images/1-Catalog-SelectCustomer.png" width="800" /> |
 | **Narration** | They see the CUSTOMERS stream description, sample message and connectivity details. They confirm this provides an event for each new customer who registers. They generate security credentials for their application to access the stream.   |
 | **Action** &nbsp; {{ page.browsingselfservice }}.1.2 | Show the description, sample message and connection details. Click on the **Generate access credentials**.<br/> <img src="../300-integration-event-automation-common/images/1-Catalog-GenerateCustomerCred.png" width="800" /> |
 | **Action** &nbsp; {{ page.browsingselfservice }}.1.3 | Fill in **marketing@focus.corp** (1) as the contact details, and click **Generate**.<br/> <img src="../300-integration-event-automation-common/images/1-Catalog-ContactDetailsCustomer.png" width="800" /> |
-| **Narration** | The credentials are immediately created which the team safely store.   |
+| **Narration** | The credentials are immediately created, which the team safely store.   |
 | **Action** &nbsp; {{ page.browsingselfservice }}.1.4 | Save the **Username** (1) and **Password** (2) to a safe location before clicking on **Close** (3).<br/> <img src="../300-integration-event-automation-common/images/1-Catalog-CopyCustomerCred.png" width="800" /> |
 | **Narration** | The marketing team discover the ORDERS stream that provides an event for each new order. They complete the same process to generate credentials for this stream.  |
-| **Action** &nbsp; {{ page.browsingselfservice }}.1.5 | Complete the same process for the order topic. Select the **catalog** (1) icon and click on **ORDERS** (2).<br/> <img src="../300-integration-event-automation-common/images/1-Catalog-SelectOrder.png" width="800" /> |
+| **Action** &nbsp; {{ page.browsingselfservice }}.1.5 | Complete the same process for the Order topic. Select the **catalog** (1) icon and click on **ORDERS** (2).<br/> <img src="../300-integration-event-automation-common/images/1-Catalog-SelectOrder.png" width="800" /> |
 | **Action** &nbsp; {{ page.browsingselfservice }}.1.6 | Show the description, sample message and connection details. Click on the **Generate access credentials**.<br/> <img src="../300-integration-event-automation-common/images/1-Catalog-GenerateOrderCred.png" width="800" /> |
 | **Action** &nbsp; {{ page.browsingselfservice }}.1.7 | Fill in **marketing@focus.corp** (1) as the contact details, and click **Generate**.<br/> <img src="../300-integration-event-automation-common/images/1-Catalog-ContactDetailsOrder.png" width="800" /> |
 | **Action** &nbsp; {{ page.browsingselfservice }}.1.8 | Save the **Username** (1) and **Password** (2) to a safe location before clicking on **Close** (3).<br/> <img src="../300-integration-event-automation-common/images/1-Catalog-CopyOrderCred.png" width="800" /> |
@@ -38,47 +38,47 @@ The marketing team’s business requirement is to correlate newly created custom
 
 <br/>
 
-| **{{ page.nocodeeditor }}.1** | **Configure an event source for the order events** |
+| **{{ page.nocodeeditor }}.1** | **Configure an event source for the Order events** |
 | :--- | :--- |
 | **Narration** | The team will use an event flow to detect when a new customer creates an order over $100. They start by creating a new flow called NewCustomerLargeOrder. |
 | **Action** &nbsp; {{ page.nocodeeditor }}.1.1 | Open the IBM Event Processing console and click **Create** (1) to start authoring a new flow.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-CreateFlow.png" width="800" /> |
 | **Action** &nbsp; {{ page.nocodeeditor }}.1.2 | Specify **NewCustomerLargeOrder** (1) for the flow name and click **Create** (2).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-FlowName.png" width="800" /> |
-| **Narration** | A flow starts with one or more event sources, which represent the inbound events. The marketing team start defining the ORDERS event source by dragging and dropping the node onto the canvas.|
+| **Narration** | A flow starts with one or more event sources, which represent the inbound events. The marketing team starts defining the ORDERS event source by dragging and dropping the node onto the canvas.|
 | **Action** &nbsp; {{ page.nocodeeditor }}.1.3 | Press and hold the mouse button on the **Event source** node.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-1stEventSourceSelect.png" width="800" /> |
 | **Action** &nbsp; {{ page.nocodeeditor }}.1.4 | Drag onto the canvas and release the mouse button.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-1stEventSourceDrag.png" width="800" /> |
-| **Narration** | Then they configure the event source starting with the connectivity details they discovered in the event management console.|
-| **Action** &nbsp; {{ page.nocodeeditor }}.1.5 | Hover over the added node and select the **edit** icon.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-1stEventSourceEdit.png" width="800" /> |
+| **Narration** | Then they configure the event source, starting with the connectivity details they discovered in the event management console.|
+| **Action** &nbsp; {{ page.nocodeeditor }}.1.5 | Hover over the added node and select the **Edit** icon.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-1stEventSourceEdit.png" width="800" /> |
 | **Action** &nbsp; {{ page.nocodeeditor }}.1.6 | Select the **Add event source** (1) tile and click on **Next** (2).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-1stEventSourceAdd.png" width="800" /> |
-| **Action** &nbsp; {{ page.nocodeeditor }}.1.7 | Return to the Event Endpoint Management console and scroll down to the Access information. Copy the server address details.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-EEMAddress.png" width="800" /> |
+| **Action** &nbsp; {{ page.nocodeeditor }}.1.7 | Return to the Event Endpoint Management console and scroll down to the 'Access information' section. Copy the server address details.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-EEMAddress.png" width="800" /> |
 | **Action** &nbsp; {{ page.nocodeeditor }}.1.8 | Type **Orders** (1) for the node name, paste the server address into the **Server** (2) field, and click **Next** (3).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-1stEventSourceServerDetails.png" width="800" /> |
 | **Narration** | They configure the security details, accepting the certificates being used by the event stream. Then they specify the username / password credentials that they generated in the event management console.|
 | **Action** &nbsp; {{ page.nocodeeditor }}.1.9 | Check the **Accept certificates** (1) box and select **Next** (2).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-1stEventSourceAcceptCerts.png" width="800" /> |
 | **Action** &nbsp; {{ page.nocodeeditor }}.1.10 | Copy the username (1) and password (2) from step {{ page.browsingselfservice }}.1.8, and click **Next** (3).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-1stEventSourceCredentials.png" width="800" /> |
 | **Narration** | The system connects to the event stream and queries the available topics for the provided credentials. A single ORDERS topic is found and selected by the team.|
-| **Action** &nbsp; {{ page.nocodeeditor }}.1.11 | Check **ORDERS** (1) and click **Next** (3).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-1stEventSourceSelectTopic.png" width="800" /> |
-| **Narration** | The data structure for the events needs to be defined. For simplicity the team decide to copy the sample message from the Event Management console.|
+| **Action** &nbsp; {{ page.nocodeeditor }}.1.11 | Check **ORDERS** (1) and click **Next** (2).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-1stEventSourceSelectTopic.png" width="800" /> |
+| **Narration** | The data structure for the events needs to be defined. For simplicity, the team decide to copy the sample message from the Event Management console.|
 | **Action** &nbsp; {{ page.nocodeeditor }}.1.12 | Click on **Upload a schema or sample message** (1).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-1stEventSourceUploadSample.png" width="800" /> |
 | **Action** &nbsp; {{ page.nocodeeditor }}.1.13 | Select the **Sample message** (1) tab, copy the text below into the **Enter sample message** (2) box, and click **Done** (3).<br/> <br/><inline-code code="{<br/>&nbsp;&nbsp;&quot;quantity&quot;: 9,<br/>&nbsp;&nbsp;&quot;price&quot;: 197.09,<br/>&nbsp;&nbsp;&quot;customerid&quot;: &quot;a7d1586b-ced1-462f-9e44-14e9e5013540&quot;,<br/>&nbsp;&nbsp;&quot;description&quot;: &quot;Composite Oversize 28in Tennis Racket&quot;,<br/>&nbsp;&nbsp;&quot;id&quot;: &quot;1eba7af9-b748-4754-b750-3459e589dccf&quot;,<br/>&nbsp;&nbsp;&quot;region&quot;: &quot;EMEA&quot;,<br/>&nbsp;&nbsp;&quot;ordertime&quot;: &quot;2023-10-24 19:26:04.839&quot;,<br/>&nbsp;&nbsp;&quot;customer&quot;: &quot;Reed McKenzie DDS&quot;<br/>}"></inline-code><img src="../300-integration-event-automation-common/images/2-Flow-1stEventSourceSample.png" width="800" /> |
 | **Action** &nbsp; {{ page.nocodeeditor }}.1.14 | Click on **Configure**.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-1stEventSourceComplete.png" width="800" /> |
 
 <br/>
 
-| **{{ page.nocodeeditor }}.2** | **Configure an event source for the customer events** |
+| **{{ page.nocodeeditor }}.2** | **Configure an event source for the New Customer events** |
 | :--- | :--- |
-| **Narration** | The marketing team require a second event source for the new customer events. They drag and drop an event source node onto the canvas.  |
+| **Narration** | The marketing team require a second event source for the New Customer events. They drag and drop an event source node onto the canvas.  |
 | **Action** &nbsp; {{ page.nocodeeditor }}.2.1 | Press and hold the mouse button on the **Event source** (1) node, and drag onto the canvas (2).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-2ndEventSourceDrag.png" width="800" /> |
-| **Narration** | Similar to before the team configure the event source starting with the connectivity details they discovered in the event management console. |
-| **Action** &nbsp; {{ page.nocodeeditor }}.2.2 | Hover over the added node and select the **edit** icon.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-2ndEventSourceEdit.png" width="800" /> |
+| **Narration** | Similar to before, the team configure the event source starting with the connectivity details they discovered in the event management console. |
+| **Action** &nbsp; {{ page.nocodeeditor }}.2.2 | Hover over the added node and select the **Edit** icon.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-2ndEventSourceEdit.png" width="800" /> |
 | **Action** &nbsp; {{ page.nocodeeditor }}.2.3 | Select the **Add event source** (1) tile and click on **Next** (2).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-2ndEventSourceAdd.png" width="800" /> |
-| **Action** &nbsp; {{ page.nocodeeditor }}.2.4 | Return to the Event Endpoint Management console and scroll down to the Access information. Copy the server address details.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-EEMAddress.png" width="800" /> |
+| **Action** &nbsp; {{ page.nocodeeditor }}.2.4 | Return to the Event Endpoint Management console and scroll down to the 'Access information' section. Copy the server address details.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-EEMAddress.png" width="800" /> |
 | **Action** &nbsp; {{ page.nocodeeditor }}.2.5 | Type **New Customers** (1) for the node name, paste the server address into the **Server** (2) field, and click **Next** (3).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-2ndEventSourceServerDetails.png" width="800" /> |
 | **Narration** | They configure the security details, accepting the certificates being used by the event stream. Then they specify the username / password credentials that they generated in the event management console.|
 | **Action** &nbsp; {{ page.nocodeeditor }}.2.6 | Check the **Accept certificates** (1) box and select **Next** (2).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-2ndEventSourceAcceptCerts.png" width="800" /> |
 | **Action** &nbsp; {{ page.nocodeeditor }}.2.7 | Copy the username (1) and password (2) from step {{ page.browsingselfservice }}.1.4, and click **Next** (3).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-2ndEventSourceCredentials.png" width="800" /> |
 | **Narration** | The system connects to the event stream and queries the available topics for the provided credentials. A single CUSTOMERS topic is found and selected by the team.|
-| **Action** &nbsp; {{ page.nocodeeditor }}.2.8 | Check **CUSTOMERS** (1) and click **Next** (3).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-2ndEventSourceSelectTopic.png" width="800" /> |
-| **Narration** | The data structure for the events needs to be defined. For simplicity the team decide to copy the sample message from the Event Management console.|
-| **Action** &nbsp; {{ page.nocodeeditor }}.2.9 | Click on **Upload a schema or sample message** (1).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-2ndEventSourceUploadSample.png" width="800" /> |
+| **Action** &nbsp; {{ page.nocodeeditor }}.2.8 | Check **CUSTOMERS** (1) and click **Next** (2).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-2ndEventSourceSelectTopic.png" width="800" /> |
+| **Narration** | The data structure for the events needs to be defined. For simplicity, the team decide to copy the sample message from the Event Management console.|
+| **Action** &nbsp; {{ page.nocodeeditor }}.2.9 | Click on **Upload a schema or sample message**.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-2ndEventSourceUploadSample.png" width="800" /> |
 | **Action** &nbsp; {{ page.nocodeeditor }}.2.10 | Select the **Sample message** (1) tab, copy the text below into the **Enter sample message** (2) box, and click **Done** (3).<br/> <br/><inline-code code="{<br/>&nbsp;&nbsp;&quot;customerid&quot;: &quot;acb3eb65-98a1-45c2-84d4-f5df157862b4&quot;,<br/>&nbsp;&nbsp;&quot;customername&quot;: &quot;Emilio Quitzon&quot;,<br/>&nbsp;&nbsp;&quot;registered&quot;: &quot;2023-10-24 19:20:35.638&quot;<br/>}"></inline-code><img src="../300-integration-event-automation-common/images/2-Flow-2ndEventSourceSample.png" width="800" /> |
 | **Action** &nbsp; {{ page.nocodeeditor }}.2.11 | Click on **Configure**.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-2ndEventSourceComplete.png" width="800" /> |
 
@@ -86,15 +86,15 @@ The marketing team’s business requirement is to correlate newly created custom
 
 | **{{ page.nocodeeditor }}.3** | **Filter orders over 100 dollars** |
 | :--- | :--- |
-| **Narration** | The ORDERS stream provides an event for each order; however the marketing team only require orders over $100. They will use a Filter node to disregard the unnecessary events. They drag and drop the  node onto the canvas. |
+| **Narration** | The ORDERS stream provides an event for each order; however the marketing team only wants to identify orders over $100. They use a Filter node to disregard the unnecessary events. They drag and drop the node onto the canvas. |
 | **Action** &nbsp; {{ page.nocodeeditor }}.3.1 | Press and hold the mouse button on the **Filter** (1) node and drag onto the canvas (2).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-FilterDrag.png" width="800" /> |
-| **Narration** | The team connects the ORDERS output terminal of the filter node. |
+| **Narration** | The team connects the ORDERS output terminal of the Filter node. |
 | **Action** &nbsp; {{ page.nocodeeditor }}.3.2 | Hover over the Orders output terminal and hold the mouse button down.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-FilterConnectSource1.png" width="800" /> |
-| **Action** &nbsp; {{ page.nocodeeditor }}.3.3 | Drag the connection to the filter's input terminal and release the mouse button.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-FilterConnectTarget.png" width="800" /> |
-| **Narration** | The filter node provides an expression builder that makes it easy for the marketing team to filter out orders under $100. |
+| **Action** &nbsp; {{ page.nocodeeditor }}.3.3 | Drag the connection to the Filter's input terminal and release the mouse button.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-FilterConnectTarget.png" width="800" /> |
+| **Narration** | The Filter node provides an expression builder that makes it easy for the marketing team to Filter out orders under $100. |
 | **Action** &nbsp; {{ page.nocodeeditor }}.3.4 | Hover over the Filter node and select the **edit** icon.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-FilterEdit.png" width="800" /> |
 | **Action** &nbsp; {{ page.nocodeeditor }}.3.5 | Enter **FilterLargeOrders** (1) for the node name and click **Next** (2).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-FilterName.png" width="800" /> |
-| **Action** &nbsp; {{ page.nocodeeditor }}.3.6 | Click on the **Assistance** pull down.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-FilterAssistance.png" width="800" /> |
+| **Action** &nbsp; {{ page.nocodeeditor }}.3.6 | Click on the **Assistant** pull down.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-FilterAssistance.png" width="800" /> |
 | **Action** &nbsp; {{ page.nocodeeditor }}.3.7 | Select **price** (1) for the property, **> Is greater than** (2) for the condition and enter **100** (3) for the value. Click on **Add to expression** (4) to complete . <br/> <img src="../300-integration-event-automation-common/images/2-Flow-FilterCondition.png" width="800" /> |
 | **Action** &nbsp; {{ page.nocodeeditor }}.3.8 | The completed conditions will be shown (1), click on **Configure** (2). <br/> <img src="../300-integration-event-automation-common/images/2-Flow-FilterComplete.png" width="800" /> |
 
@@ -102,7 +102,7 @@ The marketing team’s business requirement is to correlate newly created custom
 
 | **{{ page.nocodeeditor }}.4** | **Identify new customer order over 100 dollars** |
 | :--- | :--- |
-| **Narration** | The team want to join the new customer and filtered order stream together, detecting when a new customer has placed a large order within 24 hours. To detect this situation a JOIN node is used. The team drag and drop the node on to the canvas.  |
+| **Narration** | The team wants to join the new customer and filtered order stream together, detecting when a new customer has placed a large order within 24 hours. To detect this situation a JOIN node is used. The team drag and drop the node on to the canvas.  |
 | **Action** &nbsp; {{ page.nocodeeditor }}.4.1 | Press and hold the mouse button on the **Interval join** node and drag onto the canvas.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-JoinDrag.png" width="800" /> |
 | **Narration** | The JOIN node takes two input streams. The marketing team connect the filtered orders and new customers events to the input terminal of the JOIN node.  |
 | **Action** &nbsp; {{ page.nocodeeditor }}.4.2 | Hover over the New Customers output terminal and hold the mouse button down.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-JoinSourceConnect1.png" width="800" /> |
