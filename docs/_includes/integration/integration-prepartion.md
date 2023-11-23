@@ -12,7 +12,7 @@
 | **Required versions** | Cloud Pak for Integration 2023.2.1 |
 | **How to get support** | • Open a support case at <a href="https://techzone.ibm.com/help" target="_blank" rel="noreferrer">IBM Technology Zone Help</a> regarding issues with reserving and provisioning Tech Zone environments.<br/>• Contact <a href="https://ibm-cloud.slack.com/archives/C0216F39ACU" target="_blank" rel="noreferrer">#platinumdemos-automation-support</a> regarding issues with setting up and running this demo. |
 
-### **DEMO INSTALLATION AND SETUP**
+{{ page.topcategory }}
 
 <details markdown="1">
 
