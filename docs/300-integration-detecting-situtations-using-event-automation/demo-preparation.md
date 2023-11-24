@@ -9,6 +9,7 @@ boxIntroPresentationUrl: https://somewhere.com
 boxPdfScript: https://somewhere2.com
 gitHubUrl: https://github.com/IBM/platinum-demo-code-event-automation.git
 gitHubDir: platinum-demo-code-event-automation
+topcategory: "### **DEMO INSTALLATION AND SETUP**"
 ---
 
 {% include integration/integration-prepartion.md %}

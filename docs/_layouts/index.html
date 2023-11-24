@@ -1,0 +1,38 @@
+---
+itautomation-button-class: header-button
+integration-button-class: header-button-selected
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <script src="js/inline-notifications.js"></script>
+    <script src="js/inline-code.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="header">
+      <div id="header-spacing">
+        <header></header>
+      </div>
+      <div id="header-title" class="demo-header">
+        <h1>{{ page.title }}</h1>
+      </div>
+      <div class="header-buttons">
+        <ul class="{{ layout.integration-button-class }}">
+          <a href="index" class="white-text">Integration</a>
+        </ul>
+        <ul class="{{ layout.itautomation-button-class }}">
+          <a href="itautomation" class="white-text">IT Automation</a>
+        </ul>
+      </div>
+    </div>
+    <section class="main-body">
+      {{ content }}
+    </section>
+    <footer>
+    </footer>
+  </body>
+</html>
+
