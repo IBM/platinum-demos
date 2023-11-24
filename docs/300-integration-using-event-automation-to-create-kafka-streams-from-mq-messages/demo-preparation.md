@@ -1,5 +1,5 @@
 ---
-title: Tapping into IBM MQ and streaming messages to IBM Event Automation <br/>300-level live demo
+title: Using event automation to create Kafka streams from MQ messages <br/>300-level live demo
 layout: preparation
 banner: images/temp-banner.jpg
 overview: In this demo we will see how Focus Corp, an online retailer, uses real-time MQ transaction data to capitalize on time-sensitive revenue opportunities.
