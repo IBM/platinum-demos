@@ -167,7 +167,7 @@ Before completing this section, download the Select the **<a href="https://raw.g
 
 2. Log in to **Workflow Center** using '**admin**' as both the **User name** and **Password**. <br/> <img src="images/prep-82.png" width="800" /><br/>
 
-3. Click **Process Apps**. <br/><img src="https://raw.githubusercontent.com/ibm/platinum-demos/master/docs/src/pages/300-enhancing-ba-with-integration/images/prep-73.png" width="800" /><br/>
+3. Click **Process Apps**. <br/><img src="images/prep-73.png" width="800" /><br/>
 
 4. Click **Import**. <br/> <img src="images/prep-74.png" width="800" /><br/>
 
