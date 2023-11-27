@@ -1,7 +1,7 @@
 ---
 title: Leveraging ODM decisions in watsonx Orchestrate <br/> 300-level live demo
 layout: demoscript
-banner: images/temp-banner.jpg
+banner: images/wxo_odm_demo_banner.png
 ---
 
 <span id="top"></span>
@@ -34,7 +34,7 @@ Let’s get started!
 | **1.1** | **Introduce the customer service decision** |
 | :--- | :--- |
 | **Narration** | When receiving a customer claim through the call center, agents must retrieve customer data and access different systems to register the claim, as well as explain to their customers if they will be reimbursed or what to do to return an item. FocusCorp wants to improve employee productivity by providing employees direct access to information in their backend systems. For example, customer service reps need to know immediately whether a return is approved, so they can communicate this over the phone to the customer. <br/><br/> FocusCorp uses Operational Decision Manager (ODM) to validate the return request from the customer. The company has previously deployed an ODM decision service that approves return requests from multiple enterprise applications requiring validation. <br/><br/> FocusCorp wants to make the automated approval decision easily accessible to call center agents through a watsonx Orchestrate skill. Before seeing how to create such a skill, let’s look at the existing application in ODM. |
-| **Action** &nbsp; 1.1.1 | Show the ODM business console screen that was opened during the demo preparation. Select **Enterprise LDAP** (1), enter the Username **cp4admin** (2), enter the **password** (3) you copied in your notebook, and click **Log in** (4). <inline-notification text="The Decision Center console will start from the last page you were in when you left during your last connection."></inline-notification> <img src="images/1-1-1.png" width="800" /> |
+| **Action** &nbsp; 1.1.1 | Show the ODM Business Console screen that was opened during the demo preparation. Select **Enterprise LDAP** (1), enter the Username **cp4admin** (2), enter the **password** (3) you copied in your notebook, and click **Log in** (4). <inline-notification text="The Decision Center console will start from the last page you were in when you left during your last connection."></inline-notification> <img src="images/1-1-1.png" width="800" /> |
 | **Action** &nbsp; 1.1.2 | Click the **LIBRARY** tab. <br/> <img src="images/1-1-2.png" width="800" /> |
 | **Narration** | The return policy is managed in ODM by FocusCorp's retail business team, using a dedicated business console called Decision Center. Let’s see how the return policy is implemented in ODM. |
 | **Action** &nbsp; 1.1.3 | Click the **Customer Service** decision service. <br/> <img src="images/1-1-3.png" width="800" /> |
@@ -67,7 +67,7 @@ Let’s get started!
 | **Narration** | Two RuleApps are deployed in this production environment. The 'Customer Service' RuleApp manages the return policy we just looked at in the Business Console. |
 | **Action** &nbsp; 1.3.4 | Click **FocusCorp_Customer_Service**. <br/> <img src="images/1-3-4.png" width="800" /> |
 | **Narration** | The customer service application has one ruleset with two input parameters -- the customer and the purchase to be returned. The decision service and the ruleset it contains are versioned (3), so a user can decide to use a very specific version, or the latest deployed version of the RuleApp. |
-| **Action** &nbsp; 1.3.5 | Point out and explain the **FocusCorp_Customer_Service** ruleset. One output parameter (1) the return decision (2). <br/> <img src="images/1-3-5.png" width="800" /> |
+| **Action** &nbsp; 1.3.5 | Point out and explain the **FocusCorp_Customer_Service** ruleset. The output parameter (1), the return decision (2) and the versioning(3). <br/> <img src="images/1-3-5.png" width="800" /> |
 | **Narration** | Let’s now see how to leverage these deployed decisions using watsonx Orchestrate to make these return decisions visible to call center agents. |
 
 **[Go to top](#place1)**
@@ -150,7 +150,7 @@ Let’s get started!
 | **Narration** | Next, we must connect the skill to the Rule Execution Server. We must use the ZEN API key that was provided by our ODM administrator to connect to the deployed rule service. |
 | **Action** &nbsp; 2.4.6 | Enter the **ZEN API key** (1) you copied in your notebook. Click **Connect app** (2). <br/> <img src="images/2-4-6.png" width="800" /> |
 | **Narration** | The skill is connected, and we can now add it into our personal catalog. |
-| **Action** &nbsp; 2.4.7 | Click **Add skill +** (2). <br/> <img src="images/2-4-7.png" width="800" /> |
+| **Action** &nbsp; 2.4.7 | Click **Add skill +**. <br/> <img src="images/2-4-7.png" width="800" /> |
 | **Action** &nbsp; 2.4.8 | Check that your skill is added. <br/> <img src="images/2-4-8.png" width="800" /> |
 | **Action** &nbsp; 2.4.9 | Click **Home**. <br/> <img src="images/2-4-9.png" width="800" /> |
 
@@ -178,7 +178,7 @@ Let’s get started!
 
 <details markdown="1">
 
-<summary>3 - Creating a composite skill to deliver easy-to-use interactions</summary>
+<summary>3 - Creation of a composite skill to improve user's productivity</summary>
 
 <br/>
 
@@ -189,7 +189,8 @@ Let’s get started!
 | **Action** &nbsp; 3.1.3 | Expand the **Add skills** menu (1). Click **Create a skill flow** (2). <br/> <img src="images/3-1-3.png" width="800" /> |
 | **Narration** | Let’s now work on this composite skill. As an automation builder, we can create composite skills in Orchestrate. <br/><br/> The first step is to give a name and description to the skills so that users can easily recognize it in the catalog. The description is important to understand the precise actions that are performed by the composite skill. |
 | **Action** &nbsp; 3.1.4 | Click the **pencil** icon to name the skill flow. <br/> <img src="images/3-1-4.png" width="800" /> |
-| **Action** &nbsp; 3.1.5 | Enter a skill name that contains your 'XXX' initials (e.g., '**XXX FocusCorp Register claim**) (1). In the **Description** field, enter ‘**Get the customer and purchase details from the CRM - Validates de return conditions and refunds**’ (2). Click **Save** (3). <br/> <img src="images/3-1-5.png" width="800" /> |
+| **Action** &nbsp; 3.1.5 | Enter a skill name that contains your 'XXX' initials (e.g., '**XXX FocusCorp Register claim**') (1). In the **Description** field, enter ‘**Get the customer and purchase details from the CRM - Validates de return conditions and refunds**’ (2). Click **Save** (3). <br/> <img src="images/3-1-5.png" width="800" /> |
+| **Narration** | The description will help the users to understand the actions performed by the composite skill. |
 | **Action** &nbsp; 3.1.6 | Click the **+** button. <br/> <img src="images/3-1-6.png" width="800" /> |
 | **Narration** | Let’s now add the two skills that will compose this flow. The first one will collect the data from the database. The second one, which we created from the ODM deployment, will analyze them and return a decision. |
 | **Action** &nbsp; 3.1.7 | Search for '**XXX**' to find all your skills from the catalog ('XXX' being your own initials). <br/> <img src="images/3-1-7.png" width="800" /> |
