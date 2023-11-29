@@ -41,9 +41,9 @@ Log in to the demo environment: <br/>
 
 Since you will be demonstrating using a past incident, you will need to set the time period.
 
-1. In the upper right, click the button showing the timeframe. <br/><img src="https://raw.githubusercontent.com/ibm-garage-tsa/platinum-demos/master/src/pages/300-using-instana-to-observe-cloud-pak-for-integration/images/prep-1-1-timeframe.png" width="400"/><br/>
+1. In the upper right, click the button showing the timeframe. <br/><img src="images/prep-1-1-timeframe.png" width="400"/><br/>
 
-2. At the bottom of the pop-up, set the timeframe to begin at **45 minutes past the hour** and end at **55 minutes past the hour** (1). It doesn’t matter which hour you pick. Click **Set Time** (2). <br/><inline-notification text="This will ensure you see normal behavior for the application. During the demo you will change the time window to observe a failure occurring."></inline-notification><img src="https://raw.githubusercontent.com/ibm-garage-tsa/platinum-demos/master/src/pages/300-using-instana-to-observe-cloud-pak-for-integration/images/prep-1-2-set-time.png" width="800"/><br/>
+2. At the bottom of the pop-up, set the timeframe to begin at **45 minutes past the hour** and end at **55 minutes past the hour** (1). It doesn’t matter which hour you pick. Click **Set Time** (2). <br/><inline-notification text="This will ensure you see normal behavior for the application. During the demo you will change the time window to observe a failure occurring."></inline-notification><img src="images/prep-1-2-set-time.png" width="800"/><br/>
 
 **[Go to top](#top)**
 
@@ -65,4 +65,4 @@ To request access to the <a href="https://demo-partner.instana.io/" target="_bla
 
 ***
 
-Click [here](/300-using-instana-to-observe-cloud-pak-for-integration/demo-script) to go to the **Demo script** on the next tab.
+Click [here](demo-script) to go to the **Demo script** on the next tab.
