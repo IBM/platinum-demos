@@ -13,12 +13,15 @@ banner: images/scalable-resilient-integration-banner-PREP-5-25-23.jpg
 | **Scenario overview** | In this demo, we will see how watsonx Orchestrate can leverage Operational Decision Manager’s deployed services on premises to create new skills. To illustrate this, we will use a company’s customer service application. |
 | **Demo products** | IBM Operational Decision Manager (included in Cloud Pak for Business Automation V23.0.1), watsonx Orchestrate |
 | **Demo capabilities** | Decision management; Digital assistant |
+| **Sales Guidance** | <a href="./files/wxO_ODM%20demo%20sales%20guidance%20DRAFT%20V1.docx" target="_blank" rel="noreferrer">wxO_ODM_Sale_Guidance.doc</a> |
+| **Demo intro slides** | <a href="./files/wxO_ODM%20Platinum%20Demo%20-%20Intro%20deck%20V2.pptx" target="_blank" rel="noreferrer">wxO_ODM_Platinum_Demo_Intro_Deck.pptx</a> |
 | **Demo script** | A complete demo script is on the second tab above. <br/><br/> This demo script has multiple tasks that each have multiple steps. In each step, you have the details about what you need to do (**Actions**), what you can say while delivering this demo step (**Narration**), and what diagrams and screenshots you will see.<br/><br/>This demo script is a suggestion, and you are welcome to customize based on your sales opportunity. Most importantly, practice this demo in advance. If the demo seems easy for you to execute, the customer will focus on the content. If it seems difficult for you to execute, the customer will focus on your delivery. |
-| **Demo downloads** | Operational Decision Manager (Decision Center projects) <br/> • <a href="./files/Customer Service.zip" target="_blank" rel="noreferrer">Customer Service.zip</a> <br/> • <a href="./files/Get Request Details.zip" target="_blank" rel="noreferrer">Get Request Details.zip</a> <br/><br/> watsonx Orchestrate (Skills) <br/> • <a href="./files/XXX FocusCorp Customer Service.json" target="_blank" rel="noreferrer">XXX FocusCorp Customer Service.json</a> <br/> • <a href="./files/XXX FocusCorp Get data from CRM.json" target="_blank" rel="noreferrer">XXX FocusCorp Get data from CRM.json</a> <br/><br/> Optional (For ODM experts looking to customize the decision service) <br/> • <a href="./files/RuleDesignerFiles_V5_20231027.zip" target="_blank" rel="noreferrer">RuleDesignerFiles.zip</a> |
-| **Required versions** | IBM Operational Decision Manager 8.11.1.0 on IBM Cloud, watsonx Orchestrate SaaS (Standard or Enterprise edition) |
+| **Demo downloads** | Operational Decision Manager (Decision Center projects) <br/> • <a href="./files/Customer Service.zip" target="_blank" rel="noreferrer">Customer Service.zip</a> <br/> • <a href="./files/Get Request Details.zip" target="_blank" rel="noreferrer">Get Request Details.zip</a> <br/><br/> watsonx Orchestrate (For ODM on prem) <br/> • <a href="./files/XXX%20FocusCorp%20Customer%20Service.json" target="_blank" rel="noreferrer">XXX FocusCorp Customer Service.json</a> <br/> • <a href="./files/XXX%20FocusCorp%20Get%20data%20from%20CRM.json" target="_blank" rel="noreferrer">XXX FocusCorp Get data from CRM.json</a><br/> watsonx Orchestrate (For ODM on SaaS) <br/> • <a href="./files/XXX%20FocusCorp%20Customer%20Service%20SaaS.json" target="_blank" rel="noreferrer">XXX FocusCorp Customer Service SaaS.json</a> <br/> • <a href="./files/XXX%20FocusCorp%20Get%20data%20from%20CRM%20SaaS.json" target="_blank" rel="noreferrer">XXX FocusCorp Get data from CRM SaaS.json</a> <br/><br/> Optional (For ODM experts looking to customize the decision service) <br/> • <a href="./files/RuleDesignerFiles_V5_20231027.zip" target="_blank" rel="noreferrer">RuleDesignerFiles.zip</a> |
+| **Sales enablement video** | Coming soon |
+| **Required versions** | - IBM Operational Decision Manager 8.11.1.0  and 8.12 (on prem or SaaS)<br> - watsonx Orchestrate SaaS (Standard or Enterprise edition) |
 | **How to get support** | • Open a support case at <a href="https://techzone.ibm.com/help" target="_blank" rel="noreferrer">IBM Technology Zone Help</a> regarding issues with reserving and provisioning Tech Zone environments.<br/>• Contact <a href="https://ibm-cloud.slack.com/archives/C0216F39ACU" target="_blank" rel="noreferrer">#platinumdemos-automation-support</a> regarding issues with setting up and running this demo. |
 
-<inline-notification text="You are going to deliver a demo on a watsonx Orchestrate shared environment. watsonx Orchestrate environments are single-tenant. To prevent conflicts and to easily access your different artifacts, you will have to pre-fix or update some skills and artifacts with your own initials. <br/><br/> In this documentation, we will use ‘<strong>XXX</strong>’. You are asked to use your own 3-letter initials that are not yet used on your watsonx Orchestrate instance."></inline-notification>
+<inline-notification text="You are going to deliver a demo on a watsonx Orchestrate shared environment. watsonx Orchestrate environments are single-tenant. To prevent conflicts and to easily access your different artifacts, you will have to pre-fix or mark some skills and artifact names with your own initials. <br/><br/> In this documentation, we will use ‘<strong>XXX</strong>’. You are asked to use your own 3-letter initials that are not yet used on your watsonx Orchestrate instance. <br/><br/> We are detailing the setup of IBM Operational Decision Manager (ODM) using a TechZone pre-configured VMWare image powered by PackInstaller. However, compatible ODM on SaaS configuration files are provided. <br/> Note: You will have to ask your SaaS administrator for a userID/Password to connect the watsonx Orchestrate application to your Rule Execution Server instance."></inline-notification>
 
 <br/>
 
@@ -26,10 +29,9 @@ banner: images/scalable-resilient-integration-banner-PREP-5-25-23.jpg
 
 <summary>Prerequisites</summary>
 
-Before starting the installation of this demo, make sure you have been granted access to a watsonx Orchestrate SaaS environment: <br/><br/>
+Before starting the installation of this demo, make sure you have been granted **'developer'** access to a watsonx Orchestrate SaaS environment: <br/><br/>
 • IBM Tech Sales: Contact your local geo tech sales leader to be invited to the dedicated watsonx Orchestrate instances <br/>
-• Business Partners: Contact your local IBM Ecosystem representative
-
+• Business Partners: Contact your local IBM Ecosystem representative<br/><br/>
 It is also required that you have a text editor that's able to edit JSON files. In this documentation, we will use Microsoft™ Visual Studio Code.
 
 <br/>
@@ -45,6 +47,11 @@ It is also required that you have a text editor that's able to edit JSON files. 
 ### **PROVISION AN OPENSHIFT ENVIRONMENT AND DEPLOY CLOUD PAK FOR BUSINESS AUTOMATION**
 
 <details markdown="1">
+
+To run this demonstration, you will need an OpenShift environment with Cloud Pak
+for Business Automation 23.0.1 installed. We will use IBM Operational Decision
+Manager on prem version contained in this installation. Only the Decision
+capabilities must be installed from your Cloud Pak for Business Automation.<br/> <inline-notification text="Note: If you want to use your ODM hosted on a SaaS tenant, just contact your SaaS administrator to get a user and password to connect your RES in Basic Authentication. Go directly to Step 3."></inline-notification>
 
 <summary>1 - Prepare your Cloud Pak for Business Automation environment</summary>
 
@@ -76,39 +83,11 @@ It is also required that you have a text editor that's able to edit JSON files. 
 
 <p/>
 
-<details markdown="1">
-
-<summary>2 - Download the installation files</summary>
-
-Four installation files are required for the setup of this demonstration.
-
-To set up IBM Operational Decision Manager (ODM): <br/>
-• <a href="./files/Customer Service.zip" target="_blank" rel="noreferrer">Customer Service.zip</a> <br/>
-• <a href="./files/Get Request Details.zip" target="_blank" rel="noreferrer">Get Request Details.zip</a>
-
-To set up watsonx Orchestrate: <br/>
-• <a href="./files/XXX FocusCorp Customer Service.json" target="_blank" rel="noreferrer">XXX FocusCorp Customer Service.json</a> <br/> 
-• <a href="./files/XXX FocusCorp Get data from CRM.json" target="_blank" rel="noreferrer">XXX FocusCorp Get data from CRM.json</a>
-
-**Customer Service.zip** contains the business rule decision service driving the customer service decisions. **Get Request Details.zip** contains some rules that are used to simulate access to the FocusCorp CRM. The rules are simply providing the customer and purchase details based on a customer and purchase ID. This service is used to create the ‘FocusCorp get data from CRM’ skill. The two JSON files (**XXX FocusCorp Customer Service.json** and **XXX FocusCorp Get data from CRM.json**) are the skills configuration files that are used to make the skill creation faster in watsonx Orchestrate.
-
-Download these four files on your computer to have them ready to configure these two components.
-
-<br/>
-
-**[Go to top](#top)**
-
-<br/><br/>
-
-</details>
-
-<br/>
-
 ### **VALIDATE YOUR ENVIRONMENT AND BOOKMARK YOUR IDS / URLS**
 
 <details markdown="1">
 
-<summary>1 - Check your Cloud Pak for Business Automation install</summary>
+<summary>1 - Check your CP4BA install</summary>
 
 After 4-5 hours, your Cloud Pak for Business Automation (CP4BA) should be ready. After requesting your CP4BA, you will receive a series of emails from IBM Technology Zone regarding the progress of your request.
 
@@ -140,11 +119,11 @@ After 4-5 hours, your Cloud Pak for Business Automation (CP4BA) should be ready.
 
 <summary>2 - Generate your API key</summary>
 
-1. Open the **Designer URL** from your notebook and select **Enterprise LDAP**. <br/> <img src="images/Prep-2-2-1.png" width="800" /><br/>
+1. Log into the Designer interface using the **Designer URL** from your notebook using **Enterprise LDAP**. <br/> <img src="images/Prep-2-2-1.png" width="800" /><br/>
 
-2. For the **Username** and **Password** fields (1), use the **Decisions Admin Username** and **Decisions Admin Password** credentials from your notebook. Click **Log in** (2). <br/> <img src="images/Prep-2-2-2.png" width="800" /><br/>
+2. Use the **Admin Username (cp4admin)** credentials (1) from your notebook. Click **Log in** (2). <br/> <img src="images/Prep-2-2-2.png" width="800" /><br/>
 
-3. Right-click your **avatar** icon (1). Click **Profile and settings** (2). <br/> <img src="images/Prep-2-2-3.png" width="800" /><br/>
+3. Right-click on your **avatar** icon (1). Click **Profile and settings** (2). <br/> <img src="images/Prep-2-2-3.png" width="800" /><br/>
 
 4. Click **API key**. <br/> <img src="images/Prep-2-2-4.png" width="800" /><br/>
 
@@ -152,7 +131,7 @@ After 4-5 hours, your Cloud Pak for Business Automation (CP4BA) should be ready.
 
 6. Click **Generate**. <br/> <img src="images/Prep-2-2-6.png" width="800" /><br/>
 
-7. Click the **eye** icon to show the API key. <br/> <img src="images/Prep-2-2-7.png" width="800" /><br/>
+7. Click the **show**<br/> <img src="images/Prep-2-2-7.png" width="800" /><br/>
 
 8. Copy and paste the **API key** into your notebook (1). Click **Close** (2). <br/> <img src="images/Prep-2-2-8.png" width="800" /><br/>
 
@@ -172,11 +151,9 @@ After 4-5 hours, your Cloud Pak for Business Automation (CP4BA) should be ready.
 
 1. Open a terminal window. <br/> <img src="images/Prep-2-3-1.png" width="800" /><br/>
 
-2. Type the following command: <br/> `echo -n "cp4admin:<your API key>" | base64` <br/> <img src="images/Prep-2-3-2.png" width="800" /><br/>
+2. Type the command: <br/> `echo -n "cp4admin:<your API key>" | base64` <br/> <img src="images/Prep-2-3-2.png" width="800" /><br/>
 
-3. Copy and paste your ZEN API key (highlighted in blue) in your notebook using the format '**ZenApiKey + [your generated ZEN API key]**'  <br/> <img src="images/Prep-2-3-3.png" width="800" /><br/>
-
-4. Check your notebook to make sure you have all the following information noted. <br/> <inline-notification text="Please note the format of the ZEN API key (highlighted in orange), which you will have to use in the discovery service."></inline-notification> <img src="images/Prep-2-4-1.png" width="800" /><br/>
+3. Copy and paste your ZEN API key (in blue) in your notebook using the format '**ZenApiKey + [your generated ZEN API key]**'  <br/> <img src="images/Prep-2-3-3.png" width="800" /><br/>
 
 <br/>
 
@@ -187,6 +164,55 @@ After 4-5 hours, your Cloud Pak for Business Automation (CP4BA) should be ready.
 </details>
 
 <br/>
+
+<details markdown="1">
+
+<summary>4 - Check your notebook</summary>
+
+At this stage your notbook should contain the following information: <br/><img src="images/Prep-2-4-1.png" width="800" /><br/><inline-notification text="Please note the format of the ZEN API key (highlighted in orange), which you will have to use in the discovery service."></inline-notification> 
+
+<br/>
+
+**[Go to top](#top)**
+
+<br/><br/>
+
+</details>
+
+<br/>
+
+### **Download the installation files**
+
+<details markdown="1">
+
+<summary>Installation Files</summary>
+
+Four installation files are required for the setup of this demonstration.<br/><br/>
+To set up IBM Operational Decision Manager (ODM): <br/>
+• <a href="./files/Customer Service.zip" target="_blank" rel="noreferrer">Customer Service.zip</a> <br/>
+• <a href="./files/Get Request Details.zip" target="_blank" rel="noreferrer">Get Request Details.zip</a><br/>
+To set up watsonx Orchestrate (ODM on prem): <br/>
+• <a href="./files/XXX%20FocusCorp%20Customer%20Service.json" target="_blank" rel="noreferrer">XXX FocusCorp Customer Service.json</a><br/> 
+• <a href="./files/XXX%20FocusCorp%20Get%20data%20from%20CRM.json" target="_blank" rel="noreferrer">XXX FocusCorp Get data from CRM.json</a><br/>
+To set up watsonx Orchestrate (ODM on SaaS): <br/>
+• <a href="./files/XXX%20FocusCorp%20Customer%20Service%20SaaS.json" target="_blank" rel="noreferrer">XXX FocusCorp Customer Service.json</a><br/> 
+• <a href="./files/XXX%20FocusCorp%20Get%20data%20from%20CRM%20SaaS.json" target="_blank" rel="noreferrer">XXX FocusCorp Get data from CRM.json</a><br/><br/>
+
+**Customer Service.zip** contains the business rule decision service driving the customer service decisions.<br/> 
+**Get Request Details.zip** contains some rules that are used to simulate access to the FocusCorp CRM. These rules are providing the customer and purchase details based on a customer and purchase ID. This service is used to create the ‘FocusCorp get data from CRM’ skill.
+The 2 json files are the skills configuration files that are used to make the skill creation faster in watsonx Orchestrate.<br/><br/>
+Download the 4 files corresponding to your configuration on your computer to have them ready to setup ODM and watsonx Orchestrate.
+
+<br/>
+
+**[Go to top](#top)**
+
+<br/><br/>
+
+</details>
+
+<p/>
+
 
 ### **CONFIGURE ODM**
 
@@ -202,7 +228,7 @@ After 4-5 hours, your Cloud Pak for Business Automation (CP4BA) should be ready.
 
 4. Click **Choose**. <br/> <img src="images/Prep-3-1-4.png" width="800" /><br/>
 
-5. In your local folder, select **Get Request Details.zip** (1). Click **Open** (2). <br/> <img src="images/Prep-3-1-5.png" width="800" /><br/>
+5. Navigate to your local folder and select **Get Request Details.zip** (1). Click **Open** (2). <br/> <img src="images/Prep-3-1-5.png" width="800" /><br/>
 
 6. Click **Import**. <br/> <img src="images/Prep-3-1-6.png" width="800" /><br/>
 
@@ -218,13 +244,13 @@ After 4-5 hours, your Cloud Pak for Business Automation (CP4BA) should be ready.
 
 12. Click the **Configurations** tab. <br/> <img src="images/Prep-3-1-12.png" width="800" /><br/>
 
-13. Click the **+** button. <br/> <img src="images/Prep-3-1-13.png" width="800" /><br/>
+13. Click the **+** icon. <br/> <img src="images/Prep-3-1-13.png" width="800" /><br/>
 
 14. For the **Configuration name**, enter ‘**wxoDeploy**’ (1). For the **RuleApp name**, enter ‘**FocusCorp_GetRequestDetails**’ (2). Click the **Operations** tab (3). <br/> <inline-notification text="Make sure to use the same name and letter case for the RuleApp name."></inline-notification> <img src="images/Prep-3-1-14.png" width="800" /><br/>
 
 15. Select the **FocusCorp_Get_request_details** operation (1). Click the **Targets** tab (2). <br/> <img src="images/Prep-3-1-15.png" width="800" /><br/>
 
-16. Select the **Decision Service Execution** target server (1). Click the **save** icon (2). <br/> <img src="images/Prep-3-1-16.png" width="800" /><br/>
+16. Check the **Decision Service Execution** target server (1). Click the **save** icon (2). <br/> <img src="images/Prep-3-1-16.png" width="800" /><br/>
 
 17. Click **Create new version**. <br/> <img src="images/Prep-3-1-17.png" width="800" /><br/>
 
@@ -236,7 +262,7 @@ After 4-5 hours, your Cloud Pak for Business Automation (CP4BA) should be ready.
 
 21. Wait for the service to be deployed. <br/> <img src="images/Prep-3-1-21.png" width="800" /><br/>
 
-22. Click the **LIBRARY** tab. <br/> <img src="images/Prep-3-1-22.png" width="800" /><br/>
+22. Click the **LIBRARY** tab. <br/> <img src="images/Prep-3-1-22.png" width="800" /><br/><inline-notification text="The first decision service is now deployed on the rule execution server. Let’s deploy the ‘Customer Service’ one in the same way."></inline-notification>
 
 <br/>
 
@@ -282,7 +308,7 @@ For this service, we are going to deploy two different instances with two differ
 
 13. Select the **FocusCorp_CustomerService** operation (1). Click the **Targets** tab (2). <br/> <img src="images/Prep-3-2-13.png" width="800" /><br/> 
 
-14. Select the **Decision Service Execution** target server (1). Click the **save** icon (2). <br/> <img src="images/Prep-3-2-14.png" width="800" /><br/>
+14. Select the **Decision Service Execution** target server (1). Click the **save** icon (2). <br/> <img src="images/Prep-3-2-14.png" width="800" /><br/> <inline-notification text="ODM on SaaS users, you can choose the Dev or Prod server. Just make sure to bookmark the corresponding server URL to connect the discovery service later in this documentation."></inline-notification> 
 
 15. Click **Create New Version**. <br/> <img src="images/Prep-3-2-15.png" width="800" /><br/>
 
@@ -297,6 +323,7 @@ For this service, we are going to deploy two different instances with two differ
 20. After the deployment is completed, click **Configurations**. <br/> <img src="images/Prep-3-2-20.png" width="800" /><br/>
 
 21. Repeat from **Step 17** and deploy the **wxODeployDemo** configuration. <br/> <img src="images/Prep-3-2-21.png" width="800" /><br/>
+We are done with the Decision Center configuration, let’s now make sure the two decision services are correctly deployed on the Rule Execution Server.<br/>
 
 <br/>
 
@@ -344,7 +371,8 @@ Let’s now make sure the two decision services are correctly deployed on the Ru
 
 To quicken the demo setup, we are providing two skill configuration files. In order to avoid conflicts with other watsonx Orchestrate users, we are going to customize these skills with your own three-letter initials.
 
-We are also going to update the server URL with the URL of your own ODM Rule Execution Server.
+We are also going to update the server URL with the URL of your own ODM Rule Execution Server.<br/>
+<inline-notification text="In the following steps, ODM on SaaS users will edit/use the SaaS versions of the two JSON files."></inline-notification>
 
 1. Open the **XXX FocusCorp Customer Service.json** file with a compatible text editor of your choice. <br/> <img src="images/Prep-4-1-1.png" width="800" /><br/>
 
