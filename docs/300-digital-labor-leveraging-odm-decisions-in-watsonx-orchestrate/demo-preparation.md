@@ -82,6 +82,7 @@ capabilities must be installed from your Cloud Pak for Business Automation.<br/>
 </details>
 
 <p/>
+<br/>
 
 ### **VALIDATE YOUR ENVIRONMENT AND BOOKMARK YOUR IDS / URLS**
 
@@ -162,6 +163,8 @@ After 4-5 hours, your Cloud Pak for Business Automation (CP4BA) should be ready.
 <br/><br/>
 
 </details>
+
+<p/>
 
 <details markdown="1">
 
