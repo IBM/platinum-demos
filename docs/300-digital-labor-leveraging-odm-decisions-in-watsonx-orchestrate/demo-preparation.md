@@ -163,8 +163,6 @@ After 4-5 hours, your Cloud Pak for Business Automation (CP4BA) should be ready.
 
 </details>
 
-<br/>
-
 <details markdown="1">
 
 <summary>4 - Check your notebook</summary>
@@ -181,7 +179,7 @@ At this stage your notbook should contain the following information: <br/><img s
 
 <br/>
 
-### **Download the installation files**
+### **DOWNLOAD THE INSTALLATION FILES**
 
 <details markdown="1">
 
@@ -200,8 +198,8 @@ To set up watsonx Orchestrate (ODM on SaaS): <br/>
 
 **Customer Service.zip** contains the business rule decision service driving the customer service decisions.<br/> 
 **Get Request Details.zip** contains some rules that are used to simulate access to the FocusCorp CRM. These rules are providing the customer and purchase details based on a customer and purchase ID. This service is used to create the ‘FocusCorp get data from CRM’ skill.
-The 2 json files are the skills configuration files that are used to make the skill creation faster in watsonx Orchestrate.<br/><br/>
-Download the 4 files corresponding to your configuration on your computer to have them ready to setup ODM and watsonx Orchestrate.
+The two JSON files are the skills configuration files that are used to make the skill creation faster in watsonx Orchestrate.<br/><br/>
+Download the four files corresponding to your configuration on your computer to have them ready to setup ODM and watsonx Orchestrate.
 
 <br/>
 
@@ -212,7 +210,7 @@ Download the 4 files corresponding to your configuration on your computer to hav
 </details>
 
 <p/>
-
+<br/>
 
 ### **CONFIGURE ODM**
 
@@ -450,7 +448,7 @@ We are also going to update the server URL with the URL of your own ODM Rule Exe
 
 3. Click the **XXX FocusCorp_Get_Data_From_CRM** skill. <br/> <img src="images/Prep-4-3-3.png" width="800" /><br/>
 
-4. Click **Connect app**. <br/> <img src="images/Prep-4-3-4.png" width="800" /><br/>
+4. Click **Connect app**. <br/> <img src="images/Prep-4-3-4.png" width="800" /><br/><inline-notification text="For ODM on SaaS users, use the Basic Authentication userID/password provided by your SaaS administrator in the following steps."></inline-notification>
 
 5. Enter your **ZEN API key** from your notebook (1). Click **Connect app** (2) <br/> <img src="images/Prep-4-3-5.png" width="800" /><br/>
 
