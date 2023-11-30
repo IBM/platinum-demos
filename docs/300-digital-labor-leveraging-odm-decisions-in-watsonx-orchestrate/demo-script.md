@@ -243,7 +243,7 @@ Let’s get started!
 | **Narration** | We are looking for a composite skill. There is one that matches our search. Let’s add it into the personal catalog. |
 | **Action** &nbsp; 4.1.3 | Click the **Composite** tile. <br/> <img src="images/4-1-3.png" width="800" /> |
 | **Action** &nbsp; 4.1.4 | Search for ‘**XXX**’ (‘XXX’ being your own initials). <br/> <img src="images/4-1-4.png" width="800" /> |
-| **Narration** |This is the composite skill that will do the job. Let’s add it in our personal skill set. |
+| **Narration** |This is the composite skill we are looking for. Let’s add it in our personal skill set. |
 | **Action** &nbsp; 4.1.5 | Click **Add skill +**. <br/> <img src="images/4-1-5.png" width="800" /> |
 | **Action** &nbsp; 4.1.6 | Check that your skill is added. Click **Home**. <br/> <img src="images/4-1-6.png" width="800" /> |
 
@@ -253,12 +253,12 @@ Let’s get started!
 | :--- | :--- |
 | **Narration** | We're now ready to use the composite skill. We can invoke it directly using the conversational UI in watsonx Orchestrate. |
 | **Action** &nbsp; 4.2.1 | Check that the skill is in your personal skill set. <br/> <img src="images/4-2-1.png" width="800" /> |
-| **Narration** | We receive a call from a customer providing his identifier and purchase ID we want to return. |
+| **Narration** | We receive a call from a customer. We ask for the customer identifier and the purchase ID of the item to return. |
 | **Action** &nbsp; 4.2.2 | Type ‘**return a product**’ and press the enter/return key on your keyboard. <br/> <img src="images/4-2-2.png" width="800" /> |
 | **Action** &nbsp; 4.2.3 | Enter ‘**CU-004**’ as the **customer ID** (1). Enter ‘**PO-001**’ as the **purchase ID** (2). Click **Apply** (3). <br/> <img src="images/4-2-3.png" width="800" /> |
-| **Narration** | The customer is now telling me the reasons why they're returning the product. |
+| **Narration** | The customer is now telling us the reasons why the product is returned. |
 | **Action** &nbsp; 4.2.4 | For the **Return reason** field, select **Arrived_late** (1). For the **Item condition** field, select **Opened** (2). Click **Show all fields** (3). <br/> <img src="images/4-2-4.png" width="800" /> |
-| **Narration** | All the other fields have been automatically pre-filled, saving us a lot of time. |
+| **Narration** | All the other required fields have been automatically pre-filled, saving us a lot of time. |
 | **Action** &nbsp; 4.2.5 | Point out the other fields. <br/> <img src="images/4-2-5.png" width="800" /> |
 | **Action** &nbsp; 4.2.6 | Scroll down and click **Show fewer fields**. <br/> <img src="images/4-2-6.png" width="800" /> |
 | **Action** &nbsp; 4.2.7 | Click **Apply**. <br/> <img src="images/4-2-7.png" width="800" /> |
@@ -285,13 +285,13 @@ Let’s get started!
 
 <summary>Summary</summary>
 
-In this demo, we saw how a company uses IBM watsonx Orchestrate to reuse and expose their deployed ODM decisions services to improve employee productivity. 
+In this demo, we saw how a company uses IBM watsonx Orchestrate to leverage and expose existing ODM decisions services in new applications to improve employee productivity. 
 
-We used the discovery service to connect to a production ODM execution server environment. We also used the discovery service to create a new skill that's able to invoke rule-based decisions. We created a composite skill that's able to orchestrate different skills, mapping their respective inputs and outputs automatically. Finally, we used language recognition to invoke this composite application using conversational UIs.
+We used the watsonx Orchestrate discovery service to connect to a production ODM execution server environment to explore all availabe decisions. We also used the discovery service to create a new skill that is able to invoke these rule-based decisions. We created a composite skill that is able to orchestrate different skills, mapping their respective inputs and outputs automatically. Finally, we used watsonx Orchestrate language recognition to invoke this composite application using conversational UIs.
 
-ODM's capabilities are used by our customers today to manage hundreds of thousands of business rules in their organizations and execute them in a robust, scalable environment. Skills can be configured so that they execute a specific deployment version of the rules, or the latest deployed ones at any time.
+ODM's capabilities are used by our customers today to manage hundreds of thousands of business rules in their organizations and execute them in a robust, scalable environment. With watsonx Orchestrtae, skills can be configured to execute  either a specific  version of the rules or the latest deployed one.
 
-watsonx Orchestrate is the new intelligent generation of tools that leverages your existing IBM automation assets and reuses them in modern, scalable, and easy-to-use environments. 
+Watsonx Orchestrate belongs to a new intelligent generation of tools that leverages your existing IBM Automation assets to reuse them in modern, scalable, and easy-to-use environments. 
 
 Thank you for attending today’s presentation.
 
