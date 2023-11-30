@@ -1,7 +1,7 @@
 ---
 title: Leveraging ODM decisions in watsonx Orchestrate <br/> 300-level live demo
 layout: demoscript
-banner: images/wxo_odm_demo_banner.png
+banner: images/wxo_odm_demo_banner_script.png
 ---
 
 <span id="top"></span>
