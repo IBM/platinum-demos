@@ -44,7 +44,7 @@ It is also required that you have a text editor that's able to edit JSON files. 
 
 <br/>
 
-### **PROVISION AN OPENSHIFT ENVIRONMENT AND DEPLOY CLOUD PAK FOR BUSINESS AUTOMATION**
+### **STEP 1: PROVISION AN OPENSHIFT ENVIRONMENT AND DEPLOY CLOUD PAK FOR BUSINESS AUTOMATION**
 
 <details markdown="1">
 
@@ -84,7 +84,7 @@ capabilities must be installed from your Cloud Pak for Business Automation.<br/>
 <p/>
 <br/>
 
-### **VALIDATE YOUR ENVIRONMENT AND BOOKMARK YOUR IDS / URLS**
+### **STEP 2: VALIDATE YOUR ENVIRONMENT AND BOOKMARK YOUR IDS / URLS**
 
 <details markdown="1">
 
@@ -182,7 +182,7 @@ At this stage your notbook should contain the following information: <br/><img s
 
 <br/>
 
-### **DOWNLOAD THE INSTALLATION FILES**
+### **STEP 3: DOWNLOAD THE INSTALLATION FILES**
 
 <details markdown="1">
 
@@ -215,7 +215,7 @@ Download the four files corresponding to your configuration on your computer to 
 <p/>
 <br/>
 
-### **CONFIGURE ODM**
+### **STEP 4: CONFIGURE ODM**
 
 <details markdown="1">
 
@@ -342,8 +342,7 @@ We are done with the Decision Center configuration, let’s now make sure the tw
 
 Let’s now make sure the two decision services are correctly deployed on the Rule Execution Server.
 
-1. Open the **Decision Server Console** using the URL from your notebook. <br/> <img src="images/Prep-3-3-1.png" width="800" /><br/>
-
+1. Open the **Decision Server Console** using the URL from your notebook. <br/>
 2. Click the **Explorer** tab. <br/> <img src="images/Prep-3-3-2.png" width="800" /><br/>
 
 3. [Optional] Select the two RuleApps that are not part of the demo (1). Click **Remove** (2). <br/> <inline-notification text="We are removing these two RuleApps to better display the deployed services in the watsonx discovery service."></inline-notification> <img src="images/Prep-3-3-3.png" width="800" /><br/>
@@ -364,7 +363,7 @@ Let’s now make sure the two decision services are correctly deployed on the Ru
 
 <br/>
 
-### **CONFIGURE WATSONX ORCHESTRATE**
+### **STEP 5: CONFIGURE WATSONX ORCHESTRATE**
 
 <details markdown="1">
 
