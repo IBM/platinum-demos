@@ -529,3 +529,9 @@ After each demo, you must remove the **NEW XXX FC FocusCorp CustomerService** sk
 <br/><br/>
 
 </details>
+
+| **4.3** | **Advanced demos for ODM experts [Optional]** |
+| :--- | :--- |
+| **Action** &nbsp; 4.3.1 | Update a business rule in the Decision Center. |
+| **Action** &nbsp; 4.3.2 | Deploy a new version of the RuleApp in the Rule Execution Server. |
+| **Action** &nbsp; 4.3.3 | Re-run the exact same flow and show that the new rules have been applied. |
