@@ -16,7 +16,7 @@ banner: images/wxo_odm_demo_banner_prep.png
 | **Sales Guidance** | <a href="./files/wxO_ODM%20demo%20sales%20guidance%20DRAFT%20V1.docx" target="_blank" rel="noreferrer">wxO_ODM_Sale_Guidance.doc</a> |
 | **Demo intro slides** | <a href="./files/wxO_ODM%20Platinum%20Demo%20-%20Intro%20deck%20V2.pptx" target="_blank" rel="noreferrer">wxO_ODM_Platinum_Demo_Intro_Deck.pptx</a> |
 | **Demo script** | A complete demo script is on the second tab above. <br/><br/> This demo script has multiple tasks that each have multiple steps. In each step, you have the details about what you need to do (**Actions**), what you can say while delivering this demo step (**Narration**), and what diagrams and screenshots you will see.<br/><br/>This demo script is a suggestion, and you are welcome to customize based on your sales opportunity. Most importantly, practice this demo in advance. If the demo seems easy for you to execute, the customer will focus on the content. If it seems difficult for you to execute, the customer will focus on your delivery. |
-| **Demo downloads** | Operational Decision Manager (Decision Center projects) <br/> • <a href="./files/Customer Service.zip" target="_blank" rel="noreferrer">Customer Service.zip</a> <br/> • <a href="./files/Get Request Details.zip" target="_blank" rel="noreferrer">Get Request Details.zip</a> <br/><br/> watsonx Orchestrate (For ODM on prem) <br/> • <a href="./files/XXX%20FocusCorp%20Customer%20Service.json" target="_blank" rel="noreferrer">XXX FocusCorp Customer Service.json</a> <br/> • <a href="./files/XXX%20FocusCorp%20Get%20data%20from%20CRM.json" target="_blank" rel="noreferrer">XXX FocusCorp Get data from CRM.json</a><br/> watsonx Orchestrate (For ODM on SaaS) <br/> • <a href="./files/XXX%20FocusCorp%20Customer%20Service%20SaaS.json" target="_blank" rel="noreferrer">XXX FocusCorp Customer Service SaaS.json</a> <br/> • <a href="./files/XXX%20FocusCorp%20Get%20data%20from%20CRM%20SaaS.json" target="_blank" rel="noreferrer">XXX FocusCorp Get data from CRM SaaS.json</a> <br/><br/> Optional (For ODM experts looking to customize the decision service) <br/> • <a href="./files/RuleDesignerFiles_V5_20231027.zip" target="_blank" rel="noreferrer">RuleDesignerFiles.zip</a> |
+| **Demo downloads** | Operational Decision Manager (Decision Center projects) <br/> • <a href="./files/Customer Service.zip" target="_blank" rel="noreferrer">Customer Service.zip</a> <br/> • <a href="./files/Get Request Details.zip" target="_blank" rel="noreferrer">Get Request Details.zip</a> <br/><br/> watsonx Orchestrate (For ODM on prem) <br/> • <a href="./files/XXX%20FocusCorp%20Customer%20Service.json" target="_blank" rel="noreferrer">XXX FocusCorp Customer Service.json</a> <br/> • <a href="./files/XXX%20FocusCorp%20Get%20data%20from%20database.json" target="_blank" rel="noreferrer">XXX FocusCorp Get data from database.json</a><br/> watsonx Orchestrate (For ODM on SaaS) <br/> • <a href="./files/XXX%20FocusCorp%20Customer%20Service%20SaaS.json" target="_blank" rel="noreferrer">XXX FocusCorp Customer Service SaaS.json</a> <br/> • <a href="./files/XXX%20FocusCorp%20Get%20data%20from%20database%20SaaS.json" target="_blank" rel="noreferrer">XXX FocusCorp Get data from database SaaS.json</a> <br/><br/> Optional (For ODM experts looking to customize the decision service) <br/> • <a href="./files/RuleDesignerFiles_V5_20231027.zip" target="_blank" rel="noreferrer">RuleDesignerFiles.zip</a> |
 | **Sales enablement video** | Coming soon |
 | **Required versions** | - IBM Operational Decision Manager 8.11.1.0  and 8.12 (on prem or SaaS)<br> - watsonx Orchestrate SaaS (Standard or Enterprise edition) |
 | **How to get support** | • Open a support case at <a href="https://techzone.ibm.com/help" target="_blank" rel="noreferrer">IBM Technology Zone Help</a> regarding issues with reserving and provisioning Tech Zone environments.<br/>• Contact <a href="https://ibm-cloud.slack.com/archives/C0216F39ACU" target="_blank" rel="noreferrer">#platinumdemos-automation-support</a> regarding issues with setting up and running this demo. |
@@ -194,13 +194,13 @@ To set up IBM Operational Decision Manager (ODM): <br/>
 • <a href="./files/Get Request Details.zip" target="_blank" rel="noreferrer">Get Request Details.zip</a><br/>
 To set up watsonx Orchestrate (ODM on prem): <br/>
 • <a href="./files/XXX%20FocusCorp%20Customer%20Service.json" target="_blank" rel="noreferrer">XXX FocusCorp Customer Service.json</a><br/> 
-• <a href="./files/XXX%20FocusCorp%20Get%20data%20from%20CRM.json" target="_blank" rel="noreferrer">XXX FocusCorp Get data from CRM.json</a><br/>
+• <a href="./files/XXX%20FocusCorp%20Get%20data%20from%20database.json" target="_blank" rel="noreferrer">XXX FocusCorp Get data from database.json</a><br/>
 To set up watsonx Orchestrate (ODM on SaaS): <br/>
 • <a href="./files/XXX%20FocusCorp%20Customer%20Service%20SaaS.json" target="_blank" rel="noreferrer">XXX FocusCorp Customer Service.json</a><br/> 
-• <a href="./files/XXX%20FocusCorp%20Get%20data%20from%20CRM%20SaaS.json" target="_blank" rel="noreferrer">XXX FocusCorp Get data from CRM.json</a><br/><br/>
+• <a href="./files/XXX%20FocusCorp%20Get%20data%20from%20database%20SaaS.json" target="_blank" rel="noreferrer">XXX FocusCorp Get data from database.json</a><br/><br/>
 
 **Customer Service.zip** contains the business rule decision service driving the customer service decisions.<br/> 
-**Get Request Details.zip** contains some rules that are used to simulate access to the FocusCorp CRM. These rules are providing the customer and purchase details based on a customer and purchase ID. This service is used to create the ‘FocusCorp get data from CRM’ skill.
+**Get Request Details.zip** contains some rules that are used to simulate access to the FocusCorp database. These rules are providing the customer and purchase details based on a customer and purchase ID. This service is used to create the ‘FocusCorp get data from database’ skill.
 The two JSON files are the skills configuration files that are used to make the skill creation faster in watsonx Orchestrate.<br/><br/>
 Download the four files corresponding to your configuration on your computer to have them ready to setup ODM and watsonx Orchestrate.
 
@@ -382,7 +382,7 @@ We are also going to update the server URL with the URL of your own ODM Rule Exe
 
 4. Save the file under a new name containing your own initials. <br/>
 
-5. Repeat from **Step 1** to update the second JSON file (**XXX Focus Corp Get data from CRM.json**). <br/>
+5. Repeat from **Step 1** to update the second JSON file (**XXX Focus Corp Get data from database.json**). <br/>
 
 <br/>
 
@@ -412,11 +412,11 @@ We are also going to update the server URL with the URL of your own ODM Rule Exe
 
 7. Click **Drag and drop files here or click to upload**. <br/> <img src="images/Prep-4-2-7.png" width="800" /><br/>
 
-8. Select the **XXX FocusCorp Get data from CRM.json** file you previously customized (1). Click **Open** (2). <br/> <img src="images/Prep-4-2-8.png" width="800" /><br/>
+8. Select the **XXX FocusCorp Get data from database.json** file you previously customized (1). Click **Open** (2). <br/> <img src="images/Prep-4-2-8.png" width="800" /><br/>
 
 9. Click **Next**. <br/> <img src="images/Prep-4-2-9.png" width="800" /><br/>
 
-10. Select the **XXX FocusCorp Get data from CRM** skill (1). Click **Save as draft** (2). <br/> <img src="images/Prep-4-2-10.png" width="800" /><br/>
+10. Select the **XXX FocusCorp Get data from database** skill (1). Click **Save as draft** (2). <br/> <img src="images/Prep-4-2-10.png" width="800" /><br/>
 
 11. Enter your '**XXX**' initials to search for your skill. <br/> <img src="images/Prep-4-2-11.png" width="800" /><br/>
 
@@ -448,7 +448,7 @@ We are also going to update the server URL with the URL of your own ODM Rule Exe
 
 2. Enter your '**XXX**' initials to search for the imported skills in the catalog. <br/> <img src="images/Prep-4-3-2.png" width="800" /><br/>
 
-3. Click the **XXX FocusCorp_Get_Data_From_CRM** skill. <br/> <img src="images/Prep-4-3-3.png" width="800" /><br/>
+3. Click the **XXX FocusCorp_Get_Data_From_database** skill. <br/> <img src="images/Prep-4-3-3.png" width="800" /><br/>
 
 4. Click **Connect app**. <br/> <img src="images/Prep-4-3-4.png" width="800" /><br/><inline-notification text="For ODM on SaaS users, use the Basic Authentication userID/password provided by your SaaS administrator in the following steps."></inline-notification>
 
@@ -460,7 +460,7 @@ We are also going to update the server URL with the URL of your own ODM Rule Exe
 
 8. Repeat from **Step 1** and add the **XXX FocusCorp Customer Service** skill. <br/>
 
-9. Click the **XXX Focus Corp Get data from CRM** skill to test it. <br/> <img src="images/Prep-4-3-9.png" width="800" /><br/>
+9. Click the **XXX Focus Corp Get data from database** skill to test it. <br/> <img src="images/Prep-4-3-9.png" width="800" /><br/>
 
 10. Enter ‘**CU-001**’ as the **customer ID** (1). Enter ‘**PO-001**’ as the **purchase ID** (2). Click **Apply** (3). <br/> <img src="images/Prep-4-3-10.png" width="800" /><br/>
 

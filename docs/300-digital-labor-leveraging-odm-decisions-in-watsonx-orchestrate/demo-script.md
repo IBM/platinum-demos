@@ -250,14 +250,14 @@ Let’s get started!
 | :--- | :--- |
 | **Narration** | We're now ready to use the composite skill.<br/> Let's now assume the role of customer service agent who receives a call from a customer. We'll ask for their customer ID and the order number of the item they want to return. |
 | **Action** &nbsp; 4.2.2 | Type ‘**return a product**’ and press the enter/return key on your keyboard. <br/> <img src="images/4-2-2.png" width="800" /> |
-| **Action** &nbsp; 4.2.3 | Enter ‘**CU-004**’ as the **customer ID** (1). Enter ‘**PO-001**’ as the **purchase ID** (2). Click **Apply** (3). <br/> <img src="images/4-2-3.png" width="800" /> |
+| **Action** &nbsp; 4.2.3 | Enter ‘**johnsmith@acme.com**’ as the **customer email** (1). Enter ‘**001**’ as the **product number** (2). Click **Apply** (3). <br/> <img src="images/4-2-3.png" width="800" /> |
 | **Narration** | The customer is now telling us the reasons why the product is being returned. |
 | **Action** &nbsp; 4.2.4 | For the **Return reason** field, select **Arrived_late** (1). For the **Item condition** field, select **Opened** (2). Click **Show all fields** (3). <br/> <img src="images/4-2-4.png" width="800" /> |
 | **Narration** | All the other required fields have been automatically pre-filled, saving us a lot of time. |
 | **Action** &nbsp; 4.2.5 | Point out the other fields. <br/> <img src="images/4-2-5.png" width="800" /> |
 | **Action** &nbsp; 4.2.6 | Scroll down and click **Show fewer fields**. <br/> <img src="images/4-2-6.png" width="800" /> |
 | **Action** &nbsp; 4.2.7 | Click **Apply**. <br/> <img src="images/4-2-7.png" width="800" /> |
-| **Narration** | In one click, the ODM decision service returns a decision and additional information, such as the refund amount or any required shipping fees. All these results have been dynamically calculated by the rules we saw at the beginning of this scenario.<inline-notification text="You can play with different combination of users (CU-001 – CU-005) and items (PO-001 – PO-005) to show the different decision outcomes."></inline-notification> <img src="images/4-2-9.png" width="800" /> <img src="images/4-2-10.png" width="800" /> |
+| **Narration** | In one click, the ODM decision service returns a decision and additional information, such as the refund amount or any required shipping fees. All these results have been dynamically calculated by the rules we saw at the beginning of this scenario.<inline-notification text="You can execute the demonstration with different combination of users (cf. highlighted emails bellow) and items (See highlighted product numbers bellow) to show the different decision outcomes."></inline-notification> <img src="images/4-2-9.png" width="800" /> <img src="images/4-2-10.png" width="800" /> |
 | **Action** &nbsp; 4.2.8 | Point out the decision results. <br/> <img src="images/4-2-8.png" width="800" /> |
 
 <br/>
