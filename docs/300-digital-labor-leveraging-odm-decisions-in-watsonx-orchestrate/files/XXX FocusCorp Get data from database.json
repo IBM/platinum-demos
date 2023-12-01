@@ -42,13 +42,13 @@
                                         "type": "string",
                                         "x-ibm-order": 2,
                                         "x-ibm-multiline": "false",
-                                        "x-ibm-label": "Enter the customer email (ie johnsmith@acme.com)"
+                                        "x-ibm-label": "Customer email (ex. johnsmith@acme.com):"
                                     },
                                     "purchaseID": {
                                         "type": "string",
                                         "x-ibm-order": 3,
                                         "x-ibm-multiline": "false",
-                                        "x-ibm-label": "Enter the identification number of the product to be returned (ie 3 digits: 001)"
+                                        "x-ibm-label": "Product identification number (ex. 001):"
                                     }
                                 },
                                 "description": "Request for the execution of the decision service operation. Contains notably the input parameters that are used for the execution.",
