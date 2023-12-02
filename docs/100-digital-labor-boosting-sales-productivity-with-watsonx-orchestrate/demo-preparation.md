@@ -23,7 +23,7 @@ banner: images/wxo_100_prep_banner.jpg
 
 <summary>Access the demo environment (IBMers)</summary>
 
-This demo is available on several sales demonstration and enablement tenants. For new watsonx Orchestrate users please request access by submitting a <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">request here</a>. You will receive an email once you have been onboarded onto a suitable tenant, but please allow 48 hours.<br/> 
+This demo is available on several sales demonstration and enablement tenants. For new watsonx Orchestrate users please request access by submitting a <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">request here</a>. You will receive an email once you have been onboarded onto a suitable tenant, but please allow 48 hours for your request to be processed.<br/> 
 
 Users that don't require access to a sales demonstration tenant will be onboarded onto an enablement tenant. Enablement tenants provide short-term access (two week maximum) for enablement purposes. 
 
@@ -31,10 +31,10 @@ Once you have received your onboarding email use your IBM email to log into an a
 
 **Cannot Find the Demo?**
 
-If you are an existing watsonx Orchestrate user but you cannot see the **Team skills** needed to run the demo please check you are in the Team Skills view. When you log into watsonx Orchestrate, the default view is **Personal skills**. To run the demo, change the view to **Team skills**.<br/><img src="images/prep-1-2-teamskills.jpg" width="600" />
+If you are an existing watsonx Orchestrate user but you cannot see the skills needed to run the demo please check you are in the Team Skills view. When you log into watsonx Orchestrate, the default view is **Personal skills**. To run the demo, change the view to **Team skills**.<br/><img src="images/prep-1-2-teamskills.jpg" width="600" />
 
 
-If you still cannot see the Team skill used in the demo please request access to a suitable tenant by submitting a <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">request here</a>. You will receive an email once you have been onboarded onto a suitable tenant, but please allow 48 hours.<br/> 
+If you still cannot see the Team skill used in the demo please request access to a suitable tenant by submitting a <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">request here</a>. You will receive an email once you have been onboarded onto a suitable tenant, but please allow 48 hours for your request to be processed.<br/> 
 
 </details>
 
@@ -46,7 +46,7 @@ If you still cannot see the Team skill used in the demo please request access to
 
 Use your Company email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>.<br/>
 
-If you do not have access to a tenant, you can request access for your organization by submitting a <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">request here</a>.<br/><br/>
+If you do not have access to a tenant, you can request access by submitting a <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">request here</a>. You will receive an email once you have been onboarded onto a suitable tenant, but please allow 48 hours for your request to be processed.<br/><br/>
 
 </details>
 
