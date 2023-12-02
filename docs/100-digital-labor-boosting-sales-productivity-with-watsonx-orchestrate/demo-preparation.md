@@ -8,28 +8,33 @@ banner: images/wxo_100_prep_banner.jpg
 
 <span id="top"></span>
 
-<inline-notification text="<strong>This 100-level demo does not require technical skills and is appropriate for both Sellers and Tech Sellers.</strong><br/> The demo covers the end user view only. A more in-depth 300-level demo designed for Tech Sellers that also covers the 'Builder' view will be available shortly."></inline-notification>
+<inline-notification text="<strong>This 100-level demo does not require technical skills and is appropriate for both Sellers and Tech Sellers.</strong><br/> The demo covers the end user view only. A more in-depth 300-level demo designed for Tech Sellers that also covers the 'Builder' view will be available shortly.<br/>"></inline-notification>
 
 | **DEMO OVERVIEW** | | 
 | :---         | :--- |
-| **Scenario overview** | This demo shows how watsonx Orchestrate can be used by sales representatives to assist with the cross-sell/upsell process. To illustrate this, an insurance seller uses watsonx Orchestrate to retrieve a list of customers from Salesforce and automatically send a customized offer.|
-| **Demo products** | watsonx Orchestrate |
-| **Demo capabilities** | watsonx.ai generative AI skill; Salesforce skill; Microsoft Outlook skill; Embedded decision engine skill|
-| **Demo script** | A complete demo script is on the second tab above. <br/><br/> This demo script has multiple tasks that each have multiple steps. In each step, you have the details about what you need to do (**Actions**), what you can say while delivering this demo step (**Narration**), and what screenshots you will see.<br/><br/>This demo script is a suggestion, and you are welcome to customize based in your sales opportunity. Most importantly, practice this demo in advance. If the demo seems easy for you to execute, the customer will focus on the content. If it seems difficult for you to execute, the customer will focus on your delivery. |
-| **Applicable learning plans** | This demo is used in the following learning plans: <br/> • watsonx Orchestrate Level 3 for Sales <br/> •  watsonx Orchestrate Level 3 for Technical Sales |
-| **How to get support** | • Open a support case at <a href="https://techzone.ibm.com/help" target="_blank" rel="noreferrer">IBM Technology Zone Help</a> regarding issues with reserving and provisioning Tech Zone environments.<br/>• Contact <a href="https://ibm-cloud.slack.com/archives/C0216F39ACU" target="_blank" rel="noreferrer">#platinumdemos-automation-support</a> regarding issues with setting up and running this demo. |
+| **Scenario overview** | This demo shows how watsonx Orchestrate can be used by sales representatives to assist with the cross-sell/upsell opporunities. To illustrate this, this lab takes on the persona of an insurance seller uses watsonx Orchestrate to retrieve a list of customers from Salesforce, make product recommendations, then generate a personalized offer that is sent using Outlook.|
+| **Products used in this demo** | IBM watsonx Orchestrate |
+| **watsonx Orchestrate Skills used in this demo** | IBM watsonx.ai generative AI; Salesforce; Microsoft Outlook; Embedded decision automation|
+| **Demo script** | A complete demo script is provided [here](demo-script). This link takes you to the second tab at the top of this page. <br/><br/> This demo script has multiple tasks that each have multiple steps. In each step, you have the details about what you need to do (**Actions**), what you can say while delivering this demo step (**Narration**), and what screenshots you will see.<br/><br/>This demo script provides a suggested narrative. You are welcome to customize it based on your sales opportunity. Learn to describe the value of watsonX Orchestrate using the watsonx Orchestrate Level 2 learning (<a href="https://yourlearning.ibm.com/activity/PLAN-7C5500E80F26" target="_blank" rel="noreferrer">IBM</a> <a href="https://learn.ibm.com/course/view.php?id=13175" target="_blank" rel="noreferrer">BP</a>).  Most importantly, practice this demo in advance. If the demo seems easy for you to do, the client will focus on you and your messaging and appreciate the simplicity the content. If it seems difficult to use, the client will come away with this impression. Remember, practice makes perfect. |
+| **Applicable learning plans** | This demo is used in the following learning plans: <br/> • watsonx Orchestrate Level 3 for Sales <a href="https://yourlearning.ibm.com/activity/PLAN-07001C92F201" target="_blank" rel="noreferrer">IBM</a> <a href="https://learn.ibm.com/course/view.php?id=15985" target="_blank" rel="noreferrer">BP</a>  <br/> •  watsonx Orchestrate Level 3 for Technical Sales <a href="https://yourlearning.ibm.com/activity/PLAN-B4BFAE1FED99" target="_blank" rel="noreferrer">IBM</a> (BP plan coming Q1 2024)|
+| **How to get support** | • If you are a BP and require assistance please open a support case at <a href="https://techzone.ibm.com/help" target="_blank" rel="noreferrer">IBM Technology Zone Help</a>.<br/>• IBMers can use the <a href="https://ibm-cloud.slack.com/archives/C0216F39ACU" target="_blank" rel="noreferrer">#platinumdemos-automation-support</a> Slack channel. |
 
 <details markdown="1">
 
 <summary>Access the demo environment (IBMers)</summary>
 
-This demo is available on Sales production tenants and Enablement production tenants.<br/><br/>
-   **Sales tenants:** Use your IBM email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>. Select the **BA Tech Sales Production EE** account.<br/><img src="images/prep-1-2-sales-tenant.png" width="400" /><br/>**Note:** If you have been added to only one account on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your IBM email.<br/><br/>
-   **Enablement tenants:** Short-term access (two week maximum) to a demo environment for enablement. Use your IBM email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>. Select the **Tech Enablement 10** account.<br/><img src="images/prep-1-3-enablement-tenant.png" width="400" /><br/>**Note:** If you have been added to only one account on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your email.<br/>
+This demo is available on several sales demonstration and enablement tenants. For new watsonx Orchestrate users please request access by submitting a <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">request here</a>. You will receive an email once you have been onboarded onto a suitable tenant, but please allow 48 hours.<br/> 
 
-**Requesting Access**
+Users that don't require access to a sales demonstration tenant will be onboarded onto an enablement tenant. Enablement tenants provide short-term access (two week maximum) for enablement purposes. 
 
-If you don't have access to a tenant you can request access by submitting a <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">request here</a>.<br/><br/>
+Once you have received your onboarding email use your IBM email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>. <br/>
+
+**Cannot Find the Demo?**
+
+If you are an existing watsonx Orchestrate user but you cannot see the **Team skills** needed to run the demo please check you are in the Team Skills view. When you log into watsonx Orchestrate, the default view is **Personal skills**. To run the demo, change the view to **Team skills**.<br/><img src="images/prep-1-2-teamskills.jpg" width="600" />
+
+
+If you still cannot see the Team skill used in the demo please request access to a suitable tenant by submitting a <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">request here</a>. You will receive an email once you have been onboarded onto a suitable tenant, but please allow 48 hours.<br/> 
 
 </details>
 
