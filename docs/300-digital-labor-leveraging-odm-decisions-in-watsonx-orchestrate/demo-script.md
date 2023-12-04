@@ -146,7 +146,7 @@ Let’s get started!
 | **Action** &nbsp; 2.4.2 | Click **Add skills from the catalog**. <br/> <img src="images/2-4-2.png" width="800" /> |
 | **Action** &nbsp; 2.4.3 | Type your ‘**XXX**’ in the search field ('XXX' being your own initials). <br/> <img src="images/2-4-3.png" width="800" /> |
 | **Action** &nbsp; 2.4.4 | Click the ‘**XXX_FC_customerService**’ skill ('XXX' being your own initials). <br/> <img src="images/2-4-4.png" width="800" /> |
-| **Narration** | Next, we'll'connect the skill to the Rule Execution Server. We'll use the ZEN API key that was provided by our ODM administrator to connect to the deployed rule service. |
+| **Narration** | Next, we'll connect the skill to the Rule Execution Server. We'll use the ZEN API key that was provided by our ODM administrator to connect to the deployed rule service. |
 | **Action** &nbsp; 2.4.5 | Click **Connect app**. <br/> <img src="images/2-4-5.png" width="800" /> |
 | **Action** &nbsp; 2.4.6 | Enter the **ZEN API key** (1) you copied in your notebook. Click **Connect app** (2). <br/> <img src="images/2-4-6.png" width="800" /> |
 | **Narration** | The skill is connected, and we can now add it into our personal catalog. |
@@ -163,7 +163,7 @@ Let’s get started!
 | **Narration** | With ODM, the decisions require different input data describing the customer and the item to be returned. It would take too much time for an agent to fill all these fields manually. For this reason, we are going to create a composite skill that will get all the customer and item information from the FocusCorp database. <br/><br/> FocusCorp has created a skill that is able to retrieve customer and item information from the database. |
 | **Action** &nbsp; 2.5.2 | Scroll through the set of required inputs. <br/> <img src="images/2-5-2.png" width="800" /> |
 | **Action** &nbsp; 2.5.3 | Click the **XXX FocusCorp Get data from database** skill ('XXX' being your own initials). <br/> <img src="images/2-5-3.png" width="800" /> |
-| **Narration** | Let’s use a customer and purchase ID, just like a call center agent would do. |
+| **Narration** | Let’s use a customer email and product identification number, just like a call center agent would do. |
 | **Action** &nbsp; 2.5.4 | Enter ‘**johnsmith@acme.com**’ as the **Customer email** (1). Enter ‘**001**’ as the **Product identification number** (2). Click **Apply** (3). <br/> <img src="images/2-5-4.png" width="800" /> |
 | **Narration** | The database skill has returned the customer and item details from the FocusCorp database. We can now use the database skill to feed the decision skill. To do so, we will create a composite skill. |
 | **Action** &nbsp; 2.5.5 | Scroll through the result to show the data recovered from the back-end system. <br/> <img src="images/2-5-5.png" width="800" /> |
@@ -192,7 +192,7 @@ Let’s get started!
 | **Action** &nbsp; 3.1.4 | Click the **pencil** icon to name the skill flow. <br/> <img src="images/3-1-4.png" width="800" /> |
 | **Narration** | The description will help the users to understand the actions performed by the composite skill. |
 | **Action** &nbsp; 3.1.5 | Enter a skill name that contains your 'XXX' initials (e.g., '**XXX FocusCorp Register claim**') (1). In the **Description** field, enter ‘**Get the customer and purchase details from the database - Validates return conditions and refunds**’ (2). Click **Save** (3). <br/> <img src="images/3-1-5.png" width="800" /> |
-| **Narration** | Let’s now add the two skills we need for this flow. The first one will collect the data from the database. The second one, which we created from the ODM deployment, will analyze the data and return a decision. |
+| **Narration** | Next, we must add the two skills we need for this flow. The first one will collect the data from the database. The second one, which we created from the ODM deployment, will analyze the data and return a decision. |
 | **Action** &nbsp; 3.1.6 | Click the **+** button. <br/> <img src="images/3-1-6.png" width="800" /> |
 | **Narration** | Let’s search for the skills we have added in our personal skills. |
 | **Action** &nbsp; 3.1.7 | Search for '**XXX**' to find all your skills from the catalog ('XXX' being your own initials). <br/> <img src="images/3-1-7.png" width="800" /> |
@@ -214,7 +214,7 @@ Let’s get started!
 | **Narration** | Let’s now enhance the skill by adding some phrases that will be used to invoke the skill in the conversational interface of watsonx Orchestrate. |
 | **Action** &nbsp; 3.1.18 | Expand the **Actions** menu (1). Click **Enhance** (2). <br/> <img src="images/3-1-18.png" width="800" /> |
 | **Action** &nbsp; 3.1.19 | Click **Phrases**. <br/> <img src="images/3-1-19.png" width="800" /> |
-| **Narration** | Let’s add ‘return a product’ phrase to the training set. Many more phrases can be added to improve the NLP training. |
+| **Narration** | We can add for instance ‘return a product’ to the training set. Many more phrases can be added to improve the NLP training. |
 | **Action** &nbsp; 3.1.20 | Type '**return a product**’. <br/> <img src="images/3-1-20.png" width="800" /> |
 | **Narration** | Our skill is ready to be published. Just by entering ‘return a product’ in the chat interface, watsonx Orchestrate will understand that this skill should be used. |
 | **Action** &nbsp; 3.1.21 | Click **Publish**. <br/> <img src="images/3-1-21.png" width="800" /> |
