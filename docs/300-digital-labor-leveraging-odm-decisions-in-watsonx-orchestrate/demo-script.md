@@ -248,7 +248,7 @@ Let’s get started!
 
 | **4.2** | **Use the customer service composite skill** |
 | :--- | :--- |
-| **Narration** | We're now ready to use the composite skill.<br/> Let's now assume the role of customer service agent who receives a call from a customer. We'll ask for their customer ID and the order number of the item they want to return. |
+| **Narration** | We're now ready to use the composite skill.<br/> Let's now assume the role of customer service agent who receives a call from a customer. We'll ask for their customer email and the identification number of the product they want to return. |
 | **Action** &nbsp; 4.2.2 | Type ‘**return a product**’ and press the enter/return key on your keyboard. <br/> <img src="images/4-2-2.png" width="800" /> |
 | **Action** &nbsp; 4.2.3 | Enter ‘**alexgreen@acme.com**’ as the **Customer email** (1). Enter ‘**001**’ as the **Product indentification number** (2). Click **Apply** (3). <br/> <img src="images/4-2-3.png" width="800" /> |
 | **Narration** | The customer is now telling us the reasons why the product is being returned. |
