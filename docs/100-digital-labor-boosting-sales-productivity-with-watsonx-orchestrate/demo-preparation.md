@@ -8,7 +8,7 @@ banner: images/wxo_100_prep_banner.jpg
 
 <span id="top"></span>
 
-<inline-notification text="<strong>This 100-level demo does not require technical skills and is appropriate for both Sellers and Tech Sellers.</strong><br/> The demo covers the end user view only. A more in-depth 300-level demo designed for Tech Sellers that also covers the 'Builder' view will be available shortly.<br/><br/>This demo is used in the following L3 training plans:<br/> • watsonx Orchestrate Level 3 for Sales<br/> • watsonx Orchestrate Level 3 for Technical Sales<br/><br/> <strong>Warning: Safari Browser.</strong> Please use Chrome or Firefox when delivering this demonstration. "></inline-notification>
+<inline-notification text="<strong>This 100-level demo does not require technical skills and is appropriate for both Sellers and Tech Sellers.</strong><br/> The demo covers the end user view only. A more in-depth 300-level demo designed for Tech Sellers that also covers the 'Builder' view will be available shortly.<br/><br/>This demo is used in the following L3 training plans:<br/> • watsonx Orchestrate Level 3 for Sales<br/> • watsonx Orchestrate Level 3 for Technical Sales<br/><br/> <strong>Warning: Safari Browser.</strong> Please use Chrome or Firefox when using this demonstration. "></inline-notification>
 
 | **DEMO OVERVIEW** | | 
 | :---         | :--- |
