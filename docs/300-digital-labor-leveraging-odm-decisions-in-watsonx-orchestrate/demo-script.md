@@ -33,7 +33,7 @@ Let’s get started!
 
 | **1.1** | **Introduce the customer service decision** |
 | :--- | :--- |
-| **Narration** | When receiving a customer claim through the call center, agents must retrieve customer data and access different systems to register the claim, as well as explain to their customers if they will be reimbursed or what to do to return an item. FocusCorp wants to improve employee productivity by providing employees direct access to information in their backend systems. For example, customer service reps need to know immediately whether a return is approved, so they can communicate this over the phone to the customer. <br/><br/> FocusCorp uses Operational Decision Manager (ODM) to validate the return request from the customer. The company has previously deployed an ODM decision service that approves return requests from multiple enterprise applications requiring validation. <br/><br/> FocusCorp wants to make the automated approval decision easily accessible to call center agents through a watsonx Orchestrate skill. Before seeing how to create such a skill, let’s look at the existing application in ODM. |
+| **Narration** | FocusCorp uses Operational Decision Manager (ODM) as a backend application to automatically validate and approve return requests from customers.<br/><br/> The company now wants to enable all call center agents to directly access the decision automation so they can determine immediately whether a return is approved while communicating with a customer. <br/>Before seeing how to create such a skill in watsonx Orchestrate, let’s look at the existing application in ODM. |
 | **Action** &nbsp; 1.1.1 | Show the ODM Business Console screen that was opened during the demo preparation. Select **Enterprise LDAP** (1), enter the Username **cp4admin** (2), enter the **password** (3) you copied in your notebook, and click **Log in** (4). <inline-notification text="The Decision Center console will start from the last page you were in when you left during your last connection."></inline-notification> <img src="images/1-1-1.png" width="800" /> |
 | **Action** &nbsp; 1.1.2 | Click the **LIBRARY** tab. <br/> <img src="images/1-1-2.png" width="800" /> |
 | **Narration** | The return policy is managed in ODM by FocusCorp's retail business team, using a dedicated business console called Decision Center. Let’s see how the return policy is implemented in ODM. |
@@ -47,14 +47,14 @@ Let’s get started!
 
 | **1.2** | **Provide an overview of the decision service** |
 | :--- | :--- |
-| **Narration** | The return validation policy is managed using ODM. The business logic is composed of rule artifacts like ruleflows, decision tables and business rules. <br/><br/> The main rule flow is the backbone of the decision service. It synchronizes a variety of rules that cover fraud detection, warranty validation, return policy and refund conditions. |
+| **Narration** | The return validation policy is managed using ODM. The business logic is composed of rule artifacts like ruleflows, decision tables and business rules. <br/><br/> The main ruleflow is the backbone of the decision service. It synchronizes a variety of rules that cover fraud detection, warranty validation, return policy and refund conditions. |
 | **Action** &nbsp; 1.2.1 | Click the **Compute refund** box (1) and then the **Refund flow** link (2). <br/> <img src="images/1-2-1.png" width="800" /> |
 | **Narration** | Let’s look at one of the decision artifacts. The ‘Shipping fee’ decision table defines the fixed return fee depending on the location of the customer and the type of item being returned. |
 | **Action** &nbsp; 1.2.2 | Click the **Estimate shipping fee** box (1) and then the **Shipping fee** link (2) to open the decision table. <br/> <img src="images/1-2-2.png" width="800" /> |
 | **Narration** | Each row of the table corresponds to a specific business rule that can also be seen in natural language. In this rule, the return fee for grocery items in the United States is $15 dollars. A message is also concatenated to the response to document the decision. |
 | **Action** &nbsp; 1.2.3 | Hover your cursor over the header of row 4 to display the 'grocery' business rule. <br/> <img src="images/1-2-3.png" width="800" /> |
-| **Narration** | This decision service is deployed in a production environment and is invoked by FocusCorp's enterprise applications. Let’s look at the deployment environment. |
 | **Action** &nbsp; 1.2.4 | Click **Main customer service flow**. <br/> <img src="images/1-2-4.png" width="800" /> |
+| **Narration** | This decision service is deployed in a production environment and is invoked by FocusCorp's enterprise applications. Let’s look at the deployment environment. |
 
 <br/>
 
@@ -65,7 +65,7 @@ Let’s get started!
 | **Action** &nbsp; 1.3.2 | Click the **Explorer** tab. <br/> <img src="images/1-3-2.png" width="800" /> |
 | **Narration** | Two RuleApps are deployed in this production environment. The 'Customer Service' RuleApp manages the return policy we just looked at in the Business Console. |
 | **Action** &nbsp; 1.3.3 | Click **FocusCorp_CustomerService**. <br/> <img src="images/1-3-3.png" width="800" /> |
-| **Narration** | The customer service application has one ruleset with two input parameters -- the customer and the purchase to be returned. The decision service and the ruleset it contains are versioned (3), so a user can decide to use a very specific version, or the latest deployed version of the RuleApp. |
+| **Narration** | The customer service application has one ruleset with two input parameters -- the customer and the purchase to be returned. The decision service and the ruleset it contains are versioned, so a user can decide to use a specific version, or the latest deployed version of the RuleApp. |
 | **Action** &nbsp; 1.3.4 | Click **FocusCorp_Customer_Service**. <br/> <img src="images/1-3-4.png" width="800" /> |
 | **Narration** | Let’s now see how to leverage these deployed decisions using watsonx Orchestrate to make these return decisions visible to call center agents. |
 | **Action** &nbsp; 1.3.5 | Point out and explain the **FocusCorp_Customer_Service** ruleset. The output parameter (1), the return decision (2) and the versioning(3). <br/> <img src="images/1-3-5.png" width="800" /> |
@@ -202,7 +202,7 @@ Let’s get started!
 | **Action** &nbsp; 3.1.10 | Click **+** button. <br/> <img src="images/3-1-10.png" width="800" /> |
 | **Narration** |Next, let’s search for the decision skill. |
 | **Action** &nbsp; 3.1.11 | Search for '**XXX**' to find all your skills from the catalog ('XXX' being your own initials). <br/> <img src="images/3-1-11.png" width="800" /> |
-| **Narration** | Let’s use this version of our skill for which the enhancement have been fully performed. But the decision behind the scene invokes the exact same decision service that we have seen in the previous step. |
+| **Narration** | To save time, we will use a pre-configured version of the decision skill (available for download in the prep tab). |
 | **Action** &nbsp; 3.1.12 | Click the **XXX FocusCorp_CustomerService** skill ('XXX' being your own initials). <br/> <img src="images/3-1-12.png" width="800" /> |
 | **Action** &nbsp; 3.1.13 | Click **Add skill +**. <br/> <img src="images/3-1-13.png" width="800" /> |
 | **Action** &nbsp; 3.1.14 | Click the second skill in the flow. <br/> <img src="images/3-1-14.png" width="800" /> |
