@@ -121,7 +121,7 @@ Let’s get started!
 | **2.3** | **Publish the customer service skill to your personal skills** |
 | :--- | :--- |
 | **Narration** | The first thing we'll customize is the title of the skill. On the right we see how the skill will be displayed to users. As this demo environment is shared across various users, we'll add initials to easily find the skill in the catalog. |
-| **Action** &nbsp; 2.3.1 | Enter an easy-to-find skill name (e.g., '**NEW XXX FocusCorp customer service**' – XXX being your own initials) <br/> <img src="images/2-3-1.png" width="800" /> |
+| **Action** &nbsp; 2.3.1 | Enter an easy-to-find skill name (e.g., '**New XXX FocusCorp customer service.**' – XXX being your own initials) <br/> <img src="images/2-3-1.png" width="800" /> |
 | **Narration** | We can customize how the inputs will be displayed and edit a specific label for each entry. We can also specify what attributes will be required to invoke the skill. |
 | **Action** &nbsp; 2.3.2 | Click the **Input** tab. <br/> <img src="images/2-3-2.png" width="800" /> |
 | **Action** &nbsp; 2.3.3 | Scroll down to the **customer.name** field. <br/> <img src="images/2-3-3.png" width="800" /> |
@@ -164,7 +164,7 @@ Let’s get started!
 | **Action** &nbsp; 2.5.2 | Scroll through the set of required inputs. <br/> <img src="images/2-5-2.png" width="800" /> |
 | **Action** &nbsp; 2.5.3 | Click the **XXX FocusCorp Get data from database** skill ('XXX' being your own initials). <br/> <img src="images/2-5-3.png" width="800" /> |
 | **Narration** | Let’s use a customer and purchase ID, just like a call center agent would do. |
-| **Action** &nbsp; 2.5.4 | Enter ‘**CU-001**’ as the **customer ID** (1). Enter ‘**PO-001**’ as the **purchase ID** (2). Click **Apply** (3). <br/> <img src="images/2-5-4.png" width="800" /> |
+| **Action** &nbsp; 2.5.4 | Enter ‘**johnsmith@acme.com**’ as the **Customer email** (1). Enter ‘**001**’ as the **Product identification number** (2). Click **Apply** (3). <br/> <img src="images/2-5-4.png" width="800" /> |
 | **Narration** | The database skill has returned the customer and item details from the FocusCorp database. We can now use the database skill to feed the decision skill. To do so, we will create a composite skill. |
 | **Action** &nbsp; 2.5.5 | Scroll through the result to show the data recovered from the back-end system. <br/> <img src="images/2-5-5.png" width="800" /> |
 
@@ -206,7 +206,7 @@ Let’s get started!
 | **Action** &nbsp; 3.1.12 | Click the **XXX FocusCorp_CustomerService** skill ('XXX' being your own initials). <br/> <img src="images/3-1-12.png" width="800" /> |
 | **Action** &nbsp; 3.1.13 | Click **Add skill +**. <br/> <img src="images/3-1-13.png" width="800" /> |
 | **Action** &nbsp; 3.1.14 | Click the second skill in the flow. <br/> <img src="images/3-1-14.png" width="800" /> |
-| **Narration** | The two skills are now sequenced in the flow. Next we must map the output parameters of the database skill to the input fields of the decision skill. This operation can be automated using watsonx Orchestrate’s intelligent mapping capability. Orchestrate is able to suggest a mapping based on attributes, names and types. |
+| **Narration** | The two skills are now sequenced in the flow. Next, we must map the output parameters of the database skill to the input fields of the decision skill. This operation can be automated using watsonx Orchestrate’s intelligent mapping capability. Orchestrate is able to suggest a mapping based on attributes, names and types. |
 | **Action** &nbsp; 3.1.15 | Click **Generate mapping suggestions**. <br/> <img src="images/3-1-15.png" width="800" /> |
 | **Narration** | We can see all the attributes are correctly mapped between the two skills in just a single click. No additional action is required. We can now save the skill to add it to the catalog, as well as publish it to users. |
 | **Action** &nbsp; 3.1.16 | Show the mapped values. <br/> <img src="images/3-1-16.png" width="800" /> |
@@ -250,7 +250,7 @@ Let’s get started!
 | :--- | :--- |
 | **Narration** | We're now ready to use the composite skill.<br/> Let's now assume the role of customer service agent who receives a call from a customer. We'll ask for their customer ID and the order number of the item they want to return. |
 | **Action** &nbsp; 4.2.2 | Type ‘**return a product**’ and press the enter/return key on your keyboard. <br/> <img src="images/4-2-2.png" width="800" /> |
-| **Action** &nbsp; 4.2.3 | Enter ‘**johnsmith@acme.com**’ as the **customer email** (1). Enter ‘**001**’ as the **product number** (2). Click **Apply** (3). <br/> <img src="images/4-2-3.png" width="800" /> |
+| **Action** &nbsp; 4.2.3 | Enter ‘**alexgreen@acme.com**’ as the **Customer email** (1). Enter ‘**001**’ as the **Product indentification number** (2). Click **Apply** (3). <br/> <img src="images/4-2-3.png" width="800" /> |
 | **Narration** | The customer is now telling us the reasons why the product is being returned. |
 | **Action** &nbsp; 4.2.4 | For the **Return reason** field, select **Arrived_late** (1). For the **Item condition** field, select **Opened** (2). Click **Show all fields** (3). <br/> <img src="images/4-2-4.png" width="800" /> |
 | **Narration** | All the other required fields have been automatically pre-filled, saving us a lot of time. |
