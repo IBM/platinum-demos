@@ -41,7 +41,7 @@ Let’s get started!
 
 <br/>
 
-In this demo we showed how Focus Corps used IBM Event Automation to capitalize on time-sensitive revenue opportunities. Specifically, we looked at how the Event catalog allows consumers to discover and subscribe to events. The marketing team used these streams to build an event processing flow. The flow detects in real-time which customers should receive the high value discount. This has transformed how quickly the marketing team can create new features and freed them up from requesting this from other teams.
+In this demo we showed how Focus Corps used IBM Event Automation to capitalize on time-sensitive revenue opportunities. Specifically, we saw how the marketing team accessed the Event catalog to discover and subscribe to events. Then they used these streams to build an event processing flow. The flow detects in real-time which customers should receive the high value discount. This has transformed how quickly the marketing team can create new features and freed them from requesting this from other teams.
 
 Thank you for attending today’s presentation.
 
