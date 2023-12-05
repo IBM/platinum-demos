@@ -32,7 +32,7 @@ banner: images/wxo_odm_demo_banner_prep.png
 Before starting the installation of this demo, make sure you have been granted **'builder profile'** access to a watsonx Orchestrate SaaS environment: <br/><br/>
 • IBM Tech Sales: Contact your local geo tech sales leader to be invited to the dedicated watsonx Orchestrate instances <br/>
 • Business Partners: Contact your local IBM Ecosystem representative<br/><br/>
-<inline-notification text="More info on how to have access to a watsonx Orchestrate environment : https://ibm.biz/Watson-Orchestrate-Sales-Kit"></inline-notification>
+<inline-notification text="More info on how to have access to a watsonx Orchestrate environment : <a href='https://ibm.biz/Watson-Orchestrate-Sales-Kit'>watsonx Orchestrate sales kit on seismic</a>."></inline-notification>
 
 It is also required that you have a text editor that's able to edit JSON files. In this documentation, we will use Microsoft™ Visual Studio Code.
 
@@ -465,7 +465,7 @@ We are also going to update the server URL with the URL of your own ODM Rule Exe
 
 9. Click the **XXX Focus Corp Get data from database** skill to test it. <br/> <img src="images/Prep-5-3-9.png" width="800" /><br/>
 
-10. Enter ‘**CU-001**’ as the **customer ID** (1). Enter ‘**PO-001**’ as the **purchase ID** (2). Click **Apply** (3). <br/> <img src="images/Prep-5-3-10.png" width="800" /><br/>
+10. Enter ‘**johnsmith@acme.com**’ as the **Customer email** (1). Enter ‘**001**’ as  **Product identification number** (2). Click **Apply** (3). <br/> <img src="images/Prep-5-3-10.png" width="800" /><br/>
 
 11. Check that the service returns some values. <br/> <img src="images/Prep-5-3-11.png" width="800" /><br/>
 
@@ -481,13 +481,30 @@ You are now ready to demo!
 
 <br/>
 
+### **ADVANCED DEMO SCENARIO**
+
+<details markdown="1">
+
+<summary> Update business rules [Optional] </summary>
+<br/>
+<inline-notification text="You must be comfortable with ODM to proceed with this scenario."></inline-notification>
+
+The provided skills (jason files) are configured to use the latest deployed ruleapp. You can use that following additional actions to illustrate this capability:
+1. Update a business rule in the Decision Center with any policy update of your choice. 
+2. Deploy a new version of the RuleApp in the Rule Execution Server using your exiting deployment configuration. 
+3. Re-run the exact same composite skill and show that the new rules have been applied.
+
+</details>
+<br/>
+
+
 ### **AFTER EACH DEMO**
 
 <details markdown="1">
 
 <summary>Remove the two skills created during the demo</summary>
 
-After each demo, you must remove the **NEW XXX FC FocusCorp CustomerService** skill you imported using the discovery service, as well as the skill flow created during the demo. <br/> <img src="images/Prep-6-1.png" width="800" /><br/>
+After each demo, you must remove the **New XXX FC FocusCorp Customer Service** skill you imported using the discovery service, as well as the skill flow created during the demo. <br/> <img src="images/Prep-6-1.png" width="800" /><br/>
 
 1. Click the **menu slider** icon. <br/> <img src="images/Prep-6-1-1.png" width="800" /><br/>
 
@@ -499,12 +516,12 @@ After each demo, you must remove the **NEW XXX FC FocusCorp CustomerService** sk
 
 5. Click **Delete**. <br/> <img src="images/Prep-6-1-5.png" width="800" /><br/>
 
-6. Repeat from **Step 4** and delete the **NEW XXX FC CustomerService** skill. <br/> <img src="images/Prep-6-1-6.png" width="800" /><br/>
+6. Repeat from **Step 4** and delete the **New XXX FC Customer Service** skill. <br/> <img src="images/Prep-6-1-6.png" width="800" /><br/>
 
 7. Click **Home**. <br/> <img src="images/Prep-6-1-7.png" width="800" /><br/>
 
 8. You are now ready to demo again. <br/> <img src="images/Prep-6-1-8.png" width="800" /><br/>
-
+<inline-notification text="Only the 2 FocusCorp skills imported from the Jason files and recognizable with their FocusCorp icon should remain in your skill set."></inline-notification>
 <br/>
 
 **[Go to top](#top)**
@@ -521,7 +538,7 @@ After each demo, you must remove the **NEW XXX FC FocusCorp CustomerService** sk
 
 <summary>Remove the four skills created during the demo</summary>
 
-1. Repeat the **AFTER EACH DEMO** steps and remove the four '**XXX FocusCorp**' skills. <br/> <inline-notification text="The composite skill must be removed first."></inline-notification> <img src="images/Prep-7-1-1.png" width="800" /><br/>
+1. Repeat the **AFTER EACH DEMO** steps and remove the four '**XXX**' skills (XXX being your own initials). <br/> <inline-notification text="The composite skill must be removed first."></inline-notification> <img src="images/Prep-7-1-1.png" width="800" /><br/>
 
 2. Enter your '**XXX**' initials and make sure no skills remain. <br/> <img src="images/Prep-7-1-2.png" width="800" /><br/>
 
@@ -533,8 +550,3 @@ After each demo, you must remove the **NEW XXX FC FocusCorp CustomerService** sk
 
 </details>
 
-| **4.3** | **Advanced demos for ODM experts [Optional]** |
-| :--- | :--- |
-| **Action** &nbsp; 4.3.1 | Update a business rule in the Decision Center. |
-| **Action** &nbsp; 4.3.2 | Deploy a new version of the RuleApp in the Rule Execution Server. |
-| **Action** &nbsp; 4.3.3 | Re-run the exact same flow and show that the new rules have been applied. |
