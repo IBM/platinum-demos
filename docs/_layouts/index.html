@@ -1,7 +1,3 @@
----
-itautomation-button-class: header-button
-integration-button-class: header-button-selected
----
 <!doctype html>
 <html lang="en">
   <head>
@@ -20,11 +16,14 @@ integration-button-class: header-button-selected
         <h1>{{ page.title }}</h1>
       </div>
       <div class="header-buttons">
-        <ul class="{{ layout.integration-button-class }}">
+        <ul class="{{ page.integration-button-class }}">
           <a href="index" class="white-text">Integration</a>
         </ul>
-        <ul class="{{ layout.itautomation-button-class }}">
+        <ul class="{{ page.itautomation-button-class }}">
           <a href="itautomation" class="white-text">IT Automation</a>
+        </ul>
+        <ul class="{{ page.businessautomation-button-class }}">
+          <a href="businessautomation" class="white-text">Business Automation</a>
         </ul>
       </div>
     </div>
