@@ -1,5 +1,5 @@
 ---
-title: Using event automation to create Kafka streams from MQ messages <br/>300-level live demo
+title: Using event automation to create Kafka streams from IBM MQ <br/>300-level live demo
 layout: preparation
 banner: images/temp-banner.jpg
 overview: In this demo we will see how Focus Corp, an online retailer, uses real-time MQ transaction data to capitalize on time-sensitive revenue opportunities.
@@ -37,7 +37,7 @@ topcategory: "### **DEMO INSTALLATION AND SETUP**"
 
    <img src="images/prep-402.png" width="800" />
 
-3. In preparation for running the demo open the MQ, Event Streams, Event Endpoint Management and Event Processing consoles using the supplied credentials. 
+3. In preparation for running the demo open the Event Streams, Event Endpoint Management and Event Processing consoles using the supplied credentials. We have also created a scratch pad that you may find useful while running the demo. It contains space for all the username and passwords outputted above, and the text that you need to copy and paste within the demo. You can find this file [here](../300-integration-event-automation-common/scratch-pad).
 <br/>
 
 Your have completed the demo setup.

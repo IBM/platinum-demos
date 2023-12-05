@@ -102,26 +102,23 @@ The marketing team’s business requirement is to correlate newly created custom
 
 | **{{ page.nocodeeditor }}.4** | **Identify new customer order over 100 dollars** |
 | :--- | :--- |
-| **Narration** | The team wants to join the new customer and filtered order stream together, detecting when a new customer has placed a large order within 24 hours. To detect this situation a JOIN node is used. The team drag and drop the node on to the canvas.  |
+| **Narration** | The team wants to join the New Customer and filtered Order streams together, detecting when a new customer has placed a large order within 24 hours of opening a new account. To detect this situation, a JOIN node is used. The team drags and drops the node onto the canvas.  |
 | **Action** &nbsp; {{ page.nocodeeditor }}.4.1 | Press and hold the mouse button on the **Interval join** node and drag onto the canvas.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-JoinDrag.png" width="800" /> |
-| **Narration** | The JOIN node takes two input streams. The marketing team connect the filtered orders and new customers events to the input terminal of the JOIN node.  |
+| **Narration** | The JOIN node takes two input streams. The marketing team connects the filtered Order event and New Customer event to the input terminal of the JOIN node.  |
 | **Action** &nbsp; {{ page.nocodeeditor }}.4.2 | Hover over the New Customers output terminal and hold the mouse button down.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-JoinSourceConnect1.png" width="800" /> |
 | **Action** &nbsp; {{ page.nocodeeditor }}.4.3 | Drag the connection to the intervalJoin_1 input terminal and release the mouse button.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-JoinSourceConnect2.png" width="800" /> |
 | **Action** &nbsp; {{ page.nocodeeditor }}.4.4 | Complete the same process to connect the FilterLargeOrders output terminal.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-JoinSourceConnect4.png" width="800" /> |
-| **Narration** | To detect a common event across the two streams the team need to configure how the JOIN node can match events. The marketing team use the expression builder to correlate events based on the common customerid field within the two event.   |
+| **Narration** | To detect a common event across the two streams, the team needs to configure how the JOIN node can match events. The marketing team uses the 'expression builder' to correlate events based on the common customerid field within the two events.   |
 | **Action** &nbsp; {{ page.nocodeeditor }}.4.5 | Hover over the intervalJoin_1 node and select the **edit** icon.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-JoinEdit.png" width="800" /> |
 | **Action** &nbsp; {{ page.nocodeeditor }}.4.6 | Enter **DetectNewCustomerLargeOrder** (1) for the node name and click **Next** (2).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-JoinName.png" width="800" /> |
-| **Action** &nbsp; {{ page.nocodeeditor }}.4.7 | Click on the **Assistance** (1) pull down. Select **customerId** (2) (3) from both pull downs and click **Add to expression** (4) to complete. <br/> <img src="../300-integration-event-automation-common/images/2-Flow-JoinCondition.png" width="800" /> |
+| **Action** &nbsp; {{ page.nocodeeditor }}.4.7 | Click on the **Assistant** (1) pull down. Select **customerid** (2 + 3) from both pull downs and click **Add to expression** (4) to complete. <br/> <img src="../300-integration-event-automation-common/images/2-Flow-JoinCondition.png" width="800" /> |
 | **Action** &nbsp; {{ page.nocodeeditor }}.4.8 | The completed condition will be shown, click on **Next**. <br/> <img src="../300-integration-event-automation-common/images/2-Flow-JoinConditionComplete.png" width="800" /> |
-| **Narration** | The JOIN node uses a time window to detect a situation. There are two events involved: a triggering event that starts the time window, and a second event that detects the situation. For the marketing team the new customer is the triggering event as this must always happen first, and the order event represents the situation being detected. The team specify this in the UI.    |
+| **Narration** | The JOIN node uses a time window to detect a situation. There are two events involved: a triggering event that starts the time window, and a second event that detects the situation. For the marketing team's requirement, the New Customer event is the triggering event as this must always happen first, and the Order event represents the situation being detected. The team specifies this in the UI.    |
 | **Action** &nbsp; {{ page.nocodeeditor }}.4.9 | Select **FilterLargeOrders (event_time)** for the event to detect.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-JoinTimeWindow1.png" width="800" /> |
 | **Action** &nbsp; {{ page.nocodeeditor }}.4.10 | Select **New Customers (event_time)** (1) for the event to start the time window, change the metric to **hours** (2), number of hours to **24** (3), and click **Next** (4).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-JoinTimeWindow2.png" width="800" /> |
-| **Narration** | The output data from the JOIN node will be a combination of the fields from the two events. The events have some common names which cause conflicts. This can be resolved by either renaming or removing the fields. As these are duplicates the marketing team delete the fields.   |
-| **Action** &nbsp; {{ page.nocodeeditor }}.4.11 | Remove the duplicate fields: **customerid** (1), **event_time** (2).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-JoinRemoveDuplicates.png" width="800" /> |
+| **Narration** | The output data from the JOIN node will be a combination of the fields from the two events. Because the two events have been merged, there are two duplicate fields (customerid and event_time). This can be resolved by either renaming or removing the fields. As these are duplicates, the marketing team deletes the fields.   |
+| **Action** &nbsp; {{ page.nocodeeditor }}.4.11 | Remove the duplicate fields by clicking on the '-' sign: **customerid** (1), **event_time** (2).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-JoinRemoveDuplicates.png" width="800" /> |
 | **Action** &nbsp; {{ page.nocodeeditor }}.4.12 | Click **Configure**.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-JoinConfigComplete.png" width="800" /> |
-
-<br/>
-
 
 **[Go to top](#place1)**
 
@@ -137,30 +134,38 @@ The marketing team’s business requirement is to correlate newly created custom
 
 <br/>
 
-| **{{ page.outputtomarketing }}.1** | **Configure an event destination for the customer events** |
+| **{{ page.outputtomarketing }}.1** | **Configure an event destination for the output stream** |
 | :--- | :--- |
-| **Narration** | The marketing team want to emit detected events to the loyalty app that will send the promotion to the customer. Within a flow an event destination node is used to publish events to a stream. They drag and drop the node onto the canvas.|
+| **Narration** | The marketing team wants to emit the detected events to the loyalty app. The app will then send a promotion to the customer. They drag and drop an 'Event destination' node onto the canvas. The node is automatically called sink_1. The term 'sink' is used by kafka to refer to a resource, such as a topic that can receive incoming events. |
 | **Action** &nbsp; {{ page.outputtomarketing }}.1.1 | Press and hold the mouse button on the **Event destination** (1) node and drag onto the canvas (2).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-DestinationDrag.png" width="800" /> |
-| **Narration** | They connect the DetectNewLargeOrder output terminal to the event destination input terminal.|
+| **Narration** | They connect the DetectNewLargeOrder output terminal to the 'Event destination' input terminal.|
 | **Action** &nbsp; {{ page.outputtomarketing }}.1.2 | Hover over the DetectNewLargeOrder output terminal and hold the mouse button down.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-DestinationConnect1.png" width="800" /> |
-| **Action** &nbsp; {{ page.outputtomarketing }}.1.3 | Drag the connection to the sink_1 input terminal and release the mouse button.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-DestinationConnect2.png" width="800" /> |
-| **Narration** | The marketing team edit the node configuration to specify a name and the network address of the output stream.|
+| **Action** &nbsp; {{ page.outputtomarketing }}.1.3 | Drag the connection to the **sink_1** input terminal and release the mouse button.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-DestinationConnect2.png" width="800" /> |
+| **Narration** | The marketing team edits the node configuration to specify the name and network address of the output stream.|
 | **Action** &nbsp; {{ page.outputtomarketing }}.1.4 | Hover over the sink_1 node and select the **edit** icon.<br/> <img src="../300-integration-event-automation-common/images/2-Flow-DestinationEdit.png" width="800" /> |
 | **Action** &nbsp; {{ page.outputtomarketing }}.1.5 | Enter **OutputToMarketingApp** (1) for the node name, **ademo-es-kafka-bootstrap.cp4i.svc:9095** (2) in the server field and click **Next** (3).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-DestinationName.png" width="800" /> |
-| **Narration** | They configure the security details, accepting the certificates being used by the event stream. Then specify the username / password credentials to access the event stream.|
+| **Narration** | They configure the security details, accepting the certificates being used by the event stream. They specify the username / password credentials to access the event stream.|
 | **Action** &nbsp; {{ page.outputtomarketing }}.1.6 | Check **Accept certificates** (1) and click **Next** (2).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-DestinationAcceptCert.png" width="800" /> |
 | **Action** &nbsp; {{ page.outputtomarketing }}.1.7 | Specify **es-admin** (1) for the username, the password (2) value was outputted in the preparation section and click **Next** (3). <br/> <img src="../300-integration-event-automation-common/images/2-Flow-DestinationCredentials.png" width="800" /> |
-| **Narration** | The system connects to the event stream and queries the available topics for the provided credentials. The marketing team select the LOYALTY.APP event stream.|
+| **Narration** | The system connects to the event stream and queries the available topics for the provided credentials. The marketing team selects the LOYALTY.APP event stream.|
 | **Action** &nbsp; {{ page.outputtomarketing }}.1.8 | Select **LOYALTY.APP** (1) and click **Configure** (2).<br/> <img src="../300-integration-event-automation-common/images/2-Flow-DestinationSelectTopic.png" width="800" /> |
 
   
 <br/>
 
-| **{{ page.outputtomarketing }}.2** | **Running the flow with historical events** |
+| **{{ page.outputtomarketing }}.2** | **Testing the flow with historical events** |
 | :--- | :--- |
-| **Narration** | The flow can be run using the historical data within the event streams, or only new events from now. As the team want to verify the flow they decide to run with historical data. They immediately see the flow working as expected and several new customers who are eligible for the discount detected. |
-| **Action** &nbsp; {{ page.outputtomarketing }}.2.2 | Select the **Run** (1) pull down and click **Include historical**.<br/> <img src="../300-integration-event-automation-common/images/3-Flow-RunHistorical.png" width="800" /> |
-| **Action** &nbsp; {{ page.outputtomarketing }}.2.3 | View the detected events.<br/> <img src="../300-integration-event-automation-common/images/3-Flow-OutputEvents.png" width="800" /> |
+| **Narration** | The team are able to test the flow with historical data in the event streams. They immediately see the flow working as expected and several new customers who are eligible for the discount detected. |
+| **Action** &nbsp; {{ page.outputtomarketing }}.2.1 | Select the **Run** (1) pull down and click **Include historical**.<br/> <img src="../300-integration-event-automation-common/images/3-Flow-RunHistorical.png" width="800" /> |
+| **Action** &nbsp; {{ page.outputtomarketing }}.2.2 | View the detected events.<br/> <img src="../300-integration-event-automation-common/images/3-Flow-OutputEvents.png" width="800" /> |
+
+
+| **{{ page.outputtomarketing }}.3** | **Sending the output stream to the marketing application** |
+| :--- | :--- |
+| **Narration** | The team verify the detected events and stop the flow. They are now ready to reconfigure the event destination for the production environment. They follow the same process as before to configure the event destination to the production output event stream. This time they run the flow without historical data to process new events in real-time. |
+| **Action** &nbsp; {{ page.outputtomarketing }}.3.1 | Select **Stop**.<br/> <img src="../300-integration-event-automation-common/images/3-Flow-StopFlow.png" width="800" /> |
+| **Action** &nbsp; {{ page.outputtomarketing }}.3.2 | We are not re-showing how to configure the event destination as it is the same process as previously demonstrated. Select the **Run** (1) pull down and click **Events from now** (2).<br/> <img src="../300-integration-event-automation-common/images/3-Flow-ProductionStart.png" width="800" /> |
+
 
 
 <br/>

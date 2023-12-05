@@ -1,5 +1,5 @@
 ---
-title: Using event automation to create Kafka streams from MQ messages <br/>300-level live demo
+title: Using event automation to create Kafka streams from IBM MQ <br/>300-level live demo
 layout: demoscript
 banner: images/temp-banner.jpg
 browsingselfservice: 2
@@ -139,7 +139,7 @@ Focus Corp’s integration team exposes the enterprise’s data using event stre
 
 <br/>
 
-In this demo we showed how Focus Corps used IBM MQ and IBM Event Automation to capitalize on time-sensitive revenue opportunities. Specifically, we looked at how IBM MQ can be configured to clone messages, and IBM Event Automation setup to publish them to an event stream. This and other streams were published to an Event catalog allowing consumers to discover and subscribe. The marketing team then used these streams to build an event processing flow. The flow detects in real-time which customers should receive the high value discount. This has transformed how quickly the marketing team can create new features and freed them up from requesting this from other teams.
+In this demo we showed how Focus Corp used IBM MQ and IBM Event Automation to capitalize on time-sensitive revenue opportunities. Specifically, we saw the integration team configure IBM MQ to clone messages, and IBM Event Automation set up to publish them to an event stream. This and other streams were published to an Event catalog allowing consumers to discover and subscribe. The marketing team then used these streams to build an event processing flow. The flow detects in real-time which customers should receive the high value discount. This has transformed how quickly the marketing team can create new features and free them from requesting this from other teams.
 
 Thank you for attending today’s presentation.
 
