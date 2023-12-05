@@ -16,6 +16,7 @@ banner: images/wxo_100_prep_banner.jpg
 | **Demo products** | watsonx Orchestrate |
 | **Demo capabilities** | watsonx.ai generative AI skill; Salesforce skill; Microsoft Outlook skill; Embedded decision engine skill|
 | **Demo script** | A complete demo script is on the second tab above. <br/><br/> This demo script has multiple tasks that each have multiple steps. In each step, you have the details about what you need to do (**Actions**), what you can say while delivering this demo step (**Narration**), and what screenshots you will see.<br/><br/>This demo script is a suggestion, and you are welcome to customize based in your sales opportunity. Most importantly, practice this demo in advance. If the demo seems easy for you to execute, the customer will focus on the content. If it seems difficult for you to execute, the customer will focus on your delivery. |
+| **Applicable learning plans** | This demo is used in the following learning plans: <br/> • watsonx Orchestrate Level 3 for Sales <br/> •  watsonx Orchestrate Level 3 for Technical Sales |
 | **How to get support** | • Open a support case at <a href="https://techzone.ibm.com/help" target="_blank" rel="noreferrer">IBM Technology Zone Help</a> regarding issues with reserving and provisioning Tech Zone environments.<br/>• Contact <a href="https://ibm-cloud.slack.com/archives/C0216F39ACU" target="_blank" rel="noreferrer">#platinumdemos-automation-support</a> regarding issues with setting up and running this demo. |
 
 <details markdown="1">
