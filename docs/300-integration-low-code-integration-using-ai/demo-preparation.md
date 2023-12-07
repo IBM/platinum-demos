@@ -1,5 +1,5 @@
 ---
-title: Low-code integration using AI
+title: Low-code integration using AI <br/>300-level live demo
 layout: preparation
 banner: images/Low-code-integration-300Prep.jpg
 overview: In this demo, you are going to synchronize data between Salesforce and Insightly cloud CRM. You need to have these services and endpoints created and all the credentials necessary to access them securely in the demo. <br/><br/> Both Salesforce and Insightly are CRM systems provided as a SaaS (i.e., they are hosted in the cloud). In this scenario, we will synchronize contact information data between both solutions.

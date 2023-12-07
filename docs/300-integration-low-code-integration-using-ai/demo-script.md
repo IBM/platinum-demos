@@ -10,9 +10,6 @@ banner: images/Low-code-integration-300Script.jpg
 <details markdown="1">
 
 <summary>Introduction</summary>
-
-<br/>
-
 Data mapping is among the most important design steps in building an integration flow. This design-time task is usually the most tedious, time-consuming, complex, and error-prone because it requires deep understanding of all the data fields on the source and target systems. Building a successful data mapping also requires business analysis, domain expertise, and technical knowledge on both source and target systems.
 
 Our goal in creating Mapping Assist was to simplify and automate data mapping. And when coupled with the extensive list of pre-built, security rich connectors, it can accelerate the delivery of value to the business through integration.
