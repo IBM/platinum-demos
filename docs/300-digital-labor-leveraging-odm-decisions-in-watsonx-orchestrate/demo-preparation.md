@@ -348,7 +348,7 @@ Let’s now make sure the two decision services are correctly deployed on the Ru
 1. Open the **Decision Server Console** using the URL from your notebook. <br/>
 2. Click the **Explorer** tab. <br/> <img src="images/Prep-4-3-2.png" width="800" /><br/>
 
-3. [Optional] Select the two RuleApps that are not part of the demo (1). Click **Remove** (2). <br/> <inline-notification text="We are removing these two RuleApps to better display the deployed services in the watsonx discovery service."></inline-notification> <img src="images/Prep-4-3-3.png" width="800" /><br/>
+3. [Optional] Select the two RuleApps that are not part of the demo (1). Click **Remove** (2). <br/> <inline-notification text="We are removing these two RuleApps to better display the deployed services in the watsonx Orchestrate discovery service."></inline-notification> <img src="images/Prep-4-3-3.png" width="800" /><br/>
 
 4. Click **Confirm**. <br/> <img src="images/Prep-4-3-4.png" width="800" /><br/>
 
