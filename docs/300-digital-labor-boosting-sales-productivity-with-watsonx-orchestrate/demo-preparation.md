@@ -57,7 +57,7 @@ If you do not have access to a tenant, you can request access for your organizat
 
 3. Search for '**life**' in the search panel. <br/> <img src="images/Prep-1-3.jpg" width="800" /><br/>
 
-4. The list of apps is filtered to only show apps that contain skills containing the word 'retrieve.' Click the **Salesforce – Get customers with recent life changes** card. <br/> <img src="images/Prep-1-4.jpg" width="800" /><br/>
+4. The list of apps is filtered to only show apps that contain skills containing the word 'life.' Click the **Salesforce – Get customers with recent life changes** card. <br/> <img src="images/Prep-1-4.jpg" width="800" /><br/>
 
 5. Click **Add skill +** (1). Click **Connect app** (2). <br/> <img src="images/Prep-1-5.jpg" width="800" /><br/>
 
