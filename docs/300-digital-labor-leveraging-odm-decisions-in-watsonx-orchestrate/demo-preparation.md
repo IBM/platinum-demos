@@ -46,7 +46,7 @@ It is also required that you have JSON compatible text editor. In this documenta
 To run this demonstration, you will need an OpenShift environment with Cloud Pak
 for Business Automation 23.0.1 installed. We will use IBM Operational Decision
 Manager on prem version contained in this installation. Only the Decision
-capabilities must be installed from your Cloud Pak for Business Automation.<br/> <inline-notification text="Note: If you want to use your ODM hosted on a SaaS tenant, just contact your SaaS administrator to get a user and password to connect your RES in Basic Authentication. Go directly to Step 3."></inline-notification>
+capabilities must be installed from your Cloud Pak for Business Automation.<br/> <inline-notification text="Note: If you want to use your ODM hosted on a SaaS tenant, just contact your SaaS administrator to get a user and password to connect your RES in Basic Authentication. Go directly to Step 3: Download the installation files."></inline-notification>
 
 <summary>1 - Prepare your Cloud Pak for Business Automation environment</summary>
 
