@@ -26,14 +26,10 @@ banner: images/PREPBanner.jpg
 
 <summary>Prerequisites</summary>
 
-Before starting the installation of this demo, make sure you have been granted **'builder profile'** access to a watsonx Orchestrate SaaS environment: <br/><br/>
-• IBM Tech Sales: Contact your local geo tech sales leader to be invited to the dedicated watsonx Orchestrate instances <br/>
-• Business Partners: Contact your local IBM Ecosystem representative<br/><br/>
-<inline-notification text="More info on how to have access to a watsonx Orchestrate environment : <a href='https://ibm.biz/Watson-Orchestrate-Sales-Kit'>watsonx Orchestrate sales kit on seismic</a>."></inline-notification>
+Before starting the installation of this demo, make sure you have been granted **'builder profile'** access to a watsonx Orchestrate SaaS environment. The procedure to request a watsonx Orchestrate environment access is documented on the : <a href='https://ibm.biz/Watson-Orchestrate-Sales-Kit'>watsonx Orchestrate sales kit on seismic</a>.
 
-It is also required that you have a text editor that's able to edit JSON files. In this documentation, we will use Microsoft™ Visual Studio Code.
+It is also required that you have JSON compatible text editor. In this documentation, we will use Microsoft™ Visual Studio Code.
 
-<br/>
 
 **[Go to top](#top)**
 

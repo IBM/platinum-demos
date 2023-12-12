@@ -203,13 +203,13 @@ Let’s get started!
 | **Narration** |Next, let’s search for the decision skill. |
 | **Action** &nbsp; 3.1.11 | Search for '**XXX**' to find all your skills from the catalog ('XXX' being your own initials). <br/> <img src="images/3-1-11.png" width="800" /> |
 | **Narration** | To save time, we will use a pre-configured version of the decision skill.|
-| **Action** &nbsp; 3.1.12 | Click the **XXX FocusCorp_Customer_Service** skill ('XXX' being your own initials). <inline-notification text="You can download this pre-configured skill from the prep tab."></inline-notification> <br/> <img src="images/3-1-12.png" width="800" /> |
+| **Action** &nbsp; 3.1.12 | Click the **XXX FocusCorp_Customer_Service** skill ('XXX' being your own initials).  <br/> <img src="images/3-1-12.png" width="800" /> |
 | **Action** &nbsp; 3.1.13 | Click **Add skill +**. <br/> <img src="images/3-1-13.png" width="800" /> |
 | **Action** &nbsp; 3.1.14 | Click the second skill in the flow. <br/> <img src="images/3-1-14.png" width="800" /> |
 | **Narration** | The two skills are now sequenced in the flow. Next, we must map the output parameters of the database skill to the input fields of the decision skill. This operation can be automated using watsonx Orchestrate’s intelligent mapping capability. Orchestrate is able to suggest a mapping based on attributes, names and types. |
 | **Action** &nbsp; 3.1.15 | Click **Generate mapping suggestions**. <br/> <img src="images/3-1-15.png" width="800" /> |
 | **Narration** | We can see all the attributes are correctly mapped between the two skills in just a single click. No additional action is required. We can now save the skill to add it to the catalog, as well as publish it to users. |
-| **Action** &nbsp; 3.1.16 | Show the mapped values. <br/> <img src="images/3-1-16.png" width="800" /> |
+| **Action** &nbsp; 3.1.16 | Point out the mapped values. <br/> <img src="images/3-1-16.png" width="800" /> |
 | **Action** &nbsp; 3.1.17 | Expand the **Actions** menu (1). Click **Save as draft** (2). <br/> <img src="images/3-1-17.png" width="800" /> |
 | **Narration** | Let’s now enhance the composite skill by adding some phrases that will be used to invoke the skill in the chat interface of watsonx Orchestrate. |
 | **Action** &nbsp; 3.1.18 | Expand the **Actions** menu (1). Click **Enhance** (2). <br/> <img src="images/3-1-18.png" width="800" /> |
