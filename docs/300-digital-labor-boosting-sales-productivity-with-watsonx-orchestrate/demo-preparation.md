@@ -18,7 +18,7 @@ banner: images/wxo_300_prep_banner.png
 
 <details markdown="1">
 
-<summary>Access the demo environment (IBMers)</summary>
+<summary>1 - Access the demo environment (IBMers)</summary>
 
 This demo is available on several sales demonstration and enablement tenants (demo instances). For new watsonx Orchestrate users, please request access by submitting a <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">request here</a>. You will receive an email once you have been onboarded onto a suitable tenant, but please allow 48 hours for your request to be processed.<br/> 
 
@@ -41,7 +41,7 @@ Users with access to multiple tenants (demo environments) should ensure they sel
 
 <details markdown="1">
 
-<summary>Access the demo environment (Business Partners)</summary>
+<summary>2 - Access the demo environment (Business Partners)</summary>
 
 If you do not have access to a tenant, you can request access by submitting a <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">request here</a>. You will receive an email once you have been onboarded onto a suitable tenant, but please allow 48 hours for your request to be processed.<br/><br/>
 
