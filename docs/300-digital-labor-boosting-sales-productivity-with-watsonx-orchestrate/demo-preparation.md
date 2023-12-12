@@ -108,47 +108,17 @@ The next personal skill to add will be based on a decision model imported into A
 
 ### **PREPARATION REQUIRED TO GIVE THIS DEMO AGAIN**
 
-<details markdown="1">
-
-<summary>Delete the draft skill</summary>
-
-Delete the draft skill once you have tested it, as it will be imported again in the demo. After returning to the skill panel, search for the unique ID and delete it. <br/> <img src="images/Prep-4-1.png" width="800" /><br/>
-
-</details>
-
-<p/>
-
-<details markdown="1">
-
-<summary>Repeat the demo</summary>
-
-To repeat the demo, remove the two skills that were created during the demo. First, remove the skill flow, and then remove the skill created from the OpenAPI.
-
-1. Click the **menu slider** icon and select **Skills**. Use the search panel to find the skill flow that was created in the demo. In the example demo, this was created as '**GB Upsell Skill**' (it is listed below as a composite skill). Click the corresponding **ellipsis** icon to the right of the screen. Click **Delete this skill**. <br/> <img src="images/Prep-5-1.png" width="800" /><br/>
-
-2. Remove the skill that was created using an OpenAPI file. During the preparation for this skill import, it was recommended to add a unique ID to the description attribute in the OpenAPI file. (In the example, 'GB081123' was added to the description attribute.) Use your unique ID to find the skill. Click the **ellipsis** icon and click **Delete this skill**. <br/> <img src="images/Prep-5-2.png" width="800" /><br/>
-
-</details>
-
-<p/>
-
 ### **AFTER EACH DEMO**
 
 <details markdown="1">
 
-<summary>Final cleanup</summary>
+<summary>Skill cleanup</summary>
 
 The watsonx Orchestrate environment used for the demo is shared by many users. After completing your demo, please take a few minutes to remove any skills or automations you created during the demo. Then, also remove the personal skills created during the demo preparation. Finally, remove the decision automation that was imported.
 
 1. Click the **menu slider** icon and select **Skills**. Use the search panel to find the skill flow that was created in the demo. In the example demo, this was created as '**GB Upsell Skill**' (it is listed below as a composite skill). Expand the skill details to confirm you are the author. Click the corresponding **ellipsis** icon to the right of the screen. Click **Delete this skill**. <br/> <img src="images/Prep-6-1.png" width="800" /><br/>
 
 2. Remove the skill that was created using an OpenAPI file. During the preparation for this skill import, it was recommended to add a unique ID to the description attribute in the OpenAPI file. (In the example, 'GB081123' was added to the description attribute.) Use your unique ID to find the skill. Expand the skill details to confirm you are the author. Click the **ellipsis** icon and click **Delete this skill**. <br/> <img src="images/Prep-6-2.png" width="800" /><br/>
-
-3. Remove the **Product Upsell** skill that was created when the decision automation was published. Enter '**Product Upsell**' in the search panel, and expand the details to confirm you are the author. Click the **ellipsis** icon and click **Delete this skill**. <br/> <img src="images/Prep-6-3.png" width="800" /><br/>
-
-4. Click the **menu slider** icon. Select **Automation builder**. <br/> <img src="images/Prep-6-4.png" width="800" /><br/>
-
-5. Click the **ellipsis** icon on the **Product Upsell** card. Click **Delete** and confirm the deletion. <br/> <img src="images/Prep-6-5.png" width="250" /><br/>
 
 </details>
 
