@@ -1,5 +1,5 @@
 ---
-title: Detecting situations using Event Automation <br/>300-level live demo
+title: Detecting time-critical situations using Event Automation <br/>300-level live demo
 layout: preparation
 banner: images/temp-banner.jpg
 overview: In this demo we will see how Focus Corp, an online retailer, uses Event Automation to capitalize on time-sensitive revenue opportunities.

@@ -137,9 +137,7 @@ Focus Corp’s integration team exposes the enterprise’s data using event stre
 
 <summary>Summary</summary>
 
-<br/>
-
-In this demo we showed how Focus Corp used IBM MQ and IBM Event Automation to capitalize on time-sensitive revenue opportunities. Specifically, we saw the integration team configure IBM MQ to clone messages, and IBM Event Automation set up to publish them to an event stream. This and other streams were published to an Event catalog allowing consumers to discover and subscribe. The marketing team then used these streams to build an event processing flow. The flow detects in real-time which customers should receive the high value discount. This has transformed how quickly the marketing team can create new features and free them from requesting this from other teams.
+In this demo we showed how Focus Corp used IBM MQ and IBM Event Automation to capitalize on time-sensitive revenue opportunities. Specifically, we saw the integration team configure IBM MQ to clone messages, and IBM Event Automation set up to publish them to an event stream. This and other streams were published to an Event Catalog that allowed non-technical consumers, like the marketing team, to easily discover and subscribe to the streams. The marketing team then used these streams to build an event processing flow, using a no-code editor. The flow detects in real-time which customers should receive the highest value discounts. This has transformed how quickly the marketing team can create new features and frees them from needing to rely on the integration team for access to this valuable business data.
 
 Thank you for attending today’s presentation.
 
