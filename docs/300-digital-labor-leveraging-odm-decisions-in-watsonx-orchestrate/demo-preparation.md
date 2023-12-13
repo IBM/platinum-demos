@@ -26,7 +26,7 @@ banner: images/PREPBanner.jpg
 
 <summary>Prerequisites</summary>
 
-Before starting the installation of this demo, make sure you have been granted **'builder profile'** access to a watsonx Orchestrate SaaS environment. The procedure to request a watsonx Orchestrate environment access is documented on the : <a href='https://ibm.biz/Watson-Orchestrate-Sales-Kit'>watsonx Orchestrate sales kit on seismic</a>.
+Before starting the installation of this demo, make sure you have been granted **'builder profile'** access to a watsonx Orchestrate SaaS environment. The procedure to request a watsonx Orchestrate environment access is documented on the : <a href='https://techzone.ibm.com/collection/watsonx-orchestrate/journey-environment-access'>watsonx Orchestrate environment access on TechZone</a>.
 
 It is also required that you have JSON compatible text editor. In this documentation, we will use Microsoft™ Visual Studio Code.
 
