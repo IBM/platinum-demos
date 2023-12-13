@@ -39,7 +39,7 @@ Make sure you are granted the **'builder profile'** role in your 301 environemen
 <p/>
 
 <details markdown="1">
-<summary>2 - Request your Cloud Pak for Business Automation environment</summary>
+<summary>2 - Request a Cloud Pak for Business Automation environment</summary>
 
 To run this demonstration, you will need an OpenShift environment with Cloud Pak
 for Business Automation 23.0.1 installed. We will use IBM Operational Decision
