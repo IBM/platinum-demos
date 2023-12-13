@@ -27,7 +27,7 @@ banner: images/PREPBanner.jpg
 
 <summary>1 - Request a watsonx Orchestrate environment</summary>
 
-This 301 demonstration requires an IBM watsonx Orchestrate (standard or enterprise) environmant with the **'builder profile'** access rights. 
+This 301 demonstration requires an IBM watsonx Orchestrate (standard or enterprise) environment with the **'builder profile'** access rights. 
 The procedure to request a watsonx Orchestrate environment access is documented on the <a href='https://techzone.ibm.com/collection/watsonx-orchestrate' target="_blank">watsonx Orchestrate environment access on TechZone</a>.
 
 Make sure you are granted the **'builder profile'** role in your 301 environement request.
