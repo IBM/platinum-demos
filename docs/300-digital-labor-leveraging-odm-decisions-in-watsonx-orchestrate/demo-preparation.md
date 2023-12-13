@@ -10,52 +10,43 @@ banner: images/PREPBanner.jpg
 
 | **DEMO OVERVIEW** | | 
 | :---         | :--- |
-| **Scenario overview** | In this demo, we will see how watsonx Orchestrate can leverage Operational Decision Manager’s deployed services on premises to create new skills. To illustrate this, we will use a company’s customer service application. |
+| **Scenario overview** | In this demo, we will see how watsonx Orchestrate can leverage Operational Decision Manager’s deployed services to create new skills. To illustrate this, we will use a company’s customer service application. |
 | **Demo products** | IBM Operational Decision Manager (included in Cloud Pak for Business Automation V23.0.1), watsonx Orchestrate |
 | **Demo capabilities** | Decision management; Digital assistant |
-| **Sales Guidance** | <a href="./files/wxO_ODM%20demo%20sales%20guidance%20DRAFT%20V1.docx" target="_blank" rel="noreferrer">wxO_ODM_Sale_Guidance.doc</a> |
-| **Demo intro slides** | <a href="./files/wxO_ODM%20Platinum%20Demo%20-%20Intro%20deck%20V2.pptx" target="_blank" rel="noreferrer">wxO_ODM_Platinum_Demo_Intro_Deck.pptx</a> |
 | **Demo script** | A complete demo script is on the second tab above. You can download a printer-ready PDF of the demo script <a href="./files/DEMO_Script.pdf" target="_blank" rel="noreferrer">here</a>. <br/><br/> This demo script has multiple tasks that each have multiple steps. In each step, you have the details about what you need to do (**Actions**), what you can say while delivering this demo step (**Narration**), and what diagrams and screenshots you will see.<br/><br/>This demo script is a suggestion, and you are welcome to customize based on your sales opportunity. Most importantly, practice this demo in advance. If the demo seems easy for you to execute, the customer will focus on the content. If it seems difficult for you to execute, the customer will focus on your delivery. |
 | **Demo downloads** | Operational Decision Manager (Decision Center projects) <br/> • <a href="./files/Customer Service.zip" target="_blank" rel="noreferrer">Customer Service.zip</a> <br/> • <a href="./files/Get Request Details.zip" target="_blank" rel="noreferrer">Get Request Details.zip</a> <br/><br/> watsonx Orchestrate (For ODM on prem) <br/> • <a href="./files/XXX%20FocusCorp%20Customer%20Service.json" target="_blank" rel="noreferrer">XXX FocusCorp Customer Service.json</a> <br/> • <a href="./files/XXX%20FocusCorp%20Get%20data%20from%20database.json" target="_blank" rel="noreferrer">XXX FocusCorp Get data from database.json</a><br/>OR<br/> watsonx Orchestrate (For ODM on SaaS) <br/> • <a href="./files/XXX%20FocusCorp%20Customer%20Service%20SaaS.json" target="_blank" rel="noreferrer">XXX FocusCorp Customer Service SaaS.json</a> <br/> • <a href="./files/XXX%20FocusCorp%20Get%20data%20from%20database%20SaaS.json" target="_blank" rel="noreferrer">XXX FocusCorp Get data from database SaaS.json</a> <br/><br/> Optional (For ODM experts looking to customize the decision service) <br/> • <a href="./files/RuleDesignerFiles_V5_20231027.zip" target="_blank" rel="noreferrer">RuleDesignerFiles.zip</a> |
-| **Sales enablement video** | Coming soon |
-| **Required versions** | - IBM Operational Decision Manager 8.11.1.0  and 8.12 (on prem or SaaS)<br> - watsonx Orchestrate SaaS (Standard or Enterprise edition) SaaS with the builder profile (mandatory).|
+| **Required versions** | - watsonx Orchestrate SaaS (Standard or Enterprise edition) SaaS with the builder profile (mandatory)<br/>- IBM Operational Decision Manager 8.11.1.0  and 8.12 (on prem or SaaS)<br>|
 | **How to get support** | • Open a support case at <a href="https://techzone.ibm.com/help" target="_blank" rel="noreferrer">IBM Technology Zone Help</a> regarding issues with reserving and provisioning Tech Zone environments.<br/>• Contact <a href="https://ibm-cloud.slack.com/archives/C0216F39ACU" target="_blank" rel="noreferrer">#platinumdemos-automation-support</a> regarding issues with setting up and running this demo. |
 
-<inline-notification text="You are going to deliver a demo on a watsonx Orchestrate shared environment. watsonx Orchestrate environments are single-tenant. To prevent conflicts and to easily access your different artifacts, you will have to pre-fix or mark some skills and artifact names with your own initials. <br/><br/> In this documentation, we will use ‘<strong>XXX</strong>’. You are asked to use your own 3-letter initials that are not yet used on your watsonx Orchestrate instance. <br/><br/><strong>Note for ODM on SaaS users:</strong>  We are detailing the setup of IBM Operational Decision Manager (ODM) using a TechZone pre-configured VMWare image powered by PakInstaller. However, compatible ODM on SaaS configuration files are provided. <br/> Ask your SaaS administrator for a basic authentication userID/Password to connect the watsonx Orchestrate to your ODM instance."></inline-notification>
+<inline-notification text="This demo uses a shared watsonx Orchestrate environment. You will use your own 3-letter initials denoted by ‘<strong>XXX</strong>’ to differentiate any artifacts you create.<br/><br/>Note for ODM on SaaS users:</strong>  We are detailing the setup of IBM Operational Decision Manager (ODM) using a TechZone pre-configured VMWare image powered by PakInstaller. However, compatible ODM on SaaS configuration files are provided. <br/> Ask your SaaS administrator for a basic authentication userID/Password to connect the watsonx Orchestrate to your ODM instance."></inline-notification>
 
 <br/>
 
+### **STEP 1: PROVISION YOUR ENVIRONMENTS**
 <details markdown="1">
 
-<summary>Prerequisites</summary>
+<summary>1 - Request a watsonx Orchestrate environment</summary>
 
-Before starting the installation of this demo, make sure you have been granted **'builder profile'** access to a watsonx Orchestrate SaaS environment: <br/><br/>
-• IBM Tech Sales: Contact your local geo tech sales leader to be invited to the dedicated watsonx Orchestrate instances <br/>
-• Business Partners: Contact your local IBM Ecosystem representative<br/><br/>
-<inline-notification text="More info on how to have access to a watsonx Orchestrate environment : <a href='https://ibm.biz/Watson-Orchestrate-Sales-Kit'>watsonx Orchestrate sales kit on seismic</a>."></inline-notification>
+This 300 demonstration requires an IBM watsonx Orchestrate (standard or enterprise) environment with the **'builder profile'** access rights. 
+The procedure to request a watsonx Orchestrate environment access is documented on the <a href='https://techzone.ibm.com/collection/watsonx-orchestrate' target="_blank">watsonx Orchestrate environment access on TechZone</a>.
 
-It is also required that you have a text editor that's able to edit JSON files. In this documentation, we will use Microsoft™ Visual Studio Code.
-
-<br/>
+Make sure you are granted the **'builder profile'** role in your 300 environment request.
 
 **[Go to top](#top)**
 
-<br/><br/>
-
-</details>
-
 <br/>
-
-### **STEP 1: PROVISION AN OPENSHIFT ENVIRONMENT AND DEPLOY CLOUD PAK FOR BUSINESS AUTOMATION**
+</details>
+<p/>
 
 <details markdown="1">
+<summary>2 - Request a Cloud Pak for Business Automation environment</summary>
 
 To run this demonstration, you will need an OpenShift environment with Cloud Pak
 for Business Automation 23.0.1 installed. We will use IBM Operational Decision
 Manager on prem version contained in this installation. Only the Decision
-capabilities must be installed from your Cloud Pak for Business Automation.<br/> <inline-notification text="Note: If you want to use your ODM hosted on a SaaS tenant, just contact your SaaS administrator to get a user and password to connect your RES in Basic Authentication. Go directly to Step 3."></inline-notification>
+capabilities must be installed from your Cloud Pak for Business Automation.<br/> <inline-notification text="Note: If you want to use your ODM hosted on a SaaS tenant, just contact your SaaS administrator to get a user and password to connect your RES in Basic Authentication. Go directly to Step 3: Download the installation files."></inline-notification>
 
-<summary>1 - Prepare your Cloud Pak for Business Automation environment</summary>
+
 
 1. Visit the <a href="https://techzone.ibm.com/collection/PakInstaller/journey-cloud-pak-for-business-automation" target="_blank" rel="noreferrer">Pak Installer</a> page. <br/><br/>
 

@@ -16,19 +16,24 @@ banner: images/wxo_300_prep_banner.png
 | **Demo script** | A complete demo script is on the second tab above. <br/><br/> This demo script has multiple tasks that each have multiple steps. In each step, you have the details about what you need to do (**Actions**), what you can say while delivering this demo step (**Narration**), and what screenshots you will see.<br/><br/>This demo script is a suggestion, and you are welcome to customize based in your sales opportunity. Most importantly, practice this demo in advance. If the demo seems easy for you to execute, the customer will focus on the content. If it seems difficult for you to execute, the customer will focus on your delivery. |
 | **How to get support** | • Open a support case at <a href="https://techzone.ibm.com/help" target="_blank" rel="noreferrer">IBM Technology Zone Help</a> regarding issues with reserving and provisioning Tech Zone environments.<br/>• Contact <a href="https://ibm-cloud.slack.com/archives/C0216F39ACU" target="_blank" rel="noreferrer">#platinumdemos-automation-support</a> regarding issues with setting up and running this demo. |
 
-### **SET UP THE DEMO**
-
 <details markdown="1">
 
 <summary>1 - Access the demo environment (IBMers)</summary>
 
-This demo is available on Sales production tenants and Enablement production tenants.<br/><br/>
-   **Sales tenants:** Use your IBM email to log in to an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>. Select the **BA Tech Sales Production EE** account.<br/><img src="images/prep-1-2-sales-tenant.png" width="400" /><br/>**Note:** If you have been added to only one account on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your IBM email.<br/><br/>
-   **Enablement tenants:** Short-term access (two week maximum) to a demo environment for enablement. Use your IBM email to log into an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>. Select the **Tech Enablement 10** account.<br/><img src="images/prep-1-3-enablement-tenant.png" width="400" /><br/>**Note:** If you have been added to only one account on the production tenant, you will not see a list of available accounts and will be logged straight into the account after entering your email.<br/>
+This demo is available on several sales demonstration and enablement tenants (demo instances). For new watsonx Orchestrate users, please request access by submitting a <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">request here</a>. You will receive an email once you have been onboarded onto a suitable tenant, but please allow 48 hours for your request to be processed.<br/> 
 
-**Requesting Access**
+Based on your role and requirements, you will be onboarded onto a sales demonstration tenant or an enablement tenant. Enablement tenants provide short-term access (two week maximum) for enablement purposes. 
 
-If you don't have access to a tenant you can request access by submitting a request <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">here</a>.<br/><br/>
+Once you have received your onboarding email use your IBM email to log in <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>. <br/>
+
+**Cannot find the demo or skills?**
+
+If you are an existing watsonx Orchestrate user but you cannot see the skills needed to run the demo(they are represented as cards at the bottom of the watsonx screen), please ensure you are in the **Team skills** view. When you log into watsonx Orchestrate, the default view is **Personal skills**. To run the demo, change the view to **Team skills**.<br/><img src="images/prep-1-2-teamskills.jpg" width="600" /> <br/>
+
+If you are an existing watsonx Orchestrate user and still cannot see the skills used in the demo, please request access to a suitable tenant by submitting a <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">request here</a>. You will receive an email once you have been onboarded onto a suitable tenant, but please allow 48 hours for your request to be processed.<br/> 
+
+Users with access to multiple tenants (demo environments) should ensure they select a tenant that has the demonstration installed. Please use the <a href="https://ibm-cloud.slack.com/archives/C0216F39ACU" target="_blank" rel="noreferrer">#platinumdemos-automation-support</a> Slack channel if you require assistance. 
+<br/> 
 
 </details>
 
@@ -38,14 +43,13 @@ If you don't have access to a tenant you can request access by submitting a requ
 
 <summary>2 - Access the demo environment (Business Partners)</summary>
 
-For Business Partners, use your company email to log in to an account <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>.<br/>
+If you do not have access to a tenant, you can request access by submitting a <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">request here</a>. You will receive an email once you have been onboarded onto a suitable tenant, but please allow 48 hours for your request to be processed.<br/><br/>
 
-If you do not have access to a tenant, you can request access for your organization by submitting a request <a href="https://ibm.biz/OrchestrateRequestEnv" target="_blank" rel="noreferrer">here</a>.<br/><br/>
+Once you have received your onboarding email, use your IBM ID to log in <a href="https://dl.watson-orchestrate.ibm.com/home" target="_blank" rel="noreferrer">here</a>.<br/>
 
 </details>
 
 <p/>
-
 
 <details markdown="1">
 
@@ -57,7 +61,7 @@ If you do not have access to a tenant, you can request access for your organizat
 
 3. Search for '**life**' in the search panel. <br/> <img src="images/Prep-1-3.jpg" width="800" /><br/>
 
-4. The list of apps is filtered to only show apps that contain skills containing the word 'retrieve.' Click the **Salesforce – Get customers with recent life changes** card. <br/> <img src="images/Prep-1-4.jpg" width="800" /><br/>
+4. The list of apps is filtered to only show apps that contain skills containing the word 'life.' Click the **Salesforce – Get customers with recent life changes** card. <br/> <img src="images/Prep-1-4.jpg" width="800" /><br/>
 
 5. Click **Add skill +** (1). Click **Connect app** (2). <br/> <img src="images/Prep-1-5.jpg" width="800" /><br/>
 
@@ -108,47 +112,17 @@ The next personal skill to add will be based on a decision model imported into A
 
 ### **PREPARATION REQUIRED TO GIVE THIS DEMO AGAIN**
 
-<details markdown="1">
-
-<summary>Delete the draft skill</summary>
-
-Delete the draft skill once you have tested it, as it will be imported again in the demo. After returning to the skill panel, search for the unique ID and delete it. <br/> <img src="images/Prep-4-1.png" width="800" /><br/>
-
-</details>
-
-<p/>
-
-<details markdown="1">
-
-<summary>Repeat the demo</summary>
-
-To repeat the demo, remove the two skills that were created during the demo. First, remove the skill flow, and then remove the skill created from the OpenAPI.
-
-1. Click the **menu slider** icon and select **Skills**. Use the search panel to find the skill flow that was created in the demo. In the example demo, this was created as '**GB Upsell Skill**' (it is listed below as a composite skill). Click the corresponding **ellipsis** icon to the right of the screen. Click **Delete this skill**. <br/> <img src="images/Prep-5-1.png" width="800" /><br/>
-
-2. Remove the skill that was created using an OpenAPI file. During the preparation for this skill import, it was recommended to add a unique ID to the description attribute in the OpenAPI file. (In the example, 'GB081123' was added to the description attribute.) Use your unique ID to find the skill. Click the **ellipsis** icon and click **Delete this skill**. <br/> <img src="images/Prep-5-2.png" width="800" /><br/>
-
-</details>
-
-<p/>
-
 ### **AFTER EACH DEMO**
 
 <details markdown="1">
 
-<summary>Final cleanup</summary>
+<summary>Skill cleanup</summary>
 
 The watsonx Orchestrate environment used for the demo is shared by many users. After completing your demo, please take a few minutes to remove any skills or automations you created during the demo. Then, also remove the personal skills created during the demo preparation. Finally, remove the decision automation that was imported.
 
 1. Click the **menu slider** icon and select **Skills**. Use the search panel to find the skill flow that was created in the demo. In the example demo, this was created as '**GB Upsell Skill**' (it is listed below as a composite skill). Expand the skill details to confirm you are the author. Click the corresponding **ellipsis** icon to the right of the screen. Click **Delete this skill**. <br/> <img src="images/Prep-6-1.png" width="800" /><br/>
 
 2. Remove the skill that was created using an OpenAPI file. During the preparation for this skill import, it was recommended to add a unique ID to the description attribute in the OpenAPI file. (In the example, 'GB081123' was added to the description attribute.) Use your unique ID to find the skill. Expand the skill details to confirm you are the author. Click the **ellipsis** icon and click **Delete this skill**. <br/> <img src="images/Prep-6-2.png" width="800" /><br/>
-
-3. Remove the **Product Upsell** skill that was created when the decision automation was published. Enter '**Product Upsell**' in the search panel, and expand the details to confirm you are the author. Click the **ellipsis** icon and click **Delete this skill**. <br/> <img src="images/Prep-6-3.png" width="800" /><br/>
-
-4. Click the **menu slider** icon. Select **Automation builder**. <br/> <img src="images/Prep-6-4.png" width="800" /><br/>
-
-5. Click the **ellipsis** icon on the **Product Upsell** card. Click **Delete** and confirm the deletion. <br/> <img src="images/Prep-6-5.png" width="250" /><br/>
 
 </details>
 
