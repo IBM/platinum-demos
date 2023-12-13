@@ -18,7 +18,7 @@ We’re using a customer service example, but the same pattern can be used to le
 
 Let’s get started!
 
-(Printer-ready PDF of demo script  <a href="./files/DEMO_Script.pdf" target="_blank" rel="noreferrer">here</a>)
+(Printer-ready PDF version of the demo script  <a href="./files/DEMO_Script.pdf" target="_blank" rel="noreferrer">here</a>)
 
 <br/>
 
