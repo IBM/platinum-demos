@@ -22,7 +22,7 @@
     "paths": {
         "/FocusCorp_GetRequestDetails/FocusCorp_Get_Request_Details": {
             "post": {
-                "summary": "XXX FocusCorp Get data from database.",
+                "summary": "XXX FocusCorp Get data from database",
                 "description": "FocusCorp database - recovers customers and purchases details with their IDs - Latest version",
                 "operationId": "callFocusCorp_Get_Request_DetailsDecisionServiceOperation",
                 "requestBody": {
@@ -97,7 +97,7 @@
                                                     "type": "integer",
                                                     "format": "int32",
                                                     "x-ibm-order": 4,
-                                                    "title": "Nd years as a customer"
+                                                    "title": "Nb years as a customer"
                                                 },
                                                 "loyaltyLevel": {
                                                     "type": "string",
