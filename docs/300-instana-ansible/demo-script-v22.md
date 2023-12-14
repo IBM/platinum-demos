@@ -29,7 +29,7 @@ Let’s get started
 
 | **1.1** | **View golden signals of the QotD application** |
 | :--- | :--- |
-| **Narration** |Let’s first observe the golden signals of the application. The golden signals consist of a set of four metrics that offer a wide view of the health of a service from the perspective of the end-user or consumer. The four metrics or signals are: Latency, Traffic, Errors and Saturation.|
+| **Narration** | Let’s first observe the golden signals of the application. The golden signals consist of a set of four metrics that offer a wide view of the health of a service from the perspective of the end-user or consumer. The four metrics or signals are: Latency, Traffic, Errors and Saturation.|
 | **Action** &nbsp; 1.1.1 | Navigate to **Instana** and click the **Applications** perspective icon. <br/> <img src="images/1-1-1.png" width="800" /> |
 | **Narration** | An Application Perspective (AP) is a power tool for monitoring alerting, and analysis of a microservice environment. Each AP auto-generates a feature rich monitoring dashboard for the golden signals. It helps organize teams to stay focused on the services they are interested in. Let’s now drill into the Quote of the Day cloud-native application. |
 | **Action** &nbsp; 1.1.2 | Click the **Quote of the Day** application. <br/> <img src="images/1-1-2.png" width="800" /> |
@@ -96,7 +96,7 @@ When an event is raised, the pre-configured potential remediations also are atta
 | **Action** &nbsp; 3.2.1 |View the **Associated Actions** tab (1). Select **Get pod events**. Click **Run** (2). <br/> <img src="images/3-2-1.png" width="800" /> |
 | **Narration** | Actions are executed on target nodes or agents. Let’s specify the Instana agent and host on which this action should be executed. |
 | **Action** &nbsp; 3.2.2 | Set **Hosts Limit** (1) and **Target Agent** (2) with the values shown. Click **Run action** (3). <br/> <img src="images/3-2-2.png" width="800" /> |
-| **Action** &nbsp; 3.2.3 | Click **OK** <br/> <img src="images/img.png" width="800" /> |
+| **Action** &nbsp; 3.2.3 | Click **OK** <br/> <img src="images/3-2-3.png" width="800" /> |
 | **Narration** | The remediation is now kicked off. Instana will connect with Ansible Tower to initiate the execution of the Ansible playbook. While the playbook is executing let’s take a moment to peek under the hood to understand the Instana-Ansible integration. |
 
 **[Go to top](#place1)**
@@ -109,18 +109,20 @@ When an event is raised, the pre-configured potential remediations also are atta
 
 <details markdown="1">
 
-<summary>4 - Understanding the execution steps of the remediation</summary>
+<summary>4 - Understand the execution steps of the remediation</summary>
 
 <br/>
 
 | **4.1** | **Explore the Instana Action Framework** |
 | :--- | :--- |
-| **Narration** | The Instana Action Framework bridges the integration between Instana and the Ansible automation platform. You can use this framework to create and manage user-defined automation actions natively in Instana, or leverage any automations already defined in Ansible to automatically remediate incoming events |
-| **Action** &nbsp; 4.1.1 | Click the **Automation** icon. <br/> <img src="images/4-1-1.png" width="600" /> |
-| **Narration** | The Action Catalog is a key component of the Action Framework. It serves as a repository of all the known remediations, also called actions. You can use the Action Catalog to create new actions or view existing remediations from third-party automation providers, such as Ansible. |
-| **Action** &nbsp; 4.1.2 | Click the **Action Catalog** tab. <br/> <img src="images/4-1-2.png" width="800" /> |
-| **Narration** | Notice the Action Framework supports three types of actions – a 'Documentation Link' action, a 'Script' action and an 'HTTP' action. <br/><br/> Let’s understand what each of these mean: <br/><br/> • *Documentation Link* action: provides access to the relevant documentation to diagnose or remediate a known issue directly from the event context <br/> • *Script* action: an automation script that can run on your agent using a Script Action Sensor that is part of the automation framework <br/> • *HTTP* action: specifies HTTP calls to invoke webhooks or other REST APIs on your agent by using the new HTTP action sensor. <br/><br/> The Instana-Action Framework synchronizes with the Red Hat Ansible Automation Platform (RHAAP) and imports the pre-defined Ansible playbooks. The ingested Ansible playbooks are categorized in the Instana Action Catalog as Ansible actions to denote that they actually exist in RHAAP. Let’s examine a sample remediation. |
-| **Action** &nbsp; 4.1.3 | Point out the **Ansible** action (1). Delete **active-stress-test** (2). <br/> <img src="images/4-1-3.png" width="800" /> |
+| **Narration** | The Instana Action Framework bridges the integration between Instana  and the Ansible automation platform. You can use this framework to create and manage user-defined automation actions natively in Instana or leverage any automations already defined in Ansible to automatically remediate incoming events. |
+| **Action** &nbsp; 4.1.1 | Click **Automation** in the navigation menu. <br/> <img src="images/4-1-1.png" width="600" /> |
+| **Narration** | The Action Catalog is a key component of the Action Framework. It serves as a repository of all the known remediations also called Actions. You can use the Action Catalog to create new Actions or view existing remediations from 3rd party automation providers such as Ansible. Let’s browse the remediations currently configured in the Action Catalog. |
+| **Action** &nbsp; 4.1.2 | Click the **Automation -> Action Catalog** tab. <br/> <img src="images/4-1-2.png" width="800" /> |
+| **Narration** | Notice the action framework supports three types of actions: a Documentation Link action, a Script action and a HTTP action.
+ <br/><br/> Let’s understand what each of these mean: <br/><br/> • *Documentation Link* action: provides access to the relevant documentation to diagnose or remediate a known issue directly from the event context <br/> • *Script* action: an automation script that can run on your agent using a Script Action Sensor that is part of the automation framework <br/> • *HTTP* action: specifies HTTP calls to invoke webhooks or other REST APIs on your agent by using the new HTTP action sensor. <br/><br/> The Instana-Action Framework synchronizes with the Red Hat Ansible Automation Platform (RHAAP) and imports the pre-defined Ansible playbooks. The ingested Ansible playbooks are categorized in the Instana Action Catalog as Ansible actions to denote that they actually exist in RHAAP. Let’s examine a sample remediation. |
+| **Action** &nbsp; 4.1.3 | Point out the Ansible action **Resolve Rating Latency** <br/> <img src="images/4-1-3.png" width="800" /> |
+| **Narration** | Ansible playbooks are configured in the enterprise-wide Red Hat Ansible Automation Platform (RHAAP). Automation Controller is the command-and-control center for RHAAP. It serves as a central location to configure and manage how automation runs across your enterprise infrastructure. In this demo you may optionally explore all the Ansible playbooks in RHAAP. |
 
 <br/>
 
@@ -139,22 +141,25 @@ When an event is raised, the pre-configured potential remediations also are atta
 
 <details markdown="1">
 
-<summary>5 - Validating the proper execution of the remediation action</summary>
+<summary>5 - Validate the proper execution of the remediation action</summary>
 
 <br/>
 
 | **5.1** | **Check the execution status of the remediation flow** |
 | :--- | :--- |
-| **Action** &nbsp; 5.1.1 | Click **Action History page**. <br/> <img src="images/5-1-1.png" width="400" /> |
-| **Action** &nbsp; 5.1.2 | Click **View Log**. <br/> <img src="images/5-1-2.png" width="600" /> |
+| **Narration** | Now that we have a better idea about how the Instana-Ansible interoperability works, let’s go back and check the execution status of the remediation  we ran earlier to remediate the active event that was generated due by the health issue of the Rating service. |
+| **Action** &nbsp; 5.1.1 | Select the **Action History page** link and then select the **Get Pod events** remediation. <br/> <img src="images/5-1-1.png" width="400" /> |
+| **Narration** | Notice the 'Start Time' and 'End Time' indicating that the remediation has completed. The 'Status' field on the far left validates the successful completion of the remediation.  |
+| **Action** &nbsp; 5.1.2 | Click the event to get more details. Click the **View Log** link. <br/> <img src="images/5-1-2.png" width="600" /> |
 | **Narration** | Each action has at least two log entries – the 'Start' and 'Stop' entries. The log output displays the steps of the script execution to help track the execution progress of the remediation. |
-| **Action** &nbsp; 5.1.3 | Click the **End running action** log entry (1). Check for **success** (2). <br/> <img src="images/5-1-3.png" width="600" /> |
+| **Action** &nbsp; 5.1.3 | Click the **End running action** log entry (1).<br/> <img src="images/5-1-3.png" width="600" /> |
+| **Narration** | Ensure that the overall status of the Ansible playbook was successful. Also verify the Host it was executed on and the underlying reason of the failure. |
 
 <br/>
 
 | **5.2** | **Monitor the status of the Ansible playbook execution** |
 | :--- | :--- |
-| **Narration** | The SRE does not really need to go to Ansible at all. The SRE can stay within Instana to perform all the remediation work. However, if there are failures, it helps to understand the state of Ansible and ensure that the connectivity between Instana and Ansible is properly synchronized. |
+| **Narration** | This step is optional. The SRE does not really need to go to Ansible at all. He can stay within Instana to perform all the remediation work. However, if there are failures it helps to understand the state of Ansible and ensure that the connectivity between Instana and Ansible is properly synchronized. |
 | **Action** &nbsp; 5.2.1 | On the Ansible console tab, click **Dashboard** (1) and then **Jobs** (2). Look for **list-cpu-processes** (3). <br/> <img src="images/5-2-1.png" width="800" /> <br/> <img src="images/5-2-2.png" width="800" /> |
 
 **[Go to top](#place1)**
@@ -169,7 +174,7 @@ When an event is raised, the pre-configured potential remediations also are atta
 
 <summary>Summary</summary>
 
-In this demo, we showed how the new Automation Framework elevates Instana beyond just an observability tool that does rapid root cause analysis, to also include incident resolution. The Instana-Ansible integration enables IT ops teams to automatically execute remedial actions in a timely manner, directly from within Instana without having to hop across other automation tools. This feature accelerates the time to fix an incident and drastically reduces downtime.
+In demo we showed how the new Automation Framework elevates Instana beyond just an observability tool that does rapid root cause analysis, to also include incident resolution. The Instana-Ansible integration enables IT ops teams to automatically execute remedial actions in a timely manner, right from within Instana without having to hop across other automation tools. This feature accelerates the time to fix an incident and drastically reduces down time.
 
 **[Go to top](#place1)**
 
