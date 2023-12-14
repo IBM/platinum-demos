@@ -24,9 +24,9 @@ Focus Corp uses IBM MQ to coordinate transactions between its order management s
 
 Let’s get started!
 
-(Demo intro slides <a href="https://ibm.box.com/s/quzwd2gvn7zbo9oo19xi1o05gtdlvmwj" target="_blank" rel="noreferrer">here</a>)
+(Demo intro slides <a href="https://ibm.box.com/shared/static/fr89lmewzkqmnu97vzscw1ykgls4c6j4.pptx" target="_blank" rel="noreferrer">here</a>)
 
-(Printer-ready PDF of demo script <a href="https://ibm.box.com/s/jsz9v4mva1jdz7gg1fls3xk4rhgiezvh" target="_blank" rel="noreferrer">here</a>)
+(Printer-ready PDF of demo script <a href="https://ibm.box.com/shared/static/d40f5v5oib8vkmblykol5rrep0936nbi.pdf" target="_blank" rel="noreferrer">here</a>)
 
 <br/><br/>
 

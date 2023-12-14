@@ -5,8 +5,8 @@ banner: images/Using Event Automation with MQ banner 300 Prep 12-13-23.jpg
 overview: In this demo we will see how Focus Corp, an online retailer, uses real-time MQ transaction data to capitalize on time-sensitive revenue opportunities.
 product: IBM Event Automation, Cloud Pak for Integration
 capabilities: Event Streaming, Event Endpoint Management, Event Processing and IBM MQ
-boxIntroPresentationUrl: https://somewhere.com
-boxPdfScript: https://somewhere2.com
+boxIntroPresentationUrl: https://ibm.box.com/shared/static/fr89lmewzkqmnu97vzscw1ykgls4c6j4.pptx
+boxPdfScript: https://ibm.box.com/shared/static/d40f5v5oib8vkmblykol5rrep0936nbi.pdf
 gitHubUrl: https://github.com/IBM/platinum-demo-code-event-automation.git
 gitHubDir: platinum-demo-code-event-automation
 topcategory: "### **DEMO INSTALLATION AND SETUP**"

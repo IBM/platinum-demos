@@ -21,9 +21,9 @@ Focus Corp's integration team use IBM Event Automation to expose event streams t
 
 Let’s get started!
 
-(Demo intro slides <a href="https://ibm.box.com/s/quzwd2gvn7zbo9oo19xi1o05gtdlvmwj" target="_blank" rel="noreferrer">here</a>)
+(Demo intro slides <a href="https://ibm.box.com/shared/static/c3mbb09wu0qd6ifdphxp8fybw33glodt.pptx" target="_blank" rel="noreferrer">here</a>)
 
-(Printer-ready PDF of demo script <a href="https://ibm.box.com/s/jsz9v4mva1jdz7gg1fls3xk4rhgiezvh" target="_blank" rel="noreferrer">here</a>)
+(Printer-ready PDF of demo script <a href="https://ibm.box.com/shared/static/mj5ehiuewprnabt31qk7sh2qlpqf5ago.pdf" target="_blank" rel="noreferrer">here</a>)
 
 <br/><br/>
 
