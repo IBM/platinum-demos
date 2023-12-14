@@ -1,7 +1,7 @@
 ---
 title: Detecting time-critical situations using Event Automation <br/>300-level live demo
 layout: demoscript
-banner: images/temp-banner.jpg
+banner: images/Detecting time-critical situations using Event Automation banner 300 Script 12-13-23.jpg
 browsingselfservice: 1
 nocodeeditor: 2
 outputtomarketing: 3

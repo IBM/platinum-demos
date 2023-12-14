@@ -1,7 +1,7 @@
 ---
 title: Using event automation to create Kafka streams from IBM MQ <br/>300-level live demo
 layout: demoscript
-banner: images/temp-banner.jpg
+banner: images/Using Event Automation with MQ banner 300 Script 12-13-23.jpg
 browsingselfservice: 2
 nocodeeditor: 3
 outputtomarketing: 4
