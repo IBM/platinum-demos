@@ -101,7 +101,7 @@ Focus Corp’s integration team exposes the enterprise’s data using event stre
 | **Action** &nbsp; 1.6.7 | Select **IBM Event Streams** (1) and click **Next** (2). <br/> <img src="images/1-6-ClusterSelection.png" width="800" /> |
 | **Action** &nbsp; 1.6.8 | Check **CUSTOMERS** (1) and **ORDERS** (2), and click **Add topic** (2). <br/> <img src="images/1-6-SelectTopics.png" width="800" /> |
 
-| **1.7** | **Importing the streams into IBM Event Endpoint Management** |
+| **1.7** | **Describe and publish the streams into IBM Event Endpoint Management** |
 | :--- | :--- |
 | **Narration** | Next the integration team describes the streams, providing a description and example message. This information is displayed to consumers when they discover and subscribe to the event stream. They start by editing the CUSTOMERS stream. |
 | **Action** &nbsp; 1.7.1 | Click on the **CUSTOMERS** (1) topic. <br/> <img src="images/1-7-SelectCustomerTopic.png" width="800" /> |
