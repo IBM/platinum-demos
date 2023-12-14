@@ -1,10 +1,7 @@
 ---
 title: Automating incident remediation in Instana using Ansible <br/>300-level live demo
 layout: demoscript
-banner: images/temp-banner.jpg
-browsingselfservice: 2
-nocodeeditor: 3
-outputtomarketing: 4
+banner: images/instana-ansible-banner-script.jpg
 ---
 
 <span id="top"></span>
