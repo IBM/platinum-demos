@@ -7,6 +7,7 @@ product: IBM Event Automation
 capabilities: Event Streaming, Event Endpoint Management and Event Processing 
 boxIntroPresentationUrl: https://ibm.box.com/shared/static/c3mbb09wu0qd6ifdphxp8fybw33glodt.pptx
 boxPdfScript: https://ibm.box.com/shared/static/mj5ehiuewprnabt31qk7sh2qlpqf5ago.pdf
+customerVideo: https://ibm.box.com/s/efjqukq1zsffphuvhoi93lpc0i65iqzm
 gitHubUrl: https://github.com/IBM/platinum-demo-code-event-automation.git
 gitHubDir: platinum-demo-code-event-automation
 topcategory: "### **DEMO INSTALLATION AND SETUP**"

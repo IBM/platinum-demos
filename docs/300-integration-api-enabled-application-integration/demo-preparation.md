@@ -7,7 +7,7 @@ product: Cloud Pak for Integration
 capabilities: API management; Application integration; Connectors
 boxIntroPresentationUrl: https://ibm.box.com/s/tph26q1zzqhix1t1fkm2ukyc9eqgwdbg
 boxPdfScript: https://ibm.box.com/s/oy913j7o56vl8ygy7mp98o7ljsqun2hg
-customerDemoVideo: https://ibm.ent.box.com/s/xekr23b3jqzzd1ef1bmqcsl6i1rw9bpf
+customerVideo: https://ibm.ent.box.com/s/xekr23b3jqzzd1ef1bmqcsl6i1rw9bpf
 gitHubUrl: https://github.com/IBM/platinum-demo-code-api-enabled-integration.git
 gitHubDir: platinum-demo-code-api-enabled-integration
 topcategory: "### **DEMO INSTALLATION AND SETUP**"

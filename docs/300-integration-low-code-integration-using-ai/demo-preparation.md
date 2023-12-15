@@ -7,6 +7,7 @@ product: Cloud Pak for Integration
 capabilities: Low-code integration authoring; Mapping assistance
 boxIntroPresentationUrl: https://ibm.box.com/s/2j47xs97ju9tiiq2s2b1s4v6j05st51a
 boxPdfScript: https://ibm.box.com/s/qpm2oue1yw5i62urbwck1nboihvxfhvh
+customerVideo: https://ibm.ent.box.com/s/axmuihfe55t0mgndqda0scwlnigjh73a
 gitHubUrl: https://github.com/IBM/platinum-demo-code-low-code-integration.git
 gitHubDir: platinum-demo-code-low-code-integration
 topcategory: "### **DEMO INSTALLATION AND SETUP**"

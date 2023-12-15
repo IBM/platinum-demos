@@ -7,6 +7,7 @@ product: IBM Event Automation, Cloud Pak for Integration
 capabilities: Event Streaming, Event Endpoint Management, Event Processing and IBM MQ
 boxIntroPresentationUrl: https://ibm.box.com/shared/static/fr89lmewzkqmnu97vzscw1ykgls4c6j4.pptx
 boxPdfScript: https://ibm.box.com/shared/static/d40f5v5oib8vkmblykol5rrep0936nbi.pdf
+customerVideo: https://ibm.box.com/s/efjqukq1zsffphuvhoi93lpc0i65iqzm
 gitHubUrl: https://github.com/IBM/platinum-demo-code-event-automation.git
 gitHubDir: platinum-demo-code-event-automation
 topcategory: "### **DEMO INSTALLATION AND SETUP**"

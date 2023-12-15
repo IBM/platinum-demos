@@ -7,6 +7,7 @@ product: Cloud Pak for Business Automation (CP4BA); Cloud Pak for Integration (C
 capabilities: Workflow (Cloud Pak for Business Automation); Application integration (Cloud Pak for Integration)
 boxIntroPresentationUrl: https://ibm.box.com/s/cpyk2zmgcupx4azzluh6eiks72j33ua3
 boxPdfScript: https://ibm.box.com/s/y1f2z8kkb648ci1t822vm9z6do5arc7j
+customerVideo: ""
 gitHubUrl: https://github.com/IBM/platinum-demo-code-cp4icp4ba.git
 gitHubDir: platinum-demo-code-cp4icp4ba/cp4i/
 topcategory: "## **INSTALL THE DEMO: Cloud Pak for Integration**"

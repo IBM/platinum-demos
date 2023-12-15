@@ -7,6 +7,7 @@ product: Cloud Pak for Integration
 capabilities: API and event management; Event streams
 boxIntroPresentationUrl: https://ibm.box.com/s/9bzas80jz80s3xechdl642ag80f4qjuz
 boxPdfScript: https://ibm.box.com/s/6siayii6qbus0v8m5pi293ntgphzbwh7
+customerVideo: ""
 gitHubUrl: https://github.com/IBM/platinum-demo-code-eem.git
 gitHubDir: platinum-demo-code-eem/scripts/
 topcategory: "### **DEMO INSTALLATION AND SETUP**"
