@@ -107,39 +107,6 @@ Let’s get started
 
 <p/>
 
-
-<details markdown="1">
-
-<summary>3 - Reviewing the event remediation recommendations</summary>
-
-<br/>
-
-| **3.1** | **Choose a remediation to execute** |
-| :--- | :--- |
-| **Narration** | Before we take a look at the specific event remediations, let’s first understand how Instana goes beyond pure observability to enable you take remedial action on an incoming event without ever leaving the Instana environment. <br/><br/> This new incident remediation feature is referred to as the Action Framework. The Action Framework is a collection of capabilities that allow you to define and manage a remediation. The Action Catalog is a central component of the Action Framework that allows you to manage the lifecycle of the remediations. The Action Framework can also interoperate with and leverage external automation platforms like Ansible.<br/>The event page lists the details of the event. By leveraging the Action Framework, Instana can automatically fix the issue. The Event Details page is now enriched with a list of potential remedial actions that can be executed directly within Instana to resolve this issue. | 
-| **Narration** | The 'Recommended Actions' section enumerates an AI-derived list of recommendations, sorted by a confidence score. You can associate any or all of these recommendations to this event by clicking the “+” icon. <inline-notification text="Since this is a read-only environment we will not be adding this recommendation to the list of actions in the event. "></inline-notification>
-The confidence score is derived based on several factors, such as the action definitions, tags, and the meta data from the event. The confidence score attempts to approximate the likelihood that the action will fix this event. The Action Type indicates that the remediation is contained in an Ansible playbook. <br/>We will next select a remediation to resolve the current active event. |
-| **Action** &nbsp; 3.1.1 | Review the **Recommended Actions** section. <br/> <img src="images/3-1-1.png" width="600" /> |
-
-<br/>
-
-| **3.2** | **Choose a remediation to execute** |
-| :--- | :--- |
-| **Narration** | The 'Associated Actions' section is new and provided by the Automation Framework. When an event is raised, the pre-configured potential remediations also are attached and available in-context to accelerate the Mean Time to Fix (MMTF). We have the option to add additional actions or remove actions if they are no longer relevant to the event. These actions will be persisted with this event. Any future occurrence of this event will then carry these newly configured remediations. |
-| **Action** &nbsp; 3.2.1 | View the **Associated Actions** tab (1). Select **Get pod events**. Click **Run** (2). <br/> <img src="images/3-2-1.png" width="800" /> |
-| **Narration** | Actions are executed on target nodes or agents. Let’s specify the Instana agent and host on which this action should be executed. |
-| **Action** &nbsp; 3.2.2 | Set **Hosts Limit** (1) and **Target Agent** (2) with the values shown. Click **Run action** (3). <br/> <img src="images/3-2-2.png" width="800" /> |
-| **Action** &nbsp; 3.2.3 | Click **OK** <br/> <img src="images/3-2-3.png" width="800" /> |
-| **Narration** | The remediation is now kicked off. Instana will connect with Ansible Tower to initiate the execution of the Ansible playbook. While the playbook is executing, let’s dive deeper into the Instana-Ansible integration. |
-
-**[Go to top](#place1)**
-
-<br/><br/>
-
-</details>
-
-<p/>
-
 <details markdown="1">
 
 <summary>4 - Understanding the execution steps of the remediation</summary>
