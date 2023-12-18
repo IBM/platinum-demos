@@ -126,7 +126,13 @@ The confidence score is derived based on several factors, such as the action def
 | **Action** &nbsp; 4.1.3 | Point out the Ansible action **Resolve Rating Latency** <br/> <img src="images/4-1-3.png" width="800" /> |
 | **Narration** | Ansible playbooks are configured in the enterprise-wide Red Hat Ansible Automation Platform (RHAAP). Automation Controller is the command-and-control center for RHAAP. It serves as a central location to configure and manage how automation runs across your enterprise infrastructure. In this demo you may optionally explore all the Ansible playbooks in RHAAP. |
 
-<br/>
+**[Go to top](#place1)**
+
+<br/><br/>
+
+</details>
+
+<p/>
 
 <details markdown="1">
 
