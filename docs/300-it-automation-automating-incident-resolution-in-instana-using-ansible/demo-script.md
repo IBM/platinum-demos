@@ -78,6 +78,28 @@ Let’s get started
 
 <details markdown="1">
 
+<summary>2 - Inspecting the incoming event</summary>
+
+<br/>
+
+| **2.1** | **Examine the event details** |
+| :--- | :--- |
+| **Narration** | Instana determines how the events are related and only generates an alert if the underlying event or group of events could potentially impact end-users. Let’s examine the critical events detected by Instana. |
+| **Action** &nbsp; 2.1.1 | Click the **Issues** tab on the Event page. <br/> <img src="images/2-1-1.png" width="800" /> |
+| **Action** &nbsp; 2.1.2 | Click on **Pod containers not ready** event <br/> <img src="images/2-1-2.png" width="800" /> |
+| **Narration** | Each Instana issue contains three components: severity, start times and end times. The chart plots metric values relevant to the problem. The performance issue is still active and needs to be resolved to address the current end-user experience problems. |
+
+**[Go to top](#place1)**
+
+<br/><br/>
+
+</details>
+
+<p/>
+
+
+<details markdown="1">
+
 <summary>3 - Reviewing the event remediation recommendations</summary>
 
 <br/>
