@@ -78,13 +78,14 @@ Let’s get started
 
 <details markdown="1">
 
-<summary>2 - Inspecting the incoming event</summary>
+<summary>3 - Reviewing the event remediation recommendations</summary>
 
 <br/>
 
-| **2.1** | **Examine the event details** |
+| **3.1** | **Choose a remediation to execute** |
 | :--- | :--- |
-| **Narration** | Instana determines how the events are related and only generates an alert if the underlying event or group of events could potentially impact end-users. Let’s examine the critical events detected by Instana. |
+| **Narration** | Before we take a look at the specific event remediations, let’s first understand how Instana goes beyond pure observability to enable you take remedial action on an incoming event without ever leaving the Instana environment. <br/><br/> This new incident remediation feature is referred to as the Action Framework. The Action Framework is a collection of capabilities that allow you to define and manage a remediation. The Action Catalog is a central component of the Action Framework that allows you to manage the lifecycle of the remediations. The Action Framework can also interoperate with and leverage external automation platforms like Ansible.<br/>The event page lists the details of the event. By leveraging the Action Framework, Instana can automatically fix the issue. The Event Details page is now enriched with a list of potential remedial actions that can be executed directly within Instana to resolve this issue. |
+| **Narration** | The 'Recommended Actions' section enumerates an AI-derived list of recommendations, sorted by a confidence score. You can associate any or all of these recommendations to this event by clicking the “+” icon. <inline-notification text="Since this is a read-only environment we will not be adding this recommendation to the list of actions in the event. "></inline-notification> The confidence score is derived based on several factors, such as the action definitions, tags, and the meta data from the event. The confidence score attempts to approximate the likelihood that the action will fix this event. The Action Type indicates that the remediation is contained in an Ansible playbook. <br/>We will next select a remediation to resolve the current active event.|
 | **Action** &nbsp; 2.1.1 | Click the **Issues** tab on the Event page. <br/> <img src="images/2-1-1.png" width="800" /> |
 | **Action** &nbsp; 2.1.2 | Click on **Pod containers not ready** event <br/> <img src="images/2-1-2.png" width="800" /> |
 | **Narration** | Each Instana issue contains three components: severity, start times and end times. The chart plots metric values relevant to the problem. The performance issue is still active and needs to be resolved to address the current end-user experience problems. |
