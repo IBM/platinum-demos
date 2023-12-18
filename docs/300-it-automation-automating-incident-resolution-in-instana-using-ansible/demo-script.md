@@ -25,7 +25,7 @@ Let’s get started
 
 <details markdown="1">
 
-<summary>1 - Observe the application health and service interactions</summary>
+<summary>1 - Observing the application health and service interactions</summary>
 
 <br/>
 
@@ -57,7 +57,7 @@ Let’s get started
 
 <details markdown="1">
 
-<summary>2 - Inspect the incoming event</summary>
+<summary>2 - Inspecting the incoming event</summary>
 
 <br/>
 
@@ -78,7 +78,7 @@ Let’s get started
 
 <details markdown="1">
 
-<summary>3 - Review the event remediation recommendations</summary>
+<summary>3 - Reviewing the event remediation recommendations</summary>
 
 Before we take a look at the specific event remediations, let’s first understand how Instana goes beyond pure observability to enable you take remedial action on an incoming event without ever leaving the Instana environment. <br/><br/> This new incident remediation feature is referred to as the Action Framework. The Action Framework is a collection of capabilities that allow you to define and manage a remediation. The Action Catalog is a central component of the Action Framework that allows you to manage the lifecycle of the remediations. The Action Framework can also interoperate with and leverage external automation platforms like Ansible.
 <br/>
@@ -111,7 +111,7 @@ The confidence score is derived based on several factors, such as the action def
 
 <details markdown="1">
 
-<summary>4 - Understand the execution steps of the remediation</summary>
+<summary>4 - Understanding the execution steps of the remediation</summary>
 
 <br/>
 
@@ -130,7 +130,7 @@ The confidence score is derived based on several factors, such as the action def
 
 <details markdown="1">
 
-<summary>5 - Validate the proper execution of the remediation action</summary>
+<summary>5 - Validating the proper execution of the remediation action</summary>
 
 <br/>
 
