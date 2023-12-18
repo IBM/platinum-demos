@@ -141,8 +141,7 @@ The confidence score is derived based on several factors, such as the action def
 | **Narration** | Notice the 'Start Time' and 'End Time' indicating that the remediation has completed. The 'Status' field on the far left validates the successful completion of the remediation.  |
 | **Action** &nbsp; 5.1.2 | Click the event to get more details. Click the **View Log** link. <br/> <img src="images/5-1-2.png" width="600" /> |
 | **Narration** | Each action has at least two log entries – the 'Start' and 'Stop' entries. The log output displays the steps of the script execution to help track the execution progress of the remediation. |
-| **Action** &nbsp; 5.1.3 | Click the **End running action** log entry (1).<br/> <img src="images/5-1-3.png" width="600" /> |
-| **Narration** | Ensure that the overall status of the Ansible playbook was successful. Also verify the Host it was executed on and the underlying reason of the failure. |
+| **Action** &nbsp; 5.1.3 | Click the **End running action** log entry (1).<br/> <img src="images/5-1-3.png" width="600" /><br/> Ensure that the overall status of the Ansible playbook was successful. Also verify the Host it was executed on and the underlying reason of the failure. |
 
 <br/>
 
