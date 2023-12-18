@@ -1,5 +1,5 @@
 ---
-title: Automating incident remediation in Instana using Ansible <br/>300-level live demo
+title: Automating incident resolution in Instana using Ansible <br/>300-level live demo
 layout: demoscript
 banner: images/instana-ansible-banner-script.jpg
 ---
