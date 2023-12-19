@@ -88,26 +88,6 @@ Let’s get started
 | :--- | :--- |
 | **Narration** | Before we take a look at the specific event remediations, let’s first understand how Instana goes beyond pure observability to enable you take remedial action on an incoming event without ever leaving the Instana environment. <br/><br/> This new incident remediation feature is referred to as the Action Framework. The Action Framework is a collection of capabilities that allow you to define and manage a remediation. The Action Catalog is a central component of the Action Framework that allows you to manage the lifecycle of the remediations. The Action Framework can also interoperate with and leverage external automation platforms like Ansible.<br/>The event page lists the details behind the underlying cause of the event. By leveraging the Action Framework, Instana can automatically fix the issue. The Event Details page is now enriched with a list of potential remedial actions that can be executed directly within Instana to resolve this issue. |
 | **Action** &nbsp; 3.1.1 | Review the **Recommended Actions** section.<br/><img src="images/3-1-1.png" width="800" /> |
-| **Narration** | The 'Recommended Actions' section enumerates an AI-derived list of recommendations, sorted by a confidence score. You can associate any or all of these recommendations to this event by clicking the “+” icon. <inline-notification text="Since this is a read-only environment we will not be adding this recommendation to the list of actions in the event. "></inline-notification> The Action Type indicates that the remediation is contained in an Ansible playbook. The confidence score is derived based on several factors, such as the action definitions, action tags, and the meta data from the event. The confidence score attempts to approximate the likelihood that the action will fix this event. The confidence scores are sorted in decreasing order of confidence.<br/>We will next select a remediation to resolve the current active event. |
-
-**[Go to top](#place1)**
-
-<br/><br/>
-
-</details>
-
-<p/>
-
-<details markdown="1">
-
-<summary>3 - Reviewing the event remediation recommendations</summary>
-
-<br/>
-
-| **3.1** | **Review the recommendations** |
-| :--- | :--- |
-| **Narration** | Before we take a look at the specific event remediations, let’s first understand how Instana goes beyond pure observability to enable you take remedial action on an incoming event without ever leaving the Instana environment. <br/><br/> This new incident remediation feature is referred to as the Action Framework. The Action Framework is a collection of capabilities that allow you to define and manage a remediation. The Action Catalog is a central component of the Action Framework that allows you to manage the lifecycle of the remediations. The Action Framework can also interoperate with and leverage external automation platforms like Ansible.<br/>The event page lists the details behind the underlying cause of the event. By leveraging the Action Framework, Instana can automatically fix the issue. The Event Details page is now enriched with a list of potential remedial actions that can be executed directly within Instana to resolve this issue. |
-| **Action** &nbsp; 3.1.1 | Review the **Recommended Actions** section.<br/><img src="images/3-1-1.png" width="800" /> |
 | **Narration** | The 'Recommended Actions' section enumerates an AI-derived list of recommendations, sorted by a confidence score. You can associate any or all of these recommendations to this event by clicking the “+” icon. <inline-notification text="Since this is a read-only environment we will not be adding this recommendation to the list of actions in the event. "></inline-notification> The Action Type indicates that the remediation is contained in an Ansible playbook. The confidence score is derived based on several factors, such as the action definitions, action tags, and the meta data from the event. The confidence score attempts to approximate the likelihood that the action will fix this event. The confidence scores are sorted in decreasing order of confidence.<br/>We will next select a remediation to resolve the current active event.|
 
 <br/>
@@ -145,30 +125,6 @@ Let’s get started
 | **Action** &nbsp; 4.1.3 | Select the **Resolve Rating Latency** action <br/> <img src="images/4-1-3.png" width="800" /> |
 | **Narration** | Ansible playbooks are configured in the enterprise-wide Red Hat Ansible Automation Platform. Automation Controller is the command-and-control center for RHAAP. It serves as a central location to configure and manage how automations run across your enterprise infrastructure. In this demo you may optionally explore all the Ansible playbooks in RHAAP |
 
-
-**[Go to top](#place1)**
-
-<br/><br/>
-
-</details>
-
-<p/>
-
-<details markdown="1">
-
-<summary>4 - Understanding the execution steps of the remediation</summary>
-
-<br/>
-
-| **4.1** | **Explore the Instana Action Framework** |
-| :--- | :--- |
-| **Narration** | The Instana Action Framework bridges the integration between Instana and the Ansible automation platform. You can use this framework to create and manage user-defined automation actions natively in Instana, or leverage any automations already defined in Ansible to automatically remediate incoming events. |
-| **Action** &nbsp; 4.1.1 | Click **Automation** in the navigation menu. <br/> <img src="images/4-1-1.png" width="600" /> |
-| **Narration** | The Action Catalog is a key component of the Action Framework. It serves as a repository of all the known remediations, also called Actions. You can use the Action Catalog to create new Actions or view existing remediations from third party automation providers such as Ansible.<br/> Let’s browse the remediations currently configured in the Action Catalog. |
-| **Action** &nbsp; 4.1.2 | On the **Automation** page, click the **Action Catalog**. <br/> <img src="images/4-1-2.png" width="800" /> |
-| **Narration** | Notice the action framework supports three types of actions: a Documentation Link action, a Script action and an HTTP action.<br/><br/> Let’s understand each of these actions: <br/><br/> • The 'Documentation Link' action: Provides access to the relevant documentation to diagnose or remediate a known issue directly from the event context. <br/> • The 'Script' action: Is an automation script that can run on your agent using a Script Action Sensor that is part of the Automation Framework <br/> • The 'HTTP' action: Specifies HTTP calls to invoke webhooks or other REST APIs on your agent by using the new HTTP action sensor. <br/><br/> The Instana-Action Framework synchronizes with the Red Hat Ansible Automation Platform (RHAAP) and imports the pre-defined Ansible playbooks. The ingested Ansible playbooks are categorized in the Instana Action Catalog as Ansible actions. <br/> Let’s examine a sample remediation. |
-| **Action** &nbsp; 4.1.3 | Select the **Resolve Rating Latency** action <br/> <img src="images/4-1-3.png" width="800" /> |
-| **Narration** | Ansible playbooks are configured in the enterprise-wide Red Hat Ansible Automation Platform. Automation Controller is the command-and-control center for RHAAP. It serves as a central location to configure and manage how automations run across your enterprise infrastructure. In this demo you may optionally explore all the Ansible playbooks in RHAAP. |
 
 **[Go to top](#place1)**
 
