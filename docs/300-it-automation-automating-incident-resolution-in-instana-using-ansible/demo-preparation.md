@@ -26,43 +26,26 @@ banner: images/instana-ansible-banner-prep.jpg
 
 Login to Instana using the following URL and credentials:
 
-**URL:** https://luke-instana.169-62-77-55.nip.io
-**Username:** admin@instana.local
-**Password:** CoC#Rulz1
+**URL:** https://luke-instana.169-62-77-55.nip.io <br/>
+**Username:** admin@instana.local <br/>
+**Password:** CoC#Rulz1 <br/>
 <br/>
 
 </details>
 
 <p/>
+
+<details markdown="1">
 
 <summary>Access the Red Hat Ansible environment</summary>
 
 Login to Ansible using the following URL and credentials:
 
-**URL:** http://luke-awx.169-62-77-51.nip.io:30377
-**Username:** admin
-**Password:** QuJHKcKz4qRY3qH1KfjBJw2rhUaMmFi0
+**URL:** http://luke-awx.169-62-77-51.nip.io:30377 <br/>
+**Username:** admin <br/>
+**Password:** QuJHKcKz4qRY3qH1KfjBJw2rhUaMmFi0 <br/>
 <br/>
 
 </details>
 
 <p/>
-
-The following environment credentials were used to setup the demo environments.<br/> 
-
-<span id="place2"></span>
-
-<span id="middle"></span>
-
-| **ENVIRONMENT CREDENTIALS** | | 
-| :---         | :--- |
-| **Instana** | URL: https://luke-instana.169-62-77-55.nip.io
-
-Username: admin@instana.local
-Password: CoC#Rulz1 |
-| **Ansible** | URL: http://luke-awx.169-62-77-51.nip.io:30377
-Username: admin
-Password: QuJHKcKz4qRY3qH1KfjBJw2rhUaMmFi0 |
-| **Quote of the Day** | Quote of the Day
-Home page: http://luke-k8s.169-62-77-60.nip.io:32000 |
-| **Anomaly generator** | http://luke-k8s.169-62-77-60.nip.io:32001 |
