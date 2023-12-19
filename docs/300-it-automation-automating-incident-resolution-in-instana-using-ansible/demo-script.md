@@ -87,7 +87,27 @@ Let’s get started
 | **3.1** | **Review the recommendations** |
 | :--- | :--- |
 | **Narration** | Before we take a look at the specific event remediations, let’s first understand how Instana goes beyond pure observability to enable you take remedial action on an incoming event without ever leaving the Instana environment. <br/><br/> This new incident remediation feature is referred to as the Action Framework. The Action Framework is a collection of capabilities that allow you to define and manage a remediation. The Action Catalog is a central component of the Action Framework that allows you to manage the lifecycle of the remediations. The Action Framework can also interoperate with and leverage external automation platforms like Ansible.<br/>The event page lists the details behind the underlying cause of the event. By leveraging the Action Framework, Instana can automatically fix the issue. The Event Details page is now enriched with a list of potential remedial actions that can be executed directly within Instana to resolve this issue. |
-| **Action** &nbsp; 3.1.1 | Review the **Recommended Actions** section. <br/> <img src="images/3-1-1.png" width="800" /> |
+| **Action** &nbsp; 3.1.1 | Review the **Recommended Actions** section.<br/><img src="images/3-1-1.png" width="800" /> |
+| **Narration** | The 'Recommended Actions' section enumerates an AI-derived list of recommendations, sorted by a confidence score. You can associate any or all of these recommendations to this event by clicking the “+” icon. <inline-notification text="Since this is a read-only environment we will not be adding this recommendation to the list of actions in the event. "></inline-notification> The Action Type indicates that the remediation is contained in an Ansible playbook. The confidence score is derived based on several factors, such as the action definitions, action tags, and the meta data from the event. The confidence score attempts to approximate the likelihood that the action will fix this event. The confidence scores are sorted in decreasing order of confidence.<br/>We will next select a remediation to resolve the current active event. |
+
+**[Go to top](#place1)**
+
+<br/><br/>
+
+</details>
+
+<p/>
+
+<details markdown="1">
+
+<summary>3 - Reviewing the event remediation recommendations</summary>
+
+<br/>
+
+| **3.1** | **Review the recommendations** |
+| :--- | :--- |
+| **Narration** | Before we take a look at the specific event remediations, let’s first understand how Instana goes beyond pure observability to enable you take remedial action on an incoming event without ever leaving the Instana environment. <br/><br/> This new incident remediation feature is referred to as the Action Framework. The Action Framework is a collection of capabilities that allow you to define and manage a remediation. The Action Catalog is a central component of the Action Framework that allows you to manage the lifecycle of the remediations. The Action Framework can also interoperate with and leverage external automation platforms like Ansible.<br/>The event page lists the details behind the underlying cause of the event. By leveraging the Action Framework, Instana can automatically fix the issue. The Event Details page is now enriched with a list of potential remedial actions that can be executed directly within Instana to resolve this issue. |
+| **Action** &nbsp; 3.1.1 | Review the **Recommended Actions** section.<br/><img src="images/3-1-1.png" width="800" /> |
 | **Narration** | The 'Recommended Actions' section enumerates an AI-derived list of recommendations, sorted by a confidence score. You can associate any or all of these recommendations to this event by clicking the “+” icon. <inline-notification text="Since this is a read-only environment we will not be adding this recommendation to the list of actions in the event. "></inline-notification> The Action Type indicates that the remediation is contained in an Ansible playbook. The confidence score is derived based on several factors, such as the action definitions, action tags, and the meta data from the event. The confidence score attempts to approximate the likelihood that the action will fix this event. The confidence scores are sorted in decreasing order of confidence.<br/>We will next select a remediation to resolve the current active event.|
 
 <br/>
