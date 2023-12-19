@@ -14,7 +14,7 @@ In this demo, we’ll see how we can analyze an incoming event in Instana and le
 
 Our application is a content management app called Quote of the Day (QotD) that delivers personalized content via a mobile and web channel.  Due to a recent sales promotion the application has been receiving an exponential increase in user traffic. A notification has just been received indicating users are beginning to experience slow response times. We need to investigate and resolve the remediation found before additional users are impacted and to avoid a possible outage.
 
-We will demonstrate how Intana integrates seamlessly with the Ansible Automation platform to first identify potential playbooks that are good candidates to resolve an incident. We will then show how the playbook can be executed natively from Instana, eliminating the need to jump across tools to resolve an incident.
+We will demonstrate how Instana integrates seamlessly with the Ansible Automation platform to identify potential playbooks that are good candidates to resolve an incident. We will then show how the playbook can be executed natively from Instana, eliminating the need to jump across tools to resolve an incident.
 
 Let’s get started
 
