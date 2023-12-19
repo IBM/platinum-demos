@@ -8,6 +8,8 @@ banner: images/wxo_300_prep_banner.png
 
 <span id="top"></span>
 
+<inline-notification text="<strong><strong>Attention: Safari and Chrome browser users.</strong> Please use Firefox to do this demo."></inline-notification>
+
 | **DEMO OVERVIEW** | | 
 | :---         | :--- |
 | **Scenario overview** | This demo shows how watsonx Orchestrate can be used by sales representatives to assist with the upsell / cross-sell process. To illustrate this, an insurance seller uses watsonx Orchestrate to retrieve a list of customers from Salesforce and automatically send a customized offer. Developers, called ‘builders’ in watsonx Orchestrate, create the customized skills used by the agents. |
