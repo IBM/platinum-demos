@@ -143,7 +143,7 @@ Let’s get started!
 | **2.4** | **Add the customer service skill to your personal skills** |
 | :--- | :--- |
 | **Narration** | We can now add this new skill into our personal catalog. |
-| **Action** &nbsp; 2.4.1 | Click **Home**. <br/> <img src="images/2-4-1.png" width="800" /> |
+| **Action** &nbsp; 2.4.1 | Click **IBM watsonx Orchestrate**. <br/> <img src="images/2-4-1.png" width="800" /> |
 | **Action** &nbsp; 2.4.2 | Click **Add skills from the catalog**. <br/> <img src="images/2-4-2.png" width="800" /> |
 | **Action** &nbsp; 2.4.3 | Type your ‘**XXX**’ in the search field ('XXX' being your own initials). <br/> <img src="images/2-4-3.png" width="800" /> |
 | **Action** &nbsp; 2.4.4 | Click the ‘**XXX_FC_CustomerService API**’ skill ('XXX' being your own initials). <br/> <img src="images/2-4-4.png" width="800" /> |
@@ -153,7 +153,7 @@ Let’s get started!
 | **Narration** | The skill is connected, and we can now add it into our personal catalog. |
 | **Action** &nbsp; 2.4.7 | Click **Add skill +**. <br/> <img src="images/2-4-7.png" width="800" /> |
 | **Action** &nbsp; 2.4.8 | Check that your skill is added. <br/> <img src="images/2-4-8.png" width="800" /> |
-| **Action** &nbsp; 2.4.9 | Click **Home**. <br/> <img src="images/2-4-9.png" width="800" /> |
+| **Action** &nbsp; 2.4.9 | Click **IBM watsonx Orchestrate**. <br/> <img src="images/2-4-9.png" width="800" /> |
 
 <br/>
 
@@ -219,7 +219,7 @@ Let’s get started!
 | **Action** &nbsp; 3.1.20 | Type '**return a product**’. <br/> <img src="images/3-1-20.png" width="800" /> |
 | **Narration** | Our composite skill is ready to be published. Just by entering ‘return a product’ in the chat interface, watsonx Orchestrate will understand that this skill should be used. |
 | **Action** &nbsp; 3.1.21 | Click **Publish**. <br/> <img src="images/3-1-21.png" width="800" /> |
-| **Action** &nbsp; 3.1.22 | Click **Home**. <br/> <img src="images/3-1-22.png" width="800" /> |
+| **Action** &nbsp; 3.1.22 | Click **IBM watsonx Orchestrate**. <br/> <img src="images/3-1-22.png" width="800" /> |
 
 **[Go to top](#place1)**
 
