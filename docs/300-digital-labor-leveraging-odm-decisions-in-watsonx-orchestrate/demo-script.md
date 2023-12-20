@@ -240,10 +240,10 @@ Let’s get started!
 | **Narration** | Since we are using a shared environment for this demonstration, we'll need to add the composite skill to our personal skillset. In a real life situation, the skill would be added to the team skillset so that any call center agent could easily access it. |
 | **Action** &nbsp; 4.1.1 | Click **Add skills from the catalog**. <br/> <img src="images/4-1-1.png" width="800" /> |
 | **Action** &nbsp; 4.1.2 | Type your '**XXX**' initials to find all your skills from the catalog. <br/> <img src="images/4-1-2.png" width="800" /> |
-| **Action** &nbsp; 4.1.3 | Click the **Composite** tile. <br/> <img src="images/4-1-3.png" width="800" /> |
+| **Action** &nbsp; 4.1.3 | Click the **Skill flows** tile. <br/> <img src="images/4-1-3.png" width="800" /> |
 | **Action** &nbsp; 4.1.4 | Search for ‘**XXX**’ (‘XXX’ being your own initials). <br/> <img src="images/4-1-4.png" width="800" /> |
 | **Action** &nbsp; 4.1.5 | Click **Add skill +**. <br/> <img src="images/4-1-5.png" width="800" /> |
-| **Action** &nbsp; 4.1.6 | Check that your skill is added. Click **Home**. <br/> <img src="images/4-1-6.png" width="800" /> |
+| **Action** &nbsp; 4.1.6 | Check that your skill is added. Click **IBM watsonx Orchestrate**. <br/> <img src="images/4-1-6.png" width="800" /> |
 
 <br/>
 
