@@ -422,7 +422,7 @@ We are also going to update the server URL with the URL of your own ODM Rule Exe
 
 15. Repeat from **Step 5** and import the **XXX FocusCorp Customer Service.json** file. <br/>
 
-16. Click **Home**. <br/> <img src="images/Prep-5-2-16.png" width="800" /><br/>
+16. Click **IBM watsonx Orchestrate**. <br/> <img src="images/Prep-5-2-16.png" width="800" /><br/>
 
 <br/>
 
@@ -450,7 +450,7 @@ We are also going to update the server URL with the URL of your own ODM Rule Exe
 
 6. Click **Add skill +**. <br/> <img src="images/Prep-5-3-6.png" width="800" /><br/>
 
-7. Check that your skill is added. Click **Home**. <br/> <img src="images/Prep-5-3-7.png" width="800" /><br/>
+7. Check that your skill is added. Click **IBM watsonx Orchestrate**. <br/> <img src="images/Prep-5-3-7.png" width="800" /><br/>
 
 8. Repeat from **Step 1** and add the **XXX FocusCorp Customer Service** skill. <br/>
 
@@ -509,7 +509,7 @@ After each demo, you must remove the **New XXX FC FocusCorp Customer Service** s
 
 6. Repeat from **Step 4** and delete the **New XXX FC Customer Service** skill. <br/> <img src="images/Prep-6-1-6.png" width="800" /><br/>
 
-7. Click **Home**. <br/> <img src="images/Prep-6-1-7.png" width="800" /><br/>
+7. Click **IBM watsonx Orchestrate**. <br/> <img src="images/Prep-6-1-7.png" width="800" /><br/>
 
 8. You are now ready to demo again. <br/> <img src="images/Prep-6-1-8.png" width="800" /><br/>
 <inline-notification text="Only the 2 FocusCorp skills imported from the Jason files and recognizable with their FocusCorp icon should remain in your skill set."></inline-notification>
