@@ -483,7 +483,7 @@ You are now ready to demo!
 The provided skills (jason files) are configured to use the latest deployed ruleapp. You can use that following additional actions to illustrate this capability:
 1. Update a business rule in the Decision Center with any policy update of your choice. 
 2. Deploy a new version of the RuleApp in the Rule Execution Server using your exiting deployment configuration. 
-3. Re-run the exact same composite skill and show that the new rules have been applied.
+3. Re-run the exact same skill flow and show that the new rules have been applied.
 
 </details>
 <br/>
@@ -503,7 +503,7 @@ After each demo, you must remove the **New XXX FC FocusCorp Customer Service** s
 
 3. Enter your '**XXX**' initials to access your skills. <br/> <img src="images/Prep-6-1-3.png" width="800" /><br/>
 
-4. Look for the skill with the **Composite** skill type. Click its corresponding **ellipsis** icon (1). Click **Delete this skill** (2). <br/> <img src="images/Prep-6-1-4.png" width="800" /><br/>
+4. Look for the skill with the **Skill flow** skill type. Click its corresponding **ellipsis** icon (1). Click **Delete this skill** (2). <br/> <img src="images/Prep-6-1-4.png" width="800" /><br/>
 
 5. Click **Delete**. <br/> <img src="images/Prep-6-1-5.png" width="800" /><br/>
 
@@ -529,7 +529,7 @@ After each demo, you must remove the **New XXX FC FocusCorp Customer Service** s
 
 <summary>Remove the four skills created during the demo</summary>
 
-1. Repeat the **AFTER EACH DEMO** steps and remove the four '**XXX**' skills (XXX being your own initials). <br/> <inline-notification text="The composite skill must be removed first."></inline-notification> <img src="images/Prep-7-1-1.png" width="800" /><br/>
+1. Repeat the **AFTER EACH DEMO** steps and remove the four '**XXX**' skills (XXX being your own initials). <br/> <inline-notification text="The kill flow must be removed first."></inline-notification> <img src="images/Prep-7-1-1.png" width="800" /><br/>
 
 2. Enter your '**XXX**' initials and make sure no skills remain. <br/> <img src="images/Prep-7-1-2.png" width="800" /><br/>
 
