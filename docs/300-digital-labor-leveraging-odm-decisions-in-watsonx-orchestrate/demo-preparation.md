@@ -410,7 +410,7 @@ We are also going to update the server URL with the URL of your own ODM Rule Exe
 
 9. Click **Next**. <br/> <img src="images/Prep-5-2-9.png" width="800" /><br/>
 
-10. Select the **XXX FocusCorp Get data from database** skill (1). Click **Save as draft** (2). <br/> <img src="images/Prep-5-2-10.png" width="800" /><br/>
+10. Select the **XXX FocusCorp Get data from database** skill (1). Click **Add** (2). <br/> <img src="images/Prep-5-2-10.png" width="800" /><br/>
 
 11. Enter your '**XXX**' initials to search for your skill. <br/> <img src="images/Prep-5-2-11.png" width="800" /><br/>
 
