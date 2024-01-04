@@ -410,7 +410,7 @@ We are also going to update the server URL with the URL of your own ODM Rule Exe
 
 9. Click **Next**. <br/> <img src="images/Prep-5-2-9.png" width="800" /><br/>
 
-10. Select the **XXX FocusCorp Get data from database** skill (1). Click **Save as draft** (2). <br/> <img src="images/Prep-5-2-10.png" width="800" /><br/>
+10. Select the **XXX FocusCorp Get data from database** skill (1). Click **Add** (2). <br/> <img src="images/Prep-5-2-10.png" width="800" /><br/>
 
 11. Enter your '**XXX**' initials to search for your skill. <br/> <img src="images/Prep-5-2-11.png" width="800" /><br/>
 
@@ -422,7 +422,7 @@ We are also going to update the server URL with the URL of your own ODM Rule Exe
 
 15. Repeat from **Step 5** and import the **XXX FocusCorp Customer Service.json** file. <br/>
 
-16. Click **Home**. <br/> <img src="images/Prep-5-2-16.png" width="800" /><br/>
+16. Click **IBM watsonx Orchestrate**. <br/> <img src="images/Prep-5-2-16.png" width="800" /><br/>
 
 <br/>
 
@@ -450,7 +450,7 @@ We are also going to update the server URL with the URL of your own ODM Rule Exe
 
 6. Click **Add skill +**. <br/> <img src="images/Prep-5-3-6.png" width="800" /><br/>
 
-7. Check that your skill is added. Click **Home**. <br/> <img src="images/Prep-5-3-7.png" width="800" /><br/>
+7. Check that your skill is added. Click **IBM watsonx Orchestrate**. <br/> <img src="images/Prep-5-3-7.png" width="800" /><br/>
 
 8. Repeat from **Step 1** and add the **XXX FocusCorp Customer Service** skill. <br/>
 
@@ -483,7 +483,7 @@ You are now ready to demo!
 The provided skills (jason files) are configured to use the latest deployed ruleapp. You can use that following additional actions to illustrate this capability:
 1. Update a business rule in the Decision Center with any policy update of your choice. 
 2. Deploy a new version of the RuleApp in the Rule Execution Server using your exiting deployment configuration. 
-3. Re-run the exact same composite skill and show that the new rules have been applied.
+3. Re-run the exact same skill flow and show that the new rules have been applied.
 
 </details>
 <br/>
@@ -503,13 +503,13 @@ After each demo, you must remove the **New XXX FC FocusCorp Customer Service** s
 
 3. Enter your '**XXX**' initials to access your skills. <br/> <img src="images/Prep-6-1-3.png" width="800" /><br/>
 
-4. Look for the skill with the **Composite** skill type. Click its corresponding **ellipsis** icon (1). Click **Delete this skill** (2). <br/> <img src="images/Prep-6-1-4.png" width="800" /><br/>
+4. Look for the skill with the **Skill flow** skill type. Click its corresponding **ellipsis** icon (1). Click **Delete this skill** (2). <br/> <img src="images/Prep-6-1-4.png" width="800" /><br/>
 
 5. Click **Delete**. <br/> <img src="images/Prep-6-1-5.png" width="800" /><br/>
 
 6. Repeat from **Step 4** and delete the **New XXX FC Customer Service** skill. <br/> <img src="images/Prep-6-1-6.png" width="800" /><br/>
 
-7. Click **Home**. <br/> <img src="images/Prep-6-1-7.png" width="800" /><br/>
+7. Click **IBM watsonx Orchestrate**. <br/> <img src="images/Prep-6-1-7.png" width="800" /><br/>
 
 8. You are now ready to demo again. <br/> <img src="images/Prep-6-1-8.png" width="800" /><br/>
 <inline-notification text="Only the 2 FocusCorp skills imported from the Jason files and recognizable with their FocusCorp icon should remain in your skill set."></inline-notification>
@@ -529,7 +529,7 @@ After each demo, you must remove the **New XXX FC FocusCorp Customer Service** s
 
 <summary>Remove the four skills created during the demo</summary>
 
-1. Repeat the **AFTER EACH DEMO** steps and remove the four '**XXX**' skills (XXX being your own initials). <br/> <inline-notification text="The composite skill must be removed first."></inline-notification> <img src="images/Prep-7-1-1.png" width="800" /><br/>
+1. Repeat the **AFTER EACH DEMO** steps and remove the four '**XXX**' skills (XXX being your own initials). <br/> <inline-notification text="The kill flow must be removed first."></inline-notification> <img src="images/Prep-7-1-1.png" width="800" /><br/>
 
 2. Enter your '**XXX**' initials and make sure no skills remain. <br/> <img src="images/Prep-7-1-2.png" width="800" /><br/>
 

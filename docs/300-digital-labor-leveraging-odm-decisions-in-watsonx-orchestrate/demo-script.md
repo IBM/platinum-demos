@@ -128,22 +128,22 @@ Let’s get started!
 | **Action** &nbsp; 2.3.3 | Scroll down to the **customer.name** field. <br/> <img src="images/2-3-3.png" width="800" /> |
 | **Action** &nbsp; 2.3.4 | Enter ‘**Customer name**’ in the **customer.name** field. <br/> <img src="images/2-3-4.png" width="800" /> |
 | **Narration** | The same procedure is applied for the remaining fields. The output parameters are also customized in the same way. |
-| **Action** &nbsp; 2.3.5 <br/> | Click the **Output** tab. <br/> <img src="images/2-3-6.png" width="800" /> |
+| **Action** &nbsp; 2.3.5 <br/> | Click the **Output** tab. <br/> <img src="images/2-3-5.png" width="800" /> |
 | **Narration** |  In this scenario, we only need to specify the column headers of the table that contains the decision fields returned by ODM. |
-| **Action** &nbsp; 2.3.6 <br/> | Click **Edit response**. <br/> <img src="images/2-3-7.png" width="800" /> |
-| **Action** &nbsp; 2.3.7 <br/> | Type ‘**Return decision**’ in the **decision.returnStatus** header field. <br/> <img src="images/2-3-8.png" width="800" /> |
+| **Action** &nbsp; 2.3.6 <br/> | Click **Edit response**. <br/> <img src="images/2-3-6.png" width="800" /> |
+| **Action** &nbsp; 2.3.7 <br/> | Type ‘**Return decision**’ in the **decision.returnStatus** header field. <br/> <img src="images/2-3-7.png" width="800" /> |
 | **Narration** |  The same procedure is applied for the remaining output fields. We have already prepared a fully configured skill that we'll see in a couple of minutes.<br/>Next, we are specifying the phrases orchestrate will use to train the NLP engine. |
-| **Action** &nbsp; 2.3.8 | Click the **Phrases** tab. <br/> <img src="images/2-3-10.png" width="800" /> |
-| **Action** &nbsp; 2.3.9 | Type ‘**register a claim**’ as a new phrase. Press the enter/return key on your keyboard to save the new phrase. <br/> <img src="images/2-3-11.png" width="800" /> |
+| **Action** &nbsp; 2.3.8 | Click the **Phrases** tab. <br/> <img src="images/2-3-8.png" width="800" /> |
+| **Action** &nbsp; 2.3.9 | Type ‘**register a claim**’ as a new phrase. Press the enter/return key on your keyboard to save the new phrase. <br/> <img src="images/2-3-9.png" width="800" /> |
 | **Narration** |  Our skill is now published in the watsonx Orchestrate catalog. Users are now able to add it to their personal skill sets.|
-| **Action** &nbsp; 2.3.10 | Click **Publish**. <br/> <img src="images/2-3-12.png" width="800" /><br/> <img src="images/2-3-13.png" width="800" /> |
+| **Action** &nbsp; 2.3.10 | Click **Publish**. <br/> <img src="images/2-3-10.png" width="800" /><br/> <img src="images/2-3-10b.png" width="800" /> |
 
 <br/>
 
 | **2.4** | **Add the customer service skill to your personal skills** |
 | :--- | :--- |
 | **Narration** | We can now add this new skill into our personal catalog. |
-| **Action** &nbsp; 2.4.1 | Click **Home**. <br/> <img src="images/2-4-1.png" width="800" /> |
+| **Action** &nbsp; 2.4.1 | Click **IBM watsonx Orchestrate**. <br/> <img src="images/2-4-1.png" width="800" /> |
 | **Action** &nbsp; 2.4.2 | Click **Add skills from the catalog**. <br/> <img src="images/2-4-2.png" width="800" /> |
 | **Action** &nbsp; 2.4.3 | Type your ‘**XXX**’ in the search field ('XXX' being your own initials). <br/> <img src="images/2-4-3.png" width="800" /> |
 | **Action** &nbsp; 2.4.4 | Click the ‘**XXX_FC_CustomerService API**’ skill ('XXX' being your own initials). <br/> <img src="images/2-4-4.png" width="800" /> |
@@ -153,7 +153,7 @@ Let’s get started!
 | **Narration** | The skill is connected, and we can now add it into our personal catalog. |
 | **Action** &nbsp; 2.4.7 | Click **Add skill +**. <br/> <img src="images/2-4-7.png" width="800" /> |
 | **Action** &nbsp; 2.4.8 | Check that your skill is added. <br/> <img src="images/2-4-8.png" width="800" /> |
-| **Action** &nbsp; 2.4.9 | Click **Home**. <br/> <img src="images/2-4-9.png" width="800" /> |
+| **Action** &nbsp; 2.4.9 | Click **IBM watsonx Orchestrate**. <br/> <img src="images/2-4-9.png" width="800" /> |
 
 <br/>
 
@@ -166,7 +166,7 @@ Let’s get started!
 | **Action** &nbsp; 2.5.3 | Click the **XXX FocusCorp Get data from database** skill ('XXX' being your own initials). <br/> <img src="images/2-5-3.png" width="800" /> |
 | **Narration** | Let’s use a customer email and product identification number, just like a call center agent would do. |
 | **Action** &nbsp; 2.5.4 | Enter ‘**johnsmith@acme.com**’ as the **Customer email** (1). Enter ‘**001**’ as the **Product identification number** (2). Click **Apply** (3). <br/> <img src="images/2-5-4.png" width="800" /> |
-| **Narration** | The database skill has returned the customer and item details from the FocusCorp database. We can now use the database skill to feed the decision skill. To do so, we will create a composite skill. |
+| **Narration** | The database skill has returned the customer and item details from the FocusCorp database. We can now use the database skill to feed the decision skill. To do so, we will create a skill flow. |
 | **Action** &nbsp; 2.5.5 | Scroll through the result to show the data recovered from the back-end system. <br/> <img src="images/2-5-5.png" width="800" /> |
 
 **[Go to top](#place1)**
@@ -179,19 +179,19 @@ Let’s get started!
 
 <details markdown="1">
 
-<summary>3 - Sequencing skills into a composite skill</summary>
+<summary>3 - Sequencing skills into a skill flow</summary>
 
 <br/>
 
-| **3.1** | **Create the customer service composite skill** |
+| **3.1** | **Create the customer service skill flow** |
 | :--- | :--- |
-| **Narration** | Let’s now work on this composite skill. As an automation builder, we can sequence multiple skills. |
+| **Narration** | Let’s now work on this skill flow. As an automation builder, we can sequence multiple skills. |
 | **Action** &nbsp; 3.1.1 | Click the **hamburger** icon. <br/> <img src="images/3-1-1.png" width="800" /> |
 | **Action** &nbsp; 3.1.2 | Click **Skills**. <br/> <img src="images/3-1-2.png" width="800" /> |
 | **Action** &nbsp; 3.1.3 | Expand the **Add skills** menu (1). Click **Create a skill flow** (2). <br/> <img src="images/3-1-3.png" width="800" /> |
-| **Narration** | The first step is to give a name and description to the composite skill so that users can easily recognize it in the catalog. |
+| **Narration** | The first step is to give a name and description to the skill flow so that users can easily recognize it in the catalog. |
 | **Action** &nbsp; 3.1.4 | Click the **pencil** icon to name the skill flow. <br/> <img src="images/3-1-4.png" width="800" /> |
-| **Narration** | The description will help users understand the actions performed by the composite skill. |
+| **Narration** | The description will help users understand the actions performed by the skill flow. |
 | **Action** &nbsp; 3.1.5 | Enter a skill name that contains your 'XXX' initials (e.g., '**XXX FocusCorp Register claim**') (1). In the **Description** field, enter ‘**Get the customer and purchase details from the database - Validates return conditions and refunds**’ (2). Click **Save** (3). <br/> <img src="images/3-1-5.png" width="800" /> |
 | **Narration** | Next, we must add the two skills we need for this flow. The first one will collect the data from the database. The second one, which we created from ODM, will analyze the data and return a decision. |
 | **Action** &nbsp; 3.1.6 | Click the **+** button. <br/> <img src="images/3-1-6.png" width="800" /> |
@@ -212,14 +212,14 @@ Let’s get started!
 | **Narration** | We can see all the attributes are correctly mapped between the two skills in just a single click. No additional action is required. We can now save the skill to add it to the catalog, as well as publish it to users. |
 | **Action** &nbsp; 3.1.16 | Point out the mapped values. <br/> <img src="images/3-1-16.png" width="800" /> |
 | **Action** &nbsp; 3.1.17 | Expand the **Actions** menu (1). Click **Save as draft** (2). <br/> <img src="images/3-1-17.png" width="800" /> |
-| **Narration** | Let’s now enhance the composite skill by adding some phrases that will be used to invoke the skill in the chat interface of watsonx Orchestrate. |
+| **Narration** | Let’s now enhance the skill flow by adding some phrases that will be used to invoke the skill in the chat interface of watsonx Orchestrate. |
 | **Action** &nbsp; 3.1.18 | Expand the **Actions** menu (1). Click **Enhance** (2). <br/> <img src="images/3-1-18.png" width="800" /> |
 | **Action** &nbsp; 3.1.19 | Click **Phrases**. <br/> <img src="images/3-1-19.png" width="800" /> |
 | **Narration** | Let's add ‘return a product’ to the training set. Many more phrases can be added to improve the NLP training. |
 | **Action** &nbsp; 3.1.20 | Type '**return a product**’. <br/> <img src="images/3-1-20.png" width="800" /> |
-| **Narration** | Our composite skill is ready to be published. Just by entering ‘return a product’ in the chat interface, watsonx Orchestrate will understand that this skill should be used. |
+| **Narration** | Our skill flow is ready to be published. Just by entering ‘return a product’ in the chat interface, watsonx Orchestrate will understand that this skill should be used. |
 | **Action** &nbsp; 3.1.21 | Click **Publish**. <br/> <img src="images/3-1-21.png" width="800" /> |
-| **Action** &nbsp; 3.1.22 | Click **Home**. <br/> <img src="images/3-1-22.png" width="800" /> |
+| **Action** &nbsp; 3.1.22 | Click **IBM watsonx Orchestrate**. <br/> <img src="images/3-1-22.png" width="800" /> |
 
 **[Go to top](#place1)**
 
@@ -231,35 +231,35 @@ Let’s get started!
 
 <details markdown="1">
 
-<summary>4 - Using the composite skill in the call center</summary>
+<summary>4 - Using the skill flow in the call center</summary>
 
 <br/>
 
-| **4.1** | **Add the customer service composite skill** |
+| **4.1** | **Add the customer service skill flow** |
 | :--- | :--- |
-| **Narration** | Since we are using a shared environment for this demonstration, we'll need to add the composite skill to our personal skillset. In a real life situation, the skill would be added to the team skillset so that any call center agent could easily access it. |
+| **Narration** | Since we are using a shared environment for this demonstration, we'll need to add the skill flow to our personal skillset. In a real life situation, the skill would be added to the team skillset so that any call center agent could easily access it. |
 | **Action** &nbsp; 4.1.1 | Click **Add skills from the catalog**. <br/> <img src="images/4-1-1.png" width="800" /> |
 | **Action** &nbsp; 4.1.2 | Type your '**XXX**' initials to find all your skills from the catalog. <br/> <img src="images/4-1-2.png" width="800" /> |
-| **Action** &nbsp; 4.1.3 | Click the **Composite** tile. <br/> <img src="images/4-1-3.png" width="800" /> |
+| **Action** &nbsp; 4.1.3 | Click the **Skill flows** tile. <br/> <img src="images/4-1-3.png" width="800" /> |
 | **Action** &nbsp; 4.1.4 | Search for ‘**XXX**’ (‘XXX’ being your own initials). <br/> <img src="images/4-1-4.png" width="800" /> |
 | **Action** &nbsp; 4.1.5 | Click **Add skill +**. <br/> <img src="images/4-1-5.png" width="800" /> |
-| **Action** &nbsp; 4.1.6 | Check that your skill is added. Click **Home**. <br/> <img src="images/4-1-6.png" width="800" /> |
+| **Action** &nbsp; 4.1.6 | Check that your skill is added. Click **IBM watsonx Orchestrate**. <br/> <img src="images/4-1-6.png" width="800" /> |
 
 <br/>
 
-| **4.2** | **Use the customer service composite skill** |
+| **4.2** | **Use the customer service skill flow** |
 | :--- | :--- |
-| **Narration** | We're now ready to use the composite skill.<br/> Let's now assume the role of a customer service agent who receives a call from a customer. We'll ask for their customer email and the product ID of the item to be returned. |
-| **Action** &nbsp; 4.2.2 | Type ‘**return a product**’ and press the enter/return key on your keyboard. <br/> <img src="images/4-2-2.png" width="800" /> |
-| **Action** &nbsp; 4.2.3 | Enter ‘**alexgreen@acme.com**’ as the **Customer email** (1). Enter ‘**001**’ as the **Product indentification number** (2). Click **Apply** (3). <br/> <img src="images/4-2-3.png" width="800" /> |
+| **Narration** | We're now ready to use the skill flow.<br/> Let's now assume the role of a customer service agent who receives a call from a customer. We'll ask for their customer email and the product ID of the item to be returned. |
+| **Action** &nbsp; 4.2.1 | Type ‘**return a product**’ and press the enter/return key on your keyboard. <br/> <img src="images/4-2-1.png" width="800" /> |
+| **Action** &nbsp; 4.2.2 | Enter ‘**alexgreen@acme.com**’ as the **Customer email** (1). Enter ‘**001**’ as the **Product indentification number** (2). Click **Apply** (3). <br/> <img src="images/4-2-2.png" width="800" /> |
 | **Narration** | The customer tells us they are returning the product because it arrived late. |
-| **Action** &nbsp; 4.2.4 | For the **Return reason** field, select **Arrived_late** (1). For the **Item condition** field, select **Opened** (2). Click **Show all fields** (3). <br/> <img src="images/4-2-4.png" width="800" /> |
+| **Action** &nbsp; 4.2.3 | For the **Return reason** field, select **Arrived_late** (1). For the **Item condition** field, select **Opened** (2). Click **Show all fields** (3). <br/> <img src="images/4-2-3.png" width="800" /> |
 | **Narration** | All the other required fields have been automatically pre-filled, saving us a lot of time. |
-| **Action** &nbsp; 4.2.5 | Point out the other pre-filled fields. <br/> <img src="images/4-2-5.png" width="800" /> |
-| **Action** &nbsp; 4.2.6 | Scroll down and click **Show fewer fields**. <br/> <img src="images/4-2-6.png" width="800" /> |
-| **Action** &nbsp; 4.2.7 | Click **Apply**. <br/> <img src="images/4-2-7.png" width="800" /> |
-| **Narration** | In one click, the ODM decision service returns a decision and additional information, such as the refund amount or any required shipping fees. All these results have been dynamically calculated by the rules we saw at the beginning of this scenario.<inline-notification text="You can execute the demonstration with different combination of users (e.g.: other emails below) and items (see highlighted product numbers below) to show the different decision outcomes."></inline-notification> <img src="images/4-2-9.png" width="800" /> <img src="images/4-2-10.png" width="800" /> |
-| **Action** &nbsp; 4.2.8 | Point out the decision results. <br/> <img src="images/4-2-8.png" width="800" /> |
+| **Action** &nbsp; 4.2.4 | Point out the other pre-filled fields. <br/> <img src="images/4-2-4.png" width="800" /> |
+| **Action** &nbsp; 4.2.5 | Scroll down and click **Show fewer fields**. <br/> <img src="images/4-2-5.png" width="800" /> |
+| **Action** &nbsp; 4.2.6 | Click **Apply**. <br/> <img src="images/4-2-6.png" width="800" /> |
+| **Narration** | In one click, the ODM decision service returns a decision and additional information, such as the refund amount or any required shipping fees. All these results have been dynamically calculated by the rules we saw at the beginning of this scenario.<inline-notification text="You can execute the demonstration with different combination of users (e.g.: other emails below) and items (see highlighted product numbers below) to show the different decision outcomes."></inline-notification> <img src="images/4-2-8.png" width="800" /> <img src="images/4-2-9.png" width="800" /> |
+| **Action** &nbsp; 4.2.7 | Point out the decision results. <br/> <img src="images/4-2-7.png" width="800" /> |
 
 <br/>
 
@@ -277,7 +277,7 @@ Let’s get started!
 
 In this demo, we saw how a company uses IBM watsonx Orchestrate to leverage and expose existing ODM Decision Services in new ways. 
 
-We used the Discovery Service to create a new skill that invokes rule-based decisions manged by ODM. We then created a composite skill that orchestrates a sequence of skills, mapping their respective inputs and outputs automatically. Finally, we used watsonx Orchestrate NLP to invoke this composite skill using a chat interface.
+We used the Discovery Service to create a new skill that invokes rule-based decisions manged by ODM. We then created a skill flow that orchestrates a sequence of skills, mapping their respective inputs and outputs automatically. Finally, we used watsonx Orchestrate NLP to invoke this skill flow using a chat interface.
 
 Thank you for attending today’s presentation.
 
