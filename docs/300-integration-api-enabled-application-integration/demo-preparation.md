@@ -87,12 +87,17 @@ Your Salesforce developer account is ready.
 
 Let’s configure our services endpoints in Cloud Pak for Integration.
 
-1. Return the connectivity instructions from section 2.2, navigate to the **Cloud Pak Console** (1) tab and use the credentials (2) access the Platform Navigator.<br/><img src="images/prep-image209.png" width="800" /><br/><br/><img src="images/prep-image210.png" width="800" /><inline-notification text="If you are using Chrome, you may see a certificate error when accessing the page. To bypass this, type <strong>thisisunsafe</strong> and press return."></inline-notification>
+Now, let's configure our services endpoints in Cloud Pak for Integration.<br/>
 
-2. Click **ace-designer-demo** in the **Integrations** section.
-<br/><br/><img src="images/Prep4.2.png" width="800" /><br/>
+1.	Return the command line and use the URL, username (1), credentials (2) and click **Sign In** (3) to access the Platform Navigator.<br/><img src="images/prep-image209.png" width="800" /><br/><img src="images/prep-image210.png" width="800" /><br/><br/><inline-notification text="If you are using Chrome, you may see a certificate error when accessing the page. To bypass this, type <strong>thisisunsafe</strong> and press return."></inline-notification><br/>
 
-3. Click the **Catalog** icon.<br/><img src="images/Prep4.3.png" width="800" /><br/>
+2. You will be asked to provide a new password as you are using a temporary password. Provide a new password and click **Submit**. <br/><img src="images/prep-501.png" width="800" /><br/>
+
+3. In the menu on the top left, open the **Design** folder (1) and select **Integrations** (2). <br/><img src="images/prep-44.png" width="800" /><br/>
+
+4. Click on the **ace-designer-demo** entry. <br/><img src="images/prep-44-2.png" width="800" /><br/>
+
+5. Click the **Catalog** icon to see a list of the available connectors. <br/><img src="images/prep-45.png" width="800" /><br/>
 
 4. This is the list of the available connectors.<br/><img src="images/Prep4.4.png" width="800" /><br/>
 
@@ -122,15 +127,43 @@ Your environment is ready to demo.
 
 <details markdown="1">
 
-<summary>7 - Creating Dev User for Developer Portal</summary>
+<summary>7 - Configure the asset repository</summary>
+
+During the demo we will import an existing flow from the assest repository. An existing GitHub repository will be configured to import the flow. 
+
+1. Select **assetrepo**.<br/><img src="images/asset-repo-100.png" width="800" /><br/>
+
+2. Click **Remotes** (1) and select **Add remote** (2). <br/><img src="images/asset-repo-110.png" width="800" /><br/>
+
+3. Fill in the following values:<br/>
+   * **Name** (1): CP4I Demo Assets
+   * **Git URL** (2): https://github.com/IBM/cp4i-demos.git
+   * **Automatic sync options** (3): 5 minutes
+   * **Asset types to synchronize** (4): Select all 
+   Click **Create remote** (5) to complete the form.
+   <img src="images/asset-repo-120.png" width="800" /><br/>
+
+4. In a couple of minutes the resources from the GitHub repository will be synchronized.<br/><img src="images/asset-repo-130.png" width="800" /><br/>
+
+<br/>
+
+**[Go to top](#top)**
+
+</details>
+
+<span id="CreateUser"></span>
+
+<details markdown="1">
+
+<summary>8 - Creating Dev User for Developer Portal</summary>
 
 Now create a user in the Developer Portal.
 
-1. Click **Design APIs**.<br/><img src="images/prep-image501.png" width="800" /><br/>
+1. Expand **Design** and select **APIs** (1).<br/><img src="images/prep-image501.png" width="800" /><br/>
 
-2. Click *ademo* API management. <br/><img src="images/prep-image502.png" width="800" /><br/>
+2. Click **ademo** API management. <br/><img src="images/prep-image502.png" width="800" /><br/>
 
-3. If a login screen is presented, select **Common Services User Registry** <br/><img src="images/prep-image212.png" width="800" /><br/>
+3. If a login screen is presented, select **Cloud Pak User Registry** <br/><img src="images/prep-image212.png" width="800" /><br/>
 
 4. Click **Manage catalogs** (2).<br/><img src="images/prep-image213.png" width="800" /><br/>
 

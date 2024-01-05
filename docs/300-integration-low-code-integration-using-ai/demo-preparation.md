@@ -19,7 +19,30 @@ topcategory: "### **DEMO INSTALLATION AND SETUP**"
 
 <details markdown="1">
 
-<summary>4 - Set up Salesforce</summary>
+<summary>4 - Install the demo</summary>
+
+1. To deploy the demo run:
+
+   ```./deploy.sh```
+
+   This will automatically deploy the resources into the CP4I namespace.
+
+
+2. The deployment will take approximately 30-60 minutes to install. Wait for the deployment to complete. The URL and credentials will be shown once the installation is complete. 
+   <img src="images/prep-urls.png" width="800" />
+
+Your have installed the Cloud Pak for Integration ready to be configured.
+
+**[Go to top](#top)**
+<br/>
+</details>
+
+
+<span id="setupSalesforce"></span>
+
+<details markdown="1">
+
+<summary>5 - Set up Salesforce</summary>
 
 You need a Salesforce developer account to use for testing. If you already have a Salesforce developer account, you can use that (start at step 2 below). If not, you can sign up for a free developer account by following step 1 below.
 
@@ -60,7 +83,7 @@ Your Salesforce dev account is ready.
 
 <details markdown="1">
 
-<summary>5 - Set up Insightly</summary>
+<summary>6 - Set up Insightly</summary>
 
 Next, let’s set up Insightly, a cloud-based customer relationship management (CRM) solution.
 
@@ -98,14 +121,17 @@ Your Insightly account is ready to use.
 
 <details markdown="1">
 
-<summary>6 - Connect Cloud Pak for Integration to your endpoints</summary>
+<summary>7 - Connect Cloud Pak for Integration to your endpoints</summary>
 
 Let’s configure our services endpoints in Cloud Pak for Integration.
 
-1. Return the connectivity instructions from section 2.2, navigate to the **Cloud Pak Console** (1) tab and use the credentials (2) access the Platform Navigator.<br/><img src="images/prep-image209.png" width="800" /><br/><img src="images/prep-image210.png" width="800" /><br/><br/><inline-notification text="If you are using Chrome, you may see a certificate error when accessing the page. To bypass this, type <strong>thisisunsafe</strong> and press return."></inline-notification><br/>
+1.	Return the command line and use the URL, username (1), credentials (2) and click **Sign In** (3) to access the Platform Navigator.<br/><img src="images/prep-urls.png" width="800" /><br/><img src="images/prep-image210.png" width="800" /><br/><br/><inline-notification text="If you are using Chrome, you may see a certificate error when accessing the page. To bypass this, type <strong>thisisunsafe</strong> and press return."></inline-notification><br/>
 
-2. Click **ace-designer-demo** in the **Integrations** section.
-<br/><img src="images/Prep4.2.png" width="800" /><br/>
+2. You will be asked to provide a new password as you are using a temporary password. Provide a new password and click **Submit**. <br/><img src="images/prep-501.png" width="800" /><br/>
+
+3. In the menu on the top left, open the **Design** folder (1) and select **Integrations** (2). <br/><img src="images/prep-44.png" width="800" /><br/>
+
+4. Click on the **ace-designer-demo** entry. <br/><img src="images/prep-44-2.png" width="800" /><br/>
 
 3. Click the **Catalog** icon.<br/><img src="images/Prep4.3.png" width="800" /><br/>
 

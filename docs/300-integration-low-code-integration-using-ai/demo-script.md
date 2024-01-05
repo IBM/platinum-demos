@@ -43,18 +43,12 @@ Let’s get started!
 | **1.1** | **Log in to Cloud Pak for Integration** |
 | :--- | :--- |
 | **Narration** | A new approach with automation and continuous improvement fed by AI algorithms is required. IBM Cloud Pak for Integration is a hybrid integration solution that provides an automated lifecycle across multiple styles of enterprise integration. With IBM Cloud Pak for Integration, companies can speed integration development, reduce costs, and maintain enhanced security, governance, and availability. Let’s see IBM Cloud Pak for Integration in action. For today's demo, we are using IBM Cloud Pak for Integration installed on the IBM cloud. Let me log in. |
-| **Action** &nbsp; 1.1.1 | Open Cloud Pak for Integration and click **IBM provided credentials (admin only)**. <br/> <img src="images/mapping-assist-1-1-1.png" width="800" /> |
-| **Action** &nbsp; 1.1.2 | Log in with **Username 'admin'** and the **Password** created in Demo preparation step 2.5. <br/> <img src="images/mapping-assist-1-1-2.png" width="800" /> |
+| **Action** &nbsp; 1.1.1 | Log in with **Username 'integration-admin'** (1), the **Password** (2) created in Demo preparation step 7.2, and click **Sign In**. <br/> <img src="images/prep-image210.png" width="800" /> |
 
 | **1.2** | **View the Cloud Pak for Integration home screen** |
 | :--- | :--- |
-| **Narration** | Welcome to IBM Cloud Pak for Integration! We’re now at the home screen showing all the capabilities of the Cloud Pak brought together in one place. Specialized integration capabilities — for API management, application integration, messaging, and more — are built on top of powerful automation services. Let’s see the integration capabilities available in this Cloud Pak. |
-| **Action** &nbsp; 1.2.1 | Show the home page and click **Integration instances**. <br/> <img src="images/mapping-assist-1-2-1.png" width="800" /> |
-
-| **1.3** | **Open the Designer** |
-| :--- | :--- |
-| **Narration** | As you can see, through a single interface you are able to access all the integration capabilities your team needs, including API management, application integration, enterprise messaging, events, and high-speed transfer. <br/><br/> In this demo, we'll use the App Connect Designer's Mapping Assist capability to speed the transformation of complex data formats used by cloud applications, such as Salesforce and Insightly. Let’s open our App Connect Designer. |
-| **Action** &nbsp; 1.3.1 | Show the **Integration instances** page. Click **ace-designer-demo**. <br/> <img src="images/mapping-assist-1-3-1.png" width="800" /> |
+| **Narration** | Welcome to IBM Cloud Pak for Integration! We’re now at the home screen showing all the capabilities of the Cloud Pak brought together in one place. Specialized integration capabilities — for API management, application integration, messaging, and more — are built on top of powerful automation services. <br/><br/> In this demo, we'll use the App Connect Designer's Mapping Assist capability to speed the transformation of complex data formats used by cloud applications, such as Salesforce and Insightly. Let’s open our App Connect Designer.  |
+| **Action** &nbsp; 1.2.1 | Show the home page and click **ace-designer-demo**. <br/> <img src="images/mapping-assist-1-2-1.png" width="800" /> |
 
 **[Go to top](#top)**
 
@@ -152,17 +146,12 @@ Let’s get started!
 | **Action** &nbsp; 4.3.1 | You may or may not see this situation. When this happens, a **warning** message is shown. You need to resolve any/all fields where this occurs. Delete the field name that is currently mapped to the field with the warning. <br/> <img src="images/Error_screen.png" width="800" /> |
 | **Action** &nbsp; 4.3.2 | Click the selection list icon next to the field (1), and select the mapping option listed with the "For Each" option from the displayed list (2). Repeat these steps for each field that has a warning. <br/> <img src="images/Selection_list.png" width="800" /> |
 
-| **4.4** | **Adjust other suggestions** |
-| :--- | :--- |
-| **Narration** | These 20+ suggestions are the fields where the matching confidence is at least 80%, so in the background, Mapping Assist evaluates this confidence level and only fills the fields that are at least 80%. But there are also other suggestions for the other fields, and we can see these suggestions too. For example, let's see the field 'Other address postcode.' When we click the field, we can see a suggestion to map to 'Other Zip/Postal Code' from the Salesforce Contact object with a confidence of 72%, which is lower than 80%. Let's accept this mapping. <br/><br/> In our next run, this will be remembered by Mapping Assist, and it will show for you as one of the top suggestions. To improve accuracy in future mappings, Mapping Assist learns by collecting and storing the mapping data in an internal database by tracking your mapping history of flows that are started. For example, as you map 'Other address postcode' to 'Other Zip/Postal Code,' this mapping is remembered. Mapping Assist suggests the same match in future mappings, with a 100% confidence rating. |
-| **Action** &nbsp; 4.4.1 | Click the **Other address postcode** field (1). Select the **Other Zip/Postal Code** mapping suggestion (2). <br/><inline-notification text="If you have any other field (e.g., date of birth) that is not mapped to the **For each** element (orange icon), replace it to use the **For each** element."></inline-notification> <img src="images/mapping-assist-4-3-1.png" width="800" /> |
-
-| **4.5** | **Generate a transformation** |
+| **4.4** | **Generate a transformation** |
 | :--- | :--- |
 | **Narration** | If a text field is populated with a single mapping from a top suggestion or from the list of suggested mappings, but the data format of the "source" mapping does not match the data format of the "target" field that is populated, you can generate a JSONata expression to define how the source data should be presented in the target application. JSONata is a declarative open-source query and transformation language for JSON data. <br/><br/> Let's explore it with the 'Assistant's Name' field. Let's select "Generate transformation". The 'Generate transformation' panel opens with five blank sources and corresponding target fields that you can use for mapping data formats. We'll need to provide at least five examples of source and target formats for Cloud Pak for Integration to generate the transformation formula. <br/><br/> Using Cloud Pak for Integration and the Mapping Assist capability, we were able to easily create a data sync between two CRM solutions without needing to write any code. |
-| **Action** &nbsp; 4.5.1 | On the **Assistant name** field, click the **Assistant's Name** mapping (1) and select **Transform data format** (2). <br/> <img src="images/mapping-assist-4_4_1.png" width="800" /> |
-| **Action** &nbsp; 4.5.2 | On the **Generate transformation** dialog, enter **John Lennon** as the first source name, and enter **J. Lennon** under **'Assistant name' examples (target)**. Repeat the same steps to include four more assistants' names using the same transformation format (e.g., Paul McCartney, P. McCartney; George Harrison, G. Harrison; Ringo Starr, R. Starr; Pete Best, P. Best) (1). Click **Generate transformation** (2), and click **Insert transformation** (3). <br/> <img src="images/mapping-assist-4_4_2.png" width="800" /> |
-| **Action** &nbsp; 4.5.3 | Click **Done**. <br/> <img src="images/mapping-assist-4_4_3.png" width="800" /> |
+| **Action** &nbsp; 4.4.1 | On the **Assistant name** field, click the **Assistant's Name** mapping (1) and select **Transform data format** (2). <br/> <img src="images/mapping-assist-4_4_1.png" width="800" /> |
+| **Action** &nbsp; 4.4.2 | On the **Generate transformation** dialog, enter **John Lennon** as the first source name, and enter **J. Lennon** under **'Assistant name' examples (target)**. Repeat the same steps to include four more assistants' names using the same transformation format (e.g., Paul McCartney, P. McCartney; George Harrison, G. Harrison; Ringo Starr, R. Starr; Pete Best, P. Best) (1). Click **Generate transformation** (2), and click **Insert transformation** (3). <br/> <img src="images/mapping-assist-4_4_2.png" width="800" /> |
+| **Action** &nbsp; 4.4.3 | Click **Done**. <br/> <img src="images/mapping-assist-4_4_3.png" width="800" /> |
 
 <br/>
 

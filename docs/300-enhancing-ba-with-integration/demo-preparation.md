@@ -19,15 +19,36 @@ topcategory: "## **INSTALL THE DEMO: Cloud Pak for Integration**"
 
 <details markdown="1">
 
-<summary>4 - Prerequisites and preparing your Cloud Pak for Integration environment</summary>
+<summary>4 - Install the demo</summary>
 
-<br/>
+1. To deploy the demo run:
+
+   ```./deploy.sh```
+
+   This will automatically deploy the resources into the CP4I namespace.
+
+
+2. The deployment will take approximately 30-45 minutes to install. Wait for the deployment to complete. The URL and credentials will be shown once the installation is complete. 
+   <img src="images/prep-image209.png" width="800" />
+
+Your have installed the Cloud Pak for Integration ready to be configured.
+
+**[Go to top](#top)**
+</details>
+
+<span id="installprereqs"></span>
+
+<details markdown="1">
+
+<summary>5 - Prerequisites and preparing your Cloud Pak for Integration environment</summary>
 
 **Connect Cloud Pak for Integration to your endpoints**<br/>
 
 Now, let's configure our services endpoints in Cloud Pak for Integration.<br/>
 
-1.	Return the connectivity instructions from section 2.2, navigate to the **Cloud Pak Console** (1) tab and use the credentials (2) access the Platform Navigator.<br/><img src="images/prep-image209.png" width="800" /><br/><img src="images/prep-image210.png" width="800" /><br/><br/><inline-notification text="If you are using Chrome, you may see a certificate error when accessing the page. To bypass this, type <strong>thisisunsafe</strong> and press return."></inline-notification><br/>
+1.	Return the command line and use the URL, username (1), credentials (2) and click **Sign In** (3) to access the Platform Navigator.<br/><img src="images/prep-image209.png" width="800" /><br/><img src="images/prep-image210.png" width="800" /><br/><br/><inline-notification text="If you are using Chrome, you may see a certificate error when accessing the page. To bypass this, type <strong>thisisunsafe</strong> and press return."></inline-notification><br/>
+
+2. You will be asked to provide a new password as you are using a temporary password. Provide a new password and click **Submit**. <br/><img src="images/prep-501.png" width="800" /><br/>
 
 2. In the menu on the top left, open the **Design** folder (1) and select **Integrations** (2). <br/><img src="images/prep-44.png" width="800" /><br/>
 
@@ -47,7 +68,10 @@ Now, let's configure our services endpoints in Cloud Pak for Integration.<br/>
 
 10. Access the API definition for the external account service <a href="https://raw.githubusercontent.com/IBM/platinum-demo-code-cp4icp4ba/main/cp4i/appConnect/CustomerAccountOpenAPIJSONServer.yaml" target="_blank" rel="noreferrer">here</a>. Download the file using **File** --> **Save Page as**.<br/><br/>
 
-11. Select **OpenAPI** (1) for the Document type, the downloaded **CustomerAccountOpenAPIJSONServer.yaml** file (2), and click **Next** (3). <br/><img src="images/prep-52.png" width="800" /><br/>
+11. Assure **Import a connector file or API document** (1) is selected and select **Next** (2).
+<br/><img src="images/prep-52.png" width="800" /><br/>
+
+12. Select **OpenAPI** (1) for the Document type, the downloaded **CustomerAccountOpenAPIJSONServer.yaml** file (2), and click **Next** (3). <br/><img src="images/prep-52-1.png" width="800" /><br/>
 
 12. Click **Import API**. <br/><img src="images/prep-53.png" width="800" /><br/>
 
@@ -198,13 +222,11 @@ Before completing this section, download the Select the **<a href="https://raw.g
 
 <summary>1 - Log into Cloud Pak for Integration</summary>
 
-1. Open **Cloud Pak for Integration** and click **IBM provided credentials (admin only)**. <br/><img src="images/prep-66.png" width="800" /><br/>
+1.	Open **Cloud Pak for Integration** using your username (1), credentials (2) and click **Login** (3).<br/><img src="images/prep-image210.png" width="800" /><br/>
 
-2. Enter your admin username and password (1), and click **Log in** (2).<br/> <img src="images/prep-67.png" width="800" /><br/>
+2. In the menu on the top left, open the **Design** folder (1) and select **Integrations** (2). <br/><img src="images/prep-44.png" width="800" /><br/>
 
-3. Click **Integration instances**. <br/><img src="images/prep-68.png" width="800" /><br/>
-
-4. On the **Integration instances** page, click **ace-designer-demo**. <br/><img src="images/prep-69.png" width="800" /><br/>
+3. Click on the **ace-designer-demo** entry. <br/><img src="images/prep-44-2.png" width="800" /><br/>
 
 <br/>
 

@@ -38,7 +38,11 @@ topcategory: "### **DEMO INSTALLATION AND SETUP**"
 
    <img src="images/prep-402.png" width="800" />
 
-3. In preparation for running the demo open the Event Streams, Event Endpoint Management and Event Processing consoles using the supplied credentials. We have also created a scratch pad that you may find useful while running the demo. It contains space for all the username and passwords outputted above, and the text that you need to copy and paste within the demo. You can find this file [here](../300-integration-event-automation-common/scratch-pad).
+3. In preparation for running the demo open the IBM MQ, Event Streams, Event Endpoint Management and Event Processing consoles using the supplied credentials. 
+
+4. When opening the IBM MQ console for the first time you will be asked to provide a new password as you are using a temporary password. Provide a new password and click **Submit**. Once you have changed the password the `getURL.sh` script will continue to output the out of date temporary password.<br/><img src="images/prep-501.png" width="800" /><br/>
+
+5. We have also created a scratch pad that you may find useful while running the demo. It contains space for all the username and passwords outputted above, and the text that you need to copy and paste within the demo. You can find this file [here](../300-integration-event-automation-common/scratch-pad).
 <br/>
 
 Your have completed the demo setup.

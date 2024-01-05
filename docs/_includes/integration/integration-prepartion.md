@@ -13,18 +13,18 @@
 {% else %}
 | **Customer-ready <br/>demo video** | View the demo video <a href="{{ page.customerVideo }}" target="_blank" rel="noreferrer">here</a>. This is a short, but detailed, hands-on walkthrough of the scenario. The video is customer-ready.<br/><br/>Potential uses of this video are:<br/><br/>1. Familiarize yourself with the details of this scenario <br/>2. Gain customer agreement that they would like to have a tech-seller do a deep-dive demo of this scenario <br/>3. Use as a prospecting tool to generate customer interest in applying these capabilities |
 {% endif %}
-| **Required versions** | Cloud Pak for Integration 2023.2.1 |
+| **Required versions** | Cloud Pak for Integration 2023.4.1 |
 | **How to get support** | • Open a support case at <a href="https://techzone.ibm.com/help" target="_blank" rel="noreferrer">IBM Technology Zone Help</a> regarding issues with reserving and provisioning Tech Zone environments.<br/>• Contact <a href="https://ibm-cloud.slack.com/archives/C0216F39ACU" target="_blank" rel="noreferrer">#platinumdemos-automation-support</a> regarding issues with setting up and running this demo. |
 
 {{ page.topcategory }}
 
 <details markdown="1">
 
-<summary>1 - Provision a Cloud Pak for Integration environment</summary>
+<summary>1 - Provision a Red Hat OpenShift cluster</summary>
 
 To provision your Cloud Pak for Integration environment, follow these steps: <br/>
 
-1. To reserve a preinstalled Cloud Pak for Integration (CP4I) cluster on Red Hat OpenShift, go <a href="https://techzone.ibm.com/my/reservations/create/6430260cd7e2100017627406" target="_blank" rel="noreferrer">here</a>. Select if you prefer to make a reservation now or schedule for later. 
+1. To reserve a Red Hat OpenShift cluster, go <a href="https://techzone.ibm.com/my/reservations/create/63a3a25a3a4689001740dbb3" target="_blank" rel="noreferrer">here</a>. Select if you prefer to make a reservation now or schedule for later. 
 <br/><img src="../integration/images/prep-image001.png" width="800" />
 <br/>
 
@@ -36,11 +36,11 @@ To provision your Cloud Pak for Integration environment, follow these steps: <br
 <br/><img src="../integration/images/prep-image003.png" width="800" />
 <br/>
 
-4. Several additional fields will appear, the defaults can remain. Scroll down and click **Submit**.
+4. Several additional fields will appear. Select **4.14** (1) as the OpenShift version, **ODF - 2TB** (2) for the storage, **8 vCPU x 32 GB - 100 GB ephemeral storage** (3) as the worker node flavor, accept the check terms and conditions (4) and click **Submit**.
 <br/><img src="../integration/images/prep-image004.png" width="800" />
 <br/>
 
-5. You will receive several emails as the provisioning process continues. You should expect the final email to be sent after 2-3 hours. The final email should look similar to the following.
+5. You will receive a few emails as the provisioning process continues. You should expect the final email to be sent after an hour. The final email should look similar to the following.
 <br/><img src="../integration/images/prep-image005.png" width="800" />
 <br/>
 
@@ -59,15 +59,15 @@ To provision your Cloud Pak for Integration environment, follow these steps: <br
 
 In this section, you access your OpenShift cluster and install the OpenShift command line tool. 
 
-1. Open the **PakInstaller Portal** link that was included in the final email.
+1. Open the **Reservation ID** link that was included in the "Reservation Ready on IBM Technology Zone" email.
 <br/><img src="../integration/images/prep-image101.png" width="800" />
 <br/>
 
-2. Navigate to the **OpenShift Console** tab.
+2. Copy the kubeadmin password (1) and open the OpenShift console by clicking on **Open your IBM Cloud environment** (2).
 <br/><img src="../integration/images/prep-image102.png" width="800" />
 <br/>
 
-3. Scroll down and open the **OpenShift Web Console** link (1) using **kubeadmin** as the username and **password** (2) shown.
+3. Use **kubeadmin** (1) as the user, paste the password (2) and click **Login** (3).
 <br/><img src="../integration/images/prep-image103.png" width="800" />
 <br/>
 
@@ -79,9 +79,15 @@ In this section, you access your OpenShift cluster and install the OpenShift com
 <br/><img src="../integration/images/prep-image105.png" width="800" />
 <br/>
 
-6. To configure the command line on your machine, copy and run the **OC Login command**.
+6. To configure the command line on your machine, click on the down arrow to the right of kubeadmin (1) and select **Copy login command**.
 <br/><img src="../integration/images/prep-image106-1.png" width="800" />
+</br>
+
+7. Click on **Display token**.
+
+8. Copy the **Login with this token** and run within your command line.
 <br/><img src="../integration/images/prep-image106-2.png" width="800" />
+</br>
 
 You have successfully configured the Openshift command line on your machine.
 

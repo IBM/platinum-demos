@@ -34,24 +34,22 @@ Let’s get started!
 
 | **1.1** | **Log into Cloud Pak for Integration** |
 | :--- | :--- |
-| **Narration** | Let’s see IBM Cloud Pak for Integration in action. |
-| **Action**  1.1.1 | Open Cloud Pak for Integration and click **IBM provided credentials (admin only)**. <br/><img src="images/300-api-demo-1-1-1.png" width="800" /> |
-| **Narration** | Here I have a cloud version of the product on IBM Cloud. Let me log in here.|
-| **Action**  1.1.2 | Enter your admin **Username** and **Password** and click **Log in**. <br/><img src="images/300-api-demo-1-1-2.png" width="800" /> |
+| **Narration** | Let’s see IBM Cloud Pak for Integration in action. Here I have a cloud version of the product on IBM Cloud. Let me log in here.|
+| **Action**  1.1.1 | Open the Cloud Pak for Integration and enter your **Username** (1), **Password** (2) and click **Sign In** (3). <br/><img src="images/prep-image210.png" width="800" /> |
 
 <br/>
 
 | **1.2** | **View the Cloud Pak for Integration home screen** |
 | :--- | :--- |
 | **Narration** | Welcome to IBM Cloud Pak for Integration! We’re now at the home screen showing all the capabilities of the pak, brought together in one place. Specialized integration capabilities for API management, application integration, messaging and more, are built on top of powerful automation services. Let’s see the integration capabilities available.                                       |
-| **Action**  1.2.1 | Show the **home screen** and click **Integration instances**. <br/><img src="images/300-api-demo-1-2-1.png" width="800" /> |
+| **Action**  1.2.1 | Show the **home screen**. <br/><img src="images/300-api-demo-1-2-1.png" width="800" /> |
 
 <br/>
 
 | **1.3** | **Access Integration instances** |
 | :--- | :--- |
-| **Narration** | Through a single interface, you will see all the deployed integration capabilities and have the ability to deploy new capabilities that your team may need - including API management, application integration, enterprise messaging, events, and high-speed transfer. To automate customer interactions with our company in this demo, we will use App Connect for application integration, API Connect for API management, and the Asset Repository as our centralized hub for allowing our teams to work together with integration assets. Let’s open our App Connect Designer. |
-| **Action**  1.3.1 | On the **Integration instances** page, click **ace-designer-demo** to open the Integration dashboard. <br/><img src="images/300-api-demo-1-3-1.png" width="800" />  |
+| **Narration** | To automate customer interactions with our company in this demo, we will use App Connect for application integration, API Connect for API management, and the Asset Repository as our centralized hub for allowing our teams to work together with integration assets. Let’s open our App Connect Designer. |
+| **Action**  1.3.1 | Click **ace-designer-demo** to open the Integration dashboard. <br/><img src="images/300-api-demo-1-3-1.png" width="800" />  |
 
 <br/>
 
@@ -224,9 +222,9 @@ Let’s get started!
 | **5.1** | **Expose the API using the co-authoring feature** |
 | :--- | :--- |
 | **Narration** | Now, let’s explore the Co-Authoring capability. The co-authoring feature enables you to simultaneously expose your API in both App Connect Designer and API Connect. When you create an API flow and then start the API in your Designer instance, the API will be automatically added to a Product, which will then be published in the Sandbox Catalog that is provided for a provider organization in API Connect. The Product also becomes visible on the Developer Portal if a site has been enabled for the Catalog. Let’s test it. Here in API Manager, we can see our API was automatically exposed from Designer, using the Co-Authoring Feature. The Product title and name are derived from the name of the originating API flow, and also include a reference to App Connect Designer. The Product version is given as 0.0.1. Later, in this demo, we will show more details about the key capabilities of API Connect to manage your API lifecycle. |
-| **Action**  5.1.1 | Open the **menu** (1), expand the **Run** section (2), and select **APIs** (3). <br/><img src="images/Script4.4.1.png" width="800" /> <br/> |
+| **Action**  5.1.1 | Open the **menu**, expand the **Design** section, and select **APIs** (1). <br/><img src="images/Script4.4.1.png" width="800" /> <br/> |
 | **Action**  5.1.2 | Click the **ademo** entry. <br/><img src="images/Script4.4.1-1.png" width="800" /> <br/> |
-| **Action**  5.1.3 | In the **API Connect** page, if required click **Common Services User Registry**. <br/><img src="images/300-api-demo-4-4-2.png" width="800" /> <br/> |
+| **Action**  5.1.3 | In the **API Connect** page, if a login screen is presented, select **Cloud Pak User Registry**. <br/><img src="images/prep-image212.png" width="800" /> <br/> |
 | **Action**  5.1.4 | Click the **Manage** icon. <br/><img src="images/300-api-demo-4-4-3.png" width="800" /> <br/> |
 | **Action**  5.1.5 | Click the **Sandbox** catalog. <br/><img src="images/Script4.4.5.png" width="800" /> <br/> |
 | **Action**  5.1.6 | On the **Products** tab, you should see the published product that contains the API. <br/><img src="images/300-api-demo-4-4-5.png" width="800" /> |
