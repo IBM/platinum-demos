@@ -128,15 +128,15 @@ Let’s get started!
 | **Action** &nbsp; 2.3.3 | Scroll down to the **customer.name** field. <br/> <img src="images/2-3-3.png" width="800" /> |
 | **Action** &nbsp; 2.3.4 | Enter ‘**Customer name**’ in the **customer.name** field. <br/> <img src="images/2-3-4.png" width="800" /> |
 | **Narration** | The same procedure is applied for the remaining fields. The output parameters are also customized in the same way. |
-| **Action** &nbsp; 2.3.5 <br/> | Click the **Output** tab. <br/> <img src="images/2-3-6.png" width="800" /> |
+| **Action** &nbsp; 2.3.5 <br/> | Click the **Output** tab. <br/> <img src="images/2-3-5.png" width="800" /> |
 | **Narration** |  In this scenario, we only need to specify the column headers of the table that contains the decision fields returned by ODM. |
-| **Action** &nbsp; 2.3.6 <br/> | Click **Edit response**. <br/> <img src="images/2-3-7.png" width="800" /> |
-| **Action** &nbsp; 2.3.7 <br/> | Type ‘**Return decision**’ in the **decision.returnStatus** header field. <br/> <img src="images/2-3-8.png" width="800" /> |
+| **Action** &nbsp; 2.3.6 <br/> | Click **Edit response**. <br/> <img src="images/2-3-6.png" width="800" /> |
+| **Action** &nbsp; 2.3.7 <br/> | Type ‘**Return decision**’ in the **decision.returnStatus** header field. <br/> <img src="images/2-3-7.png" width="800" /> |
 | **Narration** |  The same procedure is applied for the remaining output fields. We have already prepared a fully configured skill that we'll see in a couple of minutes.<br/>Next, we are specifying the phrases orchestrate will use to train the NLP engine. |
-| **Action** &nbsp; 2.3.8 | Click the **Phrases** tab. <br/> <img src="images/2-3-10.png" width="800" /> |
-| **Action** &nbsp; 2.3.9 | Type ‘**register a claim**’ as a new phrase. Press the enter/return key on your keyboard to save the new phrase. <br/> <img src="images/2-3-11.png" width="800" /> |
+| **Action** &nbsp; 2.3.8 | Click the **Phrases** tab. <br/> <img src="images/2-3-8.png" width="800" /> |
+| **Action** &nbsp; 2.3.9 | Type ‘**register a claim**’ as a new phrase. Press the enter/return key on your keyboard to save the new phrase. <br/> <img src="images/2-3-9.png" width="800" /> |
 | **Narration** |  Our skill is now published in the watsonx Orchestrate catalog. Users are now able to add it to their personal skill sets.|
-| **Action** &nbsp; 2.3.10 | Click **Publish**. <br/> <img src="images/2-3-12.png" width="800" /><br/> <img src="images/2-3-13.png" width="800" /> |
+| **Action** &nbsp; 2.3.10 | Click **Publish**. <br/> <img src="images/2-3-10.png" width="800" /><br/> <img src="images/2-3-10b.png" width="800" /> |
 
 <br/>
 
@@ -250,16 +250,16 @@ Let’s get started!
 | **4.2** | **Use the customer service skill flow** |
 | :--- | :--- |
 | **Narration** | We're now ready to use the skill flow.<br/> Let's now assume the role of a customer service agent who receives a call from a customer. We'll ask for their customer email and the product ID of the item to be returned. |
-| **Action** &nbsp; 4.2.2 | Type ‘**return a product**’ and press the enter/return key on your keyboard. <br/> <img src="images/4-2-2.png" width="800" /> |
-| **Action** &nbsp; 4.2.3 | Enter ‘**alexgreen@acme.com**’ as the **Customer email** (1). Enter ‘**001**’ as the **Product indentification number** (2). Click **Apply** (3). <br/> <img src="images/4-2-3.png" width="800" /> |
+| **Action** &nbsp; 4.2.1 | Type ‘**return a product**’ and press the enter/return key on your keyboard. <br/> <img src="images/4-2-1.png" width="800" /> |
+| **Action** &nbsp; 4.2.2 | Enter ‘**alexgreen@acme.com**’ as the **Customer email** (1). Enter ‘**001**’ as the **Product indentification number** (2). Click **Apply** (3). <br/> <img src="images/4-2-2.png" width="800" /> |
 | **Narration** | The customer tells us they are returning the product because it arrived late. |
-| **Action** &nbsp; 4.2.4 | For the **Return reason** field, select **Arrived_late** (1). For the **Item condition** field, select **Opened** (2). Click **Show all fields** (3). <br/> <img src="images/4-2-4.png" width="800" /> |
+| **Action** &nbsp; 4.2.3 | For the **Return reason** field, select **Arrived_late** (1). For the **Item condition** field, select **Opened** (2). Click **Show all fields** (3). <br/> <img src="images/4-2-3.png" width="800" /> |
 | **Narration** | All the other required fields have been automatically pre-filled, saving us a lot of time. |
-| **Action** &nbsp; 4.2.5 | Point out the other pre-filled fields. <br/> <img src="images/4-2-5.png" width="800" /> |
-| **Action** &nbsp; 4.2.6 | Scroll down and click **Show fewer fields**. <br/> <img src="images/4-2-6.png" width="800" /> |
-| **Action** &nbsp; 4.2.7 | Click **Apply**. <br/> <img src="images/4-2-7.png" width="800" /> |
-| **Narration** | In one click, the ODM decision service returns a decision and additional information, such as the refund amount or any required shipping fees. All these results have been dynamically calculated by the rules we saw at the beginning of this scenario.<inline-notification text="You can execute the demonstration with different combination of users (e.g.: other emails below) and items (see highlighted product numbers below) to show the different decision outcomes."></inline-notification> <img src="images/4-2-9.png" width="800" /> <img src="images/4-2-10.png" width="800" /> |
-| **Action** &nbsp; 4.2.8 | Point out the decision results. <br/> <img src="images/4-2-8.png" width="800" /> |
+| **Action** &nbsp; 4.2.4 | Point out the other pre-filled fields. <br/> <img src="images/4-2-4.png" width="800" /> |
+| **Action** &nbsp; 4.2.5 | Scroll down and click **Show fewer fields**. <br/> <img src="images/4-2-5.png" width="800" /> |
+| **Action** &nbsp; 4.2.6 | Click **Apply**. <br/> <img src="images/4-2-6.png" width="800" /> |
+| **Narration** | In one click, the ODM decision service returns a decision and additional information, such as the refund amount or any required shipping fees. All these results have been dynamically calculated by the rules we saw at the beginning of this scenario.<inline-notification text="You can execute the demonstration with different combination of users (e.g.: other emails below) and items (see highlighted product numbers below) to show the different decision outcomes."></inline-notification> <img src="images/4-2-8.png" width="800" /> <img src="images/4-2-9.png" width="800" /> |
+| **Action** &nbsp; 4.2.7 | Point out the decision results. <br/> <img src="images/4-2-7.png" width="800" /> |
 
 <br/>
 
