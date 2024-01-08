@@ -22,9 +22,9 @@
 
 <summary>1 - Provision a Red Hat OpenShift cluster</summary>
 
-To provision your Cloud Pak for Integration environment, follow these steps: <br/>
+To provision your own Red Hat OpenShift cluster for the Cloud Pak for Integration, follow these steps: <br/>
 
-1. To reserve a Red Hat OpenShift cluster, go <a href="https://techzone.ibm.com/my/reservations/create/63a3a25a3a4689001740dbb3" target="_blank" rel="noreferrer">here</a>. Select if you prefer to make a reservation now or schedule for later. 
+1. To deploy a Red Hat OpenShift cluster, go <a href="https://techzone.ibm.com/my/reservations/create/63a3a25a3a4689001740dbb3" target="_blank" rel="noreferrer">here</a>. Select if you prefer to make a reservation now or schedule for later. 
 <br/><img src="../integration/images/prep-image001.png" width="800" />
 <br/>
 
@@ -36,7 +36,7 @@ To provision your Cloud Pak for Integration environment, follow these steps: <br
 <br/><img src="../integration/images/prep-image003.png" width="800" />
 <br/>
 
-4. Several additional fields will appear. Select **4.14** (1) as the OpenShift version, **ODF - 2TB** (2) for the storage, **8 vCPU x 32 GB - 100 GB ephemeral storage** (3) as the worker node flavor, accept the check terms and conditions (4) and click **Submit**.
+4. Several additional fields will appear. Select **4.14** (1) as the OpenShift version, **ODF - 2TB** (2) for the storage, **8 vCPU x 32 GB - 100 GB ephemeral storage** (3) as the worker node flavor, accept the terms and conditions (4) and click **Submit**.
 <br/><img src="../integration/images/prep-image004.png" width="800" />
 <br/>
 
@@ -63,11 +63,11 @@ In this section, you access your OpenShift cluster and install the OpenShift com
 <br/><img src="../integration/images/prep-image101.png" width="800" />
 <br/>
 
-2. Copy the kubeadmin password (1) and open the OpenShift console by clicking on **Open your IBM Cloud environment** (2).
+2. Copy the kubeadmin **Password** (1) and open the OpenShift console by clicking on **Open your IBM Cloud environment** (2).
 <br/><img src="../integration/images/prep-image102.png" width="800" />
 <br/>
 
-3. Use **kubeadmin** (1) as the user, paste the password (2) and click **Login** (3).
+3. Use **kubeadmin** (1) as the user, paste the **Password** (2) and click **Login** (3).
 <br/><img src="../integration/images/prep-image103.png" width="800" />
 <br/>
 
@@ -85,7 +85,7 @@ In this section, you access your OpenShift cluster and install the OpenShift com
 
 7. Click on **Display token**.
 
-8. Copy the **Login with this token** and run within your command line.
+8. Copy the **Login with this token** and run in the command line.
 <br/><img src="../integration/images/prep-image106-2.png" width="800" />
 </br>
 
@@ -108,7 +108,7 @@ You have successfully configured the Openshift command line on your machine.
 To copy the repository you will need to have the Git CLI on your machine. If you don’t have it, follow the installation steps described in this page, based on your operating system.
 
 
-1. To download the scripts to run the demo, create a directory, and from there run the following command:
+1. To download the scripts to install the demo, create a new directory, change to this newly created directory, and run the following command:
 
    ```git clone {{ page.gitHubUrl }}```
 

@@ -102,7 +102,7 @@ Let’s get started!
 
 | **3.2** | **Review operations** |
 | :--- | :--- |
-| **Narration** | The Operations view shows actions that the API exposes along with the data. In this demo, we’re going to build just one operation: “Create Car Repair Claim." We can add more later if we wish. Let’s check the flow logic. |
+| **Narration** | The Operations view shows actions that the API exposes along with the data. In this demo, we’re going to build just one operation: “Create CarRepairClaim." We can add more later if we wish. Let’s check the flow logic. |
 | **Action**  3.2.1 | Show the **Operations**  view. Click **Edit flow**. <br/><img src="images/300-api-demo-3-2-1.png" width="800" />  |
 
 <br/>
@@ -131,7 +131,7 @@ Let’s get started!
 
 | **3.6** | **Retrieve contacts** |
 | :--- | :--- |
-| **Narration** | Now, we use a connector to create a case in Salesforce with the data from the API. This case is where we store the details and progress of our repair. We are using a hard-coded contact name: ‘Andy Young.' He’s the contact for the insurance company. Salesforce Developer Accounts have a pre-populated set of data that you can use to test. ‘Andy Young’ is one of those pre-populated contacts. Let’s test our connection with Salesforce. Let me change the contact to ‘Andrew Young‘ and test the connection.<br/><br/> The test shows that we don’t have an ‘Andrew Young.‘ Let’s change it back to ‘Andy Young‘ and test again. We now receive a successful response. This proves that our connection is working. Let’s check the details. Here we can see the output returned from Salesforce, including the Contact ID. |
+| **Narration** | Now, we use a connector to create a case in Salesforce with the data from the API. This case is where we store the details and progress of our repair. We are using a hard-coded contact name: ‘Andy Young.' He’s the contact for the insurance company. Salesforce Developer Accounts have a pre-populated set of data that you can use to test. ‘Andy Young’ is one of those pre-populated contacts. Let’s test our connection with Salesforce. Let me change the contact to ‘Andrew Young‘ and test the connection. |
 | **Action**  3.6.1 | Show the **Salesforce - Retrieve contacts** box. <br/><img src="images/300-api-demo-3-6-1.png" width="800" />  |
 | **Action**  3.6.2 | Change the **Full Name** to **Andrew Young** (1). Click the highlighted icon to **Try this action**, which tests the connection (2). <br/><img src="images/300-api-demo-3-6-2.png" width="800" />  |
 | **Action**  3.6.3 | On the **Try this action** dialog, check **Do not show this dialog box again** (1) and click **Continue** (2).<br/><img src="images/300-api-demo-3-6-3.png" width="800" /><br/><br/>The result displays.<br/><img src="images/Script3.6.3.png" width="800" />|
@@ -165,7 +165,7 @@ Let’s get started!
 
 | **3.10** | **Respond to the customer** |
 | :--- | :--- |
-| **Narration** | Here we have the response that we submit to the customer after the API call. This response includes their Salesforce case reference for future enquiries, an estimate of how long it will take to repair, and also how much it will cost. Now that we've built the flow, let’s start it!                                            |
+| **Narration** | Here we have the response that we submit to the customer after the API call. This response includes their Salesforce case reference for future enquiries, an estimate of how long it will take to repair, and also how much it will cost.  |
 | **Action**  3.10.1 | Explore the **Response** box (1). Click **Done** (2). <br/><img src="images/Script3.10.1.png" width="800" />  |
 
 <br/>
@@ -184,14 +184,14 @@ Let’s get started!
 
 | **4.1** | **Start the flow** |
 | :--- | :--- |
-| **Narration** | Now that we’ve looked at the integration flow, let’s start it up. When our flow is running, we need to test it. |
+| **Narration** | Now that we’ve looked at the integration flow, let’s start it up. When our flow is running, we can test it. |
 | **Action**  4.1.1 | Start the flow by switching the highlighted **toggle** at the top right from **Stopped** to **Started.**                                  <br/><img src="images/300-api-demo-4-1-1.png" width="800" />  |
 
 <br/>
 
 | **4.2** | **Test the flow** |
 | :--- | :--- |
-| **Narration** | APIs can be tested in various ways, and we will perform three different tests: one in the designer tool now; another when our API is deployed to the Cloud Pak App Connect Runtime; and a final test that will call through a gateway. <br/><br/> In the Test tab, we can get all the details to test our API - for example, endpoint and credentials. And we can easily test our flow here. We just need to generate a body and submit it. Voilá, we received the expected response  with the case information.                                                                                                                  |
+| **Narration** | APIs can be tested in various ways, and we will perform two different tests: one in the designer tool now; another using the API Developer Portal that an application developer would use. <br/><br/> In the Test tab, we can get all the details to test our API - for example, endpoint and credentials. And we can easily test our flow here. We just need to generate a body and submit it. We have received the expected response with the case information.                                                                                                                  |
 | **Action**  4.2.1 | Open the **Test** tab (1). Open **POST /CarRepairClaim** (2) and click **Try it** (3). <br/><img src="images/Script4.2.1.png" width="800" /> <br/> |
 | **Action**  4.2.2 | Click **Generate** (1) and **Send** (2). <br/><img src="images/Script4.2.2.png" width="800" /> <br/> |
 | **Action**  4.2.3 | Show the **Response** details. <br/><img src="images/300-api-demo-4-2-3.png" width="800" />  |
@@ -200,7 +200,7 @@ Let’s get started!
 
 | **4.3** | **Check Salesforce** |
 | :--- | :--- |
-| **Narration** | Let’s check our Salesforce system to see if we have a new case. Let’s open the Cases page. In the Recently Viewed section, we can check all open cases. Here we have our case with all the information, including the picture. With this information, our customer relationship team can support our customer. |
+| **Narration** | Let’s check our Salesforce system to see if we have a new case. Let’s open the Cases page. In the "Recently Viewed" section, we can check all open cases. Here we have our case with all the information, including the picture. With this information, our customer relationship team can support our customer. |
 | **Action**  4.3.1 | Open the **Salesforce Dev Account** site (1). On the **App Launcher** menu, search for **Cases** (2). Open the **Cases** page (3). <br/><img src="images/Script4.3.1.png" width="800" /> <br/> |
 | **Action**  4.3.2 | In the **Cases** view, open the latest **Car Breakdown** case. <br/><img src="images/300-api-demo-4-3-2.png" width="800" /> <br/> |
 | **Action**  4.3.3 | Explore all of the fields (the picture will be blank).<br/><img src="images/300-api-demo-4-3-3.png" width="800" /> <br/> |
@@ -221,8 +221,8 @@ Let’s get started!
 
 | **5.1** | **Expose the API using the co-authoring feature** |
 | :--- | :--- |
-| **Narration** | Now, let’s explore the Co-Authoring capability. The co-authoring feature enables you to simultaneously expose your API in both App Connect Designer and API Connect. When you create an API flow and then start the API in your Designer instance, the API will be automatically added to a Product, which will then be published in the Sandbox Catalog that is provided for a provider organization in API Connect. The Product also becomes visible on the Developer Portal if a site has been enabled for the Catalog. Let’s test it. Here in API Manager, we can see our API was automatically exposed from Designer, using the Co-Authoring Feature. The Product title and name are derived from the name of the originating API flow, and also include a reference to App Connect Designer. The Product version is given as 0.0.1. Later, in this demo, we will show more details about the key capabilities of API Connect to manage your API lifecycle. |
-| **Action**  5.1.1 | Open the **menu**, expand the **Design** section, and select **APIs** (1). <br/><img src="images/Script4.4.1.png" width="800" /> <br/> |
+| **Narration** | Now, let’s explore the co-authoring capability. The co-authoring feature enables you to simultaneously expose your API in both App Connect Designer and API Connect. When you start the API in Designer, a Product is automatically created and published in the Sandbox Catalog. The Product is used to control the deployment of the API, such as making it visible in the Developer Portal. Let’s test it. Here in API Manager, we can see our API was automatically exposed from Designer, using the co-authoring feature. The Product title and name are derived from the name of the originating API flow, and also include a reference to App Connect Designer. The Product version is 0.0.1. |
+| **Action**  5.1.1 | Open the **menu**, expand the **Design** section, and select **APIs**. <br/><img src="images/Script4.4.1.png" width="800" /> <br/> |
 | **Action**  5.1.2 | Click the **ademo** entry. <br/><img src="images/Script4.4.1-1.png" width="800" /> <br/> |
 | **Action**  5.1.3 | In the **API Connect** page, if a login screen is presented, select **Cloud Pak User Registry**. <br/><img src="images/prep-image212.png" width="800" /> <br/> |
 | **Action**  5.1.4 | Click the **Manage** icon. <br/><img src="images/300-api-demo-4-4-3.png" width="800" /> <br/> |
@@ -233,10 +233,10 @@ Let’s get started!
 
 | **5.2** | **Viewing the product in the developer portal using the co-authoring feature** |
 | :--- | :--- |
-| **Narration** | The co-authoring feature enables you to test the product in the developer portal too. With the portal URL, we can check that our API Product is available. With the co-authoring feature, you have a unified authoring experience across multiple Cloud Pak for Integration capabilities. It is important to note that the API product will exist in the developer portal only while the corresponding API in App Connect Designer is still running. When you stop the API in App Connect Designer, the API product is automatically removed from the portal. The purpose of this is to simplify the unit testing while developing the flow. Later in this demo, we will show the details about the production developer portal. |
+| **Narration** | The co-authoring feature enables you to test the product in the developer portal too. With the portal URL, we can check that our API Product is available. With the co-authoring feature, you have a unified authoring experience across multiple Cloud Pak for Integration capabilities. It is important to note that the API product will exist in the developer portal only while the corresponding API in App Connect Designer is still running. When you stop the API in App Connect Designer, the API product is automatically removed from the portal. The purpose of this is to simplify the unit testing while developing the flow. |
 | **Action**  5.2.1 | Open the **Catalog settings** tab (1). Click **Portal** (2). Copy the **Portal URL** (3). Open a new browser tab and access the portal URL.<br/><img src="images/Script4.5.1.png" width="800" /> |
 | **Action**  5.2.2 | Show the **Car Insurance** API product in the developer portal home page. <br/><img src="images/300-api-demo-4-5-4.png" width="800" /> |
-| **Action**  5.2.3 | Click **Sign in** (1) at the top right corner of the page. Use the username and password created during demo preparation step **Creating Dev User for Developer Portal** 8. Click **Sign in** (2) in the credentials box. <br/><img src="images/Script4.5.3.png" width="800" /> |
+| **Action**  5.2.3 | Click **Sign in** (1) at the top right corner of the page. Use the username and password created during the demo preparation step **Creating Dev User for Developer Portal**. Click **Sign in** (2) in the credentials box. <br/><img src="images/Script4.5.3.png" width="800" /> |
 
 <br/>
 
@@ -251,7 +251,7 @@ Let’s get started!
 
 | **5.4** | **Subscribe to the API** |
 | :--- | :--- |
-| **Narration** | We have not subscribed to any APIs, so let’s do it now. There’s only one API product to subscribe to in our demo (normally there would be many). Now that we've selected our API product, we can see the plans that are available. You’ll need to hover the cursor over to get the limits. Which application do we want to use to subscribe? We can have many applications, but in this demo, we’ve only created one. So we just need to select the app that we created earlier and confirm our subscription. And done, we are subscribed to our API! |
+| **Narration** | We have not subscribed to any APIs, so let’s do it now. There’s only one API product to subscribe to in our demo (normally there would be many). Now that we've selected our API product, we can see the plans that are available. Which application do we want to use to subscribe? We can have many applications, but in this demo, we’ve only created one. So we just need to select the app that we created earlier and confirm our subscription. And done, we are subscribed to our API! |
 | **Action**  5.4.1 | Click **Why not browse the available APIs?** <br/><img src="images/300-api-demo-7-3-1.png" width="800" /> |
 | **Action**  5.4.2 | Click **Car_Insurance_API_Lab_Short_V3 0.0.1**. <br/><img src="images/Script4.7.2.png" width="800" />|
 | **Action**  5.4.3 | In the **Default Plan** section, click **Select**. <br/><img src="images/300-api-demo-4-7-3.png" width="800" /> |

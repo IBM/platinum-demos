@@ -25,13 +25,13 @@ topcategory: "### **DEMO INSTALLATION AND SETUP**"
 
 2. Install API Connect and App Connect by running the `deploy.sh` command:<br/>
 
-   ```
-   ./deploy.sh
-   ```
+   ```./deploy.sh ```
 
 This script may take 30-45 minutes to complete.
 
 **[Go to top](#top)**
+
+<br/><br/>
 
 </details>
 
@@ -41,7 +41,7 @@ This script may take 30-45 minutes to complete.
 
 <summary>5 - Set up Salesforce</summary>
 
-You need a Salesforce developer account to use for testing. If you already have a Salesforce developer account, you can use that (start at step 2 below). If not, you can sign up for a free developer account by following step 1 below.
+You need a Salesforce developer account to run this demo. If you already have a Salesforce developer account, you can use that (start at step 2 below). If not, you can sign up for a free developer account by following step 1 below.
 
 1. Go to <a href="https://developer.salesforce.com/signup" target="_blank" rel="noreferrer">Salesforce Developers</a>. Follow the prompts on the Saleforce pages to get your free developer account.<br/>
 
@@ -49,11 +49,11 @@ You need a Salesforce developer account to use for testing. If you already have 
 
 3. Click the **profile** icon (1) and save your Salesforce Login URL (2).<br/><img src="images/Prep3.6.png" width="800" /><br/>
 
-4. In the same user profile menu, and select **Settings**.<br/><img src="images/Prep3.7.png" width="800" /><br/>
+4. In the same user profile menu select **Settings**.<br/><img src="images/Prep3.7.png" width="800" /><br/>
 
 5. Click **Reset My Security Token** in the **My Personal Information** (1) menu. Then, click **Reset Security Token** (2). A newly-generated security token will be emailed to you.<br/><img src="images/Prep3.8.png" width="800" /><br/>
 
-6. Next, you will create an application representing App Connect Enterprise, and then retrieve the Consumer Key and Consumer Secret. Click the **cogwheel** icon (1) and then select **Setup** (2).<br/><img src="images/Prep3.9.png" width="800" /><br/>
+6. Next, you will create an application representing App Connect Enterprise, and then retrieve the Consumer Key and Consumer Secret. Click the **cogwheel** icon (1) and select **Setup** (2).<br/><img src="images/Prep3.9.png" width="800" /><br/>
 
 7. In the navigator on the left-hand side, scroll to **PLATFORM TOOLS**, expand **Apps** (1), and click **App Manager** (2).<br/><img src="images/prep-image3.7.png" width="800" /><br/>
 
@@ -77,6 +77,8 @@ Your Salesforce developer account is ready.
 
 **[Go to top](#top)**
 
+<br/><br/>
+
 </details>
 
 <span id="connectEndpoints"></span>
@@ -86,12 +88,11 @@ Your Salesforce developer account is ready.
 <summary>6 - Connect Cloud Pak for Integration instance to your endpoints</summary>
 
 Let’s configure our services endpoints in Cloud Pak for Integration.
+<br/>
 
-Now, let's configure our services endpoints in Cloud Pak for Integration.<br/>
+1.	Return to the command line and access the Platform Navigator using the provided URL. Copy and paste  the **Username** (1) and **Password** (2) from the command line output, and click **Sign In** (3).<br/><img src="images/prep-image209.png" width="800" /><br/><img src="images/prep-image210.png" width="800" /><br/>
 
-1.	Return the command line and use the URL, username (1), credentials (2) and click **Sign In** (3) to access the Platform Navigator.<br/><img src="images/prep-image209.png" width="800" /><br/><img src="images/prep-image210.png" width="800" /><br/><br/><inline-notification text="If you are using Chrome, you may see a certificate error when accessing the page. To bypass this, type <strong>thisisunsafe</strong> and press return."></inline-notification><br/>
-
-2. You will be asked to provide a new password as you are using a temporary password. Provide a new password and click **Submit**. <br/><img src="images/prep-501.png" width="800" /><br/>
+2. You will be asked to provide a new password. Provide a new password and click **Submit**. <br/><img src="images/prep-501.png" width="800" /><br/>
 
 3. In the menu on the top left, open the **Design** folder (1) and select **Integrations** (2). <br/><img src="images/prep-44.png" width="800" /><br/>
 
@@ -99,17 +100,13 @@ Now, let's configure our services endpoints in Cloud Pak for Integration.<br/>
 
 5. Click the **Catalog** icon to see a list of the available connectors. <br/><img src="images/prep-45.png" width="800" /><br/>
 
-4. This is the list of the available connectors.<br/><img src="images/Prep4.4.png" width="800" /><br/>
-
-   Now configure the Salesforce connector.<br/><br/>
-
 5. Search for **salesforce** (1) and click **Connect** (2).<br/><img src="images/Prep4.5.png" width="800" /><br/>
 
-6. Enter your Salesforce **Login URL**.<inline-notification text="You must enter <strong>‘https://’</strong> in front of the Saleforce Login URL you saved earlier. The connection will not work if you just copy/paste the URL."></inline-notification><img src="images/Prep4.6.png" width="800" />
+6. Enter your Salesforce **Login URL**.<inline-notification text="You must enter <strong>‘https://’</strong> in front of the Saleforce Login URL you saved earlier. The connection will not work if you just copy/paste the hostname."></inline-notification><img src="images/Prep4.6.png" width="800" />
 
 7. Input your Salesforce **Username** (1). Fill in the connector's **Password** field (2) by concatenating your Salesforce **Password** and the **Security token** received via email.<br/><br/>For example, if your Salesforce password is ‘myGreatPassword’ and your Salesforce security token is ‘2325jsdhew4312hs534dh’ then enter ‘myGreatPassword2325jsdhew4312hs534dh’ in the **Password** field.<br/><img src="images/Prep4.7.png" width="800" /><br/><br/>
 
-8. Input Salesforce’s **Consumer Key** as **Client ID** (1) and **Secret** as **Client Secret** (2), respectively, in the connector account UI. Click **Connect** (3).<br/><img src="images/Prep4.8.png" width="800" /><br/>
+8. Input Salesforce’s **Consumer Key** as **Client ID** (1) and **Secret** as **Client Secret** (2), in the connector account UI. Click **Connect** (3).<br/><img src="images/Prep4.8.png" width="800" /><br/>
 
 9. Click on the **menu** icon (1) and select **Rename Account** (2).<br/><img src="images/Prep4.9.png" width="800" /><br/>
 
@@ -121,6 +118,8 @@ Your environment is ready to demo.
 
 **[Go to top](#top)**
 
+<br/><br/>
+
 </details>
 
 <span id="CreateUser"></span>
@@ -129,7 +128,9 @@ Your environment is ready to demo.
 
 <summary>7 - Configure the asset repository</summary>
 
-During the demo we will import an existing flow from the assest repository. An existing GitHub repository will be configured to import the flow. 
+During the demo we will import an existing flow from the assest repository. An GitHub repository will be configured to import the flow. 
+
+1. In the menu on the top left, open the **Administration** folder and select **Instances** (2). <br/><img src="images/asset-repo-90.png" width="400" /><br/>
 
 1. Select **assetrepo**.<br/><img src="images/asset-repo-100.png" width="800" /><br/>
 
@@ -139,8 +140,10 @@ During the demo we will import an existing flow from the assest repository. An e
    * **Name** (1): CP4I Demo Assets
    * **Git URL** (2): https://github.com/IBM/cp4i-demos.git
    * **Automatic sync options** (3): 5 minutes
-   * **Asset types to synchronize** (4): Select all 
-   Click **Create remote** (5) to complete the form.
+   * **Asset types to synchronize** (4): Select all          
+
+   Click **Create remote** (5) to complete the form.        
+
    <img src="images/asset-repo-120.png" width="800" /><br/>
 
 4. In a couple of minutes the resources from the GitHub repository will be synchronized.<br/><img src="images/asset-repo-130.png" width="800" /><br/>
@@ -148,6 +151,8 @@ During the demo we will import an existing flow from the assest repository. An e
 <br/>
 
 **[Go to top](#top)**
+
+<br/><br/>
 
 </details>
 
@@ -194,6 +199,8 @@ Congratulations! Your portal developer user has been created and you are ready f
 
 **[Go to top](#top)**
 
+<br/><br/>
+
 </details>
 
-Click [here](/300-integration-api-enabled-application-integration/demo-script) to go to the **Demo script** on the next tab.
+Click [here](/platinum-demos/300-integration-api-enabled-application-integration/demo-script) to go to the **Demo script** on the next tab.
