@@ -45,7 +45,7 @@ You need a Salesforce developer account to run this demo. If you already have a 
 
 1. Go to <a href="https://developer.salesforce.com/signup" target="_blank" rel="noreferrer">Salesforce Developers</a>. Follow the prompts on the Saleforce pages to get your free developer account.<br/>
 
-2. As soon as you have your account, go back to the <a href="https://login.salesforce.com/" target="_blank" rel="noreferrer">Salesforce log in page</a> and log in to your dev admin account.<br/><img src="images/Prep3.5.png" width="800" /><br/>
+2. As soon as you have your account, go back to the <a href="https://login.salesforce.com/" target="_blank" rel="noreferrer">Salesforce log in page</a> and log in to your developer account.<br/><img src="images/Prep3.5.png" width="800" /><br/>
 
 3. Click the **profile** icon (1) and save your Salesforce Login URL (2).<br/><img src="images/Prep3.6.png" width="800" /><br/>
 
