@@ -19,14 +19,37 @@ topcategory: "### **DEMO INSTALLATION AND SETUP**"
 
 <details markdown="1">
 
-<summary>4 - Set up Salesforce</summary>
+<summary>4 - Install the demo</summary>
+
+1. To deploy the demo run:
+
+   ```./deploy.sh```
+
+   This will automatically deploy the resources into the CP4I namespace.
+
+
+2. The deployment will take approximately 30-60 minutes to install. The URL and credentials will be shown once the installation is complete.           
+   <img src="images/prep-urls.png" width="800" />
+
+Your have installed the Cloud Pak for Integration ready to be configured.
+
+**[Go to top](#top)**
+<br/>
+</details>
+
+
+<span id="setupSalesforce"></span>
+
+<details markdown="1">
+
+<summary>5 - Set up Salesforce</summary>
 
 You need a Salesforce developer account to use for testing. If you already have a Salesforce developer account, you can use that (start at step 2 below). If not, you can sign up for a free developer account by following step 1 below.
 
 
 1. Go to <a href="https://developer.salesforce.com/signup" target="_blank" rel="noreferrer">Salesforce Developers</a>. Follow the prompts on the Saleforce pages to get your free developer account.<br/>
 
-2. As soon as you have your account, go back to the <a href="https://login.salesforce.com/" target="_blank" rel="noreferrer">Salesforce log in page</a> and log in to your dev admin account.<br/><img src="images/Prep3.5.png" width="800" /><br/>
+2. As soon as you have your account, go back to the <a href="https://login.salesforce.com/" target="_blank" rel="noreferrer">Salesforce log in page</a> and log in to your developer account.<br/><img src="images/Prep3.5.png" width="800" /><br/>
 
 3. Click the **profile** icon (1) and save your Salesforce Login URL (2).<br/><img src="images/Prep3.6.png" width="800" /><br/>
 
@@ -34,7 +57,7 @@ You need a Salesforce developer account to use for testing. If you already have 
 
 5. Click **Reset My Security Token** in the **My Personal Information** (1) menu. Then, click **Reset Security Token** (2). A newly-generated security token will be emailed to you.<br/><img src="images/Prep3.8.png" width="800" /><br/>
 
-6. Next, you will create an application representing App Connect Enterprise, and then retrieve the Consumer Key and Consumer Secret. Click the **cogwheel** icon (1) and then select **Setup** (2).<br/><img src="images/Prep3.9.png" width="800" /><br/>
+6. Next, you will create an application representing App Connect Enterprise, and then retrieve the Consumer Key and Consumer Secret. Click the **cogwheel** icon (1) and select **Setup** (2).<br/><img src="images/Prep3.9.png" width="800" /><br/>
 
 7. In the navigator on the left-hand side, scroll to **PLATFORM TOOLS**, expand **Apps** (1), and click **App Manager** (2).<br/><img src="images/prep-image3.7.png" width="800" /><br/>
 
@@ -60,11 +83,11 @@ Your Salesforce dev account is ready.
 
 <details markdown="1">
 
-<summary>5 - Set up Insightly</summary>
+<summary>6 - Set up Insightly</summary>
 
 Next, let’s set up Insightly, a cloud-based customer relationship management (CRM) solution.
 
-We will now create a trial account (15 days). After the trial period, you can migrate your trial account to a free account (with limited users).
+We will create a trial account that lasts for 15 days. After the trial period, you can migrate your trial account to a free account (with limited users).
 
 1. Go to <a href="https://www.insightly.com/" target="_blank" rel="noreferrer">Insightly</a> and click **Try CRM Free**.<br/><img src="images/prep-insightly-1.png" width="800" /><br/>
 
@@ -98,22 +121,24 @@ Your Insightly account is ready to use.
 
 <details markdown="1">
 
-<summary>6 - Connect Cloud Pak for Integration to your endpoints</summary>
+<summary>7 - Connect Cloud Pak for Integration to your endpoints</summary>
 
 Let’s configure our services endpoints in Cloud Pak for Integration.
 
-1. Return the connectivity instructions from section 2.2, navigate to the **Cloud Pak Console** (1) tab and use the credentials (2) access the Platform Navigator.<br/><img src="images/prep-image209.png" width="800" /><br/><img src="images/prep-image210.png" width="800" /><br/><br/><inline-notification text="If you are using Chrome, you may see a certificate error when accessing the page. To bypass this, type <strong>thisisunsafe</strong> and press return."></inline-notification><br/>
 
-2. Click **ace-designer-demo** in the **Integrations** section.
-<br/><img src="images/Prep4.2.png" width="800" /><br/>
+1.	Return to the command line and access the Platform Navigator using the provided URL. Copy and paste  the **Username** (1) and **Password** (2) from the command line output, and click **Sign In** (3).<br/><img src="images/prep-urls.png" width="800" /><br/><img src="images/prep-image210.png" width="800" /><br/>
+
+2. You will be asked to provide a new password. Provide a new password and click **Submit**. <br/><img src="images/prep-501.png" width="800" /><br/>
+
+3. In the menu on the top left, open the **Design** folder (1) and select **Integrations** (2). <br/><img src="images/prep-44.png" width="800" /><br/>
+
+4. Click on the **ace-designer-demo** entry. <br/><img src="images/prep-44-2.png" width="800" /><br/>
 
 3. Click the **Catalog** icon.<br/><img src="images/Prep4.3.png" width="800" /><br/>
 
-4. This is the list of the available connectors.<br/><img src="images/Prep4.4.png" width="800" /><br/>Now configure the Salesforce connector.<br/><br/>
-
 5. Search for **salesforce** (1) and click **Connect** (2).<br/><img src="images/Prep4.5.png" width="800" /><br/>
 
-6. Enter your Salesforce **Login URL**.<br/><br/><inline-notification text="You must enter <strong>‘https://’</strong> in front of the Saleforce Login URL you saved earlier. The connection will not work if you just copy/paste the URL."></inline-notification><br/><img src="images/Prep4.6.png" width="800" /><br/>
+6. Enter your Salesforce **Login URL**.<br/><br/><inline-notification text="You must enter <strong>‘https://’</strong> in front of the Saleforce Login URL you saved earlier. The connection will not work if you just copy/paste the hostname."></inline-notification><br/><img src="images/Prep4.6.png" width="800" /><br/>
 
 7. Input your Salesforce **Username** (1). Fill in the connector's **Password** field (2) by concatenating your Salesforce **Password** and the **Security token** received via email.<br/><br/>For example, if your Salesforce password is ‘myGreatPassword’ and your Salesforce security token is ‘2325jsdhew4312hs534dh’ then enter ‘myGreatPassword2325jsdhew4312hs534dh’ in the **Password** field.<br/><img src="images/Prep4.7.png" width="800" /><br/>
 
@@ -130,28 +155,5 @@ Your environment is ready to demo.
 <br/>
 
 </details>
-<span id="afterEachDemo"></span>
 
-## **AFTER EACH DEMO**
-
-<details markdown="1">
-
-<summary>Reset the environment</summary>
-
-After practicing the demo you will need to reset the environment.
-
-1. Delete any contacts that were added in Insightly.
-
-2. Reinstall Cloud Pak for Integration to ensure you have a clean environment. Follow <strong>step 1</strong> and <strong>step 2</strong> above.
-
-3. Reconnect the end points, following <strong>step 5</strong> to your endpoints above.
-
-<inline-notification text="Attempting to reuse the same environment may result in inconsistencies between your environment and what is shown in the script and screenshots."></inline-notification>
-
-
-**[Go to top](#top)**
-<br/>
-
-</details>
-
-Click [here](/300-integration-low-code-integration-using-ai/demo-script) to go to the **Demo script** on the next tab.
+Click [here](/platinum-demos/300-integration-low-code-integration-using-ai/demo-script) to go to the **Demo script** on the next tab.

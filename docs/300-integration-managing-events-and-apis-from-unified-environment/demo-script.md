@@ -121,15 +121,18 @@ Let’s get started!
 | **3.1** | **Manage the Async API** |
 | :--- | :--- |
 | **Narration** | IBM Event Endpoint Manager performs exactly the same role for asynchronous interfaces as IBM API Connect does for synchronous APIs. It allows us, for example, to make a selection of Kafka topics available in a catalogue and display them in a portal such that a developer can easily discover and subscribe to use them. It then protects the actual Kafka cluster by controlling access to it via a gateway. Let’s add our Kafka topic to the IBM Event Endpoint Manager catalogue.  |
-| **Action** &nbsp; 3.1.1 | Open the Cloud Pak for Integration Platform Navigator tab and click **Design APIs**.<br/><img src="images/300-eem-demo-3-1-1.png" width="800" /> |
-| **Action** &nbsp; 3.1.2 | Click **Develop APIs and products**.<br/><img src="images/300-eem-demo-3-1-2.png" width="800" /> |
-| **Action** &nbsp; 3.1.3 | Select **Add** in the top right, and select **API**. <br/><img src="images/300-eem-demo-3-1-3.png" width="800" /> |
-| **Action** &nbsp; 3.1.4 | Select **AsyncAPI** (1) and click **Next** (2).<br/><img src="images/300-eem-demo-3-1-4.png" width="800" /> |
-| **Action** &nbsp; 3.1.5 | Upload the **flight-delay.yaml** file downloaded in the preparation steps and click **Next**.<br/><img src="images/300-eem-demo-3-1-5.png" width="800" /> |
+| **Action**  3.1.1 | Open the Cloud Pak for Integration Platform Navigator tab and click on the **menu**, expand the **Design** section, and select **APIs** (1). <br/><img src="images/300-eem-demo-3-1-1.png" width="800" /> <br/> |
+| **Action**  3.1.2 | Click the **ademo** entry. <br/><img src="images/300-eem-demo-3-1-1-1.png" width="800" /> <br/> |
+| **Action**  3.1.3 | In the **API Connect** page, if a login screen is presented, select **Cloud Pak User Registry**. <br/><img src="images/prep-image212.png" width="800" /> <br/> |
+| **Action** &nbsp; 3.1.4 | Click **Develop APIs and products**.<br/><img src="images/300-eem-demo-3-1-2.png" width="800" /> |
+| **Action** &nbsp; 3.1.5 | Select **Add** in the top right, and select **API**. <br/><img src="images/300-eem-demo-3-1-3.png" width="800" /> |
+| **Action** &nbsp; 3.1.6 | Select **AsyncAPI** (1) and click **Next** (2).<br/><img src="images/300-eem-demo-3-1-4.png" width="800" /> |
+| **Action** &nbsp; 3.1.7 | Upload the **Flight delay access.yaml** file downloaded in the preparation steps and click **Next**.<br/><img src="images/300-eem-demo-3-1-5.png" width="800" /> |
 | **Narration** | The next page is where you can enter a vast array of optional detail about the API, that will ultimately be published to the catalog. However, we do not need to add any further details at this stage. |
-| **Action** &nbsp; 3.1.6 | Click **Next**  |
+| **Action** &nbsp; 3.1.8 | Click **Next**  |
 | **Narration** | We will choose to publish the topic straight away, which will automatically create a Product and publish that within the Sandbox catalog. By default it will secure the topic in the same way we would a synchronous API, using an API Key and Secret. This enables us to hide what might be a more complex security model used on your Kafka cluster (such as mTLS). Note that AsyncAPIs exposed by the event gateway are always protected with TLS communication, even if the underlying Kafka broker is not, as is the case in this demo. |
-| **Action** &nbsp; 3.1.7 | Check **Activate API** (1), select **Sandbox** (2) from the pull down and click **Next** (3).<br/><img src="images/300-eem-demo-3-1-7.png" width="800" /> |
+| **Action** &nbsp; 3.1.9 | Click **Edit API**.<br/><img src="images/300-eem-demo-3-1-7.png" width="800" /> |
+| **Action** &nbsp; 3.1.10 | Check the **Inactive** box which will change to Active.<br/><img src="images/300-eem-demo-3-1-8.png" width="800" /> |
 | **Narration** | Managing granular access to topics would normally require a Kafka administrator to create and maintain multiple access control lists (ACLs). IBM Event Endpoint Manager enables consumers to self-administer their own access to topics. The Kafka administrator need only set up access between the Kafka cluster and the event gateway. From that point onward, the person deciding which topics the consumers can subscribe to no longer needs to be a Kafka specialist. |
 
 <br/>

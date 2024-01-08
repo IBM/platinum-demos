@@ -21,8 +21,7 @@ Using AI-powered mapping, we can reduce errors and speed integration development
 In the demo, we will execute the following steps: <br/>
 •	 Access the Cloud Pak for Integration environment <br/>
 •	 Create and implement an API-enabled flow to map the fields for 'contact' between Salesforce and Insightly CRM <br/>
-•	 Auto-map all fields wherever the matching confidence is at least 80% <br/>
-•	 Process relevant and fine-grained field level suggestions that are provided when the confidence is between 30% and 80% <br/>
+•	 Auto-map fields wherever the matching confidence is above 80% <br/>
 •	 Generate a data transformation when the field formats do not match <br/>
 •	 Execute the flow to see the results <br/>
 
@@ -42,19 +41,13 @@ Let’s get started!
 
 | **1.1** | **Log in to Cloud Pak for Integration** |
 | :--- | :--- |
-| **Narration** | A new approach with automation and continuous improvement fed by AI algorithms is required. IBM Cloud Pak for Integration is a hybrid integration solution that provides an automated lifecycle across multiple styles of enterprise integration. With IBM Cloud Pak for Integration, companies can speed integration development, reduce costs, and maintain enhanced security, governance, and availability. Let’s see IBM Cloud Pak for Integration in action. For today's demo, we are using IBM Cloud Pak for Integration installed on the IBM cloud. Let me log in. |
-| **Action** &nbsp; 1.1.1 | Open Cloud Pak for Integration and click **IBM provided credentials (admin only)**. <br/> <img src="images/mapping-assist-1-1-1.png" width="800" /> |
-| **Action** &nbsp; 1.1.2 | Log in with **Username 'admin'** and the **Password** created in Demo preparation step 2.5. <br/> <img src="images/mapping-assist-1-1-2.png" width="800" /> |
+| **Narration** | IBM Cloud Pak for Integration is a hybrid integration solution that provides an automated lifecycle across multiple styles of enterprise integration. With IBM Cloud Pak for Integration, companies can speed integration development, reduce costs, and maintain enhanced security, governance, and availability. Let’s see IBM Cloud Pak for Integration in action. For today's demo, we are using IBM Cloud Pak for Integration installed on the IBM cloud. Let me log in. |
+| **Action** &nbsp; 1.1.1 | Log in with **Username 'integration-admin'** (1), the **Password** (2) created in Demo preparation, and click **Sign In**. <br/> <img src="images/prep-image210.png" width="800" /> |
 
 | **1.2** | **View the Cloud Pak for Integration home screen** |
 | :--- | :--- |
-| **Narration** | Welcome to IBM Cloud Pak for Integration! We’re now at the home screen showing all the capabilities of the Cloud Pak brought together in one place. Specialized integration capabilities — for API management, application integration, messaging, and more — are built on top of powerful automation services. Let’s see the integration capabilities available in this Cloud Pak. |
-| **Action** &nbsp; 1.2.1 | Show the home page and click **Integration instances**. <br/> <img src="images/mapping-assist-1-2-1.png" width="800" /> |
-
-| **1.3** | **Open the Designer** |
-| :--- | :--- |
-| **Narration** | As you can see, through a single interface you are able to access all the integration capabilities your team needs, including API management, application integration, enterprise messaging, events, and high-speed transfer. <br/><br/> In this demo, we'll use the App Connect Designer's Mapping Assist capability to speed the transformation of complex data formats used by cloud applications, such as Salesforce and Insightly. Let’s open our App Connect Designer. |
-| **Action** &nbsp; 1.3.1 | Show the **Integration instances** page. Click **ace-designer-demo**. <br/> <img src="images/mapping-assist-1-3-1.png" width="800" /> |
+| **Narration** | Welcome to IBM Cloud Pak for Integration! We’re now at the home screen showing all the capabilities of the Cloud Pak brought together in one place. Specialized integration capabilities — for API management, application integration, messaging, and more — are built on top of powerful automation services. <br/><br/> In this demo, we'll use the App Connect Designer's Mapping Assist capability to speed the transformation of complex data formats used by cloud applications, such as Salesforce and Insightly. Let’s open our App Connect Designer.  |
+| **Action** &nbsp; 1.2.1 | Show the home page and click **ace-designer-demo**. <br/> <img src="images/mapping-assist-1-2-1.png" width="800" /> |
 
 **[Go to top](#top)**
 
@@ -99,9 +92,9 @@ Let’s get started!
 
 | **3.1** | **Adjust flow response** |
 | :--- | :--- |
-| **Narration** | Here we see our initial demo flow, which initially has just a 'Request' node and a 'Response' node. We will use the designer flow editor to edit and change our flow to add the necessary additional steps. <br/><br/> Before we add to our flow, let’s adjust the response that is returned when the flow is called. This response serves to close the API flow and is a required construct. Because there is no data needed by the caller of the API flow (but a response is required), we can have a very simple response. We will add the Object ID to the response. |
+| **Narration** | Here we see our initial demo flow, which initially has just a 'Request' node and a 'Response' node. We will use the designer flow editor to edit and change our flow to add the necessary additional steps. <br/><br/> Before we add to our flow, let’s adjust the response that is returned when the flow is called. This response serves to close the API flow and is a required construct. Because there is no data needed by the caller of the API flow (but a response is required), we can have a very simple response. We will add the ID to the response. |
 | **Action** &nbsp; 3.1.1 | Click the **Response** node. <br/> <img src="images/mapping-assist-3-0-1.png" width="800" /> |
-| **Action** &nbsp; 3.1.2 | Enter **ID** in the **ID** field (1), and select the **Request ID** object (2). <br/> <img src="images/mapping-assist-3-0-2.png" width="800" /> |
+| **Action** &nbsp; 3.1.2 | Enter **ID** in the **ID** field (1), and select the **ID** object (2). <br/> <img src="images/mapping-assist-3-0-2.png" width="800" /> |
 
 | **3.2** | **Retrieve contacts** |
 | :--- | :--- |
@@ -115,7 +108,7 @@ Let’s get started!
 | **Narration** | Now, we need to add a 'for each' statement because we need to retrieve all of the contacts from Salesforce. For each contact, we need to create a contact in the Insightly CRM. We'll select the "Salesforce Contacts" object as the object to be processed. |
 | **Action** &nbsp; 3.3.1 | Click the **Plus** icon. <br/> <img src="images/mapping-assist-3-2-1.png" width="800" /> |
 | **Action** &nbsp; 3.3.2 | Then, open the **Toolbox** tab (1) and select the **For each** statement (2). <br/> <img src="images/mapping-assist-3-2-2.png" width="800" /> |
-| **Action** &nbsp; 3.3.3 | Enter **Contacts** in the **Select the collection of items to process** field (1), and select the **Salesforce Contacts** object (2). <br/> <img src="images/mapping-assist-3-2-3.png" width="800" /> |
+| **Action** &nbsp; 3.3.3 | Enter **Contacts** in the **Select the collection of items to process** field (1), and select the Salesforce **Contacts** object (2). <br/> <img src="images/mapping-assist-3-2-3.png" width="800" /> |
 
 | **3.4** | **Create contacts** |
 | :--- | :--- |
@@ -143,7 +136,7 @@ Let’s get started!
 
 | **4.2** | **Apply suggestions** |
 | :--- | :--- |
-| **Narration** | By clicking "View suggestions", all suggestions with a confidence score of at least 80% are automatically displayed into Insightly's 'Create Contact' node. Note that there are suggestions for simple fields as well as for more complex, nested fields. Mapping Assist uses a pre-trained AI algorithm to provide intelligent, customized data map suggestions. From this interface, we can clear the suggestions, or we can accept and apply the suggestions. |
+| **Narration** | By clicking "Preview mapping suggestions", all suggestions with a confidence score of at least 80% are automatically displayed into Insightly's 'Create Contact' node. Note that there are suggestions for simple fields as well as for more complex, nested fields. Mapping Assist uses a pre-trained AI algorithm to provide intelligent, customized data map suggestions. From this interface, we can clear the suggestions, or we can accept and apply the suggestions. |
 | **Action** &nbsp; 4.2.1 | Show the list of suggestions (1) and click **Apply suggestions** (2). <br/> <img src="images/mapping-assist-4-2-1.png" width="800" /> |
 
 | **4.3** | **Resolve warnings** |
@@ -152,17 +145,12 @@ Let’s get started!
 | **Action** &nbsp; 4.3.1 | You may or may not see this situation. When this happens, a **warning** message is shown. You need to resolve any/all fields where this occurs. Delete the field name that is currently mapped to the field with the warning. <br/> <img src="images/Error_screen.png" width="800" /> |
 | **Action** &nbsp; 4.3.2 | Click the selection list icon next to the field (1), and select the mapping option listed with the "For Each" option from the displayed list (2). Repeat these steps for each field that has a warning. <br/> <img src="images/Selection_list.png" width="800" /> |
 
-| **4.4** | **Adjust other suggestions** |
+| **4.4** | **Generate a transformation** |
 | :--- | :--- |
-| **Narration** | These 20+ suggestions are the fields where the matching confidence is at least 80%, so in the background, Mapping Assist evaluates this confidence level and only fills the fields that are at least 80%. But there are also other suggestions for the other fields, and we can see these suggestions too. For example, let's see the field 'Other address postcode.' When we click the field, we can see a suggestion to map to 'Other Zip/Postal Code' from the Salesforce Contact object with a confidence of 72%, which is lower than 80%. Let's accept this mapping. <br/><br/> In our next run, this will be remembered by Mapping Assist, and it will show for you as one of the top suggestions. To improve accuracy in future mappings, Mapping Assist learns by collecting and storing the mapping data in an internal database by tracking your mapping history of flows that are started. For example, as you map 'Other address postcode' to 'Other Zip/Postal Code,' this mapping is remembered. Mapping Assist suggests the same match in future mappings, with a 100% confidence rating. |
-| **Action** &nbsp; 4.4.1 | Click the **Other address postcode** field (1). Select the **Other Zip/Postal Code** mapping suggestion (2). <br/><inline-notification text="If you have any other field (e.g., date of birth) that is not mapped to the **For each** element (orange icon), replace it to use the **For each** element."></inline-notification> <img src="images/mapping-assist-4-3-1.png" width="800" /> |
-
-| **4.5** | **Generate a transformation** |
-| :--- | :--- |
-| **Narration** | If a text field is populated with a single mapping from a top suggestion or from the list of suggested mappings, but the data format of the "source" mapping does not match the data format of the "target" field that is populated, you can generate a JSONata expression to define how the source data should be presented in the target application. JSONata is a declarative open-source query and transformation language for JSON data. <br/><br/> Let's explore it with the 'Assistant's Name' field. Let's select "Generate transformation". The 'Generate transformation' panel opens with five blank sources and corresponding target fields that you can use for mapping data formats. We'll need to provide at least five examples of source and target formats for Cloud Pak for Integration to generate the transformation formula. <br/><br/> Using Cloud Pak for Integration and the Mapping Assist capability, we were able to easily create a data sync between two CRM solutions without needing to write any code. |
-| **Action** &nbsp; 4.5.1 | On the **Assistant name** field, click the **Assistant's Name** mapping (1) and select **Transform data format** (2). <br/> <img src="images/mapping-assist-4_4_1.png" width="800" /> |
-| **Action** &nbsp; 4.5.2 | On the **Generate transformation** dialog, enter **John Lennon** as the first source name, and enter **J. Lennon** under **'Assistant name' examples (target)**. Repeat the same steps to include four more assistants' names using the same transformation format (e.g., Paul McCartney, P. McCartney; George Harrison, G. Harrison; Ringo Starr, R. Starr; Pete Best, P. Best) (1). Click **Generate transformation** (2), and click **Insert transformation** (3). <br/> <img src="images/mapping-assist-4_4_2.png" width="800" /> |
-| **Action** &nbsp; 4.5.3 | Click **Done**. <br/> <img src="images/mapping-assist-4_4_3.png" width="800" /> |
+| **Narration** | In some situations, a direct mapping may not be adequate, for instance the data format of the "source" does not match the data format of the "target" field. In this situation you can generate a JSONata expression to define how the source data should be presented in the target application. JSONata is a declarative open-source query and transformation language for JSON data. <br/><br/> Let's explore it with the 'Assistant's Name' field. Let's select "Generate transformation". The 'Generate transformation' panel opens with five blank sources and corresponding target fields that you can use for mapping data formats. We'll need to provide at least five examples of source and target formats for Cloud Pak for Integration to generate the transformation formula. <br/><br/> Using Cloud Pak for Integration and the Mapping Assist capability, we were able to easily create a data sync between two CRM solutions without needing to write any code. |
+| **Action** &nbsp; 4.4.1 | On the **Assistant name** field, click the **Assistant's Name** mapping (1) and select **Transform data format** (2). <br/> <img src="images/mapping-assist-4_4_1.png" width="800" /> |
+| **Action** &nbsp; 4.4.2 | On the **Generate transformation** dialog, enter **John Lennon** as the first source name, and enter **J. Lennon** under **'Assistant name' examples (target)**. Repeat the same steps to include four more assistants' names using the same transformation format (e.g., Paul McCartney, P. McCartney; George Harrison, G. Harrison; Ringo Starr, R. Starr; Pete Best, P. Best) (1). Click **Generate transformation** (2), and click **Insert transformation** (3). <br/> <img src="images/mapping-assist-4_4_2.png" width="800" /> |
+| **Action** &nbsp; 4.4.3 | Click **Done**. <br/> <img src="images/mapping-assist-4_4_3.png" width="800" /> |
 
 <br/>
 
@@ -180,20 +168,20 @@ Let’s get started!
 
 | **5.1** | **Check the target contacts** |
 | :--- | :--- |
-| **Narration** | Before we test our data sync flow, let's check the contacts that we have available in our target contacts. Let's open our pre-created Insightly CRM account and see the available contacts before we execute the flow. As you can see, we have approximately 20 pre-created contacts, each with pictures. After the test of our flow, we should have two or three new contacts without pictures. |
+| **Narration** | Before we test our data sync flow, let's check the contacts that we have available. Let's open our pre-created Insightly CRM account and see the available contacts before we execute the flow. As you can see, we have approximately 20 pre-created contacts, each with pictures. After the test of our flow, we should have two or three new contacts without pictures. |
 | **Action** &nbsp; 5.1.1 | Open your **Insightly** home page (1). <br/><br/> Open the **Contacts** view (2). <br/> <img src="images/mapping-assist-5_1_1.png" width="800" /> |
 | **Action** &nbsp; 5.1.2 | Notice that there are approximately 20 pre-created contacts, each with pictures. <br/> <img src="images/Script5.1.2.png" width="800" /> |
 
 | **5.2** | **Test the API** |
 | :--- | :--- |
-| **Narration** | It is time to test our data sync. First, we need to start our flow. Once the flow has started, let's test it. <br/><br/> Great, our data sync was executed. |
+| **Narration** | It is time to test our data sync. First, we need to start our flow. Once the flow has started, let's test it. <br/><br/> Great, our data sync is running. |
 | **Action** &nbsp; 5.2.1 | Go back to Cloud Pak for Integration's **App Connect Designer** page. Start your flow. <br/> <img src="images/mapping-assist-5_2_1.png" width="800" /> |
 | **Action** &nbsp; 5.2.2 | Open the **Test** tab (1). Click **POST /Contact** (2) and open the **Try it** tab (3). <br/> <img src="images/mapping-assist-5_2_2.png" width="800" /> |
 | **Action** &nbsp; 5.2.3 | Scroll down to see the body field, and click **Generate** (1) to create some dummy body content. Click **Send** (2), and you should see a **201 Created** response (3).  <br/> <img src="images/mapping-assist-5_2_3.png" width="800" /> |
 
 | **5.3** | **Check the data sync** |
 | :--- | :--- |
-| **Narration** | Now let's check our new contacts. We should have at least two new contacts. Let's refresh the 'Contacts' page, and voila, here are our new contacts. Let's check the contact to see the new 'Assistant Name' format. <br/><br/> Great! Everything works as expected. |
+| **Narration** | Now let's check our new contacts. We should have at least two new contacts. Let's refresh the 'Contacts' page, and here are our new contacts. Let's check the contact to see the new 'Assistant Name' format. <br/><br/> Great! Everything works as expected. |
 | **Action** &nbsp; 5.3.1 | Go back to Insightly's **Contacts** page and refresh the page. <br/> <img src="images/mapping-assist-5_3_1.png" width="800" /> |
 | **Action** &nbsp; 5.3.2 | Explore the new contacts (without the sample_data tags).<br/> <img src="images/mapping-assist-5_3_2.png" width="800" /> |
 | **Action** &nbsp; 5.3.3 | Click one of the contacts without a picture (1), and show the new format of **Assistant Name** based on the function we defined in the flow (2). <br/> <img src="images/mapping-assist-5_3_3.png" width="800" /> |
@@ -211,7 +199,7 @@ Let’s get started!
 <summary>Summary</summary>
 
 As we mentioned in the beginning, data mapping is difficult, time-consuming, and error-prone. In this demo, we showed how AI-powered Mapping Assist can alleviate these issues.<br/><br/>
-We auto-mapped all the fields where the matching confidence was at least 80%, and we provided relevant and fine-grained field-level suggestions when the confidence was between 30% and 80%. Mapping Assist learns from your decisions about selected mappings, and shows these as top suggestions when a similar source and target mapping is attempted in the future -- further reducing your mapping efforts.<br/><br/>
+We auto-mapped all the fields where the matching confidence was at least 80%. Mapping Assist learns from your decisions about selected mappings, and shows these as top suggestions when a similar source and target mapping is attempted in the future -- further reducing your mapping efforts.<br/><br/>
 We also generated a data transformation by providing examples of source and target data when fields do not have the same format. AI was used to determine the pattern and generate the transformation.<br/><br/>
 Using AI-powered Mapping Assist reduced the development time and eliminated errors as ACME Retail successfully integrated the new customer contacts from their business acquisition.
 
@@ -220,7 +208,7 @@ Thank you for attending this presentation.
 
 
 
-(Demo slides [here](./Script-Mapping-Assist-Opening-and-Closing-slides.pptx))
+(Demo slides [here](https://ibm.box.com/s/2j47xs97ju9tiiq2s2b1s4v6j05st51a))
 
 
 
