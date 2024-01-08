@@ -5,8 +5,8 @@ banner: images/Detecting time-critical situations using Event Automation banner 
 overview: In this demo we will see how Focus Corp, an online retailer, uses Event Automation to capitalize on time-sensitive revenue opportunities.
 product: IBM Event Automation
 capabilities: Event Streaming, Event Endpoint Management and Event Processing 
-boxIntroPresentationUrl: https://ibm.box.com/shared/static/c3mbb09wu0qd6ifdphxp8fybw33glodt.pptx
-boxPdfScript: https://ibm.box.com/shared/static/mj5ehiuewprnabt31qk7sh2qlpqf5ago.pdf
+boxIntroPresentationUrl: https://ibm.box.com/s/fzuyefqnsgjpes1uf9wqyjs5jbf5mdy7
+boxPdfScript: https://ibm.box.com/s/1fsdstl358nfqk9ook2vc7gta2mcd6h8
 customerVideo: https://ibm.box.com/s/efjqukq1zsffphuvhoi93lpc0i65iqzm
 gitHubUrl: https://github.com/IBM/platinum-demo-code-event-automation.git
 gitHubDir: platinum-demo-code-event-automation
