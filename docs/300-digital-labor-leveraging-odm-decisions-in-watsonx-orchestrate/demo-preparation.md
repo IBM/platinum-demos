@@ -370,7 +370,7 @@ We are also going to update the server URL with the URL of your own ODM Rule Exe
 
 1. Open the **XXX FocusCorp Customer Service.json** file with a compatible text editor of your choice. <br/> <img src="images/Prep-5-1-1.png" width="800" /><br/>
 
-2. Replace the **server URL** with the **CMD URL** from your notebook. <br/> <inline-notification text="Replace only the section highlighted in blue."></inline-notification> <img src="images/Prep-5-1-2.png" width="800" /><br/>
+2. Replace the **server URL** with the **CMD URL** from your notebook. <br/> <inline-notification text="Replace only the section highlighted in blue.</br>If you have deployed your decision service on SaaS,  the URL will look like <strong>https://odm-run-demo-emea-10.automationcloud.ibm.com/</strong>DecisionService/rest. The section in bold corresponds to the Decision Server URL your decision service is deployed on. "></inline-notification> <img src="images/Prep-5-1-2.png" width="800" /><br/>
 
 3. Replace the two occurrences of ‘**XXX**’ occurrences with your own three-letter initials. <br/> <img src="images/Prep-5-1-3.png" width="800" /><br/>
 
