@@ -40,7 +40,7 @@ Let's get started.
 | **1.1** | **Invoke a Salesforce skill using natural language** |
 | :--- | :--- |
 | **Narration** | A common task for an insurance agent is to periodically search the Salesforce CRM for customers with recent life changes to whom they can make upsell / cross-sell offers. Traditionally, this task involves creating custom Salesforce reports and downloading them for manual review by the agent.<br/><br/> In Orchestrate, the agent invokes the Salesforce task using the simple natural language phrase: 'Write upsell email to customers.' Orchestrate uses AI to understand the sales agent's intent and peform the correct action, even when the request phrase is ambiguous.|
-| **Action** &nbsp; 1.1.1 | Click on the hamburger menu on the top left and select <strong>Chat</strong><br/><img src="images/1-1-0.png" width="400" />|
+| **Action** &nbsp; 1.1.1 | Click on the menu slider on the top left and select <strong>Chat</strong><br/><img src="images/1-1-0.png" width="400" />|
 | **Action** &nbsp; 1.1.2 | Switch the view to <strong>Team skills</strong><br/><img src="images/prep-1-2-teamskills.jpg" width="600" />|
 | **Action** &nbsp; 1.1.3 | Type the natural language command **'Write upsell email to customers'** (1) and click the **Send** arrow (2) in the chat window.<br/><img src="images/1-1-1.png" width="600" /> |
 | **Narration** | Orchestrate runs the Salesforce task by connecting to a backend API that retrieves a list of customers with recent life changes. The returned customer data is neatly displayed in a table within Orchestrate's chat interface.<br/><br/>The agent reviews the list of customers and pursues a cross-sell opportunity with John Collins, who has a child that is about to turn twenty-six. In the US, twenty-six is a milestone requiring children to acquire independent health insurance coverage. (Other countries set different age limits for various family milestones.)|
@@ -88,7 +88,7 @@ Let's get started.
 | :--- | :--- |
 | **Narration** | IBM watsonx Orchestrate provides access to a broad range of skills that help users perform their daily tasks. It comes with a collection of ready-to-use, out-of-the-box skills that range from working with productivity tools to providing deep analytical insights. Users can immediately access and use the built-in skills. <br/><br/> watsonx Orchestrate developers, called 'builders,' create the customized skills used by the insurance agents. Builders can create skill flows from a sequence of individual skills. When a skill flow is created, it becomes a new "composite" skill that can be used just like an individual skill. <br/><br/> Skill flows perform tasks composed of multiple steps. For example, the insurance agent used a skill flow that combined Salesforce, a product recommendation engine, and e-mail. <br/><br/> We’ll look at how builders create skill flows by sequencing the first two steps of the upsell task performed by the agent. We’ll combine the Salesforce and recommendation engine skills to build a new composite skill flow that searches Salesforce for target customers and then makes product recommendations for the selected customer. |
 | **Action** &nbsp; 2.1.1 | Click the **menu slider** icon. <br/> <img src="images/2-1-1.png" width="500" /> |
-| **Action** &nbsp; 2.1.2 | Click **Skills** under the 'BUILD' section (these options are only shown to users with builder access).<br/> <img src="images/2-1-2.png" width="500" /> |
+| **Action** &nbsp; 2.1.2 | Click **Skills** under the 'BUILD' section (these options are only shown to users with builder access).<br/> <img src="images/2-1-2.png" width="300" /> |
 | **Action** &nbsp; 2.1.3 | Click the **Add skills** arrow (1). Click **Create a skill flow** (2). <br/> <img src="images/2-1-3.png" width="800" /> |
 | **Narration** | To build skill flows, we can use any skill in the skill catalog. First, we’ll add the Salesforce skill that returns the list of clients who experienced recent life changes. |
 | **Action** &nbsp; 2.1.4 | Click the **+** button. <br/> <img src="images/2-1-4.png" width="500" /> |
@@ -128,12 +128,12 @@ Let's get started.
 | **2.3** | **Run the skill flow** |
 | :--- | :--- |
 | **Narration** | We have finished creating and publishing the skill flow. Now, all the insurance agents in the company can add the skill as a personal skill. |
-| **Action** &nbsp; 2.3.1 | Click the menu slider icon and select **Chat**. <br/> <img src="images/1-1-0.png" width="500" /> |
+| **Action** &nbsp; 2.3.1 | Click the menu slider icon and select **Chat**. <br/> <img src="images/1-1-0.png" width="300" /> |
 | **Action** &nbsp; 2.3.2 | Click **Add skills from the catalog**. <br/> <img src="images/2-3-2.png" width="500" /> |
 | **Action** &nbsp; 2.3.3 | Search the catalog for the word 'flows' and click the **Skill flows** card.<br/> <img src="images/2-3-3.png" width="500" /> |
 | **Action** &nbsp; 2.3.4 | In the Skill flows card of your upsell skill flow,, click **Add skill +**. <br/> <img src="images/2-3-4.png" width="500" /> |
 | **Narration** | We’re ready to run our new skill flow by asking watsonx Orchestrate to find upsell candidates and make product recommendations for the selected customer. |
-| **Action** &nbsp; 2.3.5 | Click the menu slider to navigate back to your **Chat** view. <br/> <img src="images/1-1-0.png" width="500" /> |
+| **Action** &nbsp; 2.3.5 | Click the menu slider to navigate back to your **Chat** view. <br/> <img src="images/1-1-0.png" width="300" /> |
 | **Action** &nbsp; 2.3.6 | Enter the phrase with your name in it to run your skill. <br/> <img src="images/2-3-6.png" width="400" /> |
 | **Narration** | The list of customers is returned, and we'll select one. |
 | **Action** &nbsp; 2.3.7 | Select **John Collins** (1) and click **Apply** (2). <br/> <img src="images/2-3-8.png" width="500" /> |
@@ -159,7 +159,7 @@ Let's get started.
 | **3.1** | **Import OpenAPI files** |
 | :--- | :--- |
 | **Narration** | watsonx Orchestrate comes with a catalog of out-of-the-box skills, such as the Microsoft Outlook skill used to send the customer e-mail. Additional skills can be added by watsonx Orchestrate 'builders’ who can create customized skills and make them available to insurance sellers. <br/><br/> Builders can create new skills using a few different sources: <br/><br/> 1. *Composite Skill flows*: We can build composite skills from a sequence of individual skills, such as the skill flow we just created. <br/> 2. *Embedded Automations*: We can create skills using the built-in automation builder, such as the product recommendation skill used to determine the products to upsell. <br/> 3. *IBM Cloud Pak for Business Automation*: We can expose skills using pre-built integrations to automation services running in IBM Cloud Pak for Business Automation and IBM RPA. For example, Watsonx Orchestrate can invoke decisions, workflows and RPA bots running in those products. <br/> 4. *Open APIs*: Import skills from APIs exposed in OpenAPI files, such as the custom Salesforce skill used to retrieve a list of customers with recent life changes. <br/><br/> Let’s see how we created the custom Salesforce skills using an OpenAPI file. <br/><br/> (OpenAPI is a specification for documenting and standardizing the design and behavior of web APIs. An OpenAPI file provides the detailed outline of how a particular API works, including its operations, endpoints, data types, request and response formats and authentication methods.) |
-| **Action** &nbsp; 3.1.1 | Click the menu slider and then click **Skills** (2). <br/> <img src="images/2-1-2.png" width="800" /> |
+| **Action** &nbsp; 3.1.1 | Click the menu slider and then click **Skills** (2). <br/> <img src="images/2-1-2.png" width="300" /> |
 | **Action** &nbsp; 3.1.2 | Click **Add skills**. <br/> <img src="images/3-1-2.png" width="800" /> |
 | **Narration** | watsonX Orchestrate is able to add new skills by importing an OpenAPI file and selecting the desired operation. First, we’ll upload the OpenAPI file. |
 | **Action** &nbsp; 3.1.3 | Click **From files**. <br/> <img src="images/3-1-3.png" width="500" /> |
