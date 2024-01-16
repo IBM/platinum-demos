@@ -46,7 +46,7 @@ Your have installed the Cloud Pak for Integration ready to be configured.
 
 Now, let's configure our services endpoints in Cloud Pak for Integration.<br/>
 
-1.	Return the command line and use the URL, username (1), credentials (2) and click **Sign In** (3) to access the Platform Navigator.<br/><img src="images/prep-image209.png" width="800" /><br/><img src="images/prep-image210.png" width="800" /><br/><br/><inline-notification text="If you are using Chrome, you may see a certificate error when accessing the page. To bypass this, type <strong>thisisunsafe</strong> and press return."></inline-notification><br/>
+1.	Return to the command line and access the Platform Navigator using the provided URL. Copy and paste  the **Username** (1) and **Password** (2) from the command line output, and click **Sign In** (3).<br/><img src="images/prep-image209.png" width="800" /><br/><img src="images/prep-image210.png" width="800" /><br/>
 
 2. You will be asked to provide a new password as you are using a temporary password. Provide a new password and click **Submit**. <br/><img src="images/prep-501.png" width="800" /><br/>
 
@@ -71,7 +71,7 @@ Now, let's configure our services endpoints in Cloud Pak for Integration.<br/>
 11. Assure **Import a connector file or API document** (1) is selected and select **Next** (2).
 <br/><img src="images/prep-52.png" width="800" /><br/>
 
-12. Select **OpenAPI** (1) for the Document type, the downloaded **CustomerAccountOpenAPIJSONServer.yaml** file (2), and click **Next** (3). <br/><img src="images/prep-52-1.png" width="800" /><br/>
+12. Select **OpenAPI** (1) for the Document type, use the downloaded **CustomerAccountOpenAPIJSONServer.yaml** file (2), and click **Next** (3). <br/><img src="images/prep-52-1.png" width="800" /><br/>
 
 12. Click **Import API**. <br/><img src="images/prep-53.png" width="800" /><br/>
 
@@ -85,7 +85,7 @@ Now, let's configure our services endpoints in Cloud Pak for Integration.<br/>
 
 2. Import the **MQExternalProvider.yaml** file by clicking the **Dashboard** icon (1), then **New** (2), and then **Import flow…** (3). <br/><img src="images/prep-55.png" width="800" /><br/>
 
-3. Select the downloaded **MQExternalProvider.yaml** file (1), and click **Import** (2). <br/><img src="images/prep-56.png" width="800" /><br/>
+3. Use the downloaded **MQExternalProvider.yaml** file (1), and click **Import** (2). <br/><img src="images/prep-56.png" width="800" /><br/>
 
 4. Start the imported flow by selecting **Start flow** (1). <br/><img src="images/prep-57.png" width="800" /><br/>
 
@@ -104,7 +104,7 @@ Now, let's configure our services endpoints in Cloud Pak for Integration.<br/>
 
 4. You will see the following correct response. <br/><img src="images/prep-64.png" width="800" /><br/>
 
-5. Three environmentally specific pieces of information are required to integrate the API into the workflow: the API URL, client ID and hostname. <br/><br/> Scroll to the top of the screen and save the **API URL** (1) and **client ID** (2).<br/><br/>The hostname is contained within the API URL. It is the portion between "http://" and the next "/". <br/><br/> The hostname will look like this: ademo-gw-gateway-cp4i.itzroks-120000k3ak-vzlud5-4b4a324f027aea19c5cbc0c3275c4656-0000.eu-de.containers.appdomain.cloud<br/><br/>Save the hostname with the API URL and client ID.<br/><img src="images/prep-65.png" width="800" /><br/>
+5. Three environmentally specific pieces of information are required to integrate the API into the workflow: the API URL, client ID and hostname. <br/><br/> Scroll to the top of the screen and save the **API URL** (1) and **client ID** (2).<br/><br/>The hostname is contained within the API URL. It is the portion between "https://" and the next "/". <br/><br/> The hostname will look like this: ademo-gw-gateway-cp4i.itzroks-120000k3ak-vzlud5-4b4a324f027aea19c5cbc0c3275c4656-0000.eu-de.containers.appdomain.cloud<br/><br/>Save the hostname, API URL and client ID.<br/><img src="images/prep-65.png" width="800" /><br/>
 
 **[Go to top](#top)**
 
@@ -316,4 +316,4 @@ In the demo script, you will be required to use the OpenAPI 3.0 YAML file to dis
 
 ***
 
-Click [here](/300-enhancing-ba-with-integration/demo-script) to go to the **Demo script** on the next tab.
+Click [here]((/platinum-demos/300-enhancing-ba-with-integration/demo-script) to go to the **Demo script** on the next tab.
