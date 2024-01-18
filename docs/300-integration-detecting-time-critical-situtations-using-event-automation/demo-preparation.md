@@ -2,7 +2,7 @@
 title: Detecting time-critical situations using Event Automation <br/>300-level live demo
 layout: preparation
 banner: images/Detecting time-critical situations using Event Automation banner 300 Prep 12-13-23.jpg
-overview: In this demo we will see how Focus Corp, an online retailer, uses Event Automation to capitalize on time-sensitive revenue opportunities.
+overview: In this demo we will see how Focus Corp, an online retailer, uses Event Automation to capitalize on time-sensitive revenue opportunities. <br/><br/>This demo is a subset of **Using event automation to create Kafka streams from IBM MQ** does not show the IBM MQ to Kafka connectivity. 
 product: IBM Event Automation
 capabilities: Event Streaming, Event Endpoint Management and Event Processing 
 boxIntroPresentationUrl: https://ibm.box.com/s/fzuyefqnsgjpes1uf9wqyjs5jbf5mdy7

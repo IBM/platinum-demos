@@ -2,7 +2,7 @@
 title: Using event automation to create Kafka streams from IBM MQ <br/>300-level live demo
 layout: preparation
 banner: images/Using Event Automation with MQ banner 300 Prep 12-13-23.jpg
-overview: In this demo we will see how Focus Corp, an online retailer, uses real-time MQ transaction data to capitalize on time-sensitive revenue opportunities.
+overview: In this demo we will see how Focus Corp, an online retailer, uses real-time MQ transaction data to capitalize on time-sensitive revenue opportunities. <br/><br/>This demo builds on **Detecting time-critical situations using Event Automation** adding steps that show the IBM MQ to Kafka connectivity. 
 product: IBM Event Automation, Cloud Pak for Integration
 capabilities: Event Streaming, Event Endpoint Management, Event Processing and IBM MQ
 boxIntroPresentationUrl: https://ibm.box.com/s/pdidbqniosqelx6d77lvetmqd9u7gwp4
