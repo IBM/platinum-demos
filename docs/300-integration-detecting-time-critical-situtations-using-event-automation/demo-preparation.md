@@ -2,7 +2,7 @@
 title: Detecting time-critical situations using Event Automation <br/>300-level live demo
 layout: preparation
 banner: images/Detecting time-critical situations using Event Automation banner 300 Prep 12-13-23.jpg
-overview: In this demo we will see how Focus Corp, an online retailer, uses Event Automation to capitalize on time-sensitive revenue opportunities.
+overview: In this demo we will see how Focus Corp, an online retailer, uses Event Automation to capitalize on time-sensitive revenue opportunities. <br/><br/>This demo is a subset of **Using event automation to create Kafka streams from IBM MQ** does not show the IBM MQ to Kafka connectivity. 
 product: IBM Event Automation
 capabilities: Event Streaming, Event Endpoint Management and Event Processing 
 boxIntroPresentationUrl: https://ibm.box.com/s/fzuyefqnsgjpes1uf9wqyjs5jbf5mdy7
@@ -96,7 +96,7 @@ The installation of the demo has not imported the event streams into the Event M
 14. Select the **Options** (1) tab and click on the **Create Option +** (2) button.     
     <img src="../300-integration-using-event-automation-to-create-kafka-streams-from-ibm-mq/images/1-7-OptionsCustomer.png" width="800" />
 
-15. Enter **Customer Access** (1) as the option name, **Customer** (2) as the alias, **Self-service access to customer event stream** (3) as the description and click **Next** (4).       
+15. Enter **Customer Access** (1) as the option name, **CUSTOMERS** (2) as the alias, **Self-service access to customer event stream** (3) as the description and click **Next** (4).       
     <img src="../300-integration-using-event-automation-to-create-kafka-streams-from-ibm-mq/images/1-7-OptionsCreateCustomer.png" width="800" /> 
 
 16. Click **Next**.     
@@ -127,7 +127,7 @@ The installation of the demo has not imported the event streams into the Event M
 24. Select the **Options** (1) tab and click on the **Create Option +** (2) button.        
     <img src="../300-integration-using-event-automation-to-create-kafka-streams-from-ibm-mq/images/1-7-OptionsOrder.png" width="800" />
 
-25. Enter **Order Access** (1) as the option name, **Order** (2) as the alias, **Self-service access to orders event stream** (3) as the description and click **Next** (4).         
+25. Enter **Order Access** (1) as the option name, **ORDERS** (2) as the alias, **Self-service access to orders event stream** (3) as the description and click **Next** (4).         
     <img src="../300-integration-using-event-automation-to-create-kafka-streams-from-ibm-mq/images/1-7-OptionsCreateOrders.png" width="800" />
 
 26. Click **Next**.        

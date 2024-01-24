@@ -37,11 +37,11 @@ topcategory: "### **DEMO INSTALLATION AND SETUP**"
 4. Navigate to the Event Stream UI outputted in the previous step.
 <br/><img src="images/prep-image201.png" width="800" /><br/>
 
-5. Log in with the username **admin** and the password you created in step 2.5. This opens **IBM Event Steams**.<br/><img src="images/prep-image202.png" width="800" /><br/>
+5. Log in with the username **admin** and the password you created in step 2.5.<br/><img src="images/prep-image202.png" width="800" /><br/>
 
 6. Select the **Topics** (1) icon, then click **Create topic** (2).<br/><img src="images/prep-image203.png" width="800" /><br/>
 
-7. Specify **flight-delays** (1) as the **Topic name** and select **Next** (2).<br/><img src="images/prep-image204.png" width="800" /><br/>
+7. Specify **flight-delays** (1) as the topic name and select **Next** (2).<br/><img src="images/prep-image204.png" width="800" /><br/>
 
 8. Click **Next**.<br/><img src="images/prep-image205.png" width="800" /><br/>
 
@@ -53,7 +53,7 @@ topcategory: "### **DEMO INSTALLATION AND SETUP**"
 
 12. Click on **Internal** (1) and copy the URL (2). <br/><img src="images/prep-image207-2.png" width="800" /><br/>
 
-13. Open a browser window and go to the **Event Endpoint Management URL**.<br/><img src="images/prep-image208-1.png" width="800" /><br/><br/><inline-notification text="If you are using Chrome, you may see a certificate error when accessing the page. To bypass this, type <strong>thisisunsafe</strong> and press return."></inline-notification><br/><br/>
+13. Open a browser window and go to the **Event Endpoint Management UI**.<br/><img src="images/prep-image208-1.png" width="800" /><br/>
 
 14. Log in with the username **eem-admin** and the password **passw0rd**. <br/><img src="images/prep-image208-2.png" width="800" /><br/>
 
@@ -87,19 +87,19 @@ topcategory: "### **DEMO INSTALLATION AND SETUP**"
 
 29. Click on the export icon. <br/><img src="images/prep-image209-6.png" width="800" /><br/>
 
-29. Check the **For IBM API Connect (contains credentials)** (1) box and click **Export** (2). <br/><img src="images/prep-image209-7.png" width="800" /><br/>
+29. Check the **For IBM API Connect (contains credentials)** (1) box and click **Export** (2). <br/><img src="images/prep-image209-7.png" width="500" /><br/>
 
-22.	Return the command line and use the URL, username (1), credentials (2) and click **Sign In** (3) to access the Platform Navigator.<br/><img src="images/prep-image208.png" width="800" /><br/><img src="images/prep-image210.png" width="800" /><br/><br/><inline-notification text="If you are using Chrome, you may see a certificate error when accessing the page. To bypass this, type <strong>thisisunsafe</strong> and press return."></inline-notification><br/>
+1.	Return to the command line and access the Platform Navigator using the provided URL. Copy and paste  the **Username** (1) and **Password** (2) from the command line output, and click **Sign In** (3).<br/><img src="images/prep-image208.png" width="800" /><br/><img src="images/prep-image210.png" width="800" /><br/>
 
-23. You will be asked to provide a new password as you are using a temporary password. Provide a new password and click **Submit**. <br/><img src="images/prep-501.png" width="800" /><br/>
+2. You will be asked to provide a new password. Provide a new password and click **Submit**. <br/><img src="images/prep-501.png" width="800" /><br/>
 
 24. Expand **Design** and select **APIs** (1).<br/><img src="images/prep-image501.png" width="800" /><br/>
 
-25. Click **ademo** API management. <br/><img src="images/prep-image502.png" width="800" /><br/>
+25. Click **ademo**. <br/><img src="images/prep-image502.png" width="800" /><br/>
 
 26. If a login screen is presented, select **Cloud Pak User Registry** <br/><img src="images/prep-image212.png" width="800" /><br/>
 
-26. Click **Manage catalogs** (2).<br/><img src="images/prep-image213.png" width="800" /><br/>
+26. Click **Manage catalogs**.<br/><img src="images/prep-image213.png" width="800" /><br/>
 
 27. Open **Sandbox**.<br/><img src="images/prep-image214.png" width="800" /><br/>
 
@@ -142,12 +142,8 @@ Congratulations! Your portal developer user has been created and you are ready f
 <summary>5 - Install the Flight Board app</summary>
 
 1. Run the following commands to install the Flight Board app:<br/>
-    ```
-      cd platinum-demo-code-eem/scripts/
-    ```
-    ```
-      ./setup-app.sh cp4i
-    ```
+    ```cd platinum-demo-code-eem/scripts/```         
+    ```./setup-app.sh cp4i```
 
     It takes a few minutes to configure access and generate credentials for the flight board app.<br/>
 
@@ -164,7 +160,7 @@ Congratulations! Your portal developer user has been created and you are ready f
 
 <summary>Open these resources before starting demonstration</summary>
 
-1. Download the **Flight-Delay.avsc** schema from <a href="https://raw.githubusercontent.com/IBM/platinum-demo-code-eem/main/resources/Flight-Delays.avsc" target="_blank">here</a>. You will need this for Action 4.1.5 of the demonstration.<br/><br/>
+1. Download the **Flight-Delay.avsc** schema from <a href="https://raw.githubusercontent.com/IBM/platinum-demo-code-eem/main/resources/Flight-Delays.avsc" target="_blank">here</a>. You will need this for the demonstration.<br/><br/>
 
 2. Open the following tabs in a web browser:<br/>
 • IBM Event Streams<br/>
@@ -172,10 +168,8 @@ Congratulations! Your portal developer user has been created and you are ready f
 • The Flight Board<br/>
 • The Flight Board Manager<br/>
 • IBM API Connect Developer Portal
-   <inline-notification text="These URLs are provided as the output from the setup-software.sh and setup-app.sh scripts. For convenience you can also get the URLs for the above by running the following command from the eem-demo/scripts folder:"></inline-notification>
-   ```
-   ./get-urls.sh
-   ```
+   <inline-notification text="These URLs are provided as the output from the setup-software.sh and setup-app.sh scripts. For convenience you can also get the URLs for the above by running the following command from the eem-demo/scripts folder:"></inline-notification>       
+   ```./get-urls.sh```
 
 3. Click **Sign in** to log in to the Developer Portal using the devuser account you created in the preparation steps above.<br/><img src="images/prep-demo-2.png" width="800" /><br/>
 
@@ -187,4 +181,4 @@ Congratulations! Your portal developer user has been created and you are ready f
 
 </details>
 
-Click [here](/300-integration-managing-events-and-apis-from-unified-environment/demo-script) to go to the **Demo script** on the next tab.
+Click [here](/platinum-demos/300-integration-managing-events-and-apis-from-unified-environment/demo-script) to go to the **Demo script** on the next tab.
