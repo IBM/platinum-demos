@@ -36,7 +36,7 @@ To provision your own Red Hat OpenShift cluster for the Cloud Pak for Integratio
 <br/><img src="../integration/images/prep-image003.png" width="800" />
 <br/>
 
-4. Several additional fields will appear. Select **4.14** (1) as the OpenShift version, **ODF - 2TB** (2) for the storage, **8 vCPU x 32 GB - 100 GB ephemeral storage** (3) as the worker node flavor, accept the terms and conditions (4) and click **Submit**.
+4. Several additional fields will appear. Select **4.14** (1) as the OpenShift version, **ODF - 2TB** (2) for the storage, **16 vCPU x 64 GB - 100 GB ephemeral storage** (3) as the worker node flavor, accept the terms and conditions (4) and click **Submit**.
 <br/><img src="../integration/images/prep-image004.png" width="800" />
 <br/>
 
