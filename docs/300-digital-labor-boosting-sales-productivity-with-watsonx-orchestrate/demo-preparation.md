@@ -103,10 +103,10 @@ The next personal skill to add will be based on a decision model imported into A
 
 <summary>5 - Update the Salesforce OpenAPI file</summary>
 
-<inline-notification text="The OpenAPI file must be updated before it can be used to import a new skill. This is necessary as Orchestrate uses two attributes as the unique ID for the skill and the skill has already been imported as a team skill.<br/> We recommend using Microsoft VSCode editor to edit the OpenAPI file."></inline-notification>
+<inline-notification text="The OpenAPI file must be updated before it can be used to import a new skill. This is necessary as Orchestrate uses  a few attributes as the unique ID for the skill and this skill has already been imported as a team skill.<br/> We recommend using Microsoft VSCode editor to edit the OpenAPI file."></inline-notification>
 
 1. Download the OpenAPI file: <a href="files/GetSalesforceCustomers.json" target="_blank" rel="noreferrer">GetSalesforceCustomers.json</a><br/><br/>
-2. In a multi-user environment, we must provide unique values for the API. There are three attributes to update:**description**, **summary** and **operationId**. <br/> <img src="images/Prep-3-1.png" width="800" /><br/><br/> Add your initials and date to the three attributes. Your changes should look as below:<br/> <img src="images/Prep-3-1-2.png" width="800" /></br/>
+2. In a multi-user environment, we must provide unique values for the API. There are five attributes to update: **title** and **description** in the "info" section (near the top of the file), and **description**, **summary** and **operationId** in the "paths" section (near the bottom of the file). <br/> <img src="images/Prep-3-1-0.png" width="800" /><br/> <img src="images/Prep-3-1.png" width="800" /><br/><br/> Add your initials and date to the five attributes. Your changes should look as below:<br/><img src="images/Prep-3-1-1.png" width="800" /><br/><img src="images/Prep-3-1-2.png" width="800" /></br/>
 
 </details>
 
