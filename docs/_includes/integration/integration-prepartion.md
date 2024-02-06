@@ -105,7 +105,7 @@ You have successfully configured the Openshift command line on your machine.
 
 <summary>3 - Clone the demo assets from a GitHub repository</summary>
 
-To copy the repository you will need to have the Git CLI on your machine. If you don’t have it, follow the installation steps described in this page, based on your operating system.
+To copy the repository you will need to have the Git CLI on your machine. If you don’t have it, follow the installation steps described in this <a href="https://github.com/git-guides/install-git" target="_blank" rel="noreferrer">page</a>, based on your operating system.
 
 
 1. To download the scripts to install the demo, create a new directory, change to this newly created directory, and run the following command:
