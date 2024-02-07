@@ -1,20 +1,17 @@
 ---
-title: IBM Automation Platinum Demos
+title: IBM IT Automation Platinum Demos
 layout: index
-itautomation-button-class: header-button
+itautomation-button-class: header-button-selected
 businessautomation-button-class: header-button
-integration-button-class: header-button-selected
+integration-button-class: header-button
 ---
 <br/>
 <br/>
 
-| **INTEGRATION PLATINUM DEMOS** | | 
+| **IT AUTOMATION PLATINUM DEMOS** | | 
 | :---         | :--- |
-| **[API-enabled application integration](https://ibm.github.io/platinum-demos/300-integration-api-enabled-application-integration/demo-preparation)** | Automate customer interactions using APIs and integration |
-| **[Low-code integration using AI](https://ibm.github.io/platinum-demos/300-integration-low-code-integration-using-ai/demo-preparation)** | Synchronize application data using AI powered low-code integration |
-| **[Managing events and APIs from a unified environment](https://ibm.github.io/platinum-demos/300-integration-managing-events-and-apis-from-unified-environment/demo-preparation)** | Share and govern Kafka events in the same environment used to manage APIs |
-| **[Enhancing business automation with integration](https://ibm.github.io/platinum-demos/300-enhancing-ba-with-integration/demo-preparation)** | Combine integration and business automation to provide data to business processes |
-| **[Scalable and resilient cloud-native integration](https://ibm.github.io/platinum-demos/300-integration-scalable-and-resilient-cloud-native-integration/demo-preparation)** | Maintain, enhance and elastically scale IBM MQ and IBM App Connect Enterprise cloud-native integration. |
+| **[Observability](https://ibm-garage-tsa.github.io/platinum-demos/300-watson-aiops-observability/demo-preparation/)** | Enable transaction-level observability in dynamic hybrid environments |
+| **[Proactive outage avoidance](https://ibm-garage-tsa.github.io/platinum-demos/300-watson-aiops-proactive-outage-avoidance/demo-preparation/)** | Proactively identify, diagnose, and resolve incidents across mission-critical workloads |
+| **[Application resource manangement](https://ibm-garage-tsa.github.io/platinum-demos/300-watson-aiops-application-resource-management/demo-preparation/)** | Assure application efficiency and performance by optimizing private cloud resources |
+| **[Using FinOps to manage cost on public cloud](https://ibm-garage-tsa.github.io/platinum-demos/300-watson-aiops-using-finops-to-manage-cost-on-public-cloud/demo-preparation/)** | Optimize public cloud costs without compromising performance |
 | **[Using Instana to observe Cloud Pak for Integration](https://ibm.github.io/platinum-demos/300-using-instana-to-observe-cloud-pak-for-integration/demo-preparation)** | Quickly identify the root cause of an incident in an integration use case |
-| **[Using event automation to create Kafka streams from IBM MQ](https://ibm.github.io/platinum-demos/300-integration-using-event-automation-to-create-kafka-streams-from-ibm-mq/demo-preparation)** | Use real-time MQ transaction data to capitalize on time-sensitive revenue opportunities |
-| **[Detecting time-critical situations using Event Automation](https://ibm.github.io/platinum-demos/300-integration-detecting-time-critical-situtations-using-event-automation/demo-preparation)** | Use Event Automation to capitalize on time-sensitive revenue opportunities |
