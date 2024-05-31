@@ -16,7 +16,7 @@ Our application is a content management app called Quote of the Day (QotD) that 
 
 We will demonstrate how Instana integrates seamlessly with the Ansible Automation platform to identify potential playbooks that are good candidates to resolve an incident. We will then show how the playbook can be executed natively from Instana, eliminating the need to jump across tools to resolve an incident.
 
-Let’s get started
+Let’s get started.
 
 
 <br/>
@@ -173,7 +173,7 @@ Let’s get started
 
 <summary>Summary</summary>
 
-In this demo we demonstrated how the Automation Framework elevates Instana beyond just an observability tool that does rapid root cause analysis, to also include incident resolution. The Instana-Ansible integration enables IT Ops teams to automatically execute remedial actions in a timely manner, right from within Instana without having to hop across other automation tools. This feature accelerates the time to fix an incident and drastically reduces down time.
+In this demo, we demonstrated how the Automation Framework elevates Instana beyond just an observability tool that does rapid root cause analysis, to also include incident resolution. The Instana-Ansible integration enables IT Ops teams to automatically execute remedial actions in a timely manner, right from within Instana without having to hop across other automation tools. This feature accelerates the time to fix an incident and drastically reduces down time.
 
 Thank you for attending today’s presentation.
 
