@@ -1,7 +1,7 @@
 ---
 title: Unifying application management with IBM Concert <br/>100-level live demo
 layout: preparation
-banner: images/instana-ansible-banner-prep.jpg
+banner: images/placeholder.jpg
 ---
 
 <span id="top"></span>
