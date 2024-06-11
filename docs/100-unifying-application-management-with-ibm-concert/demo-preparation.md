@@ -4,8 +4,6 @@ layout: preparation
 banner: images/instana-ansible-banner-prep.jpg
 ---
 
-<span id="place1"></span>
-
 <span id="top"></span>
 
 | **DEMO OVERVIEW** | | 
