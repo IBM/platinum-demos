@@ -1,5 +1,5 @@
 ---
-title: Simplifying application management with IBM Concert <br/>300-level live demo
+title: Unifying application management with IBM Concert <br/>300-level live demo
 layout: demoscript
 banner: images/placeholder.jpg
 ---
