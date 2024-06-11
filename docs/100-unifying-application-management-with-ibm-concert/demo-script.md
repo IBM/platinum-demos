@@ -1,7 +1,7 @@
 ---
-title: Unifying application management with IBM Concert <br/>300-level live demo
+title: Unifying application management with IBM Concert <br/>100-level live demo
 layout: demoscript
-banner: images/placeholder.jpg
+banner: images/instana-ansible-banner-script.jpg
 ---
 
 <span id="top"></span>
@@ -75,11 +75,14 @@ Let’s get started.
 
 <br/>
 
-| **3.1** | **Placeholder** |
+| **3.1** | **Placeholder - Compliance** |
 | :--- | :--- |
 | **Narration** | In addition to the baseline application information, Concert can ingest a broad set of data including security, compliance, observability, networking, DevSecOps and cost. Concert normalizes and correlates the ingested data, then uses a generative AI engine to identify issues. <br/><br/> As issues are identified, the operations manager knows he can’t fix all of them immediately. Concert helps him by prioritizing the issues that pose the biggest impact to his specific applications and their environments. |
 | **Action** &nbsp; 3.1.1 | Click the **Latest compliance assessments** switch. <br/> <img src="images/3-1-1.png" width="800" /> |
 | **Narration** | The operations manager is charged with maintaining a good compliance posture and needs to ensure that all his applications adhere to regulatory requirements. <br/><br/> By clicking on ‘Latest compliance assessments,’ the operations manager sees a summary of the compliance assessments for his application environments. The lighter circles represent the environments with the lowest compliance scores, while the darker circles represent those with higher compliance scores. |
+
+| **3.2** | **Placeholder - CVEs** |
+| :--- | :--- |
 | **Action** &nbsp; 3.1.2 | Click the **Prioritized CVEs** switch. <br/> <img src="images/3-1-2.png" width="800" /> |
 | **Narration** | The operations manager must also manage the ongoing threats posed by Common Vulnerabilities and Exposures (CVEs). There can be hundreds or even thousands of CVEs that pose potential threats. Concert enables the operations team to prioritize the highest risk vulnerabilities – based on the actual exposure in their specific application environment. Concert uses the details of the specific environment, along with proprietary threat intelligence and business criticality, to calculate the risk posed by each vulnerability. <br/><br/> By clicking on ‘Prioritized CVEs,’ the operations manager sees the higher priority CVEs. The darkest circles represent the most critical CVEs. |
 | **Action** &nbsp; 3.1.3 | Click a high priority CVE (darkest red). <br/> <img src="images/3-1-3.png" width="800" /> <br/> <img src="images/3-1-4.png" width="800" /> |
