@@ -81,6 +81,8 @@ Let’s get started.
 | **Action** &nbsp; 3.1.1 | Click the **Latest compliance assessments** switch. <br/> <img src="images/3-1-1.png" width="800" /> |
 | **Narration** | The operations manager is charged with maintaining a good compliance posture and needs to ensure that all his applications adhere to regulatory requirements. <br/><br/> By clicking on ‘Latest compliance assessments,’ the operations manager sees a summary of the compliance assessments for his application environments. The lighter circles represent the environments with the lowest compliance scores, while the darker circles represent those with higher compliance scores. |
 
+<br/>
+
 | **3.2** | **Prioritize and view CVEs** |
 | :--- | :--- |
 | **Action** &nbsp; 3.2.1 | Click the **Prioritized CVEs** switch. <br/> <img src="images/3-2-1.png" width="800" /> |
@@ -124,7 +126,7 @@ Let’s get started.
 
 <br/>
 
-| **5.1** | **Placeholder** |
+| **5.1** | **Open a ticket** |
 | :--- | :--- |
 | **Narration** | Now that the operations manager fully understands the potential impact of the CVE on his application environment, he can create a service ticket to resolve the issue. Alternatively, the operations manager can configure automation rules to automatically create and assign tickets in the ticketing syste |
 | **Action** &nbsp; 5.1.1 | Click **Open ticket** in the first row. <br/> <img src="images/5-1-1.png" width="800" /> <br/><br/> The following **Open a ticket** screen will appear. <br/> <img src="images/5-1-2.png" width="800" /> |
