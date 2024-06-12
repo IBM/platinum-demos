@@ -17,20 +17,17 @@ banner: images/placeholder.jpg
 
 <details markdown="1">
 
-<summary>Placeholder</summary>
+<summary>Access the IBM Concert environment</summary>
 
-<br/>
+Log in to Concert using the following URL and credentials: <br/>
+•	URL: https://TBD <br/>
+•	Username: TBD <br/>
+•	Password: TBD <br/>
 
-</details>
-
-<p/>
-
-<details markdown="1">
-
-<summary>Placeholder</summary>
-
-<br/>
+Remain on the home screen and you are ready to give the demo.
 
 </details>
 
-<p/>
+***
+
+Click [here](demo-script) to go to the **Demo script** on the next tab.
