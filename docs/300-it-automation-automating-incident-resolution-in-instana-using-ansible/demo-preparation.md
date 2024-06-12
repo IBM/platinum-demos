@@ -48,4 +48,6 @@ Login to Ansible using the following URL and credentials:
 
 </details>
 
-<p/>
+***
+
+Click [here](demo-script) to go to the **Demo script** on the next tab.
