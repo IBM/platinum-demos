@@ -83,9 +83,9 @@ Let’s get started.
 
 | **3.2** | **Prioritize and view CVEs** |
 | :--- | :--- |
-| **Action** &nbsp; 3.1.2 | Click the **Prioritized CVEs** switch. <br/> <img src="images/3-1-2.png" width="800" /> |
-| **Narration** | The operations manager must also manage the ongoing threats posed by Common Vulnerabilities and Exposures (CVEs). There can be hundreds or even thousands of CVEs that pose potential threats. Concert enables the operations team to prioritize the highest risk vulnerabilities – based on the actual exposure in their specific application environment. Concert uses the details of the specific environment, along with proprietary threat intelligence and business criticality, to calculate the risk posed by each vulnerability. <br/><br/> By clicking on ‘Prioritized CVEs,’ the operations manager sees the higher priority CVEs. The darkest circles represent the most critical CVEs. |
-| **Action** &nbsp; 3.1.3 | Click a high priority CVE (darkest red). <br/> <img src="images/3-1-3.png" width="800" /> <br/> <img src="images/3-1-4.png" width="800" /> |
+| **Action** &nbsp; 3.2.1 | Click the **Prioritized CVEs** switch. <br/> <img src="images/3-2-1.png" width="800" /> |
+| **Narration** | The operations manager must also manage the ongoing threats posed by Common Vulnerabilities and Exposures (CVEs). There can be hundreds or even thousands of CVEs that pose potential threats. Concert enables the operations team to prioritize the highest risk vulnerabilities – based on the actual exposure in their specific application environment. Concert uses the details of the specific environment, along with proprietary threat intelligence and business criticality, to calculate the risk posed by each vulnerability. <br/><br/> By clicking ‘Prioritized CVEs,’ the operations manager sees the higher priority CVEs. The darkest circles represent the most critical CVEs. |
+| **Action** &nbsp; 3.2.2 | Click a high priority CVE (darkest red). <br/> <img src="images/3-2-2.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/3-2-3.png" width="800" /> |
 | **Narration** | The operations manager selects a CVE to view the details and sees the "blast radius" showing each image and repository where the vulnerable code is deployed. |
 
 **[Go to top](#top)**
@@ -105,8 +105,30 @@ Let’s get started.
 | **4.1** | **Interact with the chatbot** |
 | :--- | :--- |
 | **Action** &nbsp; 4.1.1 | Click **Ask watsonx**. <br/> <img src="images/4-1-1.png" width="800" /> |
-| **Narration** | Concert’s interactive chatbot uses generative AI to dig deeper into Concert’s specific suggestions and explain the potential impact and remediation of each issue. The chatbot uses IBM’s Granite language model and comes pre-trained to have interactive conversations about application risk. The operations manager interactively asks questions about CVE details and engages in a discussion about remediation guidance. Concert responds just as a CVE expert would. |
+| **Narration** | Concert’s interactive chatbot uses generative AI to dig deeper into Concert’s specific suggestions and explain the potential impact and remediation of each issue. The chatbot uses IBM’s Granite language model and comes pre-trained to have interactive conversations about application risk. The operations manager interactively asks questions about CVE details and engages in a discussion about remediation guidance. |
 | **Action** &nbsp; 4.1.2 | Type '**How do I mitigate this CVE?**' in the chatbot. <br/> <img src="images/4-1-2.png" width="800" /> |
+| **Narration** | Concert responds like an expert, providing the operations manager with deeper insight into the vulnerability and offering remediation guidance. |
+| **Action** &nbsp; 4.1.3 | Click **X** to close the chatbot window. <br/> <img src="images/4-1-3.png" width="800" /> |
+
+**[Go to top](#top)**
+
+<br/><br/>
+
+</details>
+
+<p/>
+
+<details markdown="1">
+
+<summary>5 - Creating a service ticket</summary>
+
+<br/>
+
+| **5.1** | **Placeholder** |
+| :--- | :--- |
+| **Narration** | Now that the operations manager fully understands the potential impact of the CVE on his application environment, he can create a service ticket to resolve the issue. Alternatively, the operations manager can configure automation rules to automatically create and assign tickets in the ticketing syste |
+| **Action** &nbsp; 5.1.1 | Click **Open ticket** in the first row. <br/> <img src="images/5-1-1.png" width="800" /> <br/><br/> The following **Open a ticket** screen will appear. <br/> <img src="images/5-1-2.png" width="800" /> |
+| **Narration** | Concert can connect directly to popular ticketing systems, such as GitHub, Jira and ServiceNow to automatically generate service tickets to remediate the vulnerability. Concert automatically inserts the appropriate text into the ticket fields, automating what would otherwise be a time-consuming task. |
 
 **[Go to top](#top)**
 
