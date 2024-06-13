@@ -14,9 +14,7 @@ As enterprises develop and deploy an increasing number of software applications,
 
 Leveraging data from various tools, IBM Concert empowers security managers to gain a comprehensive view of vulnerabilities across their homegrown application landscape. Using Concert’s advanced AI analytics engine, we can accurately assess vulnerability risk tailored to each customer's specific environment. Concert identifies potential threats, evaluates their impact, and provides actionable recommendations to prioritize and mitigate risks effectively.
 
-Let’s delve into how IBM Concert revolutionizes vulnerability management and enhances your security posture.
-
-Let’s get started.
+Let’s delve into how IBM Concert helps manage vulnerabilities and enhances your security posture.
 
 <br/>
 
@@ -56,7 +54,7 @@ Let’s get started.
 
 | **2.1** | **Placeholder** |
 | :--- | :--- |
-| **Action** &nbsp; 2.1.1 | Click a high priority CVE. <br/> <img src="images/2-1-1.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/2-1-2.png" width="800" /> |
+| **Action** &nbsp; 2.1.1 | Click **CVE-2022-42889**. <br/> <img src="images/2-1-1.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/2-1-2.png" width="800" /> |
 | **Narration** | The security manager selects a CVE to view the details and sees the "blast radius" showing each image and repository where the vulnerable code is deployed. <br/><br/> The CVE view provides the security manager with a summary of the issue, the industry-defined generic CVSS score, and a custom Concert risk score. Instead of relying on generic assessments, Concert uses gen AI to correlate vulnerability data using multiple risk vectors to analyze complex chains of application dependencies and uncover the highest severity risks in an organization’s specific environment. This enables Concert to generate a score based on the actual exposure in their specific application environment. Concert then uses the details of the specific environment, along with proprietary threat intelligence and business criticality, to calculate the risk posed by each vulnerability. |
 
 **[Go to top](#top)**
