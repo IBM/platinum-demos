@@ -51,7 +51,7 @@ Let’s get started.
 | **2.1** | **Discover application connections and dependencies** |
 | :--- | :--- |
 | **Action** &nbsp; 2.1.1 | Click **Arena view**. <br/> <img src="images/2-1-1.png" width="800" /> |
-| **Narration** | The Arena view provides the operations manager with a comprehensive overview of his entire application ecosystem. Concert ingests data from multiple sources and creates this "App 360" view showing all the applications, environments, source code repositories and deployed images. <br/><br/> The operations manager can hover over any component to highlight the associated dependencies. |
+| **Narration** | The 'Arena view' provides the operations manager with a comprehensive overview of his entire application ecosystem. Concert ingests data from multiple sources and creates this "App 360" view showing all the applications, environments, source code repositories and deployed images. <br/><br/> The operations manager can hover over any component to highlight the associated dependencies. |
 | **Action** &nbsp; 2.1.2 | Hover over the **paymentApp** application. <br/> <img src="images/2-1-2.png" width="800" /> |
 | **Narration** | Looking at 'paymentApp,' he sees the Docker images and Github repositories associated with 'paymentApp.' He also sees the environments where ‘paymentApp’ is deployed (in this case, dev, QA, staging and two production environments). |
 | **Action** &nbsp; 2.1.3 | Hover over the **prod** environment. <br/> <img src="images/2-1-3.png" width="800" /> |
