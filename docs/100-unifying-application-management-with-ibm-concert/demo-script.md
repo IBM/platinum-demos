@@ -24,7 +24,7 @@ Let’s get started.
 
 <details markdown="1">
 
-<summary>1 - Viewing a summary of application posture</summary>
+<summary>1 - Viewing a summary of the application posture</summary>
 
 <br/>
 
