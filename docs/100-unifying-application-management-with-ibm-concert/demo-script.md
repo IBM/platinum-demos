@@ -31,7 +31,7 @@ Let’s get started.
 | **1.1** | **Examine the application landscape** |
 | :--- | :--- |
 | **Narration** | The operations manager at Focus Financial manages applications hosted across various environments. The application team has recently adopted a microservices architecture which has increased complexity as the applications now span multiple servers and cloud providers. This has introduced new challenges related to security, compliance and change management. |
-| **Action** &nbsp; 1.1.1 | Show the home page. <br/> <img src="images/1-1-1.png" width="800" /> |
+| **Action** &nbsp; 1.1.1 | Show the **Home** page, which you opened during demo preparation. <br/> <img src="images/1-1-1.png" width="800" /> |
 | **Narration** | Upon logging into Concert the operations manager sees a comprehensive overview of his organization’s application lifecycle. His entire application posture is displayed, highlighting key metrics tied to risk, compliance, cost and networking. <br/><br/> The blue sections of the circle indicate areas where the operations team has connected Concert to their application data. The outer red sections indicate problem areas that need to be investigated by the operations team. The gray areas of the circle represent opportunities to provide more information so Concert can provide additional insights. |
 
 **[Go to top](#top)**
