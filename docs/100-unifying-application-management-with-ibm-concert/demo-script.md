@@ -10,9 +10,9 @@ banner: images/placeholder.jpg
 
 <summary>Introduction</summary>
 
-Today we’ll see how IBM Concert assists an operations manager in understanding and maintaining his diverse application landscape. I’ll show how Concert enables him to discover and manage the connections, dependencies and gaps in his application architecture.  
+Today we’ll explore how IBM Concert assists an operations manager in understanding and managing a diverse application landscape. I’ll show how Concert enables him to discover and manage the connections, dependencies and opportunities in his application ecosystem.
 
-Using data from disparate tools, we’ll see how Concert provides the operations manager with a baseline view of applications and their dependencies. Then we’ll use Concert’s generative AI capabilities to discover issues and provide actionable recommendations to maintain application health.
+By unifying data from disparate tools, we’ll see how Concert provides the operations manager with a baseline view of his applications and their dependencies. Then we’ll use Concert’s generative AI capabilities to prioritize issues and provide actionable remediation recommendations to maintain application health.
 
 Let’s get started.
 
@@ -144,7 +144,9 @@ Let’s get started.
 
 <summary>Summary</summary>
 
-Today we saw how Concert uses generative AI to help an operations manager mitigate risk, prioritize tasks and optimize their operations. We showed how Concert can bridge data silos to help operational teams proactively ensure the health of their operations.
+We’ve shown how Concert helps an operations manager identify and prioritize application issues, and then facilitate remediation. Before using Concert, the operations team struggled with the manual efforts, multiple tools and extensive data required to manage their applications.
+
+The operations manager leveraged Concert to bridge data silos and provide a 360-degree view of their application operations. Concert analyzed data across diverse application infrastructures environments and helped the operations team proactively ensure the health of their applications.
 
 **[Go to top](#top)**
 
