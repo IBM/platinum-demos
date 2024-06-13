@@ -78,7 +78,7 @@ Let’s get started.
 | **3.1** | **View the compliance assessments** |
 | :--- | :--- |
 | **Narration** | In addition to the baseline application information, Concert can ingest a broad set of data including security, compliance, observability, networking, DevSecOps and cost. Concert normalizes and correlates the ingested data, then uses a generative AI engine to identify issues. <br/><br/> As issues are identified, the operations manager knows he can’t fix all of them immediately. Concert helps him by prioritizing the issues that pose the biggest impact to his specific applications and their environments. |
-| **Action** &nbsp; 3.1.1 | Click the **Latest compliance assessments** switch. <br/> <img src="images/3-1-1.png" width="800" /> |
+| **Action** &nbsp; 3.1.1 | Click the **Latest compliance assessments** switch (a green compliance section will appear in the diagram). <br/> <img src="images/3-1-1.png" width="800" /> |
 | **Narration** | The operations manager is charged with maintaining a good compliance posture and needs to ensure that all his applications adhere to regulatory requirements. <br/><br/> By clicking on ‘Latest compliance assessments,’ the operations manager sees a summary of the compliance assessments for his application environments. The lighter circles represent the environments with the lowest compliance scores, while the darker circles represent those with higher compliance scores. |
 
 <br/>
