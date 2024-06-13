@@ -34,12 +34,10 @@ Let’s get started.
 | :--- | :--- |
 | **Narration** | The security manager at Focus Financial is overwhelmed with a backlog of 20,000 CVEs, struggling to manage vulnerabilities across applications hosted in diverse environments. With the recent adoption of a microservices architecture, the complexity has surged as these applications now span multiple servers and cloud providers. This shift has introduced significant challenges in security and vulnerability management, making it crucial to find an efficient way to prioritize and address these CVEs. |
 | **Action** &nbsp; 1.1.1 | Show the home page. <br/> <img src="images/1-1-1.png" width="800" /> |
-| **Narration** | Upon logging into Concert, the security manager is presented with a circular dashboard, featuring arc slices that represent different aspects of the application landscape. The vulnerability summary is prominently highlighted by default, providing an immediate overview of his risk posture. |
-| **Action** &nbsp; 1.1.2 | Point out the right section of the home page. <br/> <img src="images/1-1-2.png" width="800" /> |
-| **Narration** | The right section provides a high-level overview of key vulnerability metrics, such as the number of total unique CVEs, the number of Priority 1,2 and 3 CVEs, and more. |
-| **Action** &nbsp; 1.1.3 | Scroll down the home page to show the **Most vulnerable applications** and **Prioritized CVEs impacting public access points** graphs. <br/> <img src="images/1-1-3.png" width="800" /> |
+| **Narration** | Upon logging into Concert, the security manager is presented with a circular dashboard, featuring arc slices that represent different aspects of the application landscape. The vulnerability summary is prominently highlighted by default, providing an immediate overview of his risk posture. <br/><br/> The right section provides a high-level overview of key vulnerability metrics, such as the number of total unique CVEs, the number of Priority 1,2 and 3 CVEs, and more. |
+| **Action** &nbsp; 1.1.2 | Scroll down the home page to show the **Most vulnerable applications** and **Prioritized CVEs impacting public access points** graphs. <br/> <img src="images/1-1-2.png" width="800" /> |
 | **Narration** | Scrolling down the home page, the security manager can see visual representations with a bar chart showing his most vulnerable applications on the left, and the prioritizes CVEs impacting public access points on the right. |
-| **Action** &nbsp; 1.1.4 | Scroll down the home page to show the **Highest prioritiy CVEs** table. <br/> <img src="images/1-1-4.png" width="800" /> |
+| **Action** &nbsp; 1.1.3 | Scroll down the home page to show the **Highest prioritiy CVEs** table. <br/> <img src="images/1-1-3.png" width="800" /> |
 | **Narration** | Finally, at the bottom of the home page, the security manager can see a table with the top 5 vulnerabilities displayed in order of priority. |
 
 **[Go to top](#top)**
@@ -58,7 +56,7 @@ Let’s get started.
 
 | **2.1** | **Placeholder** |
 | :--- | :--- |
-| **Action** &nbsp; 2.1.1 | Click the CVE with the highest priority. <br/> <img src="images/2-1-1.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/2-1-2.png" width="800" /> |
+| **Action** &nbsp; 2.1.1 | Click a high priority CVE. <br/> <img src="images/2-1-1.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/2-1-2.png" width="800" /> |
 | **Narration** | The security manager selects a CVE to view the details and sees the "blast radius" showing each image and repository where the vulnerable code is deployed. <br/><br/> The CVE view provides the security manager with a summary of the issue, the industry-defined generic CVSS score, and a custom Concert risk score. Instead of relying on generic assessments, Concert uses gen AI to correlate vulnerability data using multiple risk vectors to analyze complex chains of application dependencies and uncover the highest severity risks in an organization’s specific environment. This enables Concert to generate a score based on the actual exposure in their specific application environment. Concert then uses the details of the specific environment, along with proprietary threat intelligence and business criticality, to calculate the risk posed by each vulnerability. |
 
 **[Go to top](#top)**
