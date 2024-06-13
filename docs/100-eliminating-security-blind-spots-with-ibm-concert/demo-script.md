@@ -93,7 +93,7 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 
 | **4.1** | **Placeholder** |
 | :--- | :--- |
-| **Action** &nbsp; 4.1.1 | Click the **Prioritized CVEs** switch. <inline-notification text="A red <strong>Prioritized CVEs</strong> section will appear in the diagram."></inline-notification> <br/> <img src="images/4-1-1.png" width="800" /> |
+| **Action** &nbsp; 4.1.1 | Click the **Prioritized CVEs** switch. <inline-notification text="A red <strong>Prioritized CVEs</strong> section will appear in the diagram."></inline-notification> <img src="images/4-1-1.png" width="800" /> |
 | **Narration** | By clicking on ‘Prioritized CVEs,’ the operations manager sees the higher priority CVEs. The darkest circles represent the most critical CVEs. <br/><br/> Hovering over a CVE highlights the end-to-end exposure path of the CVE from repositories to endpoints. |
 
 **[Go to top](#top)**
