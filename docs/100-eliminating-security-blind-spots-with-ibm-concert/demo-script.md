@@ -30,7 +30,7 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 
 | **1.1** | **Placeholder** |
 | :--- | :--- |
-| **Narration** | The security manager at Focus Financial is overwhelmed with a backlog of 20,000 CVEs, struggling to manage vulnerabilities across applications hosted in diverse environments. With the recent adoption of a microservices architecture, the complexity has surged as these applications now span multiple servers and cloud providers. This shift has introduced significant challenges in security and vulnerability management, making it crucial to find an efficient way to prioritize and address these CVEs. |
+| **Narration** | The security manager at Focus Financial is overwhelmed with a backlog of 20,000 CVEs, struggling to manage vulnerabilities across applications hosted in diverse environments. With the recent adoption of a microservices architecture, the complexity has surged as these applications now span multiple servers and cloud providers. This shift has introduced significant challenges in security and vulnerability management, making it crucial to find an intelligent way to prioritize and address these CVEs. |
 | **Action** &nbsp; 1.1.1 | Show the **Home** page, which you opened during demo preparation. <br/> <img src="images/1-1-1.png" width="800" /> |
 | **Narration** | Upon logging into Concert, the security manager is presented with a circular dashboard, featuring arc slices that represent different aspects of the application landscape. The vulnerability summary is prominently highlighted by default, providing an immediate overview of his risk posture. <br/><br/> The right section provides a high-level overview of key vulnerability metrics, such as the number of total unique CVEs, the number of Priority 1,2 and 3 CVEs, and more. |
 | **Action** &nbsp; 1.1.2 | Scroll down the home page to show the **Most vulnerable applications** and **Prioritized CVEs impacting public access points** graphs. <br/> <img src="images/1-1-2.png" width="800" /> |
@@ -93,7 +93,7 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 
 | **4.1** | **Placeholder** |
 | :--- | :--- |
-| **Action** &nbsp; 4.1.1 | Click the **Prioritized CVEs** switch. <br/> <img src="images/4-1-1.png" width="800" /> |
+| **Action** &nbsp; 4.1.1 | Click the **Prioritized CVEs** switch. <inline-notification text="A red <strong>Prioritized CVEs</strong> section will appear in the diagram."></inline-notification> <br/> <img src="images/4-1-1.png" width="800" /> |
 | **Narration** | By clicking on ‘Prioritized CVEs,’ the operations manager sees the higher priority CVEs. The darkest circles represent the most critical CVEs. <br/><br/> Hovering over a CVE highlights the end-to-end exposure path of the CVE from repositories to endpoints. |
 
 **[Go to top](#top)**
