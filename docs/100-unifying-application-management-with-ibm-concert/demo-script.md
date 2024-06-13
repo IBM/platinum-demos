@@ -10,7 +10,7 @@ banner: images/placeholder.jpg
 
 <summary>Introduction</summary>
 
-Today we’ll explore how IBM Concert assists an operations manager in understanding and managing a diverse application landscape. I’ll show how Concert enables him to discover and manage the connections, dependencies and opportunities in his application ecosystem.
+Today we’ll explore how IBM Concert assists an operations manager in understanding and managing a diverse application landscape. I’ll show how Concert enables him to manage risk and compliance across his application ecosystem.
 
 By unifying data from disparate tools, we’ll see how Concert provides the operations manager with a baseline view of his applications and their dependencies. Then we’ll use Concert’s generative AI capabilities to prioritize issues and provide actionable remediation recommendations to maintain application health.
 
