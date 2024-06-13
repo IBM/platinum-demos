@@ -24,7 +24,7 @@ Let’s get started.
 
 <details markdown="1">
 
-<summary>1 - Viewing a summary of your application posture</summary>
+<summary>1 - Viewing a summary of application posture</summary>
 
 <br/>
 
@@ -128,7 +128,7 @@ Let’s get started.
 
 | **5.1** | **Open a ticket** |
 | :--- | :--- |
-| **Narration** | Now that the operations manager fully understands the potential impact of the CVE on his application environment, he can create a service ticket to resolve the issue. Alternatively, the operations manager can configure automation rules to automatically create and assign tickets in the ticketing syste |
+| **Narration** | Now that the operations manager fully understands the potential impact of the CVE on his application environment, he can create a service ticket to resolve the issue. Alternatively, the operations manager can configure automation rules to automatically create and assign tickets in the ticketing system. |
 | **Action** &nbsp; 5.1.1 | Click **Open ticket** in the first row. <br/> <img src="images/5-1-1.png" width="800" /> <br/><br/> The following **Open a ticket** screen will appear. <br/> <img src="images/5-1-2.png" width="800" /> |
 | **Narration** | Concert can connect directly to popular ticketing systems, such as GitHub, Jira and ServiceNow to automatically generate service tickets to remediate the vulnerability. Concert automatically inserts the appropriate text into the ticket fields, automating what would otherwise be a time-consuming task. |
 
