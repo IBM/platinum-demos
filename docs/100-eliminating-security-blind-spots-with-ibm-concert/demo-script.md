@@ -36,7 +36,7 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 | **Action** &nbsp; 1.1.2 | Scroll down the home page to show the **Most vulnerable applications** and **Prioritized CVEs impacting public access points** graphs. <br/> <img src="images/1-1-2.png" width="800" /> |
 | **Narration** | Scrolling down the home page, the security manager can see visual representations with a bar chart showing his most vulnerable applications on the left, and the prioritized CVEs impacting public access points on the right. |
 | **Action** &nbsp; 1.1.3 | Scroll down the home page to show the **Highest prioritiy CVEs** table. <br/> <img src="images/1-1-3.png" width="800" /> |
-| **Narration** | Finally, at the bottom of the home page, the security manager can see a table with the top 5 vulnerabilities displayed in order of priority. |
+| **Narration** | Finally, at the bottom of the home page, the security manager can see a table with the top five vulnerabilities displayed in order of priority. |
 
 **[Go to top](#top)**
 
