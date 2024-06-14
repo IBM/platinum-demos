@@ -10,9 +10,9 @@ banner: images/placeholder.jpg
 
 <summary>Introduction</summary>
 
-Today we’ll explore how IBM Concert assists an operations manager in understanding and managing a complex application landscape. I’ll show how Concert manages risk and compliance across his application ecosystem.
+Today we’ll explore how IBM Concert assists an operations manager in understanding and managing a complex application landscape. I’ll show how Concert manages risk and compliance across the application ecosystem.
 
-By unifying data from disparate tools, we’ll see how Concert provides the operations manager with a holistic view of his applications and their dependencies. Then we’ll use Concert’s generative AI capabilities to prioritize issues and provide actionable remediation recommendations to maintain application health.
+By unifying data from disparate tools, we’ll see how Concert provides the operations manager with a holistic view of the applications and their dependencies. Then we’ll use Concert’s generative AI capabilities to prioritize issues and provide actionable remediation recommendations to maintain application health.
 
 Let’s get started.
 
@@ -32,7 +32,7 @@ Let’s get started.
 | :--- | :--- |
 | **Narration** | The operations manager at Focus Financial manages applications hosted across various environments. The application team has recently adopted a microservices architecture which has increased complexity as the applications now span multiple servers and cloud providers. This has introduced new challenges related to security, compliance and change management. |
 | **Action** &nbsp; 1.1.1 | Show the **Home** page, which you opened during demo preparation. <br/> <img src="images/1-1-1.png" width="800" /> |
-| **Narration** | Upon logging into Concert the operations manager sees a comprehensive overview of his organization’s application lifecycle. His entire application posture is displayed, highlighting key metrics tied to risk, compliance, cost and networking. <br/><br/> The blue sections of the circle indicate areas where the operations team has connected Concert to their application data. The outer red sections indicate problem areas that need to be investigated by the operations team. The gray areas of the circle represent opportunities to provide more information so Concert can provide additional insights. |
+| **Narration** | Upon logging into Concert, the operations manager sees a comprehensive overview of the organization’s application lifecycle. The entire application posture is displayed, highlighting key metrics tied to risk, compliance, cost and networking. <br/><br/> The blue sections of the circle indicate areas where the operations team has connected Concert to their application data. The outer red sections indicate problem areas that need to be investigated by the operations team. The gray areas of the circle represent opportunities to provide more information so Concert can provide additional insights. |
 
 **[Go to top](#top)**
 
@@ -51,9 +51,9 @@ Let’s get started.
 | **2.1** | **Discover application connections and dependencies** |
 | :--- | :--- |
 | **Action** &nbsp; 2.1.1 | Click **Arena view**. <br/> <img src="images/2-1-1.png" width="800" /> |
-| **Narration** | The 'Arena view' provides the operations manager with a comprehensive overview of his entire application ecosystem. Concert ingests data from multiple sources and creates this "App 360" view showing all the applications, environments, source code repositories and deployed images. <br/><br/> The operations manager can hover over any component to highlight the associated dependencies. |
+| **Narration** | The 'Arena view' provides the operations manager with a comprehensive overview of the entire application ecosystem. Concert ingests data from multiple sources and creates this "App 360" view showing all the applications, environments, source code repositories and deployed images. <br/><br/> The operations manager can hover over any component to highlight the associated dependencies. |
 | **Action** &nbsp; 2.1.2 | Hover over the **paymentApp** application. <br/> <img src="images/2-1-2.png" width="800" /> |
-| **Narration** | Looking at 'paymentApp,' he sees the Docker images and Github repositories associated with 'paymentApp.' He also sees the environments where ‘paymentApp’ is deployed (in this case, dev, QA, staging and two production environments). |
+| **Narration** | Looking at the 'paymentApp,' they see the Docker images and Github repositories associated with that app. They also see the environments where ‘paymentApp’ is deployed (in this case, dev, QA, staging and two production environments). |
 | **Action** &nbsp; 2.1.3 | Hover over the **prod** environment. <br/> <img src="images/2-1-3.png" width="800" /> |
 | **Narration** | Highlighting the 'prod' environment shows the applications that are deployed and the exposed public and private access points. |
 | **Action** &nbsp; 2.1.4 | Hover over any **Deployed image**. <br/> <img src="images/2-1-4.png" width="800" /> |
