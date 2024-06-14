@@ -1,5 +1,5 @@
 ---
-title: Unifying application management with IBM Concert <br/>100-level live demo
+title: Using gen AI to manage the application portfolio <br/>100-level live demo
 layout: preparation
 banner: images/placeholder.jpg
 ---

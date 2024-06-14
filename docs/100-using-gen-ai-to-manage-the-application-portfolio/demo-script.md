@@ -1,5 +1,5 @@
 ---
-title: Unifying application management with IBM Concert <br/>100-level live demo
+title: Using gen AI to manage the application portfolio <br/>100-level live demo
 layout: demoscript
 banner: images/placeholder.jpg
 ---
@@ -24,7 +24,7 @@ Let’s get started.
 
 <details markdown="1">
 
-<summary>1 - Viewing a summary of the application posture</summary>
+<summary><strong>1 - Home page</strong>: Focus on the highest priority issues</summary>
 
 <br/>
 
@@ -44,7 +44,7 @@ Let’s get started.
 
 <details markdown="1">
 
-<summary>2 - Visualizing the application ecosystem</summary>
+<summary><strong>2 - Arena view</strong>: Interactive map of the application portfolio</summary>
 
 <br/>
 
@@ -71,7 +71,7 @@ Let’s get started.
 
 <details markdown="1">
 
-<summary>3 - Assessing and prioritizing application risk</summary>
+<summary><strong>3 - Turning data into knowledge</strong>: Manage application risk</summary>
 
 <br/>
 
@@ -100,7 +100,7 @@ Let’s get started.
 
 <details markdown="1">
 
-<summary>4 - Using conversational AI to gain deeper insights</summary>
+<summary><strong>4 - watsonx chatbot</strong>: Expert analysis and guidance</summary>
 
 <br/>
 
@@ -122,7 +122,7 @@ Let’s get started.
 
 <details markdown="1">
 
-<summary>5 - Creating a service ticket</summary>
+<summary><strong>5 - Service ticket generation</strong>: Quickly resolve application issues</summary>
 
 <br/>
 
