@@ -10,7 +10,7 @@ banner: images/placeholder.jpg
 
 <summary>Introduction</summary>
 
-Today we’ll explore how IBM Concert assists an operations team with managing a complex application landscape. Concert leverages AI across the entire technology operations and helps understand, engage and act at the right time for the right outcomes.
+Today we’ll explore how IBM Concert assists an operations team with managing a complex application landscape. Concert leverages AI across the entire technology operation, enabling timely and effective decision-making.
 
 By seamlessly integrating with existing environments and toolsets and automatically discovering relevant data about the operations, we’ll see how Concert provides the operations team with a holistic view of the applications and their dependencies. Then we’ll use Concert’s generative AI capabilities to prioritize issues and provide actionable remediation recommendations to maintain application health.
 
