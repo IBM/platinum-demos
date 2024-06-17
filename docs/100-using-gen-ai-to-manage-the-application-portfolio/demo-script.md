@@ -1,5 +1,5 @@
 ---
-title: Using gen AI to manage the application portfolio <br/>100-level live demo
+title: <small> IBM Concert demo </small> <br/> Using gen AI to manage the application portfolio <br/> 100-level live demo
 layout: demoscript
 banner: images/placeholder.jpg
 ---
