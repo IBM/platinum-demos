@@ -32,7 +32,7 @@ Let’s get started.
 | :--- | :--- |
 | **Narration** | The operations manager at Focus Financial manages applications hosted across various environments. The application team has recently adopted a microservices architecture which has increased complexity as the applications now span multiple servers and cloud providers. This has introduced new challenges related to security, compliance and change management. |
 | **Action** &nbsp; 1.1.1 | Show the **Home** page, which you opened during demo preparation. <br/> <img src="images/1-1-1.png" width="800" /> |
-| **Narration** | Upon logging into Concert, the operations manager sees a comprehensive overview of the organization’s application lifecycle. The entire application posture is displayed, highlighting key metrics tied to risk, compliance, cost and networking. <br/><br/> The blue sections of the circle indicate areas where the operations team has connected Concert to their application data. The outer red sections indicate problem areas that need to be investigated by the operations team. The gray areas of the circle represent opportunities to provide more information so Concert can provide additional insights. |
+| **Narration** | Upon logging into Concert, the operations manager sees a comprehensive overview of the organization’s application lifecycle. Concert provides comprehensive AI-generated insights that transcend traditional infrastructure silos. <br/><br/> The entire application posture is displayed, highlighting key metrics tied to risk, compliance, cost and networking. Application issues are prioritized based on their impact on applications, ensuring that the highest priority issues are addressed effectively. |
 
 **[Go to top](#top)**
 
@@ -107,7 +107,7 @@ Let’s get started.
 | **4.1** | **Interact with the chatbot** |
 | :--- | :--- |
 | **Action** &nbsp; 4.1.1 | Click **Ask watsonx**. <br/> <img src="images/4-1-1.png" width="800" /> |
-| **Narration** | Concert’s interactive chatbot uses generative AI to dig deeper into Concert’s specific suggestions and explain the potential impact and remediation of each issue. The chatbot uses IBM’s Granite language model and comes pre-trained to have interactive conversations about application risk. The operations manager interactively asks questions about CVE details and engages in a discussion about remediation guidance. |
+| **Narration** | Concert’s interactive chatbot uses generative AI to dig deeper into Concert’s analysis and engage in intuitive conversations. Natural language processing is used to question Concert’s  conclusions, comprehend its recommendations and explore the potential impacts. The chatbot uses IBM’s Granite language model and comes pre-trained to have interactive conversations about application risk. <br/><br/> For example, the operations manager can interactively ask questions about CVE details and engage in a discussion about Concert’s remediation guidance. |
 | **Action** &nbsp; 4.1.2 | Type '**How do I mitigate this CVE?**' in the chatbot. <br/> <img src="images/4-1-2.png" width="800" /> |
 | **Narration** | Concert responds like an expert, providing the operations manager with deeper insight into the vulnerability and offering remediation guidance. |
 | **Action** &nbsp; 4.1.3 | Click **X** to close the chatbot window. <br/> <img src="images/4-1-3.png" width="800" /> |
