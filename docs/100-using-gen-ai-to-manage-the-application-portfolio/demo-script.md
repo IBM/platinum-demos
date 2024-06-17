@@ -10,9 +10,9 @@ banner: images/placeholder.jpg
 
 <summary>Introduction</summary>
 
-Today we’ll explore how IBM Concert assists an operations manager in understanding and managing a complex application landscape. I’ll show how Concert manages risk and compliance across the application ecosystem.
+Today we’ll explore how IBM Concert assists an operations team with managing a complex application landscape. Concert leverages AI across the entire technology operations and helps understand, engage and act at the right time for the right outcomes.
 
-By unifying data from disparate tools, we’ll see how Concert provides the operations manager with a holistic view of the applications and their dependencies. Then we’ll use Concert’s generative AI capabilities to prioritize issues and provide actionable remediation recommendations to maintain application health.
+By seamlessly integrating with existing environments and toolsets and automatically discovering relevant data about the operations, we’ll see how Concert provides the operations team with a holistic view of the applications and their dependencies. Then we’ll use Concert’s generative AI capabilities to prioritize issues and provide actionable remediation recommendations to maintain application health.
 
 Let’s get started.
 
@@ -51,7 +51,7 @@ Let’s get started.
 | **2.1** | **Discover application connections and dependencies** |
 | :--- | :--- |
 | **Action** &nbsp; 2.1.1 | Click **Arena view**. <br/> <img src="images/2-1-1.png" width="800" /> |
-| **Narration** | The 'Arena view' provides the operations manager with a comprehensive overview of the entire application ecosystem. Concert ingests data from multiple sources and creates this "App 360" view showing all the applications, environments, source code repositories and deployed images. <br/><br/> The operations manager can hover over any component to highlight the associated dependencies. |
+| **Narration** | The operations team harnesses the power of generative AI as Concert delves into the application architecture, revealing intricate connections, dependencies and invaluable opportunities. <br/><br/> The ‘Arena view’ provides the operations manager with a 360-degree view of the entire application ecosystem. Concert connects with their environments and toolsets and ingests crucial data about the application’s operations. Concert automatically creates this “App 360” view showing all the applications, environments, source code repositories and deployed images. <br/><br/> The operations manager can hover over any component to highlight the associated dependencies. |
 | **Action** &nbsp; 2.1.2 | Hover over the **paymentApp** application. <br/> <img src="images/2-1-2.png" width="800" /> |
 | **Narration** | Looking at the 'paymentApp,' they see the Docker images and Github repositories associated with that app. They also see the environments where ‘paymentApp’ is deployed (in this case, dev, QA, staging and two production environments). |
 | **Action** &nbsp; 2.1.3 | Hover over the **prod** environment. <br/> <img src="images/2-1-3.png" width="800" /> |
@@ -75,20 +75,20 @@ Let’s get started.
 
 <br/>
 
-| **3.1** | **View the compliance assessments** |
+| **3.1** | **Prioritize and view CVEs** |
 | :--- | :--- |
-| **Narration** | In addition to the baseline application information, Concert can ingest a broad set of data including security, compliance, observability, networking, DevSecOps and cost. Concert normalizes and correlates the ingested data, then uses a generative AI engine to identify issues. <br/><br/> As issues are identified, the operations manager knows they can’t fix all of them immediately. Concert helps him by prioritizing the issues that pose the biggest impact to the specific applications and their environments. |
-| **Action** &nbsp; 3.1.1 | Click the **Latest compliance assessments** switch. <inline-notification text="A green <strong>Latest compliance assessments</strong> section will appear in the diagram."></inline-notification> <img src="images/3-1-1.png" width="800" /> |
-| **Narration** | The operations manager is charged with maintaining a good compliance posture and needs to ensure that all the applications adhere to regulatory requirements. <br/><br/> By clicking on ‘Latest compliance assessments,’ the operations manager sees a summary of the compliance assessments for the application environments. The lighter circles represent the environments with the lowest compliance scores, while the darker circles represent those with higher compliance scores. |
+| **Action** &nbsp; 3.1.1 | Click the **Prioritized CVEs** switch. <inline-notification text="A red <strong>Prioritized CVEs</strong> section will appear in the diagram."></inline-notification> <img src="images/3-2-1.png" width="800" /> |
+| **Narration** | The operations manager manages the ongoing threats posed by Common Vulnerabilities and Exposures (CVEs). Concert empowers the operations team to prioritize, mitigate and trace application vulnerabilities, ensuring resilient operations and reduced security risks by proactively revealing vulnerabilities before integration into the code base. <br/><br/> There can be hundreds, or even thousands, of CVEs that pose potential threats. Concert enables the operations team to prioritize the highest risk vulnerabilities – based on the actual exposure in their specific application environment. Concert uses the details of the specific environment, along with proprietary threat intelligence and business criticality, to calculate the risk posed by each vulnerability. <br/><br/> By clicking ‘Prioritized CVEs,’ the operations manager sees the higher priority CVEs. The darkest circles represent the most critical CVEs. |
+| **Action** &nbsp; 3.1.2 | Click a high priority CVE (darkest red). <br/> <img src="images/3-2-2.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/3-2-3.png" width="800" /> |
+| **Narration** | The operations manager selects a CVE to view the details and sees the "blast radius" showing each image and repository where the vulnerable code is deployed. |
 
 <br/>
 
-| **3.2** | **Prioritize and view CVEs** |
+| **3.2** | **View the compliance assessments** |
 | :--- | :--- |
-| **Action** &nbsp; 3.2.1 | Click the **Prioritized CVEs** switch. <inline-notification text="A red <strong>Prioritized CVEs</strong> section will appear in the diagram."></inline-notification> <img src="images/3-2-1.png" width="800" /> |
-| **Narration** | The operations manager must also manage the ongoing threats posed by Common Vulnerabilities and Exposures (CVEs). There can be hundreds, or even thousands, of CVEs that pose potential threats. Concert enables the operations team to prioritize the highest risk vulnerabilities – based on the actual exposure in their specific application environment. Concert uses the details of the specific environment, along with proprietary threat intelligence and business criticality, to calculate the risk posed by each vulnerability. <br/><br/> By clicking ‘Prioritized CVEs,’ the operations manager sees the higher priority CVEs. The darkest circles represent the most critical CVEs. |
-| **Action** &nbsp; 3.2.2 | Click a high priority CVE (darkest red). <br/> <img src="images/3-2-2.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/3-2-3.png" width="800" /> |
-| **Narration** | The operations manager selects a CVE to view the details and sees the "blast radius" showing each image and repository where the vulnerable code is deployed. |
+| **Narration** | Concert empowers the organization with actionable insights by generating strategic recommendations that enhance application performance and efficiency. Concert normalizes and correlates the ingested data and uses a generative AI engine to identify issues. <br/><br/> As new issues are identified, not all of them can be fixed immediately. Concert helps by prioritizing the issues that pose the biggest risk to the specific applications and their environments, ensuring the most critical issues are addressed effectively. |
+| **Action** &nbsp; 3.2.1 | Click the **Latest compliance assessments** switch. <inline-notification text="A green <strong>Latest compliance assessments</strong> section will appear in the diagram."></inline-notification> <img src="images/3-1-1.png" width="800" /> |
+| **Narration** | The operations manager is charged with maintaining a good compliance posture and needs to ensure that all the applications adhere to regulatory requirements. <br/><br/> By clicking on ‘Latest compliance assessments,’ the operations manager sees a summary of the compliance assessments for the application environments. The lighter circles represent the environments with the lowest compliance scores, while the darker circles represent those with higher compliance scores. |
 
 **[Go to top](#top)**
 
