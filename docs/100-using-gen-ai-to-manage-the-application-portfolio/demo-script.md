@@ -51,7 +51,7 @@ Let’s get started.
 | **2.1** | **Discover application connections and dependencies** |
 | :--- | :--- |
 | **Action** &nbsp; 2.1.1 | Click **Arena view**. <br/> <img src="images/2-1-1.png" width="800" /> |
-| **Narration** | The operations team harnesses the power of gen AI as Concert delves into the application topology, revealing intricate connections, dependencies and opportunities. <br/><br/> The ‘Arena view’ provides the operations manager with a 360-degree view of the entire application ecosystem. Concert connects with their environments and toolsets and ingests crucial data about the application’s operations. Concert automatically creates this “App 360” view showing all the applications, environments, source code repositories and deployed images. <br/><br/> The operations manager can hover over any component to highlight the associated dependencies. |
+| **Narration** | The operations team harnesses the power of gen AI as Concert delves into the application topology, revealing intricate connections, dependencies and opportunities. <br/><br/> The ‘Arena view’ provides the operations manager with a 360-degree view of the entire application ecosystem. Concert ingests data from various environments and toolsets which powers the “App 360” view of the application’s operations, showing all the applications, runtime environments, source code repositories and deployed images. <br/><br/> The operations manager can hover over any component to highlight the associated dependencies. |
 | **Action** &nbsp; 2.1.2 | Hover over the **paymentApp** application. <br/> <img src="images/2-1-2.png" width="800" /> |
 | **Narration** | Looking at the 'paymentApp,' they see the Docker images and Github repositories associated with that app. They also see the environments where ‘paymentApp’ is deployed - in this case: development, QA, staging and two production environments. |
 | **Action** &nbsp; 2.1.3 | Hover over the **prod** environment. <br/> <img src="images/2-1-3.png" width="800" /> |
@@ -77,16 +77,16 @@ Let’s get started.
 
 | **3.1** | **Prioritize and view CVEs** |
 | :--- | :--- |
-| **Action** &nbsp; 3.1.1 | Click the **Prioritized CVEs** switch. <inline-notification text="A red <strong>Prioritized CVEs</strong> section will appear in the diagram."></inline-notification> <img src="images/3-2-1.png" width="800" /> |
+| **Action** &nbsp; 3.1.1 | Click the **Prioritized CVEs** switch. <inline-notification text="A red <strong>Prioritized CVEs</strong> section will appear in the diagram."></inline-notification> <img src="images/3-1-1.png" width="800" /> |
 | **Narration** | The operations manager manages the ongoing threats posed by Common Vulnerabilities and Exposures (CVEs). Concert empowers the operations team to identify and mitigate application vulnerabilities, ensuring resilient operations and reduced security risks by prioritizing the highest risk issues. <br/><br/> Organizations typically have many thousands of CVEs in their code libraries. Concert enables the operations team to focus on the highest risk CVEs – based on the actual exposure in their specific application environment. Concert uses the details of the specific environment, along with proprietary threat intelligence and business criticality, to calculate the risk posed by each vulnerability. <br/><br/> By clicking ‘Prioritized CVEs,’ the operations manager sees the most critical CVEs. The darkest circles represent 'Priority 1' vulnerabilities. | 
-| **Action** &nbsp; 3.1.2 | Click a Priority 1 CVE (darkest red). <br/> <img src="images/3-2-2.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/3-2-3.png" width="800" /> |
-| **Narration** | Concert traces the root causes of vulnerabilities based on the application context. The operations manager selects a CVE to view the details and sees the “blast radius” showing each image and repository where the vulnerable code is deployed. |
+| **Action** &nbsp; 3.1.2 | Click a Priority 1 CVE (darkest red). <br/> <img src="images/3-1-2.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/3-1-3.png" width="800" /> |
+| **Narration** | Concert traces the root causes of vulnerabilities based on the application context. The operations manager selects a CVE to view the details. <br/><br/> The Concert-generated risk score is a contextual score based on factors such as the environments where the code is deployed, the number of applications affected and the business criticality of those applications. Concert also generates the CVE description and the “blast radius” showing each image and repository where the vulnerable code is deployed. |
 
 <br/>
 
 | **3.2** | **View the compliance assessments** |
 | :--- | :--- |
-| **Action** &nbsp; 3.2.1 | Click the **Latest compliance assessments** switch. <inline-notification text="A green <strong>Latest compliance assessments</strong> section will appear in the diagram."></inline-notification> <img src="images/3-1-1.png" width="800" /> |
+| **Action** &nbsp; 3.2.1 | Click the **Prioritized CVEs** switch to clear the CVEs, and then click the **Latest compliance assessments** switch. <inline-notification text="A green <strong>Latest compliance assessments</strong> section will appear in the diagram."></inline-notification> <img src="images/3-2-1.png" width="800" /> |
 | **Narration** | The operations manager is charged with maintaining a compliant posture and needs to ensure that all the applications adhere to regulatory requirements. <br/><br/> By clicking ‘Latest compliance assessments,’ the operations manager sees a summary of the compliance assessments for the application environments. The lighter circles represent the environments with the lowest compliance scores, while the darker circles represent those with higher compliance scores. |
 
 **[Go to top](#top)**
@@ -105,11 +105,13 @@ Let’s get started.
 
 | **4.1** | **Interact with the chatbot** |
 | :--- | :--- |
-| **Action** &nbsp; 4.1.1 | Click **Ask watsonx**. <br/> <img src="images/4-1-1.png" width="800" /> |
-| **Narration** | Concert’s interactive chatbot uses gen AI to dig deeper into Concert’s analysis and engage in intuitive conversations. Natural language processing is used to question Concert’s conclusions, comprehend its recommendations and explore the potential impacts. The chatbot uses IBM’s Granite language model and comes pre-trained to have interactive conversations about application risk. <br/><br/> For example, the operations manager can interactively ask questions about CVE details and engage in a discussion about Concert’s remediation guidance. |
-| **Action** &nbsp; 4.1.2 | Type '**How do I mitigate this CVE?**' in the chatbot. <br/> <img src="images/4-1-2.png" width="800" /> |
+| **Action** &nbsp; 4.1.1 | Click the **Latest compliance assessments** switch to clear the compliance assessments, and then click the **Latest compliance assessments** switch. <br/> <img src="images/4-1-1.png" width="800" /> |
+| **Action** &nbsp; 4.1.2 | Click the same CVE you selected previously. <br/> <img src="images/4-1-2.png" width="800" /> |
+| **Action** &nbsp; 4.1.3 | Click **Ask watsonx**. <br/> <img src="images/4-1-3.png" width="800" /> |
+| **Narration** | Concert’s interactive chatbot uses gen AI to dig deeper into Concert’s analysis and engage in intuitive conversations. The operations manager uses natural language to interact with Concert, probing its conclusions, understanding its recommendations and exploring the potential impacts. The chatbot uses IBM’s Granite language model and comes pre-trained to have interactive conversations about application risk. <br/><br/> For example, the operations manager can interactively ask questions about CVE details and engage in a discussion about Concert’s remediation guidance. |
+| **Action** &nbsp; 4.1.4 | Type '**How do I mitigate this CVE?**' in the chatbot. <br/> <img src="images/4-1-4.png" width="800" /> |
 | **Narration** | Concert responds like an expert, providing the operations manager with interactive insight about the vulnerability and offering remediation guidance. |
-| **Action** &nbsp; 4.1.3 | Click **X** to close the chatbot window. <br/> <img src="images/4-1-3.png" width="800" /> |
+| **Action** &nbsp; 4.1.5 | Click **X** to close the chatbot window. <br/> <img src="images/4-1-5.png" width="800" /> |
 
 **[Go to top](#top)**
 
