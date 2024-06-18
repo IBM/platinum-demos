@@ -105,7 +105,7 @@ Let’s get started.
 
 | **4.1** | **Interact with the chatbot** |
 | :--- | :--- |
-| **Action** &nbsp; 4.1.1 | Click the **Latest compliance assessments** switch to clear the compliance assessments, and then click the **Latest compliance assessments** switch. <br/> <img src="images/4-1-1.png" width="800" /> |
+| **Action** &nbsp; 4.1.1 | Click the **Latest compliance assessments** switch to clear the compliance assessments, and then click the **Prioritized CVEs** switch. <inline-notification text="A red <strong>Prioritized CVEs</strong> section will appear in the diagram."></inline-notification> <img src="images/4-1-1.png" width="800" /> |
 | **Action** &nbsp; 4.1.2 | Click the same CVE you selected previously. <br/> <img src="images/4-1-2.png" width="800" /> |
 | **Action** &nbsp; 4.1.3 | Click **Ask watsonx**. <br/> <img src="images/4-1-3.png" width="800" /> |
 | **Narration** | Concert’s interactive chatbot uses gen AI to dig deeper into Concert’s analysis and engage in intuitive conversations. The operations manager uses natural language to interact with Concert, probing its conclusions, understanding its recommendations and exploring the potential impacts. The chatbot uses IBM’s Granite language model and comes pre-trained to have interactive conversations about application risk. <br/><br/> For example, the operations manager can interactively ask questions about CVE details and engage in a discussion about Concert’s remediation guidance. |
