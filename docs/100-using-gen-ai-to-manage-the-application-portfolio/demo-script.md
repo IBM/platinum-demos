@@ -133,6 +133,16 @@ Let’s get started.
 | **Action** &nbsp; 5.1.1 | Click **Open ticket** in the first row. <br/> <img src="images/5-1-1.png" width="800" /> <br/><br/> The following **Open a ticket** screen will appear: <br/> <img src="images/5-1-2.png" width="800" /> |
 | **Narration** | Concert can connect directly to popular ticketing systems, such as GitHub, Jira and ServiceNow, to automatically generate service tickets to remediate the vulnerability. Concert automatically inserts the appropriate text into the ticket fields, automating what would otherwise be a time-consuming task. In addition to ensuring accuracy, Concert saves an average of 15 minutes per vulnerability, which can add up significantly given the thousands of issues that can arise each year. |
 
+<br/>
+
+| **5.2** | **Create an automation rule** |
+| :--- | :--- |
+| **Action** &nbsp; 5.2.1 | Click **X** to close the **Open a ticket** screen. <br/> <img src="images/5-2-1.png" width="800" /> |
+| **Action** &nbsp; 5.2.2 | Click **Administration** and select **Integrations**. <br/> <img src="images/5-2-2.png" width="800" /> |
+| **Action** &nbsp; 5.2.3 | Click **Automation rules**. <br/> <img src="images/5-2-3.png" width="800" /> |
+| **Action** &nbsp; 5.2.4 | Click **Create automation rule**. <br/> <img src="images/5-2-4.png" width="800" /> |
+| **Narration** | Alternatively, the operations manager can configure automation rules to automatically create and assign tickets in the ticketing system, further speeding up the process of remediating vulnerabilities. Concert’s automation rules define the actions to take automatically if it detects an impacting CVE. |
+
 **[Go to top](#top)**
 
 <br/><br/>
