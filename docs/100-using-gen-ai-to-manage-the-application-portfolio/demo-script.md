@@ -1,5 +1,5 @@
 ---
-title: <small> IBM Concert demo </small> <br/> Using gen AI to manage the application portfolio <br/> 100-level live demo
+title: IBM Concert demo <br/> Using gen AI to manage the application portfolio <br/> 100-level live demo
 layout: demoscript
 banner: images/placeholder.jpg
 ---
@@ -129,7 +129,7 @@ Let’s get started.
 
 | **5.1** | **Open a ticket** |
 | :--- | :--- |
-| **Narration** | Now that the operations manager fully understands the potential impact of the CVE on the application environment, they can create a service ticket to resolve the issue. Alternatively, the operations manager can configure automation rules to automatically create and assign tickets in the ticketing system. |
+| **Narration** | Now that the operations manager fully understands the potential impact of the CVE on the application environment, Concert can automatically generate a service ticket to resolve the vulnerability. Previously, this process required manually communicating the issue to a separate team, which would then create the necessary service ticket. In addition to ensuring accuracy, Concert saves an average of 15 minutes per vulnerability, which can add up significantly given the thousands of issues that can arise each year. |
 | **Action** &nbsp; 5.1.1 | Click **Open ticket** in the first row. <br/> <img src="images/5-1-1.png" width="800" /> <br/><br/> The following **Open a ticket** screen will appear: <br/> <img src="images/5-1-2.png" width="800" /> |
 | **Narration** | Concert can connect directly to popular ticketing systems, such as GitHub, Jira and ServiceNow, to automatically generate service tickets to remediate the vulnerability. Concert automatically inserts the appropriate text into the ticket fields, automating what would otherwise be a time-consuming task. |
 
