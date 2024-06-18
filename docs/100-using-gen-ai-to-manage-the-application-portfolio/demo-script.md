@@ -88,6 +88,10 @@ Let’s get started.
 | :--- | :--- |
 | **Action** &nbsp; 3.2.1 | Click the **Prioritized CVEs** switch to clear the CVEs, and then click the **Latest compliance assessments** switch. <inline-notification text="A green <strong>Latest compliance assessments</strong> section will appear in the diagram."></inline-notification> <img src="images/3-2-1.png" width="800" /> |
 | **Narration** | The operations manager is responsible for maintaining compliance by ensuring that all applications adhere to regulatory requirements. Concert determines application compliance based on the compliance profiles. <br/><br/> By clicking ‘Latest compliance assessments,’ the operations manager sees a summary of the compliance assessments for the application environments. The lighter circles represent the environments with the lowest compliance scores, while the darker circles represent those with higher compliance scores. |
+| **Action** &nbsp; 3.2.2 | Click **X** to close the chatbot window. <br/> <img src="images/3-2-2.png" width="800" /> |
+| **Action** &nbsp; 3.2.3 | Select the **Assessments** tab <br/> <img src="images/3-2-3.png" width="800" /> |
+| **Action** &nbsp; 3.2.4 | Click to open the first assessment. <br/> <img src="images/3-2-4.png" width="800" /> |
+| **Narration** | Concert's assessment results indicate which controls are compliant. As applications are delivered, Concert can verify compliance, a process which was typically handled by a separate team. |
 
 **[Go to top](#top)**
 
