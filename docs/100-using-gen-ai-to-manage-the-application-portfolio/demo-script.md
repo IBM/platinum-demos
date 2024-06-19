@@ -190,7 +190,7 @@ Let’s get started.
 
 <summary>Summary</summary>
 
-We’ve shown how Concert helps an operations manager identify and prioritize application issues, and then facilitate remediation. Before using Concert, the operations team struggled with the manual efforts, multiple tools and extensive data required to manage their applications.
+We’ve shown how Concert helps an operations manager identify and prioritize application issues, and then facilitate remediation. Before using Concert, the operations team struggled with manual efforts, multiple tools and extensive data required to manage their applications.
 
 The operations manager leveraged Concert to bridge data silos and provide a 360-degree view of their application operations. Concert analyzed data across diverse application environments and helped the operations team proactively ensure the health of their applications.
 
