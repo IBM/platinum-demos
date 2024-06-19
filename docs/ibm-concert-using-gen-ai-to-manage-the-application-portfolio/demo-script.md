@@ -52,16 +52,17 @@ Let’s get started.
 
 | **2.1** | **Discover application connections and dependencies** |
 | :--- | :--- |
-| **Action** &nbsp; 2.1.1 | Click **Arena view**. Use the zoom controls to fit the view on your screen. <br/> <img src="images/2-1-1.png" width="800" /> |
+| **Action** &nbsp; 2.1.1 | Click **Arena view**. <inline-notification text="Use the zoom controls to fit the view on your screen."></inline-notification> <img src="images/2-1-1.png" width="800" /> |
 | **Narration** | The operations team harnesses the power of gen AI as Concert provides an interactive display of the application topology, revealing connections and dependencies. <br/><br/> The ‘Arena view’ provides the operations manager with a 360-degree view of the entire application ecosystem. Concert ingests data from various environments and toolsets, showing all the applications, runtime environments, source code repositories, deployed images, and public and private access points. <br/><br/> The operations manager can hover over any component to highlight the associated dependencies. |
-| **Action** &nbsp; 2.1.2 | Hover over the **paymentApp** application. <br/> <img src="images/2-1-2.png" width="800" /> |
+| **Action** &nbsp; 2.1.2 | Type '**paymentApp**' into the search bar (1). Hover over the **paymentApp** application (2). <br/> <img src="images/2-1-2.png" width="800" /> |
 | **Narration** | Looking at the ‘paymentApp,’ they see the Docker images and GitHub repositories associated with this application. They also see the environments where ‘paymentApp’ is deployed - in this case: development, QA, staging and two production environments. |
-| **Action** &nbsp; 2.1.3 | Hover over the **prod** environment. <inline-notification text="The environments aren't labeled in the UI. Take note of the position of the <strong>prod</strong> environment while preparing for the demo."></inline-notification> <img src="images/2-1-3.png" width="800" /> |
-| **Narration** | Highlighting the 'prod' environment shows the applications deployed on it and the exposed public and private access points. |
+| **Action** &nbsp; 2.1.3 | Hover over the **production** environment. <inline-notification text="The environments aren't labeled in the UI. Take note of the position of the <strong>production</strong> environment while preparing for the demo."></inline-notification> <img src="images/2-1-3.png" width="800" /> |
+| **Narration** | Highlighting the 'production' environment shows the applications deployed on it and the exposed public and private access points. |
 | **Action** &nbsp; 2.1.4 | Hover over any **Deployed image**. <br/> <img src="images/2-1-4.png" width="800" /> |
 | **Narration** | Highlighting an image shows the associated source code repositories, applications, environments and the exposed public and private access points. |
-| **Action** &nbsp; 2.1.5 | Hover over any **Source repository**. <br/> <img src="images/2-1-5.png" width="800" /> |
+| **Action** &nbsp; 2.1.5 | Hover over a **Source repository** that is connected to at least one **Deployed image**. <br/> <img src="images/2-1-5.png" width="800" /> |
 | **Narration** | Highlighting a source code repository shows the associated images, applications, environments and the exposed public and private access points. Next we'll see how Concert leverages this baseline data to discover gaps, prioritize insights and take actions to maintain application health and optimize the overall operations. |
+| **Action** &nbsp; 2.1.6 | Click **X** to clear the search. <br/> <img src="images/2-1-6.png" width="800" /> |
 
 **[Go to top](#top)**
 
@@ -173,7 +174,7 @@ Let’s get started.
 
 <br/>
 
-| **6.1** | **Placeholder** |
+| **6.1** | **Audit changes** |
 | :--- | :--- |
 | **Action** &nbsp; 6.1.1 | Click **Inventory** (1) and select **Evidence store** (2). <br/> <img src="images/6-1-1.png" width="800" /> <br/><br/> The following **Evidence store** screen will appear: <br/> <img src="images/6-1-2.png" width="800" /> |
 | **Narration** | As activities occur and data is updated, Concert continuously maintains the information in the ‘Evidence store.’ The 'Evidence store' acts as a comprehensive change log, tracking CVE resolution progress, compliance status, delivered applications and all the other crucial details. <br/><br/> During software audits, compiling and presenting all necessary data to demonstrate compliance can be very time-consuming. However, with Concert, all relevant information is automatically collected and stored in the 'Evidence store,' making the audit process much more efficient. <br/><br/> For example, we can easily see what compliance assessments we’ve completed and what changed over time. |
