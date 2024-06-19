@@ -88,7 +88,7 @@ Let’s get started.
 | :--- | :--- |
 | **Action** &nbsp; 3.2.1 | Click the **Prioritized CVEs** switch to clear the CVEs, and then click the **Latest compliance assessments** switch. <inline-notification text="A green <strong>Latest compliance assessments</strong> section will appear in the diagram."></inline-notification> <img src="images/3-2-1.png" width="800" /> |
 | **Narration** | The operations manager is responsible for maintaining compliance by ensuring that all applications adhere to regulatory requirements. Concert determines application compliance based on the compliance profiles. <br/><br/> By clicking ‘Latest compliance assessments,’ the operations manager sees a summary of the compliance assessments for the application environments. The lighter circles represent the environments with the lowest compliance scores, while the darker circles represent those with higher compliance scores. |
-| **Action** &nbsp; 3.2.2 | Click **Dimensions** (1) then select **Compliance** (2). <br/> <img src="images/3-2-2.png" width="800" /> |
+| **Action** &nbsp; 3.2.2 | Click **Dimensions** (1) and select **Compliance** (2). <br/> <img src="images/3-2-2.png" width="800" /> |
 | **Action** &nbsp; 3.2.3 | Select the **Profiles** tab. <br/> <img src="images/3-2-3.png" width="800" /> |
 | **Action** &nbsp; 3.2.4 | Click the first **Compliance profile**. <br/> <img src="images/3-2-4.png" width="800" /> |
 | **Action** &nbsp; 3.2.5 | Open the first control. <br/> <img src="images/3-2-5.png" width="800" /> |
@@ -154,6 +154,29 @@ Let’s get started.
 | **Action** &nbsp; 5.2.3 | Click **Create automation rule**. <br/> <img src="images/5-2-3.png" width="800" /> |
 | **Action** &nbsp; 5.2.4 | Type '**Automatic CVE ticket for production**' into the **Name** field (1). <br/> For the first condition, select **Environments** and **production** (2). <br/> For the second condition, Select **Open GitHub issue** (3). <br/> <img src="images/5-2-4.png" width="800" /> |
 | **Narration** | For example, the operations manager can configure a rule to automatically generate a service ticket in GitHub for each vulnerability detected in the production environment. If desired, the operations manager can also set threshold values on risk scores to determine when a ticket should be generated. |
+| **Action** &nbsp; 5.2.5 | Click **X** to close the **Create an automation rule** screen. <br/> <img src="images/5-2-5.png" width="800" /> |
+
+**[Go to top](#top)**
+
+<br/><br/>
+
+</details>
+
+<p/>
+
+<details markdown="1">
+
+<summary><strong>6 - Evidence store</strong>: Monitoring and auditing changes</summary>
+
+<br/>
+
+| **6.1** | **Placeholder** |
+| :--- | :--- |
+| **Action** &nbsp; 6.1.1 | Click **Inventory** and select **Evidence store**. <br/> <img src="images/6-1-1.png" width="800" /> <br/><br/> The following **Evidence store** screen will appear: <br/> <img src="images/6-1-2.png" width="800" /> |
+| **Narration** | As activities occur and data is updated, Concert continuously maintains the information in the ‘evidence store.’ The 'evidence store' acts as a comprehensive change log, tracking CVE resolution progress, compliance status, delivered applications and all the other crucial details. <br/><br/> During software audits, compiling and presenting all necessary data to demonstrate compliance can be very time-consuming. However, with Concert, all relevant information is automatically collected and stored in the 'evidence store,' making the audit process much more efficient. <br/><br/> For example, we can easily see what compliance assessments we’ve completed and what changed over time. |
+| **Action** &nbsp; 6.1.2 | Click **Compliance assessment** under the chart. <br/> <img src="images/6-1-3.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/6-1-4.png" width="800" /> |
+| **Action** &nbsp; 6.1.2 | Select the last two assessments (1) and then select **Compare** (2). <br/> <img src="images/6-1-5.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/6-1-6.png" width="800" /> |
+| **Narration** | Placeholder |
 
 **[Go to top](#top)**
 
