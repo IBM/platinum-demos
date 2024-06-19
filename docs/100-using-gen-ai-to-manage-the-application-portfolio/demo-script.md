@@ -172,7 +172,7 @@ Let’s get started.
 
 | **6.1** | **Placeholder** |
 | :--- | :--- |
-| **Action** &nbsp; 6.1.1 | Click **Inventory** and select **Evidence store**. <br/> <img src="images/6-1-1.png" width="800" /> <br/><br/> The following **Evidence store** screen will appear: <br/> <img src="images/6-1-2.png" width="800" /> |
+| **Action** &nbsp; 6.1.1 | Click **Inventory** (1) and select **Evidence store** (2). <br/> <img src="images/6-1-1.png" width="800" /> <br/><br/> The following **Evidence store** screen will appear: <br/> <img src="images/6-1-2.png" width="800" /> |
 | **Narration** | As activities occur and data is updated, Concert continuously maintains the information in the ‘Evidence store.’ The 'Evidence store' acts as a comprehensive change log, tracking CVE resolution progress, compliance status, delivered applications and all the other crucial details. <br/><br/> During software audits, compiling and presenting all necessary data to demonstrate compliance can be very time-consuming. However, with Concert, all relevant information is automatically collected and stored in the 'Evidence store,' making the audit process much more efficient. <br/><br/> For example, we can easily see what compliance assessments we’ve completed and what changed over time. |
 | **Action** &nbsp; 6.1.2 | Click **Compliance assessment** under the chart. <br/> <img src="images/6-1-3.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/6-1-4.png" width="800" /> |
 | **Action** &nbsp; 6.1.3 | Select the last two assessments (1) and then select **Compare** (2). <br/> <img src="images/6-1-5.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/6-1-6.png" width="800" /> |
