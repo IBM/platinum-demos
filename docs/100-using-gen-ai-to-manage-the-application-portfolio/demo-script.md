@@ -152,7 +152,7 @@ Let’s get started.
 | **Action** &nbsp; 5.2.4 | Click the **Automation rules** tab. <br/> <img src="images/5-2-4.png" width="800" /> |
 | **Action** &nbsp; 5.2.5 | Click **Create automation rule**. <br/> <img src="images/5-2-5.png" width="800" /> |
 | **Narration** | Alternatively, the operations manager can configure automation rules to automatically create and assign tickets in the ticketing system, further speeding up the process of remediating vulnerabilities. Concert’s automation rules define the actions to take automatically if it detects an impacting CVE. |
-| **Action** &nbsp; 5.2.6 | Type '**Automatic CVE ticket for production**' into the **Name** field (1). For the first condition, select **Environments** and **production** (2). For the second condition, Select **Open GitHub issue** (3). <br/> <img src="images/5-2-6.png" width="800" /> |
+| **Action** &nbsp; 5.2.6 | Type '**Automatic CVE ticket for production**' into the **Name** field (1). <br/> For the first condition, select **Environments** and **production** (2). <br/> For the second condition, Select **Open GitHub issue** (3). <br/> <img src="images/5-2-6.png" width="800" /> |
 | **Narration** | For example, the operations manager can configure a rule to automatically generate a service ticket in GitHub for each vulnerability detected in the production environment. If desired, the operations manager can also set threshold values on risk scores to determine when a ticket should be generated. |
 
 **[Go to top](#top)**
