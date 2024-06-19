@@ -1,7 +1,7 @@
 ---
 title: IBM Concert demo <br/> Using gen AI to manage the application portfolio <br/> <small> <i> Live demo for Sales and Tech Sales </i> </small>
 layout: demoscript
-banner: images/placeholder.jpg
+banner: images/banner.jpg
 ---
 
 <span id="top"></span>
@@ -99,8 +99,11 @@ Let’s get started.
 | **Narration** | Concert creates compliance profiles based on standards such as NIST 800. Each profile contains a set of compliance controls, which are the specific measures that ensure applications adhere to regulatory policies. Concert uses gen AI to generate the description of each control. |
 | **Action** &nbsp; 3.2.6 | Click **X** to close the compliance profile. <br/> <img src="images/3-2-6.png" width="800" /> |
 | **Action** &nbsp; 3.2.7 | Select the **Assessments** tab. <br/> <img src="images/3-2-7.png" width="800" /> |
-| **Action** &nbsp; 3.2.8 | Click to open the first assessment. <br/> <img src="images/3-2-8.png" width="800" /> |
+| **Action** &nbsp; 3.2.8 | Click to open the first assessment. <br/> <img src="images/3-2-8.png" width="800" /> <br/><br/> The following **NIST scan results** screen will appear: <br/> <img src="images/3-2-9.png" width="800" /> |
 | **Narration** | Concert determines application compliance using compliance profiles. Concert creates compliance profiles based on standards such as NIST 800. Each profile contains a set of compliance controls, which are the specific measures that ensure applications adhere to regulatory policies. Concert uses gen AI to generate the description of each control. Concert’s assessment results identify which controls are compliant and which are not. <br/><br/> As applications are delivered, Concert verifies compliance and ensures adherence to standards as applications evolve and scale. In most organizations, compliance is typically handled in isolation by a separate compliance team. Concert provides a unified view of compliance impacts across application and compliance teams, enabling streamlined collaboration and decision-making. |
+| **Action** &nbsp; 3.2.9 | Click **X** to close the **NIST scan results** screen. <br/> <img src="images/3-2-10.png" width="800" /> |
+| **Action** &nbsp; 3.2.10 | Click the **Latest compliance assessments** switch to clear the compliance assessments, and then click the **Prioritized CVEs** switch. <inline-notification text="A red <strong>Prioritized CVEs</strong> section will appear in the diagram."></inline-notification> <img src="images/3-2-11.png" width="800" /> |
+| **Action** &nbsp; 3.2.11 | Click the same CVE you selected previously. <br/> <img src="images/3-2-12.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/3-2-13.png" width="800" /> |
 
 **[Go to top](#top)**
 
@@ -114,17 +117,16 @@ Let’s get started.
 
 <summary><strong>4 - watsonx chatbot</strong>: Expert analysis and guidance</summary>
 
-<br/>
+<inline-notification text="watsonx is not currently configured in the demo environment. For now, you will need to skip this section."></inline-notification>
 
 | **4.1** | **Interact with the chatbot** |
 | :--- | :--- |
-| **Action** &nbsp; 4.1.1 | Click the **Latest compliance assessments** switch to clear the compliance assessments, and then click the **Prioritized CVEs** switch. <inline-notification text="A red <strong>Prioritized CVEs</strong> section will appear in the diagram."></inline-notification> <img src="images/4-1-1.png" width="800" /> |
-| **Action** &nbsp; 4.1.2 | Click the same CVE you selected previously. <br/> <img src="images/4-1-2.png" width="800" /> |
-| **Action** &nbsp; 4.1.3 | Click **Ask watsonx**. <br/> <img src="images/4-1-3.png" width="800" /> |
+| **Action** &nbsp; 4.1.1 | Click **Arena view**. <br/> <img src="images/4-1-1.png" width="800" /> |
+| **Action** &nbsp; 4.1.2 | Click **Ask watsonx**. <br/> <img src="images/4-1-2.png" width="800" /> |
 | **Narration** | Concert’s interactive chatbot uses gen AI to dig deeper into Concert’s analysis and engage in conversations. The operations manager uses natural language to interact with Concert, probing its conclusions, understanding its recommendations and exploring the potential impacts. The chatbot uses IBM’s Granite language model and comes pre-trained to have interactive conversations about application risk. <br/><br/> For example, the operations manager can interactively ask questions about CVE details and engage in a discussion about Concert’s remediation guidance. |
-| **Action** &nbsp; 4.1.4 | Type '**How do I mitigate this CVE?**' in the chatbot. <br/> <img src="images/4-1-4.png" width="800" /> |
+| **Action** &nbsp; 4.1.3 | Type '**How do I mitigate this CVE?**' in the chatbot. <br/> <img src="images/4-1-3.png" width="800" /> |
 | **Narration** | Concert responds like an expert, providing the operations manager with interactive insight about the vulnerability and offering remediation guidance. |
-| **Action** &nbsp; 4.1.5 | Click **X** to close the chatbot window. <br/> <img src="images/4-1-5.png" width="800" /> |
+| **Action** &nbsp; 4.1.4 | Click **X** to close the chatbot window. <br/> <img src="images/4-1-4.png" width="800" /> |
 
 **[Go to top](#top)**
 

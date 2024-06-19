@@ -1,7 +1,7 @@
 ---
 title: IBM Concert demo <br/> Using gen AI to manage the application portfolio <br/> <small> <i> Live demo for Sales and Tech Sales </i> </small>
 layout: preparation
-banner: images/placeholder.jpg
+banner: images/banner.jpg
 ---
 
 <span id="top"></span>
@@ -17,6 +17,8 @@ banner: images/placeholder.jpg
 <details markdown="1">
 
 <summary>Access the IBM Concert environment</summary>
+
+<inline-notification text="Please note that this demo environment is <strong>read-only</strong>. Do not make any changes to the demo data."></inline-notification>
 
 Log in to Concert using the following URL and credentials (You must be on the IBM VPN): <br/><br/>
 •	**URL**: <a href="https://concert-ga-demo1.fyre.ibm.com:12443" target="_blank" rel="noreferrer">https://concert-ga-demo1.fyre.ibm.com:12443</a> <br/>
