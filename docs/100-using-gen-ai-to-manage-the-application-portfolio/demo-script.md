@@ -87,7 +87,7 @@ Let’s get started.
 | **3.2** | **View the compliance assessments** |
 | :--- | :--- |
 | **Action** &nbsp; 3.2.1 | Click the **Prioritized CVEs** switch to clear the CVEs, and then click the **Latest compliance assessments** switch. <inline-notification text="A green <strong>Latest compliance assessments</strong> section will appear in the diagram."></inline-notification> <img src="images/3-2-1.png" width="800" /> |
-| **Narration** | The operations manager is responsible for maintaining compliance by ensuring that all applications adhere to regulatory requirements. Concert determines application compliance based on compliance profiles. <br/><br/> By clicking ‘Latest compliance assessments,’ the operations manager sees a summary of the compliance assessments for the application environments. The lighter circles represent the environments with the lowest compliance scores, while the darker circles represent those with higher compliance scores. |
+| **Narration** | The operations manager is responsible for maintaining compliance by ensuring all applications adhere to regulatory requirements. By integrating compliance management into the application lifecycle, Concert streamlines compliance assessments across all applications and accelerates issue tracking. When compliance deviations are detected, Concert prioritizes issues and assists the operations team in addressing them efficiently. <br/><br/> By clicking ‘Latest compliance assessments,’ the operations manager sees a summary of the compliance assessments across the application environments. The lighter circles represent the environments with the lowest compliance scores, while the darker circles represent those with higher compliance scores. |
 | **Action** &nbsp; 3.2.2 | Click **Dimensions** (1) and select **Compliance** (2). <br/> <img src="images/3-2-2.png" width="800" /> |
 | **Action** &nbsp; 3.2.3 | Select the **Profiles** tab. <br/> <img src="images/3-2-3.png" width="800" /> |
 | **Action** &nbsp; 3.2.4 | Click the first **Compliance profile**. <br/> <img src="images/3-2-4.png" width="800" /> |
@@ -96,7 +96,7 @@ Let’s get started.
 | **Action** &nbsp; 3.2.6 | Click **X** to close the compliance profile. <br/> <img src="images/3-2-6.png" width="800" /> |
 | **Action** &nbsp; 3.2.7 | Select the **Assessments** tab. <br/> <img src="images/3-2-7.png" width="800" /> |
 | **Action** &nbsp; 3.2.8 | Click to open the first assessment. <br/> <img src="images/3-2-8.png" width="800" /> |
-| **Narration** | Concert's assessment results indicate which controls are compliant. As applications are delivered, Concert can verify compliance, a process which was typically handled by a separate team. |
+| **Narration** | Concert determines application compliance using compliance profiles. Concert creates compliance profiles based on standards such as NIST 800. Each profile contains a set of compliance controls, which are the specific measures that ensure applications adhere to regulatory policies. Concert uses gen AI to generate the description of each control. Concert’s assessment results identify which controls are compliant and which are not. <br/><br/> As applications are delivered, Concert verifies compliance and ensures adherence to standards as applications evolve and scale. In most organizations, compliance is typically handled in isolation by a separate compliance team. Concert provides a unified view of compliance impacts across application and compliance teams, enabling streamlined collaboration and decision-making. |
 
 **[Go to top](#top)**
 
