@@ -18,10 +18,10 @@ banner: images/placeholder.jpg
 
 <summary>Access the IBM Concert environment</summary>
 
-Log in to Concert using the following URL and credentials: <br/>
-•	URL: https://TBD <br/>
-•	Username: TBD <br/>
-•	Password: TBD <br/>
+Log in to Concert using the following URL and credentials (You must be on the IBM VPN): <br/>
+•	URL: https://concert-ga-demo1.fyre.ibm.com:12443 <br/>
+•	Username: ibm_roja_adm <br/>
+•	Password: password <br/>
 
 Remain on the home screen and you are ready to give the demo.
 

@@ -6,6 +6,8 @@ banner: images/placeholder.jpg
 
 <span id="top"></span>
 
+Click the [**Demo preparation**](demo-preparation) tab for setup instructions.
+
 <details markdown="1">
 
 <summary>Introduction</summary>
