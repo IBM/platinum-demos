@@ -88,9 +88,14 @@ Let’s get started.
 | :--- | :--- |
 | **Action** &nbsp; 3.2.1 | Click the **Prioritized CVEs** switch to clear the CVEs, and then click the **Latest compliance assessments** switch. <inline-notification text="A green <strong>Latest compliance assessments</strong> section will appear in the diagram."></inline-notification> <img src="images/3-2-1.png" width="800" /> |
 | **Narration** | The operations manager is responsible for maintaining compliance by ensuring that all applications adhere to regulatory requirements. Concert determines application compliance based on the compliance profiles. <br/><br/> By clicking ‘Latest compliance assessments,’ the operations manager sees a summary of the compliance assessments for the application environments. The lighter circles represent the environments with the lowest compliance scores, while the darker circles represent those with higher compliance scores. |
-| **Action** &nbsp; 3.2.2 | Click **X** to close the **Compliance** profile. <br/> <img src="images/3-2-2.png" width="800" /> |
-| **Action** &nbsp; 3.2.3 | Select the **Assessments** tab <br/> <img src="images/3-2-3.png" width="800" /> |
-| **Action** &nbsp; 3.2.4 | Click to open the first assessment. <br/> <img src="images/3-2-4.png" width="800" /> |
+| **Action** &nbsp; 3.2.2 | Click **Dimensions** then select **Compliance**. <br/> <img src="images/3-2-2.png" width="800" /> |
+| **Action** &nbsp; 3.2.3 | Select the **Profiles*** tab. <br/> <img src="images/3-2-3.png" width="800" /> |
+| **Action** &nbsp; 3.2.4 | Click the first compliance profile. <br/> <img src="images/3-2-4.png" width="800" /> |
+| **Action** &nbsp; 3.2.5 | Open the first control. <br/> <img src="images/3-2-5.png" width="800" /> |
+| **Narration** | Concert creates compliance profiles based on standards such as NIST 800. Each profile contains a set of compliance controls, which are the specific measures that ensure applications adhere to regulatory policies. Concert uses gen AI to generate the description of each control. |
+| **Action** &nbsp; 3.2.6 | Click **X** to close the compliance profile. <br/> <img src="images/3-2-6.png" width="800" /> |
+| **Action** &nbsp; 3.2.7 | Select the **Assessments** tab. <br/> <img src="images/3-2-7.png" width="800" /> |
+| **Action** &nbsp; 3.2.8 | Click to open the first assessment. <br/> <img src="images/3-2-8.png" width="800" /> |
 | **Narration** | Concert's assessment results indicate which controls are compliant. As applications are delivered, Concert can verify compliance, a process which was typically handled by a separate team. |
 
 **[Go to top](#top)**
@@ -142,13 +147,12 @@ Let’s get started.
 | **5.2** | **Create an automation rule** |
 | :--- | :--- |
 | **Action** &nbsp; 5.2.1 | Click **X** to close the **Open a ticket** screen. <br/> <img src="images/5-2-1.png" width="800" /> |
-| **Action** &nbsp; 5.2.2 | Click **Administration** and select **Integrations**. <br/> <img src="images/5-2-2.png" width="800" /> |
-| **Action** &nbsp; 5.2.3 | Click **Automation rules**. <br/> <img src="images/5-2-3.png" width="800" /> |
-| **Action** &nbsp; 5.2.4 | Click **Create automation rule**. <br/> <img src="images/5-2-4.png" width="800" /> |
+| **Action** &nbsp; 5.2.2 | Click **X** to close the CVE details screen. <br/> <img src="images/5-2-2.png" width="800" /> |
+| **Action** &nbsp; 5.2.3 | Click **Administration** and select **Integrations**. <br/> <img src="images/5-2-3.png" width="800" /> |
+| **Action** &nbsp; 5.2.4 | Click the **Automation rules** tab. <br/> <img src="images/5-2-4.png" width="800" /> |
+| **Action** &nbsp; 5.2.5 | Click **Create automation rule**. <br/> <img src="images/5-2-5.png" width="800" /> |
 | **Narration** | Alternatively, the operations manager can configure automation rules to automatically create and assign tickets in the ticketing system, further speeding up the process of remediating vulnerabilities. Concert’s automation rules define the actions to take automatically if it detects an impacting CVE. |
-| **Action** &nbsp; 5.2.5 | Click '**Type Automatic CVE ticket for production**' into the **Name** field. <br/> <img src="images/5-2-5.png" width="800" /> |
-| **Action** &nbsp; 5.2.6 | Select **Environments** and **production** after **affects**. <br/> <img src="images/5-2-6.png" width="800" /> |
-| **Action** &nbsp; 5.2.7 | Select **Open GitHub issue** after **take this action**. <br/> <img src="images/5-2-7.png" width="800" /> |
+| **Action** &nbsp; 5.2.6 | Type '**Automatic CVE ticket for production**' into the **Name** field (1). For the first condition, select **Environments** and **production** (2). For the second condition, Select **Open GitHub issue** (3). <br/> <img src="images/5-2-6.png" width="800" /> |
 | **Narration** | For example, the operations manager can configure a rule to automatically generate a service ticket in GitHub for each vulnerability detected in the production environment. If desired, the operations manager can also set threshold values on risk scores to determine when a ticket should be generated. |
 
 **[Go to top](#top)**
