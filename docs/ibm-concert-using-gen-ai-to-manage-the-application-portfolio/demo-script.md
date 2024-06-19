@@ -62,7 +62,6 @@ Let’s get started.
 | **Narration** | Highlighting an image shows the associated source code repositories, applications, environments and the exposed public and private access points. |
 | **Action** &nbsp; 2.1.5 | Hover over a **Source repository** that is connected to at least one **Deployed image**. <br/> <img src="images/2-1-5.png" width="800" /> |
 | **Narration** | Highlighting a source code repository shows the associated images, applications, environments and the exposed public and private access points. Next we'll see how Concert leverages this baseline data to discover gaps, prioritize insights and take actions to maintain application health and optimize the overall operations. |
-| **Action** &nbsp; 2.1.6 | Click **X** to clear the search. <br/> <img src="images/2-1-6.png" width="800" /> |
 
 **[Go to top](#top)**
 
@@ -81,10 +80,11 @@ Let’s get started.
 | **3.1** | **Manage CVE risk** |
 | :--- | :--- |
 | **Action** &nbsp; 3.1.1 | Click the **Prioritized CVEs** switch. <inline-notification text="A red <strong>Prioritized CVEs</strong> section will appear in the diagram."></inline-notification> <img src="images/3-1-1.png" width="800" /> |
-| **Narration** | The operations manager oversees the ongoing threats posed by Common Vulnerabilities and Exposures (CVEs). Concert empowers the operations team to identify and mitigate application vulnerabilities, ensuring resilient operations and reduced security risks by prioritizing the highest risk issues. <br/><br/> Organizations typically have many thousands of CVEs in their code libraries. Concert enables the operations team to focus on the highest risk CVEs – based on the actual exposure in their specific application environment. Concert uses the details of the specific environment, along with proprietary threat intelligence and business criticality data, to calculate the risk posed by each vulnerability. <br/><br/> By clicking ‘Prioritized CVEs,’ the operations manager sees the most critical CVEs. The darkest circles represent 'Priority 1' vulnerabilities. | 
+| **Narration** | The operations manager oversees the ongoing threats posed by Common Vulnerabilities and Exposures (CVEs). Concert empowers the operations team to identify and mitigate application vulnerabilities, ensuring resilient operations and reduced security risks by prioritizing the highest risk issues. <br/><br/> Organizations typically have many thousands of CVEs in their code libraries. Concert enables the operations team to focus on the highest risk CVEs – based on the actual exposure in their specific application environment. Concert uses the details of the specific environment, along with proprietary threat intelligence and business criticality data, to calculate the risk posed by each vulnerability. <br/><br/> By clicking ‘Prioritized CVEs,’ the operations manager sees the most critical CVEs associated with the payment application. The darkest circles represent ‘Priority 1’ vulnerabilities. | 
 | **Action** &nbsp; 3.1.2 | Click a Priority 1 CVE (darkest red). <br/> <img src="images/3-1-2.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/3-1-3.png" width="800" /> |
 | **Narration** | The operations manager selects a CVE to view the details. <br/><br/> The Concert-generated risk score is a contextual score based on factors such as the environments where the code is deployed, the number of applications affected and the business criticality of those applications. Concert uses gen AI to automatically generate the CVE description and the “blast radius” showing each image and repository where the vulnerable code is deployed. |
 | **Action** &nbsp; 3.1.3 | Click **X** to close the CVE details screen. <br/> <img src="images/3-1-4.png" width="800" /> |
+| **Action** &nbsp; 3.1.4 | Click **X** to clear the search. <br/> <img src="images/3-1-5.png" width="800" /> |
 
 <br/>
 
