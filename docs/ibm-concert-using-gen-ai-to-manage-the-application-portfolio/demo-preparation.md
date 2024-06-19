@@ -18,7 +18,7 @@ banner: images/banner.jpg
 
 <summary>Access the IBM Concert environment</summary>
 
-<inline-notification text="Please note that this demo environment is <strong>read-only</strong>. Do not make any changes to the demo data."></inline-notification>
+<inline-notification text="Please use this demo environment as <strong>read-only</strong>. Do not make any changes to the demo data."></inline-notification>
 
 Log in to Concert using the following URL and credentials (You must be on the IBM VPN): <br/><br/>
 •	**URL**: <a href="https://concert-ga-demo1.fyre.ibm.com:12443" target="_blank" rel="noreferrer">https://concert-ga-demo1.fyre.ibm.com:12443</a> <br/>
