@@ -12,7 +12,7 @@ banner: images/placeholder.jpg
 
 Today we’ll explore how IBM Concert assists an operations team with managing a complex application landscape. Concert leverages AI across the entire application portfolio, enabling timely and effective decision-making.
 
-By seamlessly integrating with existing environments and toolsets and automatically discovering relevant data, we’ll see how Concert provides application owners with a holistic view of their applications and dependencies. Then we’ll use Concert’s generative AI capabilities to prioritize issues and provide actionable remediation recommendations to maintain application health and security.
+By seamlessly integrating with existing toolsets and automatically discovering relevant data, we’ll see how Concert provides application owners with a holistic view of their applications and dependencies. Then we’ll use Concert’s generative AI capabilities to prioritize issues and provide actionable remediation recommendations to maintain application health and security.
 
 Let’s get started.
 
