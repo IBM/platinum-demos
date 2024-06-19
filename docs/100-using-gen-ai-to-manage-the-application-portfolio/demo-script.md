@@ -1,5 +1,5 @@
 ---
-title: IBM Concert demo <br/> Using gen AI to manage the application portfolio <br/> 100-level live demo
+title: IBM Concert demo <br/> Using gen AI to manage the application portfolio <br/> <small> <i> Live demo for Sales and Tech Sales </i> </small>
 layout: demoscript
 banner: images/placeholder.jpg
 ---
@@ -30,9 +30,9 @@ Let’s get started.
 
 | **1.1** | **Examine the application landscape** |
 | :--- | :--- |
-| **Narration** | The operations manager at Focus Financial manages applications hosted across various environments. The application team has recently adopted a microservices architecture that has increased complexity, as the applications now span multiple servers and cloud providers. This has introduced new challenges related to security, compliance and change management. |
+| **Narration** | The operations manager at Focus Financial manages applications hosted across various environments. The applications team has recently adopted a microservices architecture that has increased complexity, as the applications now span multiple servers and cloud providers. This has introduced new challenges related to security, compliance and change management. |
 | **Action** &nbsp; 1.1.1 | Show the **Home** page, which you opened during demo preparation. <br/> <img src="images/1-1-1.png" width="800" /> |
-| **Narration** | Upon logging into Concert, the operations manager sees a comprehensive overview of the organization’s application posture. Concert provides comprehensive AI-generated insights that transcend traditional infrastructure silos. <br/><br/> The entire application posture is displayed, highlighting key metrics tied to risk, compliance, cost and networking. Application issues are prioritized based on their impact, ensuring that the highest priority issues are addressed quickly. |
+| **Narration** | Upon logging into Concert, the operations manager sees a comprehensive overview of the organization’s application posture. Concert provides comprehensive AI-generated insights that transcend traditional infrastructure silos. <br/><br/> The entire application posture is displayed, highlighting key metrics tied to risk, compliance, cost, networking and other dimensions. Application issues are prioritized based on their impact, ensuring the highest priority issues are addressed quickly. |
 
 **[Go to top](#top)**
 
@@ -50,7 +50,7 @@ Let’s get started.
 
 | **2.1** | **Discover application connections and dependencies** |
 | :--- | :--- |
-| **Action** &nbsp; 2.1.1 | Click **Arena view**. <br/> <img src="images/2-1-1.png" width="800" /> |
+| **Action** &nbsp; 2.1.1 | Click **Arena view**. Use the zoom controls to fit the view on your screen. <br/> <img src="images/2-1-1.png" width="800" /> |
 | **Narration** | The operations team harnesses the power of gen AI as Concert delves into the application topology, revealing intricate connections, dependencies and opportunities. <br/><br/> The ‘Arena view’ provides the operations manager with a 360-degree view of the entire application ecosystem. Concert ingests data from various environments and toolsets which powers the “App 360” view of the application’s operations, showing all the applications, runtime environments, source code repositories and deployed images. <br/><br/> The operations manager can hover over any component to highlight the associated dependencies. |
 | **Action** &nbsp; 2.1.2 | Hover over the **paymentApp** application. <br/> <img src="images/2-1-2.png" width="800" /> |
 | **Narration** | Looking at the ‘paymentApp,’ they see the Docker images and GitHub repositories associated with this application. They also see the environments where ‘paymentApp’ is deployed - in this case: development, QA, staging and two production environments. |
