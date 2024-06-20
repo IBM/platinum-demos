@@ -6,6 +6,8 @@ banner: images/placeholder.jpg
 
 <span id="top"></span>
 
+Click the [**Demo preparation**](demo-preparation) tab for setup instructions.
+
 <details markdown="1">
 
 <summary>Introduction</summary>
@@ -147,7 +149,7 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 | **6.1** | **Organize vulnerabilities in the CVE kanban view** |
 | :--- | :--- |
 | **Action** &nbsp; 6.1.1 | Click 'paymentApp' in the Arena view. <br/> <img src="images/6-1-2.png" width="800" /> |
-| **Action** &nbsp; 6.1.2 | Click 'Prioritized CVEs' in the Arena view. <br/> <img src="images/6-1-2.png" width="800" /> |
+| **Action** &nbsp; 6.1.2 | Click 'Prioritized CVEs' in the Arena view. <br/> <img src="images/6-1-1.png" width="800" /> |
 | **Narration** | The security manager can organize all vulnerabilities affecting a specific application using Concert's convenient kanban board by simply dragging and dropping individual CVEs into a respective column. For example, the security manager can categorize CVEs according to those with assessments in progress, exceptions requested and identify false positives. |
 
 <br/>
