@@ -1,5 +1,5 @@
 ---
-title: Eliminating security blind spots with IBM Concert <br/>100-level live demo
+title: IBM Concert demo <br/> Eliminating security blind spots with IBM Concert <br/> <small> <i> Live demo for Sales and Tech Sales </i> </small>
 layout: demoscript
 banner: images/placeholder.jpg
 ---
@@ -24,7 +24,7 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 
 <details markdown="1">
 
-<summary><strong>1 - Home page</strong>: Summarizing application security risk</summary>
+<summary><strong>1 - Home page</strong>: Assessing application security risk</summary>
 
 <br/>
 
@@ -52,7 +52,7 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 
 <br/>
 
-| **2.1** | **Viewing CVE details** |
+| **2.1** | **View CVE details** |
 | :--- | :--- |
 | **Action** &nbsp; 2.1.1 | Click **CVE-2022-42889**. <br/> <img src="images/2-1-1.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/2-1-2.png" width="800" /> |
 | **Narration** | The security manager selects a CVE to view the details and sees the "blast radius" showing each image and repository where the vulnerable code is deployed. <br/><br/> The CVE view provides the security manager with a summary of the issue, the industry-defined generic CVSS score, and a custom Concert risk score. Instead of relying on generic assessments, Concert uses gen AI to correlate vulnerability data using multiple risk vectors to analyze complex chains of application dependencies and uncover the highest severity risks in an organization’s specific environment. This enables Concert to generate a score based on the actual exposure in their specific application environment. Concert then uses the details of the specific environment, along with proprietary threat intelligence and business criticality, to calculate the risk posed by each vulnerability. |
@@ -67,11 +67,11 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 
 <details markdown="1">
 
-<summary><strong>3 - watsonx chatbot</strong>: Expert analysis and guidance</summary>
+<summary><strong>3 - watsonx chatbot</strong>: Expert CVE analysis and remediation guidance</summary>
 
 <br/>
 
-| **3.1** | **Interact with the watsonx chatbot** |
+| **3.1** | **Interact with the chatbot** |
 | :--- | :--- |
 | **Action** &nbsp; 3.1.1 | Click **Ask watsonx**. <br/> <img src="images/3-1-1.png" width="800" /> |
 | **Narration** | Concert’s interactive chatbot uses generative AI to dig deeper into Concert’s specific suggestions and explain the potential impact and remediation of each issue. The chatbot uses IBM’s Granite language model and comes pre-trained to have interactive conversations about application risk. The security manager interactively asks questions about CVE details and engages in a discussion about remediation guidance. Concert responds just as a CVE expert would. |
@@ -107,11 +107,11 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 
 <details markdown="1">
 
-<summary><strong>5 - Arena View</strong>: Visualizing CVE impact</summary>
+<summary><strong>5 - Arena View</strong>: Visualizing the impact of CVEs on the application ecosystem</summary>
 
 <br/>
 
-| **5.1** | **Displaying CVEs in the Arena View** |
+| **5.1** | **Display CVEs in the Arena View** |
 | :--- | :--- |
 | **Action** &nbsp; 5.1.1 | Click the **Prioritized CVEs** switch. <inline-notification text="A red <strong>Prioritized CVEs</strong> section will appear in the diagram."></inline-notification> <img src="images/4-1-1.png" width="800" /> |
 | **Narration** | By clicking on ‘Prioritized CVEs,’ the security manager sees the higher priority CVEs. The darkest circles represent the most critical CVEs. <br/><br/> Hovering over a CVE highlights the end-to-end exposure path of the CVE from repositories to endpoints. |
