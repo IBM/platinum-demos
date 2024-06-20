@@ -24,7 +24,7 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 
 <details markdown="1">
 
-<summary>1 - Viewing a summary of the application security posture</summary>
+<summary><strong>1 - Home page</strong>: Summarizing application security risk</summary>
 
 <br/>
 
@@ -48,7 +48,7 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 
 <details markdown="1">
 
-<summary>2 - Analyzing a CVE</summary>
+<summary><strong>2 - CVE Analysis</strong>: Understanding CVE impact</summary>
 
 <br/>
 
@@ -67,7 +67,7 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 
 <details markdown="1">
 
-<summary>3 - Using conversational AI to gain deeper insights</summary>
+<summary><strong>3 - watsonx chatbot</strong>: Expert analysis and guidance</summary>
 
 <br/>
 
@@ -87,7 +87,7 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 
 <details markdown="1">
 
-<summary>4 - Creating a service ticket</summary>
+<summary><strong>4 - Service ticket generation</strong>: Quickly resolving application issues</summary>
 
 <br/>
 
@@ -107,7 +107,7 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 
 <details markdown="1">
 
-<summary>5 - Visualizing the impact of CVEs on the application ecosystem</summary>
+<summary><strong>5 - Arena View</strong>: Visualizing CVE impact</summary>
 
 <br/>
 
@@ -126,7 +126,7 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 
 <details markdown="1">
 
-<summary>6 - Reviewing all vulnerabilities in Concert</summary>
+<summary><strong>6 - Prioritizing CVEs</strong>: Assess potential exposures to your applications</summary>
 
 <br/>
 
