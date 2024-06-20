@@ -121,12 +121,11 @@ Let’s get started.
 
 | **4.1** | **Interact with the chatbot** |
 | :--- | :--- |
-| **Action** &nbsp; 4.1.1 | Click **Arena view**. <br/> <img src="images/4-1-1.png" width="800" /> |
-| **Action** &nbsp; 4.1.2 | Click **Ask watsonx**. <br/> <img src="images/4-1-2.png" width="800" /> |
+| **Action** &nbsp; 4.1.1 | Click **Ask watsonx**. <br/> <img src="images/4-1-2.png" width="800" /> |
 | **Narration** | Concert’s interactive chatbot uses gen AI to dig deeper into Concert’s analysis and engage in conversations. The operations manager uses natural language to interact with Concert, probing its conclusions, understanding its recommendations and exploring the potential impacts. The chatbot uses IBM’s Granite language model and comes pre-trained to have interactive conversations about application risk. <br/><br/> For example, the operations manager can interactively ask questions about CVE details and engage in a discussion about Concert’s remediation guidance. |
-| **Action** &nbsp; 4.1.3 | Type '**How do I mitigate this CVE?**' in the chatbot. <br/> <img src="images/4-1-3.png" width="800" /> |
+| **Action** &nbsp; 4.1.2 | Type '**How do I mitigate this CVE?**' in the chatbot. <br/> <img src="images/4-1-3.png" width="800" /> |
 | **Narration** | Concert responds like an expert, providing the operations manager with interactive insight about the vulnerability and offering remediation guidance. |
-| **Action** &nbsp; 4.1.4 | Click **X** to close the chatbot window. <br/> <img src="images/4-1-4.png" width="800" /> |
+| **Action** &nbsp; 4.1.3 | Click **X** to close the chatbot window. <br/> <img src="images/4-1-4.png" width="800" /> |
 
 **[Go to top](#top)**
 
