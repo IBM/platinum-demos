@@ -85,6 +85,8 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 
 <p/>
 
+<details markdown="1">
+
 <summary><strong>4 - Service ticket generation</strong>: Quickly resolving application issues</summary>
 
 <br/>
