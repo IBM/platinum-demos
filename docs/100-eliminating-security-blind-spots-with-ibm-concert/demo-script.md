@@ -26,7 +26,7 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 
 <details markdown="1">
 
-<summary><strong>1 - Home page</strong>: Assessing application security risk</summary>
+<summary><strong>1 - CVE dashboard:</strong> Seeing an overview of CVEs in your environment</summary>
 
 <br/>
 
@@ -40,6 +40,15 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 | **Action** &nbsp; 1.1.3 | Scroll down the home page to show the **Highest prioritiy CVEs** table. <br/> <img src="images/1-1-3.png" width="800" /> |
 | **Narration** | Finally, at the bottom of the home page, the security manager can see a table with the top five vulnerabilities displayed in order of priority. |
 
+<br/>
+
+| **1.2** | **Display CVEs in the Arena View** |
+| :--- | :--- |
+| **Action** &nbsp; 1.2.1 | Click **Arena view**. <inline-notification text="Use the zoom controls to fit the view on your screen."></inline-notification> <img src="images/2-1-1a.png" width="800" /> |
+| **Action** &nbsp; 1.2.2 | Click the **Prioritized CVEs** switch. <inline-notification text="A red <strong>Prioritized CVEs</strong> section will appear in the diagram."></inline-notification> <img src="images/4-1-1.png" width="800" /> |
+| **Narration** | The security manager oversees the ongoing threats posed by Common Vulnerabilities and Exposures (CVEs). Concert empowers the security team to identify and mitigate application vulnerabilities, ensuring resilient operations and reduced security risks by prioritizing the highest risk issues. <br/><br/> Organizations typically have many thousands of CVEs in their code libraries. Concert enables the security team to focus on the highest risk CVEs – based on the actual exposure in their specific application environment. Concert uses the details of the specific environment, along with proprietary threat intelligence and business criticality data, to calculate the risk posed by each vulnerability. <br/><br/> By clicking ‘Prioritized CVEs,’ the security manager sees the most critical CVEs associated with the payment application. The darkest circles represent ‘Priority 1’ vulnerabilities. |
+
+
 **[Go to top](#top)**
 
 <br/><br/>
@@ -50,13 +59,13 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 
 <details markdown="1">
 
-<summary><strong>2 - CVE Analysis</strong>: Understanding CVE impact</summary>
+<summary><strong>2 - CVE analysis and details: </strong> Drilling down into individual CVEs</summary>
 
 <br/>
 
 | **2.1** | **View CVE details** |
 | :--- | :--- |
-| **Action** &nbsp; 2.1.1 | Click **CVE-2022-42889**. <br/> <img src="images/2-1-1.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/2-1-2.png" width="800" /> |
+| **Action** &nbsp; 2.1.1 | Click a Priority 1 CVE (darkest red). <br/> <img src="images/3-1-2a.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/3-1-3.png" width="800" /> |
 | **Narration** | The security manager selects a CVE to view the details and sees the "blast radius" showing each image and repository where the vulnerable code is deployed. <br/><br/> The CVE view provides the security manager with a summary of the issue, the industry-defined generic CVSS score, and a custom Concert risk score. Instead of relying on generic assessments, Concert uses gen AI to correlate vulnerability data using multiple risk vectors to analyze complex chains of application dependencies and uncover the highest severity risks in an organization’s specific environment. This enables Concert to generate a score based on the actual exposure in their specific application environment. Concert then uses the details of the specific environment, along with proprietary threat intelligence and business criticality, to calculate the risk posed by each vulnerability. |
 
 **[Go to top](#top)**
@@ -89,7 +98,7 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 
 <details markdown="1">
 
-<summary><strong>4 - Service ticket generation</strong>: Quickly resolving application issues</summary>
+<summary><strong>4 - CVE service ticket generation</strong>: Quickly mitigating CVE issues</summary>
 
 <br/>
 
@@ -123,40 +132,21 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 
 <details markdown="1">
 
-<summary><strong>5 - Arena View</strong>: Visualizing the impact of CVEs on the application ecosystem</summary>
+<summary><strong>5 - Managing CVEs</strong>: Assess potential exposures to your applications</summary>
 
 <br/>
 
-| **5.1** | **Display CVEs in the Arena View** |
+| **5.1** | **Organize vulnerabilities in the CVE kanban view** |
 | :--- | :--- |
-| **Action** &nbsp; 5.1.1 | Click the **Prioritized CVEs** switch. <inline-notification text="A red <strong>Prioritized CVEs</strong> section will appear in the diagram."></inline-notification> <img src="images/4-1-1.png" width="800" /> |
-| **Narration** | The security manager oversees the ongoing threats posed by Common Vulnerabilities and Exposures (CVEs). Concert empowers the security team to identify and mitigate application vulnerabilities, ensuring resilient operations and reduced security risks by prioritizing the highest risk issues. <br/><br/> Organizations typically have many thousands of CVEs in their code libraries. Concert enables the security team to focus on the highest risk CVEs – based on the actual exposure in their specific application environment. Concert uses the details of the specific environment, along with proprietary threat intelligence and business criticality data, to calculate the risk posed by each vulnerability. <br/><br/> By clicking ‘Prioritized CVEs,’ the security manager sees the most critical CVEs associated with the payment application. The darkest circles represent ‘Priority 1’ vulnerabilities. |
-
-**[Go to top](#top)**
-
-<br/><br/>
-
-</details>
-
-<p/>
-
-<details markdown="1">
-
-<summary><strong>6 - Prioritizing CVEs</strong>: Manage potential exposures to your applications</summary>
-
-<br/>
-
-| **6.1** | **Organize vulnerabilities in the CVE kanban view** |
-| :--- | :--- |
-| **Action** &nbsp; 6.1.1 | Click 'paymentApp' in the Arena view. <br/> <img src="images/6-1-2.png" width="800" /> |
-| **Action** &nbsp; 6.1.2 | Click 'Prioritized CVEs' in the Arena view. <br/> <img src="images/6-1-1.png" width="800" /> |
+| **Action** &nbsp; 5.1.1 | Click 'paymentApp' in the Arena view. <br/> <img src="images/6-1-2.png" width="800" /> |
+| **Action** &nbsp; 5.1.2 | Click 'Prioritized CVEs' in the Arena view. <br/> <img src="images/6-1-1.png" width="800" /> |
 | **Narration** | The security manager can organize all vulnerabilities affecting a specific application using Concert's convenient kanban board by simply dragging and dropping individual CVEs into a respective column. For example, the security manager can categorize CVEs according to those with assessments in progress, exceptions requested and identify false positives. |
 
 <br/>
 
-| **6.2** | **Examine vulnerabilities in the dimensions view** |
+| **5.2** | **Examine vulnerabilities in the dimensions view** |
 | :--- | :--- |
-| **Action** &nbsp; 6.1.3 | Click Dimensions then Vulnerabilities.  <br/> <img src="images/5-1-1.png" width="800" /> |
+| **Action** &nbsp; 5.2.3 | Click Dimensions then Vulnerabilities.  <br/> <img src="images/5-2-3a.png" width="800" /> |
 | **Narration** | To see a list of all vulnerabilities, the security manager can access the vulnerabilities page in the dimensions view. <br/> This allows him to see a list of all CVEs affecting every application. |
 
 **[Go to top](#top)**
