@@ -1,5 +1,5 @@
 ---
-title: IBM Concert demo <br/> Prioritizing CVE Risk with gen AI insights<br/> <small> <i> Live demo for Sales and Tech Sales </i> </small>
+title: IBM Concert demo <br/> Prioritizing vulnerability risk with gen AI insights<br/> <small> <i> Live demo for Sales and Tech Sales </i> </small>
 layout: demoscript
 banner: images/placeholder.jpg
 ---
@@ -12,7 +12,7 @@ Click the [**Demo preparation**](demo-preparation) tab for setup instructions.
 
 <summary>Introduction</summary>
 
-As enterprises develop and deploy an increasing number of software applications, they face significant risks and challenges related to security and common vulnerabilitie exposures (CVEs) in open source software.
+As enterprises develop and deploy an increasing number of software applications, they face significant risks and challenges related to security and common vulnerability exposures (CVEs) in open source software.
 
 Leveraging data from various tools, IBM Concert empowers security managers to gain a comprehensive view of vulnerabilities across their application landscape. Using Concert’s advanced generative AI analytics engine, we can accurately assess vulnerability risk tailored to each customer's specific environment. Concert identifies potential threats, evaluates their impact, and provides actionable recommendations to prioritize and mitigate risks effectively.
 
@@ -36,7 +36,7 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 | **Action** &nbsp; 1.1.1 | Show the **Home** page, which you opened during demo preparation. <br/> <img src="images/1-1-1.png" width="800" /> |
 | **Narration** | On logging into Concert, the security manager is presented with a dashboard that represents different dimensions of the application landscape. The vulnerability summary is  highlighted by default, providing an immediate overview of the risk posture. <br/><br/> The right section provides a high-level overview of key vulnerability metrics, including the number of total unique CVEs, and Priority 1, 2 and 3 CVEs. |
 | **Action** &nbsp; 1.1.2 | Scroll down the home page to show the **Most vulnerable applications** and **Prioritized CVEs impacting public access points** graphs. <br/> <img src="images/1-1-2.png" width="800" /> |
-| **Narration** | Scrolling down the home page, the security manager sees visual representations with a bar chart showing the most vulnerable applications on the left. On the right, the prioritized CVEs impacting public access points on the right are displayed. |
+| **Narration** | Scrolling down the home page, the security manager sees visual representations with a bar chart showing the most vulnerable applications on the left. On the right, the prioritized CVEs impacting public access points are displayed. |
 | **Action** &nbsp; 1.1.3 | Scroll down the home page to show the **Highest prioritiy CVEs** table. <br/> <img src="images/1-1-3.png" width="800" /> |
 | **Narration** | Finally, at the bottom of the home page, the security manager can see the top five vulnerabilities displayed in order of criticality. |
 
@@ -77,7 +77,8 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 <li>Proprietary threat intelligence from IBM X-Force</li>
 <li>Business criticality</li>
 <li>Public access points</li>
-</ul> |
+</ul>
+ |
 
 **[Go to top](#top)**
 
@@ -150,7 +151,7 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 | **5.1** | **Organize vulnerabilities in the CVE kanban view** |
 | :--- | :--- |
 | **Action** &nbsp; 5.1.1 | Click 'paymentApp' in the Arena view. <br/> <img src="images/6-1-2.png" width="800" /> |
-| **Action** &nbsp; 5.1.2 | Click 'Prioritized CVEs' in the Arena view. <br/> <img src="images/6-1-1.png" width="800" /> |
+| **Action** &nbsp; 5.1.2 | Click 'Prioritized CVE Findings' in the paymentApp application view. <br/> <img src="images/6-1-1.png" width="800" /> |
 | **Narration** | The security manager can organize all vulnerabilities affecting a specific application using Concert's convenient kanban board by simply dragging and dropping individual CVEs into a respective column. For example, the security manager can categorize CVEs according to those with assessments in progress, exceptions requested and identify false positives. |
 
 <br/>
