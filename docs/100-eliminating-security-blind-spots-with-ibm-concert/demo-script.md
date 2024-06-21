@@ -71,7 +71,13 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 | **2.2** | **View CVE details** |
 | :--- | :--- |
 | **Action** &nbsp; 2.2.1 | Click the Priority 1 CVE: CVE-2022-42889. <br/> <img src="images/2-2-1.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/3-1-3.png" width="800" /> |
-| **Narration** | The security manager selects a CVE to view the details and sees the "blast radius" showing each image and repository where the vulnerable code is deployed. <br/><br/> The CVE view provides the security manager with a summary of the issue, the generic CVSS score, and a custom Concert risk score. Instead of relying on generic assessments, Concert uses gen AI to correlate vulnerability data using multiple risk vectors to analyze complex chains of application dependencies and uncover the highest severity risks in an organization’s specific environment. This enables Concert to generate a score based on the actual exposure in their specific application environment. Concert uses the following vectors to calculate the risk posed by each vulnerability. <br><li>Base CVSS score</li><li>Proprietary threat intelligence from IBM X-Force</li><li>Business criticality</li><li>Public access points</li> |
+| **Narration** | The security manager selects a CVE to view the details and sees the "blast radius" showing each image and repository where the vulnerable code is deployed. <br/><br/> The CVE view provides the security manager with a summary of the issue, the generic CVSS score, and a custom Concert risk score. <br/>Concert leverages generative AI to correlate vulnerability data across multiple risk vectors, analyzing complex chains of application dependencies to uncover the most severe risks specific to an organization’s environment. This allows Concert to generate a score based on the actual exposure in their unique application setting <br/><br/>Concert uses the following vectors to calculate the risk posed by each vulnerability.<br/>
+<ul>
+<li>Base CVSS score</li>
+<li>Proprietary threat intelligence from IBM X-Force</li>
+<li>Business criticality</li>
+<li>Public access points</li>
+</ul> |
 
 **[Go to top](#top)**
 
