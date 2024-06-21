@@ -26,7 +26,7 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 
 <details markdown="1">
 
-<summary><strong>1 - CVE dashboard:</strong> Seeing an overview of CVEs in your environment</summary>
+<summary><strong>1 - CVE dashboard</strong>: Seeing an overview of CVEs in your environment</summary>
 
 <br/>
 
@@ -59,7 +59,7 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 
 <details markdown="1">
 
-<summary><strong>2 - CVE analysis and details: </strong> Drilling down into individual CVEs</summary>
+<summary><strong>2 - CVE analysis and details</strong>: Drilling down into individual CVEs</summary>
 
 <br/>
 
