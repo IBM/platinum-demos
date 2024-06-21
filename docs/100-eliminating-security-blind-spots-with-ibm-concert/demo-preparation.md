@@ -1,5 +1,5 @@
 ---
-title: IBM Concert demo <br/> Eliminating security blind spots with IBM Concert <br/> <small> <i> Live demo for Sales and Tech Sales </i> </small>
+title: IBM Concert demo <br/> Prioritizing CVE Risk with gen AI insights <br/> <small> <i> Live demo for Sales and Tech Sales </i> </small>
 layout: preparation
 banner: images/placeholder.jpg
 ---
