@@ -1,7 +1,7 @@
 ---
 title: IBM Concert demo <br/> Eliminating security blind spots with IBM Concert <br/> <small> <i> Live demo for Sales and Tech Sales </i> </small>
 layout: preparation
-banner: images/banner.jpg
+banner: images/placeholder.jpg
 ---
 
 <span id="top"></span>
