@@ -16,7 +16,7 @@ As enterprises develop and deploy an increasing number of software applications,
 
 Leveraging data from various tools, IBM Concert empowers security managers to gain a comprehensive view of vulnerabilities across their application landscape. Using Concert’s advanced generative AI analytics engine, we can accurately assess vulnerability risk tailored to each customer's specific environment. Concert identifies potential threats, evaluates their impact, and provides actionable recommendations to prioritize and mitigate risks effectively.
 
-Let’s delve into how IBM Concert helps manage vulnerabilities and enhances your security posture.
+Let’s see how IBM Concert helps manage vulnerabilities and enhances your security posture.
 
 <br/>
 
@@ -26,15 +26,15 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 
 <details markdown="1">
 
-<summary><strong>1 - CVE dashboard</strong>: Seeing an overview of CVEs in your environment</summary>
+<summary><strong>1 - CVE dashboard</strong>: Seeing an overview of the CVEs in your environment</summary>
 
 <br/>
 
 | **1.1** | **Examine the vulnerability landscape** |
 | :--- | :--- |
-| **Narration** | The security manager at Focus Financial is overwhelmed with a backlog of 20,000 CVEs, struggling to manage vulnerabilities across applications hosted in diverse environments. With the recent adoption of a microservices architecture, the complexity has surged as these applications now span multiple servers and cloud providers. This shift has introduced significant challenges in vulnerability management, making it crucial to find a better way to prioritize and address these CVEs. |
+| **Narration** | The security manager at Focus Financial is overwhelmed with a backlog of 20,000 CVEs, struggling to manage vulnerabilities across applications hosted in diverse environments. With the recent adoption of a microservices architecture, the complexity has surged as these applications now span multiple servers and cloud providers. This shift has introduced significant challenges in vulnerability management, making it crucial to find a better way to prioritize and address the CVEs. |
 | **Action** &nbsp; 1.1.1 | Show the **Home** page, which you opened during demo preparation. <br/> <img src="images/1-1-1.png" width="800" /> |
-| **Narration** | On logging into Concert, the security manager is presented with a dashboard that represents different dimensions of the application landscape. The vulnerability summary is  highlighted by default, providing an immediate overview of the risk posture. <br/><br/> The right section provides a high-level overview of key vulnerability metrics, including the number of total unique CVEs, and Priority 1, 2 and 3 CVEs. |
+| **Narration** | On logging into Concert, the security manager is presented with a dashboard that represents different dimensions of the application landscape. The vulnerability summary is  highlighted, providing an immediate overview of the risk posture. <br/><br/> The right section provides a high-level overview of key vulnerability metrics, including the number of total unique CVEs, and Priority 1, 2 and 3 CVEs. |
 | **Action** &nbsp; 1.1.2 | Scroll down the home page to show the **Most vulnerable applications** and **Prioritized CVEs impacting public access points** graphs. <br/> <img src="images/1-1-2.png" width="800" /> |
 | **Narration** | Scrolling down the home page, the security manager sees visual representations with a bar chart showing the most vulnerable applications on the left. On the right, the prioritized CVEs impacting public access points are displayed. |
 | **Action** &nbsp; 1.1.3 | Scroll down the home page to show the **Highest prioritiy CVEs** table. <br/> <img src="images/1-1-3.png" width="800" /> |
@@ -66,19 +66,12 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 | **2.1** | **Examine vulnerabilities in the dimensions view** |
 | :--- | :--- |
 | **Action** &nbsp; 2.1.1 | Click Dimensions then Vulnerabilities.  <br/> <img src="images/5-2-3a.png" width="800" /> |
-| **Narration** | To see a list of all vulnerabilities, the security manager can access the vulnerabilities page in the dimensions view. <br/> This allows him to see a list of all CVEs affecting every application. |
+| **Narration** | To see a list of all vulnerabilities, the security manager accesses the vulnerabilities page in the dimensions view. <br/> This allows him to see a list of all CVEs affecting every application. |
 
 | **2.2** | **View CVE details** |
 | :--- | :--- |
 | **Action** &nbsp; 2.2.1 | Click the Priority 1 CVE: CVE-2022-42889. <br/> <img src="images/2-2-1.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/3-1-3.png" width="800" /> |
-| **Narration** | The security manager selects a CVE to view the details and sees the "blast radius" showing each image and repository where the vulnerable code is deployed. <br/><br/> The CVE view provides the security manager with a summary of the issue, the generic CVSS score, and a custom Concert risk score. <br/>Concert leverages generative AI to correlate vulnerability data across multiple risk vectors, analyzing complex chains of application dependencies to uncover the most severe risks specific to an organization’s environment. This allows Concert to generate a score based on the actual exposure in their unique application setting <br/><br/>Concert uses the following vectors to calculate the risk posed by each vulnerability.<br/>
-<ul>
-<li>Base CVSS score</li>
-<li>Proprietary threat intelligence from IBM X-Force</li>
-<li>Business criticality</li>
-<li>Public access points</li>
-</ul>
- |
+| **Narration** | The security manager selects a CVE to view the details and sees the "blast radius" showing each image and repository where the vulnerable code is deployed. <br/><br/> The CVE view provides the security manager with a summary of the issue, the generic CVSS score, and a custom Concert risk score. <br/>Concert leverages generative AI to correlate vulnerability data across multiple risk vectors, analyzing complex chains of application dependencies to uncover the most severe risks specific to an organization’s environment. This allows Concert to generate a score based on the actual exposure in their unique application setting <br/><br/>Concert uses the following vectors to calculate the risk posed by each vulnerability.<br/><ul><li>Base CVSS score</li><li>Proprietary threat intelligence from IBM X-Force</li><li>Business criticality</li><li>Public access points</li></ul> |
 
 **[Go to top](#top)**
 
@@ -144,7 +137,7 @@ Let’s delve into how IBM Concert helps manage vulnerabilities and enhances you
 
 <details markdown="1">
 
-<summary><strong>5 - Managing CVEs</strong>: Assess potential exposures to your applications</summary>
+<summary><strong>5 - Managing CVE status</strong>: Assessing and categorizing application vulnerabilities</summary>
 
 <br/>
 
