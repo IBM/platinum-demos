@@ -34,7 +34,7 @@ Let’s get started.
 | :--- | :--- |
 | **Narration** | The operations manager at Focus Financial manages applications hosted across various environments. The applications team has recently adopted a microservices architecture that has increased complexity, as the applications now span multiple servers and cloud providers. This has introduced new challenges related to security, compliance and change management. |
 | **Action** &nbsp; 1.1.1 | Show the **Home** page, which you opened during demo preparation. <br/> <img src="images/1-1-1.png" width="800" /> |
-| **Narration** | Upon logging into Concert, the operations manager sees a comprehensive overview of the organization’s application posture. Concert provides comprehensive AI-generated insights that transcend traditional infrastructure silos. <br/><br/> The entire application posture is displayed, highlighting key metrics tied to risk, compliance, cost, networking and other dimensions. Application issues are prioritized based on their impact, ensuring the highest priority issues are addressed quickly. |
+| **Narration** | On logging into Concert, the operations manager sees a comprehensive overview of the organization’s application posture. Concert provides comprehensive AI-generated insights that transcend traditional infrastructure silos. <br/><br/> The entire application posture is displayed, highlighting key metrics tied to risk, compliance, cost, networking and other dimensions. Application issues are prioritized based on their impact, ensuring the highest priority issues are addressed quickly. |
 
 **[Go to top](#top)**
 
