@@ -37,6 +37,7 @@ Let’s get started.
 | **Narration** | The operations manager is responsible for maintaining compliance by ensuring all applications adhere to regulatory requirements. By integrating compliance management into the application lifecycle, Concert streamlines compliance assessments across all applications and accelerates issue tracking. When compliance deviations are detected, Concert prioritizes issues and assists the operations team in addressing them efficiently. <br/><br/> Upon logging into Concert, the compliance manager sees a comprehensive overview of the organization’s compliance posture. Concert provides a unified view of compliance assessments and their associated application environments. |
 | **Action** &nbsp; 1.1.2 | Click **Arena view**. <br/> <img src="images/1-1-2.png" width="800" /> |
 | **Action** &nbsp; 1.1.3 | Click the **Latest compliance assessments** switch. <br/> <img src="images/1-1-3.png" width="800" /> |
+| **Narration** | The operations manager sees a summary of the compliance assessments across all the application environments. The lighter circles represent the environments with the lowest compliance scores, while the darker circles represent those with higher compliance scores. |
 
 **[Go to top](#top)**
 
@@ -54,8 +55,9 @@ Let’s get started.
 
 | **2.1** | **Placeholder** |
 | :--- | :--- |
+| **Narration** | Compliance catalogs store the compliance requirements, standards and regulations that a software application must adhere to. Concert manages compliance catalogs within the Compliance dimension. |
 | **Action** &nbsp; 2.1.1 | Placeholder <br/> <img src="images/2-1-1.png" width="800" /> |
-| **Narration** | Placeholder |
+
 
 **[Go to top](#top)**
 
@@ -94,6 +96,28 @@ Let’s get started.
 | :--- | :--- |
 | **Action** &nbsp; 4.1.1 | Placeholder <br/> <img src="images/4-1-1.png" width="800" /> |
 | **Narration** | Placeholder |
+
+**[Go to top](#top)**
+
+<br/><br/>
+
+</details>
+
+<p/>
+
+<details markdown="1">
+
+<summary><strong>5 - Evidence store</strong>: Monitoring and auditing changes</summary>
+
+<br/>
+
+| **5.1** | **Audit changes** |
+| :--- | :--- |
+| **Action** &nbsp; 5.1.1 | Click **Inventory** (1) and select **Evidence store** (2). <br/> <img src="images/6-1-1.png" width="800" /> <br/><br/> The following **Evidence store** screen will appear: <br/> <img src="images/6-1-2.png" width="800" /> |
+| **Narration** | As activities occur and data is updated, Concert continuously maintains the information in the ‘Evidence store.’ The 'Evidence store' acts as a comprehensive change log, tracking CVE resolution progress, compliance status, delivered applications and all the other crucial details. <br/><br/> During software audits, compiling and presenting all necessary data to demonstrate compliance can be very time-consuming. However, with Concert, all relevant information is automatically collected and stored in the 'Evidence store,' making the audit process much more efficient. <br/><br/> For example, we can easily see what compliance assessments we’ve completed and what changed over time. |
+| **Action** &nbsp; 5.1.2 | Click **Compliance assessment** under the chart. <br/> <img src="images/6-1-3.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/6-1-4.png" width="800" /> |
+| **Action** &nbsp; 5.1.3 | <inline-notification text="There is currently only one compliance assessment loaded into the demo environment. For now, you will need to skip these final actions."></inline-notification> Select the last two assessments (1) and then select **Compare** (2). <br/> <img src="images/6-1-5.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/6-1-6.png" width="800" /> |
+| **Narration** | Concert compares the two selected compliance assessments, highlighting the differences. It compares the total number of controls that passed in each assessment and the results for each specific control. |
 
 **[Go to top](#top)**
 
