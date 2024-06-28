@@ -1,5 +1,5 @@
 ---
-title: IBM Concert demo <br/> Using gen AI to manage compliance with IBM Concert <br/> <small> <i> Live demo for Tech Sales </i> </small>
+title: IBM Concert demo <br/> Understand your compliance posture with IBM Concert <br/> <small> <i> Live demo for Tech Sales </i> </small>
 layout: preparation
 banner: images/banner.jpg
 ---
