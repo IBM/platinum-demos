@@ -32,8 +32,11 @@ Let’s get started.
 
 | **1.1** | **Placeholder** |
 | :--- | :--- |
-| **Narration** | Placeholder |
-| **Action** &nbsp; 1.1.1 | Placeholder <br/> <img src="images/1-1-1.png" width="800" /> |
+| **Narration** | The compliance manager at Focus Financial manages applications hosted across various environments. As the application portfolio has evolved, its complexity has grown. Applications now span multiple servers and cloud providers, which increases the resources needed to track and manage compliance and heightens the risk of non-compliance. Concert helps the compliance manager maintain compliance more effectively. |
+| **Action** &nbsp; 1.1.1 | Show the **Home** page, which you opened during demo preparation. Select the **Compliance** dimension. <br/> <img src="images/1-1-1.png" width="800" /> |
+| **Narration** | The operations manager is responsible for maintaining compliance by ensuring all applications adhere to regulatory requirements. By integrating compliance management into the application lifecycle, Concert streamlines compliance assessments across all applications and accelerates issue tracking. When compliance deviations are detected, Concert prioritizes issues and assists the operations team in addressing them efficiently. <br/><br/> Upon logging into Concert, the compliance manager sees a comprehensive overview of the organization’s compliance posture. Concert provides a unified view of compliance assessments and their associated application environments. |
+| **Action** &nbsp; 1.1.2 | Click **Arena view**. <br/> <img src="images/1-1-2.png" width="800" /> |
+| **Action** &nbsp; 1.1.3 | Click the **Latest compliance assessments** switch. <br/> <img src="images/1-1-3.png" width="800" /> |
 
 **[Go to top](#top)**
 
