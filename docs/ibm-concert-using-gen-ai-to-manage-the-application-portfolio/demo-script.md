@@ -157,7 +157,7 @@ Let’s get started.
 | **Action** &nbsp; 5.2.1 | Click **Administration** and select **Integrations**. <br/> <img src="images/5-2-1.png" width="800" /> |
 | **Action** &nbsp; 5.2.2 | Click the **Automation rules** tab. <br/> <img src="images/5-2-2.png" width="800" /> |
 | **Action** &nbsp; 5.2.3 | Click **Create automation rule**. <br/> <img src="images/5-2-3.png" width="800" /> |
-| **Action** &nbsp; 5.2.4 | Type '**Automatic CVE ticket for production**' into the **Name** field (1). <br/> For the first condition, select **Environments** and **production** (2). <br/> For the second condition, Select **Open GitHub issue** (3). <br/> <img src="images/5-2-4.png" width="800" /> |
+| **Action** &nbsp; 5.2.4 | In the **Name** field, type '**Automatic CVE ticket for production**' (1). <br/> For the first condition, select **Environments** and **production** (2). <br/> For the second condition, Select **Open GitHub issue** (3). <br/> <img src="images/5-2-4.png" width="800" /> |
 | **Narration** | For example, the operations manager can configure a rule to automatically generate a service ticket in GitHub for each vulnerability detected in the production environment. If desired, the operations manager can also set threshold values on risk scores to determine when a ticket should be generated. |
 | **Action** &nbsp; 5.2.5 | Click **X** to close the **Create an automation rule** screen. <br/> <img src="images/5-2-5.png" width="800" /> |
 

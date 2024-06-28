@@ -68,7 +68,7 @@ Let’s get started.
 | **Narration** | The compliance manager reviews the compliance controls. Concert uses gen AI to generate a summary of the description of each control. |
 | **Action** &nbsp; 2.1.7 | Click the **AI** icon. Type '**What is ac-1?**' into the chatbot. <br/> <img src="images/2-1-9.png" width="800" /> |
 | **Narration** | Concert’s interactive chatbot uses gen AI to dig deeper into the compliance control and engage in conversations. The compliance manager uses natural language to interact with Concert, probing this compliance control, understanding its regulations and exploring the potential impacts. The chatbot uses IBM’s Granite language model and comes pre-trained to have interactive conversations about compliance. |
-| **Action** &nbsp; 2.1.8 | Click **X** to close the chatbot. <br/> <img src="images/2-1-10.png" width="800" /> |
+| **Action** &nbsp; 2.1.8 | Click **X** to close the chatbot window. <br/> <img src="images/2-1-10.png" width="800" /> |
 | **Action** &nbsp; 2.1.9 | Click **X** to close the catalog. <br/> <img src="images/2-1-11.png" width="800" /> |
 
 **[Go to top](#top)**
