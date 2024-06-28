@@ -1,5 +1,5 @@
 ---
-title: IBM Concert demo <br/> Using gen AI to manage the application portfolio <br/> <small> <i> Live demo for Sales and Tech Sales </i> </small>
+title: IBM Concert demo <br/> Using gen AI to manage the application portfolio <br/> <small> <i> Live demo for Tech Sales </i> </small>
 layout: demoscript
 banner: images/banner.jpg
 ---
@@ -52,7 +52,7 @@ Let’s get started.
 
 | **2.1** | **Discover application connections and dependencies** |
 | :--- | :--- |
-| **Action** &nbsp; 2.1.1 | Click **Arena view**. <inline-notification text="Use the zoom controls to fit the view on your screen."></inline-notification> <img src="images/2-1-1.png" width="800" /> |
+| **Action** &nbsp; 2.1.1 | Click **Arena view**. <inline-notification text="Use the zoom controls on the bottom right to fit the view on your screen."></inline-notification> <img src="images/2-1-1.png" width="800" /> |
 | **Narration** | The operations team harnesses the power of gen AI as Concert provides an interactive display of the application topology, revealing connections and dependencies. <br/><br/> The ‘Arena view’ provides the operations manager with a 360-degree view of the entire application ecosystem. Concert ingests data from various environments and toolsets, showing all the applications, runtime environments, source code repositories, deployed images, and public and private access points. <br/><br/> The operations manager can hover over any component to highlight the associated dependencies. |
 | **Action** &nbsp; 2.1.2 | Type '**paymentApp**' into the search bar (1). Hover over the **paymentApp** application (2). <br/> <img src="images/2-1-2.png" width="800" /> |
 | **Narration** | Looking at the ‘paymentApp,’ they see the Docker images and GitHub repositories associated with this application. They also see the environments where ‘paymentApp’ is deployed - in this case: development, QA, staging and two production environments. |
@@ -79,10 +79,10 @@ Let’s get started.
 
 | **3.1** | **Manage CVE risk** |
 | :--- | :--- |
-| **Action** &nbsp; 3.1.1 | Click the **Prioritized CVEs** switch. <inline-notification text="A red <strong>Prioritized CVEs</strong> section will appear in the diagram."></inline-notification> <img src="images/3-1-1.png" width="800" /> |
+| **Action** &nbsp; 3.1.1 | Click the **Prioritized CVEs** switch, which will display the prioritized CVEs on the left side of the Arena view. <br/> <img src="images/3-1-1.png" width="800" /> |
 | **Narration** | The operations manager oversees the ongoing threats posed by Common Vulnerabilities and Exposures (CVEs). Concert empowers the operations team to identify and mitigate application vulnerabilities, ensuring resilient operations and reduced security risks by prioritizing the highest risk issues. <br/><br/> Organizations typically have many thousands of CVEs in their code libraries. Concert enables the operations team to focus on the highest risk CVEs – based on the actual exposure in their specific application environment. Concert uses the details of the specific environment, along with proprietary threat intelligence and business criticality data, to calculate the risk posed by each vulnerability. <br/><br/> By clicking ‘Prioritized CVEs,’ the operations manager sees the most critical CVEs associated with the payment application. The darkest circles represent ‘Priority 1’ vulnerabilities. | 
 | **Action** &nbsp; 3.1.2 | Click a Priority 1 CVE (darkest red). <br/> <img src="images/3-1-2.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/3-1-3.png" width="800" /> |
-| **Narration** | The operations manager selects a CVE to view the details. <br/><br/> The Concert-generated risk score is a contextual score based on factors such as the environments where the code is deployed, the number of applications affected and the business criticality of those applications. Concert uses gen AI to automatically generate the CVE description and the “blast radius” showing each image and repository where the vulnerable code is deployed. |
+| **Narration** | The operations manager selects a CVE to view the details. <br/><br/> The Concert-generated risk score is a contextual score based on factors such as the environments where the code is deployed, the number of applications affected and the business criticality of those applications. Concert uses gen AI to automatically generate the CVE description and the blast radius showing each image and repository where the vulnerable code is deployed. |
 | **Action** &nbsp; 3.1.3 | Click **X** to close the CVE details screen. <br/> <img src="images/3-1-4.png" width="800" /> |
 | **Action** &nbsp; 3.1.4 | Click **X** to clear the search. <br/> <img src="images/3-1-5.png" width="800" /> |
 
@@ -90,7 +90,7 @@ Let’s get started.
 
 | **3.2** | **Manage compliance assessments** |
 | :--- | :--- |
-| **Action** &nbsp; 3.2.1 | Click the **Prioritized CVEs** switch to clear the CVEs, and then click the **Latest compliance assessments** switch. <inline-notification text="A green <strong>Latest compliance assessments</strong> section will appear in the diagram."></inline-notification> <img src="images/3-2-1.png" width="800" /> |
+| **Action** &nbsp; 3.2.1 | Click the **Prioritized CVEs** switch to clear the CVEs. Click the **Latest compliance assessments** switch, which will display the latest compliance assessments in the Arena view. <img src="images/3-2-1.png" width="800" /> |
 | **Narration** | The operations manager is responsible for maintaining compliance by ensuring all applications adhere to regulatory requirements. By integrating compliance management into the application lifecycle, Concert streamlines compliance assessments across all applications and accelerates issue tracking. When compliance deviations are detected, Concert prioritizes issues and assists the operations team in addressing them efficiently. <br/><br/> By clicking ‘Latest compliance assessments,’ the operations manager sees a summary of the compliance assessments across the application environments. The lighter circles represent the environments with the lowest compliance scores, while the darker circles represent those with higher compliance scores. |
 | **Action** &nbsp; 3.2.2 | Click **Dimensions** (1) and select **Compliance** (2). <br/> <img src="images/3-2-2.png" width="800" /> |
 | **Action** &nbsp; 3.2.3 | Select the **Profiles** tab. <br/> <img src="images/3-2-3.png" width="800" /> |
@@ -102,7 +102,7 @@ Let’s get started.
 | **Action** &nbsp; 3.2.8 | Click to open the first assessment. <br/> <img src="images/3-2-8.png" width="800" /> <br/><br/> The following **NIST scan results** screen will appear: <br/> <img src="images/3-2-9.png" width="800" /> |
 | **Narration** | Concert determines application compliance using compliance profiles. Concert creates compliance profiles based on standards such as NIST 800. Each profile contains a set of compliance controls, which are the specific measures that ensure applications adhere to regulatory policies. Concert uses gen AI to generate the description of each control. Concert’s assessment results identify which controls are compliant and which are not. <br/><br/> As applications are delivered, Concert verifies compliance and ensures adherence to standards as applications evolve and scale. In most organizations, compliance is typically handled in isolation by a separate compliance team. Concert provides a unified view of compliance impacts across application and compliance teams, enabling streamlined collaboration and decision-making. |
 | **Action** &nbsp; 3.2.9 | Click **X** to close the **NIST scan results** screen. <br/> <img src="images/3-2-10.png" width="800" /> |
-| **Action** &nbsp; 3.2.10 | Click the **Latest compliance assessments** switch to clear the compliance assessments, and then click the **Prioritized CVEs** switch. <inline-notification text="A red <strong>Prioritized CVEs</strong> section will appear in the diagram."></inline-notification> <img src="images/3-2-11.png" width="800" /> |
+| **Action** &nbsp; 3.2.10 | Click the **Latest compliance assessments** switch to clear the compliance assessments. Click the **Prioritized CVEs** switch, which will display the prioritized CVEs on the left side of the Arena view. <br/> <img src="images/3-2-11.png" width="800" /> |
 | **Action** &nbsp; 3.2.11 | Click the same CVE you selected previously. <br/> <img src="images/3-2-12.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/3-2-13.png" width="800" /> |
 
 **[Go to top](#top)**

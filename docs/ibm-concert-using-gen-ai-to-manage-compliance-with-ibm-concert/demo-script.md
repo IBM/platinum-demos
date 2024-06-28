@@ -1,5 +1,5 @@
 ---
-title: IBM Concert demo <br/> Using gen AI to manage compliance with IBM Concert <br/> <small> <i> Live demo for Sales and Tech Sales </i> </small>
+title: IBM Concert demo <br/> Using gen AI to manage compliance with IBM Concert <br/> <small> <i> Live demo for Tech Sales </i> </small>
 layout: demoscript
 banner: images/banner.jpg
 ---
@@ -56,8 +56,12 @@ Let’s get started.
 | **2.1** | **Placeholder** |
 | :--- | :--- |
 | **Narration** | Compliance catalogs store the compliance requirements, standards and regulations that a software application must adhere to. Concert manages compliance catalogs within the Compliance dimension. |
-| **Action** &nbsp; 2.1.1 | Placeholder <br/> <img src="images/2-1-1.png" width="800" /> |
-
+| **Action** &nbsp; 2.1.1 | Click **Dimensions** (1) and select **Compliance** (2). <br/> <img src="images/2-1-1.png" width="800" /> |
+| **Action** &nbsp; 2.1.2 | Click the **Catalogs** tab. <br/> <img src="images/2-1-2.png" width="800" /> |
+| **Narration** | The compliance manager reviews and manages the list of catalogs. The compliance manager can upload additional compliance catalogs. |
+| **Action** &nbsp; 2.1.3 | Click **Upload catalog**. <br/> <img src="images/2-1-3.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/2-1-4.png" width="800" /> |
+| **Narration** | Concert can import catalogs that are published by standards bodies, such as NIST-53 standards, or custom catalogs that are formatted according to the OSCAL specification. |
+| **Action** &nbsp; 2.1.4 | Click **Cancel**. <br/> <img src="images/2-1-3.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/2-1-4.png" width="800" /> |
 
 **[Go to top](#top)**
 

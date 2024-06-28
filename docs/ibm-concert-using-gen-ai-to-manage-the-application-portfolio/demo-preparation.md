@@ -1,5 +1,5 @@
 ---
-title: IBM Concert demo <br/> Using gen AI to manage the application portfolio <br/> <small> <i> Live demo for Sales and Tech Sales </i> </small>
+title: IBM Concert demo <br/> Using gen AI to manage the application portfolio <br/> <small> <i> Live demo for Tech Sales </i> </small>
 layout: preparation
 banner: images/banner.jpg
 ---
