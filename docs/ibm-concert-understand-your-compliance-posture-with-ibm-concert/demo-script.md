@@ -37,7 +37,7 @@ Let’s get started.
 | **Narration** | The compliance manager is responsible for maintaining compliance by ensuring all applications adhere to regulatory requirements. By integrating compliance management into the application lifecycle, Concert streamlines compliance assessments across all applications and accelerates issue tracking. When compliance deviations are detected, Concert prioritizes issues and assists the operations team in addressing them efficiently. <br/><br/> On logging into Concert, the compliance manager sees a comprehensive overview of the organization’s compliance posture. Concert provides a unified view of compliance assessments and their associated application environments. |
 | **Action** &nbsp; 1.1.2 | Click **Arena view**. <br/> <img src="images/1-1-2.png" width="800" /> |
 | **Action** &nbsp; 1.1.3 | Click the **Latest compliance assessments** switch. <br/> <img src="images/1-1-3.png" width="800" /> |
-| **Narration** | The compliance manager sees a summary of the compliance assessments across all the application environments. The lighter circles represent the environments with the lowest compliance scores, while the darker circles represent those with higher compliance scores. |
+| **Narration** | The compliance manager sees a summary of the compliance assessments across all the application environments. The lighter green circles represent the environments with the lowest compliance scores, while the darker green circles represent those with higher compliance scores. |
 
 **[Go to top](#top)**
 
