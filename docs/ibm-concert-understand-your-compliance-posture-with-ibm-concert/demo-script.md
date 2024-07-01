@@ -59,14 +59,14 @@ Let’s get started.
 | **Action** &nbsp; 2.1.1 | Click **Dimensions** (1) and select **Compliance** (2). <br/> <img src="images/2-1-1.png" width="800" /> |
 | **Action** &nbsp; 2.1.2 | Click the **Catalogs** tab. <br/> <img src="images/2-1-2.png" width="800" /> |
 | **Narration** | The compliance manager reviews and manages the list of catalogs. The compliance manager can upload additional compliance catalogs. |
-| **Action** &nbsp; 2.1.3 | Click **Upload catalog**. <br/> <img src="images/2-1-3.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/2-1-4.png" width="800" /> |
+| **Action** &nbsp; 2.1.3 | Click **Upload catalog**. <br/> <img src="images/2-1-3.png" width="800" /> <br/><br/> The following **Upload catalog** screen will appear: <br/> <img src="images/2-1-4.png" width="800" /> |
 | **Narration** | Concert can import catalogs that are published by standards bodies, such as NIST-53 standards, or custom catalogs that are formatted according to the OSCAL specification. |
 | **Action** &nbsp; 2.1.4 | Click **Cancel**. <br/> <img src="images/2-1-5.png" width="800" /> |
 | **Action** &nbsp; 2.1.5 | Click the first catalog. <br/> <img src="images/2-1-6.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/2-1-7.png" width="800" /> |
 | **Narration** | Each compliance catalog defines a set of compliance controls, which are the specific measures that ensure applications adhere to regulatory policies. |
 | **Action** &nbsp; 2.1.6 | Click to open the first control. <br/> <img src="images/2-1-8.png" width="800" /> |
 | **Narration** | The compliance manager reviews the compliance controls. Concert uses gen AI to generate a summary of the description of each control. |
-| **Action** &nbsp; 2.1.7 | Click the **AI** icon. Type '**What is ac-1?**' into the chatbot. <br/> <img src="images/2-1-9.png" width="800" /> |
+| **Action** &nbsp; 2.1.7 | Click the **AI** icon (1). Type '**What is ac-1?**' into the chatbot (2). <br/> <img src="images/2-1-9.png" width="800" /> |
 | **Narration** | Concert’s interactive chatbot uses gen AI to dig deeper into the compliance control and engage in conversations. The compliance manager uses natural language to interact with Concert, probing this compliance control, understanding its regulations and exploring the potential impacts. The chatbot uses IBM’s Granite language model and comes pre-trained to have interactive conversations about compliance. |
 | **Action** &nbsp; 2.1.8 | Click **X** to close the chatbot window. <br/> <img src="images/2-1-10.png" width="800" /> |
 | **Action** &nbsp; 2.1.9 | Click **X** to close the catalog. <br/> <img src="images/2-1-11.png" width="800" /> |
@@ -85,9 +85,9 @@ Let’s get started.
 
 <br/>
 
-| **3.1** | **PLaceholder** |
+| **3.1** | **Placeholder** |
 | :--- | :--- |
-| **Action** &nbsp; 3.1.1 | Click the **Profiles** tab. <br/> <img src="images/3-1-1.png" width="800" /> |
+| **Action** &nbsp; 3.1.1 | Select the **Profiles** tab. <br/> <img src="images/3-1-1.png" width="800" /> |
 | **Narration** | Concert uses compliance profiles to determine application compliance. When a profile is selected, the compliance manager views its controls. |
 | **Action** &nbsp; 3.1.2 | Click **Compliance profile**. <br/> <img src="images/3-1-2.png" width="800" /> <br/><br/> The following screen will appear: <br/> <img src="images/3-1-3.png" width="800" /> |
 | **Action** &nbsp; 3.1.3 | Click **X** to close the **Compliance profile** screen. <br/> <img src="images/3-1-4.png" width="800" /> |
