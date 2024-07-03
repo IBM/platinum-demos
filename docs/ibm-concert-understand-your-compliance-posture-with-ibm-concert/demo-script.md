@@ -67,9 +67,9 @@ Let’s get started.
 | **Action** &nbsp; 2.1.6 | Click to open the first control. <br/> <img src="images/2-1-8.png" width="800" /> |
 | **Narration** | Concert provides the detail of each control, including the description of what is needed to meet the requirements. The compliance manager might need further details to understand the requirements within the target environment. |
 | **Action** &nbsp; 2.1.7 | Click the **AI** icon. <br/> <img src="images/2-1-9.png" width="800" /> |
-| **Action** &nbsp; 2.1.8 | Type '**How does ac-1 impact my kubernetes cluster?**' into the chatbot. <br/> <img src="images/2-1-10.png" width="400" /> |
+| **Action** &nbsp; 2.1.8 | Type '**How does ac-1 impact my kubernetes cluster?**' into the chatbot. <br/> <img src="images/2-1-10.png" width="300" /> |
 | **Narration** | Concert’s interactive chatbot uses gen AI to dig deeper into the compliance control and engage in conversations. The compliance manager uses natural language to interact with Concert to  probe this compliance control and understand its implementation in the context of the target environment. The chatbot uses IBM’s Granite language model and comes pre-trained to have interactive conversations about compliance. <br/><br/> Concert provides prescriptive guidance on this control, in this case touching on concepts such as configuring tighter role-based access controls and restricting interservice interactions via fine-grained network policies. |
-| **Action** &nbsp; 2.1.9 | Click **X** to close the chatbot window. <br/> <img src="images/2-1-11.png" width="800" /> |
+| **Action** &nbsp; 2.1.9 | Click **X** to close the chatbot window. <br/> <img src="images/2-1-11.png" width="300" /> |
 | **Action** &nbsp; 2.1.10 | Click **X** to close the catalog. <br/> <img src="images/2-1-12.png" width="800" /> |
 
 **[Go to top](#top)**
