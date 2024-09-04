@@ -13,7 +13,7 @@ banner: images/banner.jpg
 
 ### **PREPARING FOR THE DEMO**
 
-<pre class="code-text">
+<pre class="code-block">
 <code>
 oc create secret generic concert-token-secret --from-literal=token="C_API_KEY bWFyeWFtYUBjYS5pYm0uY29tOjE5N2U4ZmI2LTNiY2YtNGRhOC04OGY0LTViYTYwMmQyZWMxMQ=="
 </code>
