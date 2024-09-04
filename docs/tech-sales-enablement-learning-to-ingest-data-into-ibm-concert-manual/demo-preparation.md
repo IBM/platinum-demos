@@ -32,6 +32,70 @@ Third, you will need to download the helper scripts provided for running this de
 
 </details>
 
+<p/>
+
+<details markdown="1">
+
+<summary>Set up IBM GitHub</summary>
+
+To manually ingest data into Concert, you will need 1) The Concert Toolkit and 2) a set of helper scripts. We’ve created these helper scripts to help train you on how to use the Concert Toolkit.
+
+In order to download the helper scripts, you’ll need to set up Github access.
+
+<inline-notification text="If you’re logged into your IBM GitHub account in Visual Studio Code, you can download the code without a key. If you are not logged in or prefer to use a different IDE, then an SSH key pair is required to download the code."></inline-notification>
+
+1. Generate an SSH Key Pair. <br/><br/> <code class="code-block"> cd .ssh <br/> ssh-keygen -t rsa -b 4096 -C "your_email@ibm.com" -f mycorporate_key </code>
+
+2. Add your SSH Key to the SSH agent. <br/><br/> <code class="code-block"> eval "$(ssh-agent -s)" && ssh-add mycorporate_key </code> 
+
+3. Copy the SSH public key. <br/><br/> <code class="code-block"> cat mycorporate_key.pub </code>
+
+4. Add the SSH key to your GitHub Enterprise account: <br/> • Go to your <a href="https://github.ibm.com/" target="_blank" rel="noreferrer">IBM GitHub account</a>. <br/> • Navigate to <strong>Savings</strong> (found under your profile picture). <br/> • Click <strong>SSH and GPG keys</strong>. <br/> • Click <strong>New SSH key</strong> <br/> • Paste the copied SSH key into the <strong>Key</strong> field and give it a title. <br/> • Save the key.
+
+5. Verify the SSH connection. <br/><br/> <code class="code-block"> ssh -T git@github.ibm.com </code>
+
+6. Clone the concert-pm-utils repository. <br/><br/> <code class="code-block"> git clone git@github.ibm.com:ibm-concert-platinum-demos/concert-pm-utils.git </code>
+
+7. Navigate to the directory where the helper scripts are located. Choose between macOS and Linux according to your local configuration.
+
+8. Change execute permissions for all the downloaded shell scripts in order to make them executable (otherwise default permissions will prevent you from executing them). <br/><br/> <code class="code-block"> chmod +x *.sh </code>
+
+**[Go to top](#top)**
+
+<br/><br/>
+
+</details>
+
+<p/>
+
+<details markdown="1">
+
+<summary>Set up system paths</summary>
+
+1. Update the system path and configure Git. Homebrew usually adds itself to the PATH automatically. However, if it doesn’t, you can add it manually: <br/><br/> <code class="code-block"> nano ~/.zshrc  # For zsh <br/> # or <br/> nano ~/.bash_profile  # For bash </code>
+
+2. For users running macOS versions prior to Big Sur, you can set the Homebrew installation directory with the following command. Please add this line to your .zshrc or .bash_profile: <br/><br/> <code class="code-block"> export PATH="/usr/local/bin:/usr/local/sbin:$PATH" </code>
+
+3. For users running macOS macOS versions Big Sur and later, the Homebrew installation directory is /opt/homebrew: <br/><br/> <code class="code-block"> export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH" </code>
+
+4. Homebrew usually handles this automatically, but to ensure Gradle is included in your PATH. For users running macOS versions prior to Big Sur, this can be done by adding the command below to your .zshrc or .bash_profile: <br/><br/> <code class="code-block"> export PATH="/usr/local/opt/gradle/bin:$PATH" </code>
+
+5. For users running macOS versions Big Sur and later, use the command below: <br/><br/> <code class="code-block"> export PATH="/opt/homebrew/opt/gradle/bin:$PATH" </code>
+
+6. Homebrew usually handles this automatically, but to ensure Bazel is included in your PATH. For users running macOS versions prior to Big Sur, this can be done by adding the command below to your .zshrc or .bash_profile: <br/><br/> <code class="code-block"> export PATH="/usr/local/bin:$PATH" </code>
+
+7. For users running macOS versions Big Sur and later, use the command below: <br/><br/> <code class="code-block"> export PATH="/opt/homebrew/bin:$PATH" </code>
+
+8. Apply changes: <br/><br/> <code class="code-block"> source ~/.zshrc  # For zsh <br/> # or <br/> source ~/.bash_profile  # For bash </code>
+
+9. Configure Git: <br/><br/> <code class="code-block"> git config --global user.name "Your Name" <br/> git config --global user.email "your.email@ibm.com" </code>
+
+**[Go to top](#top)**
+
+<br/><br/>
+
+</details>
+
 ***
 
 Click [here](demo-script) to go to the **Demo script** on the next tab.
