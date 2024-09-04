@@ -36,7 +36,26 @@ Let’s get started.
 
 | **Terms** | **Screenshot** | **Definition** | **Description** |
 | :--- | :--- | :--- | :--- |
-| **Application criticality** | <img src="images/1-5.png" width="300" /> | Placeholder | Placeholder |
+| **Placeholder** | <img src="images/1-1.png" width="700" /> | Placeholder | Placeholder |
+| **Placeholder** | <img src="images/1-2.png" width="700" /> | Placeholder | Placeholder |
+| **Placeholder** | <img src="images/1-3.png" width="750" /> | Placeholder | Placeholder |
+| **Placeholder** | <img src="images/1-4.png" width="300" /> | Placeholder | Placeholder |
+| **Application criticality** | <img src="images/1-5.png" width="350" /> | Placeholder | Placeholder |
+| **Placeholder** | <img src="images/1-6.png" width="350" /> | Placeholder | Placeholder |
+| **Placeholder** | <img src="images/1-7.png" width="350" /> | Placeholder | Placeholder |
+| **Placeholder** | <img src="images/1-8.png" width="350" /> | Placeholder | Placeholder |
+| **Placeholder** | <img src="images/1-9.png" width="350" /> | Placeholder | Placeholder |
+| **Placeholder** | <img src="images/1-10.png" width="800" /> | Placeholder | Placeholder |
+| **Placeholder** | <img src="images/1-11.png" width="350" /> | Placeholder | Placeholder |
+| **Placeholder** | <img src="images/1-12.png" width="350" /> | Placeholder | Placeholder |
+| **Placeholder** | <img src="images/1-13.png" width="350" /> | Placeholder | Placeholder |
+| **Placeholder** | <img src="images/1-14.png" width="600" /> | Placeholder | Placeholder |
+| **Placeholder** | <img src="images/1-15.png" width="350" /> | Placeholder | Placeholder |
+| **Placeholder** | <img src="images/1-16.png" width="350" /> | Placeholder | Placeholder |
+| **Placeholder** | <img src="images/1-17.png" width="300" /> | Placeholder | Placeholder |
+| **Placeholder** | <img src="images/1-18.png" width="400" /> | Placeholder | Placeholder |
+| **Placeholder** | <img src="images/1-19.png" width="450" /> | Placeholder | Placeholder |
+
 
 With the helper scripts downloaded, we are now ready populate application environment variables needed by the Concert toolkit. 
 
