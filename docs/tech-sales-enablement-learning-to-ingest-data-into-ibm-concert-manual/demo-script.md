@@ -38,21 +38,21 @@ In order to download the helper scripts, you’ll need to set up Github access.
 
 <inline-notification text="If you’re logged into your IBM GitHub account in Visual Studio Code, you can download the code without a key. If you are not logged in or prefer to use a different IDE, then an SSH key pair is required to download the code."></inline-notification>
 
-1. Generate an SSH Key Pair. <br/><br/> <code> cd .ssh <br/> ssh-keygen -t rsa -b 4096 -C "your_email@ibm.com" -f mycorporate_key </code>
+1. Generate an SSH Key Pair. <br/><br/> <code class="code-block"> cd .ssh <br/> ssh-keygen -t rsa -b 4096 -C "your_email@ibm.com" -f mycorporate_key </code>
 
-2. Add your SSH Key to the SSH agent. <br/><br/> <code> eval "$(ssh-agent -s)" && ssh-add mycorporate_key </code>
+2. Add your SSH Key to the SSH agent. <br/><br/> <code class="code-block"> eval "$(ssh-agent -s)" && ssh-add mycorporate_key </code> 
 
-3. Copy the SSH public key. <br/><br/> <code> cat mycorporate_key.pub </code>
+3. Copy the SSH public key. <br/><br/> <code class="code-block"> cat mycorporate_key.pub </code>
 
 4. Add the SSH key to your GitHub Enterprise account: <br/> • Go to your <a href="https://github.ibm.com/" target="_blank" rel="noreferrer">IBM GitHub account</a>. <br/> • Navigate to <strong>Savings</strong> (found under your profile picture). <br/> • Click <strong>SSH and GPG keys</strong>. <br/> • Click <strong>New SSH key</strong> <br/> • Paste the copied SSH key into the <strong>Key</strong> field and give it a title. <br/> • Save the key.
 
-5. Verify the SSH connection. <br/><br/> <code> ssh -T git@github.ibm.com </code>
+5. Verify the SSH connection. <br/><br/> <code class="code-block"> ssh -T git@github.ibm.com </code>
 
-6. Clone the concert-pm-utils repository. <br/><br/> <code> git clone git@github.ibm.com:ibm-concert-platinum-demos/concert-pm-utils.git </code>
+6. Clone the concert-pm-utils repository. <br/><br/> <code class="code-block"> git clone git@github.ibm.com:ibm-concert-platinum-demos/concert-pm-utils.git </code>
 
 7. Navigate to the directory where the helper scripts are located. Choose between macOS and Linux according to your local configuration.
 
-8. Change execute permissions for all the downloaded shell scripts in order to make them executable (otherwise default permissions will prevent you from executing them). <br/><br/> <code> chmod +x *.sh </code>
+8. Change execute permissions for all the downloaded shell scripts in order to make them executable (otherwise default permissions will prevent you from executing them). <br/><br/> <code class="code-block"> chmod +x *.sh </code>
 
 **[Go to top](#top)**
 
@@ -76,7 +76,7 @@ At the top of the file is some information about the repository and script setup
 
 The first thing we need to do is on line 51 where we define the operating system we’re working on. For Mac and Linux users we set the value of the PLATFORM_ARCH property "linux/amd64".
 
-<code> PLATFORM_ARCH="linux/amd64 </code>
+<code class="code-block"> PLATFORM_ARCH="linux/amd64 </code>
 
 <img src="images/1-1.png" width="800" />
 
@@ -172,7 +172,9 @@ With the environment variables populated, we can now install the software needed
 
 To install all supporting software, we run the install_supporting_software shell script. The script will install software like the IBM Concert toolkit, Grype, Docker, and many others needed for this demo.
 
-Run the install_pre_reqs.sh shell script. <code> ./install_pre_reqs.sh </code>
+Run the install_pre_reqs.sh shell script:
+
+<code class="code-block"> ./install_pre_reqs.sh </code>
 
 The shell script will install the following: <br/> • <strong>IBM Concert toolkit</strong>: framework required to interact with IBM Concert APIs. <br/> • <strong>Python3</strong> and <strong>pip3</strong>: essential for running Python scripts and managing Python packages. <br/> • <strong>Homebrew</strong>: package manager for macOS that simplifies the installation, updating, and management of software and libraries. <br/> • <strong>Node.js</strong>: required to enable the execution of JavaScript code server-side and the development of scalable network applications. <br/> • <strong>nvm</strong>: enable you to manage multiple versions of Node.js, making it easy to switch between different versions for various projects and development environments. <br/> • <strong>rpm</strong>: needed for installing certain packages like Syft. <br/> • <strong>Gradle</strong>: open-source build automation tool that streamlines the building, testing and deployment of software projects with its flexible and powerful capabilities. <br/> • <strong>grype</strong>: vulnerability scanner for container images and filesystems. <br/> • <strong>jq</strong>: lightweight and flexible command-line JSON processor, essential for parsing, manipulating, and transforming JSON data. <br/> • <strong>Bazel</strong>: powerful build and test tool that automates the process of compiling and testing large codebases efficiently. <br/> • <strong>Syft</strong>: tool for generating SBOMs from container images and filesystems. <br/> • <strong>cdxgen</strong>: tool required to generate CycloneDX SBOMs for various programming languages. <br/> • <strong>GitHub CLI</strong>: is a tool for managing GitHub repositories from the command line. <br/> • <strong>Docker</strong>: platform for running and deploying containers and applications.
 
@@ -190,23 +192,23 @@ The shell script will install the following: <br/> • <strong>IBM Concert toolk
 
 <summary>Pre-req - Set up system paths</summary>
 
-1. Update the system path and configure Git. Homebrew usually adds itself to the PATH automatically. However, if it doesn’t, you can add it manually: <br/><br/> <code> nano ~/.zshrc  # For zsh <br/> # or <br/> nano ~/.bash_profile  # For bash </code>
+1. Update the system path and configure Git. Homebrew usually adds itself to the PATH automatically. However, if it doesn’t, you can add it manually: <br/><br/> <code class="code-block"> nano ~/.zshrc  # For zsh <br/> # or <br/> nano ~/.bash_profile  # For bash </code>
 
-2. For users running macOS versions prior to Big Sur, you can set the Homebrew installation directory with the following command. Please add this line to your .zshrc or .bash_profile: <br/><br/> <code> export PATH="/usr/local/bin:/usr/local/sbin:$PATH" </code>
+2. For users running macOS versions prior to Big Sur, you can set the Homebrew installation directory with the following command. Please add this line to your .zshrc or .bash_profile: <br/><br/> <code class="code-block"> export PATH="/usr/local/bin:/usr/local/sbin:$PATH" </code>
 
-3. For users running macOS macOS versions Big Sur and later, the Homebrew installation directory is /opt/homebrew: <br/><br/> <code> export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH" </code>
+3. For users running macOS macOS versions Big Sur and later, the Homebrew installation directory is /opt/homebrew: <br/><br/> <code class="code-block"> export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH" </code>
 
-4. Homebrew usually handles this automatically, but to ensure Gradle is included in your PATH. For users running macOS versions prior to Big Sur, this can be done by adding the command below to your .zshrc or .bash_profile: <br/><br/> <code> export PATH="/usr/local/opt/gradle/bin:$PATH" </code>
+4. Homebrew usually handles this automatically, but to ensure Gradle is included in your PATH. For users running macOS versions prior to Big Sur, this can be done by adding the command below to your .zshrc or .bash_profile: <br/><br/> <code class="code-block"> export PATH="/usr/local/opt/gradle/bin:$PATH" </code>
 
-5. For users running macOS versions Big Sur and later, use the command below: <br/><br/> <code> export PATH="/opt/homebrew/opt/gradle/bin:$PATH" </code>
+5. For users running macOS versions Big Sur and later, use the command below: <br/><br/> <code class="code-block"> export PATH="/opt/homebrew/opt/gradle/bin:$PATH" </code>
 
-6. Homebrew usually handles this automatically, but to ensure Bazel is included in your PATH. For users running macOS versions prior to Big Sur, this can be done by adding the command below to your .zshrc or .bash_profile: <br/><br/> <code> export PATH="/usr/local/bin:$PATH" </code>
+6. Homebrew usually handles this automatically, but to ensure Bazel is included in your PATH. For users running macOS versions prior to Big Sur, this can be done by adding the command below to your .zshrc or .bash_profile: <br/><br/> <code class="code-block"> export PATH="/usr/local/bin:$PATH" </code>
 
-7. For users running macOS versions Big Sur and later, use the command below: <br/><br/> <code> export PATH="/opt/homebrew/bin:$PATH" </code>
+7. For users running macOS versions Big Sur and later, use the command below: <br/><br/> <code class="code-block"> export PATH="/opt/homebrew/bin:$PATH" </code>
 
-8. Apply changes: <br/><br/> <code> source ~/.zshrc  # For zsh <br/> # or <br/> source ~/.bash_profile  # For bash </code>
+8. Apply changes: <br/><br/> <code class="code-block"> source ~/.zshrc  # For zsh <br/> # or <br/> source ~/.bash_profile  # For bash </code>
 
-9. Configure Git: <br/><br/> <code> git config --global user.name "Your Name" <br/> git config --global user.email "your.email@ibm.com" </code>
+9. Configure Git: <br/><br/> <code class="code-block"> git config --global user.name "Your Name" <br/> git config --global user.email "your.email@ibm.com" </code>
 
 **[Go to top](#top)**
 
@@ -246,7 +248,7 @@ The image scan command uses Syft to analyze the containerized application image 
 
 In both cases, the toolkit generates a JSON file in standard CycloneDX format.
 
-To execute both tasks we will run the generate_package_sbom.sh shell script: <br/><br/> <code> ./generate_package_sbom.sh </code>
+To execute both tasks we will run the generate_package_sbom.sh shell script: <br/><br/> <code class="code-block"> ./generate_package_sbom.sh </code>
 
 The output of this command will be an image-scan SBOM and a code-scan SBOM file for each microservice.
 
@@ -272,7 +274,7 @@ The next step involves using Grype to conduct a vulnerability scan by analyzing 
 
 <!-- <show script where Grype command is called and how it’s converting it to a format that Concert can accept> -->
 
-This process is carried out by executing the generate_cve_csv_file.sh  shell script: <br/><br/> <code> ./generate_cve_csv_file.sh </code>
+This process is carried out by executing the generate_cve_csv_file.sh  shell script: <br/><br/> <code class="code-block"> ./generate_cve_csv_file.sh </code>
 
 The output of this command will be a CVE file in CSV format for each microservice image in the application.
 
@@ -302,7 +304,7 @@ We will use the toolkit to generate the build SBOM file, which is a detailed inv
 
 <!-- <show script where build-sbom command is called> -->
 
-This process is carried out by executing the generate_build_sbom.sh shell script: <br/><br/> <code> ./generate_build_sbom.sh </code>
+This process is carried out by executing the generate_build_sbom.sh shell script: <br/><br/> <code class="code-block"> ./generate_build_sbom.sh </code>
 
 For each microservice image of the target application, a build SBOM  will be generated in the ./toolkit-data directory.
 
@@ -328,7 +330,7 @@ The next step involves using the toolkit to generate the deploy SBOM file where 
 
 <!-- <show script where deploy-sbom command is called> -->
 
-This process is carried out by executing the generate_deploy_sbom.sh shell script: <br/><br/> <code> ./generate_deploy_sbom.sh </code>
+This process is carried out by executing the generate_deploy_sbom.sh shell script: <br/><br/> <code class="code-block"> ./generate_deploy_sbom.sh </code>
 
 For each pair of microservice and environment defined for the target application, a deploy SBOM will be generated in the ./toolkit-data directory. 
 
@@ -354,7 +356,7 @@ The last SBOM to be generated is the Application definition SBOM. This SBOM is w
 
 <!-- <show script where app-definition command is called> -->
 
-This process is carried out by executing the generate_app_def.sh shell script: <br/><br/> <code> ./generate_app_def.sh </code>
+This process is carried out by executing the generate_app_def.sh shell script: <br/><br/> <code class="code-block"> ./generate_app_def.sh </code>
 
 Unlike the other SBOMs, the application SBOM is defined at the application level instead of the microservice level. This enables Concert to have an application-centric view and only one application definition SBOM is required for each application, regardless of how many microservices it has.
 
@@ -380,7 +382,7 @@ The final step is to upload all the generated data into IBM Concert to make it a
 
 <!-- <show script with upload details> -->
 
-This utility script automates the process, allowing multiple Concert-supported files to be uploaded at once, eliminating the need for manual uploads: <br/><br/> <code> ./upload_data_concert.sh </code>
+This utility script automates the process, allowing multiple Concert-supported files to be uploaded at once, eliminating the need for manual uploads: <br/><br/> <code class="code-block"> ./upload_data_concert.sh </code>
 
 Alternatively, you can manually upload all relevant files from the ./toolkit-data directory to IBM Concert using the user interface, one by one.
 
