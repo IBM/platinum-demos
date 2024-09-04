@@ -1,5 +1,5 @@
 ---
-title: Tech Sales enablement <br/> Learning to ingest data into IBM Concert <br/> <small> <i> Pipeline data ingestion </i> </small>
+title: Part 1 - Ingesting data manually into IBM Concert <br/> <small> <i> Tech Sales enablement </i> </small>
 layout: preparation
 banner: images/banner.jpg
 ---
@@ -13,19 +13,9 @@ banner: images/banner.jpg
 
 ### **PREPARING FOR THE DEMO**
 
-<element class="code-block">
-oc create secret generic concert-token-secret --from-literal=token="C_API_KEY bWFyeWFtYUBjYS5pYm0uY29tOjE5N2U4ZmI2LTNiY2YtNGRhOC04OGY0LTViYTYwMmQyZWMxMQ=="
-</element>
-
 <div class="code-block">
 oc create secret generic concert-token-secret --from-literal=token="C_API_KEY bWFyeWFtYUBjYS5pYm0uY29tOjE5N2U4ZmI2LTNiY2YtNGRhOC04OGY0LTViYTYwMmQyZWMxMQ=="
 </div>
-
-<pre class="code-block">
-<code>
-oc create secret generic concert-token-secret --from-literal=token="C_API_KEY bWFyeWFtYUBjYS5pYm0uY29tOjE5N2U4ZmI2LTNiY2YtNGRhOC04OGY0LTViYTYwMmQyZWMxMQ=="
-</code>
-</pre>
 
 <details markdown="1">
 
