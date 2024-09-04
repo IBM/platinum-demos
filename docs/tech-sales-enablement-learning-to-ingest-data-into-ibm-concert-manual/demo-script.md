@@ -1,5 +1,5 @@
 ---
-title: Tech Sales enablement <br/> Learning to ingest data into IBM Concert <br/> <small> <i> Manual data ingestion </i> </small>
+title: Part 1 - Ingesting data manually into IBM Concert <br/> <small> <i> Tech Sales enablement </i> </small>
 layout: demoscript
 banner: images/banner.jpg
 ---

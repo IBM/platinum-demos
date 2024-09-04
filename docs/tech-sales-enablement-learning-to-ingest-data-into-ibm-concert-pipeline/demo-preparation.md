@@ -1,5 +1,5 @@
 ---
-title: Part 1 - Ingesting data manually into IBM Concert <br/> <small> <i> Tech Sales enablement </i> </small>
+title: Part 2 - Using a pipeline to automate data ingestion into IBM Concert <br/> <small> <i> Tech Sales enablement </i> </small>
 layout: preparation
 banner: images/banner.jpg
 ---
