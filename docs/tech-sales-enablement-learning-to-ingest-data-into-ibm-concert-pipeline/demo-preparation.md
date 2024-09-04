@@ -15,9 +15,7 @@ banner: images/banner.jpg
 
 <pre class="code-block">
 <code>
-# Example of a code snippet
-export USERNAME=<github username>
-git clone git@github.ibm.com:cs-tel-ibm-concert-qotd-$USERNAME/qotd-web.git
+oc create secret generic concert-token-secret --from-literal=token="C_API_KEY bWFyeWFtYUBjYS5pYm0uY29tOjE5N2U4ZmI2LTNiY2YtNGRhOC04OGY0LTViYTYwMmQyZWMxMQ=="
 </code>
 </pre>
 
