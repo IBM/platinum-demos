@@ -13,6 +13,23 @@ banner: images/banner.jpg
 
 ### **PREPARING FOR THE DEMO**
 
+<div class="code-block">
+  <div class="code-text">
+    <pre>
+      <code>
+        oc create secret generic concert-token-secret --from-literal=token="C_API_KEY bWFyeWFtYUBjYS5pYm0uY29tOjE5N2U4ZmI2LTNiY2YtNGRhOC04OGY0LTViYTYwMmQyZWMxMQ=="
+      </code>
+    </pre>
+  </div>
+  <div class="copy-icon">
+    <button class="copy-button" onclick="copyText(event)">
+      <svg class="copy-icon-image"></svg>
+      <span class="popuptext">Copied!</span>
+    </button>
+  </div>
+</div>
+
+
 <pre class="code-block">
 <code>
 oc create secret generic concert-token-secret --from-literal=token="C_API_KEY bWFyeWFtYUBjYS5pYm0uY29tOjE5N2U4ZmI2LTNiY2YtNGRhOC04OGY0LTViYTYwMmQyZWMxMQ=="
