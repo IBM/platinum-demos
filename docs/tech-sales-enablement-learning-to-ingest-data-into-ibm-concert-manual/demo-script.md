@@ -278,7 +278,17 @@ For each microservice image of the target application, a build SBOM  will be gen
 
 <summary>6 - Generate 'Deploy SBOMs'</summary>
 
-Placeholder
+The next step involves using the toolkit to generate the deploy SBOM file where the public and private access points are defined. The deploy SBOM focuses on the software as it is actually deployed in a specific environment, including any environment-specific configurations or dependencies.
+
+<!-- <show script where deploy-sbom command is called> -->
+
+This process is carried out by executing the generate_deploy_sbom.sh shell script: <br/><br/> <code> ./generate_deploy_sbom.sh </code>
+
+For each pair of microservice and environment defined for the target application, a deploy SBOM will be generated in the ./toolkit-data directory. 
+
+<!-- <show toolkit-data directory where SBOMs are generated (14)> --> 
+
+involves using the toolkit to generate the Application Definition SBOM file, which is a detailed record of all elements involved in the application, from its core components to external dependencies, configuration settings, and runtime environments.
 
 **[Go to top](#top)**
 
@@ -292,7 +302,17 @@ Placeholder
 
 <summary>7 - Generate 'Application-definition SBOM'</summary>
 
-Placeholder
+The last SBOM to be generated is the Application definition SBOM. This SBOM is where the  application criticality is defined. As mentioned earlier the application criticality plays a significant role in Concert’s calculation of risk prioritization and recommendations.
+
+<!-- <show script where app-definition command is called> -->
+
+This process is carried out by executing the generate_app_def.sh shell script: <br/><br/> <code> ./generate_app_def.sh </code>
+
+Unlike the other SBOMs, the application SBOM is defined at the application level instead of the microservice level. This enables Concert to have an application-centric view and only one application definition SBOM is required for each application, regardless of how many microservices it has.
+
+An Application Definition SBOM will be generated in the ./toolkit-data directory. 
+
+<!-- <show toolkit-data directory where Application Definition SBOM is generated (1)> -->
 
 **[Go to top](#top)**
 
@@ -306,7 +326,15 @@ Placeholder
 
 <summary>8 - Upload data to Concert</summary>
 
-Placeholder
+The final step is to upload all the generated data into IBM Concert to make it accessible in the Concert UI. This can be done by executing the upload_data_concert.sh  shell script. 
+
+<!-- <show script with upload details> -->
+
+This utility script automates the process, allowing multiple Concert-supported files to be uploaded at once, eliminating the need for manual uploads: <br/><br/> <code> ./upload_data_concert.sh </code>
+
+Alternatively, you can manually upload all relevant files from the ./toolkit-data directory to IBM Concert using the user interface, one by one.
+
+<inline-notification text="Once all files are processed, they will be zipped and moved to the ./processed folder."></inline-notification>
 
 **[Go to top](#top)**
 
@@ -320,21 +348,11 @@ Placeholder
 
 <summary>View updates in Concert UI</summary>
 
-Placeholder
+We can now log in to Concert to view the uploaded data.
 
-**[Go to top](#top)**
+<!-- <show arena view> -->
 
-<br/><br/>
-
-</details>
-
-<p/>
-
-<details markdown="1">
-
-<summary>Summary</summary>
-
-Placeholder
+<!-- <show dimensions view of vulnerability> -->
 
 **[Go to top](#top)**
 
