@@ -34,6 +34,10 @@ Let’s get started.
 
 <inline-notification text="Line numbers may vary as helper scripts get updated."></inline-notification>
 
+| **Terms** | **Screenshot** | **Definition** | **Description** |
+| :--- | :--- | :--- | :--- |
+| **Application criticality** | <img src="images/1-5.png" width="300" /> | Placeholder | Placeholder |
+
 With the helper scripts downloaded, we are now ready populate application environment variables needed by the Concert toolkit. 
 
 We begin by opening the concert-pm-utils repo code we downloaded in the pre-requisites section and open the global_environment_variables file. This file contains all the details of the demo qotd application and its environment.
