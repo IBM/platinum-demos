@@ -88,22 +88,15 @@ The Concert secret is what will authenticate us to use the API to upload data to
 
 Once we have the Concert API token, we will use the oc create secret generic command, setting the name of the secret to concert-token-secret. After that we insert our Concert token. Important to note, ensure you have the attribute “C_API_KEY” before the SaaS token, otherwise the API upload won’t authenticate successfully.
 
-<code> oc create secret generic concert-token-secret --from-literal=token="C_API_KEY bWFyeWFtYUBjYS5pYm0uY29tOjE5N2U4ZmI2LTNiY2YtNGRhOC04OGY0LTViYTYwMmQyZWMxMQ==" </code>
+<code class="code-block"> oc create secret generic concert-token-secret <br/> --from-literal=token="C_API_KEY <br/> bWFyeWFtYUBjYS5pYm0uY29tOjE5N2U4ZmI2LTNiY2YtNGRhOC04OGY0LTViYTYwMmQyZWMxMQ==" </code>
 
 Next we will create the Github secret. To do this we use the oc create secret generic command again, however this time we name the secret github-creds and provide our github username and token. This information was setup during the prerequisites, and if not then a IBM github username and token should be setup prior to this step.
 
-<code> oc create secret generic github-creds `
-
-  --from-literal=username=$env:GITHUB_USERNAME `
-
-  --from-literal=password=$env:GITHUB_TOKEN ` <— Created during pre-reqs
-
-  --type=kubernetes.io/basic-auth </code>
+<code class="code-block"> oc create secret generic github-creds ` <br/> --from-literal=username=$env:GITHUB_USERNAME ` <br/> --from-literal=password=$env:GITHUB_TOKEN ` <— Created during pre-reqs <br/> --type=kubernetes.io/basic-auth </code>
 
 For the github secret, we must also annotate it and link it to the pipeline. Run the following commands to complete this step.
 
-<code> oc annotate secret github-creds `
-tekton.dev/git-0=https://github.ibm.comoc secret link pipeline github-creds </code>
+<code class="code-block"> oc annotate secret github-creds ` <br/> tekton.dev/git-0=https://github.ibm.com <br/><br/> oc secret link pipeline github-creds </code>
 
 The third secret will authenticate us into the image registry we setup in the prerequisites. For this demo, we are using a private IBM internal jfrog artifactory registry to store our container images. To create this secret, we need our jfrog server address, username and token.
 
@@ -111,15 +104,15 @@ To generate these, let’s log into jfrog and quickly generate these values, not
 
 We will use the same oc create secret command however this time the type is docker-registry and we will name it container-registry-secret, then we provide our jfrog information as noted just now, and run the whole command.
 
-<code> oc create secret docker-registry container-registry-secret --docker-server=na.artifactory.swg-devops.com --docker-username=maryama@ca.ibm.com --docker-password=cmVmdGtuOjAxOjE3MzA3MTkwNDg6QktWbnhiQ1U5UzB5amFkREVLNkx6ZHNQZTJssecret/container-registry-secret </code>
+<code class="code-block"> oc create secret docker-registry container-registry-secret --docker-server=na.artifactory.swg-devops.com --docker-username=maryama@ca.ibm.com --docker-password=cmVmdGtuOjAxOjE3MzA3MTkwNDg6QktWbnhiQ1U5UzB5amFkREVLNkx6ZHNQZTJssecret/container-registry-secret </code>
 
 Similar to the GitHub secret, we need to link the secret to our pipeline with both access and pull permissions. The pull permission allows Tekton to pull images from our registry.oc secret link pipeline container-registry-secret
 
-<code> oc secret link pipeline container-registry-secret --for=pull </code>
+<code class="code-block"> oc secret link pipeline container-registry-secret --for=pull </code>
 
 Now that all three secrets have been added, we can quickly validate they’ve been successfully created by running the oc get serviceaccount command
 
-<code> oc get serviceaccount pipeline -o yaml </code>
+<code class="code-block"> oc get serviceaccount pipeline -o yaml </code>
 
 In the output, we should see the github secret at the bottom and the container-registry secret in two places. The Concert secret is not shown here.
 
@@ -263,9 +256,9 @@ All the pipeline tasks, like the default git-clone clustertask and code-scan are
 To run our demo pipeline, we only need to make changes to line 29 which identifies the host of our IBM Concert instance as the base_url parameter. This information is also found in the URL of our Concert SaaS instance, and we can copy and paste it here. 
 
 Update line 29 and 54 (optional): <br/>
-• <code> name: base_url </code><br/>
-• <code> default: <a href="https://73244.us-south-2.concert.test.saas.ibm.com" target="_blank" rel="noreferrer">"https://73244.us-south-2.concert.test.saas.ibm.com"</a></code><br/>
-• <code> prod: <a href="https://65879.us-south-8.concert.saas.ibm.com" target="_blank" rel="noreferrer">https://65879.us-south-8.concert.saas.ibm.com</a></code><br/>
+• name: base_url <br/>
+• default: <a href="https://73244.us-south-2.concert.test.saas.ibm.com" target="_blank" rel="noreferrer">"https://73244.us-south-2.concert.test.saas.ibm.com"</a><br/>
+• prod: <a href="https://65879.us-south-8.concert.saas.ibm.com" target="_blank" rel="noreferrer">https://65879.us-south-8.concert.saas.ibm.com</a><br/>
 
 That completes the definition of all our task files.
 
@@ -292,8 +285,8 @@ In this step, we will configure the trigger template to connect with our QotD re
 To run our demo, we need to change only one line and that is line 44 where our image repository is defined. This is where we link to the image registry we setup in the prerequisites. For the value, we provide the host server of our registry, the folder path the image will be stored in, and we use a variable to dynamically name the image as the component name parameter from our pipeline.
 
 Update line 44: <br/>
-• <code> name: image </code> <br/>
-• <code> value: "na.artifactory.swg-devops.com/hyc-roja-platform-engineering-team-docker-local/pm-qotd/$(tt.params.component_name)" </code>
+• name: image <br/>
+• value: "na.artifactory.swg-devops.com/hyc-roja-platform-engineering-team-docker-local/pm-qotd/$(tt.params.component_name)"
 
 This will result in images in our jfrog instances that look like this.
 
@@ -313,11 +306,13 @@ Now that all our tasks are configured and the trigger template has been updated,
 
 We can create the pipeline very quickly by bulk applying all our pipelines files to openshift. To push all the files, we will use the oc commands to push each of the folders individual. 
 
-First, we need to ensure we’re in the correct folder path on our machine: <br/><br/>
-<code> cd sbom-concert-pipeline </code>
+First, we need to ensure we’re in the correct folder path on our machine:
 
-Then, we apply correct folder path on our machine: <br/><br/>
-<code> oc apply -f ./1-pipeline <br/> oc apply -f ./2-webhook </code>
+<code class="code-block"> cd sbom-concert-pipeline </code>
+
+Then, we apply correct folder path on our machine: 
+
+<code class="code-block"> oc apply -f ./1-pipeline <br/> oc apply -f ./2-webhook </code>
 
 Note: If you encounter any issues, it’s important to note that yaml files are very specific on indentation. Ensure spacing is correct.
 
@@ -345,7 +340,7 @@ We will keep SSL disabled, although in a customer environment, SSL would typical
 
 This tells us our Tekton route is 
 
-<code> el-webhook-default.apps.66ba1da31bc8d0001e815a6c.ocp.techzone.ibm.com </code>
+<code class="code-block"> el-webhook-default.apps.66ba1da31bc8d0001e815a6c.ocp.techzone.ibm.com </code>
 
 We copy this value, add <code>https://</code> to the front and paste it into our organization’s GitHub. Without the <code>https://</code>, GitHub won’t accept it as a valid url.
 
