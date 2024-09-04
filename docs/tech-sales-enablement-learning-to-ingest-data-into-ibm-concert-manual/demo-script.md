@@ -188,6 +188,12 @@ On the left, we see that Concert ingests the industry standard cycloneDX SBOM ge
 
 On the right, we see that Concert also ingests SBOMs that are specific to Concert. These SBOMs are extenstions of the cycloneDX format and are customized for Concert. These SBOMs are called ‘Concert-defined’ SBOMs. 
 
+| **Concert-defined SBOMs** | **Details** |
+| :--- | :--- | :--- | :--- |
+| **Build SBOMs** | • Microservices (individual components) <br/> • Associated images and versions for each microservice <br/> • Repositories and branches linked to each microservice |
+| **Deploy SBOMs** | • Microservices (individual components) <br/> • Associated environments for each microservice <br/> • Access points linked to each microservice <br/> • External dependencies |
+| **Application-definition SBOM** | • List of all Microservices (individual components) that makes the application <br/> • List of all Repositories that makes the application <br/> • List of all images that makes the application <br/> • List of all environments that makes the application <br/> • Application criticality <br/> • Visibility of each access point |
+
 The first SBOM file is the Package SBOM: which gets its name because Concert takes an inventory of what’s in the software packages. Concert ingests two types of package SBOMs, one that scans the the source code and the second that scans the images.
 
 <!-- <show section in script where toolkit image is pulled> -->
