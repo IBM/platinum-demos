@@ -13,6 +13,12 @@ banner: images/banner.jpg
 
 ### **PREPARING FOR THE DEMO**
 
+<pre class="code-block"><code>
+# Example of a code snippet
+export USERNAME=<github username>
+git clone git@github.ibm.com:cs-tel-ibm-concert-qotd-$USERNAME/qotd-web.git
+</code></pre>
+
 <details markdown="1">
 
 <summary>Pre-requisites</summary>
