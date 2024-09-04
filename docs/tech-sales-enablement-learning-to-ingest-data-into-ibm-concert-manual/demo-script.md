@@ -30,40 +30,6 @@ Let’s get started.
 
 <details markdown="1">
 
-<summary>Pre-req: Set up IBM GitHub</summary>
-
-To manually ingest data into Concert, you will need 1) The Concert Toolkit and 2) a set of helper scripts. We’ve created these helper scripts to help train you on how to use the Concert Toolkit.
-
-In order to download the helper scripts, you’ll need to set up Github access.
-
-<inline-notification text="If you’re logged into your IBM GitHub account in Visual Studio Code, you can download the code without a key. If you are not logged in or prefer to use a different IDE, then an SSH key pair is required to download the code."></inline-notification>
-
-1. Generate an SSH Key Pair. <br/><br/> <code class="code-block"> cd .ssh <br/> ssh-keygen -t rsa -b 4096 -C "your_email@ibm.com" -f mycorporate_key </code>
-
-2. Add your SSH Key to the SSH agent. <br/><br/> <code class="code-block"> eval "$(ssh-agent -s)" && ssh-add mycorporate_key </code> 
-
-3. Copy the SSH public key. <br/><br/> <code class="code-block"> cat mycorporate_key.pub </code>
-
-4. Add the SSH key to your GitHub Enterprise account: <br/> • Go to your <a href="https://github.ibm.com/" target="_blank" rel="noreferrer">IBM GitHub account</a>. <br/> • Navigate to <strong>Savings</strong> (found under your profile picture). <br/> • Click <strong>SSH and GPG keys</strong>. <br/> • Click <strong>New SSH key</strong> <br/> • Paste the copied SSH key into the <strong>Key</strong> field and give it a title. <br/> • Save the key.
-
-5. Verify the SSH connection. <br/><br/> <code class="code-block"> ssh -T git@github.ibm.com </code>
-
-6. Clone the concert-pm-utils repository. <br/><br/> <code class="code-block"> git clone git@github.ibm.com:ibm-concert-platinum-demos/concert-pm-utils.git </code>
-
-7. Navigate to the directory where the helper scripts are located. Choose between macOS and Linux according to your local configuration.
-
-8. Change execute permissions for all the downloaded shell scripts in order to make them executable (otherwise default permissions will prevent you from executing them). <br/><br/> <code class="code-block"> chmod +x *.sh </code>
-
-**[Go to top](#top)**
-
-<br/><br/>
-
-</details>
-
-<p/>
-
-<details markdown="1">
-
 <summary>1 - Populate global variables</summary>
 
 With the helper scripts downloaded, we are now ready populate application environment variables needed by the Concert toolkit. 
@@ -90,43 +56,43 @@ After that, we scroll down to the demo app section and give the application a na
 
 On line 79, we’ll name it "quote-of-the-day."
 
-<img src="images/1-4.png" width="800" />
+<img src="images/1-4.png" width="400" />
 
 The next step is to define how critical this application is to our organization. We’ll use a scale from 1 to 5, with 1 being the least critical and 5 being the most. For this demo, we'll set the criticality to 4. The criticality rating plays a big role in how Concert calculates the risk score, so setting this value correctly is key to getting the most out of Concert’s prioritization recommendations.
 
-<img src="images/1-5.png" width="800" />
+<img src="images/1-5.png" width="400" />
 
 Next, on line 91, we’ll list the URLs where the source code for the qotd application is stored. Our qotd application is set up as a polyrepo in GitLab, which means each microservice has its own repository. Since the qotd application has 10 microservices, we’ll enter 10 repository URLs in this variable.
 
-<img src="images/1-6.png" width="800" />
+<img src="images/1-6.png" width="400" />
 
 Since we’re using the latest version of the application, we will set the next variable to "latest" on line 104.
 
-<img src="images/1-7.png" width="800" />
+<img src="images/1-7.png" width="400" />
 
 Since this is a manual script with all the information being static, we need to populate the next variable with all the different microservices or components of the application on line 107. This is a positional array, so the order of the microservices listed here is important. For example, the first microservice corresponds to the first repository we listed earlier, and the same order will apply to the other variables below.
 
-<img src="images/1-8.png" width="800" />
+<img src="images/1-8.png" width="400" />
 
 Next on line 122, we will list the names of the microservice repos in the same order as they are above.
 
-<img src="images/1-9.png" width="800" />
+<img src="images/1-9.png" width="400" />
 
 Next, we’ll specify the folder where the source code for each microservice is located on your machine. We’ll use the relative path for this.
 
-<img src="images/1-10.png" width="800" />
+<img src="images/1-10.png" width="1000" />
 
 Next, we’ll fill in the next variable with the URL for each of the images corresponding to the microservices listed above. As mentioned earlier, each microservice should have exactly one image.
 
-<img src="images/1-11.png" width="800" />
+<img src="images/1-11.png" width="400" />
 
 Next, we’ll enter the tags for each image. For this exercise, we’ll be working with the latest images, so we’ll use the tag "latest."
 
-<img src="images/1-12.png" width="800" />
+<img src="images/1-12.png" width="400" />
 
 Next, we’ll specify the branch for each of the repositories we listed earlier. For this exercise, we’ll be working with the "main" branch, so let’s enter "main" for each repository.
 
-<img src="images/1-13.png" width="800" />
+<img src="images/1-13.png" width="400" />
 
 The next variable is a list of all the access points used by the microservices in this application. We’ll use an array of strings, with each element separated by a specific separator character. For each access point we will provide the name of the microservice it belongs to, the name of the environment the access point is on (for example, dev, qa, stage, prod), the name of the access point, the url of the access point, and most importantly, the visibility or exposure of the access point, either public or private. It’s useful to note that if no exposure parameter is provided, Concert will default it to public.
 
@@ -136,25 +102,25 @@ Each microservice can have multiple access points. For this exercise, we’ll fi
 
 The next few variables would normally be populated automatically in a CI/CD pipeline. However, for this exercise, we will manually set the build number to 56 on line 231. Then, we’ll set the Inventory build number to 9 on line 233 and the URN Prefix on line 235 to "urn:ibm:appmgmt"
 
-<img src="images/1-15.png" width="800" />
+<img src="images/1-15.png" width="400" />
 
 Next, let’s fill in the next section with the details of the Kubernetes container used in this exercise.
 
-<img src="images/1-16.png" width="800" />
+<img src="images/1-16.png" width="400" />
 
 Finally, let’s populate the variables on lines 257 to 260 with the company's contact information. This information is necessary for generating the Application Definition SBOM. For this exercise, we’ll use IBM’s information to fill these variables.
 
-<img src="images/1-17.png" width="800" />
+<img src="images/1-17.png" width="400" />
 
 We’ve finished setting up our demo app. Now, let’s configure the system variables. The global_environment.variables file is already prepopulated with the information needed to download the toolkit and other supporting details. However, we still need to provide the information for the IBM Concert instance that we’ll be using in this exercise.
 
 On line 322, enter the token obtained from your IBM Concert console. Keep "0000-0000-0000-0000" as the instance ID on line 320.
 
-<img src="images/1-18.png" width="800" />
+<img src="images/1-18.png" width="500" />
 
 Now let’s fill in the information required to connect remotely to IBM Concert through its API. On line 312, populate the CONCERT_INGESTION_USER with any admin username; for this exercise, we’ll use "ibmconcert." Next, enter the password on line 314; we’ll use "ITZtemp42024". Then, on line 318, populate CONCERT_INGESTION_ENDPOINT with the full URL of the IBM Concert instance. 
 
-<img src="images/1-19.png" width="800" />
+<img src="images/1-19.png" width="500" />
 
 **[Go to top](#top)**
 
@@ -179,36 +145,6 @@ Run the install_pre_reqs.sh shell script:
 The shell script will install the following: <br/> • <strong>IBM Concert toolkit</strong>: framework required to interact with IBM Concert APIs. <br/> • <strong>Python3</strong> and <strong>pip3</strong>: essential for running Python scripts and managing Python packages. <br/> • <strong>Homebrew</strong>: package manager for macOS that simplifies the installation, updating, and management of software and libraries. <br/> • <strong>Node.js</strong>: required to enable the execution of JavaScript code server-side and the development of scalable network applications. <br/> • <strong>nvm</strong>: enable you to manage multiple versions of Node.js, making it easy to switch between different versions for various projects and development environments. <br/> • <strong>rpm</strong>: needed for installing certain packages like Syft. <br/> • <strong>Gradle</strong>: open-source build automation tool that streamlines the building, testing and deployment of software projects with its flexible and powerful capabilities. <br/> • <strong>grype</strong>: vulnerability scanner for container images and filesystems. <br/> • <strong>jq</strong>: lightweight and flexible command-line JSON processor, essential for parsing, manipulating, and transforming JSON data. <br/> • <strong>Bazel</strong>: powerful build and test tool that automates the process of compiling and testing large codebases efficiently. <br/> • <strong>Syft</strong>: tool for generating SBOMs from container images and filesystems. <br/> • <strong>cdxgen</strong>: tool required to generate CycloneDX SBOMs for various programming languages. <br/> • <strong>GitHub CLI</strong>: is a tool for managing GitHub repositories from the command line. <br/> • <strong>Docker</strong>: platform for running and deploying containers and applications.
 
 <img src="images/2-1.png" width="800" />
-
-**[Go to top](#top)**
-
-<br/><br/>
-
-</details>
-
-<p/>
-
-<details markdown="1">
-
-<summary>Pre-req - Set up system paths</summary>
-
-1. Update the system path and configure Git. Homebrew usually adds itself to the PATH automatically. However, if it doesn’t, you can add it manually: <br/><br/> <code class="code-block"> nano ~/.zshrc  # For zsh <br/> # or <br/> nano ~/.bash_profile  # For bash </code>
-
-2. For users running macOS versions prior to Big Sur, you can set the Homebrew installation directory with the following command. Please add this line to your .zshrc or .bash_profile: <br/><br/> <code class="code-block"> export PATH="/usr/local/bin:/usr/local/sbin:$PATH" </code>
-
-3. For users running macOS macOS versions Big Sur and later, the Homebrew installation directory is /opt/homebrew: <br/><br/> <code class="code-block"> export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH" </code>
-
-4. Homebrew usually handles this automatically, but to ensure Gradle is included in your PATH. For users running macOS versions prior to Big Sur, this can be done by adding the command below to your .zshrc or .bash_profile: <br/><br/> <code class="code-block"> export PATH="/usr/local/opt/gradle/bin:$PATH" </code>
-
-5. For users running macOS versions Big Sur and later, use the command below: <br/><br/> <code class="code-block"> export PATH="/opt/homebrew/opt/gradle/bin:$PATH" </code>
-
-6. Homebrew usually handles this automatically, but to ensure Bazel is included in your PATH. For users running macOS versions prior to Big Sur, this can be done by adding the command below to your .zshrc or .bash_profile: <br/><br/> <code class="code-block"> export PATH="/usr/local/bin:$PATH" </code>
-
-7. For users running macOS versions Big Sur and later, use the command below: <br/><br/> <code class="code-block"> export PATH="/opt/homebrew/bin:$PATH" </code>
-
-8. Apply changes: <br/><br/> <code class="code-block"> source ~/.zshrc  # For zsh <br/> # or <br/> source ~/.bash_profile  # For bash </code>
-
-9. Configure Git: <br/><br/> <code class="code-block"> git config --global user.name "Your Name" <br/> git config --global user.email "your.email@ibm.com" </code>
 
 **[Go to top](#top)**
 
