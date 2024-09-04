@@ -6,11 +6,6 @@ banner: images/banner.jpg
 
 <span id="top"></span>
 
-| **DEMO OVERVIEW** | | 
-| :--- | :--- |
-| **Scenario overview** |  |
-| **Demo script** | A complete demo script is on the second tab above. <br/><br/> This demo script has multiple tasks that each have multiple steps. In each step, you have the details about what you need to do (**Actions**), what you can say while delivering this demo step (**Narration**), and what diagrams and screenshots you will see.<br/><br/>This demo script is a suggestion, and you are welcome to customize based on your sales opportunity. Most importantly, practice this demo in advance. If the demo seems easy for you to execute, the customer will focus on the content. If it seems difficult for you to execute, the customer will focus on your delivery. |
-
 ### **PREPARING FOR THE DEMO**
 
 <details markdown="1">
