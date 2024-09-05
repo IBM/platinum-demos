@@ -5,6 +5,8 @@ layout: prereqs
 
 <span id="top"></span>
 
+<br/>
+
 ### **PREPARING FOR THE DEMO**
 
 <details markdown="1">
