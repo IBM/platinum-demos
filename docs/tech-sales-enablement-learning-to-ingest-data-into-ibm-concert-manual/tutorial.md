@@ -35,7 +35,7 @@ Let’s get started.
 
 <inline-notification text="Line numbers may vary as helper scripts get updated."></inline-notification>
 
-| **Terms** | **Screenshot** | **Description** |
+| **Variables** | **Screenshot** | **Description** |
 | :--- | :--- | :--- |
 | Line 62: <br/> **PLATFORM_ARCH** | <img src="images/1-1.png" width="750" /> | Placeholder |
 | Line 58: <br/> **CONTAINERIZATION_PLATFORM** | <img src="images/1-2.png" width="700" /> | Placeholder |
