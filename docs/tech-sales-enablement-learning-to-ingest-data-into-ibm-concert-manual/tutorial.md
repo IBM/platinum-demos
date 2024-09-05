@@ -258,10 +258,6 @@ Here we can see CVE scan files generated, one for every microservice image in ou
 
 <summary>5 - Generate 'Build SBOMs'</summary>
 
-For each individual microservice, provides an inventory of: <br/> 
-• Associated images and their versions <br/> 
-• Repositories and their branches
-
 IBM concert ingests custom SBOM files called ConcertDef. These are an extension of the cycloneDX format. The three concert-defined SBOMs are called: Build, Deploy, and Application Definition.
 
 Let’s start with the Build SBOM.
@@ -272,13 +268,16 @@ We will use the toolkit to generate the build SBOM file, which is a detailed inv
 
 This process is carried out by executing the generate_build_sbom.sh shell script: <br/><br/> <code class="code-block"> ./generate_build_sbom.sh </code>
 
-For each microservice image of the target application, a build SBOM  will be generated in the ./toolkit-data directory.
+For each microservice image of the target application, a Build SBOM will be generated in the ./toolkit-data directory.
+<br/> <img src="images/5-1.png" width="500" />
 
 <!-- <show files in toolkit data directory> -->
 
 <!-- <open one build sbom> -->
 
-<img src="images/5-1.png" width="800" />
+For each individual microservice, a Build SBOM provides an inventory of: <br/>
+1. Associated images and their versions <br/> <img src="images/5-2.png" width="900" /> <br/><br/>
+2. Repositories and their branches <br/> <img src="images/5-3.png" width="600" />
 
 **[Go to top](#top)**
 
@@ -292,10 +291,6 @@ For each microservice image of the target application, a build SBOM  will be gen
 
 <summary>6 - Generate 'Deploy SBOMs'</summary>
 
-For each combination of microservice and environment, provides an inventory of: <br/> 
-• Access points <br/> 
-• External dependencies
-
 The next step involves using the toolkit to generate the deploy SBOM file where the public and private access points are defined. The deploy SBOM focuses on the software as it is actually deployed in a specific environment, including any environment-specific configurations or dependencies.
 
 <!-- <show script where deploy-sbom command is called> -->
@@ -307,8 +302,11 @@ For each pair of microservice and environment defined for the target application
 <!-- <show toolkit-data directory where SBOMs are generated (14)> --> 
 
 involves using the toolkit to generate the Application Definition SBOM file, which is a detailed record of all elements involved in the application, from its core components to external dependencies, configuration settings, and runtime environments.
+<br/> <img src="images/6-1.png" width="500" />
 
-<img src="images/6-1.png" width="800" />
+For each combination of microservice and environment, a Deploy SBOM provides an inventory of: <br/> 
+1. Access points <br/> <img src="images/6-2.png" width="650" /> <br/><br/>
+2. External dependencies <br/> <img src="images/6-3.png" width="450" />
 
 **[Go to top](#top)**
 
@@ -322,14 +320,6 @@ involves using the toolkit to generate the Application Definition SBOM file, whi
 
 <summary>7 - Generate 'Application-definition SBOM'</summary>
 
-Defines the boundaries of an application, including the following underlying elements: <br/> 
-• Microservices <br/> 
-• Repositories <br/> 
-• Images <br/> 
-• Environments <br/> 
-• Application criticality <br/> 
-• Access points and their exposure levels
-
 The last SBOM to be generated is the Application definition SBOM. This SBOM is where the  application criticality is defined. As mentioned earlier the application criticality plays a significant role in Concert’s calculation of risk prioritization and recommendations.
 
 <!-- <show script where app-definition command is called> -->
@@ -339,10 +329,17 @@ This process is carried out by executing the generate_app_def.sh shell script: <
 Unlike the other SBOMs, the Application-definition SBOM is defined at the application level instead of the microservice level. This enables Concert to have an application-centric view and only one Application-definition SBOM is required for each application, regardless of how many microservices it has.
 
 An Application-definition SBOM will be generated in the ./toolkit-data directory. 
+<br/> <img src="images/7-1.png" width="500" />
 
 <!-- <show toolkit-data directory where Application Definition SBOM is generated (1)> -->
 
-<img src="images/7-1.png" width="800" />
+An Application-definition SBOM defines the boundaries of an application, including the following underlying elements: <br/> 
+1. Microservices <br/> <img src="images/7-2.png" width="650" /> <br/><br/> 
+2. Repositories <br/> <img src="images/7-3.png" width="650" /> <br/><br/> 
+3. Images <br/> <img src="images/7-4.png" width="650" /> <br/><br/>
+4. Environments <br/> <img src="images/7-5.png" width="300" /> <br/><br/> 
+5. Access points and their exposure levels <br/> <img src="images/7-6.png" width="500" /> <br/><br/> 
+6. Application criticality <br/> <img src="images/7-7.png" width="350" />
 
 **[Go to top](#top)**
 
@@ -366,6 +363,8 @@ Alternatively, you can manually upload all relevant files from the ./toolkit-dat
 
 <inline-notification text="Once all files are processed, they will be zipped and moved to the ./processed folder."></inline-notification>
 
+<img src="images/8-1.png" width="800" />
+
 **[Go to top](#top)**
 
 <br/><br/>
@@ -379,6 +378,8 @@ Alternatively, you can manually upload all relevant files from the ./toolkit-dat
 <summary>View updates in Concert UI</summary>
 
 We can now log in to Concert to view the uploaded data.
+<br/> <img src="images/9-1.png" width="800" />
+<br/> <img src="images/9-2.png" width="800" />
 
 <!-- <show arena view> -->
 
