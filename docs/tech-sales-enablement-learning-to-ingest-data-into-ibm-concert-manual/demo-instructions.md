@@ -31,35 +31,37 @@ For our demo, we’ll use the Quote of the Day (QotD) application, which consist
 
 We begin by opening the concert-pm-utils repo code we downloaded in the pre-requisites section and open the **global_environment_variables** file. This file contains all the details of the demo QotD application and its environment.
 
-In a real world PoV, customers should always use a pipeline to ingest data where these variables would be populated automatically from the pipeline. <br/><br/>
+In a real world PoV, customers will always use a pipeline to ingest data. These variables would be populated automatically from the pipeline.
 
 For this demo, we will need to provide all the data in the global variables file. These variables will be used throughout the demo by the Concert toolkit to generate files for Concert.
 
 <inline-notification text="This demo uses Concert Toolkit V1.0.1."></inline-notification>
 <inline-notification text="Line numbers may vary as helper scripts get updated."></inline-notification>
 
-| **Variables** | **Screenshot** | **Description** |
-| :--- | :--- | :--- |
-| Line 62: <br/> **PLATFORM_ARCH** | <img src="images/1-1.png" width="750" /> | Placeholder |
-| Line 58: <br/> **CONTAINERIZATION_PLATFORM** | <img src="images/1-2.png" width="700" /> | Placeholder |
-| Line 79: <br/> **DEMO_APP_NAME** | <img src="images/1-3.png" width="250" /> | Placeholder |
-| Line 87: <br/> **DEMO_APP_CRITICALITY** | <img src="images/1-4.png" width="250" /> | Placeholder |
-| Line 90: <br/> **DEMO_APP_REPOSITORY_URL** | <img src="images/1-5.png" width="500" /> | Placeholder | 
-| Line 104: <br/> **DEMO_APP_VERSION** | <img src="images/1-6.png" width="250" /> | Placeholder |
-| Line 107: <br/> **DEMO_APP_COMPONENT** | <img src="images/1-7.png" width="350" /> | Placeholder |
-| Line 121: <br/> **DEMO_APP_REPO_NAME** | <img src="images/1-8.png" width="350" /> | Placeholder |
-| Line 137: <br/> **DEMO_APP_SRC_REPO_URL** | <img src="images/1-9.png" width="900" /> | Placeholder |
-| Line 152: <br/> **DEMO_APP_IMAGE_URL** | <img src="images/1-10.png" width="550" /> | Placeholder |
-| Line 166: <br/> **DEMO_APP_IMAGE_TAG** | <img src="images/1-11.png" width="350" /> | Placeholder |
-| Line 181: <br/> **DEMO_APP_REPOSITORY_BRANCH** | <img src="images/1-12.png" width="350" /> | Placeholder |
-| Line 196: <br/> **DEMO_APP_ACCESS_POINTS** | <img src="images/1-13.png" width="1000" /> | Placeholder |
-| Line 223: <br/> **BUILD_NUMBER2** <br/><br/> Line 225: <br/> **INVENTORY_BUILD_NUMBER2** <br/><br/> Line 227: <br/> **CONCERT_URN_PREFIX2** | <img src="images/1-14.png" width="350" /> | Placeholder |
-| Line 230: <br/> **K8_PLATFORM2** <br/><br/> Line 232: <br/> **ENV_PLATFORM2** <br/><br/> Line 234: <br/> **CLUSTER_ID2** <br/><br/> Line 236: <br/> **CLUSTER_REGION2** <br/><br/> Line 238: <br/> **CLUSTER_NAME2** <br/><br/> Line 240: <br/> **CLUSTER_NAMESPACE2** | <img src="images/1-15.png" width="350" /> | Placeholder |
-| Line 247: <br/> **K8_PLATFORM_TYPE** <br/><br/> Line 249: <br/> **K8_PLATFORM_NAME** <br/><br/> Line 251: <br/> **CLUSTER_ENV_PLATFORM** | <img src="images/1-16.png" width="300" /> | Placeholder |
-| Line 254: <br/> **BUSINESS_NAME** <br/><br/> Line 255: <br/> **BUSINESS_UNIT_NAME** <br/><br/> Line 256: <br/> **CONTACT_EMAIL** <br/><br/> Line 257: <br/> **CONTACT_PHONE** | <img src="images/1-17.png" width="250" /> | Placeholder |
-| Line 218: <br/> **CONCERT_INGESTION_ENDPOINT** <br/><br/> Line 220: <br/> **CONCERT_INGESTION_INSTANCE_ID** <br/><br/> Line 222: <br/> **CONCERT_INGESTION_TOKEN** | <img src="images/1-18.png" width="450" /> | Placeholder |
-| Line 227: <br/> **CONCERT_INGESTION_USER** <br/><br/> Line 229: <br/> **CONCERT_INGESTION_PASSWORD** | <img src="images/1-19.png" width="500" /> | Placeholder |
+<br/>
 
+### Environment variables used in the QotD application
+
+| **Environment variable** | **Description and code snippet** |
+| :--- | :--- | :--- |
+| **Platform architecture** | Placeholder <br/> <img src="images/1-1.png" width="750" /> |
+| **Containerization platform** | Placeholder <br/> <img src="images/1-2.png" width="700" /> |
+| **Demo app name** | Placeholder <br/> <img src="images/1-3.png" width="250" /> |
+| **Demo app criticality** | Placeholder <br/> <img src="images/1-4.png" width="250" /> |
+| **Demo app repository URL** | Placeholder <br/> <img src="images/1-5.png" width="500" /> |
+| **Demo app version** | Placeholder <br/> <img src="images/1-6.png" width="250" /> |
+| **Demo app component** | Placeholder <br/> <img src="images/1-7.png" width="350" /> |
+| **Demo app repo name** | Placeholder <br/> <img src="images/1-8.png" width="350" /> |
+| **Demo app source code repo URL** | Placeholder <br/> <img src="images/1-9.png" width="900" /> |
+| **Demo app image URL** | Placeholder <br/> <img src="images/1-10.png" width="550" /> |
+| **Demo app image tag** | Placeholder <br/> <img src="images/1-11.png" width="350" /> |
+| **Demo app repository branch** | Placeholder <br/> <img src="images/1-12.png" width="350" /> |
+| **Demo app access points** | Placeholder <br/> <img src="images/1-13.png" width="1000" /> |
+| **Build number** <br/><br/> **Inventroy build number** <br/><br/> **Concert URN prefix** | Placeholder <br/> <img src="images/1-14.png" width="350" /> |
+| **Kubernetes platform** <br/><br/> **Environment platform** <br/><br/> **Cluster ID** <br/><br/> **Cluster region** <br/><br/> **Cluster name** <br/><br/> **Cluster namespace** <br/><br/> **Kubernetes platform type** <br/><br/> **Kubernetes platform name** <br/><br/> **Cluster environment platform** | Placeholder <br/> <img src="images/1-15.png" width="350" /> |
+| **Business name** <br/><br/> **Business unit name** <br/><br/> **Contact email** <br/><br/> **Contact phone** | Placeholder <br/> <img src="images/1-16.png" width="250" /> |
+| **Concert ingestion endpoint** <br/><br/> **Concert ingestion instance ID** <br/><br/> **Concert ingestion token** | Placeholder <br/> <img src="images/1-17.png" width="450" /> |
+| **Concert ingestion user** <br/><br/> **Concert ingestion password** | Placeholder <br/> <img src="images/1-18.png" width="500" /> |
 
 <!-- <Show source code for install script> -->
 
