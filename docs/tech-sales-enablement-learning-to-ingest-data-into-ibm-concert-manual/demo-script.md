@@ -1,7 +1,6 @@
 ---
 title: Part 1 - Ingesting data manually into IBM Concert <br/> <small> <i> Tech Sales enablement </i> </small>
 layout: demoscript
-banner: images/banner.jpg
 ---
 
 <span id="top"></span>
