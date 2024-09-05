@@ -41,6 +41,8 @@ Third, you will need to download the helper scripts provided for running this de
 
 To manually ingest data into Concert, you will need a set of helper scripts. We’ve created these helper scripts to help train you on how to use the Concert Toolkit.
 
+<inline-notification text="This demo uses Concert Toolkit V1.0.1."></inline-notification>
+
 Before downloading the helper scripts, you’ll need to set up Github access.
 
 <inline-notification text="If you’re logged into your IBM GitHub account in Visual Studio Code, you can download the code without a key. If you are not logged in or prefer to use a different IDE, then an SSH key pair is required to download the code."></inline-notification>

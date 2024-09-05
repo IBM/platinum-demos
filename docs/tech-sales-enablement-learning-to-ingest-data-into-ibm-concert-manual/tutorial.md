@@ -13,11 +13,9 @@ Click the [**Prerequisites**](prerequisites) tab for setup instructions.
 
 <summary>Introduction</summary>
 
-In this video, we’ll show you how to ingest data into IBM Concert. 
+In this demo, we’ll show how to ingest data manually into IBM Concert. 
 
-The first part of the video will walk you through the manual process to help you understand the details of how Concert works. 
-
-Let’s start with ingesting data manually into Concert. This is important for your understanding the different types of data and formats that Concert supports. 
+We will walk through the manual process to help understand the details of how Concert works and the different types of data and formats that Concert supports. 
 
 For our demo, we’ll use the Quote of the Day application, which consists of 10 microservices. The final result will showcase a populated Concert Arena View with all the underlying components of the application and the prioritized CVEs.
 
@@ -33,6 +31,13 @@ Let’s get started.
 
 <summary>1 - Populate global variables</summary>
 
+We begin by opening the concert-pm-utils repo code we downloaded in the prerequisites section and open the **global_environment_variables** file. This file contains all the details of the demo qotd application and its environment.
+
+In a real world POV, customers should always use a pipeline to ingest data where these variables would be populated automatically from the pipeline. <br/><br/>
+
+For this demo, we will need to provide all the data in the global variables file. These variables will be used throughout the demo by the Concert toolkit to generate files for Concert.
+
+<inline-notification text="This demo uses Concert Toolkit V1.0.1."></inline-notification>
 <inline-notification text="Line numbers may vary as helper scripts get updated."></inline-notification>
 
 | **Variables** | **Screenshot** | **Description** |
@@ -57,74 +62,8 @@ Let’s get started.
 | Line 218: <br/> **CONCERT_INGESTION_ENDPOINT** <br/><br/> Line 220: <br/> **CONCERT_INGESTION_INSTANCE_ID** <br/><br/> Line 222: <br/> **CONCERT_INGESTION_TOKEN** | <img src="images/1-18.png" width="450" /> | Placeholder |
 | Line 227: <br/> **CONCERT_INGESTION_USER** <br/><br/> Line 229: <br/> **CONCERT_INGESTION_PASSWORD** | <img src="images/1-19.png" width="500" /> | Placeholder |
 
-With the helper scripts downloaded, we are now ready populate application environment variables needed by the Concert toolkit. 
-
-We begin by opening the concert-pm-utils repo code we downloaded in the prerequisites section and open the global_environment_variables file. This file contains all the details of the demo qotd application and its environment.
 
 <!-- <Show source code for install script> -->
-
-At the top of the file is some information about the repository and script setup. 
-
-The first thing we need to do is on line 51 where we define the operating system we’re working on. For Mac and Linux users, we set the value of the PLATFORM_ARCH property "linux/amd64".
-<br/> <img src="images/1-1.png" width="700" />
-
-The next line to update is line 58, where we specify the container platform for building our images. You can choose either Docker or Podman. For this demo, we'll use Docker, so we’ll enter 1 in this field.
-<br/> <img src="images/1-2.png" width="700" />
-
-After that, we scroll down to the demo app section and give the application a name. 
-<br/> <img src="images/1-3.png" width="250" />
-
-On line 79, we’ll name it "quote-of-the-day."
-<br/> <img src="images/1-4.png" width="250" />
-
-The next step is to define how critical this application is to our organization. We’ll use a scale from 1 to 5, with 1 being the least critical and 5 being the most. For this demo, we'll set the criticality to 4. The criticality rating plays a big role in how Concert calculates the risk score, so setting this value correctly is key to getting the most out of Concert’s prioritization recommendations.
-<br/> <img src="images/1-5.png" width="500" />
-
-Next, on line 91, we’ll list the URLs where the source code for the qotd application is stored. Our qotd application is set up as a polyrepo in GitLab, which means each microservice has its own repository. Since the qotd application has 10 microservices, we’ll enter 10 repository URLs in this variable.
-<br/> <img src="images/1-6.png" width="200" />
-
-Since we’re using the latest version of the application, we will set the next variable to "latest" on line 104.
-<br/> <img src="images/1-7.png" width="350" />
-
-Since this is a manual script with all the information being static, we need to populate the next variable with all the different microservices or components of the application on line 107. This is a positional array, so the order of the microservices listed here is important. For example, the first microservice corresponds to the first repository we listed earlier, and the same order will apply to the other variables below.
-<br/> <img src="images/1-8.png" width="350" />
-
-Next on line 122, we will list the names of the microservice repos in the same order as they are above.
-<br/> <img src="images/1-9.png" width="900" />
-
-Next, we’ll specify the folder where the source code for each microservice is located on your machine. We’ll use the relative path for this.
-<br/> <img src="images/1-10.png" width="550" />
-
-Next, we’ll fill in the next variable with the URL for each of the images corresponding to the microservices listed above. As mentioned earlier, each microservice should have exactly one image.
-<br/> <img src="images/1-11.png" width="350" />
-
-Next, we’ll enter the tags for each image. For this exercise, we’ll be working with the latest images, so we’ll use the tag "latest."
-<br/> <img src="images/1-12.png" width="350" />
-
-Next, we’ll specify the branch for each of the repositories we listed earlier. For this exercise, we’ll be working with the "main" branch, so let’s enter "main" for each repository.
-<br/> <img src="images/1-13.png" width="1000" />
-
-The next variable is a list of all the access points used by the microservices in this application. We’ll use an array of strings, with each element separated by a specific separator character. For each access point we will provide the name of the microservice it belongs to, the name of the environment the access point is on (for example, dev, qa, stage, prod), the name of the access point, the url of the access point, and most importantly, the visibility or exposure of the access point, either public or private. It’s useful to note that if no exposure parameter is provided, Concert will default it to public.
-
-Each microservice can have multiple access points. For this exercise, we’ll fill line 204 with 23 access points.
-<br/> <img src="images/1-14.png" width="350" />
-
-The next few variables would normally be populated automatically in a CI/CD pipeline. However, for this exercise, we will manually set the build number to 56 on line 231. Then, we’ll set the Inventory build number to 9 on line 233 and the URN Prefix on line 235 to "urn:ibm:appmgmt"
-<br/> <img src="images/1-15.png" width="350" />
-
-Next, let’s fill in the next section with the details of the Kubernetes container used in this exercise.
-<br/> <img src="images/1-16.png" width="300" />
-
-Finally, let’s populate the variables on lines 257 to 260 with the company's contact information. This information is necessary for generating the Application Definition SBOM. For this exercise, we’ll use IBM’s information to fill these variables.
-<br/> <img src="images/1-17.png" width="250" />
-
-We’ve finished setting up our demo app. Now, let’s configure the system variables. The global_environment.variables file is already prepopulated with the information needed to download the toolkit and other supporting details. However, we still need to provide the information for the IBM Concert instance that we’ll be using in this exercise.
-
-On line 322, enter the token obtained from your IBM Concert console. Keep "0000-0000-0000-0000" as the instance ID on line 320.
-<br/> <img src="images/1-18.png" width="500" />
-
-Now let’s fill in the information required to connect remotely to IBM Concert through its API. On line 312, populate the CONCERT_INGESTION_USER with any admin username; for this exercise, we’ll use "ibmconcert." Next, enter the password on line 314; we’ll use "ITZtemp42024". Then, on line 318, populate CONCERT_INGESTION_ENDPOINT with the full URL of the IBM Concert instance. 
-<br/> <img src="images/1-19.png" width="500" />
 
 **[Go to top](#top)**
 
@@ -138,11 +77,11 @@ Now let’s fill in the information required to connect remotely to IBM Concert 
 
 <summary>2 - Install supporting software</summary>
 
-With the environment variables populated, we can now install the software needed to run this demo. 
+In this section we will install the software needed to run the demo. 
 
-To install all supporting software, we run the install_supporting_software shell script. The script will install software like the IBM Concert toolkit, Grype, Docker, and many others needed for this demo.
+To install all supporting software, run the **install_supporting_software** shell script. The script will install software like the IBM Concert toolkit, Grype, Docker, and many others needed for this demo.
 
-Run the install_pre_reqs.sh shell script:
+To run the install_pre_reqs.sh shell script, execute the code in a terminal:
 
 <code class="code-block"> ./install_pre_reqs.sh </code>
 
@@ -179,7 +118,7 @@ The shell script will install the following: <br/>
 
 <summary>3 - Generate 'Package SBOMs'</summary>
 
-Now let’s walk through how to ingest SBOMs (Software Bill of Materials) and CVEs into IBM Concert.
+In this section we will ingest SBOMs (Software Bill of Materials) and CVEs into IBM Concert.
 
 This slide shows the two variations of SBOMs that IBM Concert ingests.
 <br/> <img src="images/sboms.jpeg" width="600" />
@@ -188,7 +127,7 @@ On the left, we see that Concert ingests the industry standard cycloneDX SBOM ge
 
 On the right, we see that Concert also ingests SBOMs that are specific to Concert. These SBOMs are extenstions of the cycloneDX format and are customized for Concert. These SBOMs are called ‘Concert-defined’ SBOMs.
 
-The first SBOM file is the Package SBOM: which gets its name because Concert takes an inventory of what’s in the software packages. Concert ingests two types of package SBOMs, one that scans the the source code and the second that scans the images.
+The first SBOM file is the Package SBOM. This SBOM provides an inventory of what’s in the software packages. Concert ingests two types of package SBOMs, one that scans the the source code and the second that scans the images.
 
 <!-- <show section in script where toolkit image is pulled> -->
 
@@ -198,17 +137,17 @@ We will use the IBM Concert Toolkit (v1.0.1) to generate both types of package S
 
 <!-- <show section in script where code scan is called> -->
 
-The code scan command in the Concert toolkit uses CDXgen to analyze the codebase, identifying all software packages and dependencies.
+The code scan command in the Concert toolkit uses **CDXgen** to analyze the codebase, identifying all software packages and dependencies.
 
 <img src="images/3-2.png" width="800" />
 
 <!-- <show section in script where image scan is called> -->
 
-The image scan command uses Syft to analyze the containerized application image for vulnerabilities and compliance issues, ensuring the image is secure before deployment.
+The image scan command in the toolkit uses an open source tool called **Syft** to analyze the packages and operating system details in the containerized image.
 
 In both cases, the toolkit generates a JSON file in standard CycloneDX format.
 
-To execute both tasks we will run the generate_package_sbom.sh shell script: <br/><br/> <code class="code-block"> ./generate_package_sbom.sh </code>
+To execute both tasks we will run the **generate_package_sbom.sh** shell script: <br/><br/> <code class="code-block"> ./generate_package_sbom.sh </code>
 
 The output of this command will be an image-scan SBOM and a code-scan SBOM file for each microservice.
 
@@ -230,13 +169,15 @@ The output of this command will be an image-scan SBOM and a code-scan SBOM file 
 
 <summary>4 - Generate CVE scan</summary>
 
-The next step involves using Grype to conduct a vulnerability scan by analyzing container images. We chose Grype for this demo because it’s open source, but customers will often use tools like Twistlock or Trivy.
+Next, we use an open source tool called **Grype** to conduct a vulnerability scan by analyzing container images. However, customers can use any image scanning tool like Prisma Cloud's Twistlock or Aqua Security's Trivvy.
 
-<!-- <show script where Grype command is called and how it’s converting it to a format that Concert can accept> -->
+<inline-notification text="The Concert toolkit does not contain any commands for generating CVE scan files."></inline-notification>
 
-This process is carried out by executing the generate_cve_csv_file.sh  shell script: <br/><br/> <code class="code-block"> ./generate_cve_csv_file.sh </code>
+This process is carried out by executing the **generate_cve_csv_file.sh** shell script: <br/><br/> <code class="code-block"> ./generate_cve_csv_file.sh </code>
 
 The output of this command will be a CVE file in CSV format for each microservice image in the application.
+
+<inline-notification text="Concert accepts CSV files in a specific column format. Use the provided template to ensure the output file is generated with the correct CSV headers."></inline-notification>
 
 <!-- <show CVE scans generated on the computer> -->
 
@@ -244,7 +185,7 @@ The output of this command will be a CVE file in CSV format for each microservic
 
 <img src="images/4-2.png" width="800" />
 
-Here we can see CVE scan files generated, one for every microservice image in our qotd application.
+One CSV scan file should be generated for every microservice image in our qotd application.
 
 **[Go to top](#top)**
 
@@ -266,7 +207,7 @@ We will use the toolkit to generate the build SBOM file, which is a detailed inv
 
 <!-- <show script where build-sbom command is called> -->
 
-This process is carried out by executing the generate_build_sbom.sh shell script: <br/><br/> <code class="code-block"> ./generate_build_sbom.sh </code>
+This process is carried out by executing the **generate_build_sbom.sh** shell script: <br/><br/> <code class="code-block"> ./generate_build_sbom.sh </code>
 
 For each microservice image of the target application, a Build SBOM will be generated in the ./toolkit-data directory.
 <br/> <img src="images/5-1.png" width="500" />
@@ -320,11 +261,11 @@ For each combination of microservice and environment, a Deploy SBOM provides an 
 
 <summary>7 - Generate 'Application-definition SBOM'</summary>
 
-The last SBOM to be generated is the Application definition SBOM. This SBOM is where the  application criticality is defined. As mentioned earlier the application criticality plays a significant role in Concert’s calculation of risk prioritization and recommendations.
+The last SBOM to be generated is the Application definition SBOM. This SBOM is where the application criticality is defined. As mentioned earlier the application criticality plays a significant role in Concert’s calculation of risk prioritization and recommendations.
 
 <!-- <show script where app-definition command is called> -->
 
-This process is carried out by executing the generate_app_def.sh shell script: <br/><br/> <code class="code-block"> ./generate_app_def.sh </code>
+This process is carried out by executing the **generate_app_def.sh** shell script: <br/><br/> <code class="code-block"> ./generate_app_def.sh </code>
 
 Unlike the other SBOMs, the Application-definition SBOM is defined at the application level instead of the microservice level. This enables Concert to have an application-centric view and only one Application-definition SBOM is required for each application, regardless of how many microservices it has.
 
@@ -353,11 +294,11 @@ An Application-definition SBOM defines the boundaries of an application, includi
 
 <summary>8 - Upload data to Concert</summary>
 
-The final step is to upload all the generated data into IBM Concert to make it accessible in the Concert UI. This can be done by executing the upload_data_concert.sh  shell script. 
+The final step is to upload all the generated data into IBM Concert to make it accessible in the Concert UI. This can be done by executing the **upload_data_concert.sh** shell script. 
 
 <!-- <show script with upload details> -->
 
-This utility script automates the process, allowing multiple Concert-supported files to be uploaded at once, eliminating the need for manual uploads: <br/><br/> <code class="code-block"> ./upload_data_concert.sh </code>
+This helper script automates the process, allowing multiple Concert-supported files to be uploaded at once, eliminating the need for manual uploads: <br/><br/> <code class="code-block"> ./upload_data_concert.sh </code>
 
 Alternatively, you can manually upload all relevant files from the ./toolkit-data directory to IBM Concert using the user interface, one by one.
 
@@ -397,7 +338,7 @@ We can now log in to Concert to view the uploaded data.
 
 <summary>Summary</summary>
 
-Placeholder
+In this demo we saw how to ingest data manually into IBM Concert. We learned about the five types of SBOMs and the CVE scan format that can be uploaded to Concert for visualization in the UI.<br>/<br/>
 
 Click <a href="https://ibm.github.io/platinum-demos/tech-sales-enablement-learning-to-ingest-data-into-ibm-concert-pipeline/prerequisites" target="_blank" rel="noreferrer">here</a> to continue to **Part 2 - Using a pipeline to automate data ingestion into IBM Concert**.
 
