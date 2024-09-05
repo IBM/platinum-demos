@@ -21,13 +21,13 @@ Second, you will need an IDE or code editor. For this demo, we will use Visual S
 
 Third, you will need to download the helper scripts provided for running this demo from IBM GitHub. There are two options for downloading the code. First, you can download the code in Visual Studio Code using the 'git clone' command without needing an SSH key. Second, you can set up an SSH key for your IBM GitHub account and use that to download the code to your machine.-->
 
-<p>• IBM Concert (SaaS, VM or OCP). You will need:</p>
+<p>• IBM Concert (SaaS,<a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-ibm-concert" target="_blank" rel="noreferrer">VM</a> or OCP). You will need:</p>
 <p style="text-indent: 30px;">- IP address</p>
 <p style="text-indent: 30px;">- Credentials</p>
 <p style="text-indent: 60px;">○ Option 1: API key/token (preferred)</p>
 <p style="text-indent: 60px;">○ Option 2: Username/password</p>
-<p>• Visual Studio Code (recommended) or other code editor</p>
-<p>• Custom utility scripts for this demo, downloaded from IBM GitHub</p>
+<p>• <a href="https://code.visualstudio.com/Download" target="_blank" rel="noreferrer">Visual Studio Code</a> (recommended) or other code editor</p>
+<p>• <a href="https://github.ibm.com/ibm-concert-platinum-demos/concert-pm-utils" target="_blank" rel="noreferrer">Custom helper scripts</a> for this demo, downloaded (cloned) from IBM GitHub</p>
 <p style="text-indent: 30px;">- Option 1: Log in to IBM GitHub in Visual Studio Code to download without SSH key</p>
 <p style="text-indent: 30px;">- Option 2: Set up SSH key and download on your terminal or Visual Studio Code</p>
 
@@ -37,11 +37,11 @@ Third, you will need to download the helper scripts provided for running this de
 
 <details markdown="1">
 
-<summary>Set up IBM GitHub</summary>
+<summary>Set up IBM Github to download helper scripts</summary>
 
-To manually ingest data into Concert, you will need 1) The Concert Toolkit and 2) a set of helper scripts. We’ve created these helper scripts to help train you on how to use the Concert Toolkit.
+To manually ingest data into Concert, you will need a set of helper scripts. We’ve created these helper scripts to help train you on how to use the Concert Toolkit.
 
-In order to download the helper scripts, you’ll need to set up Github access.
+Before downloading the helper scripts, you’ll need to set up Github access.
 
 <inline-notification text="If you’re logged into your IBM GitHub account in Visual Studio Code, you can download the code without a key. If you are not logged in or prefer to use a different IDE, then an SSH key pair is required to download the code."></inline-notification>
 
