@@ -1,13 +1,13 @@
 ---
 title: Part 2 - Using a pipeline to automate data ingestion into IBM Concert <br/> <small> <i> Tech Sales enablement </i> </small>
-layout: tutorial
+layout: demo-instructions
 ---
 
 <span id="top"></span>
 
 <br/>
 
-Click the [**Prerequisites**](prerequisites) tab for setup instructions.
+Click the [**Pre-requisites**](pre-requisites) tab for setup instructions.
 
 <details markdown="1">
 
@@ -29,7 +29,7 @@ Let’s get started.
 
 <details markdown="1">
 
-<summary>Prereq: Install prerequisites</summary>
+<summary>Pre-req: Install pre-requisites</summary>
 
 Placeholder
 
@@ -91,15 +91,15 @@ Once we have the Concert API token, we will use the oc create secret generic com
 
 <code class="code-block"> oc create secret generic concert-token-secret <br/> --from-literal=token="C_API_KEY <br/> bWFyeWFtYUBjYS5pYm0uY29tOjE5N2U4ZmI2LTNiY2YtNGRhOC04OGY0LTViYTYwMmQyZWMxMQ==" </code>
 
-Next we will create the Github secret. To do this we use the oc create secret generic command again, however this time we name the secret github-creds and provide our github username and token. This information was setup during the prerequisites, and if not then a IBM github username and token should be setup prior to this step.
+Next we will create the Github secret. To do this we use the oc create secret generic command again, however this time we name the secret github-creds and provide our github username and token. This information was setup during the pre-requisites, and if not then a IBM github username and token should be setup prior to this step.
 
-<code class="code-block"> oc create secret generic github-creds ` <br/> --from-literal=username=$env:GITHUB_USERNAME ` <br/> --from-literal=password=$env:GITHUB_TOKEN ` <— Created during prereqs <br/> --type=kubernetes.io/basic-auth </code>
+<code class="code-block"> oc create secret generic github-creds ` <br/> --from-literal=username=$env:GITHUB_USERNAME ` <br/> --from-literal=password=$env:GITHUB_TOKEN ` <— Created during pre-reqs <br/> --type=kubernetes.io/basic-auth </code>
 
 For the github secret, we must also annotate it and link it to the pipeline. Run the following commands to complete this step.
 
 <code class="code-block"> oc annotate secret github-creds ` <br/> tekton.dev/git-0=https://github.ibm.com <br/><br/> oc secret link pipeline github-creds </code>
 
-The third secret will authenticate us into the image registry we setup in the prerequisites. For this demo, we are using a private IBM internal jfrog artifactory registry to store our container images. To create this secret, we need our jfrog server address, username and token.
+The third secret will authenticate us into the image registry we setup in the pre-requisites. For this demo, we are using a private IBM internal jfrog artifactory registry to store our container images. To create this secret, we need our jfrog server address, username and token.
 
 To generate these, let’s log into jfrog and quickly generate these values, noting them in notepad for easy reference.
 
@@ -283,7 +283,7 @@ This automation is handled by the trigger template file. This template is part o
 
 In this step, we will configure the trigger template to connect with our QotD repos. 
 
-To run our demo, we need to change only one line and that is line 44 where our image repository is defined. This is where we link to the image registry we setup in the prerequisites. For the value, we provide the host server of our registry, the folder path the image will be stored in, and we use a variable to dynamically name the image as the component name parameter from our pipeline.
+To run our demo, we need to change only one line and that is line 44 where our image repository is defined. This is where we link to the image registry we setup in the pre-requisites. For the value, we provide the host server of our registry, the folder path the image will be stored in, and we use a variable to dynamically name the image as the component name parameter from our pipeline.
 
 Update line 44: <br/>
 • name: image <br/>
@@ -331,7 +331,7 @@ All the pipeline files were successfully created, we can now open our openshift 
 
 <summary>7 - Create GitHub access token webhook</summary>
 
-In the prerequisites, we set up an organization for our quote-of-the-day application in GitHub. In order for the trigger template to run whenever any of the repos in this organization are updated, we need to create a webhook at the organization level. 
+In the pre-requisites, we set up an organization for our quote-of-the-day application in GitHub. In order for the trigger template to run whenever any of the repos in this organization are updated, we need to create a webhook at the organization level. 
 
 To do this, we first need to determine the route to our openshift instance. This route was created when we pushed our pipeline to tekton. 
 

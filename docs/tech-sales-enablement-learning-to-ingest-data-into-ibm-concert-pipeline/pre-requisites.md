@@ -15,9 +15,9 @@ oc create secret generic concert-token-secret --from-literal=token="C_API_KEY bW
 
 <details markdown="1">
 
-<summary>Prerequisites</summary>
+<summary>Pre-requisites</summary>
 
-<!--Before we begin, here is a list of prerequisites that need to be setup prior to beginning this demo
+<!--Before we begin, here is a list of pre-requisites that need to be setup prior to beginning this demo
 
 Number one, you should have an Openshift Cluster with public ingress reserved on techzone. This is where our Tekton pipeline will be installed.
 
@@ -31,7 +31,7 @@ Fifth, we will be using a sample application called Quote of the Day. This appli
 
 Finally, number 6, there are command line clients that need to be downloaded on the local machine of the techseller who will be running this demo. Specifically, we will need to install openshift, git, and tekton desktop clients. Each of these clients have download instructions that are operating-system-specific and installing them will allow us to interact with these tools via our command line. For step-by-step instructions on installing these clients, please follow this link.
 
-Once we have all the prerequisites completed, we can now get started on building our pipeline.-->
+Once we have all the pre-requisites completed, we can now get started on building our pipeline.-->
 
 • OpenShift cluster <br/>
 • IBM Concert (SaaS, VM or OCP) <br/>
@@ -43,4 +43,4 @@ Once we have all the prerequisites completed, we can now get started on building
 
 ***
 
-Click [here](tutorial) to go to the **Tutorial** on the next tab.
+Click [here](demo-instructions) to go to the **Demo instructions** on the next tab.

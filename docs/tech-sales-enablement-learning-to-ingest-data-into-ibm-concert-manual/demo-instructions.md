@@ -1,13 +1,13 @@
 ---
 title: Part 1 - Ingesting data manually into IBM Concert <br/> <small> <i> Tech Sales enablement </i> </small>
-layout: tutorial
+layout: demo-instructions
 ---
 
 <span id="top"></span>
 
 <br/> 
 
-Click the [**Prerequisites**](prerequisites) tab for setup instructions.
+Click the [**Pre-requisites**](pre-requisites) tab for setup instructions.
 
 <details markdown="1">
 
@@ -31,7 +31,7 @@ Let’s get started.
 
 <summary>1 - Populate global variables</summary>
 
-We begin by opening the concert-pm-utils repo code we downloaded in the prerequisites section and open the **global_environment_variables** file. This file contains all the details of the demo qotd application and its environment.
+We begin by opening the concert-pm-utils repo code we downloaded in the pre-requisites section and open the **global_environment_variables** file. This file contains all the details of the demo qotd application and its environment.
 
 In a real world POV, customers should always use a pipeline to ingest data where these variables would be populated automatically from the pipeline. <br/><br/>
 
@@ -338,9 +338,9 @@ We can now log in to Concert to view the uploaded data.
 
 <summary>Summary</summary>
 
-In this demo we saw how to ingest data manually into IBM Concert. We learned about the five types of SBOMs and the CVE scan format that can be uploaded to Concert for visualization in the UI.<br>/<br/>
+In this demo, we saw how to ingest data manually into IBM Concert. We learned about the five types of SBOMs and the CVE scan format that can be uploaded to Concert for visualization in the UI.<br>/<br/>
 
-Click <a href="https://ibm.github.io/platinum-demos/tech-sales-enablement-learning-to-ingest-data-into-ibm-concert-pipeline/prerequisites" target="_blank" rel="noreferrer">here</a> to continue to **Part 2 - Using a pipeline to automate data ingestion into IBM Concert**.
+Click <a href="https://ibm.github.io/platinum-demos/tech-sales-enablement-learning-to-ingest-data-into-ibm-concert-pipeline/pre-requisites" target="_blank" rel="noreferrer">here</a> to continue to **Part 2 - Using a pipeline to automate data ingestion into IBM Concert**.
 
 **[Go to top](#top)**
 

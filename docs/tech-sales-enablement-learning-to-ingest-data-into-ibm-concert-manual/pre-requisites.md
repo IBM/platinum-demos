@@ -11,9 +11,9 @@ layout: prereqs
 
 <details markdown="1">
 
-<summary>Prerequisites</summary>
+<summary>Pre-requisites</summary>
 
-<!--On this slide are the prerequisites you will need before starting this demo.
+<!--On this slide are the pre-requisites you will need before starting this demo.
 
 First, you should have an instance of IBM Concert deployed on either SaaS, VM or OpenShift. For this instance, you will need the IP address, username and password credentials, or an API key/token for authentication.
 
@@ -101,4 +101,4 @@ Before downloading the helper scripts, you’ll need to set up Github access.
 
 ***
 
-Click [here](tutorial) to go to the **Tutorial** on the next tab.
+Click [here](demo-instructions) to go to the **Demo instructions** on the next tab.
