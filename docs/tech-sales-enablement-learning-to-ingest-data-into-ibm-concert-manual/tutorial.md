@@ -39,23 +39,23 @@ Let’s get started.
 | :--- | :--- | :--- |
 | Line 51: <br/> **PLATFORM_ARCH** | <img src="images/1-1.png" width="700" /> | Placeholder |
 | Line 58: <br/> **CONTAINERIZATION_PLATFORM** | <img src="images/1-2.png" width="700" /> | Placeholder |
-| **Placeholder** | <img src="images/1-3.png" width="750" /> | Placeholder |
-| Line 79: <br/> **DEMO_APP_NAME** | <img src="images/1-4.png" width="300" /> | Placeholder |
-| Line 87: <br/> **DEMO_APP_CRITICALITY** | <img src="images/1-5.png" width="350" /> | Placeholder |
-| Line 90: <br/> **DEMO_APP_REPOSITORY_URL** | <img src="images/1-6.png" width="350" /> | Placeholder | 
-| Line 95: <br/> **DEMO_APP_VERSION** | <img src="images/1-7.png" width="350" /> | Placeholder |
-| Line 98: <br/> **DEMO_APP_COMPONENT** | <img src="images/1-8.png" width="350" /> | Placeholder |
-| Line 103: <br/> **DEMO_APP_REPO_NAME** | <img src="images/1-9.png" width="350" /> | Placeholder |
-| Line 110: <br/> **DEMO_APP_SRC_REPO_URL** | <img src="images/1-10.png" width="800" /> | Placeholder |
-| Line 116: <br/> **DEMO_APP_IMAGE_URL** | <img src="images/1-11.png" width="350" /> | Placeholder |
-| Line 121: <br/> **DEMO_APP_IMAGE_TAG** | <img src="images/1-12.png" width="350" /> | Placeholder |
-| Line 127: <br/> **DEMO_APP_REPOSITORY_BRANCH** | <img src="images/1-13.png" width="350" /> | Placeholder |
-| Line 133: <br/> **DEMO_APP_ACCESS_POINTS** | <img src="images/1-14.png" width="600" /> | Placeholder |
-| Line 138: <br/> **BUILD NUMBER** | <img src="images/1-15.png" width="350" /> | Placeholder |
-| Line 145: <br/> **K8 PLATFORM** | <img src="images/1-16.png" width="350" /> | Placeholder |
-| Line 164: <br/> **BUSINESS_NAME** | <img src="images/1-17.png" width="300" /> | Placeholder |
-| Line 218: <br/> **CONCERT_INGESTION_ENDPOINT** | <img src="images/1-18.png" width="400" /> | Placeholder |
-| Line 227: <br/> **CONCERT_INGESTION_USER** | <img src="images/1-19.png" width="450" /> | Placeholder |
+| Line 79: <br/> **DEMO_APP_NAME** | <img src="images/1-3.png" width="250" /> | Placeholder |
+| Line 87: <br/> **DEMO_APP_CRITICALITY** | <img src="images/1-4.png" width="250" /> | Placeholder |
+| Line 90: <br/> **DEMO_APP_REPOSITORY_URL** | <img src="images/1-5.png" width="500" /> | Placeholder | 
+| Line 95: <br/> **DEMO_APP_VERSION** | <img src="images/1-6.png" width="200" /> | Placeholder |
+| Line 98: <br/> **DEMO_APP_COMPONENT** | <img src="images/1-7.png" width="350" /> | Placeholder |
+| Line 103: <br/> **DEMO_APP_REPO_NAME** | <img src="images/1-8.png" width="350" /> | Placeholder |
+| Line 110: <br/> **DEMO_APP_SRC_REPO_URL** | <img src="images/1-9.png" width="900" /> | Placeholder |
+| Line 116: <br/> **DEMO_APP_IMAGE_URL** | <img src="images/1-10.png" width="550" /> | Placeholder |
+| Line 121: <br/> **DEMO_APP_IMAGE_TAG** | <img src="images/1-11.png" width="350" /> | Placeholder |
+| Line 127: <br/> **DEMO_APP_REPOSITORY_BRANCH** | <img src="images/1-12.png" width="350" /> | Placeholder |
+| Line 133: <br/> **DEMO_APP_ACCESS_POINTS** | <img src="images/1-13.png" width="1000" /> | Placeholder |
+| Line 138: <br/> **BUILD_NUMBER** | <img src="images/1-14.png" width="350" /> | Placeholder |
+| Line 145: <br/> **K8_PLATFORM** | <img src="images/1-15.png" width="350" /> | Placeholder |
+| Line 145: <br/> **K8_PLATFORM_TYPE** | <img src="images/1-16.png" width="300" /> | Placeholder |
+| Line 164: <br/> **BUSINESS_NAME** | <img src="images/1-17.png" width="250" /> | Placeholder |
+| Line 218: <br/> **CONCERT_INGESTION_ENDPOINT** | <img src="images/1-18.png" width="500" /> | Placeholder |
+| Line 227: <br/> **CONCERT_INGESTION_USER** | <img src="images/1-19.png" width="500" /> | Placeholder |
 
 With the helper scripts downloaded, we are now ready populate application environment variables needed by the Concert toolkit. 
 
@@ -66,65 +66,65 @@ We begin by opening the concert-pm-utils repo code we downloaded in the prerequi
 At the top of the file is some information about the repository and script setup. 
 
 The first thing we need to do is on line 51 where we define the operating system we’re working on. For Mac and Linux users, we set the value of the PLATFORM_ARCH property "linux/amd64".
-<br/> <img src="images/1-1.png" width="1000" />
+<br/> <img src="images/1-1.png" width="700" />
 
 The next line to update is line 58, where we specify the container platform for building our images. You can choose either Docker or Podman. For this demo, we'll use Docker, so we’ll enter 1 in this field.
-<br/> <img src="images/1-2.png" width="900" />
+<br/> <img src="images/1-2.png" width="700" />
 
 After that, we scroll down to the demo app section and give the application a name. 
-<br/> <img src="images/1-3.png" width="1100" />
+<br/> <img src="images/1-3.png" width="250" />
 
 On line 79, we’ll name it "quote-of-the-day."
-<br/> <img src="images/1-4.png" width="400" />
+<br/> <img src="images/1-4.png" width="250" />
 
 The next step is to define how critical this application is to our organization. We’ll use a scale from 1 to 5, with 1 being the least critical and 5 being the most. For this demo, we'll set the criticality to 4. The criticality rating plays a big role in how Concert calculates the risk score, so setting this value correctly is key to getting the most out of Concert’s prioritization recommendations.
-<br/> <img src="images/1-5.png" width="450" />
+<br/> <img src="images/1-5.png" width="500" />
 
 Next, on line 91, we’ll list the URLs where the source code for the qotd application is stored. Our qotd application is set up as a polyrepo in GitLab, which means each microservice has its own repository. Since the qotd application has 10 microservices, we’ll enter 10 repository URLs in this variable.
-<br/> <img src="images/1-6.png" width="450" />
+<br/> <img src="images/1-6.png" width="200" />
 
 Since we’re using the latest version of the application, we will set the next variable to "latest" on line 104.
-<br/> <img src="images/1-7.png" width="400" />
+<br/> <img src="images/1-7.png" width="350" />
 
 Since this is a manual script with all the information being static, we need to populate the next variable with all the different microservices or components of the application on line 107. This is a positional array, so the order of the microservices listed here is important. For example, the first microservice corresponds to the first repository we listed earlier, and the same order will apply to the other variables below.
-<br/> <img src="images/1-8.png" width="450" />
+<br/> <img src="images/1-8.png" width="350" />
 
 Next on line 122, we will list the names of the microservice repos in the same order as they are above.
-<br/> <img src="images/1-9.png" width="450" />
+<br/> <img src="images/1-9.png" width="900" />
 
 Next, we’ll specify the folder where the source code for each microservice is located on your machine. We’ll use the relative path for this.
-<br/> <img src="images/1-10.png" width="1200" />
+<br/> <img src="images/1-10.png" width="550" />
 
 Next, we’ll fill in the next variable with the URL for each of the images corresponding to the microservices listed above. As mentioned earlier, each microservice should have exactly one image.
-<br/> <img src="images/1-11.png" width="400" />
+<br/> <img src="images/1-11.png" width="350" />
 
 Next, we’ll enter the tags for each image. For this exercise, we’ll be working with the latest images, so we’ll use the tag "latest."
-<br/> <img src="images/1-12.png" width="400" />
+<br/> <img src="images/1-12.png" width="350" />
 
 Next, we’ll specify the branch for each of the repositories we listed earlier. For this exercise, we’ll be working with the "main" branch, so let’s enter "main" for each repository.
-<br/> <img src="images/1-13.png" width="400" />
+<br/> <img src="images/1-13.png" width="1000" />
 
 The next variable is a list of all the access points used by the microservices in this application. We’ll use an array of strings, with each element separated by a specific separator character. For each access point we will provide the name of the microservice it belongs to, the name of the environment the access point is on (for example, dev, qa, stage, prod), the name of the access point, the url of the access point, and most importantly, the visibility or exposure of the access point, either public or private. It’s useful to note that if no exposure parameter is provided, Concert will default it to public.
 
 Each microservice can have multiple access points. For this exercise, we’ll fill line 204 with 23 access points.
-<br/> <img src="images/1-14.png" width="750" />
+<br/> <img src="images/1-14.png" width="350" />
 
 The next few variables would normally be populated automatically in a CI/CD pipeline. However, for this exercise, we will manually set the build number to 56 on line 231. Then, we’ll set the Inventory build number to 9 on line 233 and the URN Prefix on line 235 to "urn:ibm:appmgmt"
-<br/> <img src="images/1-15.png" width="400" />
+<br/> <img src="images/1-15.png" width="350" />
 
 Next, let’s fill in the next section with the details of the Kubernetes container used in this exercise.
-<br/> <img src="images/1-16.png" width="450" />
+<br/> <img src="images/1-16.png" width="300" />
 
 Finally, let’s populate the variables on lines 257 to 260 with the company's contact information. This information is necessary for generating the Application Definition SBOM. For this exercise, we’ll use IBM’s information to fill these variables.
-<br/> <img src="images/1-17.png" width="400" />
+<br/> <img src="images/1-17.png" width="250" />
 
 We’ve finished setting up our demo app. Now, let’s configure the system variables. The global_environment.variables file is already prepopulated with the information needed to download the toolkit and other supporting details. However, we still need to provide the information for the IBM Concert instance that we’ll be using in this exercise.
 
 On line 322, enter the token obtained from your IBM Concert console. Keep "0000-0000-0000-0000" as the instance ID on line 320.
-<br/> <img src="images/1-18.png" width="600" />
+<br/> <img src="images/1-18.png" width="500" />
 
 Now let’s fill in the information required to connect remotely to IBM Concert through its API. On line 312, populate the CONCERT_INGESTION_USER with any admin username; for this exercise, we’ll use "ibmconcert." Next, enter the password on line 314; we’ll use "ITZtemp42024". Then, on line 318, populate CONCERT_INGESTION_ENDPOINT with the full URL of the IBM Concert instance. 
-<br/> <img src="images/1-19.png" width="600" />
+<br/> <img src="images/1-19.png" width="500" />
 
 **[Go to top](#top)**
 
