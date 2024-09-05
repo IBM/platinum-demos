@@ -200,6 +200,8 @@ We will use the IBM Concert Toolkit (v1.0.1) to generate both types of package S
 
 The code scan command in the Concert toolkit uses CDXgen to analyze the codebase, identifying all software packages and dependencies.
 
+<img src="images/3-2.png" width="800" />
+
 <!-- <show section in script where image scan is called> -->
 
 The image scan command uses Syft to analyze the containerized application image for vulnerabilities and compliance issues, ensuring the image is secure before deployment.
@@ -212,9 +214,9 @@ The output of this command will be an image-scan SBOM and a code-scan SBOM file 
 
 <!-- <show generated package SBOM files on the computer> -->
 
-<img src="images/3-2.png" width="800" />
-
 <img src="images/3-3.png" width="800" />
+
+<img src="images/3-4.png" width="800" />
 
 **[Go to top](#top)**
 
