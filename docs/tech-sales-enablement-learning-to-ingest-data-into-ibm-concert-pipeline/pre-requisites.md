@@ -15,7 +15,7 @@ oc create secret generic concert-token-secret --from-literal=token="C_API_KEY bW
 
 <details markdown="1">
 
-<summary>Pre-requisites</summary>
+<summary>Prepare your environment</summary>
 
 <!--Before we begin, here is a list of pre-requisites that need to be setup prior to beginning this demo
 

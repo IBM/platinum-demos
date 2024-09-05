@@ -19,8 +19,6 @@ Concert is designed to ingest data on a regular basis, every time an application
 
 As an IBMer, we have access to Tekton on Redhat Openshift and will use this for building our pipeline. The pipeline concepts we will demonstrate can be translated to any other CI/CD pipeline.
 
-Let’s get started.
-
 <br/>
 
 </details>
