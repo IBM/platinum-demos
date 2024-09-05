@@ -394,6 +394,8 @@ We can now log in to Concert to view the uploaded data.
 
 Placeholder
 
+Click <a href="https://ibm.github.io/platinum-demos/tech-sales-enablement-learning-to-ingest-data-into-ibm-concert-pipeline/prerequisites" target="_blank" rel="noreferrer">here</a> to continue to **Part 2 - Using a pipeline to automate data ingestion into IBM Concert**.
+
 **[Go to top](#top)**
 
 <br/><br/>

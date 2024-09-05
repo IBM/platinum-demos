@@ -43,4 +43,4 @@ Once we have all the prerequisites completed, we can now get started on building
 
 ***
 
-Click [here](demo-script) to go to the **Demo script** on the next tab.
+Click [here](tutorial) to go to the **Tutorial** on the next tab.

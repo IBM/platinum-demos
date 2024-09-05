@@ -99,4 +99,4 @@ In order to download the helper scripts, you’ll need to set up Github access.
 
 ***
 
-Click [here](demo-script) to go to the **Demo script** on the next tab.
+Click [here](tutorial) to go to the **Tutorial** on the next tab.
