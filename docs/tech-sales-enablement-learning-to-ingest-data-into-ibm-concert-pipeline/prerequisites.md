@@ -1,10 +1,11 @@
 ---
 title: Part 2 - Using a pipeline to automate data ingestion into IBM Concert <br/> <small> <i> Tech Sales enablement </i> </small>
 layout: prereqs
-banner: images/banner.jpg
 ---
 
 <span id="top"></span>
+
+<br/>
 
 ### **PREPARING FOR THE DEMO**
 
@@ -14,9 +15,9 @@ oc create secret generic concert-token-secret --from-literal=token="C_API_KEY bW
 
 <details markdown="1">
 
-<summary>Pre-requisites</summary>
+<summary>Prerequisites</summary>
 
-<!--Before we begin, here is a list of pre-requisites that need to be setup prior to beginning this demo
+<!--Before we begin, here is a list of prerequisites that need to be setup prior to beginning this demo
 
 Number one, you should have an Openshift Cluster with public ingress reserved on techzone. This is where our Tekton pipeline will be installed.
 

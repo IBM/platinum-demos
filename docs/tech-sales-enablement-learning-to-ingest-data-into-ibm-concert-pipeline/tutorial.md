@@ -1,12 +1,13 @@
 ---
 title: Part 2 - Using a pipeline to automate data ingestion into IBM Concert <br/> <small> <i> Tech Sales enablement </i> </small>
 layout: tutorial
-banner: images/banner.jpg
 ---
 
 <span id="top"></span>
 
-Click the [**Demo preparation**](demo-preparation) tab for setup instructions.
+<br/>
+
+Click the [**Prerequisites**](prerequisites) tab for setup instructions.
 
 <details markdown="1">
 
@@ -28,7 +29,7 @@ Let’s get started.
 
 <details markdown="1">
 
-<summary>Pre-req: Install pre-requisites</summary>
+<summary>Prereq: Install prerequisites</summary>
 
 Placeholder
 
@@ -92,7 +93,7 @@ Once we have the Concert API token, we will use the oc create secret generic com
 
 Next we will create the Github secret. To do this we use the oc create secret generic command again, however this time we name the secret github-creds and provide our github username and token. This information was setup during the prerequisites, and if not then a IBM github username and token should be setup prior to this step.
 
-<code class="code-block"> oc create secret generic github-creds ` <br/> --from-literal=username=$env:GITHUB_USERNAME ` <br/> --from-literal=password=$env:GITHUB_TOKEN ` <— Created during pre-reqs <br/> --type=kubernetes.io/basic-auth </code>
+<code class="code-block"> oc create secret generic github-creds ` <br/> --from-literal=username=$env:GITHUB_USERNAME ` <br/> --from-literal=password=$env:GITHUB_TOKEN ` <— Created during prereqs <br/> --type=kubernetes.io/basic-auth </code>
 
 For the github secret, we must also annotate it and link it to the pipeline. Run the following commands to complete this step.
 
@@ -330,7 +331,7 @@ All the pipeline files were successfully created, we can now open our openshift 
 
 <summary>7 - Create GitHub access token webhook</summary>
 
-In the pre-requisites, we set up an organization for our quote-of-the-day application in GitHub. In order for the trigger template to run whenever any of the repos in this organization are updated, we need to create a webhook at the organization level. 
+In the prerequisites, we set up an organization for our quote-of-the-day application in GitHub. In order for the trigger template to run whenever any of the repos in this organization are updated, we need to create a webhook at the organization level. 
 
 To do this, we first need to determine the route to our openshift instance. This route was created when we pushed our pipeline to tekton. 
 

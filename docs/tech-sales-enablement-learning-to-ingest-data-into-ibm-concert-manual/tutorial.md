@@ -7,7 +7,7 @@ layout: tutorial
 
 <br/> 
 
-Click the [**Demo preparation**](demo-preparation) tab for setup instructions.
+Click the [**Prerequisites**](prerequisites) tab for setup instructions.
 
 <details markdown="1">
 
@@ -59,7 +59,7 @@ Let’s get started.
 
 With the helper scripts downloaded, we are now ready populate application environment variables needed by the Concert toolkit. 
 
-We begin by opening the concert-pm-utils repo code we downloaded in the pre-requisites section and open the global_environment_variables file. This file contains all the details of the demo qotd application and its environment.
+We begin by opening the concert-pm-utils repo code we downloaded in the prerequisites section and open the global_environment_variables file. This file contains all the details of the demo qotd application and its environment.
 
 <!-- <Show source code for install script> -->
 
