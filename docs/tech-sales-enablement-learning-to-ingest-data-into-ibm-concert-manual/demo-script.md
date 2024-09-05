@@ -322,9 +322,9 @@ The last SBOM to be generated is the Application definition SBOM. This SBOM is w
 
 This process is carried out by executing the generate_app_def.sh shell script: <br/><br/> <code class="code-block"> ./generate_app_def.sh </code>
 
-Unlike the other SBOMs, the application SBOM is defined at the application level instead of the microservice level. This enables Concert to have an application-centric view and only one application definition SBOM is required for each application, regardless of how many microservices it has.
+Unlike the other SBOMs, the Application-definition SBOM is defined at the application level instead of the microservice level. This enables Concert to have an application-centric view and only one Application-definition SBOM is required for each application, regardless of how many microservices it has.
 
-An Application Definition SBOM will be generated in the ./toolkit-data directory. 
+An Application-definition SBOM will be generated in the ./toolkit-data directory. 
 
 <!-- <show toolkit-data directory where Application Definition SBOM is generated (1)> -->
 
