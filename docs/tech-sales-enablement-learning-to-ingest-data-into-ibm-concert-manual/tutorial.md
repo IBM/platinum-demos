@@ -37,25 +37,25 @@ Let’s get started.
 
 | **Terms** | **Screenshot** | **Description** |
 | :--- | :--- | :--- |
-| Line 51: <br/> **PLATFORM_ARCH** | <img src="images/1-1.png" width="700" /> | Placeholder |
+| Line 62: <br/> **PLATFORM_ARCH** | <img src="images/1-1.png" width="750" /> | Placeholder |
 | Line 58: <br/> **CONTAINERIZATION_PLATFORM** | <img src="images/1-2.png" width="700" /> | Placeholder |
 | Line 79: <br/> **DEMO_APP_NAME** | <img src="images/1-3.png" width="250" /> | Placeholder |
 | Line 87: <br/> **DEMO_APP_CRITICALITY** | <img src="images/1-4.png" width="250" /> | Placeholder |
 | Line 90: <br/> **DEMO_APP_REPOSITORY_URL** | <img src="images/1-5.png" width="500" /> | Placeholder | 
-| Line 95: <br/> **DEMO_APP_VERSION** | <img src="images/1-6.png" width="200" /> | Placeholder |
-| Line 98: <br/> **DEMO_APP_COMPONENT** | <img src="images/1-7.png" width="350" /> | Placeholder |
-| Line 103: <br/> **DEMO_APP_REPO_NAME** | <img src="images/1-8.png" width="350" /> | Placeholder |
-| Line 110: <br/> **DEMO_APP_SRC_REPO_URL** | <img src="images/1-9.png" width="900" /> | Placeholder |
-| Line 116: <br/> **DEMO_APP_IMAGE_URL** | <img src="images/1-10.png" width="550" /> | Placeholder |
-| Line 121: <br/> **DEMO_APP_IMAGE_TAG** | <img src="images/1-11.png" width="350" /> | Placeholder |
-| Line 127: <br/> **DEMO_APP_REPOSITORY_BRANCH** | <img src="images/1-12.png" width="350" /> | Placeholder |
-| Line 133: <br/> **DEMO_APP_ACCESS_POINTS** | <img src="images/1-13.png" width="1000" /> | Placeholder |
-| Line 138: <br/> **BUILD_NUMBER** | <img src="images/1-14.png" width="350" /> | Placeholder |
-| Line 145: <br/> **K8_PLATFORM** | <img src="images/1-15.png" width="350" /> | Placeholder |
-| Line 145: <br/> **K8_PLATFORM_TYPE** | <img src="images/1-16.png" width="300" /> | Placeholder |
-| Line 164: <br/> **BUSINESS_NAME** | <img src="images/1-17.png" width="250" /> | Placeholder |
-| Line 218: <br/> **CONCERT_INGESTION_ENDPOINT** | <img src="images/1-18.png" width="500" /> | Placeholder |
-| Line 227: <br/> **CONCERT_INGESTION_USER** | <img src="images/1-19.png" width="500" /> | Placeholder |
+| Line 104: <br/> **DEMO_APP_VERSION** | <img src="images/1-6.png" width="250" /> | Placeholder |
+| Line 107: <br/> **DEMO_APP_COMPONENT** | <img src="images/1-7.png" width="350" /> | Placeholder |
+| Line 121: <br/> **DEMO_APP_REPO_NAME** | <img src="images/1-8.png" width="350" /> | Placeholder |
+| Line 137: <br/> **DEMO_APP_SRC_REPO_URL** | <img src="images/1-9.png" width="900" /> | Placeholder |
+| Line 152: <br/> **DEMO_APP_IMAGE_URL** | <img src="images/1-10.png" width="550" /> | Placeholder |
+| Line 166: <br/> **DEMO_APP_IMAGE_TAG** | <img src="images/1-11.png" width="350" /> | Placeholder |
+| Line 181: <br/> **DEMO_APP_REPOSITORY_BRANCH** | <img src="images/1-12.png" width="350" /> | Placeholder |
+| Line 196: <br/> **DEMO_APP_ACCESS_POINTS** | <img src="images/1-13.png" width="1000" /> | Placeholder |
+| Line 223: <br/> **BUILD_NUMBER2** <br/><br/> Line 225: <br/> **INVENTORY_BUILD_NUMBER2** <br/><br/> Line 227: <br/> **CONCERT_URN_PREFIX2** | <img src="images/1-14.png" width="350" /> | Placeholder |
+| Line 230: <br/> **K8_PLATFORM2** <br/><br/> Line 232: <br/> **ENV_PLATFORM2** <br/><br/> Line 234: <br/> **CLUSTER_ID2** <br/><br/> Line 236: <br/> **CLUSTER_REGION2** <br/><br/> Line 238: <br/> **CLUSTER_NAME2** <br/><br/> Line 240: <br/> **CLUSTER_NAMESPACE2** | <img src="images/1-15.png" width="350" /> | Placeholder |
+| Line 247: <br/> **K8_PLATFORM_TYPE** <br/><br/> Line 249: <br/> **K8_PLATFORM_NAME** <br/><br/> Line 251: <br/> **CLUSTER_ENV_PLATFORM** | <img src="images/1-16.png" width="300" /> | Placeholder |
+| Line 254: <br/> **BUSINESS_NAME** <br/><br/> Line 255: <br/> **BUSINESS_UNIT_NAME** <br/><br/> Line 256: <br/> **CONTACT_EMAIL** <br/><br/> Line 257: <br/> **CONTACT_PHONE** | <img src="images/1-17.png" width="250" /> | Placeholder |
+| Line 218: <br/> **CONCERT_INGESTION_ENDPOINT** <br/><br/> Line 220: <br/> **CONCERT_INGESTION_INSTANCE_ID** <br/><br/> Line 222: <br/> **CONCERT_INGESTION_TOKEN** | <img src="images/1-18.png" width="450" /> | Placeholder |
+| Line 227: <br/> **CONCERT_INGESTION_USER** <br/><br/> Line 229: <br/> **CONCERT_INGESTION_PASSWORD** | <img src="images/1-19.png" width="500" /> | Placeholder |
 
 With the helper scripts downloaded, we are now ready populate application environment variables needed by the Concert toolkit. 
 
