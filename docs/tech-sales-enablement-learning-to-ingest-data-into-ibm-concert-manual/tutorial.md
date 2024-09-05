@@ -242,6 +242,8 @@ The output of this command will be a CVE file in CSV format for each microservic
 
 <img src="images/4-1.png" width="800" />
 
+<img src="images/4-2.png" width="800" />
+
 Here we can see CVE scan files generated, one for every microservice image in our qotd application.
 
 **[Go to top](#top)**
