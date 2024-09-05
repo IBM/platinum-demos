@@ -33,28 +33,27 @@ Let’s get started.
 
 <inline-notification text="Line numbers may vary as helper scripts get updated."></inline-notification>
 
-| **Terms** | **Screenshot** | **Definition** | **Description** |
-| :--- | :--- | :--- | :--- |
-| **Placeholder** | <img src="images/1-1.png" width="700" /> | Placeholder | Placeholder |
-| **Placeholder** | <img src="images/1-2.png" width="700" /> | Placeholder | Placeholder |
-| **Placeholder** | <img src="images/1-3.png" width="750" /> | Placeholder | Placeholder |
-| **Placeholder** | <img src="images/1-4.png" width="300" /> | Placeholder | Placeholder |
-| **Application criticality** | <img src="images/1-5.png" width="350" /> | Placeholder | Placeholder |
-| **Placeholder** | <img src="images/1-6.png" width="350" /> | Placeholder | Placeholder |
-| **Placeholder** | <img src="images/1-7.png" width="350" /> | Placeholder | Placeholder |
-| **Placeholder** | <img src="images/1-8.png" width="350" /> | Placeholder | Placeholder |
-| **Placeholder** | <img src="images/1-9.png" width="350" /> | Placeholder | Placeholder |
-| **Placeholder** | <img src="images/1-10.png" width="800" /> | Placeholder | Placeholder |
-| **Placeholder** | <img src="images/1-11.png" width="350" /> | Placeholder | Placeholder |
-| **Placeholder** | <img src="images/1-12.png" width="350" /> | Placeholder | Placeholder |
-| **Placeholder** | <img src="images/1-13.png" width="350" /> | Placeholder | Placeholder |
-| **Placeholder** | <img src="images/1-14.png" width="600" /> | Placeholder | Placeholder |
-| **Placeholder** | <img src="images/1-15.png" width="350" /> | Placeholder | Placeholder |
-| **Placeholder** | <img src="images/1-16.png" width="350" /> | Placeholder | Placeholder |
-| **Placeholder** | <img src="images/1-17.png" width="300" /> | Placeholder | Placeholder |
-| **Placeholder** | <img src="images/1-18.png" width="400" /> | Placeholder | Placeholder |
-| **Placeholder** | <img src="images/1-19.png" width="450" /> | Placeholder | Placeholder |
-
+| **Terms** | **Screenshot** | **Description** |
+| :--- | :--- | :--- |
+| Line 51: <br/> **PLATFORM_ARCH** | <img src="images/1-1.png" width="700" /> | Placeholder |
+| **Placeholder** | <img src="images/1-2.png" width="700" /> | Placeholder |
+| **Placeholder** | <img src="images/1-3.png" width="750" /> | Placeholder |
+| **Placeholder** | <img src="images/1-4.png" width="300" /> | Placeholder |
+| **Application criticality** | <img src="images/1-5.png" width="350" /> | Placeholder |
+| **Placeholder** | <img src="images/1-6.png" width="350" /> | Placeholder | 
+| **Placeholder** | <img src="images/1-7.png" width="350" /> | Placeholder |
+| **Placeholder** | <img src="images/1-8.png" width="350" /> | Placeholder |
+| **Placeholder** | <img src="images/1-9.png" width="350" /> | Placeholder |
+| **Placeholder** | <img src="images/1-10.png" width="800" /> | Placeholder |
+| **Placeholder** | <img src="images/1-11.png" width="350" /> | Placeholder |
+| **Placeholder** | <img src="images/1-12.png" width="350" /> | Placeholder |
+| **Placeholder** | <img src="images/1-13.png" width="350" /> | Placeholder |
+| **Placeholder** | <img src="images/1-14.png" width="600" /> | Placeholder |
+| **Placeholder** | <img src="images/1-15.png" width="350" /> | Placeholder |
+| **Placeholder** | <img src="images/1-16.png" width="350" /> | Placeholder |
+| **Placeholder** | <img src="images/1-17.png" width="300" /> | Placeholder |
+| **Placeholder** | <img src="images/1-18.png" width="400" /> | Placeholder |
+| **Placeholder** | <img src="images/1-19.png" width="450" /> | Placeholder |
 
 With the helper scripts downloaded, we are now ready populate application environment variables needed by the Concert toolkit. 
 
@@ -149,18 +148,18 @@ The shell script will install the following: <br/>
 
 | **Software** | **Description** |
 | :--- | :--- |
-| **IBM Concert toolkit** | Framework required to interact with IBM Concert APIs |
+| **IBM Concert toolkit** | Framework required to generate SBOMs and interact with IBM Concert APIs |
+| **grype** | Vulnerability scanner for container images and filesystems |
+| **Syft** | Tool for generating SBOMs from container images and filesystems |
+| **cdxgen** | Tool required to generate CycloneDX SBOMs for various programming languages |
 | **Python3** and **pip3** | Essential for running Python scripts and managing Python packages |
 | **Homebrew** | Package manager for macOS that simplifies the installation, updating and management of software and libraries |
 | **Node.js** | Required to enable the execution of JavaScript code server-side and the development of scalable network applications |
 | **nvm** | Enable you to manage multiple versions of Node.js, making it easy to switch between different versions for various projects and development environments |
 | **rpm** | Needed for installing certain packages like Syft |
 | **Gradle** | Open-source build automation tool that streamlines the building, testing and deployment of software projects with its flexible and powerful capabilities |
-| **grype** | Vulnerability scanner for container images and filesystems |
 | **jq** | Lightweight and flexible command-line JSON processor, essential for parsing, manipulating and transforming JSON data |
 | **Bazel** | Powerful build and test tool that automates the process of compiling and testing large codebases efficiently |
-| **Syft** | Tool for generating SBOMs from container images and filesystems |
-| **cdxgen** | Tool required to generate CycloneDX SBOMs for various programming languages |
 | **GitHub CLI** | Tool for managing GitHub repositories from the command line |
 | **Docker** | Platform for running and deploying containers and applications |
 
@@ -189,9 +188,9 @@ On the right, we see that Concert also ingests SBOMs that are specific to Concer
 
 | **Concert-defined SBOMs** | **Details** |
 | :--- | :--- | :--- | :--- |
-| **Build SBOMs** | • Microservices (individual components) <br/> • Associated images and versions for each microservice <br/> • Repositories and branches linked to each microservice |
-| **Deploy SBOMs** | • Microservices (individual components) <br/> • Associated environments for each microservice <br/> • Access points linked to each microservice <br/> • External dependencies |
-| **Application-definition SBOM** | • List of all Microservices (individual components) that makes the application <br/> • List of all Repositories that makes the application <br/> • List of all images that makes the application <br/> • List of all environments that makes the application <br/> • Application criticality <br/> • Visibility of each access point |
+| **Build SBOMs** | For each individual microservice, provides an inventory of: <br/> • Associated images and their versions <br/> • Repositories and their branches|
+| **Deploy SBOMs** | For each combination of microservice and environment, provides an inventory of: <br/> • Access points <br/> • External dependencies |
+| **Application-definition SBOM** | Defines the boundaries of an application, including the following underlying elements: <br/> • Microservices <br/> • Repositories <br/> • Images <br/> • Environments <br/> • Application criticality <br/> • Access points and their exposure levels |
 
 The first SBOM file is the Package SBOM: which gets its name because Concert takes an inventory of what’s in the software packages. Concert ingests two types of package SBOMs, one that scans the the source code and the second that scans the images.
 
