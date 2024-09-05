@@ -1,6 +1,6 @@
 ---
 title: Part 2 - Using a pipeline to automate data ingestion into IBM Concert <br/> <small> <i> Tech Sales enablement </i> </small>
-layout: preparation
+layout: prereqs
 banner: images/banner.jpg
 ---
 

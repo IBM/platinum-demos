@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <script src="../js/inline-notifications.js"></script>
+    <script src="../js/inline-code.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <div class="header">
+      <div id="header-spacing">
+        <header></header>
+      </div>
+      <div id="header-title" class="demo-header">
+        <h1>{{ page.title }}</h1>
+      </div>
+      <div class="header-buttons">
+        <ul class="{{ layout.preparation-button-class }}">
+          <a href="demo-preparation" class="white-text">Prerequisites</a>
+        </ul>
+        <ul class="{{ layout.script-button-class }}">
+          <a href="demo-script" class="white-text">Tutorial</a>
+        </ul>
+      </div>
+      <div class="banner">
+          <img src="{{ page.banner }}" alt="banner" class="banner-image"/>
+      </div>
+    </div>
+    <section class="main-body">
+      {{ content }}
+    </section>
+    <footer>
+    </footer>
+  </body>
+</html>
+
