@@ -136,8 +136,6 @@ The shell script will install the following: <br/>
 
 <summary>3 - Generate 'Package SBOMs'</summary>
 
-In this section we will ingest SBOMs (Software Bill of Materials) and CVEs into IBM Concert.
-
 This slide shows the two variations of SBOMs that IBM Concert ingests.
 <br/> <img src="images/sboms.jpeg" width="600" />
 
