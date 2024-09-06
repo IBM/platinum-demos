@@ -7,6 +7,8 @@ layout: demo-instructions
 
 <br/> 
 
+Click <a href="https://ibm.seismic.com/app?ContentId=24a980e9-bc75-427d-b341-bce2db2e771f#/doccenter/f6bc8873-d580-4ee8-a903-[…]0-a4ab-4913-a193-2cfef77d0f34/grid/" target="_blank" rel="noreferrer">here</a> to access the manual data ingestion video.
+
 Click the [**Pre-requisites**](pre-requisites) tab for setup instructions.
 
 <details markdown="1">

@@ -7,6 +7,8 @@ layout: demo-instructions
 
 <br/>
 
+Click <a href="https://ibm.seismic.com/app?ContentId=595cd326-e668-430b-a8a8-13313f2a1d95#/doccenter/f6bc8873-d580-4ee8-a903-[…]b-fee7-4b77-b46e-8acb34740000/grid/" target="_blank" rel="noreferrer">here</a> to access the pipeline data ingestion video.
+
 Click the [**Pre-requisites**](pre-requisites) tab for setup instructions.
 
 <details markdown="1">
