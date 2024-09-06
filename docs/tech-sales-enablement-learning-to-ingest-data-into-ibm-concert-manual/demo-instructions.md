@@ -42,7 +42,7 @@ For this demo, we will need to provide all the data in the global variables file
 
 <br/>
 
-### Environment variables used in the QotD application
+### Action 1.1: Review and update global variables in the table below.
 
 | **Environment variable** | **Description and code snippet** |
 | :--- | :--- | :--- |
@@ -79,9 +79,9 @@ For this demo, we will need to provide all the data in the global variables file
 
 <summary>2 - Install supporting software</summary>
 
-To install all supporting software, run the **install_supporting_software** shell script. The script will install the IBM Concert toolkit, Grype, Docker and other software needed for this demo.
+The install_supporting_software.sh shell script will install the IBM Concert toolkit, Grype, Docker and other software needed for this demo.
 
-To run the install_supporting_software.sh shell script, execute the code in a terminal:
+### Action 2.1: Execute the code below in a terminal.
 
 <code class="code-block"> ./install_supporting_software.sh </code>
 
@@ -165,7 +165,9 @@ The image scan command in the toolkit uses an open source tool called **Syft** t
 
 In both cases, the toolkit generates a JSON file in standard CycloneDX format.
 
-To execute both tasks we will run the **generate_package_sbom.sh** shell script: <br/><br/> <code class="code-block"> ./generate_package_sbom.sh </code>
+### Action 3.1: Execute the ./generate_package_sbom.sh shell script.
+
+<code class="code-block"> ./generate_package_sbom.sh </code>
 
 The output of this command will be an image-scan SBOM and a code-scan SBOM file for each microservice.
 
@@ -191,7 +193,9 @@ Next, we use an open source tool called **Grype** to conduct a vulnerability sca
 
 <inline-notification text="The Concert toolkit does not contain any commands for generating CVE scan files."></inline-notification>
 
-This process is carried out by executing the **generate_cve_csv_file.sh** shell script: <br/><br/> <code class="code-block"> ./generate_cve_csv_file.sh </code>
+### Action 4.1: Execute the generate_cve_csv_file.sh shell script.
+
+<code class="code-block"> ./generate_cve_csv_file.sh </code>
 
 The output of this command will be a CVE file in CSV format for each microservice image in the application.
 
@@ -225,7 +229,9 @@ We will use the toolkit to generate the build SBOM file, which is a detailed inv
 
 <!-- <show script where build-sbom command is called> -->
 
-This process is carried out by executing the **generate_build_sbom.sh** shell script: <br/><br/> <code class="code-block"> ./generate_build_sbom.sh </code>
+### Action 5.1: Execute the generate_build_sbom.sh shell script. 
+
+<code class="code-block"> ./generate_build_sbom.sh </code>
 
 For each microservice image of the target application, a Build SBOM will be generated in the ./toolkit-data directory.
 <br/> <img src="images/5-1.png" width="500" />
@@ -254,7 +260,9 @@ The next step involves using the toolkit to generate the deploy SBOM file where 
 
 <!-- <show script where deploy-sbom command is called> -->
 
-This process is carried out by executing the generate_deploy_sbom.sh shell script: <br/><br/> <code class="code-block"> ./generate_deploy_sbom.sh </code>
+### Action 6.1: Execute the generate_deploy_sbom.sh shell script.
+
+<code class="code-block"> ./generate_deploy_sbom.sh </code>
 
 For each pair of microservice and environment defined for the target application, a deploy SBOM will be generated in the ./toolkit-data directory. 
 
@@ -283,7 +291,9 @@ The last SBOM to be generated is the Application definition SBOM. This SBOM is w
 
 <!-- <show script where app-definition command is called> -->
 
-This process is carried out by executing the **generate_app_def.sh** shell script: <br/><br/> <code class="code-block"> ./generate_app_def.sh </code>
+### Action 7.1: Execute the generate_app_def.sh shell script. 
+
+<code class="code-block"> ./generate_app_def.sh </code>
 
 Unlike the other SBOMs, the Application-definition SBOM is defined at the application level instead of the microservice level. This enables Concert to have an application-centric view and only one Application-definition SBOM is required for each application, regardless of how many microservices it has.
 
@@ -312,11 +322,15 @@ An Application-definition SBOM defines the boundaries of an application, includi
 
 <summary>8 - Upload data to Concert</summary>
 
-The final step is to upload all the generated data into IBM Concert to make it accessible in the Concert UI. This can be done by executing the **upload_data_concert.sh** shell script. 
+The final step is to upload all the generated data into IBM Concert to make it accessible in the Concert UI.
+
+### Action 8.1: Execute the upload_data_concert.sh shell script. 
+
+<code class="code-block"> ./upload_data_concert.sh </code>
 
 <!-- <show script with upload details> -->
 
-This helper script automates the process, allowing multiple Concert-supported files to be uploaded at once, eliminating the need for manual uploads: <br/><br/> <code class="code-block"> ./upload_data_concert.sh </code>
+This helper script automates the process, allowing multiple Concert-supported files to be uploaded at once, eliminating the need for manual uploads.
 
 Alternatively, you can manually upload all relevant files from the ./toolkit-data directory to IBM Concert using the user interface, one by one.
 
