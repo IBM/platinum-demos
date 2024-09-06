@@ -33,19 +33,19 @@ For our demo we will use Tekton on Redhat Openshift to build our pipeline. The p
 
 The first step is to install Tekton which is a Kubernetes-native CI/CD framework for automating application deployment pipelines on OpenShift clusters.
 
-| Action 1.1 | Log in to the OpenShift (OCP) cluster on TechZone. |
+| **Action** 1.1 | Log in to the OpenShift (OCP) cluster on TechZone. |
 | :--- | :--- |
 |  | When we reserved the OCP instance, we received a kubeadmin login and password. We will use this to log in to the cluster. |
 
-| Action 1.2 | Click **OperatorHub** in the **Operators** section. |
+| **Action** 1.2 | Click **OperatorHub** in the **Operators** section. |
 | :--- | :--- |
 |  |  |
 
-| Action 1.3 | Search for '**OpenShift pipeline**' and click the **pipeline** tile to open the install dialog. |
+| **Action** 1.3 | Search for '**OpenShift pipeline**' and click the **pipeline** tile to open the install dialog. |
 | :--- | :--- |
 |  |  |
 
-| Action 1.4 | Click **Install without any changes to the default fields**. |
+| **Action** 1.4 | Click **Install without any changes to the default fields**. |
 | :--- | :--- |
 |  | The installation should complete within one minute with a success dialog. |
 
@@ -64,7 +64,7 @@ The first step is to install Tekton which is a Kubernetes-native CI/CD framework
 <br/>
 
 
-| Action 2.1 | Use the '**oc login**' command directly from the TechZone OCP console to log in to the OpenShift cluster from the local machine. |
+| **Action** 2.1 | Use the '**oc login**' command directly from the TechZone OCP console to log in to the OpenShift cluster from the local machine. |
 | :--- | :--- |
 |  | This command requires a login token that is provided in the login command. <br/> Click on 'kubeadmin' in the top right, then click 'copy login command', then click 'display token, and then copy the command and paste it into the terminal. |
 
@@ -92,17 +92,17 @@ In this step, we will create 3 secrets: a Concert Secret, Github Secret and Regi
 
 The Concert secret is what enables Tekton to authenticate with the Concert API for uploading data. <br/>
 
-| Action 3.1 | Generate the API key from Concert by ensuring you have admin access, and then log in to the Concert instance. |
+| **Action** 3.1 | Generate the API key from Concert by ensuring you have admin access, and then log in to the Concert instance. |
 | :--- | :--- |
 |  | In this demo, our Concert instance is deployed on SaaS.|
 
-| Action 3.2 | Click your profile --> **API Key** --> Generate. Copy the key into a notepad or place where you can access it, as it will not be visible again. |
+| **Action** 3.2 | Click your profile --> **API Key** --> Generate. Copy the key into a notepad or place where you can access it, as it will not be visible again. |
 | :--- | :--- |
 |  |  | 
 
 <inline-notification text="Note: This token doesn’t expire unless you generate a new one or revoke it."></inline-notification>
 
-| Action 3.3 | Use the '**oc create secret generic**' command to set the name of the secret to '**concert-token-secret**' and insert the Concert token we generated above. |
+| **Action** 3.3 | Use the '**oc create secret generic**' command to set the name of the secret to '**concert-token-secret**' and insert the Concert token we generated above. |
 | :--- | :--- |
 |  | <code class="code-block"> oc create secret generic concert-token-secret <br/> --from-literal=token="C_API_KEY <br/> bWFyeWFtYUBjYS5pYm0uY29tOjE5N2U4ZmI2LTNiY2YtNGRhOC04OGY0LTViYTYwMmQyZWMxMQ==" </code> | 
 
@@ -110,13 +110,13 @@ The Concert secret is what enables Tekton to authenticate with the Concert API f
 
 ### GitHub Secret
 
-| Action 3.4 | Create the GitHub secret by using the '**oc create secret generic**' command again. Name the secret '**github-creds**' and provide your GitHub username and token. |
+| **Action** 3.4 | Create the GitHub secret by using the '**oc create secret generic**' command again. Name the secret '**github-creds**' and provide your GitHub username and token. |
 | :--- | :--- |
 |  | <code class="code-block"> oc create secret generic github-creds ` <br/> --from-literal=username=$env:GITHUB_USERNAME ` <br/> --from-literal=password=$env:GITHUB_TOKEN ` <br/> --type=kubernetes.io/basic-auth </code> | 
 
 <inline-notification text="Note: This information was set up during the pre-requisites, and if not then an IBM GitHub username and token should be set up prior to this step."></inline-notification>
 
-| Action 3.5 | Annotate the GitHub secret and link it to the pipeline by running the commands below. |
+| **Action** 3.5 | Annotate the GitHub secret and link it to the pipeline by running the commands below. |
 | :--- | :--- |
 |  | <code class="code-block"> oc annotate secret github-creds ` <br/> tekton.dev/git-0=https://github.ibm.com <br/><br/> oc secret link pipeline github-creds </code> | 
 
@@ -126,27 +126,27 @@ The third secret authenticates into the image registry.
 
 For this demo, we are using a private IBM internal jfrog artifactory registry to store our container images. To create this secret, we need the jfrog server address, username and token.
 
-| Action 3.6 | Log in to jfrog and click your profile. Click **Setup** and click **Generate authentication token**. |
+| **Action** 3.6 | Log in to jfrog and click your profile. Click **Setup** and click **Generate authentication token**. |
 | :--- | :--- |
-|  | <inline-notification text="Note: The token will not be visible again and should be saved for future reference."></inline-notification> | 
+|  |  |
 
-| Action 3.7 | Use the same '**oc create**' secret for type **docker-registry**. Set the name to '**container-registry-secret**' and provide the registry information run the whole command. |
+<inline-notification text="Note: The token will not be visible again and should be saved for future reference."></inline-notification> 
+
+| **Action** 3.7 | Use the same '**oc create**' secret for type **docker-registry**. Set the name to '**container-registry-secret**' and provide the registry information run the whole command. |
 | :--- | :--- |
 |  | <code class="code-block"> oc create secret docker-registry container-registry-secret --docker-server=na.artifactory.swg-devops.com --docker-username=youremail@ibm.com --docker-password=YOUR_REGISTRY_TOKEN </code> | 
 
-Next, link the secret to the pipeline giving it both access and pull permissions. 
+| **Action** 3.8 | Link the secret to the pipeline, giving it both access and pull permissions. |
+| :--- | :--- |
+|  | <code class="code-block"> oc secret link pipeline container-registry-secret </code> |
+|  | The pull permission allows Tekton to pull images from our registry. |
+|  | <code class="code-block"> oc secret link pipeline container-registry-secret --for=pull </code> |
 
-<code class="code-block"> oc secret link pipeline container-registry-secret </code>
+| **Action** 3.9 | Validate the three secrets have been added by running the '**oc get serviceaccount**' command. |
+| :--- | :--- |
+|  | <code class="code-block"> oc get serviceaccount pipeline -o yaml </code> |
 
-The pull permission allows Tekton to pull images from our registry.
-
-<code class="code-block"> oc secret link pipeline container-registry-secret --for=pull </code>
-
-Now that all three secrets have been added, we can quickly validate they’ve been successfully created by running the oc get serviceaccount command
-
-<code class="code-block"> oc get serviceaccount pipeline -o yaml </code>
-
-In the output, we should see the github secret at the bottom and the container-registry secret in two places. The Concert secret is not shown here.
+In the output, we should see the GitHub secret (at the bottom) and the container-registry secret (in two places). The Concert secret is not shown here.
 
 **[Go to top](#top)**
 
@@ -160,11 +160,11 @@ In the output, we should see the github secret at the bottom and the container-r
 
 <summary>4 - Create Tekton tasks</summary>
 
-For the QotD application, we will create a Tekton pipeline with 11 tasks. Many of the Concert tasks rely on using the Toolkit that comes packaged with Concert to automate SBOM generation in the correct format. (IBM Concert Toolkit v1.0.1 used)
+For the QotD application, we will create a Tekton pipeline with 11 tasks. Many of the Concert tasks rely on using the toolkit that comes packaged with Concert to automate SBOM generation in the correct format. (IBM Concert Toolkit v1.0.1 used)
 
-<inline-notification text="Note: This demo is not intended to teach Tekton concepts. We will configure a collection of pre-built qotd pipeline tasks."></inline-notification> 
+<inline-notification text="This demo is not intended to teach Tekton concepts. We will configure a collection of pre-built qotd pipeline tasks."></inline-notification> 
 
-Download (or clone) the <a href="https://github.ibm.com/ibm-concert-platinum-demos/sbom-concert-pipeline">pipeline code</a> to the local machine (the IBM github repository is internal to IBM and available for all IBMers).
+Download (or clone) the <a href="https://github.ibm.com/ibm-concert-platinum-demos/sbom-concert-pipeline">pipeline code</a> to the local machine (the IBM GitHub repository is internal to IBM and available for all IBMers).
 
 1. Navigate to the IBM-Concert-Platinum-Demos repo in your browser
 2. Click on the green <> Code dropdown button
@@ -175,37 +175,25 @@ Download (or clone) the <a href="https://github.ibm.com/ibm-concert-platinum-dem
 7. Paste the SSH command into the terminal: git@github.ibm.com:ibm-concert-platinum-demos/sbom-concert-pipeline.git
 8. Open the downloaded repository in Visual Studio code. Each task is defined in a YAML file. 
 
-<inline-notification text="Note: when working with a customer, techsellers will need to examine the customer’s existing pipeline and identify the concert-specific tasks or steps that should be added to the customer’s pipeline. "></inline-notification>
+<inline-notification text="When working with a customer, Tech Sellers will need to examine the customer’s existing pipeline and identify the Concert-specific tasks or steps that should be added to the customer’s pipeline. "></inline-notification>
 
 There are 7 Concert-specific tasks that will need to be added to every pipeline to connect it to Concert. 
 
-<!-- <slide> --> 
+| **4.1** | **Git Clone Task** |
+| :--- | :--- |
+|  | The initial task in the pipeline is called the Git Clone Task. In a customer’s environment, we would never work on the production code repository. So we begin the pipeline by first cloning the code repository for the microservice we will be working on. <br/><br/> The git-clone ClusterTask is responsible for pulling down code from a GitHub repository and storing in shared workspace storage. This task cannot be seen in the repository code because the git-clone code is included as part of the default Tekton ClusterTasks bundled with OpenShift Pipelines. |
 
-### Git Clone Task 
+| **4.2** | **Code Scan Task** |
+| :--- | :--- |
+|  | The next task in the pipeline is called the Code Scan Task. The purpose of this task is to scan the source code of the microservice and generate a Software Bill of Material with library, license and package information being used in the microservice. In Concert, we call this a Package SBOM (of type code-scan). This is the first task where we will be using the Concert toolkit to simplify the generation of the SBOM. (IBM Concert Toolkit v1.0.1 is used) |
+| **Action** 4.2.1 | **Line 15** <br/> Identify the toolkit and version we want to use for this task |
+| **Action** 4.2.2 | **Line 21** <br/> Call the code-scan command in the toolkit. <br/><br/> **Reminder:** The toolkit is provided as an image and as an end-user we do not have access to the source code. However, the code-scan command under the hood installs and uses an open source tool called cdxgen to scan the source code from the repo and produce a standard cycloneDX sbom file in json format. The pipeline stores this file in a results.output.path location accessible by Tekton. |
 
-<!-- <Walk through pipeline graphic zoomed in> --> 
+<inline-notification text="When working with a customer, the task files provided in this demo should not be used as-is in a customer’s Tekton pipeline environment. The code provided should be used only as a template or guide in helping the customer write their pipeline tasks."></inline-notification>
 
-The initial task in the pipeline is called the Git Clone Task. In a customer’s environment, we would never work on the production code repository. So we begin the pipeline by first cloning the code repository for the microservice we will be working on. 
-
-The git-clone ClusterTask is responsible for pulling down code from a GitHub repository and storing in shared workspace storage.  This task cannot be seen in the repository code because the git-clone code is included as part of the default Tekton ClusterTasks bundled with OpenShift Pipelines. 
-
-### Code Scan Task
-
-The next task in the pipeline is called the Code Scan Task. The purpose of this task is to scan the source code of the microservice and generate a Software Bill of Material with library, license and package information being used in the microservice. In Concert, we call this a Package SBOM (of type code-scan). This is the first task where we will be using the Concert toolkit to simplify the generation of the SBOM. (IBM Concert Toolkit v1.0.1 is used)
-
-**Line 15** Identify the toolkit and version we want to use for this task <!-- <typing action> -->
-
-**Line 21** Call the code-scan command in the toolkit. <br/>
-Reminder, the toolkit is provided as an image and as an end-user we do not have access to the source code. However, the code-scan command under the hood installs and uses an open source tool called cdxgen to scan the source code from the repo and produce a standard cycloneDX sbom file in json format. <br/>The pipeline stores this file in a results.output.path location accessible by Tekton.
-
-<inline-notification text="Note: when working with a customer, the task files provided in this demo should not be used as-is in a customer’s Tekton pipeline environment. The code provided should be used only as a template or guide in helping the customer write their pipeline tasks "></inline-notification>
-
-
-### Kaniko-Build Task 
-
-This task is not Concert-specific, and every customer with a containerized application will have a similar build task already as part of their day-to-day setup. 
-
-In our demo, a popular open source tool called Kaniko is used to build container images directly within a Kubernetes cluster, without requiring Docker to be installed on the nodes. Kaniko will read the Dockerfile and context, constructs the image, and then pushes it to a specified container registry, making it an essential step for automating container builds in CI/CD pipelines.
+| **4.3** | **Kaniko Build Task** |
+| :--- | :--- |
+|  | This task is not Concert-specific, and every customer with a containerized application will have a similar build task already as part of their day-to-day setup. <br/><br/> In our demo, a popular open-source tool called Kaniko is used to build container images directly within a Kubernetes cluster, without requiring Docker to be installed on the nodes. Kaniko will read the Docker file and context, construct the image and then push it to a specified container registry, making it an essential step for automating container builds in CI/CD pipelines. |
 
 ### Skopeo Copy Task 
 
