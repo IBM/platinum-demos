@@ -187,6 +187,7 @@ table :is(td){
 table :is(th) /* this one changes the header  */
 {
     background-color: #808080;
+    color: white;
 }
 
 table :is(td, th) /* this one changes the body  */
