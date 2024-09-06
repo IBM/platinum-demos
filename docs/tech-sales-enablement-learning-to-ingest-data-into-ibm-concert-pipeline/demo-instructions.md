@@ -15,11 +15,11 @@ Click the [**Pre-requisites**](pre-requisites) tab for setup instructions.
 
 <summary>Introduction</summary>
 
-In this demo we will build and run a pipeline to understand how a customer will automate the data ingestion process.
+In this demo, we will build and run a pipeline to understand how a customer will automate the data ingestion process.
 
-Concert is designed to ingest data on a regular basis, every time an application is updated the pipeline will automatically generate new SBOMs and CVE scan and then upload them to Concert.
+Concert is designed to ingest data on a regular basis. Every time an application is updated, the pipeline will automatically generate new SBOMs and CVE scans and then upload them to Concert.
 
-For our demo we will use Tekton on Redhat Openshift to build our pipeline. The pipeline concepts we will demonstrate can be translated to other CI/CD pipeline tools.
+For our demo, we will use Tekton on Red Hat OpenShift to build our pipeline. The pipeline concepts we will demonstrate can be translated to other CI/CD pipeline tools.
 
 <br/>
 
@@ -96,7 +96,7 @@ The Concert secret is what enables Tekton to authenticate with the Concert API f
 | :--- | :--- |
 |  | In this demo, our Concert instance is deployed on SaaS.|
 
-| **Action** 3.2 | Click your profile --> **API Key** --> Generate. Copy the key into a notepad or place where you can access it, as it will not be visible again. |
+| **Action** 3.2 | Click your profile -> **API Key** -> Generate. Copy the key into a notepad or place where you can access it, as it will not be visible again. |
 | :--- | :--- |
 |  |  | 
 
@@ -272,9 +272,9 @@ This automation is handled by the trigger template file. This template is part o
 
 In this step, we will configure the trigger template to connect with our jfrog image repository. 
 
-Update line 44: <br/>
-• name: image <br/>
-• value: "na.artifactory.swg-devops.com/hyc-roja-platform-engineering-team-docker-local/pm-qotd/$(tt.params.component_name)"
+| **Action** 5.1 | Update **Line 44**. |
+| :--- | :--- |
+|  | • name: image <br/> • value: "na.artifactory.swg-devops.com/hyc-roja-platform-engineering-team-docker-local/pm-qotd/$(tt.params.component_name)" |
 
 For the value, we provide the host server of our registry, the folder path the image will be stored in, and a variable to dynamically name the image as the component name parameter from our pipeline.
 
@@ -292,26 +292,27 @@ This will result in images in our jfrog instances that appear as below:
 
 <summary>6 - Push all files to Tekton</summary>
 
-In this step we push all the pipeline files to our openshift instance. 
+In this step, we push all the pipeline files to our OpenShift instance. 
 
-To do this, we bulk apply all our pipelines files to openshift using the oc apply commands.
+To do this, we bulk apply all our pipeline files to OpenShift using the 'oc apply' commands.
 
-1. Navigate to the correct folder path on the machine (if not already done):
+| **Action** 6.1 | Navigate to the correct folder path on the machine (if not already done). |
+| :--- | :--- |
+|  | <code class="code-block"> cd sbom-concert-pipeline </code> |
 
-<code class="code-block"> cd sbom-concert-pipeline </code>
+| **Action** 6.2 | Apply the first folder path to push the files to Tekton. |
+| :--- | :--- |
+|  | <code class="code-block"> oc apply -f ./1-pipeline </code> |
 
-2. Apply the first folder path to push the files to Tekton: 
+| **Action** 6.3 | Apply the second folder path to push the files to Tekton. |
+| :--- | :--- |
+|  | <code class="code-block"> oc apply -f ./2-webhook </code> |
 
-<code class="code-block"> oc apply -f ./1-pipeline </code> 
+<inline-notification text="If you encounter any issues pushing the files, it’s important to note that yaml files are very specific on indentation. Ensure spacing is correct."></inline-notification>
 
-3. 2. Apply the second folder path to push the files to Tekton: 
-
- <code class="code-block"> oc apply -f ./2-webhook </code>
-
-<inline-notification text="Note: If you encounter any issues pushing the files, it’s important to note that yaml files are very specific on indentation. Ensure spacing is correct."></inline-notification>
-
-
-Next, open the openshift instance, switch to the default namespace and verify that the pipeline was successfully created. All the individual tasks that were pushed should be visible under tasks. 
+| **Action** 6.4 | Open the OpenShift instance, switch to the default namespace and verify the pipeline was successfully created. |
+| :--- | :--- |
+|  | All the individual tasks that were pushed should be visible under tasks. |
 
 **[Go to top](#top)**
 
@@ -327,16 +328,25 @@ Next, open the openshift instance, switch to the default namespace and verify th
 
 For the trigger template to run whenever any of the repos in the quote-of-the-day organization are updated, we need to create a webhook at the organization level. 
 
-1. Open the pipeline in the OCP console
-2. Under 'trigger templates', copy the route URL. This route was created when we pushed our pipeline to tekton.
-Example:
-<code class="code-block"> el-webhook-default.apps.66ba1da31bc8d0001e815a6c.ocp.techzone.ibm.com </code>
-3. Open the github quote-of-the-day organization page
-4. Click Settings
-5. Click Hooks
-6. Click Create Webhook
-7. Paste the route from step 2 into the payload field in Github.
-8. Click Create Webhook
+| **Action** 7.1 | Open the pipeline in the OCP console. |
+| :--- | :--- |
+|  |  |
+
+| **Action** 7.2 | Under **trigger templates**, copy the **Route URL**. |
+| :--- | :--- |
+|  | This route was created when we pushed our pipeline to Tekton. <br/><br/> Example: <br/> <code class="code-block"> el-webhook-default.apps.66ba1da31bc8d0001e815a6c.ocp.techzone.ibm.com </code> |
+
+| **Action** 7.3 | Open the GitHub quote-of-the-day organization page. |
+| :--- | :--- |
+|  |  |
+
+| **Action** 7.4 | Click **Settings** -> **Hooks** -> **Create Webhook**. |
+| :--- | :--- |
+|  |  |
+
+| **Action** 7.5 | Paste the **Route URL** (from step 2) into the **Payload** field in Github. Click **Create webhook**. |
+| :--- | :--- |
+|  |  |
 
 <inline-notification text="Note: When creating the webhook, keep all defaults and SSL disabled, although in a customer environment, SSL would typically be enabled."></inline-notification>
 
@@ -352,14 +362,25 @@ Example:
 
 <summary>8 - Trigger a pipeline update</summary>
 
-In this step we will automatically trigger the the pipeline to run by making a code update.
+In this step, we will automatically trigger the pipeline to run by making a code update.
 
-Recall that the quote-of-the-day application has 10 microservices. For this demo we will use one microservice called qotd-web. 
+Recall that the quote-of-the-day application has 10 microservices. For this demo, we will use one microservice called qotd-web. 
 
-1. Clone the qotd-web code repository to your local machine.
-2. Open the code in Visual Studio Code
-3. Add a comment to a line. 
-4. Save and push the code to github by creating a commit. The commit action will trigger the pipeline to run. 
+| **Action** 8.1 | Clone the qotd-web code repository to your local machine. |
+| :--- | :--- |
+|  |  |
+
+| **Action** 8.2 | Open the code in Visual Studio Code. |
+| :--- | :--- |
+|  |  |
+
+| **Action** 8.3 | Add a comment to a line. |
+| :--- | :--- |
+|  |  |
+
+| **Action** 8.4 | Save and push the code to GitHub by creating a commit. |
+| :--- | :--- |
+|  | The commit action will trigger the pipeline to run. |
 
 Within a few seconds of the commit, the Tekton pipeline should begin to run automatically.
 
@@ -375,7 +396,7 @@ Within a few seconds of the commit, the Tekton pipeline should begin to run auto
 
 <summary>9 - Review running pipeline in Tekton</summary>
 
-To see the pipeline run in action, open the openshift cluster and click on the pipeline name. For a play-by-play view, switch to the logs tab, making note of any errors.
+To see the pipeline run in action, open the OpenShift cluster and click the pipeline name. For a play-by-play view, switch to the **Logs** tab, making note of any errors.
 
 <inline-notification text="The first run of a new pipeline takes longer than subsequent runs. The first run takes about 10 minutes, and subsequent runs take 1-2 minutes."></inline-notification>
 
@@ -395,9 +416,9 @@ Each time a step completes successfully, a green checkmark appears.
 
 Log in to the Concert instance to ensure all data was uploaded successfully.
 
-<inline-notification text="If you were already logged in to Concert, doing a refresh in the browser will render the uploaded data in the Concert Arena view"></inline-notification>
+<inline-notification text="If you were already logged in to Concert, doing a refresh in the browser will render the uploaded data in the Concert Arena view."></inline-notification>
 
-Go to the <strong>Administration</strong> → <strong>Event log</strong> tab to view a history and status of all uploads.
+Go to the <strong>Administration</strong> -> <strong>Event log</strong> tab to view the history and status of all uploads.
 
 **[Go to top](#top)**
 
