@@ -9,10 +9,6 @@ layout: pre-requisites
 
 ### **PREPARING FOR THE DEMO**
 
-<code class="code-block">
-oc create secret generic concert-token-secret --from-literal=token="C_API_KEY bWFyeWFtYUBjYS5pYm0uY29tOjE5N2U4ZmI2LTNiY2YtNGRhOC04OGY0LTViYTYwMmQyZWMxMQ=="
-</code>
-
 <details markdown="1">
 
 <summary>Prepare your environment</summary>
