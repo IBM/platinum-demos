@@ -79,9 +79,9 @@ For this demo, we will need to provide all the data in the global variables file
 
 To install all supporting software, run the **install_supporting_software** shell script. The script will install the IBM Concert toolkit, Grype, Docker and other software needed for this demo.
 
-To run the install_pre_reqs.sh shell script, execute the code in a terminal:
+To run the install_supporting_software.sh shell script, execute the code in a terminal:
 
-<code class="code-block"> ./install_pre_reqs.sh </code>
+<code class="code-block"> ./install_supporting_software.sh </code>
 
 The shell script will install the following: <br/>
 
