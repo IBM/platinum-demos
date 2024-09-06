@@ -44,24 +44,24 @@ For this demo, we will need to provide all the data in the global variables file
 
 | **Environment variable** | **Description and code snippet** |
 | :--- | :--- | :--- |
-| **Platform architecture** | Placeholder <br/> <img src="images/1-1.png" width="750" /> |
-| **Containerization platform** | Placeholder <br/> <img src="images/1-2.png" width="700" /> |
+| **Platform architecture** | Placeholder <br/> <img src="images/1-1.png" width="800" /> |
+| **Containerization platform** | Placeholder <br/> <img src="images/1-2.png" width="725" /> |
 | **Demo app name** | Placeholder <br/> <img src="images/1-3.png" width="250" /> |
 | **Demo app criticality** | Placeholder <br/> <img src="images/1-4.png" width="250" /> |
-| **Demo app repository URL** | Placeholder <br/> <img src="images/1-5.png" width="500" /> |
-| **Demo app version** | Placeholder <br/> <img src="images/1-6.png" width="250" /> |
-| **Demo app component** | Placeholder <br/> <img src="images/1-7.png" width="350" /> |
-| **Demo app repo name** | Placeholder <br/> <img src="images/1-8.png" width="350" /> |
-| **Demo app source code repo URL** | Placeholder <br/> <img src="images/1-9.png" width="900" /> |
+| **Demo app repository URL** | Placeholder <br/> <img src="images/1-5.png" width="525" /> |
+| **Demo app version** | Placeholder <br/> <img src="images/1-6.png" width="225" /> |
+| **Demo app component** | Placeholder <br/> <img src="images/1-7.png" width="375" /> |
+| **Demo app repo name** | Placeholder <br/> <img src="images/1-8.png" width="375" /> |
+| **Demo app source code repo URL** | Placeholder <br/> <img src="images/1-9.png" width="925" /> |
 | **Demo app image URL** | Placeholder <br/> <img src="images/1-10.png" width="550" /> |
 | **Demo app image tag** | Placeholder <br/> <img src="images/1-11.png" width="350" /> |
 | **Demo app repository branch** | Placeholder <br/> <img src="images/1-12.png" width="350" /> |
-| **Demo app access points** | Placeholder <br/> <img src="images/1-13.png" width="1000" /> |
-| **Build number** <br/><br/> **Inventroy build number** <br/><br/> **Concert URN prefix** | Placeholder <br/> <img src="images/1-14.png" width="350" /> |
-| **Kubernetes platform** <br/><br/> **Environment platform** <br/><br/> **Cluster ID** <br/><br/> **Cluster region** <br/><br/> **Cluster name** <br/><br/> **Cluster namespace** <br/><br/> **Kubernetes platform type** <br/><br/> **Kubernetes platform name** <br/><br/> **Cluster environment platform** | Placeholder <br/> <img src="images/1-15.png" width="350" /> |
-| **Business name** <br/><br/> **Business unit name** <br/><br/> **Contact email** <br/><br/> **Contact phone** | Placeholder <br/> <img src="images/1-16.png" width="250" /> |
-| **Concert ingestion endpoint** <br/><br/> **Concert ingestion instance ID** <br/><br/> **Concert ingestion token** | Placeholder <br/> <img src="images/1-17.png" width="450" /> |
-| **Concert ingestion user** <br/><br/> **Concert ingestion password** | Placeholder <br/> <img src="images/1-18.png" width="500" /> |
+| **Demo app access points** | Placeholder <br/> <img src="images/1-13.png" width="1200" /> |
+| **Build number** <br/><br/> **Inventroy build number** <br/><br/> **Concert URN prefix** | Placeholder <br/> <img src="images/1-14.png" width="325" /> |
+| **Kubernetes platform** <br/><br/> **Environment platform** <br/><br/> **Cluster ID** <br/><br/> **Cluster region** <br/><br/> **Cluster name** <br/><br/> **Cluster namespace** <br/><br/> **Kubernetes platform type** <br/><br/> **Kubernetes platform name** <br/><br/> **Cluster environment platform** | Placeholder <br/> <img src="images/1-15.png" width="375" /> |
+| **Business name** <br/><br/> **Business unit name** <br/><br/> **Contact email** <br/><br/> **Contact phone** | Placeholder <br/> <img src="images/1-16.png" width="275" /> |
+| **Concert ingestion endpoint** <br/><br/> **Concert ingestion instance ID** <br/><br/> **Concert ingestion token** | Placeholder <br/> <img src="images/1-17.png" width="500" /> |
+| **Concert ingestion user** <br/><br/> **Concert ingestion password** | Placeholder <br/> <img src="images/1-18.png" width="525" /> |
 
 <!-- <Show source code for install script> -->
 
