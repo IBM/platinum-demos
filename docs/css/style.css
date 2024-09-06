@@ -184,12 +184,12 @@ table :is(td){
     border-bottom-style: solid;
 }
 
-table :is(th)
+table :is(th) /* this one changes the header  */
 {
-    background-color: #fff;
+    background-color: #808080;
 }
 
-table :is(td, th)
+table :is(td, th) /* this one changes the body  */
 {
     font-family: "IBM Plex Sans Regular","Helvetica Neue",Arial,sans-serif;
     font-size: 14px;
