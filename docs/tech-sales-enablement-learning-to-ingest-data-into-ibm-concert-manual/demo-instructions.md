@@ -44,6 +44,8 @@ For this demo, we will need to provide all the data in the global variables file
 
 ### Action 1.1: Review and update global variables in the table below.
 
+For <i>[reason]</i>, we have pre-populated many of the variables below.
+
 | **Environment variable** | **Description and code snippet** |
 | :--- | :--- | :--- |
 | **Platform architecture** | Placeholder <br/> <img src="images/1-1.png" width="825" /> |
