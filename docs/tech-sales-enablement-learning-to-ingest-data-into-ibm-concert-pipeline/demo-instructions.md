@@ -183,6 +183,8 @@ There are 7 Concert-specific tasks that will need to be added to every pipeline 
 | :--- | :--- |
 |  | The initial task in the pipeline is called the Git Clone Task. In a customer’s environment, we would never work on the production code repository. So we begin the pipeline by first cloning the code repository for the microservice we will be working on. <br/><br/> The git-clone ClusterTask is responsible for pulling down code from a GitHub repository and storing in shared workspace storage. This task cannot be seen in the repository code because the git-clone code is included as part of the default Tekton ClusterTasks bundled with OpenShift Pipelines. |
 
+<br/>
+
 | **4.2** | **Code Scan Task** |
 | :--- | :--- |
 |  | The next task in the pipeline is called the Code Scan Task. The purpose of this task is to scan the source code of the microservice and generate a Software Bill of Material with library, license and package information being used in the microservice. In Concert, we call this a Package SBOM (of type code-scan). This is the first task where we will be using the Concert toolkit to simplify the generation of the SBOM. (IBM Concert Toolkit v1.0.1 is used) |
@@ -195,92 +197,62 @@ There are 7 Concert-specific tasks that will need to be added to every pipeline 
 | :--- | :--- |
 |  | This task is not Concert-specific, and every customer with a containerized application will have a similar build task already as part of their day-to-day setup. <br/><br/> In our demo, a popular open-source tool called Kaniko is used to build container images directly within a Kubernetes cluster, without requiring Docker to be installed on the nodes. Kaniko will read the Docker file and context, construct the image and then push it to a specified container registry, making it an essential step for automating container builds in CI/CD pipelines. |
 
-### Skopeo Copy Task 
+<br/>
 
-This task is also not specific to IBM Concert. It is used for copying container images between different container registries. Similar to Kaniko, Skopeo is an open-source tool that enables operations on container images without requiring a Docker daemon. In our demo, Skopeo will push our microservice’s image to our registry.
+| **4.4** | **Skopeo Copy Task** |
+| :--- | :--- |
+|  | This task is also not specific to Concert. It is used for copying container images between different container registries. Similar to Kaniko, Skopeo is an open-source tool that enables operations on container images without requiring a Docker daemon. In our demo, Skopeo will push our microservice’s image to our registry. |
 
-### Image Scan Task
+<br/>
 
-The purpose of this task is to scan the microservice and generate a SBOM with library, license and package information being used in the microservice. This task scans the image of the microservice which includes additional information such as operating system in Concert, we call this a Package SBOM (of type image-scan). 
+| **4.5** | **Image Scan Task** |
+| :--- | :--- |
+|  | The purpose of this task is to scan the microservice and generate a SBOM with library, license and package information being used in the microservice. This task scans the image of the microservice which includes additional information such as operating system in Concert, we call this a Package SBOM (of type image-scan). |
+| **Action** 4.5.1 | **Line 15** <br/> Identify the toolkit and version we want to use for this task. <br/><br/> **Line 21** is where the toolkit is being used with the image-scan command. |
+|  | The toolkit is provided as an image. As an end user, we do not have access to the source code. However, the image-scan command under the hood installs and uses an open-source tool called Syft to scan the source code from the repo and produce a standard cycloneDX SBOM file in JSON format. <br/> <br/> The pipeline stores this file in a results.output.path location accessible by Tekton. |
 
-**Line 15** is where we identify the toolkit and version we want to use for this task
+<br/>
 
-**Line 21** is where the toolkit is being used with the image-scan command.<br/>
- The toolkit is provided as an image and as an end-user we do not have access to the source code. However, the image-scan command under the hood installs and uses an open source tool called syft to scan the source code from the repo and produce a standard cycloneDX sbom file in json format.<br/>
- The pipeline stores this file in a results.output.path location accessible by Tekton.
+| **4.6** | **CVE Scan Task** |
+| :--- | :--- |
+|  | IBM Concert accepts CVE scans that are run against container images only, therefore in our pipeline this task is performed right after the image is built in the previous steps. There are many CVE scanning tools on the market, in this demo our task will install and run an open source tool called Grype which will scan the image for vulnerabilities and output a .csv file. <br/><br/> IBM Concert ingests CVE scans in two formats: CSV and VDR. In this demo, we will be using the CSV format. For the CSV format, the columns and headers must be formatted in a specific sequence for uploading to Concert. This sequence is provided as a template to the Grype scan command. This causes Grype to scan the image and then generate a CSV file in the correct Concert format. <br/><br/> If a customer is using a different tool for their CVE scans, for example Trivvy or Twistlock, they can similarly provide this template as input to the tool to ensure the output is formatted correctly. <br/> <inline-notification text="The IBM Concert toolkit v1.0.1 does not contain any commands for the CVE scan task."></inline-notification> |
 
-### CVE Scan Task
+<br/>
 
-IBM Concert accepts CVE scans that are run against container images only, therefore in our pipeline this task is performed right after the image is built in the previous steps. There are many CVE scanning tools on the market, in this demo our task will install and run an open source tool called Grype which will scan the image for vulnerabilities and output a .csv file. 
+| **4.7** | **Build SBOM Task** |
+| :--- | :--- |
+|  | This is a Concert-specific task, and a customer would not have it in an existing pipeline. <br/><br/> To simplify the generation of the Build SBOM file in the defined Concert format, we will be using the toolkit (IBM Concert Toolkit v1.0.1 used). |
+| **Action** 4.7.1 | **Line 15** <br/><br/> Identify the toolkit and version we want to use for this task. <br/><br/> **Line 21** is where the toolkit is being used with the build-sbom command. The build-sbom command under the hood uses the pipeline’s build data to populate a config file to generate the SBOM file in JSON format. |
 
-IBM Concert ingests CVE scans in two formats: CSV and VDR. In this demo, we will be using the CSV format. For the CSV format, the columns and headers must be formatted in a specific sequence for uploading to Concert. This sequence is provided as a template to the Grype scan command. This causes Grype to scan the image and then generate a CSV file in the correct Concert format.
+<br/>
 
-If a customer is using a different tool for their CVE scans, for example Trivvy or Twistlock, they can similarly provide this template as input to the tool to ensure the output is formatted correctly. 
+| **4.8** | **Deploy SBOM Task** |
+| :--- | :--- |
+|  | This is also a Concert-specific task and a customer would not have it in an existing pipeline. This SBOM is where the public and private access points for each microservice are defined. <br/><br/> To simplify the generation of the deploy SBOM file in the defined Concert format, we will be using the toolkit (IBM Concert Toolkit v1.0.1 used). |
+| **Action** 4.8.1 | **Line 15**: Identify the toolkit and version we want to use for this task. <br/><br/> **Line 21** is where the toolkit is being used with the deploy-sbom command. The deploy-sbom command under the hood uses the pipeline’s build data to populate a config file to generate the SBOM file in json format. |
 
-<inline-notification text="The IBM Concert toolkit v1.0.1 does not contain any commands for the CVE scan task."></inline-notification>
+<br/>
 
-### Build SBOM Task
+| **4.9** | **Application-definition SBOM Task** |
+| :--- | :--- |
+|  | This is also a Concert-specific task and a customer would not have it in an existing pipeline. <br/><br/> To simplify the generation of the application definition SBOM file in the defined Concert format, we will be using the toolkit (IBM Concert Toolkit v1.0.1 used). |
+| **Action** 4.9.1 | **Line 15**: Identify the toolkit and version we want to use for this task. <br/><br/> **Line 21** is where the toolkit is being used with the application-definition command. The application-definition command under the hood uses application data to populate a config file to generate the SBOM file in json format. |
 
-This is a Concert-specific task and a customer would not have it in an existing pipeline. 
+<br/> 
 
-To simplify the generation of the build SBOM file in the defined Concert format, we will be using the toolkit (IBM Concert Toolkit v1.0.1 used)
+| **4.10** | **Upload Concert Task** |
+| :--- | :--- |
+|  | In this task, we connect to our Concert instance to upload all the files we generated in the previous steps. <br/> <inline-notification text="Note: This is the first task in this demo where changes are required."></inline-notification> <br/> To simplify the uploading of data to Concert, we will also be using the toolkit. |
+| **Action** 4.10.1 | **Line 20** <br/> Identify the toolkit and version we want to use for this task. <br/><br/> **Line 77** is where the toolkit is being used with the upload-concert command. |
+| **Action** 4.10.2 | **Line 55** <br/> Update this line with your Concert instance ID. <br/><br/> • If Concert is deployed on SaaS, the instance ID will be located in the browser URL. <br/> • If Concert is deployed on VM, the instance ID is: 0000-0000-0000-0000 <br/> • If Concert is deployed on OCP, the instance ID is: ? |
 
-**Line 15** is where we identify the toolkit and version we want to use for this task.
+<br/>
 
-**Line 21** is where the toolkit is being used with the build-sbom command. The build-sbom command under the hood uses the pipeline’s build data to populate a config file to generate the SBOM file in json format. 
-
-### Deploy SBOM task 
-
-This is also a Concert-specific task and a customer would not have it in an existing pipeline. This SBOM is where the public and private access points for each microservice are defined.
-
-To simplify the generation of the deploy SBOM file in the defined Concert format, we will be using the toolkit (IBM Concert Toolkit v1.0.1 used).
-
-**Line 15** is where we identify the toolkit and version we want to use for this task.
-
-**Line 21** is where the toolkit is being used with the deploy-sbom command. The deploy-sbom command under the hood uses the pipeline’s build data to populate a config file to generate the SBOM file in json format. 
-
-### Application-definition SBOM Task
-
-This is also a Concert-specific task and a customer would not have it in an existing pipeline. 
-
-To simplify the generation of the application definition SBOM file in the defined Concert format, we will be using the toolkit (IBM Concert Toolkit v1.0.1 used).
-
-**Line 15** is where we identify the toolkit and version we want to use for this task.
-
-**Line 21** is where the toolkit is being used with the application-definition command. The application-definition command under the hood uses application data to populate a config file to generate the SBOM file in json format. 
-
-### Upload Concert Task
-
-In this task we connect to our IBM Concert instace to upload all the files we generated in the previous steps.
-
-<inline-notification text="Note: This is the first task in this demo where changes are required."></inline-notification>
-
-To simplify the uploading of data to Concert, we will be using the toolkit also.
-
-**Line 20** is where we identify the toolkit and version we want to use for this task.
-
-**Line 77** is where the toolkit is being used with the upload-concert command. 
-
-**Line 55**: Update this line with your Concert instance ID.<br/>
-If Concert is deployed on SaaS, the instance ID will be located in the browser URL.<br/>
-If Concert is deployed on VM, the instance id is: 0000-0000-0000-0000 <br/>
-If Concert is deployed on OCP, the instance id is: ?
-
-### SBOM Pipeline Task
-
-The final task defines the structure and logic of our sbom-pipeline. Without it, Tekton wouldn't know which tasks to run, in what order, or with what parameters.
-
-Update line 29 to identify the host of your IBM Concert instance as the base_url parameter: <br/>
-• name: base_url <br/>
-• default: YOUR_CONCERT_HOST_URL<br/>
-
-<inline-notification text="Note: for SaaS instances, this information is found in the browser URL."></inline-notification>
-
-A very important parameter defined in this task is the application criticality number which specifies how business critical this application is to the business. <br/>
-The application criticality score ranges from 1 for low to 5 for critical, and the criticality number plays a significant role in helping Concert score and prioritize CVEs according to an organization. <br/>
-For our demo, we will set the application criticality to 4. <br/><br/>
-Another important parameter to note is the access point information. Our demo qotd-web microservice has one access point, and we have set the exposure to public. Similar to application criticality, Concert takes endpoint expsure into its consideration when calculating the risk score.
-
+| **4.11** | **SBOM Pipeline Task** |
+| :--- | :--- |
+|  | The final task defines the structure and logic of our sbom-pipeline. Without it, Tekton wouldn't know which tasks to run, in what order or with what parameters. |
+| **Action** 4.11.1 | **Line 29** <br/> Update this line to identify the host of your Concert instance as the base_url parameter: <br/> • name: base_url <br/> • default: YOUR_CONCERT_HOST_URL <br/> <inline-notification text="For SaaS instances, this information is found in the browser URL."></inline-notification> |
+|  | A very important parameter defined in this task is the application criticality number, which specifies how critical this application is to the business. <br/><br/> The application criticality score ranges from 1 (low) to 5 (critical), and the criticality number plays a significant role in helping Concert score and prioritize CVEs according to an organization. <br/><br/> For our demo, we will set the application criticality to 4. <br/><br/> Another important parameter to note is the access point information. Our demo qotd-web microservice has one access point, and we have set the exposure to public. Similar to application criticality, Concert takes endpoint exposure into consideration when calculating the risk score. |
 
 **[Go to top](#top)**
 
