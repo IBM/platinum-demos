@@ -33,9 +33,21 @@ For our demo we will use Tekton on Redhat Openshift to build our pipeline. The p
 
 The first step is to install Tekton which is a Kubernetes-native CI/CD framework for automating application deployment pipelines on OpenShift clusters.
 
-Log into the openshift (OCP) cluster on Techzone. When we reserved the OCP instance, we received a kubeadmin login and password. We will use this to log into the cluster.
+| Action 1.1 | Log in to the OpenShift (OCP) cluster on TechZone. |
+| :--- | :--- |
+|  | When we reserved the OCP instance, we received a kubeadmin login and password. We will use this to log in to the cluster. |
 
-Click on OperatorHub in the Operators section. Then search for openshift pipeline and click on the pipeline tile to open the install dialog. Click install without any changes to the default fields. The installation should complete within 1 minute with a success dialog.
+| Action 1.2 | Click **OperatorHub** in the **Operators** section. |
+| :--- | :--- |
+|  |  |
+
+| Action 1.3 | Search for '**OpenShift pipeline**' and click the **pipeline** tile to open the install dialog. |
+| :--- | :--- |
+|  |  |
+
+| Action 1.4 | Click **Install without any changes to the default fields**. |
+| :--- | :--- |
+|  | The installation should complete within one minute with a success dialog. |
 
 **[Go to top](#top)**
 
@@ -49,7 +61,12 @@ Click on OperatorHub in the Operators section. Then search for openshift pipelin
 
 <summary>2 - Log in to the OpenShift cluster on your terminal</summary>
 
-Use the 'oc login' command directly from the Techzone OCP console to log into the OpenShift cluster from the local machine. This command requires a login token that is provided in the login command. <br/> Click on 'kubeadmin' in the top right, then click 'copy login command', then click 'display token, and then copy the command and paste it into the terminal.
+<br/>
+
+
+| Action 2.1 | Use the '**oc login**' command directly from the TechZone OCP console to log in to the OpenShift cluster from the local machine. |
+| :--- | :--- |
+|  | This command requires a login token that is provided in the login command. <br/> Click on 'kubeadmin' in the top right, then click 'copy login command', then click 'display token, and then copy the command and paste it into the terminal. |
 
 <!-- <show copy login command from cluster> -->
 
@@ -71,45 +88,51 @@ We will now provide certain authentication credentials to Tekton in the form of 
 
 In this step, we will create 3 secrets: a Concert Secret, Github Secret and Registry Secret.
 
-**Concert Secret**
+### Concert Secret
 
 The Concert secret is what enables Tekton to authenticate with the Concert API for uploading data. <br/>
-Generate the API key from Concert by ensuring you have admin access and then log into the Concert instance. In this demo our Concert instance is deployed on SaaS. <br/>
-Click your profile, then API Key, then Generate, and copy the key into a notepad or place where you can access it, as it will not be visible again. 
+
+| Action 3.1 | Generate the API key from Concert by ensuring you have admin access, and then log in to the Concert instance. |
+| :--- | :--- |
+|  | In this demo, our Concert instance is deployed on SaaS.|
+
+| Action 3.2 | Click your profile --> **API Key** --> Generate. Copy the key into a notepad or place where you can access it, as it will not be visible again. |
+| :--- | :--- |
+|  |  | 
 
 <inline-notification text="Note: This token doesn’t expire unless you generate a new one or revoke it."></inline-notification>
 
-Next, use the 'oc create secret generic' command to set the name of the secret to 'concert-token-secret' and insert the Concert token we generated above. 
-
-<code class="code-block"> oc create secret generic concert-token-secret <br/> --from-literal=token="C_API_KEY <br/> bWFyeWFtYUBjYS5pYm0uY29tOjE5N2U4ZmI2LTNiY2YtNGRhOC04OGY0LTViYTYwMmQyZWMxMQ==" </code>
+| Action 3.3 | Use the '**oc create secret generic**' command to set the name of the secret to '**concert-token-secret**' and insert the Concert token we generated above. |
+| :--- | :--- |
+|  | <code class="code-block"> oc create secret generic concert-token-secret <br/> --from-literal=token="C_API_KEY <br/> bWFyeWFtYUBjYS5pYm0uY29tOjE5N2U4ZmI2LTNiY2YtNGRhOC04OGY0LTViYTYwMmQyZWMxMQ==" </code> | 
 
 <inline-notification text="Note: ensure you have the attribute “C_API_KEY” before the SaaS token, otherwise the API upload won’t authenticate successfully."></inline-notification>
 
-**Github Secret**
+### GitHub Secret
 
-Next, create the Github secret by using the 'oc create secret generic' command again. Name the secret 'github-creds' and provide your github username and token. 
+| Action 3.4 | Create the GitHub secret by using the '**oc create secret generic**' command again. Name the secret '**github-creds**' and provide your GitHub username and token. |
+| :--- | :--- |
+|  | <code class="code-block"> oc create secret generic github-creds ` <br/> --from-literal=username=$env:GITHUB_USERNAME ` <br/> --from-literal=password=$env:GITHUB_TOKEN ` <br/> --type=kubernetes.io/basic-auth </code> | 
 
-<inline-notification text="Note: This information was setup during the pre-requisites, and if not then a IBM github username and token should be setup prior to this step."></inline-notification>
+<inline-notification text="Note: This information was set up during the pre-requisites, and if not then an IBM GitHub username and token should be set up prior to this step."></inline-notification>
 
-<code class="code-block"> oc create secret generic github-creds ` <br/> --from-literal=username=$env:GITHUB_USERNAME ` <br/> --from-literal=password=$env:GITHUB_TOKEN ` <br/> --type=kubernetes.io/basic-auth </code>
+| Action 3.5 | Annotate the GitHub secret and link it to the pipeline by running the commands below. |
+| :--- | :--- |
+|  | <code class="code-block"> oc annotate secret github-creds ` <br/> tekton.dev/git-0=https://github.ibm.com <br/><br/> oc secret link pipeline github-creds </code> | 
 
-Next annotate the github secret and link it to the pipeline by running the following commands.
-
-<code class="code-block"> oc annotate secret github-creds ` <br/> tekton.dev/git-0=https://github.ibm.com <br/><br/> oc secret link pipeline github-creds </code>
-
-**Registry Secret**
+### Registry Secret
 
 The third secret authenticates into the image registry.
 
-For this demo we are using a private IBM internal jfrog artifactory registry to store our container images. To create this secret, we need the jfrog server address, username and token.
+For this demo, we are using a private IBM internal jfrog artifactory registry to store our container images. To create this secret, we need the jfrog server address, username and token.
 
-Log into jfrog, click on your profile, then click setup and click the generate authentication token.
-<inline-notification text="Note: The token will not be visible again and should be saved for future reference."></inline-notification>
+| Action 3.6 | Log in to jfrog and click your profile. Click **Setup** and click **Generate authentication token**. |
+| :--- | :--- |
+|  | <inline-notification text="Note: The token will not be visible again and should be saved for future reference."></inline-notification> | 
 
-Use the same oc create secret for type docker-registry and set the name to container-registry-secret. Then provide the registry information run the whole command.
-
-<code class="code-block"> oc create secret docker-registry container-registry-secret --docker-server=na.artifactory.swg-devops.com --docker-username=youremail@ibm.com --docker-password=YOUR_REGISTRY_TOKEN </code>
-
+| Action 3.7 | Use the same '**oc create**' secret for type **docker-registry**. Set the name to '**container-registry-secret**' and provide the registry information run the whole command. |
+| :--- | :--- |
+|  | <code class="code-block"> oc create secret docker-registry container-registry-secret --docker-server=na.artifactory.swg-devops.com --docker-username=youremail@ibm.com --docker-password=YOUR_REGISTRY_TOKEN </code> | 
 
 Next, link the secret to the pipeline giving it both access and pull permissions. 
 
