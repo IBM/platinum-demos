@@ -44,7 +44,7 @@ For this demo, we will need to provide all the data in the global variables file
 
 | **Environment variable** | **Description and code snippet** |
 | :--- | :--- | :--- |
-| **Platform architecture** | Placeholder <br/> <img src="images/1-1.png" width="800" /> |
+| **Platform architecture** | Placeholder <br/> <img src="images/1-1.png" width="825" /> |
 | **Containerization platform** | Placeholder <br/> <img src="images/1-2.png" width="725" /> |
 | **Demo app name** | Placeholder <br/> <img src="images/1-3.png" width="250" /> |
 | **Demo app criticality** | Placeholder <br/> <img src="images/1-4.png" width="250" /> |
