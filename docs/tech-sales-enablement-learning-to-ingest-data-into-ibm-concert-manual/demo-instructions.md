@@ -46,26 +46,177 @@ For this demo, we will need to provide all the data in the global variables file
 
 For <i>[reason]</i>, we have pre-populated many of the variables below.
 
-| **Environment variable** | **Description and code snippet** |
-| :--- | :--- | :--- |
-| **Platform architecture** | Placeholder <br/> <img src="images/1-1.png" width="825" /> |
-| **Containerization platform** | Placeholder <br/> <img src="images/1-2.png" width="725" /> |
-| **Demo app name** | Placeholder <br/> <img src="images/1-3.png" width="250" /> |
-| **Demo app criticality** | Placeholder <br/> <img src="images/1-4.png" width="250" /> |
-| **Demo app repository URL** | Placeholder <br/> <img src="images/1-5.png" width="525" /> |
-| **Demo app version** | Placeholder <br/> <img src="images/1-6.png" width="225" /> |
-| **Demo app component** | Placeholder <br/> <img src="images/1-7.png" width="375" /> |
-| **Demo app repo name** | Placeholder <br/> <img src="images/1-8.png" width="375" /> |
-| **Demo app source code repo URL** | Placeholder <br/> <img src="images/1-9.png" width="925" /> |
-| **Demo app image URL** | Placeholder <br/> <img src="images/1-10.png" width="550" /> |
-| **Demo app image tag** | Placeholder <br/> <img src="images/1-11.png" width="350" /> |
-| **Demo app repository branch** | Placeholder <br/> <img src="images/1-12.png" width="350" /> |
-| **Demo app access points** | Placeholder <br/> <img src="images/1-13.png" width="1200" /> |
-| **Build number** <br/><br/> **Inventroy build number** <br/><br/> **Concert URN prefix** | Placeholder <br/> <img src="images/1-14.png" width="325" /> |
-| **Kubernetes platform** <br/><br/> **Environment platform** <br/><br/> **Cluster ID** <br/><br/> **Cluster region** <br/><br/> **Cluster name** <br/><br/> **Cluster namespace** <br/><br/> **Kubernetes platform type** <br/><br/> **Kubernetes platform name** <br/><br/> **Cluster environment platform** | Placeholder <br/> <img src="images/1-15.png" width="375" /> |
-| **Business name** <br/><br/> **Business unit name** <br/><br/> **Contact email** <br/><br/> **Contact phone** | Placeholder <br/> <img src="images/1-16.png" width="275" /> |
-| **Concert ingestion endpoint** <br/><br/> **Concert ingestion instance ID** <br/><br/> **Concert ingestion token** | Placeholder <br/> <img src="images/1-17.png" width="500" /> |
-| **Concert ingestion user** <br/><br/> **Concert ingestion password** | Placeholder <br/> <img src="images/1-18.png" width="525" /> |
+<div class="table_component" role="region" tabindex="0">
+<table>
+    <thead>
+        <tr>
+            <th>
+                <div>
+                    <div>Environment variable</div>
+                </div>
+            </th>
+            <th>Description and code snippet</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Platform architecture</strong><br></td>
+            <td>
+                <div>
+                    <div>Placeholder <br/> <img src="images/1-1.png" width="825" /></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Containerization platform</strong><br></td>
+            <td>
+                <div>
+                    <div>Placeholder <br/> <img src="images/1-2.png" width="725" /></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Demo app name</strong><br></td>
+            <td>
+                <div>
+                    <div>Placeholder <br/> <img src="images/1-3.png" width="250" /></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Demo app criticality</strong><br></td>
+            <td>
+                <div>
+                    <div>Placeholder <br/> <img src="images/1-4.png" width="250" /></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Demo app repository URL</strong><br></td>
+            <td>
+                <div>
+                    <div>Placeholder<br/> <img src="images/1-5.png" width="525" /></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Demo app version</strong><br></td>
+            <td>
+                <div>
+                    <div>Placeholder <br/> <img src="images/1-6.png" width="225" /></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Demo app component</strong><br></td>
+            <td>
+                <div>
+                    <div>Placeholder <br/> <img src="images/1-7.png" width="375" /></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Demo app repo name</strong><br></td>
+            <td>
+                <div>
+                    <div>Placeholder <br/> <img src="images/1-8.png" width="375" /></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Demo app source code repo URL</strong><br></td>
+            <td>
+                <div>
+                    <div>Placeholder <br/> <img src="images/1-9.png" width="925" /></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Demo app image URL</strong><br></td>
+            <td>
+                <div>
+                    <div>Placeholder <br/> <img src="images/1-10.png" width="550" /></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Demo app image tag</strong><br></td>
+            <td>
+                <div>
+                    <div>Placeholder <br/> <img src="images/1-11.png" width="350" /></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Demo app repository branch</strong><br></td>
+            <td>
+                <div>
+                    <div>Placeholder <br/> <img src="images/1-12.png" width="350" /></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Demo app access points</strong><br></td>
+            <td>
+                <div>
+                    <div>Placeholder <br/> <img src="images/1-13.png" width="1200" /></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>Build number</strong><br><br><strong>Inventroy build number</strong><br><br><strong>Concert URN prefix</strong></p>
+            </td>
+            <td>
+                <div>
+                    <div>Placeholder <br/> <img src="images/1-14.png" width="325" /></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>Kubernetes platform</strong><br><br><strong>Environment platform</strong><br><br><strong>Cluster ID</strong><br><br><strong>Cluster region</strong><br><br><strong>Cluster name</strong><br><br><strong>Cluster namespace</strong><br><br><strong>Kubernetes platform type</strong><br><br><strong>Kubernetes platform name</strong><br><br><strong>Cluster environment platform</strong></p>
+            </td>
+            <td>
+                <div>
+                    <div>Placeholder <br/> <img src="images/1-15.png" width="375" /></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>Business name</strong><br><br><strong>Business unit name</strong><br><br><strong>Contact email</strong><br><br><strong>Contact phone</strong></p>
+            </td>
+            <td>
+                <div>
+                    <div>Placeholder <br/> <img src="images/1-16.png" width="275" /></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>Concert ingestion endpoint</strong><br><br><strong>Concert ingestion instance ID</strong><br><br><strong>Concert ingestion token</strong></p>
+            </td>
+            <td>
+                <div>
+                    <div>Placeholder <br/> <img src="images/1-17.png" width="500" /></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>Concert ingestion user</strong><br><br><strong>Concert ingestion password</strong></p>
+            </td>
+            <td>
+                <div>
+                    <div>Placeholder <br/> <img src="images/1-1.png" width="825" /></div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div style="margin-top:8px">Made with <a href="https://www.htmltables.io/" target="_blank">HTML Tables</a></div>
+</div>
 
 <!-- <Show source code for install script> -->
 

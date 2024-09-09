@@ -177,6 +177,12 @@ table{
     border-collapse: collapse;
 }
 
+table :is(th) 
+{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
 table :is(td){
     background-color: #f4f4f4;
     border-bottom-color: #E0E0E0;
@@ -184,13 +190,40 @@ table :is(td){
     border-bottom-style: solid;
 }
 
-table :is(th) /* this one changes the header  */
+table :is(td, th) 
 {
-    background-color: #808080;
-    color: white;
+    font-family: "IBM Plex Sans Regular","Helvetica Neue",Arial,sans-serif;
+    font-size: 14px;
+    min-width: 130px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+    vertical-align: top;
 }
 
-table :is(td, th) /* this one changes the body  */
+.table_component table {
+    border-collapse: collapse;
+}
+
+.table_component th {
+    background-color: #808080;
+    color: white;
+    text-align: left;
+}
+
+.table_component td {
+    font-family: "IBM Plex Sans Regular","Helvetica Neue",Arial,sans-serif;
+    font-size: 14px;
+    min-width: 130px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+    vertical-align: top;
+}
+
+.table_component :is(td, th)
 {
     font-family: "IBM Plex Sans Regular","Helvetica Neue",Arial,sans-serif;
     font-size: 14px;
