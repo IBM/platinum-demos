@@ -35,19 +35,19 @@ The first step is to install Tekton which is a Kubernetes-native CI/CD framework
 
 | **Action** 1.1 | Log in to the OpenShift (OCP) cluster on TechZone. |
 | :--- | :--- |
-|  | When we reserved the OCP instance, we received a kubeadmin login and password. We will use this to log in to the cluster. |
+|  | When we reserved the OCP instance, we received a kubeadmin login and password. <br/> <img src="images/1-1-b.png" width="600" /> <br/><br/> We will use this to log in to the cluster. <br/> <img src="images/1-1-a.png" width="600" /> <br/>  |
 
 | **Action** 1.2 | Click **OperatorHub** in the **Operators** section. |
 | :--- | :--- |
-|  |  |
+|  | <br/> <img src="images/1-2.png" width="600" /> |
 
 | **Action** 1.3 | Search for '**OpenShift pipeline**' and click the **pipeline** tile to open the install dialog. |
 | :--- | :--- |
-|  |  |
+|  | <br/> <img src="images/1-3.png" width="600" /> |
 
 | **Action** 1.4 | Click **Install without any changes to the default fields**. |
 | :--- | :--- |
-|  | The installation should complete within one minute with a success dialog. |
+|  | <br/> <img src="images/1-4.png" width="600" /><br/><br/>The installation should complete within one minute with a success dialog. |
 
 **[Go to top](#top)**
 
@@ -66,9 +66,7 @@ The first step is to install Tekton which is a Kubernetes-native CI/CD framework
 
 | **Action** 2.1 | Use the '**oc login**' command directly from the TechZone OCP console to log in to the OpenShift cluster from the local machine. |
 | :--- | :--- |
-|  | This command requires a login token that is provided in the login command. <br/> Click on 'kubeadmin' in the top right, then click 'copy login command', then click 'display token, and then copy the command and paste it into the terminal. |
-
-<!-- <show copy login command from cluster> -->
+|  | Click on 'kubeadmin' in the top right, then click 'copy login command'. <br/> <img src="images/2-1-a.png" width="400" /><br/><br/> Click 'display token, and then copy the command and paste it into the terminal. <br/> <img src="images/2-1-b.png" width="800" /> |
 
 <inline-notification text="Note: The OCP login token expires every 24 hours."></inline-notification>
 
@@ -96,7 +94,7 @@ The Concert secret is what enables Tekton to authenticate with the Concert API f
 | :--- | :--- |
 |  | In this demo, our Concert instance is deployed on SaaS.|
 
-| **Action** 3.2 | Click your profile -> **API Key** -> Generate. Copy the key into a notepad or place where you can access it, as it will not be visible again. |
+| **Action** 3.2 | Click your profile -> **API Key** -> Generate. Copy the key into a notepad or place where you can access it, as it will not be visible again. <br/> <img src="images/3-2.png" width="600" />|
 | :--- | :--- |
 |  |  | 
 
@@ -104,7 +102,7 @@ The Concert secret is what enables Tekton to authenticate with the Concert API f
 
 | **Action** 3.3 | Use the '**oc create secret generic**' command to set the name of the secret to '**concert-token-secret**' and insert the Concert token we generated above. |
 | :--- | :--- |
-|  | <code class="code-block"> oc create secret generic concert-token-secret <br/> --from-literal=token="C_API_KEY <br/> bWFyeWFtYUBjYS5pYm0uY29tOjE5N2U4ZmI2LTNiY2YtNGRhOC04OGY0LTViYTYwMmQyZWMxMQ==" </code> | 
+|  | <code class="code-block"> oc create secret generic concert-token-secret <br/> --from-literal=token="C_API_KEY *YOUR_CONCERT_API_KEY*" </code> | 
 
 <inline-notification text="Note: ensure you have the attribute “C_API_KEY” before the SaaS token, otherwise the API upload won’t authenticate successfully."></inline-notification>
 
@@ -112,13 +110,13 @@ The Concert secret is what enables Tekton to authenticate with the Concert API f
 
 | **Action** 3.4 | Create the GitHub secret by using the '**oc create secret generic**' command again. Name the secret '**github-creds**' and provide your GitHub username and token. |
 | :--- | :--- |
-|  | <code class="code-block"> oc create secret generic github-creds ` <br/> --from-literal=username=$env:GITHUB_USERNAME ` <br/> --from-literal=password=$env:GITHUB_TOKEN ` <br/> --type=kubernetes.io/basic-auth </code> | 
+|  | <br/> <img src="images/3-4.png" width="900" /><br/><br/><code class="code-block"> oc create secret generic github-creds ` <br/> --from-literal=username=$env:GITHUB_USERNAME ` <br/> --from-literal=password=$env:GITHUB_TOKEN ` <br/> --type=kubernetes.io/basic-auth </code> | 
 
 <inline-notification text="Note: This information was set up during the pre-requisites, and if not then an IBM GitHub username and token should be set up prior to this step."></inline-notification>
 
 | **Action** 3.5 | Annotate the GitHub secret and link it to the pipeline by running the commands below. |
 | :--- | :--- |
-|  | <code class="code-block"> oc annotate secret github-creds ` <br/> tekton.dev/git-0=https://github.ibm.com <br/><br/> oc secret link pipeline github-creds </code> | 
+|  | <code class="code-block"> oc annotate secret github-creds ` <br/> tekton.dev/git-0=https://github.ibm.com <br/></code> <br/><code class="code-block"> oc secret link pipeline github-creds </code> | 
 
 ### Registry Secret
 
@@ -128,7 +126,7 @@ For this demo, we are using a private IBM internal jfrog artifactory registry to
 
 | **Action** 3.6 | Log in to jfrog and click your profile. Click **Setup** and click **Generate authentication token**. |
 | :--- | :--- |
-|  |  |
+|  | <br/> <img src="images/3-7.png" width="900" /> |
 
 <inline-notification text="Note: The token will not be visible again and should be saved for future reference."></inline-notification> 
 
@@ -312,7 +310,7 @@ To do this, we bulk apply all our pipeline files to OpenShift using the 'oc appl
 
 | **Action** 6.4 | Open the OpenShift instance, switch to the default namespace and verify the pipeline was successfully created. |
 | :--- | :--- |
-|  | All the individual tasks that were pushed should be visible under tasks. |
+|  | All the individual tasks that were pushed should be visible under tasks. <br/> <img src="images/6-4.png" width="900" /> |
 
 **[Go to top](#top)**
 
@@ -324,29 +322,29 @@ To do this, we bulk apply all our pipeline files to OpenShift using the 'oc appl
 
 <details markdown="1">
 
-<summary>7 - Create GitHub access token webhook</summary>
+<summary>7 - Create Github access token webhook</summary>
 
 For the trigger template to run whenever any of the repos in the quote-of-the-day organization are updated, we need to create a webhook at the organization level. 
 
 | **Action** 7.1 | Open the pipeline in the OCP console. |
 | :--- | :--- |
-|  |  |
+|  | Click on 'Show default projects' toggle and then click 'default' to select the default project where the pipeline has been created <br/><img src="images/7-1-a.png" width="500" /><br/><br/> Click on the pipeline name to open the pipelie page. <br/><img src="images/7-1-b.png" width="900" /> |
 
 | **Action** 7.2 | Under **trigger templates**, copy the **Route URL**. |
 | :--- | :--- |
-|  | This route was created when we pushed our pipeline to Tekton. <br/><br/> Example: <br/> <code class="code-block"> el-webhook-default.apps.66ba1da31bc8d0001e815a6c.ocp.techzone.ibm.com </code> |
+|  | <br/> <img src="images/7-2.png" width="900" /><br/><br/>This route was created when we pushed our pipeline to Tekton. <br/><br/> Example: <br/> <code class="code-block"> https://el-webhook-default.apps.66defede6794d822e023625b.ocp.techzone.ibm.com </code> |
 
-| **Action** 7.3 | Open the GitHub quote-of-the-day organization page. |
+| **Action** 7.3 | Open the Github quote-of-the-day organization page. |
 | :--- | :--- |
 |  |  |
 
 | **Action** 7.4 | Click **Settings** -> **Hooks** -> **Create Webhook**. |
 | :--- | :--- |
-|  |  |
+|  | <br/> <img src="images/7-4.png" width="850" /> |
 
-| **Action** 7.5 | Paste the **Route URL** (from step 2) into the **Payload** field in Github. Click **Create webhook**. |
+| **Action** 7.5 | Paste the **Route URL** (from 7.2) into the **Payload** field in Github. Click **Create webhook**. |
 | :--- | :--- |
-|  |  |
+|  |  <br/> <img src="images/7-5.png" width="700" /> |
 
 <inline-notification text="Note: When creating the webhook, keep all defaults and SSL disabled, although in a customer environment, SSL would typically be enabled."></inline-notification>
 
@@ -372,15 +370,15 @@ Recall that the quote-of-the-day application has 10 microservices. For this demo
 
 | **Action** 8.2 | Open the code in Visual Studio Code. |
 | :--- | :--- |
-|  |  |
+|  | <img src="images/8-2.png" width="300" /> |
 
 | **Action** 8.3 | Add a comment to a line. |
 | :--- | :--- |
-|  |  |
+|  | <img src="images/8-3.png" width="700" />  |
 
-| **Action** 8.4 | Save and push the code to GitHub by creating a commit. |
+| **Action** 8.4 | Save and push the code to Github by creating a commit. |
 | :--- | :--- |
-|  | The commit action will trigger the pipeline to run. |
+|  | <br/> <img src="images/8-4.png" width="300" /><br/><br/> The commit action will trigger the pipeline to run. |
 
 Within a few seconds of the commit, the Tekton pipeline should begin to run automatically.
 
@@ -396,7 +394,7 @@ Within a few seconds of the commit, the Tekton pipeline should begin to run auto
 
 <summary>9 - Review running pipeline in Tekton</summary>
 
-To see the pipeline run in action, open the OpenShift cluster and click the pipeline name. For a play-by-play view, switch to the **Logs** tab, making note of any errors.
+To see the pipeline run in action, open the OpenShift cluster and click the pipeline name. For a play-by-play view, switch to the **Logs** tab, making note of any errors.<br/> <img src="images/9-1.png" width="1200" />
 
 <inline-notification text="The first run of a new pipeline takes longer than subsequent runs. The first run takes about 10 minutes, and subsequent runs take 1-2 minutes."></inline-notification>
 
@@ -417,6 +415,7 @@ Each time a step completes successfully, a green checkmark appears.
 Log in to the Concert instance to ensure all data was uploaded successfully.
 
 <inline-notification text="If you were already logged in to Concert, doing a refresh in the browser will render the uploaded data in the Concert Arena view."></inline-notification>
+<br/> <img src="images/10-2.png" width="1200" />
 
 Go to the <strong>Administration</strong> -> <strong>Event log</strong> tab to view the history and status of all uploads.
 

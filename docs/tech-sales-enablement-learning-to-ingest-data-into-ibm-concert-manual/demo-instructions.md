@@ -38,7 +38,7 @@ In a real world PoV, customers will always use a pipeline to ingest data. These 
 For this demo, we will need to provide all the data in the global variables file. These variables will be used throughout the demo by the Concert toolkit to generate files for Concert.
 
 <inline-notification text="This demo uses Concert Toolkit V1.0.1."></inline-notification>
-<inline-notification text="Line numbers may vary as helper scripts get updated."></inline-notification>
+<inline-notification text="Line numbers will vary as helper scripts get updated."></inline-notification>
 
 <br/>
 
