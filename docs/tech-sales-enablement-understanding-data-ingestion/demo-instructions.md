@@ -33,234 +33,31 @@ In the non-production CI/CD environment provisioned by the customer in advance o
 
 | **Action** 1.1 | If not already present, insert a secondary inner pipeline labeled **vulnerability-analysis** between **TEST** and **RELEASE** in the customer's pipeline.  |
 | :--- | :--- |
-|  | This can be done by utilizing the modularity of both Jenkins and Tekton to invoke a dedicated security check pipeline from within the main pipeline. <br/><br/> In Jenkins, this secondary pipeline can be set up as a downstream job, triggered from the main pipeline using the build step. |
+|  | This can be done by utilizing the modularity of both Jenkins and Tekton to invoke a dedicated security check pipeline from within the main pipeline. <br/><br/> In Jenkins, this secondary pipeline can be set up as a downstream job, triggered from the main pipeline using the build step: <br/><br/> <code class="code-block"> stage('vulnerability-analysis') {<br/>    steps {<br/>        build job: 'vulnerability-analysis-job', wait: true <br/>    } <br/> } </code> <br/><br/> In Tekton, a similar structure can be established using Pipeline Tasks or PipelineRuns, enabling the main pipeline to invoke a separate pipeline for vulnerability scanning tasks. <br/><br/> <code class="code-block"> apiVersion: tekton.dev/v1beta1 <br/> kind: Task <br/> metadata: <br/>  name: trigger-vulnerability-analysis <br/> spec: <br/>  steps: <br/>    - name: run-vulnerability-analysis <br/>      image: gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/pullrequest-init <br/>      script: | <br/>        tkn pipeline start vulnerability-analysis-pipeline --param target-image=$(params.image) </code> |
 
-### Action 1.1: Review and update global variables in the table below.
+<br/>
 
-"For faster implementation during the demo, we have pre-populated the demo repo with most of the variables below. Each variable is explained in detail below for improved understanding.
-
-<div class="table_component" role="region" tabindex="0">
-<table>
-    <thead>
-        <tr>
-            <th>
-                <div>
-                    <div>Environment variable</div>
-                </div>
-            </th>
-            <th>Description and code snippet</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><strong>Platform architecture</strong><br></td>
-            <td>
-                <div>
-                    <div>Define the architecture of your machine: MacOS, Linux, or Windows. <br/> <img src="images/1-1.png" width="825" /></div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Containerization platform</strong><br></td>
-            <td>
-                <div>
-                    <div>Choose between Docker and Podman for building the container images in the demo (Docker is preferred).<br/> <img src="images/1-2.png" width="725" /></div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Demo app name</strong><br></td>
-            <td>
-                <div>
-                    <div>Name of the demo application <br/> <img src="images/1-3.png" width="250" /></div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Demo app criticality</strong><br></td>
-            <td>
-                <div>
-                    <div>Define how critical this application is to the business (1 = low and 5 = high) <br/> <img src="images/1-4.png" width="250" /></div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Demo app repository URL</strong><br></td>
-            <td>
-                <div>
-                    <div>Enter a link to the source code repositories for every microservice in the application. Typically there is one repository per microservice. <br/> <img src="images/1-5.png" width="525" /></div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Demo app version</strong><br></td>
-            <td>
-                <div>
-                    <div>Enter a version for the application. Latest is an accepted term.<br/> <img src="images/1-6.png" width="225" /></div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Demo app component</strong><br></td>
-            <td>
-                <div>
-                    <div>Enter the name of each microservice, ensuring the order is consistent with above variables.<br/> <img src="images/1-7.png" width="375" /></div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Demo app repo name</strong><br></td>
-            <td>
-                <div>
-                    <div>Enter the name of each microservice code repository, ensuring the order is consistent with above variables. <br/> <img src="images/1-8.png" width="375" /></div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Demo app source code repo URL</strong><br></td>
-            <td>
-                <div>
-                    <div>Enter the URL of the source code repository for each microservice, ensuring the order is consistent with above variables. <br/> <img src="images/1-9.png" width="925" /></div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Demo app image URL</strong><br></td>
-            <td>
-                <div>
-                    <div>Enter the name of the docker image for each microservice, ensuring the order is consistent with above variables.<br/> <img src="images/1-10.png" width="550" /><br/><br/> Note: All images for this demo have been pre-built and are ready to be pulled for use in the helper scripts.</div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Demo app image tag</strong><br></td>
-            <td>
-                <div>
-                    <div>Enter the name of the tag for each docker image, ensuring the order is consistent with above variables. Latest is an accepted term.<br/> <img src="images/1-11.png" width="350" /></div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Demo app repository branch</strong><br></td>
-            <td>
-                <div>
-                    <div>Enter the name of the repo branch for each microservice, ensuring the order is consistent with above variables. <br/> <img src="images/1-12.png" width="350" /></div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Demo app access points</strong><br></td>
-            <td>
-                <div>
-                    <div>Enter the access points for each microservice, ensuring the order is consistent with above variables. <br/><br/> The access points are listed in an array of the following format:<br/> [ microservice_name | environemnt_name | access_point_name | access_point_url | visibility] <img src="images/1-13.png" width="1200" /></div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p><strong>Build number</strong><br><br><strong>Inventroy build number</strong><br><br><strong>Concert URN prefix</strong></p>
-            </td>
-            <td>
-                <div>
-                    <div>Enter build numbers and the Concert URN prefix. In the absence of a pipeline, these values need to be provided manually. <br/> <img src="images/1-14.png" width="325" /></div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p><strong>Kubernetes platform</strong><br><br><strong>Environment platform</strong><br><br><strong>Cluster ID</strong><br><br><strong>Cluster region</strong><br><br><strong>Cluster name</strong><br><br><strong>Cluster namespace</strong><br><br><strong>Kubernetes platform type</strong><br><br><strong>Kubernetes platform name</strong><br><br><strong>Cluster environment platform</strong></p>
-            </td>
-            <td>
-                <div>
-                    <div>Enter the deployment information for the application.<br/> <img src="images/1-15.png" width="375" /></div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p><strong>Business name</strong><br><br><strong>Business unit name</strong><br><br><strong>Contact email</strong><br><br><strong>Contact phone</strong></p>
-            </td>
-            <td>
-                <div>
-                    <div>Enter SBOM owner and contact details. <br/> <img src="images/1-16.png" width="275" /></div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p><strong>Concert ingestion endpoint</strong><br><br><strong>Concert ingestion instance ID</strong><br><br><strong>Concert ingestion token</strong><br><br><strong>Concert ingestion user</strong><br><br><strong>Concert ingestion password</strong></p>
-            </td>
-            <td>
-                <div>
-                    <div>Enter information for a specific Concert instance.<br/> <img src="images/1-17.png" width="500" /><br/><br/>If a Concert token is not available, the Concert username & password can also be used to upload data using the API.<br/> <img src="images/1-18.png" width="500" /></div>
-                </div>
-            </td>
-        </tr>
-    </tbody>
-</table>
-<div style="margin-top:8px">Made with <a href="https://www.htmltables.io/" target="_blank">HTML Tables</a></div>
-</div>
-
-<!-- <Show source code for install script> -->
-
-**[Go to top](#top)**
-
-<br/><br/>
-
-</details>
-
-<p/>
-
-<details markdown="1">
-
-<summary>2 - Install supporting software</summary>
-
-The install_supporting_software.sh shell script will install the IBM Concert toolkit, Grype, Docker and other software needed for this demo.
-
-### Action 2.1: Execute the code below in a terminal.
-
-<code class="code-block"> ./install_supporting_software.sh </code>
-
-The shell script will install the following: <br/>
-
-| **Software** | **Description** |
+| **Action** 1.2 | In this new inner pipeline, labeled **vulnerability-analysis**, create the tasks outlined below.  |
 | :--- | :--- |
-| **IBM Concert toolkit** | Framework required to generate SBOMs and interact with IBM Concert APIs |
-| **grype** | Vulnerability scanner for container images and filesystems |
-| **Syft** | Tool for generating SBOMs from container images and filesystems |
-| **cdxgen** | Tool required to generate CycloneDX SBOMs for various programming languages |
-| **Python3** and **pip3** | Essential for running Python scripts and managing Python packages |
-| **Homebrew** | Package manager for macOS that simplifies the installation, updating and management of software and libraries |
-| **Node.js** | Required to enable the execution of JavaScript code server-side and the development of scalable network applications |
-| **nvm** | Enable you to manage multiple versions of Node.js, making it easy to switch between different versions for various projects and development environments |
-| **rpm** | Needed for installing certain packages like Syft |
-| **Gradle** | Open-source build automation tool that streamlines the building, testing and deployment of software projects with its flexible and powerful capabilities |
-| **jq** | Lightweight and flexible command-line JSON processor, essential for parsing, manipulating and transforming JSON data |
-| **Bazel** | Powerful build and test tool that automates the process of compiling and testing large codebases efficiently |
-| **GitHub CLI** | Tool for managing GitHub repositories from the command line |
-| **Docker** | Platform for running and deploying containers and applications |
+|  | The structure of the pipeline will be as follows: <br/><br/> • **prepare**: Download and set up the necessary IBM Concert toolkit image, along with the source code repositories and container images for all microservices in the target application, ensuring the environment is ready for further analysis. <br/> • **code-scan**: Conduct a thorough static analysis of the codebase, inspecting the application’s source code, third-party libraries, and dependencies to identify potential security vulnerabilities or weaknesses. <br/> • **image-scan**: Perform an in-depth scan of the container images used in the application to detect any security vulnerabilities or misconfigurations that could impact the integrity of the containerized environment. <br/> • **cve-scan**: Analyze the components identified in the Software Bill of Materials (SBOM) and cross-reference them against the CVE (Common Vulnerabilities and Exposures) database to identify known vulnerabilities and assess their impact on the application. |
+| **Action** 1.2.1 | In the newly created **prepare** task of the **vulnerability-analysis** inner pipeline, add the necessary commands to download the IBM Concert toolkit, along with all microservice images and their corresponding source code repositories. <br/><br/> The code snippets below demonstrate the structure of the command, though the exact syntax may vary depending on the CI/CD pipeline platform being used. <br/><br/> Fetch a copy of the IBM Concert toolkit image to the local Docker server if it is not already present: <br/><br/> <code class="code-block"> docker pull --platform "linux/amd64" \ <br/>  "cp.stg.icr.io/cp/concert/toolkit/ibm-concert-toolkit:latest" </code> <br/><br/> Fetch a copy of the microservices' source code to the local file system if it is not already present: <br/><br/> <code class="code-block"> for i in "${!DEMO_APP_REPOSITORY_URL[@]}"; do <br/>    repo_url="${DEMO_APP_REPOSITORY_URL[$i]}" <br/>    <br/>    echo "$(date +'%Y-%m-%d %H:%M:%S') [INFO] Cloning the demo repository for ${repo_url}..." <br/>    if git clone "https://${repo_url}"; then <br/>      echo "$(date +'%Y-%m-%d %H:%M:%S') [INFO] Successfully cloned ${repo_folder} repository." <br/>    else <br/>      echo "$(date +'%Y-%m-%d %H:%M:%S') [ERROR] An error occurred during the code repo clone procedure for ${repo_folder}." <br/>      exit 1 <br/>    fi <br/> done </code> <br/><br/> Pull a copy of the microservices' image to the local Docker server if it is not already present: <br/><br/> <code class="code-block"> for i in "${!DEMO_APP_IMAGE_URL[@]}"; do  # Iterate over the indices, not values <br/>    service="${DEMO_APP_COMPONENT[$i]}" <br/> <br/>    # Pull image using the base image URL and image tag <br/>    docker pull "${DEMO_APP_IMAGE_URL[$i]}:${DEMO_APP_IMAGE_TAG[$i]}" <br/> <br/>    if [ $? -ne 0 ]; then <br/>        echo "$(date +'%Y-%m-%d %H:%M:%S') [ERROR] Error occurred while pulling image for $service" <br/>    fi <br/> done </code> |
+| **Action** 1.2.2 | In the newly created **code-scan** task within the **vulnerability-analysis** inner pipeline, include the following commands to perform a code scan using the IBM Concert toolkit: <br/><br/> <code class="code-block"> docker run --user 0 --platform "linux/amd64" \ <br/>    --volume "$(pwd)/toolkit-data:/toolkit-data" \ <br/>    --volume "$(pwd)/$src_repo:/$src_repo" \ <br/>    --interactive \ <br/>    --env JAVA_HOME="$JAVA_HOME" \ <br/>    "cp.stg.icr.io/cp/concert/toolkit/ibm-concert-toolkit:latest" \ <br/>    bash -c code-scan --src ${src_repo} --output-file ${DEMO_APP_NAME}-${service}-${PACKAGE_SBOM_CODESCAN_OUTPUT_FILENAME_SUFFIX} </code> |
+| **Action** 1.2.3 | In the newly created **image-scan** task of the **vulnerability-analysis** inner pipeline, include the following commands to perform a code scan using the IBM Concert toolkit: <br/><br/> <code class="code-block"> docker run --user 0 --platform "linux/amd64" \ <br/>    --volume "$(pwd)/toolkit-data:/toolkit-data" \ <br/>    --volume "$(pwd)/$src_repo:/$src_repo" \ <br/>    --interactive \ <br/>    --env JAVA_HOME="$JAVA_HOME" \ <br/>    "cp.stg.icr.io/cp/concert/toolkit/ibm-concert-toolkit:latest" \ <br/>    bash -c image-scan --images ${IMAGES} </code> |
+| **Action** 1.2.4 | In the newly created **cve-scan** task of the **vulnerability-analysis** inner pipeline, include the following commands to perform a code scan using the IBM Concert toolkit: <br/><br/> <code class="code-block"> grype "${image}" --by-cve -o template <br/>    -t "${TEMPLATE_GRYPE_FILE}" > "${OUTPUT_DIR}/${OUTPUT_FILENAME}" </code> <br/><br/> **TEMPLATE_GRYPE_FILE** refers to the path of the Grype template that maps each Grype output to the format required by IBM Concert. <br/><br/> <code class="code-block"> CVE,Image,Package,Package Version,Package Path,Severity,Score,hasFix,Fixed Version,Description,Tag,Digest <br/> {{- $imagetag := split ":" .Source.Target.UserInput }} <br/> {{- $image := $imagetag._0 }} <br/> {{- $tag := $imagetag._1 }} <br/> {{- $digest := 0 }} <br/> {{- range .Source.Target.RepoDigests }} <br/> {{- $repodigest := split "@" . }} <br/> {{- $digest = $repodigest._1 }} <br/> {{- end }} <br/> {{- range $v := .Matches}} <br/>  {{- $hasFix := "N" }} <br/>  {{- $fixedIn := "" }} <br/>  {{- $vid := $v.Vulnerability.ID }} <br/>  {{- $pkgname := $v.Artifact.Name }} <br/>  {{- $pkgver := $v.Artifact.Version }} <br/>  {{- $sev := $v.Vulnerability.Severity }} <br/>  {{- $desc := "DESCRIPTION HERE" }} <br/>  {{- if eq .Vulnerability.Fix.State "fixed" }} <br/>    {{- $hasFix = "Y" }} <br/>    {{- $fixedIn = "Fixed in" }} <br/>    {{- range $vers := .Vulnerability.Fix.Versions }} <br/>      {{- $fixedIn = cat $fixedIn $vers }} <br/>    {{- end }} <br/>  {{- end }} <br/>  {{- $score := "0" }} <br/>  {{- range $c := .Vulnerability.Cvss }} <br/>    {{- $score = $c.Metrics.BaseScore }} <br/>  {{- end }} <br/>  {{- range $path := .Artifact.Locations }} <br/> "{{$vid}}","{{$image}}","{{$pkgname}}","{{$pkgver}}","{{$path.RealPath}}","{{$sev}}","{{$score}}","{{$hasFix}}","{{$fixedIn}}","{{$desc}}","{{$tag}}","{{$digest}}" <br/>  {{- end }} <br/> {{- end }} </code> <br/><br/> You can download this file <a href="https://github.ibm.com/ibm-concert-platinum-demos/concert-pm-utils/blob/64d2bb900519e1eacf06ca275f4f45af2d6263aa/macos/templates/grype-cve.tmpl" target="_blank" rel="noreferrer">here</a>. <br/><br/> After the creation of the first new child pipeline described above, the main CI/CD pipeline used for the Proof of Value will be structured as follows: |
 
-<img src="images/2-1.png" width="600" />
+<br/>
 
-### Set up system paths
+| **Action** 1.3 | Insert a secondary inner pipeline labeled **post-build-analysis** after **DEPLOY** and before **OPERATE** in the customer's pipeline. |
+| :--- | :--- |
+|  | As we did previously, this can be done by utilizing the modularity of both Jenkins and Tekton to invoke a separated pipeline designed to generated all concert-defined SBOMs from within the main pipeline. <br/><br/> In Jenkins, similar to the previous setup, this secondary pipeline can be configured as a downstream job, triggered from the main pipeline using the build step: <br/><br/> <code class="code-block"> stage('post-build-analysis') { <br/>    steps { <br/>        build job: 'post-build-analysis-job', wait: true <br/>    } <br/> } </code> <br/><br/> In Tekton, a similar structure can be established using Pipeline Tasks or PipelineRuns, enabling the main pipeline to invoke a separate pipeline for vulnerability scanning tasks: <br/><br/> <code class="code-block"> apiVersion: tekton.dev/v1beta1 <br/> kind: Task <br/> metadata: <br/>  name: trigger-post-build-analysis <br/> spec: <br/>  steps: <br/>    - name: run-post-build-analysis <br/>      image: gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/pullrequest-init <br/>      script: | <br/>        tkn pipeline start post-build-analysis-pipeline --param target-image=$(params.image) </code> <br/><br/> In this new inner pipeline, labeled **post-build-analysis**, create the tasks outlined below. The structure of the pipeline will be as follows: <br/><br/> • **build-sbom**: Create a Software Bill of Materials (SBOM) for the build environment, capturing all dependencies and tools used during the build process. <br/> • **deploy-sbom**: Generate an SBOM for the deployment environment, detailing the infrastructure and configuration files involved in the deployment. <br/> • **app-definition**: Produce an SBOM outlining the application's modules, libraries, and dependencies for a comprehensive view of its components. <br/> • **data-upload**: Upload all generated SBOMs and security data to IBM Concert for analysis, tracking and validation. |
+| **Action** 1.3.1 | In the newly created **build-sbom** task of the **post-build-analysis** inner pipeline, include the following commands to create the Concert-defined Build SBOM using the IBM Concert toolkit: <br/><br/> <code class="code-block"> docker pull --platform "linux/amd64" \ <br/>  "cp.stg.icr.io/cp/concert/toolkit/ibm-concert-toolkit:latest" </code> <br/><br/> For the **build-sbom** task to function properly, it requires a configuration file containing <a href="https://github.ibm.com/ibm-concert-platinum-demos/concert-pm-utils/blob/64d2bb900519e1eacf06ca275f4f45af2d6263aa/macos/templates/build-sbom-config-template.yaml" target="_blank" rel="noreferrer">this information</a>. |
+| **Action** 1.3.2 | In the newly created **deploy-sbom** task of the **post-build-analysis** inner pipeline, include the following commands to create the Concert-defined Build SBOM using the IBM Concert toolkit: <br/><br/> <code class="code-block"> docker run --user 0 --platform "linux/amd64" \ <br/>      --volume "$(pwd)/toolkit-data:/toolkit-data" \ <br/>      --volume "$(pwd)/$TEMPLATES_DIR:/$TEMPLATES_DIR" \ <br/>      --volume "$(pwd)/$TMP_DIR:/$TMP_DIR" \ <br/>      --interactive \ <br/>      "cp.stg.icr.io/cp/concert/toolkit/ibm-concert-toolkit:latest" \ <br/>      bash -c "deploy-sbom --deploy-config ${OUTPUT_CONFIG_FILE}" </code> <br/><br/> For the **deploy-sbom** task to function properly, it requires a configuration file containing <a href="https://github.ibm.com/ibm-concert-platinum-demos/concert-pm-utils/blob/64d2bb900519e1eacf06ca275f4f45af2d6263aa/macos/templates/build-sbom-config-template.yaml" target="_blank" rel="noreferrer">this information</a>. |
+| **Action** 1.3.3 | In the newly created **app-definition** task of the **post-build-analysis** inner pipeline, include the following commands to create the Concert-defined Build SBOM using the IBM Concert toolkit: <br/><br/> <code class="code-block"> docker run --user 0 --platform "linux/amd64" \ <br/>      --volume "$(pwd)/toolkit-data:/toolkit-data" \ <br/>      --volume "$(pwd)/$TEMPLATES_DIR:/$TEMPLATES_DIR" \ <br/>      --volume "$(pwd)/$TMP_DIR:/$TMP_DIR" \ <br/>      --interactive \ <br/>      "cp.stg.icr.io/cp/concert/toolkit/ibm-concert-toolkit:latest" \ <br/>      bash -c "app-sbom --app-config ${OUTPUT_CONFIG_FILE}" </code> <br/><br/> For the **app-definition** task to function properly, it requires a configuration file containing <a href="https://github.ibm.com/ibm-concert-platinum-demos/concert-pm-utils/blob/64d2bb900519e1eacf06ca275f4f45af2d6263aa/macos/templates/build-sbom-config-template.yaml" target="_blank" rel="noreferrer">this information</a>. |
+| **Action** 1.3.4 | In the newly created **data-upload** task of the **post-build-analysis** inner pipeline, include the following commands to create the Concert-defined Build SBOM using the IBM Concert toolkit: <br/><br/> <code class="code-block"> docker run --user 0 --platform "linux/amd64" \ <br/>      --volume "$(pwd)/toolkit-data:/toolkit-data" \ <br/>      --volume "$(pwd)/$TEMPLATES_DIR:/$TEMPLATES_DIR" \ <br/>      --volume "$(pwd)/$TMP_DIR:/$TMP_DIR" \ <br/>      --interactive \ <br/>      "cp.stg.icr.io/cp/concert/toolkit/ibm-concert-toolkit:latest" \ <br/>      bash -c "upload-concert --upload-config ${OUTPUT_DIR}/${DEMO_APP_NAME}-concert-upload-config.yaml" </code> <br/><br/> For the **data-upload** task to function properly, it requires a configuration file containing <a href="https://github.ibm.com/ibm-concert-platinum-demos/concert-pm-utils/blob/64d2bb900519e1eacf06ca275f4f45af2d6263aa/macos/templates/config.yaml" target="_blank" rel="noreferrer">this information</a>. |
 
-1. Update the system path and configure Git. Homebrew usually adds itself to the PATH automatically. However, if it doesn’t, you can add it manually: <br/><br/> <code class="code-block"> nano ~/.zshrc  # For zsh <br/> # or <br/> nano ~/.bash_profile  # For bash </code>
+<br/>
 
-2. For users running macOS versions prior to Big Sur, you can set the Homebrew installation directory with the following command. Please add this line to your .zshrc or .bash_profile: <br/><br/> <code class="code-block"> export PATH="/usr/local/bin:/usr/local/sbin:$PATH" </code>
-
-3. For users running macOS macOS versions Big Sur and later, the Homebrew installation directory is /opt/homebrew: <br/><br/> <code class="code-block"> export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH" </code>
-
-4. Homebrew usually handles this automatically, but to ensure Gradle is included in your PATH. For users running macOS versions prior to Big Sur, this can be done by adding the command below to your .zshrc or .bash_profile: <br/><br/> <code class="code-block"> export PATH="/usr/local/opt/gradle/bin:$PATH" </code>
-
-5. For users running macOS versions Big Sur and later, use the command below: <br/><br/> <code class="code-block"> export PATH="/opt/homebrew/opt/gradle/bin:$PATH" </code>
-
-6. Homebrew usually handles this automatically, but to ensure Bazel is included in your PATH. For users running macOS versions prior to Big Sur, this can be done by adding the command below to your .zshrc or .bash_profile: <br/><br/> <code class="code-block"> export PATH="/usr/local/bin:$PATH" </code>
-
-7. For users running macOS versions Big Sur and later, use the command below: <br/><br/> <code class="code-block"> export PATH="/opt/homebrew/bin:$PATH" </code>
-
-8. Apply changes: <br/><br/> <code class="code-block"> source ~/.zshrc  # For zsh <br/> # or <br/> source ~/.bash_profile  # For bash </code>
-
-9. Configure Git: <br/><br/> <code class="code-block"> git config --global user.name "Your Name" <br/> git config --global user.email "your.email@ibm.com" </code>
+After the creation of the two new child pipelines described above, the main CI/CD pipeline used for the Proof of Value will be structured as follows: <br/><br/> screenshot
 
 **[Go to top](#top)**
 
@@ -272,215 +69,20 @@ The shell script will install the following: <br/>
 
 <details markdown="1">
 
-<summary>3 - Generate 'Package SBOMs'</summary>
+<summary>2 - Onboard application into Concert</summary>
 
-This slide shows the two variations of SBOMs that IBM Concert ingests.
-<br/> <img src="images/sboms.jpeg" width="600" />
+After setting up the shared pipeline infrastructure, you'll need to customize each application previously onboarded by the customer individually. Most CI/CD pipelines have a dedicated property or mapping file where parameters for each application are defined and linked to specific variables within the pipeline. These mappings ensure that each application's configuration is properly aligned with the pipeline's automated tasks.
 
-**Industry-standard CycloneDX SBOMs:** Concert ingests the industry standard CycloneDX SBOM in JSON fromat generated by tools like CycloneDX, Syft and cdxgen. These SBOMs are called Package SBOMs.
+Typically, the CI/CD server populates these variables automatically using information gathered throughout the pipeline's stages. However, there may be instances where additional customizations will be needed, requiring you to manually define the parameters to ensure proper execution. These manual adjustments often involve setting environment-specific variables or configurations that cannot be dynamically fetched by the server. 
 
-**Concert-defined SBOMs:** Concert also ingests custom SBOMs. These SBOMs are extenstions of the CycloneDX format and are specific for Concert. These SBOMs are called ‘Concert-defined’ SBOMs and are also in JSON format.
+Below is a list of some of the variables that you will need to populate manually:
 
-The first SBOM file generated by the helper scripts is the Package SBOMs. Concert ingests two types of package SBOMs, one that scans the the source code and the second that scans the images. These SBOMs provide an inventory of what’s in the software packages used by the code and images of the microservice. 
-
-We will use the IBM Concert Toolkit (v1.0.1) to generate both types of package SBOMs.
-
-The code scan command in the Concert toolkit uses **cdxgen** to analyze the codebase, identifying all software packages and dependencies.
-
-<img src="images/3-1.png" width="900" />
-
-The image scan command in the toolkit uses an open source tool called **Syft** to analyze the packages and operating system details in the containerized image.
-
-<img src="images/3-2.png" width="600" />
-
-### Action 3.1: Execute the ./generate_package_sbom.sh shell script.
-
-<code class="code-block"> ./generate_package_sbom.sh </code>
-
-The output of this command will be an image-scan SBOM and a code-scan SBOM file for each microservice. In both cases, the toolkit generates a JSON file in standard CycloneDX format.
-
-<!-- <show generated package SBOM files on the computer> -->
-
-**[Go to top](#top)**
-
-<br/><br/>
-
-</details>
-
-<p/>
-
-<details markdown="1">
-
-<summary>4 - Generate CVE scan</summary>
-
-In our demo we use an open source tool called **Grype** to conduct a vulnerability scan by analyzing container images. However, customers can use any image scanning tool like Prisma Cloud's Twistlock or Aqua Security's Trivvy.
-
-<img src="images/4-1.png" width="900" />
-
-<inline-notification text="The Concert toolkit does not contain any commands for generating CVE scan files."></inline-notification>
-
-### Action 4.1: Execute the generate_cve_csv_file.sh shell script.
-
-<code class="code-block"> ./generate_cve_csv_file.sh </code>
-
-The output of this command will be a CVE file in CSV format for each microservice image in the application.
-
-<inline-notification text="Concert accepts CSV files in a specific column format. Use the provided template to ensure the output file is generated with the correct CSV headers."></inline-notification>
-
-The CSV column format that Concert ingests must be in the following order:<br/><br/>
-<code class="code-block"> CVE | Image | Package | Package Version | Package Path | Severity |Score | hasFix | Fixed Version | Description | Tag | Digest</code> 
-
-The <a href="https://github.ibm.com/ibm-concert-platinum-demos/concert-pm-utils/blob/main/macos/templates/grype-cve.tmpl" target="_blank" rel="noreferrer">Concert CSV template</a> is provided with the helper scripts for this demo.
-
-<!-- <show CVE scans generated on the computer> -->
-
-One CSV scan file should be generated for every microservice image in our QotD application.
-
-<img src="images/4-2.png" width="1000" />
-
-**[Go to top](#top)**
-
-<br/><br/>
-
-</details>
-
-<p/>
-
-<details markdown="1">
-
-<summary>5 - Generate 'Build SBOMs'</summary>
-
-The three concert-defined SBOMs are called: Build, Deploy, and Application Definition. Let’s start with the Build SBOM.
-
-We will use the toolkit to generate the build SBOM file, which is a detailed inventory that includes information about the libraries, frameworks, tools, and other dependencies that were used to build the software application.
-<br/> <img src="images/5-1.png" width="500" />
-
-<!-- <show script where build-sbom command is called> -->
-
-### Action 5.1: Execute the generate_build_sbom.sh shell script. 
-
-<code class="code-block"> ./generate_build_sbom.sh </code>
-
-For each microservice image of the target application, a Build SBOM will be generated in the ./toolkit-data directory.
-
-<!-- <show files in toolkit data directory> -->
-
-<!-- <open one build sbom> -->
-
-For each individual microservice, a Build SBOM provides an inventory of: <br/>
-1. Associated images and their versions <br/> <img src="images/5-2.png" width="900" /> <br/><br/>
-2. Repositories and their branches <br/> <img src="images/5-3.png" width="600" />
-
-**[Go to top](#top)**
-
-<br/><br/>
-
-</details>
-
-<p/>
-
-<details markdown="1">
-
-<summary>6 - Generate 'Deploy SBOMs'</summary>
-
-The deploy SBOM focuses on the software as it is actually deployed in a specific environment, including any environment-specific configurations such as public and private access points.<br/> We will use the toolkit to generate the deploy SBOM file.
-
-<img src="images/6-1.png" width="500" />
-
-### Action 6.1: Execute the generate_deploy_sbom.sh shell script.
-
-<code class="code-block"> ./generate_deploy_sbom.sh </code>
-
-For each pair of microservice and environment defined for the target application, a deploy SBOM will be generated in the ./toolkit-data directory. 
-
-<!-- <show toolkit-data directory where SBOMs are generated (14)> --> 
-
-For each combination of microservice and environment, a Deploy SBOM provides an inventory of: <br/> 
-1. Access points <br/> <img src="images/6-2.png" width="650" /> <br/><br/>
-2. External dependencies <br/> <img src="images/6-3.png" width="450" />
-
-**[Go to top](#top)**
-
-<br/><br/>
-
-</details>
-
-<p/>
-
-<details markdown="1">
-
-<summary>7 - Generate 'Application-definition SBOM'</summary>
-
-The last SBOM to be generated is the Application definition SBOM. This SBOM is where the application criticality is defined. <br/>The application criticality plays a significant role in Concert’s calculation of risk prioritization and recommendations.
-
-<!-- <show script where app-definition command is called> -->
-
-### Action 7.1: Execute the generate_app_def.sh shell script. 
-
-<code class="code-block"> ./generate_app_def.sh </code>
-
-The Application-definition SBOM is defined at the application level instead of the microservice level. This enables Concert to have an application-centric view and only one Application-definition SBOM is required for each application, regardless of how many microservices it has.
-
-An Application-definition SBOM will be generated in the ./toolkit-data directory. 
-<br/> <img src="images/7-1.png" width="500" />
-
-<!-- <show toolkit-data directory where Application Definition SBOM is generated (1)> -->
-
-An Application-definition SBOM defines the boundaries of an application, including the following underlying elements: <br/> 
-1. Microservices <br/> <img src="images/7-2.png" width="650" /> <br/><br/> 
-2. Repositories <br/> <img src="images/7-3.png" width="650" /> <br/><br/> 
-3. Images <br/> <img src="images/7-4.png" width="650" /> <br/><br/>
-4. Environments <br/> <img src="images/7-5.png" width="300" /> <br/><br/> 
-5. Access points and their exposure levels <br/> <img src="images/7-6.png" width="500" /> <br/><br/> 
-6. Application criticality <br/> <img src="images/7-7.png" width="350" />
-
-**[Go to top](#top)**
-
-<br/><br/>
-
-</details>
-
-<p/>
-
-<details markdown="1">
-
-<summary>8 - Upload data to Concert</summary>
-
-Upload all the generated data into IBM Concert to make it accessible in the Concert UI.
-
-### Action 8.1: Execute the upload_data_concert.sh shell script. 
-
-<code class="code-block"> ./upload_data_concert.sh </code>
-
-<!-- <show script with upload details> -->
-
-This helper script automates the process, allowing multiple Concert-supported files to be uploaded at once, eliminating the need for manual uploads.
-
-Alternatively, you can manually upload all relevant files from the ./toolkit-data directory to IBM Concert using the user interface, one by one.
-
-<inline-notification text="Once all files are processed, they will be zipped and moved to the ./processed folder."></inline-notification>
-
-<img src="images/8-1.png" width="800" />
-
-**[Go to top](#top)**
-
-<br/><br/>
-
-</details>
-
-<p/>
-
-<details markdown="1">
-
-<summary>View updates in Concert UI</summary>
-
-Log in to Concert to view the uploaded data.
-<br/> <img src="images/9-1.png" width="800" />
-<br/> <img src="images/9-2.png" width="800" />
-
-<!-- <show arena view> -->
-
-<!-- <show dimensions view of vulnerability> -->
+| **Variable** | **Definition** |
+| :--- | :--- |
+| **Application criticality** | Refers to the level of importance an application holds within an organization’s IT environment, based on its impact on business operations. <br/><br/> The criticality is rated on a scale of 1 to 5, with: <br/><br/> • **1 (Low criticality)**: Applications that have minimal impact on day-to-day operations. They are not essential for core business functions, and if they go offline, business continuity is not significantly affected. <br/> • **2-3 (Moderate criticality)**: These applications support important business processes but are not mission-critical. Downtime or failure would cause inconvenience and inefficiency but would not disrupt key business operations. <br/> • **4 (High criticality)**: These applications are integral to business processes. Downtime could severely impact productivity, revenue, or customer satisfaction. They require regular monitoring and robust security measures. <br/> • **5 (Critical)**: These are mission-critical applications, essential for the core functioning of the business. Any downtime would have a catastrophic impact on operations, leading to significant financial or reputational loss. These applications often demand high availability, strong security protocols and fast recovery processes. |
+| **Access points that make each microservice and their exposure level** | Refers to the endpoints through which each microservice can be accessed, and they play a critical role in determining the exposure level of a microservice within an architecture. Each microservice should ideally have only one access point to maintain clarity and control over how it is accessed and exposed. <br/><br/> These access points can be classified as internal or external based on their exposure: <br/><br/> • **Internal access points**: These are used for communication between services within the organization's internal network or environment. They are not exposed to the internet and are generally accessed only by other microservices or internal systems. This limited exposure reduces the security risks associated with external threats. <br/> • **External access points**: These are exposed to the internet and can be accessed by external users or systems outside of the internal network. External access points require additional security measures, such as authentication, encryption and firewall rules, to protect them from vulnerabilities and unauthorized access. |
+| **Environments for each microservice** | Refers to the distinct settings or stages in which a microservice operates, each serving a unique purpose in the development, testing, and deployment lifecycle. A single microservice can have multiple environments, each tailored to specific activities or stages of its development and release. Typically, these environments include: <br/><br/> • **Development environment (Dev)**: This is where the initial coding and testing of the microservice occur. It is used by developers to implement new features, fix bugs, and experiment with changes without affecting the live system. <br/> • **Testing or QA environment**: After development, the microservice moves to a testing environment, where it undergoes more rigorous testing by quality assurance (QA) teams. This environment closely mirrors production to ensure that everything works as expected before deployment. <br/> • **Staging environment**: Staging is a pre-production environment that is nearly identical to the live environment. It’s used to test the entire system, including integrations and performance, to validate that the microservice is ready for release. <br/> • **Production environment**: This is the live environment where the microservice is deployed for actual use by end users. It requires the highest level of monitoring, security and support, as any issues here directly affect the user experience. <br/><br/> Each microservice can have one or more of these environments depending on its development and deployment needs. |
+| **Repositories for each microservice** | Dedicated storage locations where the codebase for each microservice is maintained and version-controlled. Each microservice should have its own repository to ensure clear separation of concerns, streamline development and facilitate independent updates and scaling. |
 
 **[Go to top](#top)**
 
