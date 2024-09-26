@@ -26,7 +26,7 @@ Let’s get started.
 
 <details markdown="1">
 
-<summary><strong>1 - Software composition dashboard</strong>: Monitoring the security and compliance posture of open-source and third-party components.</summary>
+<summary><strong>1 - Software composition dashboard</strong>: Monitoring the security and compliance posture of open-source and third-party components</summary>
 
 <br/>
 
@@ -50,7 +50,7 @@ Let’s get started.
 
 <details markdown="1">
 
-<summary><strong>2 - Software composition analysis and details</strong>: Drilling down into individual security vulnerabilities, license compliance, and versioning </summary>
+<summary><strong>2 - Software composition analysis and details</strong>: Drilling down into individual security vulnerabilities, license compliance and versioning </summary>
 
 <br/>
 
