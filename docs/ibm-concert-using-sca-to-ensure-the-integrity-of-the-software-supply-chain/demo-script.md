@@ -54,7 +54,7 @@ Let’s get started.
 
 <br/>
 
-| **2.1** | **Examine recommendations in the Dimension view** |
+| **2.1** | **Examine recommendations in the Dimensions view** |
 | :--- | :--- |
 | **Action** &nbsp; 2.1.1 | Click **Dimensions** and then **Software composition**. <br/> <img src="images/2-1-1.png" width="800" /> <br/><br/> The **Software composition** detail view will appear: <br/> <img src="images/2-1-2.png" width="800" /> |
 | **Narration** | The Software composition detail view in IBM Concert offers a clear summary of the 393 total packages and associated risks, including the 118 flagged packages mentioned earlier. <br/><br/> This view builds on previous discussions of key components like axios v1.6.0 and body-parser v1.19.2, emphasizing the need for immediate updates. It provides teams with a streamlined overview to prioritize remediation efforts and maintain application security without repeating details. Upcoming sections will further explore critical risks and actions.|
@@ -63,7 +63,7 @@ Let’s get started.
 
 <br/>
 
-| **2.2** | **Examine packages lineage in the Dimension view** |
+| **2.2** | **Examine packages lineage in the Dimensions view** |
 | :--- | :--- |
 | **Action** &nbsp; 2.2.1 | Click the **Packages** tab. <br/> <img src="images/2-2-1.png" width="800" /> |
 | **Narration** | As the team prepares for the application launch, attention turns to the 225 packages flagged as 'Behind recommended' (e.g., ansi-regex, ansi-styles), which may introduce security risks. With Concert’s ability to surface key insights like version status and reliability scores, the team can prioritize which components need immediate attention. <br/><br/> Concert provides the crucial visibility needed to assess and act on these insights, guiding the team to focus on high-risk areas. By identifying outdated dependencies, it allows teams to make informed decisions, ensuring the application remains secure and ready for release. |
@@ -88,7 +88,7 @@ Let’s get started.
 
 <br/>
 
-| **3.1** | **Implementing suggested actions** |
+| **3.1** | **Implement suggested actions** |
 | :--- | :--- |
 | **Narration** | With the flagged issues identified, the team moves on to implementing the suggested actions. This phase involves addressing specific vulnerabilities, updating outdated packages and improving security practices based on the insights provided in the Recommendations view. By following these steps, the team ensures critical packages like ansi-styles are not only secure but also aligned with best practices, reinforcing the overall health of the codebase. |
 | **Action** &nbsp; 3.1.1 | Click the **Recommendations** tab. <br/> <img src="images/3-1-1.png" width="800" /> |
@@ -98,7 +98,7 @@ Let’s get started.
 
 <br/>
 
-| **3.2** | **Opening a service ticket** |
+| **3.2** | **Open a service ticket** |
 | :--- | :--- |
 | **Action** &nbsp; 3.2.1 | Click **Open ticket +** for the encoreapp <br/> <img src="images/3-2-1.png" width="800" /> <br/><br/> The **Open a ticket** pop-up window will appear: <br/> <img src="images/3-2-2.png" width="800" /> |
 | **Narration** | After identifying the affected applications, the team proceeds to open a ticket to address the vulnerability in axios v1.6.0. <br/><br/> Here, IBM Concert automatically generates the relevant details for the ticket, including the recommendation to upgrade to axios v1.7.7, the justification based on the identified vulnerability and the associated SBOM information for encoreapp. <br/><br/> The team selects the appropriate ticketing system (GitHub, Jira, ServiceNow or Salesforce) and assigns it to the responsible team members. This step ensures the necessary actions are tracked and resolved efficiently. |
