@@ -89,4 +89,13 @@ For further information, please visit the <a href="https://ibm.box.com/s/y7gd01k
 
 ***
 
+<<<<<<< HEAD
+=======
+For further information, please click on the resources below:
+
+<a href="https://ibm.box.com/s/v5y7fu0v4lfqufuf1h60qd97bt9x6wsi" target="_blank" rel="noreferrer">Proof of Value guide</a>.
+
+
+
+>>>>>>> 1ef4be405a4f94597639b7449c95715d9d900806
 Click [here](demo-instructions) to go to the **Demo instructions** on the next tab.
