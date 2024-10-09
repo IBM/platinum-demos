@@ -81,7 +81,7 @@ Before starting the PoV, the following preparations must be in place:
 
 For further information, please click on the resources below:
 
-Proof of Value guide <a href="https://ibm.box.com/s/v5y7fu0v4lfqufuf1h60qd97bt9x6wsi" target="_blank" rel="noreferrer">test</a>.
+<a href="https://ibm.box.com/s/v5y7fu0v4lfqufuf1h60qd97bt9x6wsi" target="_blank" rel="noreferrer">Proof of Value guide</a>.
 
 
 
