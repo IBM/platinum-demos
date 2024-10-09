@@ -37,11 +37,11 @@ This guide will show how to set up the customer pipeline for IBM Concert. We wil
 
 The following illustration presents the final structure of the CI/CD pipeline after the recommended changes:
 
-<img src="images/7.png" width="1200" /> <br/>
+<img src="images/3.png" width="1200" /> <br/>
 
 <br/>
 
-| **Action** 1.1 | Create a new task named **prepare-task** directly before the **build-task**. |
+| **Action** 1.1 | Create a new task named **prepare-task** immediately before the **build-task**. |
 | :--- | :--- |
 |  |  The purpose of this task is to download and configure the required IBM Concert toolkit image, as well as the source code repositories and container images for all microservices in the target application, ensuring the environment is fully prepared for subsequent analysis. |
 
@@ -53,30 +53,43 @@ The following illustration presents the final structure of the CI/CD pipeline af
 
 | **Action** 1.4 | In the newly created **package-sbom-task**, include the following code commands: <br/><br/> Run a **code-scan** using cdxgen on the application's source code to perform a static analysis and identify all static dependencies within the codebase: <br/><br/> <code class="code-block"> docker run --user 0 --platform "linux/amd64" \<br/>--volume "$(pwd)/toolkit-data:/toolkit-data" \<br/>--volume "$(pwd)/$src_repo:/$src_repo" \<br/>--interactive \<br/>--env JAVA_HOME="$JAVA_HOME" \<br/>"cp.stg.icr.io/cp/concert/toolkit/ibm-concert-toolkit:latest" \<br/>bash -c code-scan --src ${src_repo} --output-file ${DEMO_APP_NAME}-${service}-$<br/>{PACKAGE_SBOM_CODESCAN_OUTPUT_FILENAME_SUFFIX}</code> <br/><br/> Run an **image-scan** using Syft on the application's container images to perform a static analysis and identify all static dependencies within the image metadata: <br/><br/>  <code class="code-block"> docker run --user 0 --platform "linux/amd64" \<br/>--volume "$(pwd)/toolkit-data:/toolkit-data" \<br/>--volume "$(pwd)/$src_repo:/$src_repo" \<br/>--interactive \<br/>--env JAVA_HOME="$JAVA_HOME" \<br/>"cp.stg.icr.io/cp/concert/toolkit/ibm-concert-toolkit:latest" \<br/>bash -c image-scan --images ${IMAGES} </code>|
 
-| **Action** 1.5 | Update the existing **build-task** and add the following code commands at the end of the workbook: |
+| **Action** 1.5 | Create a new task named **build-sbom-task** immediately after the **build-task** and before the **test-task** and add the following code commands to the workbook: |
 |  |  The purpose of this new code command is to generate a Software Bill of Materials (SBOM) for the **build**, documenting all dependencies and tools utilized during the build process. For the build-sbom command to work correctly, it requires a configuration file that outlines <a href="https://github.ibm.com/ibm-concert-platinum-demos/concert-pm-utils/blob/64d2bb900519e1eacf06ca275f4f45af2d6263aa/macos/templates/build-sbom-config-template.yaml" target="_blank" rel="noreferrer">this information</a>. |
+
+|  |  Instead of merging the SBOM creation commands with the current build task, we recommend implementing them as a separate task within the customer pipeline. This approach ensures modularity and prevents modifications to existing, well-tested components.|
 
 |  |  <code class="code-block"> TOOLKIT_COMMAND="build-sbom --build-config ${OUTPUT_CONFIG_FILE}" <br/> <br/>if [ "$CONTAINERIZATION_PLATFORM" -eq 1 ]; then<br/>docker run --user 0 --platform ${PLATFORM_ARCH} \<br/>--volume "$(pwd)/toolkit-data:/toolkit-data" \<br/>--volume "$(pwd)/$TEMPLATES_DIR:/$TEMPLATES_DIR" \<br/>--volume "$(pwd)/$TMP_DIR:/$TMP_DIR" \<br/>--interactive \<br/>$CONCERT_TOOLKIT_IMAGE \<br/>bash -c "${TOOLKIT_COMMAND}"<br/>elif [ "$CONTAINERIZATION_PLATFORM" -eq 2 ]; then<br/>podman run --user 0 --platform ${PLATFORM_ARCH} \<br/>--volume "$(pwd)/toolkit-data:/toolkit-data" \<br/>--volume "$(pwd)/$TEMPLATES_DIR:/$TEMPLATES_DIR" \<br/>--volume "$(pwd)/$TMP_DIR:/$TMP_DIR" \<br/>--interactive \<br/>$CONCERT_TOOLKIT_IMAGE \<br/>bash -c "${TOOLKIT_COMMAND}"<br/>fi </code> |
 
-| **Action** 1.6 | Update the existing **test-task** and add the following code commands at the end of the workbook: |
+| **Action** 1.6 | Create a new task named **cve-scan-task** immediately after the **test-task** and add the following code commands to the workbook: |
 |  |  The purpose of this new code command is to scan the application's images for known vulnerabilities by analyzing the components identified in the Software Bill of Materials (SBOM) and cross-referencing them against the CVE (Common Vulnerabilities and Exposures) database. This process helps to identify any known vulnerabilities and assess their potential impact on the application. <br/><br/> **TEMPLATE_GRYPE_FILE** refers to the path of the Grype template that maps each Grype output to the format required by IBM Concert. You can download this file <a href="https://github.ibm.com/ibm-concert-platinum-demos/concert-pm-utils/blob/64d2bb900519e1eacf06ca275f4f45af2d6263aa/macos/templates/grype-cve.tmpl" target="_blank" rel="noreferrer">here</a>. |
+
+|  |  Instead of merging the SBOM creation commands with the current test task, we recommend implementing them as a separate task within the customer pipeline. This approach ensures modularity and prevents modifications to existing, well-tested components.|
 
 |  |  <code class="code-block"> grype "${image}" --by-cve -o template -t "${TEMPLATE_GRYPE_FILE}" > "${OUTPUT_DIR}/${OUTPUT_FILENAME}" </code> |
 
 |  |  Templates are currently available for Twistlock, Grype, Trivy, Tenable and Fortify. For other scanning tools, please send the CSV file to the product management team, and we will generate the necessary mapping.|
 
-| **Action** 1.7 | Create a new task named **post-build-task** immediately after the **build-task** and before the **release-task**. |
+| **Action** 1.7 | Create a new task named **deploy-sbom-task**  after the **build-task** and the recently created **cve-scan-task**. |
 
-|  |  The purpose of this new task is to create the deploy and app definition SBOMs using two essential commands: deploy-sbom and app-def-sbom. |
+|  |  The purpose of this new task is to create the deploy SBOM. |
 
-| **Action** 1.8 | In the newly created **post-build-task**, include the following code commands: <br/><br/> The purpose of the first command below is to generate an SBOM for the deployment environment, providing detailed information about the infrastructure and configuration files used during deployment. For the deploy-sbom task to run successfully, it requires a configuration file that outlines <a href="https://github.ibm.com/ibm-concert-platinum-demos/concert-pm-utils/blob/64d2bb900519e1eacf06ca275f4f45af2d6263aa/macos/templates/deploy-sbom-config-template.yaml" target="_blank" rel="noreferrer">this information</a> <br/><br/> <code class="code-block"> docker run --user 0 --platform "linux/amd64" \<br/>--volume "$(pwd)/toolkit-data:/toolkit-data" \<br/>--volume "$(pwd)/$TEMPLATES_DIR:/$TEMPLATES_DIR" \<br/>--volume "$(pwd)/$TMP_DIR:/$TMP_DIR" \<br/>--interactive \<br/>"cp.stg.icr.io/cp/concert/toolkit/ibm-concert-toolkit:latest" \<br/> bash -c "deploy-sbom --deploy-config ${OUTPUT_CONFIG_FILE}"<br/></code> <br/><br/> The purpose of the second command is to generate the app-definition SBOM, which provides a detailed overview of the application’s modules, libraries, and dependencies. For the app-definition task to execute successfully, it requires a configuration file that outlines <a href="https://github.ibm.com/ibm-concert-platinum-demos/concert-pm-utils/blob/64d2bb900519e1eacf06ca275f4f45af2d6263aa/macos/templates/app-def-sbom-config-template.yaml" target="_blank" rel="noreferrer">this information</a>. <br/><br/>  <code class="code-block"> docker run --user 0 --platform "linux/amd64" \<br/>--volume "$(pwd)/toolkit-data:/toolkit-data" \<br/>--volume "$(pwd)/$TEMPLATES_DIR:/$TEMPLATES_DIR" \<br/>--volume "$(pwd)/$TMP_DIR:/$TMP_DIR" \<br/> --interactive \<br/>"cp.stg.icr.io/cp/concert/toolkit/ibm-concert-toolkit:latest" \<br/>bash -c "app-sbom --app-config ${OUTPUT_CONFIG_FILE}"<br/> </code>|
+| **Action** 1.8 | In the newly created **deploy-sbom-task**, include the following code commands: <br/><br/> The purpose of the command below is to generate an SBOM providing detailed information about the infrastructure and configuration files used during the deployment. For the deploy-sbom task to run successfully, it requires a configuration file that outlines <a href="https://github.ibm.com/ibm-concert-platinum-demos/concert-pm-utils/blob/64d2bb900519e1eacf06ca275f4f45af2d6263aa/macos/templates/deploy-sbom-config-template.yaml" target="_blank" rel="noreferrer">this information</a> <br/><br/> <code class="code-block"> docker run --user 0 --platform "linux/amd64" \<br/>--volume "$(pwd)/toolkit-data:/toolkit-data" \<br/>--volume "$(pwd)/$TEMPLATES_DIR:/$TEMPLATES_DIR" \<br/>--volume "$(pwd)/$TMP_DIR:/$TMP_DIR" \<br/>--interactive \<br/>"cp.stg.icr.io/cp/concert/toolkit/ibm-concert-toolkit:latest" \<br/> bash -c "deploy-sbom --deploy-config ${OUTPUT_CONFIG_FILE}"<br/></code> <br/>|
 
-| **Action** 1.9 | Create a new task named **upload-data-task** immediately after the **post-build-task**. |
+| **Action** 1.9 | Create a new task named **app-def-sbom-task**  after the **deploy-sbom-task**. |
+
+|  |  The purpose of this new task is to create the app-definition SBOM. |
+
+| **Action** 1.10 | In the newly created **app-def-sbom-task**, include the following code commands: <br/><br/> The purpose of this command is to generate the app-definition SBOM, which provides a detailed overview of the application’s modules, libraries, and dependencies. For the app-definition-sbom task to execute successfully, it requires a configuration file that outlines <a href="https://github.ibm.com/ibm-concert-platinum-demos/concert-pm-utils/blob/64d2bb900519e1eacf06ca275f4f45af2d6263aa/macos/templates/app-def-sbom-config-template.yaml" target="_blank" rel="noreferrer">this information</a>. <br/><br/>  <code class="code-block"> docker run --user 0 --platform "linux/amd64" \<br/>--volume "$(pwd)/toolkit-data:/toolkit-data" \<br/>--volume "$(pwd)/$TEMPLATES_DIR:/$TEMPLATES_DIR" \<br/>--volume "$(pwd)/$TMP_DIR:/$TMP_DIR" \<br/> --interactive \<br/>"cp.stg.icr.io/cp/concert/toolkit/ibm-concert-toolkit:latest" \<br/>bash -c "app-sbom --app-config ${OUTPUT_CONFIG_FILE}"<br/> </code>|
+
+| **Action** 1.11 | Create a new task named **upload-data-task** immediately after the **app-def-sbom-task**. |
 
 |  |  The purpose of this task is to upload all generated SBOMs and security data to IBM Concert for comprehensive analysis, tracking, and validation. For the app-definition task to execute successfully, it requires a configuration file that outlines <a href="https://github.ibm.com/ibm-concert-platinum-demos/concert-pm-utils/blob/64d2bb900519e1eacf06ca275f4f45af2d6263aa/macos/templates/config.yaml" target="_blank" rel="noreferrer">this information</a>.|
 
-| **Action** 1.10 | In the newly created  **upload-data-task**, include the following code commands: <br/><code class="code-block"> docker run --user 0 --platform "linux/amd64" \<br/>--volume "$(pwd)/toolkit-data:/toolkit-data" \<br/>--volume "$(pwd)/$TEMPLATES_DIR:/$TEMPLATES_DIR" \<br/>--volume "$(pwd)/$TMP_DIR:/$TMP_DIR" \<br/>--interactive \<br/>"cp.stg.icr.io/cp/concert/toolkit/ibm-concert-toolkit:latest" \<br/>bash -c "upload-concert --upload-config ${OUTPUT_DIR}/${DEMO_APP_NAME}-concert-upload-config.yaml"</code> |
+| **Action** 1.12 | In the newly created  **upload-data-task**, include the following code commands: <br/><code class="code-block"> docker run --user 0 --platform "linux/amd64" \<br/>--volume "$(pwd)/toolkit-data:/toolkit-data" \<br/>--volume "$(pwd)/$TEMPLATES_DIR:/$TEMPLATES_DIR" \<br/>--volume "$(pwd)/$TMP_DIR:/$TMP_DIR" \<br/>--interactive \<br/>"cp.stg.icr.io/cp/concert/toolkit/ibm-concert-toolkit:latest" \<br/>bash -c "upload-concert --upload-config ${OUTPUT_DIR}/${DEMO_APP_NAME}-concert-upload-config.yaml"</code> |
 
+The following represents the final state of the pipeline after incorporating the proposed new tasks:
+
+<img src="images/4.png" width="1200" /> <br/>
 
 
 **[Go to top](#top)**
