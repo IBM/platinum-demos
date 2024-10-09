@@ -25,6 +25,7 @@ The customer must designate a DevOps engineer familiar with both the DevOps tool
 2. Prepare a Non-Production Environment:
 Before the PoV begins, the customer must provision a non-production environment to host the PoV applications. This environment should be a simplified replica of the production CI/CD pipeline to ensure smooth testing and validation.
 
+***
 
 <summary>Preparing the environment</summary>
 Several key pieces of information must be collected well in advance of the PoV start date. These include:
@@ -55,6 +56,7 @@ Identify the environments in which each microservice operates (development, test
 3.3. List of Source Code Repositories:
 For each microservice, identify the source code repository, including the branch and version of the code. Additionally, document the business owner responsible for the repository to facilitate permissions or security inquiries.
 
+***
 
 <summary>Security and compliance considerations</summary>
 Security is a critical component of the PoV. Make sure the following steps are completed:
