@@ -18,6 +18,7 @@ layout: pre-requisites
 <p style="text-indent: 30px;">- Credentials</p>
 <p style="text-indent: 60px;">○ Option 1: API key/token (preferred)</p>
 <p style="text-indent: 60px;">○ Option 2: Username/password</p>
+<inline-notification text="To enable a fresh instance for data ingestion, click 'Not now' when prompted to load sample data upon initial login to a Concert instance."></inline-notification>
 <p>• <a href="https://code.visualstudio.com/Download" target="_blank" rel="noreferrer">Visual Studio Code</a> (recommended) or other code editor</p>
 <p>• <a href="https://github.ibm.com/ibm-concert-platinum-demos/concert-pm-utils" target="_blank" rel="noreferrer">Custom helper scripts</a> for this demo, downloaded (cloned) from IBM GitHub</p>
 <p style="text-indent: 30px;">- Option 1: Log in to IBM GitHub in Visual Studio Code to download without SSH key</p>
