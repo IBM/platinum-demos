@@ -14,8 +14,8 @@ Below is a list of pre-requisites that need to be setup prior to beginning this 
 • <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-vmware-on-ibm-cloud-environments" target="_blank" rel="noreferrer">OpenShift cluster</a><br/>
 • IBM Concert <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-watsonx" target="_blank" rel="noreferrer">(VM or OCP)</a> <br/>
 • <a href="https://quay.io/" target="_blank" rel="noreferrer">Image registry access</a><br/>
-• <a href="https://github.ibm.com/quote-of-the-day" target="_blank" rel="noreferrer">Quote of the Day (QotD) sample application</a><br/>
-• <a href="https://pages.github.ibm.com/cs-tel-ibm-concert/training/module2/tekton-prereqs/" target="_blank" rel="noreferrer">Command-line clients (OS dependent)/</a>
+• <a href="https://github.ibm.com/quote-of-the-day" target="_blank" rel="noreferrer">Quote of the Day (QotD)</a> sample application <br/>
+• <a href="https://pages.github.ibm.com/cs-tel-ibm-concert/training/module2/tekton-prereqs/" target="_blank" rel="noreferrer">Command-line clients (OS dependent)</a>
 
 ***
 
