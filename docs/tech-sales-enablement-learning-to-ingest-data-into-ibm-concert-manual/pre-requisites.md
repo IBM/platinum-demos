@@ -13,7 +13,7 @@ layout: pre-requisites
 
 <summary>Prepare your environment</summary>
 
-<p>• IBM Concert (<a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-ibm-concert" target="_blank" rel="noreferrer">VM or OCP </a>). You will need:</p>
+<p>• IBM Concert (<a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-watsonx" target="_blank" rel="noreferrer">VM or OCP </a>). You will need:</p>
 <p style="text-indent: 30px;">- IP address</p>
 <p style="text-indent: 30px;">- Credentials</p>
 <p style="text-indent: 60px;">○ Option 1: API key/token (preferred)</p>
