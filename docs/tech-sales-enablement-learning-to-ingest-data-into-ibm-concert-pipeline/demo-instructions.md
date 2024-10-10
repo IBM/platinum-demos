@@ -1,5 +1,5 @@
 ---
-title: Part 2 - Using a pipeline to automate data ingestion into IBM Concert <br/> <small> <i> Tech Sales enablement </i> </small>
+title: Part 2 - Using a Tekton pipeline to automate data ingestion into IBM Concert <br/> <small> <i> Tech Sales enablement </i> </small>
 layout: demo-instructions
 ---
 
