@@ -11,7 +11,7 @@ layout: pre-requisites
 
 Below is a list of pre-requisites that need to be setup prior to beginning this demo.
 
-• <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-vmware-on-ibm-cloud-environments" target="_blank" rel="noreferrer">OpenShift cluster</a><br/>
+• <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-vmware-on-ibm-cloud-environments" target="_blank" rel="noreferrer">OpenShift cluster</a> with public ingress<br/>
 • IBM Concert <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-watsonx" target="_blank" rel="noreferrer">(VM or OCP)</a> <br/>
 • <a href="https://quay.io/" target="_blank" rel="noreferrer">Image registry access</a><br/>
 • <a href="https://github.ibm.com/quote-of-the-day" target="_blank" rel="noreferrer">Quote of the Day (QotD)</a> sample application <br/>
