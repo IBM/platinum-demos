@@ -1,7 +1,7 @@
 ---
 title: IBM Concert demo <br/> Using SCA to ensure the integrity of the software supply chain <br/> <small> <i> Live demo for Tech Sales </i> </small>
 layout: preparation
-banner: images/banner.jpg
+banner: images/banner.png
 ---
 
 <span id="top"></span>
