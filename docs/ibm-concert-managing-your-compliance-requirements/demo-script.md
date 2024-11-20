@@ -153,9 +153,9 @@ Today, we’ll dive into how IBM Concert supports the compliance manager in stre
 | **Action** &nbsp; 5.1.12 | Click **X** to close the chatbot window. <br/> <img src="images/5-1-12.png" width="300" /> |
 | **Action** &nbsp; 5.1.13 | Click **X** to close the catalog. <br/> <img src="images/5-1-13.png" width="800" /> |
 | **Narration** | The assessment scan results identify which controls are compliant and which are not. After reviewing the results, the compliance manager updates the non-compliant controls by providing appropriate evidence. |
-| **Action** &nbsp; 5.1.14 | Navigate back to the Assessments tab and Click on the first assessments name. For the **Access Enforcement** control, click the **menu** icon and then click **Provide evidence**. <br/> <img src="images/4-1-4.png" width="800" /> <br/><br/> The following **Provide evidence** screen will appear: <br/> <img src="images/4-1-5.png" width="500" /> |
+| **Action** &nbsp; 5.1.14 | Navigate back to the Assessments tab and Click on the first assessments name. For the **Access Enforcement** control, click the **menu** icon and then click **Provide evidence**. <br/> <img src="images/5-1-14.png" width="800" /> <br/><br/> The following **Provide evidence** screen will appear: <br/> <img src="images/5-1-15.png" width="500" /> |
 | **Narration** | Concert uses watsonx to assist the compliance manager with documentation by evaluating the evidence statements and indicating whether they are sufficient to satisfy the requirements of the compliance control. |
-| **Action** &nbsp; 5.1.15 | In the **Evidence** field, type '**Change request approved for implementing network policies**' (1). Click **Evaluate with watsonx** (2). <br/> <img src="images/4-1-6.png" width="500" /> <br/><br/> The following screen will appear: <br/> <img src="images/4-1-7.png" width="500" /> |
+| **Action** &nbsp; 5.1.15 | In the **Evidence** field, type '**Change request approved for implementing network policies**' (1). Click **Evaluate with watsonx** (2). <br/> <img src="images/5-1-16.png" width="500" /> <br/><br/> The following screen will appear: <br/> <img src="images/5-1-17.png" width="500" /> |
 | **Narration** | Concert uses its deep understanding of the NIST control to verify that this evidence would satisfy the compliance requirements. |
 
 **[Go to top](#top)**
