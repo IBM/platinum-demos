@@ -12,18 +12,6 @@ Click the [**Demo preparation**](demo-preparation) tab for setup instructions.
 
 <summary>Introduction</summary>
 
-Steps are: 
-1. Look at Arena View, filter to specific application 
-2. In the application impact view, review the summary, click on prioritized CVE's 
-3. Review the Priority 1 CVE's, open a ticket 
-4. While fixing the CVE for a specific image we decide to update out of date packages as well, so we go to packages tab, open a ticket for out of date packages 
-5. For the packages and vulnerability tickets I just opened I need to know where to implement the fixes, so I check the repositories tab to get a link to relevant repositories
-6. I then check the images tab to get a link to relevant images to build
-7. Next we will clean up any expiring certificates for our application, check the environments tab
-8. Theres too many certificates here for me to renew, lets set up an automation rule for it in administration > automation 
-9. Once all of this is resolved, I gather evidence from all of it in PDF format and go to compliance assessments and upload it as evidence for each matching control
-
-
 Focus Corp is preparing for a significant release of their finance application. Since financial applications are mission-critical to their customers, it's essential to ensure the software is thoroughly protected against risks before launch.
 
 In this demo, we'll showcase an application-centric approach, demonstrating how Concert can assist in addressing CVEs, outdated packages, expired certificates, and compliance assessments.
