@@ -15,12 +15,6 @@ Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_
 
 ### **CUSTOMER-FACING VIDEOS**
 
-<details markdown="1">
-
-<summary>Placeholder</summary>
-
-Example
-
-</details>
+*6-9 videos*
 
 <p/>
