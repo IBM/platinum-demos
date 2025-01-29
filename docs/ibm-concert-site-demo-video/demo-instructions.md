@@ -7,7 +7,7 @@ layout: demo-instructions
 
 <br/>
 
-### **END-TO-END VIDEO**
+### **ENABLEMENT VIDEO**
 
 Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the end-to-end demo video.
 
@@ -15,6 +15,6 @@ Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_
 
 ### **CUSTOMER-FACING VIDEOS**
 
-*6-9 videos*
+*6-9 videos to bring to customers*
 
 <p/>

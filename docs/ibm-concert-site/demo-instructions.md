@@ -9,7 +9,7 @@ layout: demo-instructions
 
 <details markdown="1">
 
-<summary>End-to-end demo video</summary>
+<summary>Enablement video</summary>
 
 Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the end-to-end demo video.
 
@@ -23,7 +23,7 @@ Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_
 
 <summary>Customer-facing demo videos</summary>
 
-6-9 videos
+*6-9 videos to bring to customers*
 
 </details>
 
@@ -33,7 +33,7 @@ Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_
 
 <summary>Office hours</summary>
 
-Example
+*2 time zones*
 
 </details>
 
@@ -43,7 +43,7 @@ Example
 
 <summary>Data ingestion</summary>
 
-Example
+*Placeholder*
 
 </details>
 
@@ -53,7 +53,9 @@ Example
 
 <summary>Demo environment</summary>
 
-Example
+*Placeholder*
+
+<inline-notification text="The URL will change. Come to this page in order to access the correct URL."></inline-notification>
 
 </details>
 
