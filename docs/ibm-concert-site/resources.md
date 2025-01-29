@@ -55,10 +55,13 @@ Your browser does not support the video tag.
 
 <br/>
 
-| **Name** | **URL** |
+| **Time zones** | **URL** |
 | :--- | :--- |
-| **Technical office hours** <br/><br/> 10:00-10:30 AM ET | Click <a href="https://ec.yourlearning.ibm.com/w3/event/10463907" target="_blank" rel="noreferrer">here</a> to register for the office hours. <br/> |
-| **Technical office hours recordings** | Click <a href="https://ibm.box.com/s/d9pqfta1d986xh31vtjh2wnz00f081bm" target="_blank" rel="noreferrer">here</a> to access previous office hour recordings. <br/> |
+| **Eastern** <br/> 10:00-10:30 AM ET | Click <a href="https://ec.yourlearning.ibm.com/w3/event/10463907" target="_blank" rel="noreferrer">here</a> to register for the office hours. |
+
+<br/>
+
+Click <a href="https://ibm.box.com/s/d9pqfta1d986xh31vtjh2wnz00f081bm" target="_blank" rel="noreferrer">here</a> to access previous office hour recordings.
 
 <br/>
 
