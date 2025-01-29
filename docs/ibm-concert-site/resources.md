@@ -95,9 +95,9 @@ Click <a href="https://ibm.box.com/s/d9pqfta1d986xh31vtjh2wnz00f081bm" target="_
 
 <summary>Demo environment</summary>
 
-<inline-notification text="The URL will change. Come to this page in order to access the correct URL."></inline-notification>
+<inline-notification text="The URL will change. Come to this page in order to access the correct URL. <br/><br/> This is only for demos and internal work. This cannot be used for PoCs."></inline-notification>
 
-| **Name** | **URL** |
+| **Environment** | **URL** |
 | :--- | :--- |
 | **Red environment** | Click <a href="https://9.30.214.214:12443/#/" target="_blank" rel="noreferrer">here</a> <br/> <inline-notification text="Do not load the sample data, as it is already loaded."></inline-notification> |
 | **Blue environment** | Click <a href="https://9.30.213.68:12443/" target="_blank" rel="noreferrer">here</a> <br/> <inline-notification text="Do not load the sample data, as it is already loaded."></inline-notification> |
