@@ -15,7 +15,7 @@ Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_
 
 <inline-notification text="Box tends to have poor resolution when streaming videos. For better results, download the video."></inline-notification>
 
-<video width="1000" height="500" controls>
+<video width="500" height="250" controls>
   <source src="videos/Concert-104-Demo.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
@@ -30,16 +30,16 @@ Your browser does not support the video tag.
 
 <br/>
 
-| **Use Case** | **Video** |
+| **Use case** | **Video** |
 | :--- | :--- |
-| **Software composition** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
-| **Vulnerability** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
-| **Compliance** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
-| **Certificates** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
-| **Resilience** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
-| **Infrastructure insights** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
-| **Inventory** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
-| **Workflows** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
+| **Software composition** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
+| **Vulnerability** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
+| **Compliance** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
+| **Certificates** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
+| **Resilience** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
+| **Infrastructure insights** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
+| **Inventory** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
+| **Workflows** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
 
 </details>
 
@@ -54,7 +54,7 @@ Your browser does not support the video tag.
 | **Name** | **URL** |
 | :--- | :--- |
 | **Technical office hours** | Click <a href="https://ec.yourlearning.ibm.com/w3/event/10463907" target="_blank" rel="noreferrer">here</a> to register for the office hours. <br/> |
-| **Technical office hours recording** | Click <a href="https://ibm.box.com/s/d9pqfta1d986xh31vtjh2wnz00f081bm" target="_blank" rel="noreferrer">here</a> to access previous office hour recordings. <br/> |
+| **Technical office hours recordings** | Click <a href="https://ibm.box.com/s/d9pqfta1d986xh31vtjh2wnz00f081bm" target="_blank" rel="noreferrer">here</a> to access previous office hour recordings. <br/> |
 
 </details>
 
@@ -82,8 +82,6 @@ Your browser does not support the video tag.
 <summary>Demo environment</summary>
 
 <inline-notification text="The URL will change. Come to this page in order to access the correct URL."></inline-notification>
-
-<br/>
 
 | **Name** | **URL** |
 | :--- | :--- |
