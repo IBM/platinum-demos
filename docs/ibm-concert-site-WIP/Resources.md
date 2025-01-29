@@ -83,6 +83,8 @@ Your browser does not support the video tag.
 
 <inline-notification text="The URL will change. Come to this page in order to access the correct URL."></inline-notification>
 
+<br/>
+
 | **Name** | **URL** |
 | :--- | :--- |
 | **Red environment** | Click <a href="https://9.30.214.214:12443/#/" target="_blank" rel="noreferrer">here</a> <br/> |
