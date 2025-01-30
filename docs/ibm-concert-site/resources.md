@@ -7,9 +7,7 @@ layout: resources
 
 <br/>
 
-<details markdown="1">
-
-<summary>Enablement video</summary>
+### **CONCERT 1.0.4 ENABLEMENT VIDEO**
 
 Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the end-to-end demo video in Box.
 
@@ -19,6 +17,48 @@ Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_
   <source src="videos/Concert-104-Demo.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
+
+<br/>
+
+<p/>
+
+### **TECH SELLER DEMO ENVIRONMENT**
+
+For the **Tech Seller demo environment**, click <a href="https://9.30.214.214:12443/#/" target="_blank" rel="noreferrer">here</a>.
+
+IMPORTANT: This environment is specifically for Tech Sales and other IBM technical professionals' demos and self-education. The environment contains a complete set of sample data. DO NOT use this environment for Proof of Concepts. In order to access the demo environment, you MUST be logged into the IBM VPN.
+
+Credentials:
+- Username: concertuser
+- Password: password
+
+Please DO NOT do the following:
+- We have already populated this environment with a complete data set. DO NOT load the sample data. If you click on the tour, click **Close** without loading sample data (**need to confirm words, add screenshot**)
+- DO NOT import data
+- DO NOT create automation rules
+
+Click <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-watsonx" target="_blank" rel="noreferrer">here</a> for TechZone images.
+
+<br/>
+
+<p/>
+
+<details markdown="1">
+
+<summary>Office hours</summary>
+
+<br/>
+
+Anybody can join any sessions, but we've created the following sessions to accommodate various time zones:
+
+| **Regions** | **URL** |
+| :--- | :--- |
+| **Americas & Australia** <br/><br/> Monday 5:00-5:30 PM ET | Click <a href="https://ec.yourlearning.ibm.com/w3/event/10463907" target="_blank" rel="noreferrer">here</a> to register for the office hours. |
+| **Asia & Europe** <br/><br/> Tuesday 9:00-9:30 AM GMT | Click <a href="https://ec.yourlearning.ibm.com/w3/event/10463907" target="_blank" rel="noreferrer">here</a> to register for the office hours. |
+
+<br/>
+
+Click <a href="https://ibm.box.com/s/d9pqfta1d986xh31vtjh2wnz00f081bm" target="_blank" rel="noreferrer">here</a> to access previous office hour recordings.
 
 <br/>
 
@@ -51,30 +91,7 @@ Your browser does not support the video tag.
 
 <details markdown="1">
 
-<summary>Office hours</summary>
-
-<br/>
-
-Anybody can join any sessions, but we've created the following sessions to accommodate various time zones:
-
-| **Regions** | **URL** |
-| :--- | :--- |
-| **Americas & Australia** <br/><br/> Monday 5:00-5:30 PM ET | Click <a href="https://ec.yourlearning.ibm.com/w3/event/10463907" target="_blank" rel="noreferrer">here</a> to register for the office hours. |
-| **Asia & Europe** <br/><br/> Tuesday 9:00-9:30 AM GMT | Click <a href="https://ec.yourlearning.ibm.com/w3/event/10463907" target="_blank" rel="noreferrer">here</a> to register for the office hours. |
-
-<br/>
-
-Click <a href="https://ibm.box.com/s/d9pqfta1d986xh31vtjh2wnz00f081bm" target="_blank" rel="noreferrer">here</a> to access previous office hour recordings.
-
-<br/>
-
-</details>
-
-<p/>
-
-<details markdown="1">
-
-<summary>Data ingestion</summary>
+<summary>Data ingestion demos</summary>
 
 <br/>
 
@@ -93,25 +110,7 @@ Click <a href="https://ibm.box.com/s/d9pqfta1d986xh31vtjh2wnz00f081bm" target="_
 
 <details markdown="1">
 
-<summary>Demo environment</summary>
-
-<inline-notification text="The URL will change. Come to this page in order to access the correct URL. <br/><br/> This is only for demos and internal work. This cannot be used for PoCs."></inline-notification>
-
-| **Environment** | **URL** |
-| :--- | :--- |
-| **Red environment** | Click <a href="https://9.30.214.214:12443/#/" target="_blank" rel="noreferrer">here</a> <br/> <inline-notification text="Do not load the sample data, as it is already loaded."></inline-notification> |
-| **Blue environment** | Click <a href="https://9.30.213.68:12443/" target="_blank" rel="noreferrer">here</a> <br/> <inline-notification text="Do not load the sample data, as it is already loaded."></inline-notification> |
-| **TechZone images** | Click <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-watsonx" target="_blank" rel="noreferrer">here</a> |
-
-<br/>
-
-</details>
-
-<p/>
-
-<details markdown="1">
-
-<summary>Customer spreadsheets</summary>
+<summary>Proof of Value/Proof of Concept materials</summary>
 
 <br/>
 
