@@ -43,24 +43,18 @@ Click <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-imag
 
 <p/>
 
-<details markdown="1">
-
-<summary>Office hours</summary>
-
-<br/>
+### **OFFICE HOURS**
 
 Anybody can join any sessions, but we've created the following sessions to accommodate various time zones:
 
 | **Region** | **URL** |
 | :--- | :--- |
-| **Americas & Australia** <br/><br/> Mondays, 5:00-5:30 PM ET | Click <a href="https://ec.yourlearning.ibm.com/w3/event/10463907" target="_blank" rel="noreferrer">here</a> to register for the office hours. |
-| **Asia & Europe** <br/><br/> Tuesdays, 9:00-9:30 AM GMT | Click <a href="https://ec.yourlearning.ibm.com/w3/event/10463907" target="_blank" rel="noreferrer">here</a> to register for the office hours. |
+| **Americas & Australia** <br/><br/> Mondays, 5:00-5:30 PM ET | Click <a href="https://ec.yourlearning.ibm.com/w3/event/10463907" target="_blank" rel="noreferrer">here</a> to sign up for the office hours. |
+| **Asia & Europe** <br/><br/> Tuesdays, 9:00-9:30 AM GMT | Click <a href="https://ec.yourlearning.ibm.com/w3/event/10463907" target="_blank" rel="noreferrer">here</a> to sign up for the office hours. |
 
 Click <a href="https://ibm.box.com/s/d9pqfta1d986xh31vtjh2wnz00f081bm" target="_blank" rel="noreferrer">here</a> to access previous office hour recordings.
 
 <br/>
-
-</details>
 
 <p/>
 
@@ -68,18 +62,16 @@ Click <a href="https://ibm.box.com/s/d9pqfta1d986xh31vtjh2wnz00f081bm" target="_
 
 <summary>Customer-facing demo videos</summary>
 
-<inline-notification text="If you want a custom version of this video (e.g., a video for vulnerability and compliance), please let us know."></inline-notification>
+<br/>
 
 | **Use case** | **Video** |
 | :--- | :--- |
+| **Primary customer-facing video** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="1000" height="500" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
 | **Software composition** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
-| **Vulnerability** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
 | **Compliance** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
-| **Certificates** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
-| **Resilience** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
 | **Infrastructure insights** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
-| **Inventory** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
-| **Workflows** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
+
+<inline-notification text="If you want a custom version of this video (e.g., a video for vulnerability and compliance), please contact Maryam (maryama@ca.ibm.com)."></inline-notification>
 
 <br/>
 
@@ -116,7 +108,10 @@ Click <a href="https://ibm.box.com/s/d9pqfta1d986xh31vtjh2wnz00f081bm" target="_
 | :--- | :--- |
 | **Vulnerability PoV** | Click <a href="https://ibm.ent.box.com/s/y7gd01k4kxa3szw7fdetyp025thfnjvt" target="_blank" rel="noreferrer">here</a> |
 | **Vulnerability ROI Calculator** | Click <a href="https://ibm.box.com/s/axxx4dlhtjshxueqxss5sly4xvz50f68" target="_blank" rel="noreferrer">here</a> <br/> |
-| **Certificate ROI Calculator** | Click <a href="https://ibm.box.com/s/03hc23ea6n7oadactmi2ko9xnhixcmw5" target="_blank" rel="noreferrer">here</a> |
+| **Certificates ROI Calculator** | Click <a href="https://ibm.box.com/s/03hc23ea6n7oadactmi2ko9xnhixcmw5" target="_blank" rel="noreferrer">here</a> |
+
+Vulnerability tile
+Certificates tile
 
 <br/>
 
