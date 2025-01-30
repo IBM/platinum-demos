@@ -22,6 +22,8 @@ Your browser does not support the video tag.
 
 ### **CUSTOMER-FACING VIDEOS**
 
+<inline-notification text="If you want a custom version of this video (such as a video for vulnerability and compliance), let us know."></inline-notification>
+
 | **Use case** | **Video** |
 | :--- | :--- |
 | **Software composition** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |

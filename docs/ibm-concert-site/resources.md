@@ -30,7 +30,7 @@ Your browser does not support the video tag.
 
 <summary>Customer-facing demo videos</summary>
 
-<br/>
+<inline-notification text="If you want a custom version of this video (such as a video for vulnerability and compliance), let us know."></inline-notification>
 
 | **Use case** | **Video** |
 | :--- | :--- |
