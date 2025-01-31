@@ -9,12 +9,12 @@ layout: resources
 
 ### **TABLE OF CONTENTS**
 
-1. [End-to-end enablement video](#enablement-video)
-2. [Tech Sales demo environment](#demo-environment)
+1. [Concert end-to-end enablement video (1.0.4)](#enablement-video)
+2. [Tech Sales demo environment (Currently 1.0.4)](#demo-environment)
 3. [Technical office hours](#office-hours)
 4. [Customer-facing demo videos](#demo-videos)
-5. [Data ingestion demos](#data-ingestion)
-6. [Concert template on TechZone](#template-techzone)
+5. [Data ingestion demos (Updated for 1.0.4)](#data-ingestion)
+6. [Concert 1.0.4 template on TechZone](#template-techzone)
 7. [Proof of Value/Proof of Concept materials](#pov-poc-materials)
 
 ***
