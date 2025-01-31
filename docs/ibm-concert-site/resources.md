@@ -1,11 +1,24 @@
 ---
-title: IBM Concert <br/> <small> <i> Resources </i> </small>
+title: IBM Concert demo and video technical assets <br/> <small> <i> Demo environment, enablement video, customer-facing videos, office hours </i> </small>
 layout: resources
 ---
 
-<span id="top"></span>
+<span id="table-of-contents"></span>
 
 <br/>
+
+### **TABLE OF CONTENTS**
+
+- [Enablement video](https://ibm.github.io/platinum-demos/ibm-concert-site/resources/enablement-video)
+- Tech seller demo environment
+- Office hours
+- Customer-facing demo videos
+- Data ingestion demos
+- Proof of Value/Proof of Concept materials
+
+<br/>
+
+<span id="enablement-video"></span>
 
 ### **CONCERT 1.0.4 ENABLEMENT VIDEO**
 
@@ -25,6 +38,8 @@ Your browser does not support the video tag.
 
 <p/>
 
+<span id="demo-environment"></span>
+
 ### **TECH SELLER DEMO ENVIRONMENT**
 
 For the **Tech Seller demo environment**:
@@ -43,13 +58,15 @@ Please DO NOT do the following:
 - DO NOT import data
 - DO NOT create automation rules
 
-For Techzone images: 
+For TechZone images: 
 
 <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-watsonx" target="_blank" rel="noreferrer"><button class="ibm-button">Click here</button></a>
 
 <br/>
 
 <p/>
+
+<span id="office-hours"></span>
 
 ### **OFFICE HOURS**
 
@@ -81,11 +98,9 @@ To access previous office hour recordings:
 
 <p/>
 
-<details markdown="1">
+<span id="demo-videos"></span>
 
-<summary>Customer-facing demo videos</summary>
-
-<br/>
+### **CUSTOMER-FACING DEMO VIDEOS**
 
 | **Use case** | **Video** |
 | :--- | :--- |
@@ -98,15 +113,11 @@ To access previous office hour recordings:
 
 <br/>
 
-</details>
-
 <p/>
 
-<details markdown="1">
+<span id="data-ingestion"></span>
 
-<summary>Data ingestion demos</summary>
-
-<br/>
+### **DATA INGESTION DEMOS**
 
 | **Demo** | **URL** |
 | :--- | :--- |
@@ -117,15 +128,11 @@ To access previous office hour recordings:
 
 <br/>
 
-</details>
-
 <p/>
 
-<details markdown="1">
+<span id="pov-poc-materials"></span>
 
-<summary>Proof of Value/Proof of Concept materials</summary>
-
-<br/>
+### **PROOF OF VALUE/PROOF OF CONCEPT MATERIALS**
 
 <div class="tiles-container">
   <div class="tile">
@@ -140,7 +147,5 @@ To access previous office hour recordings:
 </div>
 
 <br/>
-
-</details>
 
 <p/>
