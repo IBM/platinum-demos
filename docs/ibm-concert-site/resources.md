@@ -16,7 +16,8 @@ layout: resources
 3. [Technical office hours](#office-hours)
 4. [Customer-facing demo videos](#demo-videos)
 5. [Data ingestion demos](#data-ingestion)
-6. [Proof of Value/Proof of Concept materials](#pov-poc-materials)
+6. [Concert template on TechZone](#template-techzone)
+7. [Proof of Value/Proof of Concept materials](#pov-poc-materials)
 
 ***
 
@@ -43,27 +44,20 @@ Your browser does not support the video tag.
 
 <br/>
 
-### **2. TECH SALES DEMO ENVIRONMENT**
+### **2. TECH SALES DEMO ENVIRONMENT (CURRENTLY 1.0.4)**
 
-For the **Tech Seller demo environment**:
-
-<a href="https://9.30.214.214:12443/#/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here</button></a>
-
-IMPORTANT: This environment is specifically for Tech Sales and other IBM technical professionals' demos and self-education. The environment contains a complete set of sample data. DO NOT use this environment for Proof of Concepts. In order to access the demo environment, you MUST be logged into the IBM VPN.
+<a href="https://9.30.214.214:12443/#/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here to access the environment</button></a>
 
 Credentials:
 - Username: concertuser
 - Password: password
 
-Please DO NOT do the following:
-- We have already populated this environment with a complete data set. DO NOT load the sample data. If you click on the tour, click **Not now** without loading sample data. <br/> <img src="images/tour.png" width="500" /> <br/>
-<br/>
-- DO NOT import data
-- DO NOT create automation rules
-
-For TechZone images: 
-
-<a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-watsonx" target="_blank" rel="noreferrer"><button class="ibm-button">Click here</button></a>
+Notes:
+- **For Tech Sellers and other IBM technical professionals**: This environment is only for demos and self-education. It should not be used for PoCs.
+- **IBM VPN**: In order to access the demo environment, you MUST be logged into the IBM VPN.
+- **Shared environment**: This is a shared environment. Please DO NOT import data or create automation rules.
+- **Maintenance windows**: This is a persistent environment. We will advertise maintenance windows at the top of this page when we upgrade to each subsequent version.
+- **Sample data**: The environment contains a complete set of sample data. If you open the tour, DO NOT load the default sample data (click <font color="red"> <strong>Not now</strong></font>). <br/> <img src="images/tour-screen.png" width="500" /> <br/>
 
 **[Go to top](#top)**
 
@@ -75,7 +69,7 @@ For TechZone images:
 
 ### **3. TECHNICAL OFFICE HOURS**
 
-Anybody can join any sessions, but we've created the following sessions to accommodate various time zones:
+We hold two office hours per week to accommodate time zones. Please bring your technical questions about demos, the demo environment, data ingestion and other topics.
 
 <!-- | **Region** | **URL** |
 | :--- | :--- |
@@ -85,19 +79,21 @@ Anybody can join any sessions, but we've created the following sessions to accom
 <div class="tiles-container">
   <div class="tile">
     <h3>Americas & Australia</h3>
-    <p>Mondays, 5:00-5:30 PM ET</p>
+    <p><strong>Mondays</strong></p>
+    <p>2:00-2:30 PM Pacific Time</p>
+    <p>5:00-5:30 PM Eastern Time</p>
+    <p>9:00-9:30 AM Australian Eastern Time (Tuesday mornings)</p>
     <p>Click <a href="https://ec.yourlearning.ibm.com/w3/event/10463907" target="_blank" rel="noreferrer">here</a> to sign up for the office hours.</p>
   </div>
   <div class="tile">
-    <h3>Asia & Europe</h3>
-    <p>Tuesdays, 9:00-9:30 AM GMT</p>
+    <h3>Europe & Asia</h3>
+    <p><strong>Tuesdays</strong></p>
+    <p>9:00-9:30 AM Greenwich Mean Time</p>
+    <p>5:00-5:30 PM Singapore Standard Time</p>
+    <p>6:00-6:30 PM Japan Standard Time</p>
     <p>Click <a href="https://ec.yourlearning.ibm.com/w3/event/10463907" target="_blank" rel="noreferrer">here</a> to sign up for the office hours.</p>
   </div>
 </div>
-
-To access previous office hour recordings: 
-
-<a href="https://ibm.box.com/s/d9pqfta1d986xh31vtjh2wnz00f081bm" target="_blank" rel="noreferrer"><button class="ibm-button">Click here</button></a>
 
 **[Go to top](#top)**
 
@@ -111,12 +107,12 @@ To access previous office hour recordings:
 
 | **Use case** | **Video** |
 | :--- | :--- |
-| **Primary customer-facing video** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="1000" height="500" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
+| **Primary customer-facing video** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
 | **Software composition** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
 | **Compliance** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
 | **Infrastructure insights** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
 
-<inline-notification text="If you want a custom version of this video (e.g., a video for vulnerability and compliance), please contact Maryam (maryama@ca.ibm.com)."></inline-notification>
+<inline-notification text="If you need a video with a specific combination of Concert's dimensions (e.g., a video for vulnerability and compliance), please contact Maryam (maryama@ca.ibm.com)."></inline-notification>
 
 **[Go to top](#top)**
 
@@ -126,14 +122,26 @@ To access previous office hour recordings:
 
 <br/>
 
-### **5. DATA INGESTION DEMOS**
+### **5. DATA INGESTION DEMOS (UPDATED FOR 1.0.4)**
 
 | **Demo** | **URL** |
 | :--- | :--- |
-| **Manual data ingestion** | Click <a href="https://ibm.github.io/platinum-demos/tech-sales-enablement-learning-to-ingest-data-into-ibm-concert-manual/pre-requisites" target="_blank" rel="noreferrer">here</a> <br/> |
+| **Manual data ingestion** | *Coming soon* |
 | **Tekton pipeline data ingestion** | Click <a href="https://ibm.github.io/platinum-demos/tech-sales-enablement-learning-to-ingest-data-into-ibm-concert-pipeline/pre-requisites" target="_blank" rel="noreferrer">here</a> |
 | **Customizing a customer's pipeline** | Click <a href="https://ibm.github.io/platinum-demos/tech-sales-enablement-customizing-customers-CICD-pipeline-for-ibm-concert/demo-instructions" target="_blank" rel="noreferrer">here</a> |
-| **Jenkins pipeline data ingestion** | Click <a href="https://ibm.github.io/platinum-demos/tech-sales-enablement-learning-to-ingest-data-into-ibm-concert-jenkins-pipeline/pre-requisites" target="_blank" rel="noreferrer">here</a> |
+| **Jenkins pipeline data ingestion** | *Coming soon* |
+
+**[Go to top](#top)**
+
+<p/>
+
+<span id="template-techzone"></span>
+
+<br/>
+
+### **6. CONCERT 1.0.4 TEMPLATE ON TECHZONE**
+
+<a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-watsonx" target="_blank" rel="noreferrer"><button class="ibm-button">Click here to access the TechZone template</button></a>
 
 **[Go to top](#top)**
 
@@ -143,7 +151,7 @@ To access previous office hour recordings:
 
 <br/>
 
-### **6. PROOF OF VALUE/PROOF OF CONCEPT MATERIALS**
+### **7. PROOF OF VALUE/PROOF OF CONCEPT MATERIALS**
 
 <div class="tiles-container">
   <div class="tile">
@@ -157,8 +165,4 @@ To access previous office hour recordings:
   </div>
 </div>
 
-<br/>
-
 **[Go to top](#top)**
-
-<p/>
