@@ -11,8 +11,8 @@ layout: resources
 
 1. [Tech Sales demo environment (currently 1.0.4)](#demo-environment)
 2. [Concert end-to-end enablement video (1.0.4)](#enablement-video)
-3. [Technical office hours](#office-hours)
-4. [Customer-facing demo videos](#demo-videos)
+3. [Customer-facing demo videos](#demo-videos)
+4. [Technical enablement office hours](#office-hours)
 5. [Data ingestion demos (updated for 1.0.4)](#data-ingestion)
 6. [Concert 1.0.4 template on TechZone](#template-techzone)
 7. [Proof of Value/Proof of Concept materials](#pov-poc-materials)
@@ -61,7 +61,25 @@ Your browser does not support the video tag.
 
 <br/>
 
-### **3. TECHNICAL OFFICE HOURS**
+### **3. CUSTOMER-FACING DEMO VIDEOS**
+
+**Primary customer-facing video** includes gen AI, App360, vulnerability, certificates and workflows:
+
+<a href="https://ibm.box.com/s/l593i35pxfm15o75autig1w8ekttfe6a" target="_blank" rel="noreferrer"><img src="images/customer-facing.jpeg" alt="Primary customer-facing video" style="width: 600px;height: 340px; "></a>
+
+<br/>
+
+| **Use case** | **Video** |
+| :--- | :--- |
+| **Software composition dimension** <br/><br/> Can be shown after primary video (above) for customers interested in software composition | <a href="https://ibm.box.com/s/d80kxmm7aadlnb8wlihtku384dzmczyd" target="_blank" rel="noreferrer"><img src="images/software-composition.jpeg" alt="Software composition" style="width: 400px;height: 225px; "></a> |
+| **Compliance dimension** <br/><br/> Can be shown after primary video (above) for customers interested in compliance | <a href="https://ibm.box.com/s/afax8p4hdkbjajutfn744tsyfjg8fyvv" target="_blank" rel="noreferrer"><img src="images/compliance.jpeg" alt="Compliance" style="width: 400px;height: 225px; "></a> |
+| **Infrastructure insights dimension for z/OS** <br/><br/> Can be shown after primary video (above) for customers interested in infrastructure insights for z/OS | <a href="https://ibm.box.com/s/67kmkijybl0se10r58iyqpc4zakcz4ye" target="_blank" rel="noreferrer"><img src="images/infrastructure-insights.jpeg" alt="Infrastructure insights" style="width: 400px;height: 225px; "></a> |
+
+<inline-notification text="If you need a video with a specific combination of Concert's dimensions (e.g., a video for vulnerability and compliance), please contact Maryam (maryama@ca.ibm.com)."></inline-notification>
+
+<p/>
+
+### **4. TECHNICAL ENABLEMENT OFFICE HOURS**
 
 We hold two office hours per week to accommodate time zones. Please bring your technical questions about demos, the demo environment, data ingestion and other topics.
 
@@ -94,24 +112,6 @@ We hold two office hours per week to accommodate time zones. Please bring your t
 <span id="demo-videos"></span>
 
 <br/>
-
-### **4. CUSTOMER-FACING DEMO VIDEOS**
-
-
-**Primary customer-facing video**
-includes gen AI, App360, vulnerability, certificates and workflows)
-
-<a href="https://ibm.box.com/s/l593i35pxfm15o75autig1w8ekttfe6a" target="_blank" rel="noreferrer"><img src="images/customer-facing.jpeg" alt="Primary customer-facing video" style="width: 1000px;height: 560px; "></a> |
-
-| **Use case** | **Video** |
-| :--- | :--- |
-| **Software composition dimension** <br/><br/> Can be shown after primary video (above) for customers interested in software composition | <a href="https://ibm.box.com/s/d80kxmm7aadlnb8wlihtku384dzmczyd" target="_blank" rel="noreferrer"><img src="images/software-composition.jpeg" alt="Software composition" style="width: 600px;height: 340px; "></a> |
-| **Compliance dimension** <br/><br/> Can be shown after primary video (above) for customers interested in compliance | <a href="https://ibm.box.com/s/afax8p4hdkbjajutfn744tsyfjg8fyvv" target="_blank" rel="noreferrer"><img src="images/compliance.jpeg" alt="Compliance" style="width: 600px;height: 340px; "></a> |
-| **Infrastructure insights dimension for z/OS** <br/><br/> Can be shown after primary video (above) for customers interested in infrastructure insights for z/OS | <a href="https://ibm.box.com/s/67kmkijybl0se10r58iyqpc4zakcz4ye" target="_blank" rel="noreferrer"><img src="images/infrastructure-insights.jpeg" alt="Infrastructure insights" style="width: 600px;height: 340px; "></a> |
-
-<inline-notification text="If you need a video with a specific combination of Concert's dimensions (e.g., a video for vulnerability and compliance), please contact Maryam (maryama@ca.ibm.com)."></inline-notification>
-
-<p/>
 
 <span id="data-ingestion"></span>
 
