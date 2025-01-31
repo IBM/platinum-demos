@@ -105,10 +105,10 @@ We hold two office hours per week to accommodate time zones. Please bring your t
 
 | **Use case** | **Video** |
 | :--- | :--- |
-| **Primary customer-facing video** | <a href="https://ibm.box.com/s/z36zr2a40ogf8wavbznd9ecnmxihlqb4" target="_blank" rel="noreferrer"><img src="images/customer-facing.jpeg" alt="Primary customer-facing video" style="width: 400px;height: 225px; "></a> |
-| **Software composition** | <a href="https://ibm.box.com/s/z36zr2a40ogf8wavbznd9ecnmxihlqb4" target="_blank" rel="noreferrer"><img src="images/software-composition.jpeg" alt="Software composition" style="width: 400px;height: 225px; "></a> |
-| **Compliance** | <a href="https://ibm.box.com/s/z36zr2a40ogf8wavbznd9ecnmxihlqb4" target="_blank" rel="noreferrer"><img src="images/compliance.jpeg" alt="Compliance" style="width: 400px;height: 225px; "></a> |
-| **Infrastructure insights** | <a href="https://ibm.box.com/s/z36zr2a40ogf8wavbznd9ecnmxihlqb4" target="_blank" rel="noreferrer"><img src="images/infrastructure-insights.jpeg" alt="Infrastructure insights" style="width: 400px;height: 225px; "></a> |
+| **Primary customer-facing video** | <a href="https://ibm.box.com/s/l593i35pxfm15o75autig1w8ekttfe6a" target="_blank" rel="noreferrer"><img src="images/customer-facing.jpeg" alt="Primary customer-facing video" style="width: 400px;height: 225px; "></a> |
+| **Software composition** | <a href="https://ibm.box.com/s/d80kxmm7aadlnb8wlihtku384dzmczyd" target="_blank" rel="noreferrer"><img src="images/software-composition.jpeg" alt="Software composition" style="width: 400px;height: 225px; "></a> |
+| **Compliance** | <a href="https://ibm.box.com/s/afax8p4hdkbjajutfn744tsyfjg8fyvv" target="_blank" rel="noreferrer"><img src="images/compliance.jpeg" alt="Compliance" style="width: 400px;height: 225px; "></a> |
+| **Infrastructure insights** | <a href="https://ibm.box.com/s/67kmkijybl0se10r58iyqpc4zakcz4ye" target="_blank" rel="noreferrer"><img src="images/infrastructure-insights.jpeg" alt="Infrastructure insights" style="width: 400px;height: 225px; "></a> |
 
 <inline-notification text="If you need a video with a specific combination of Concert's dimensions (e.g., a video for vulnerability and compliance), please contact Maryam (maryama@ca.ibm.com)."></inline-notification>
 
