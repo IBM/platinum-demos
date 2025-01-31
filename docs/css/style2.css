@@ -1,0 +1,413 @@
+
+@font-face {
+    font-family: "IBM Plex Sans";
+    src: url('fonts/IBMPlexSans-Bold.ttf') format('truetype');
+    src: url('fonts/IBMPlexSans-BoldItaltic.ttf') format('truetype');
+    src: url('fonts/IBMPlexSans-ExtraLight.ttf') format('truetype');
+    src: url('fonts/IBMPlexSans-ExtraLightItalic.ttf') format('truetype');
+    src: url('fonts/IBMPlexSans-Italic.ttf') format('truetype');
+    src: url('fonts/IBMPlexSans-Light.ttf') format('truetype');
+    src: url('fonts/IBMPlexSans-LightItalic.ttf') format('truetype');
+    src: url('fonts/IBMPlexSans-Medium.ttf') format('truetype');
+    src: url('fonts/IBMPlexSans-MediumItalic.ttf') format('truetype');
+    src: url('fonts/IBMPlexSans-Regular.ttf') format('truetype');
+    src: url('fonts/IBMPlexSans-SemiBold.ttf') format('truetype');
+}
+  
+@font-face {
+    font-family: "IBM Plex Sans Light";
+    src: url('fonts/IBMPlexSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "IBM Plex Sans Regular";
+    src: url('fonts/IBMPlexSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "IBM Plex Sans Semi Bold";
+    src: url('fonts/IBMPlexSans-SemiBold.ttf') format('truetype');
+}
+
+body{
+    margin: 0;
+    background-color: #F4F4F4;
+}
+
+h1{
+    font-weight: 300;
+    font-family: "IBM Plex Sans Light","Helvetica Neue",Arial,sans-serif;
+    font-size: 100%;
+    font-size: 60px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+h3{
+    font-family: "IBM Plex Sans Semi Bold","Helvetica Neue",Arial,sans-serif;
+    font-size: 16pt;
+}
+
+strong{
+    font-family: "IBM Plex Sans Semi Bold","Helvetica Neue",Arial,sans-serif;
+}
+
+li{
+    padding-left: 4px;
+    padding-right: 32px;
+}
+
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    background: #000;
+}
+
+header{
+    font-size: 64pt;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    height: 47px;
+    align-items: center;
+    border-bottom: 1px solid #393939;
+    background-color: #161616;
+}
+
+.demo-header {
+    box-sizing: border-box;
+    padding: 0;
+    padding-left: 32px;
+    height: 320px;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #393939;
+    margin: 0;
+    padding-bottom: 32px;
+    vertical-align: baseline;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    line-height: 1.17;
+    letter-spacing: 0;
+}
+
+.ibm-button {
+    background-color: #0061f2; /* IBM blue */
+    color: white;
+    border: none;
+    padding: 24px 124px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px; /* Slight rounding of the corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.ibm-button:hover {
+    background-color: #004bb5; /* Darker blue for hover effect */
+}
+  
+.ibm-button:active {
+    background-color: #003c8b; /* Even darker blue for when clicked */
+}
+
+.tiles-container {
+    display: flex; /* Flexbox to arrange tiles side by side */
+    gap: 20px; /* Space between the tiles */
+    justify-content: center; /* Center the tiles horizontally */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+  
+.tile {
+    background-color: white; /* Light background color */
+    border: 1px solid #ddd; /* Light border for the tile */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the tile */
+    width: 45%; /* Each tile takes up 45% of the container's width */
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+    text-align: center; /* Center the content inside the tile */
+    font-family: Arial, sans-serif; /* Use a clean, sans-serif font */
+}
+  
+.tile h3 {
+    font-size: 18px; /* Slightly larger heading font size */
+    font-weight: bold; /* Make the region title bold */
+    margin-bottom: 10px; /* Space below the heading */
+}
+  
+.tile p {
+    font-size: 14px; /* Adjust paragraph text size */
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
+a {
+    color: #0061f2; /* IBM blue for the link */
+    text-decoration: none; /* Remove underline */
+}
+  
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.header-buttons {
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    height: 43px;
+    border-bottom: 1px solid #393939;
+    background-color: #000; 
+    padding-left: 32px;
+    color: #fff;
+}
+
+.header-button {
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    background-color: #000; 
+    padding-left: 5px;
+    margin: 0;
+    width: 210px;
+    color: #fff;
+}
+
+.header-button:hover {
+    background-color: #393939; 
+}
+
+.header-button-selected {
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    background-color: #393939; 
+    border-top-color: #0f62fe;
+    border-top-style: solid;
+    border-top-width: 2.6666666px;
+    padding-left: 5px;
+    margin: 0;
+    width: 210px;
+    color: #fff;
+    
+}
+
+.white-text{
+    color: #fff;
+    margin: auto;
+    margin-left: 10px;
+    font-family: "IBM Plex Sans Regular","Helvetica Neue",Arial,sans-serif;
+    font-size: 16px;
+    text-decoration: solid;
+    text-align: left;
+    display: block;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 20px;
+}
+
+.banner{
+    padding-top: 70px;
+    padding-left: 32px;
+}
+
+.banner-image{
+    max-width: 90%;
+    height: auto;
+    max-height: 210px;
+    margin-top: 0px;
+}
+
+img{
+    margin-top: 20px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table :is(th) 
+{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
+
+table :is(td){
+    background-color: #f4f4f4;
+    border-bottom-color: black;
+    border-bottom-width: 0.666667px;
+    border-bottom-style: solid;
+}
+
+table :is(td, th) 
+{
+    font-family: "IBM Plex Sans Regular","Helvetica Neue",Arial,sans-serif;
+    font-size: 14px;
+    min-width: 130px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+    vertical-align: top;
+
+}
+
+.table_component table {
+    border-collapse: collapse;
+}
+
+.table_component th {
+    background-color: #808080;
+    color: white;
+    text-align: left;
+}
+
+.table_component td {
+    font-family: "IBM Plex Sans Regular","Helvetica Neue",Arial,sans-serif;
+    font-size: 14px;
+    min-width: 130px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+    vertical-align: top;
+}
+
+.table_component :is(td, th)
+{
+    font-family: "IBM Plex Sans Regular","Helvetica Neue",Arial,sans-serif;
+    font-size: 14px;
+    min-width: 130px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+    vertical-align: top;
+}
+
+.main-body{
+    padding-left: 32px;
+    font-family: "IBM Plex Sans Regular","Helvetica Neue",Arial,sans-serif;
+}
+
+summary{
+    padding: 4px;
+    background-color: #E0E0E0;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: "IBM Plex Sans Light","Helvetica Neue",Arial,sans-serif;
+}
+
+p{
+    font-family: "IBM Plex Sans Regular","Helvetica Neue",Arial,sans-serif;
+    font-size: 16px;
+}
+
+hr{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.inline-notification {
+    display: flex;
+    justify-content: space-between;
+    padding: .75rem 1rem;
+    min-height: 2.5rem;
+    background: #edf5ff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.inline-notification--info {
+    border: 1px solid #0043CE;
+    border-left-width: 2.4px
+}
+
+.inline-notification__details {
+    display: flex;
+    align-items: center
+}
+
+.inline-notification__icon {
+    height: 20px;
+    width: 20px;
+    min-width: 22px;
+    fill: #0043CE
+}
+
+.inline-notification__text-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 1rem
+}
+
+.inline-notification__text {
+    color: #000000;
+    font-family: "IBM Plex Sans Regular","Helvetica Neue",Arial,sans-serif;
+    font-size: 14px;
+}
+
+.code-block{
+    background: #808080;
+    color: #FFFFFF;
+    border-color: #000;
+    position: relative; 
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: nowrap;
+}
+
+.code-text{
+    flex: 1;
+    padding-left: 16px; 
+}
+
+.copy-icon{
+    position: absolute;
+    position: absolute; 
+    bottom: 2px;
+    right: 2px;
+}
+
+.copy-icon-image{
+    padding-top: 6px
+}
+
+.copy-button{
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    color: white;
+    border: 0;
+}
+
+.copy-button:hover {
+    background-color: #393939; 
+}
+
+.popuptext {
+    opacity: 0;
+    width: 80px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    left: 50%;
+    margin-left: -80px;
+    top: 125%;
+}
