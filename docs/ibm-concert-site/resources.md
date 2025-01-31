@@ -3,8 +3,6 @@ title: IBM Concert demo and video technical assets <br/> <small> <i> </i> </smal
 layout: resources
 ---
 
-<span id="top"></span>
-
 <span id="table-of-contents"></span>
 
 <br/>
@@ -36,7 +34,7 @@ style="width: 400px;height: 225px; "></a>
 Your browser does not support the video tag.
 </video> -->
 
-**[Go to top](#top)**
+**[Go to top](#table-of-contents)**
 
 <p/>
 
@@ -59,7 +57,7 @@ Notes:
 - **Maintenance windows**: This is a persistent environment. We will advertise maintenance windows at the top of this page when we upgrade to each subsequent version.
 - **Sample data**: The environment contains a complete set of sample data. If you open the tour, DO NOT load the default sample data (click <font color="red"> <strong>Not now</strong></font>). <br/> <img src="images/tour-screen.png" width="500" /> <br/>
 
-**[Go to top](#top)**
+**[Go to top](#table-of-contents)**
 
 <p/>
 
@@ -95,7 +93,7 @@ We hold two office hours per week to accommodate time zones. Please bring your t
   </div>
 </div>
 
-**[Go to top](#top)**
+**[Go to top](#table-of-contents)**
 
 <p/>
 
@@ -114,7 +112,7 @@ We hold two office hours per week to accommodate time zones. Please bring your t
 
 <inline-notification text="If you need a video with a specific combination of Concert's dimensions (e.g., a video for vulnerability and compliance), please contact Maryam (maryama@ca.ibm.com)."></inline-notification>
 
-**[Go to top](#top)**
+**[Go to top](#table-of-contents)**
 
 <p/>
 
@@ -131,7 +129,7 @@ We hold two office hours per week to accommodate time zones. Please bring your t
 | **Customizing a customer's pipeline** | Click <a href="https://ibm.github.io/platinum-demos/tech-sales-enablement-customizing-customers-CICD-pipeline-for-ibm-concert/demo-instructions" target="_blank" rel="noreferrer">here</a> |
 | **Jenkins pipeline data ingestion** | *Coming soon* |
 
-**[Go to top](#top)**
+**[Go to top](#table-of-contents)**
 
 <p/>
 
@@ -143,7 +141,7 @@ We hold two office hours per week to accommodate time zones. Please bring your t
 
 <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-watsonx" target="_blank" rel="noreferrer"><button class="ibm-button">Click here to access the TechZone template</button></a>
 
-**[Go to top](#top)**
+**[Go to top](#table-of-contents)**
 
 <p/>
 
@@ -165,4 +163,4 @@ We hold two office hours per week to accommodate time zones. Please bring your t
   </div>
 </div>
 
-**[Go to top](#top)**
+**[Go to top](#table-of-contents)**
