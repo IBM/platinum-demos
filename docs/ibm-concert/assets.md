@@ -9,11 +9,11 @@ layout: resources
 
 ### **TABLE OF CONTENTS**
 
-1. [Tech Sales demo environment (Currently 1.0.4)](#demo-environment)
+1. [Tech Sales demo environment (currently 1.0.4)](#demo-environment)
 2. [Concert end-to-end enablement video (1.0.4)](#enablement-video)
 3. [Technical office hours](#office-hours)
 4. [Customer-facing demo videos](#demo-videos)
-5. [Data ingestion demos (Updated for 1.0.4)](#data-ingestion)
+5. [Data ingestion demos (updated for 1.0.4)](#data-ingestion)
 6. [Concert 1.0.4 template on TechZone](#template-techzone)
 7. [Proof of Value/Proof of Concept materials](#pov-poc-materials)
 
@@ -25,20 +25,18 @@ layout: resources
 
 ### **1. TECH SALES DEMO ENVIRONMENT (CURRENTLY 1.0.4)**
 
-<a href="https://9.30.214.214:12443/#/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here to access the environment</button></a>
-
 Credentials:
 - Username: concertuser
 - Password: password
 
-Notes:
+<a href="https://9.30.214.214:12443/#/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here to access the environment</button></a>
+
+Important notes:
 - **For Tech Sellers and other IBM technical professionals**: This environment is only for demos and self-education. It should not be used for PoCs.
 - **IBM VPN**: In order to access the demo environment, you MUST be logged into the IBM VPN.
 - **Shared environment**: This is a shared environment. Please DO NOT import data or create automation rules.
 - **Maintenance windows**: This is a persistent environment. We will advertise maintenance windows at the top of this page when we upgrade to each subsequent version.
 - **Sample data**: The environment contains a complete set of sample data. If you open the tour, DO NOT load the default sample data (click <font color="red"> <strong>Not now</strong></font>). <br/> <img src="images/tour-screen.png" width="500" /> <br/>
-
-**[Go to top](#table-of-contents)**
 
 <p/>
 
@@ -50,14 +48,12 @@ Notes:
 
 Comprehensive video that covers all dimensions of IBM Concert 1.0.4: <br/> <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer"><img
 src="images/title-video.jpeg" alt="Concert 1.0.4 end-to-end enablement video"
-style="width: 400px;height: 225px; "></a>
+style="width: 600px;height: 340px; "></a>
 
 <!-- <video width="500" height="250" controls>
   <source src="videos/Concert-104-Demo.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video> -->
-
-**[Go to top](#table-of-contents)**
 
 <p/>
 
@@ -93,8 +89,6 @@ We hold two office hours per week to accommodate time zones. Please bring your t
   </div>
 </div>
 
-**[Go to top](#table-of-contents)**
-
 <p/>
 
 <span id="demo-videos"></span>
@@ -103,16 +97,19 @@ We hold two office hours per week to accommodate time zones. Please bring your t
 
 ### **4. CUSTOMER-FACING DEMO VIDEOS**
 
+
+**Primary customer-facing video**
+includes gen AI, App360, vulnerability, certificates and workflows)
+
+<a href="https://ibm.box.com/s/l593i35pxfm15o75autig1w8ekttfe6a" target="_blank" rel="noreferrer"><img src="images/customer-facing.jpeg" alt="Primary customer-facing video" style="width: 1000px;height: 560px; "></a> |
+
 | **Use case** | **Video** |
 | :--- | :--- |
-| **Primary customer-facing video** | <a href="https://ibm.box.com/s/l593i35pxfm15o75autig1w8ekttfe6a" target="_blank" rel="noreferrer"><img src="images/customer-facing.jpeg" alt="Primary customer-facing video" style="width: 400px;height: 225px; "></a> |
-| **Software composition** | <a href="https://ibm.box.com/s/d80kxmm7aadlnb8wlihtku384dzmczyd" target="_blank" rel="noreferrer"><img src="images/software-composition.jpeg" alt="Software composition" style="width: 400px;height: 225px; "></a> |
-| **Compliance** | <a href="https://ibm.box.com/s/afax8p4hdkbjajutfn744tsyfjg8fyvv" target="_blank" rel="noreferrer"><img src="images/compliance.jpeg" alt="Compliance" style="width: 400px;height: 225px; "></a> |
-| **Infrastructure insights** | <a href="https://ibm.box.com/s/67kmkijybl0se10r58iyqpc4zakcz4ye" target="_blank" rel="noreferrer"><img src="images/infrastructure-insights.jpeg" alt="Infrastructure insights" style="width: 400px;height: 225px; "></a> |
+| **Software composition dimension** <br/><br/> Can be shown after primary video (above) for customers interested in software composition | <a href="https://ibm.box.com/s/d80kxmm7aadlnb8wlihtku384dzmczyd" target="_blank" rel="noreferrer"><img src="images/software-composition.jpeg" alt="Software composition" style="width: 600px;height: 340px; "></a> |
+| **Compliance dimension** <br/><br/> Can be shown after primary video (above) for customers interested in compliance | <a href="https://ibm.box.com/s/afax8p4hdkbjajutfn744tsyfjg8fyvv" target="_blank" rel="noreferrer"><img src="images/compliance.jpeg" alt="Compliance" style="width: 600px;height: 340px; "></a> |
+| **Infrastructure insights dimension for z/OS** <br/><br/> Can be shown after primary video (above) for customers interested in infrastructure insights for z/OS | <a href="https://ibm.box.com/s/67kmkijybl0se10r58iyqpc4zakcz4ye" target="_blank" rel="noreferrer"><img src="images/infrastructure-insights.jpeg" alt="Infrastructure insights" style="width: 600px;height: 340px; "></a> |
 
 <inline-notification text="If you need a video with a specific combination of Concert's dimensions (e.g., a video for vulnerability and compliance), please contact Maryam (maryama@ca.ibm.com)."></inline-notification>
-
-**[Go to top](#table-of-contents)**
 
 <p/>
 
@@ -124,12 +121,10 @@ We hold two office hours per week to accommodate time zones. Please bring your t
 
 | **Demo** | **URL** |
 | :--- | :--- |
-| **Manual data ingestion** | *Coming soon* |
-| **Tekton pipeline data ingestion** | Click <a href="https://ibm.github.io/platinum-demos/tech-sales-enablement-learning-to-ingest-data-into-ibm-concert-pipeline/pre-requisites" target="_blank" rel="noreferrer">here</a> |
-| **Customizing a customer's pipeline** | Click <a href="https://ibm.github.io/platinum-demos/tech-sales-enablement-customizing-customers-CICD-pipeline-for-ibm-concert/demo-instructions" target="_blank" rel="noreferrer">here</a> |
-| **Jenkins pipeline data ingestion** | *Coming soon* |
-
-**[Go to top](#table-of-contents)**
+| Manual data ingestion | *Coming soon* |
+| Tekton pipeline data ingestion | Click <a href="https://ibm.github.io/platinum-demos/tech-sales-enablement-learning-to-ingest-data-into-ibm-concert-pipeline/pre-requisites" target="_blank" rel="noreferrer">here</a> |
+| Customizing a customer's pipeline | Click <a href="https://ibm.github.io/platinum-demos/tech-sales-enablement-customizing-customers-CICD-pipeline-for-ibm-concert/demo-instructions" target="_blank" rel="noreferrer">here</a> |
+| Jenkins pipeline data ingestion | *Coming soon* |
 
 <p/>
 
@@ -140,8 +135,6 @@ We hold two office hours per week to accommodate time zones. Please bring your t
 ### **6. CONCERT 1.0.4 TEMPLATE ON TECHZONE**
 
 <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-watsonx" target="_blank" rel="noreferrer"><button class="ibm-button">Click here to access the TechZone template</button></a>
-
-**[Go to top](#table-of-contents)**
 
 <p/>
 
