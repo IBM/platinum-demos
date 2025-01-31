@@ -81,7 +81,7 @@ We hold two office hours per week to accommodate time zones. Please bring your t
     <p>2:00-2:30 PM Pacific Time</p>
     <p>5:00-5:30 PM Eastern Time</p>
     <p>9:00-9:30 AM Australian Eastern Time (Tuesday mornings)</p>
-    <p>Click <a href="https://ec.yourlearning.ibm.com/w3/event/10463907" target="_blank" rel="noreferrer">here</a> to sign up for the office hours.</p>
+    <p>Click <a href="https://ec.yourlearning.ibm.com/w3/meeting/10488384" target="_blank" rel="noreferrer">here</a> to sign up for the office hours.</p>
   </div>
   <div class="tile">
     <h3>Europe & Asia</h3>
@@ -89,7 +89,7 @@ We hold two office hours per week to accommodate time zones. Please bring your t
     <p>9:00-9:30 AM Greenwich Mean Time</p>
     <p>5:00-5:30 PM Singapore Standard Time</p>
     <p>6:00-6:30 PM Japan Standard Time</p>
-    <p>Click <a href="https://ec.yourlearning.ibm.com/w3/event/10463907" target="_blank" rel="noreferrer">here</a> to sign up for the office hours.</p>
+    <p>Click <a href="https://ec.yourlearning.ibm.com/w3/meeting/10488386" target="_blank" rel="noreferrer">here</a> to sign up for the office hours.</p>
   </div>
 </div>
 
