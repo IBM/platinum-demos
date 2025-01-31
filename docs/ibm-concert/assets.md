@@ -42,9 +42,7 @@ Important notes about the demo environment:
 
 ### **2. Concert end-to-end enablement video (v1.0.4)**
 
-Comprehensive video that covers all dimensions of IBM Concert v1.0.4: <br/> <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer"><img
-src="images/title-video.jpeg" alt="Concert v1.0.4 end-to-end enablement video"
-style="width: 600px;height: 340px; "></a>
+Comprehensive video that covers all dimensions of IBM Concert v1.0.4: <br/> <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer"><img src="images/title-video.jpeg" alt="Concert v1.0.4 end-to-end enablement video" style="width: 600px;height: 340px; "></a>
 
 <!-- <video width="500" height="250" controls>
   <source src="videos/Concert-104-Demo.mp4" type="video/mp4">
@@ -59,11 +57,7 @@ Your browser does not support the video tag.
 
 ### **3. Customer-facing demo videos**
 
-Primary customer-facing video that includes gen AI, App360, vulnerability, certificates and workflows:
-
-<a href="https://ibm.box.com/s/l593i35pxfm15o75autig1w8ekttfe6a" target="_blank" rel="noreferrer"><img src="images/customer-facing.jpeg" alt="Primary customer-facing video" style="width: 600px;height: 340px; "></a>
-
-<br/>
+Primary customer-facing video that includes gen AI, App360, vulnerability, certificates and workflows: <br/> <a href="https://ibm.box.com/s/l593i35pxfm15o75autig1w8ekttfe6a" target="_blank" rel="noreferrer"><img src="images/customer-facing.jpeg" alt="Primary customer-facing video" style="width: 600px;height: 340px; "></a>
 
 | Additional customer-facing videos (for dimensions not covered in the primary video above) |  |
 | :--- | :--- |
