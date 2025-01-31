@@ -33,7 +33,7 @@ Credentials:
 - Password: password
 
 Please DO NOT do the following:
-- We have already populated this environment with a complete data set. DO NOT load the sample data. If you click on the tour, click **Close** without loading sample data (**need to confirm words, add screenshot**)
+- We have already populated this environment with a complete data set. DO NOT load the sample data. If you click on the tour, click **Close** without loading sample data (**need to confirm words**)
 - DO NOT import data
 - DO NOT create automation rules
 
@@ -109,9 +109,6 @@ Click <a href="https://ibm.box.com/s/d9pqfta1d986xh31vtjh2wnz00f081bm" target="_
 | **Vulnerability PoV** | Click <a href="https://ibm.ent.box.com/s/y7gd01k4kxa3szw7fdetyp025thfnjvt" target="_blank" rel="noreferrer">here</a> |
 | **Vulnerability ROI Calculator** | Click <a href="https://ibm.box.com/s/axxx4dlhtjshxueqxss5sly4xvz50f68" target="_blank" rel="noreferrer">here</a> <br/> |
 | **Certificates ROI Calculator** | Click <a href="https://ibm.box.com/s/03hc23ea6n7oadactmi2ko9xnhixcmw5" target="_blank" rel="noreferrer">here</a> |
-
-Vulnerability tile
-Certificates tile
 
 <br/>
 
