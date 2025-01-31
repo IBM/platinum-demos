@@ -9,8 +9,8 @@ layout: resources
 
 ### **TABLE OF CONTENTS**
 
-1. [Concert end-to-end enablement video (1.0.4)](#enablement-video)
-2. [Tech Sales demo environment (Currently 1.0.4)](#demo-environment)
+1. [Tech Sales demo environment (Currently 1.0.4)](#demo-environment)
+2. [Concert end-to-end enablement video (1.0.4)](#enablement-video)
 3. [Technical office hours](#office-hours)
 4. [Customer-facing demo videos](#demo-videos)
 5. [Data ingestion demos (Updated for 1.0.4)](#data-ingestion)
@@ -19,30 +19,11 @@ layout: resources
 
 ***
 
-<span id="enablement-video"></span>
-
-<br/>
-
-### **1. CONCERT END-TO-END ENABLEMENT VIDEO (1.0.4)**
-
-Comprehensive video that covers all dimensions of IBM Concert 1.0.4: <br/> <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer"><img
-src="images/title-video.jpeg" alt="Concert 1.0.4 end-to-end enablement video"
-style="width: 400px;height: 225px; "></a>
-
-<!-- <video width="500" height="250" controls>
-  <source src="videos/Concert-104-Demo.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video> -->
-
-**[Go to top](#table-of-contents)**
-
-<p/>
-
 <span id="demo-environment"></span>
 
 <br/>
 
-### **2. TECH SALES DEMO ENVIRONMENT (CURRENTLY 1.0.4)**
+### **1. TECH SALES DEMO ENVIRONMENT (CURRENTLY 1.0.4)**
 
 <a href="https://9.30.214.214:12443/#/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here to access the environment</button></a>
 
@@ -56,6 +37,25 @@ Notes:
 - **Shared environment**: This is a shared environment. Please DO NOT import data or create automation rules.
 - **Maintenance windows**: This is a persistent environment. We will advertise maintenance windows at the top of this page when we upgrade to each subsequent version.
 - **Sample data**: The environment contains a complete set of sample data. If you open the tour, DO NOT load the default sample data (click <font color="red"> <strong>Not now</strong></font>). <br/> <img src="images/tour-screen.png" width="500" /> <br/>
+
+**[Go to top](#table-of-contents)**
+
+<p/>
+
+<span id="enablement-video"></span>
+
+<br/>
+
+### **2. CONCERT END-TO-END ENABLEMENT VIDEO (1.0.4)**
+
+Comprehensive video that covers all dimensions of IBM Concert 1.0.4: <br/> <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer"><img
+src="images/title-video.jpeg" alt="Concert 1.0.4 end-to-end enablement video"
+style="width: 400px;height: 225px; "></a>
+
+<!-- <video width="500" height="250" controls>
+  <source src="videos/Concert-104-Demo.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video> -->
 
 **[Go to top](#table-of-contents)**
 
