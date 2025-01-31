@@ -28,7 +28,7 @@ layout: resources
 ### **1. CONCERT END-TO-END ENABLEMENT VIDEO (1.0.4)**
 
 Comprehensive video that covers all dimensions of IBM Concert 1.0.4: <br/> <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer"><img
-src="images/title-video.jpg" alt="Concert 1.0.4 end-to-end enablement video"
+src="images/title-video.jpeg" alt="Concert 1.0.4 end-to-end enablement video"
 style="width: 400px;height: 225px; "></a>
 
 <!-- <video width="500" height="250" controls>
@@ -107,10 +107,10 @@ We hold two office hours per week to accommodate time zones. Please bring your t
 
 | **Use case** | **Video** |
 | :--- | :--- |
-| **Primary customer-facing video** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
-| **Software composition** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
-| **Compliance** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
-| **Infrastructure insights** | Click <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer">here</a> to access the video in Box. <br/><br/> <video width="500" height="250" controls> <source src="videos/Concert-104-Demo.mp4" type="video/mp4"> Your browser does not support the video tag. </video> |
+| **Primary customer-facing video** | <a href="https://ibm.box.com/s/z36zr2a40ogf8wavbznd9ecnmxihlqb4" target="_blank" rel="noreferrer"><img src="images/customer-facing.jpeg" alt="Primary customer-facing video" style="width: 400px;height: 225px; "></a> |
+| **Software composition** | <a href="https://ibm.box.com/s/z36zr2a40ogf8wavbznd9ecnmxihlqb4" target="_blank" rel="noreferrer"><img src="images/software-composition.jpeg" alt="Software composition" style="width: 400px;height: 225px; "></a> |
+| **Compliance** | <a href="https://ibm.box.com/s/z36zr2a40ogf8wavbznd9ecnmxihlqb4" target="_blank" rel="noreferrer"><img src="images/compliance.jpeg" alt="Compliance" style="width: 400px;height: 225px; "></a> |
+| **Infrastructure insights** | <a href="https://ibm.box.com/s/z36zr2a40ogf8wavbznd9ecnmxihlqb4" target="_blank" rel="noreferrer"><img src="images/infrastructure-insights.jpeg" alt="Infrastructure insights" style="width: 400px;height: 225px; "></a> |
 
 <inline-notification text="If you need a video with a specific combination of Concert's dimensions (e.g., a video for vulnerability and compliance), please contact Maryam (maryama@ca.ibm.com)."></inline-notification>
 
