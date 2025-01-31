@@ -38,7 +38,8 @@ Credentials:
 - Password: password
 
 Please DO NOT do the following:
-- We have already populated this environment with a complete data set. DO NOT load the sample data. If you click on the tour, click **Close** without loading sample data (**need to confirm words**)
+- We have already populated this environment with a complete data set. DO NOT load the sample data. If you click on the tour, click **Not now** without loading sample data. <br/> <img src="images/tour.png" width="500" /> <br/>
+<br/>
 - DO NOT import data
 - DO NOT create automation rules
 
