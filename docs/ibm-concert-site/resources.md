@@ -1,7 +1,9 @@
 ---
-title: IBM Concert demo and video technical assets <br/> <small> <i> Demo environment, enablement video, customer-facing videos, office hours </i> </small>
+title: IBM Concert demo and video technical assets <br/> <small> <i> </i> </small>
 layout: resources
 ---
+
+<span id="top"></span>
 
 <span id="table-of-contents"></span>
 
@@ -9,38 +11,39 @@ layout: resources
 
 ### **TABLE OF CONTENTS**
 
-- [Enablement video](https://ibm.github.io/platinum-demos/ibm-concert-site/resources/enablement-video)
-- Tech seller demo environment
-- Office hours
-- Customer-facing demo videos
-- Data ingestion demos
-- Proof of Value/Proof of Concept materials
+1. [End-to-end enablement video](#enablement-video)
+2. [Tech Sales demo environment](#demo-environment)
+3. [Technical office hours](#office-hours)
+4. [Customer-facing demo videos](#demo-videos)
+5. [Data ingestion demos](#data-ingestion)
+6. [Proof of Value/Proof of Concept materials](#pov-poc-materials)
 
-<br/>
+***
 
 <span id="enablement-video"></span>
 
-### **CONCERT 1.0.4 ENABLEMENT VIDEO**
+<br/>
 
-<inline-notification text="Box tends to have poor resolution when streaming videos. For better results, download the video."></inline-notification>
+### **1. CONCERT END-TO-END ENABLEMENT VIDEO (1.0.4)**
 
-To access the end-to-end demo video in Box:
-
-<a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer"><button class="ibm-button">Click here</button></a>
-
+Comprehensive video that covers all dimensions of IBM Concert 1.0.4: <br/> <a href="https://ibm.box.com/s/y9x9n4bafsgtnaxadr513uttrpk0yafi" target="_blank" rel="noreferrer"><img
+src="images/title-video.jpg" alt="Concert 1.0.4 end-to-end enablement video"
+style="width: 400px;height: 225px; "></a>
 
 <!-- <video width="500" height="250" controls>
   <source src="videos/Concert-104-Demo.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video> -->
 
-<br/>
+**[Go to top](#top)**
 
 <p/>
 
 <span id="demo-environment"></span>
 
-### **TECH SELLER DEMO ENVIRONMENT**
+<br/>
+
+### **2. TECH SALES DEMO ENVIRONMENT**
 
 For the **Tech Seller demo environment**:
 
@@ -62,13 +65,15 @@ For TechZone images:
 
 <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-watsonx" target="_blank" rel="noreferrer"><button class="ibm-button">Click here</button></a>
 
-<br/>
+**[Go to top](#top)**
 
 <p/>
 
 <span id="office-hours"></span>
 
-### **OFFICE HOURS**
+<br/>
+
+### **3. TECHNICAL OFFICE HOURS**
 
 Anybody can join any sessions, but we've created the following sessions to accommodate various time zones:
 
@@ -94,13 +99,15 @@ To access previous office hour recordings:
 
 <a href="https://ibm.box.com/s/d9pqfta1d986xh31vtjh2wnz00f081bm" target="_blank" rel="noreferrer"><button class="ibm-button">Click here</button></a>
 
-<br/>
+**[Go to top](#top)**
 
 <p/>
 
 <span id="demo-videos"></span>
 
-### **CUSTOMER-FACING DEMO VIDEOS**
+<br/>
+
+### **4. CUSTOMER-FACING DEMO VIDEOS**
 
 | **Use case** | **Video** |
 | :--- | :--- |
@@ -111,13 +118,15 @@ To access previous office hour recordings:
 
 <inline-notification text="If you want a custom version of this video (e.g., a video for vulnerability and compliance), please contact Maryam (maryama@ca.ibm.com)."></inline-notification>
 
-<br/>
+**[Go to top](#top)**
 
 <p/>
 
 <span id="data-ingestion"></span>
 
-### **DATA INGESTION DEMOS**
+<br/>
+
+### **5. DATA INGESTION DEMOS**
 
 | **Demo** | **URL** |
 | :--- | :--- |
@@ -126,13 +135,15 @@ To access previous office hour recordings:
 | **Customizing a customer's pipeline** | Click <a href="https://ibm.github.io/platinum-demos/tech-sales-enablement-customizing-customers-CICD-pipeline-for-ibm-concert/demo-instructions" target="_blank" rel="noreferrer">here</a> |
 | **Jenkins pipeline data ingestion** | Click <a href="https://ibm.github.io/platinum-demos/tech-sales-enablement-learning-to-ingest-data-into-ibm-concert-jenkins-pipeline/pre-requisites" target="_blank" rel="noreferrer">here</a> |
 
-<br/>
+**[Go to top](#top)**
 
 <p/>
 
 <span id="pov-poc-materials"></span>
 
-### **PROOF OF VALUE/PROOF OF CONCEPT MATERIALS**
+<br/>
+
+### **6. PROOF OF VALUE/PROOF OF CONCEPT MATERIALS**
 
 <div class="tiles-container">
   <div class="tile">
@@ -147,5 +158,7 @@ To access previous office hour recordings:
 </div>
 
 <br/>
+
+**[Go to top](#top)**
 
 <p/>
