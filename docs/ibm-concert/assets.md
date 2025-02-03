@@ -65,7 +65,7 @@ Primary customer-facing video that includes gen AI, App360, vulnerability, certi
 | Compliance dimension | <a href="https://ibm.box.com/s/afax8p4hdkbjajutfn744tsyfjg8fyvv" target="_blank" rel="noreferrer"><img src="images/compliance.jpeg" alt="Compliance" style="width: 300px;height: 170px; "></a> |
 | Infrastructure insights dimension (for z/OS) | <a href="https://ibm.box.com/s/67kmkijybl0se10r58iyqpc4zakcz4ye" target="_blank" rel="noreferrer"><img src="images/infrastructure-insights.jpeg" alt="Infrastructure insights" style="width: 300px;height: 170px; "></a> |
 
-<inline-notification text="If you need a video with a specific combination of Concert's dimensions (e.g., a video for vulnerability and compliance), please contact Maryam (maryama@ca.ibm.com)."></inline-notification>
+<inline-notification text="If you need a video with a specific combination of Concert's dimensions (e.g., a video for vulnerability and compliance), please contact maryama@ca.ibm.com."></inline-notification>
 
 <p/>
 
