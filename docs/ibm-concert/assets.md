@@ -25,7 +25,7 @@ Credentials:
 - Username: concertuser
 - Password: password
 
-<a href="https://9.30.214.214:12443/#/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here to access the environment</button></a>
+<a href="https://9.30.214.214:12443/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here to access the environment</button></a>
 
 Important notes about the demo environment:
 - **Purpose**: This environment is only for demos and self-education. It should not be used for PoCs.
