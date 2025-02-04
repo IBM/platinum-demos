@@ -113,8 +113,8 @@ We hold two office hours per week to accommodate time zones. Please bring your t
 | :--- | :--- |
 | Manual data ingestion | *Coming soon* |
 | Tekton pipeline data ingestion | Click <a href="https://ibm.github.io/platinum-demos/tech-sales-enablement-learning-to-ingest-data-into-ibm-concert-pipeline/pre-requisites" target="_blank" rel="noreferrer">here</a> |
-| Customizing a customer's pipeline | Click <a href="https://ibm.github.io/platinum-demos/tech-sales-enablement-customizing-customers-CICD-pipeline-for-ibm-concert/demo-instructions" target="_blank" rel="noreferrer">here</a> |
-| Jenkins pipeline data ingestion | *Coming soon* |
+| Customizing a customer's pipeline | Click <a href="https://ibm.github.io/platinum-demos/tech-sales-enablement-customizing-customers-CICD-pipeline-for-ibm-concert/pre-requisites" target="_blank" rel="noreferrer">here</a> |
+| Jenkins pipeline data ingestion | Click <a href="https://ibm.github.io/platinum-demos/tech-sales-enablement-learning-to-ingest-data-into-ibm-concert-jenkins-pipeline/pre-requisites" target="_blank" rel="noreferrer">here</a> |
 
 <p/>
 
