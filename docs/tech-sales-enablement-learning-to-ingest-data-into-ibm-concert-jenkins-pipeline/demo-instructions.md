@@ -7,8 +7,6 @@ layout: demo-instructions
 
 <br/>
 
-Click **<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer">here</a>** to access the pipeline data ingestion video.
-
 Click the [**Pre-requisites**](pre-requisites) tab for setup instructions.
 
 <details markdown="1">
@@ -113,7 +111,7 @@ In this step, we will create 2 secrets: a Concert Secret and a Github Secret.
 
 ### Concert Secret
 
-The Concert secret is what enables Tekton to authenticate with the Concert API for uploading data. <br/>
+The Concert secret is what enables Jenkins to authenticate with the Concert API for uploading data. <br/>
 
 | **Action** 3.1 | Generate the API key from Concert by ensuring you have admin access, and then log in to the Concert instance. |
 | :--- | :--- |
