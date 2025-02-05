@@ -16,7 +16,8 @@ Includes:
 Important notes about the demo environment:
 - **Purpose**: This environment is only for demos and self-education. It should not be used for PoCs.
 - **IBM VPN**: In order to access the demo environment, you MUST be logged into the IBM VPN.
-- **Shared environment**: This is a shared environment. Please DO NOT import data or create automation rules.
+- **Ticketing**: This environment is connected to GitHub. While we ask you to not make other changes to the environment, creating tickets is permitted. <br/> - To create tickets, use the *ibm-concert-platinum-demos* organization and *concert-tickets* repository.
+- **Shared environment**: This is a shared environment. Please DO NOT import data, or create workflows or automation rules.
 - **Maintenance windows**: This is a persistent environment. We will advertise maintenance windows at the top of this page when we upgrade to each subsequent version.
 - **Sample data**: The environment contains a complete set of sample data. If you open the tour, DO NOT load the default sample data (click <font color="red"> <strong>Not now</strong></font>). <br/> <img src="images/tour-screen.png" width="500" /> <br/>
 
