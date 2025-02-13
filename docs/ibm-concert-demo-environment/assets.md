@@ -17,7 +17,7 @@ Includes:
 
 Important notes about the demo environment:
 - **Purpose**: This environment is only for demos and self-education. It should not be used for PoCs.
-- **Workflows**: You are free to create your own worklfows in this environment, but please only put them in the 'Workflows sandbox' folder. Because this is a shared environment, workflows in any other location will be deleted.
+- **Workflows**: You are free to create your own workflows in this environment, but please only put them in the 'Workflows sandbox' folder. Because this is a shared environment, workflows in any other location will be deleted.
 - **Ticketing**: This environment is connected to GitHub. While we ask you to not make other changes to the environment, creating tickets is permitted. <br/> - To create tickets, use the *ibm-concert-platinum-demos* organization and *concert-tickets* repository.
 - **Shared environment**: This is a shared environment. Please DO NOT import data or create automation rules.
 - **Maintenance windows**: This is a persistent environment. We will advertise maintenance windows at the top of this page when we upgrade to each subsequent version.
