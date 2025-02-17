@@ -1,5 +1,5 @@
 ---
-title: Installing the Concert Workflows addon <br/> <small> <i> Tech Sales enablement </i> </small>
+title: Installing the Concert Workflows add-on <br/> <small> <i> Tech Sales enablement </i> </small>
 layout: pre-requisites
 ---
 
