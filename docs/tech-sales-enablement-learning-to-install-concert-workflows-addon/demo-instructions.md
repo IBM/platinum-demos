@@ -5,7 +5,9 @@ layout: resources
 
 <span id="top"></span>
 
-This document is intended to provide guidance on the Concert Workflow add-on install, click **<a href="https://www.ibm.com/docs/en/concert?topic=workflows-installing-concert-vm" target="_blank" rel="noreferrer">here</a>** for the official install steps.
+This document is intended to provide guidance on the Concert Workflow add-on install, click <a href="https://www.ibm.com/docs/en/concert?topic=workflows-installing-concert-vm" target="_blank" rel="noreferrer">here</a> for the official install steps.
+
+Click <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-watsonx" target="_blank" rel="noreferrer">here</a> to access the IBM Concert 1.0.4 Techzone VM.<br/>
 
 ### Introduction
 
@@ -37,7 +39,7 @@ Open a port in the firewall which Concert Workflows will run on <br/> <code clas
 
 **1.3: Log in to the Concert registry on podman**
 
-Navigate **<a href="https://myibm.ibm.com/products-services/containerlibrary" target="_blank" rel="noreferrer">here</a>** to get the IBM_ENTITLEMENT_KEY.
+Navigate <a href="https://myibm.ibm.com/products-services/containerlibrary" target="_blank" rel="noreferrer">here</a> to get the IBM_ENTITLEMENT_KEY.
 
 Set the variables needed to log in.
 <code class="code-block"> export IBM_ICR_IO=cp.icr.io/cp/concert </code>
@@ -71,7 +73,7 @@ Then log in to the image registry.
 
 **2.1: Run the get concert info script**
 
-This script requires a Concert URL and api key, if you dont have an api key you can follow **<a href="https://www.ibm.com/docs/en/concert?topic=api-generating-key" target="_blank" rel="noreferrer">these steps</a>** to create one.
+This script requires a Concert URL and api key, if you dont have an api key you can follow <a href="https://www.ibm.com/docs/en/concert?topic=api-generating-key" target="_blank" rel="noreferrer">these steps</a> to create one.
 
 Run the script using this command, replacing concert-url and concert-api with your own. <br/> <code class="code-block"> ./bin/tethering/get_concert_info.sh --concert-url=https://concert-url:12443 --c-api-key=concert-api </code>
 
