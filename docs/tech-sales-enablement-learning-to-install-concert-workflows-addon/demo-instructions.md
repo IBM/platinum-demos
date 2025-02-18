@@ -71,6 +71,8 @@ Then log in to the image registry.
 <code class="code-block"> chmod +x kubectl </code>
 <code class="code-block"> sudo mv kubectl /usr/bin/ </code>
 
+<br/>
+
 ### 2 - Configure Concert Workflow values
 
 **2.1: Run the get concert info script**
