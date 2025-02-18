@@ -11,7 +11,7 @@ Click <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-imag
 
 ### Introduction
 
-In this demo, we’ll learn how to install the Concert Workflows add-on within an IBM Concert 1.0.4.1 Techzone VM.
+In this demo, we’ll learn how to install the Concert Workflows add-on within an IBM Concert 1.0.4.1 TechZone VM.
 
 Concert Workflows is available as an add-on service for on-premises deployments of Concert to an OCP cluster or virtual machine (VM). The add-on embeds workflow definition and automation capabilities so you can define, manage and automate workflows within the Concert UI.
 
@@ -75,18 +75,25 @@ Then log in to the image registry.
 
 **2.1: Run the get concert info script**
 
-This script requires a Concert URL and api key, if you dont have an api key you can follow <a href="https://www.ibm.com/docs/en/concert?topic=api-generating-key" target="_blank" rel="noreferrer">these steps</a> to create one.
+This script requires a Concert URL and API key. If you don't have an API key, you can follow <a href="https://www.ibm.com/docs/en/concert?topic=api-generating-key" target="_blank" rel="noreferrer">these steps</a> to create one.
 
-Run the script using this command, replacing concert-url and concert-api with your own. <br/> <code class="code-block"> ./bin/tethering/get_concert_info.sh --concert-url=https://concert-url:12443 --c-api-key=concert-api </code>
+Run the script using this command, replacing 'concert-url' and 'concert-api' with your own. <br/> <code class="code-block"> ./bin/tethering/get_concert_info.sh --concert-url=https://concert-url:12443 --c-api-key=concert-api </code>
 
-This will output a CONCERT_HUB_KEY value, take note of this.
+This will output a CONCERT_HUB_KEY value. Take note of this.
 
 **2.2: Edit the Concert Workflows values file**
 
-Open the values file for editing  <br/> <code class="code-block"> vi bin/concert-workflows-values.yaml </code>
+Open the 'values' file for editing.  <br/> <code class="code-block"> vi bin/concert-workflows-values.yaml </code>
 
-On the imageRegistry line, replace icr.io/cp/concert with cp.icr.io/cp/concert. <br/> 
-On the address line, replace https://<IP> with the URL of your concert instance, without the port (e.g., the url https://9.30.214.214:12443/ without the port is https://9.30.214.214). <br/> On the CONCERT_HUB_URL line, add the full Concert URL, e.g. https://9.30.214.214:12443 <br/> On the CONCERT_HUB_KEY line, enter the key obtained from the concert info script in action 2.1. <br/> To save and exit the values file, press esc, then :, then wq.
+Replace 'icr.io/cp/concert' with 'cp.icr.io/cp/concert' on the 'imageRegistry' line.
+
+On the 'address' line, replace the address with the URL of your concert instance, without the port (e.g., the url https://9.30.214.214:12443/ without the port is https://9.30.214.214).
+
+On the 'CONCERT_HUB_URL' line, add the full Concert URL (e.g., https://9.30.214.214:12443).
+
+On the 'CONCERT_HUB_KEY' line, enter the key obtained from the Concert info script in 2.1.
+
+To save and exit the 'values' file, press 'esc', then ':', then 'wq'.
 
 <br/>
 
@@ -100,7 +107,7 @@ On the address line, replace https://<IP> with the URL of your concert instance,
 
 **3.2: Create a docker registry secret**
 
-Note: The docker password used in this command is the same IBM Entitlement key used in Action 1.3 <br/> <code class="code-block"> kubectl create secret docker-registry ibm-entitlement-key --docker-server=cp.icr.io --docker-username=cp --docker-password=IBM-ENTITLEMENT-KEY --namespace="${CW_NAMESPACE}" </code>
+Note: The docker password used in this command is the same IBM entitlement key used in 1.3. <br/> <code class="code-block"> kubectl create secret docker-registry ibm-entitlement-key --docker-server=cp.icr.io --docker-username=cp --docker-password=IBM-ENTITLEMENT-KEY --namespace="${CW_NAMESPACE}" </code>
 
 **3.3: Run the Concert Workflows install script**
 
@@ -108,7 +115,7 @@ This script takes on average 20 minutes to run. <br/> <code class="code-block"> 
 
 **3.4: Tether Concert Workflows to the Concert instance**
 
-Set the following vars on the command line <br/> <code class="code-block"> export CONCERT_HUB_URL=URL of Concert instance including port </code>
+Set the following vars on the command line. <br/> <code class="code-block"> export CONCERT_HUB_URL=URL of Concert instance including port </code>
 <code class="code-block"> export CONCERT_HUB_KEY=CONCERT_HUB_KEY from get_concert_info.sh </code>
 <code class="code-block"> export EXTNS_DIR=full path to extns folder within workflows directory </code>
 <code class="code-block"> export ADDON_NAME=concert_workflows </code>
