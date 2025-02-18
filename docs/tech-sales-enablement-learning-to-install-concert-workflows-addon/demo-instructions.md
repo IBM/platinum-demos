@@ -13,23 +13,25 @@ Click <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-imag
 
 In this demo, we’ll learn how to install the Concert Workflows add-on within an IBM Concert 1.0.4.1 Techzone VM.
 
-Concert Workflows is available as an add-on service for on-premises deployments of Concert to an OCP cluster or virtual machine (VM). The add-on embeds workflow definition and automation capabilities so you can define, manage, and automate workflows within the Concert UI.
+Concert Workflows is available as an add-on service for on-premises deployments of Concert to an OCP cluster or virtual machine (VM). The add-on embeds workflow definition and automation capabilities so you can define, manage and automate workflows within the Concert UI.
 
 ### 1 - Install pre-requisite software
 
 **1.1: ssh to the Concert VM on TechZone**
 
-When we reserved the techzone instance, we received a ITZuser login and a ssh key. <br/> <img src="images/1-1-a.png" width="600" /> 
+When we reserved the TechZone instance, we received an ITZuser login and ssh key. <br/> <img src="images/1-1-a.png" width="600" /> 
 
-Download the ssh key and change its permissions using the command line <br/> <code class="code-block"> chmod 600 pem_ibmcloudvsi_download.pem </code>
+Download the ssh key and change its permissions using the command line. <br/> <code class="code-block"> chmod 600 pem_ibmcloudvsi_download.pem </code>
 <img src="images/1-1-b.png" width="600" /> 
 
 We will use this to log in to the virtual machine. <br/> <code class="code-block"> ssh -i pem_ibmcloudvsi_download.pem -p 2223 itzuser@IP_ADDRESS </code>
 <img src="images/1-1-c.png" width="600" />
 
-Change to the root user <br/> <code class="code-block"> sudo su </code> <br/> and change to the workflow directory <br/> <code class="code-block"> cd workflows/ </code> 
+Change to the root user. <br/> <code class="code-block"> sudo su </code> <br/>
 
-Open a port in the firewall which Concert Workflows will run on <br/> <code class="code-block"> sudo iptables -A INPUT -p tcp --dport 3000 -j ACCEPT </code>
+Change to the workflow directory <br/> <code class="code-block"> cd workflows/ </code> 
+
+Open a port in the firewall on which Concert Workflows will run. <br/> <code class="code-block"> sudo iptables -A INPUT -p tcp --dport 3000 -j ACCEPT </code>
 
 **1.2: Download and extract the Concert git repository**
 
