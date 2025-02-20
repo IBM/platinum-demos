@@ -17,7 +17,7 @@ For our demo, we will create an environment within Concert to assign the Complia
 
 Below is a list of pre-requisites that need to be setup prior to beginning this PoV.
 
-* Continuous compliance scanning tool that outputs OSCAL formatted assessments 
+* Continuous compliance scanning tool that outputs OSCAL formatted assessments such as:
     * DRTConfidence
     * CyberArk 
     * RegScale
