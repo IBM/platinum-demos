@@ -119,7 +119,7 @@ The first step is to define an environment within Concert, when a Compliance ass
 |  | <img src="images/4-1.png" width="400" /> |
 | **Action** 4.2 | Click **Upload compliance scan** |
 | :--- | :--- |
-|  | Select the file format the assessment was completed in: <br/> 1. Use XCCDF for Openshift Operator compliance assessments. <br/> 2. Use OSCAL for any other compliance assessments. <br/> Upload the assessment created by the continuous compliance scanner here. <img src="images/4-2.png" width="400" /> |
+|  | Select the file format the assessment was completed in: <br/> 1. Use XCCDF for Openshift Operator compliance assessments. <br/> 2. Use OSCAL for any other compliance assessments. <br/> Upload the assessment created by the continuous compliance scanner here. <br/> <img src="images/4-2.png" width="400" /> |
 
 **[Go to top](#top)**
 
