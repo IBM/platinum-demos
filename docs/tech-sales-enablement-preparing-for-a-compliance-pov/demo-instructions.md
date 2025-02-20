@@ -1,13 +1,19 @@
 ---
-title: Compliance proof of value <br/> <small> <i> Tech Sales enablement </i> </small>
+title: Compliance Proof of Value <br/> <small> <i> Tech Sales enablement </i> </small>
 layout: resources
 ---
 
 <span id="top"></span>
 
-Click **<a href="https://ibm.ent.box.com/s/afax8p4hdkbjajutfn744tsyfjg8fyvv" target="_blank" rel="noreferrer">here</a>** to access the v1.0.4 compliance demo video.
+Click <a href="https://ibm.ent.box.com/s/afax8p4hdkbjajutfn744tsyfjg8fyvv" target="_blank" rel="noreferrer">here</a> to access the v1.0.4 compliance demo video.
 
-### **Pre-requisites for the Proof of Value**
+### Introduction
+
+In this demo, we will prepare a customer's environment for a Compliance PoV and start the ingestion of regular compliance assessments.
+
+For our demo, we will create an environment within Concert to assign the Compliance assessments too. Then, we will use the Concert toolkit to create a compliance catalog, add that catalog to Concert and create a profile based on that catalog.
+
+### **Pre-requisites**
 
 Below is a list of pre-requisites that need to be setup prior to beginning this PoV.
 
@@ -31,15 +37,9 @@ Below is a list of pre-requisites that need to be setup prior to beginning this 
     * If the catalogs provided don't cover the customer's use case, the instructions will include how to create one
 * Name of the customer's environment
 
-### Introduction
-
-In this demo, we will prepare a customers environment for a Compliance PoV and start the ingestion of regular compliance assessments.
-
-For our demo, we will create an environment within Concert to assign the Compliance assessments too. Then we will use the Concert Toolkit to create a compliance catalog, add that catalog to Concert, and create a profile based on that catalog.
-
 ### 1 - Defining an environment within Concert
 
-The first step is to define an environment within Concert, when a Compliance assessment is ingested into Concert it will be assigned to this environment.
+The first step is to define an environment within Concert. When a Compliance assessment is ingested into Concert, it will be assigned to this environment.
 
 **1.1:** Navigate to the **Arena view** within Concert <br/> <img src="images/1-1.png" width="600" />
 
@@ -84,7 +84,7 @@ Run the Concert toolkit with the following command:
 
 The output will be a compliance catalog OSCAL json: <br/> <img src="images/2-5-3.png" width="800" />
 
-**2.6:** In the Concert UI, click **Add catalog**, then **From file** and upload the json file which was created. <br/> <img src="images/2-6.png" width="800" />
+**2.6:** In the Concert UI, click **Add catalog**, then **From file** and upload the json file which was created <br/> <img src="images/2-6.png" width="800" />
 
 <br/>
 
@@ -96,9 +96,9 @@ The output will be a compliance catalog OSCAL json: <br/> <img src="images/2-5-3
 
 **3.3:** Fill in the profile details:
 
-- Define a **Name** for the profile.
-- Select the catalog which was uploaded.
-- Select the controls which the customer wants to be assessed against.
+- Define a **Name** for the profile
+- Select the catalog which was uploaded
+- Select the controls against which the customer wants to be assessed
 
 <img src="images/3-3.png" width="800" /> <br/>
 
