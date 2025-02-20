@@ -1,0 +1,18 @@
+Family,Control ID,Control Name,Control Description,Related Controls
+ICT Risk Management,DORA-1,ICT Governance,Establish and maintain a comprehensive ICT risk management framework integrated into the organization's overall risk management strategy.,DORA-2, DORA-3
+ICT Risk Management,DORA-2,Risk Identification,Continuously identify and assess ICT-related risks that could impact operational resilience.,DORA-1, DORA-4
+ICT Risk Management,DORA-3,Risk Assessment,Conduct periodic assessments to evaluate the potential impact of identified ICT risks.,DORA-2, DORA-5
+ICT Risk Management,DORA-4,Risk Mitigation,Implement appropriate measures to manage and mitigate identified ICT risks.,DORA-3, DORA-6
+ICT Risk Management,DORA-5,Risk Monitoring and Reporting,Establish processes to monitor ICT risks and report significant findings to relevant authorities.,DORA-4, DORA-7
+Incident Reporting,DORA-6,Incident Detection and Classification,Develop capabilities to detect ICT-related incidents promptly and classify them based on severity.,DORA-5, DORA-8
+Incident Reporting,DORA-7,Incident Response Procedures,Establish and maintain procedures to respond effectively to ICT incidents.,DORA-6, DORA-9
+Incident Reporting,DORA-8,Incident Reporting Obligations,Report major ICT-related incidents to competent authorities without undue delay.,DORA-7, DORA-10
+Operational Resilience Testing,DORA-9,Resilience Testing Framework,Implement a framework for regular testing of digital operational resilience.,DORA-8, DORA-11
+Operational Resilience Testing,DORA-10,Threat-Led Penetration Testing,Conduct threat-led penetration testing on critical functions at least every three years.,DORA-9, DORA-12
+Third-Party Risk Management,DORA-11,Third-Party Risk Assessment,Assess risks associated with ICT third-party service providers.,DORA-10, DORA-13
+Third-Party Risk Management,DORA-12,Contractual Agreements,Ensure contracts with ICT third-party service providers include provisions for security and resilience.,DORA-11, DORA-14
+Third-Party Risk Management,DORA-13,Third-Party Monitoring,Continuously monitor the performance and security measures of ICT third-party service providers.,DORA-12, DORA-15
+Information Sharing,DORA-14,Threat Information Sharing,Participate in information-sharing arrangements to exchange cyber threat intelligence.,DORA-13, DORA-16
+Governance and Oversight,DORA-15,Management Responsibilities,Define and assign roles and responsibilities for ICT risk management within the organization.,DORA-14, DORA-17
+Governance and Oversight,DORA-16,Training and Awareness,Provide regular training to staff on ICT risks and resilience practices.,DORA-15, DORA-18
+Governance and Oversight,DORA-17,Audit and Review,Conduct regular audits to ensure compliance with ICT risk management policies and procedures.,DORA-16, DORA-19
