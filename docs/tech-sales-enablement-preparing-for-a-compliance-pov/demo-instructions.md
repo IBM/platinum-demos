@@ -5,8 +5,6 @@ layout: resources
 
 <span id="top"></span>
 
-Click <a href="https://ibm.ent.box.com/s/afax8p4hdkbjajutfn744tsyfjg8fyvv" target="_blank" rel="noreferrer">here</a> to access the v1.0.4 compliance demo video.
-
 ### Introduction
 
 In this demo, we will prepare a customer's environment for a Compliance PoV and start the ingestion of regular compliance assessments.
