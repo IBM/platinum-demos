@@ -1,5 +1,5 @@
 ---
-title: Creating a compliance catalog from a csv <br/> <small> <i> Tech Sales enablement </i> </small>
+title: Creating a compliance catalog from a CSV <br/> <small> <i> Tech Sales enablement </i> </small>
 layout: resources
 ---
 
@@ -7,9 +7,9 @@ layout: resources
 
 ### Introduction
 
-In this demo, we will walk through how to create a compliance catalog from a csv.
+In this demo, we will walk through how to create a compliance catalog from a CSV.
 
-For our demo, we will download the concert toolkit, format a CSV with compliance controls and then run the concert toolkit to conver the csv into OSCAL json format.
+For our demo, we will download the Concert toolkit, format a CSV with compliance controls and then run the Concert toolkit to convert the CSV into OSCAL JSON format.
 
 ### **Pre-requisites**
 
@@ -30,7 +30,7 @@ Below is a list of pre-requisites that need to be setup prior to beginning this 
 
 **1.4:** If the customer needs a pre-defined compliance catalog from Concert, select one from this list: <br/> <img src="images/2-4.png" width="800" />
 
-**1.5:** If the customers compliance catalog is not listed, create one with the Concert toolkit.
+**1.5:** If the customer's compliance catalog is not listed, create one with the Concert toolkit.
 
 Define a CSV to Excel file with the following format: <br/> <img src="images/2-5-1.png" width="800" />
 
@@ -46,7 +46,7 @@ Run the Concert toolkit with the following command:
 
 The output will be a compliance catalog OSCAL json: <br/> <img src="images/2-5-3.png" width="800" />
 
-**2.6:** In the Concert UI, click **Add catalog**, then **From file** and upload the json file which was created <br/> <img src="images/2-6.png" width="800" />
+**2.6:** In the Concert UI, click **Add catalog**, then **From file** and upload the JSON file which was created <br/> <img src="images/2-6.png" width="800" />
 
 <br/>
 
