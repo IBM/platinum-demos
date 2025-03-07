@@ -13,7 +13,7 @@ For our demo, we will download the Concert toolkit, format a CSV with compliance
 
 ### **Pre-requisites**
 
-Below is a list of pre-requisites that need to be setup prior to beginning this PoV.
+Below is a list of pre-requisites that need to be set up prior to beginning this PoV.
 
 * Docker or Podman
 * Microsoft Excel
