@@ -18,6 +18,7 @@ layout: resources
 ***
 
 ## Certificates
+- <a href="https://ibm.github.io/platinum-demos/tech-sales-enablement-learning-to-ingest-certificate-data-using-concert-workflows/demo-instructions" target="_blank" rel="noreferrer">Certificates Proof of Value</a>
 - <a href="https://ibm.box.com/s/03hc23ea6n7oadactmi2ko9xnhixcmw5" target="_blank" rel="noreferrer">Certificates ROI Calculator</a>
 
 ***

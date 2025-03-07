@@ -1,85 +1,55 @@
 ---
 title: Using a Concert Workflow to automate certificate discovery and ingestion into IBM Concert <br/> <small> <i> Tech Sales enablement </i> </small>
-layout: demo-instructions
+layout: resources
 ---
 
 <span id="top"></span>
 
-<br/>
-
-Click the [**Pre-requisites**](pre-requisites) tab for setup instructions.
-
-<details markdown="1">
-
-<summary>Introduction</summary>
+### Introduction
 
 In this demo, we will build and run a Concert Workflow to understand how a customer will automate the certificate discovery and ingestion process. This method can then be used for building workflows and ingesting certificates during a proof of value with a customer.
 
-<br/>
+### Pre-requisites
 
-</details>
+Below is a list of pre-requisites that need to be setup prior to beginning this PoV.
 
-<p/>
+* <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-vmware-on-ibm-cloud-environments" target="_blank" rel="noreferrer">OpenShift cluster</a> with public ingress<br/>
+* IBM Concert <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-watsonx" target="_blank" rel="noreferrer">(VM or OCP)</a> <br/>
 
-<details markdown="1">
+### 1 - Creating a Concert Workflow
 
-<summary>Creating a Concert Workflow</summary>
+**1.1:** Navigate to **Workflows** within Concert and click **Manage** <br/> <img src="images/1-1.png" width="800" />
 
-| **1.1** | **Placeholder** |
-| :--- | :--- |
-| **Narration** | Navigate to **Workflows** within Concert, then click **Manage** |
-| **Action** &nbsp; 1.1 | <br/> <img src="images/1-1.png" width="800" /> |
-| **Narration** | Click **Create Workflow**, fill in the workflow information giving the workflow a name and description. |
-| **Action** &nbsp; 1.2 | <br/> <img src="images/1-2.png" width="800" /> |
-| **Narration** | Using the search bar, find the openshift integration |
-| **Action** &nbsp; 1.3 | <img src="images/1-3.png" width="800" /> |
-| **Narration** | Within the Openshift integration, find the **List Certificates Signing Request** action, then drag and drop it onto the flow underneath start. |
-| **Action** &nbsp; 1.4 | <img src="images/1-4.png" width="800" /> |
-| **Narration** | Next search for IBM. |
-| **Action** &nbsp; 1.5 | <br/> <img src="images/1-5.png" width="800" /> |
-| **Narration** | Within the IBM integration, navigate to **Concert**, then **Import Data**. Then drag and drop the **Upload Certificate Details** action. |
-| **Action** &nbsp; 1.6 | <br/> <img src="images/1-6.png" width="800" /> |
+**1.2:** Click **Create Workflow**, and fill in the workflow information giving the workflow a name and description <br/> <img src="images/1-2.png" width="800" />
+
+**1.3:** Using the search bar, find the OpenShift integration <br/> <img src="images/1-3.png" width="800" />
+
+**1.4:** Within the OpenShift integration, find the **List Certificates Signing Request** action, and drag and drop it onto the flow underneath **Start** <br/> <img src="images/1-4.png" width="800" />
+
+**1.5:** Search for '**IBM**' <br/> <img src="images/1-5.png" width="800" />
+
+**1.6:** Within the IBM integration, navigate to **Concert**, then **Import Data**, and drag and drop the **Upload Certificate Details** action <br/> <img src="images/1-6.png" width="800" />
 
 <br/>
 
-</details>
+### 2 - Creating a Workflow authentication
 
-<p/>
+**2.1:** Navigate to **Workflows** within Concert and click **Authentications** <br/> <img src="images/2-1.png" width="800" />
 
-<details markdown="1">
+**2.2:** Click **Create Authenitcation**. Fill in the authentication information, giving it a name and description. Select **OpenShift** as the **Service**. Next, fill in the **Host**, **Port** and **API Token** for the OpenShift cluster. <br/> <img src="images/1-2.png" width="800" />
 
-<summary>Creating a Workflow Authentication</summary>
+**2.3:** Click **Create**. Then navigate back to the **Certificate Discovery Workflow**. Within the Workflow, click the **Openshift_1** action. Then change the **authKey** dropdown to the authentication which was just created. <br/> <img src="images/2-3.png" width="800" />
 
-| **1.1** | **Placeholder** |
-| :--- | :--- |
-| **Narration** | Navigate to **Workflows** within Concert, then click **Authentications** |
-| **Action** &nbsp; 2.1 | <br/> <img src="images/2-1.png" width="800" /> |
-| **Narration** | Click **Create Authenitcation**, fill in the authentication information giving it a name and description. Then select **Openshift** as the Service. Next fill in the Host, Port and API Token for the Openshift Cluster. |
-| **Action** &nbsp; 2.2 | <br/> <img src="images/1-2.png" width="800" /> |
-| **Narration** | Click **Create**. Then navigate back to the Certificate Discovery Workflow. |
-| **Narration** | Within the Workflow, click on the **Openshift_1** action. Then change the **authKey** dropdown to the authentication which was just created. |
-| **Action** &nbsp; 2.3 | <img src="images/2-3.png" width="800" /> |
-| **Narration** | Save the workflow, and click **Run** |
-| **Action** &nbsp; 2.4 | <br/> <img src="images/2-4.png" width="800" /> |
-| **Narration** | Certificates have now been discovered from the customers cluster and ingested |
-| **Action** &nbsp; 2.5 | <br/> <img src="images/2-5.png" width="800" /> |
+**2.4:** Save the workflow and click **Run** <br/> <img src="images/2-4.png" width="800" />
+
+**2.5:** Certificates have now been discovered from the customer's cluster and ingested <br/> <img src="images/2-5.png" width="800" />
 
 <br/>
 
-</details>
+### Summary
 
-<p/>
+In this demo, we saw how to create a workflow to discover and ingest certificate details from an OpenShift cluster, as well as how to create the authentication with that cluster. 
 
-<details markdown="1">
-
-<summary>Summary</summary>
-
-In this demo, we saw how to create a workflow to discover and ingest certificate details from an openshift cluster, and how to create the authentication with that cluster. 
-
-Once Certificate data is ingested successfully into Concert, operations teams can review the Certificate expiration dates and automate the rotation of those certificates.
+Once certificate data is ingested successfully into Concert, the operations teams can review the certificate expiration dates and automate the rotation of those certificates.
 
 **[Go to top](#top)**
-
-<br/><br/>
-
-</details>
