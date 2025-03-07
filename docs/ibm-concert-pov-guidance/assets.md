@@ -1,5 +1,5 @@
 ---
-title: Concert Proof of Value guidance and ROI calculators
+title: Concert Proof of Value guidance <br/> and ROI calculators
 layout: resources
 ---
 
