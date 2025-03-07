@@ -26,7 +26,7 @@ Below is a list of pre-requisites that need to be set up prior to beginning this
 
 **1.4:** Within the OpenShift integration, find the **List Certificates Signing Request** action. Drag and drop it onto the flow underneath **Start**. <br/> <img src="images/1-4.png" width="800" />
 
-**1.5:** Search for '**IBM**' using the search bar. <br/> <img src="images/1-5.png" width="800" />
+**1.5:** Search for '**IBM**' using the search bar. <br/> <img src="images/1-5.png" width="400" />
 
 **1.6:** Within the IBM integration, navigate to **Concert** and then **Import Data**. Drag and drop the **Upload Certificate Details** action onto the flow. <br/> <img src="images/1-6.png" width="800" />
 
