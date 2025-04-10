@@ -7,7 +7,7 @@ layout: resources
 
 This document is intended to provide guidance on the Concert Workflow add-on install, click <a href="https://www.ibm.com/docs/en/concert?topic=workflows-installing-concert-vm" target="_blank" rel="noreferrer">here</a> for the official install steps.
 
-Click <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-watsonx" target="_blank" rel="noreferrer">here</a> to access the IBM Concert 1.0.4 TechZone VM.<br/>
+Click <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-watsonx" target="_blank" rel="noreferrer">here</a> to access the IBM Concert 1.0.5 TechZone VM.<br/>
 
 ### Introduction
 
@@ -35,7 +35,7 @@ Open a port in the firewall on which Concert Workflows will run. <br/> <code cla
 
 **1.2: Download and extract the Concert git repository**
 
-<code class="code-block"> wget https://github.com/IBM/Concert/releases/download/v1.0.4/ibm-concert-std-workflows.tgz </code>
+<code class="code-block"> wget https://github.com/IBM/Concert/releases/download/v1.0.5.2/ibm-concert-std-workflows.tgz </code>
 <code class="code-block"> tar xfz ibm-concert-std-workflows.tgz </code>
 <img src="images/1-2.png" width="600" />
 
@@ -122,6 +122,7 @@ Set the following vars on the command line. <br/> <code class="code-block"> expo
 <code class="code-block"> export EXTNS_DIR=full path to extns folder within workflows directory </code>
 <code class="code-block"> export ADDON_NAME=concert_workflows </code>
 <code class="code-block"> export EXT_URL=URL of Concert instance instance WITHOUT port </code>
+<code class="code-block"> export WORKFLOW_APIKEY= Workflows API Key from get_concert_info.sh </code>
 
 Run the tether to hub script. <br/> <code class="code-block"> ./bin/tethering/tether-to-hub.sh --concert-hub-url="$CONCERT_HUB_URL" --concert-hub-key="$CONCERT_HUB_KEY" --extn-dir="$EXTNS_DIR" --provider="$ADDON_NAME" --external-url="$EXT_URL" </code>
 
