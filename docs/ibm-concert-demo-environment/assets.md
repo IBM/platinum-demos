@@ -13,7 +13,7 @@ Includes:
 - z/OS data
 - Resilience dimension data
 
-<inline-notification text="In order to access the demo environment, you MUST be logged into the IBM VPN."></inline-notification>
+<inline-notification text="Gen AI workflows are in public preview and are currently not trained on the full set of workflow actions. <br/> Gen AI workflows are currently trained only on actions that involve cloud providers (e.g., AWS, Azure, GCP, IBM Cloud)."></inline-notification>
 
 Important notes about the demo environment:
 - **Purpose**: This environment is only for demos and self-education. It should not be used for PoCs.
@@ -22,6 +22,8 @@ Important notes about the demo environment:
 - **Shared environment**: This is a shared environment. Please DO NOT import data or create automation rules.
 - **Maintenance windows**: This is a persistent environment. We will advertise maintenance windows at the top of this page when we upgrade to each subsequent version.
 - **Sample data**: The environment contains a complete set of sample data. If you open the tour, DO NOT load the default sample data (click <font color="red"> <strong>Not now</strong></font>). <br/> <img src="images/tour-screen.png" width="500" /> <br/>
+
+<inline-notification text="In order to access the demo environment, you MUST be logged into the IBM VPN."></inline-notification>
 
 Credentials:
 - Username: concertuser
