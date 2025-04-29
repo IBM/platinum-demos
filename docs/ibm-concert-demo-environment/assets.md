@@ -7,11 +7,11 @@ Includes:
 - A complete sample dataset
 - watsonx connectivity
 - Concert Workflows (RNA) connectivity
+- Gen AI workflows (public preview)
 - Pre-built workflows
 - GitHub ticketing
 - Automation rules
 - z/OS data
-- Resilience dimension data
 
 <inline-notification text="Gen AI workflows are in public preview and are currently not trained on the full set of workflow actions. <br/> Gen AI workflows are currently trained only on actions that involve cloud providers (e.g., AWS, Azure, GCP, IBM Cloud)."></inline-notification>
 
