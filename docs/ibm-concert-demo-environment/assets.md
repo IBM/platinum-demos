@@ -13,7 +13,7 @@ Includes:
 - Pre-built workflows
 - z/OS data
 
-<inline-notification text="Gen AI workflows are in public preview and are currently not trained on the full set of workflow actions. <br/> Gen AI workflows are currently trained only on actions that involve cloud providers (e.g., AWS, Azure, GCP, IBM Cloud)."></inline-notification>
+<inline-notification text="AI-Powered Remediation is in public preview and is currently not trained on the full set of workflow actions. <br/> AI-Powered Remediation is currently trained only on actions that involve cloud providers (e.g., AWS, Azure, GCP, IBM Cloud)."></inline-notification>
 
 Important notes about the demo environment:
 - **Purpose**: This environment is only for demos and self-education. It should not be used for PoCs.
