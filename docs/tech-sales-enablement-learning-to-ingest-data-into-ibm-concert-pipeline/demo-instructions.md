@@ -102,7 +102,7 @@ The Concert secret is what enables Tekton to authenticate with the Concert API f
 
 | **Action** 3.3 | Use the '**oc create secret generic**' command to set the name of the secret to '**concert-token-secret**' and insert the Concert token we generated above. |
 | :--- | :--- |
-|  | <code class="code-block"> oc create secret generic concert-token-secret <br/> --from-literal=token="C_API_KEY *YOUR_CONCERT_API_KEY*" </code> | 
+|  | <code class="code-block"> oc create secret generic concert-token-secret --from-literal=token="C_API_KEY *YOUR_CONCERT_API_KEY*" </code> | 
 
 <inline-notification text="Note: ensure you have the attribute “C_API_KEY” before the SaaS token, otherwise the API upload won’t authenticate successfully."></inline-notification>
 
@@ -110,13 +110,13 @@ The Concert secret is what enables Tekton to authenticate with the Concert API f
 
 | **Action** 3.4 | Create the GitHub secret by using the '**oc create secret generic**' command again. Name the secret '**github-creds**' and provide your GitHub username and token. |
 | :--- | :--- |
-|  | <br/> <img src="images/3-4.png" width="900" /><br/><br/><code class="code-block"> oc create secret generic github-creds ` <br/> --from-literal=username=$env:GITHUB_USERNAME ` <br/> --from-literal=password=$env:GITHUB_TOKEN ` <br/> --type=kubernetes.io/basic-auth </code> | 
+|  | <br/> <img src="images/3-4.png" width="900" /><br/><br/><code class="code-block"> oc create secret generic github-creds --from-literal=username=$env:GITHUB_USERNAME --from-literal=password=$env:GITHUB_TOKEN --type=kubernetes.io/basic-auth </code> | 
 
 <inline-notification text="Note: This information was set up during the pre-requisites, and if not then an IBM GitHub username and token should be set up prior to this step."></inline-notification>
 
 | **Action** 3.5 | Annotate the GitHub secret and link it to the pipeline by running the commands below. |
 | :--- | :--- |
-|  | <code class="code-block"> oc annotate secret github-creds ` <br/> tekton.dev/git-0=https://github.ibm.com <br/></code> <br/><code class="code-block"> oc secret link pipeline github-creds </code> | 
+|  | <code class="code-block"> oc annotate secret github-creds tekton.dev/git-0=https://github.ibm.com <br/></code> <br/><code class="code-block"> oc secret link pipeline github-creds </code> | 
 
 ### Registry Secret
 
