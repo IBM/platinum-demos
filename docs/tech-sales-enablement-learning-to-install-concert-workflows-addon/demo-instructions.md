@@ -35,7 +35,7 @@ Open a port in the firewall on which Concert Workflows will run. <br/> <code cla
 
 **1.2: Download and extract the Concert git repository**
 
-<code class="code-block"> wget https://github.com/IBM/Concert/releases/download/v1.0.5.2/ibm-concert-std-workflows.tgz </code>
+<code class="code-block"> wget https://github.com/IBM/Concert/releases/download/v1.1.0/ibm-concert-std-workflows.tgz </code>
 <code class="code-block"> tar xfz ibm-concert-std-workflows.tgz </code>
 <img src="images/1-2.png" width="600" />
 
@@ -85,17 +85,34 @@ This will output a CONCERT_HUB_KEY value. Take note of this.
 
 **2.2: Edit the Concert Workflows values file**
 
-Open the 'values' file for editing.  <br/> <code class="code-block"> vi bin/concert-workflows-values.yaml </code>
+Set the following values: <br/>
 
-Replace 'icr.io/cp/concert' with 'cp.icr.io/cp/concert' on the 'imageRegistry' line.
+Set the IP address of your VM with:<br/>
+<code class="code-block"> INSTANCE_ADDRESS=9.30.214.214 </code> <br/>
 
-On the 'address' line, replace the address with the URL of your concert instance, without the port (e.g., the url https://9.30.214.214:12443/ without the port is https://9.30.214.214).
+Set the Concert User:<br/>
+<code class="code-block"> CONCERT_USER=ibmconcert </code> <br/>
 
-On the 'CONCERT_HUB_URL' line, add the full Concert URL (e.g., https://9.30.214.214:12443).
+Set the Concert URL:<br/>
+<code class="code-block"> CONCERT_URL=https://9.30.214.214:12443 </code> <br/>
 
-On the 'CONCERT_HUB_KEY' line, enter the key obtained from the Concert info script in 2.1.
+Set the Concert API Key:<br/>
+<code class="code-block"> CONCERT_API_KEY=safddfdsgdsfgdfasffhtrtefd= </code> <br/>
 
-To save and exit the 'values' file, press 'esc', then ':', then 'wq'.
+Set the Concert Workflows Namespace:<br/>
+<code class="code-block"> CW_NAMESPACE=concert-workflows </code> <br/>
+
+Set the Concert Workflows registry:<br/>
+<code class="code-block"> IMAGE_REGISTRY=cp.icr.io </code> <br/>
+
+Set the Concert Workflows registry user:<br/>
+<code class="code-block"> REGISTRY_USER=cp </code> <br/>
+
+Set the Concert Workflows registry password:<br/>
+<code class="code-block"> REGISTRY_USER=Password used in step 1.3 </code> <br/>
+
+Set the Concert Workflows registry password:<br/>
+<code class="code-block"> REGISTRY_USER=Password used in step 1.3 </code> <br/>
 
 <br/>
 
@@ -113,20 +130,7 @@ Note: The docker password used in this command is the same IBM entitlement key u
 
 **3.3: Run the Concert Workflows install script**
 
-This script takes on average 20 minutes to run. <br/> <code class="code-block"> ./bin/setup --namespace="concert-workflows" </code>
-
-**3.4: Tether Concert Workflows to the Concert instance**
-
-Set the following vars on the command line. <br/> <code class="code-block"> export CONCERT_HUB_URL=URL of Concert instance including port </code>
-<code class="code-block"> export CONCERT_HUB_KEY=CONCERT_HUB_KEY from get_concert_info.sh </code>
-<code class="code-block"> export EXTNS_DIR=full path to extns folder within workflows directory </code>
-<code class="code-block"> export ADDON_NAME=concert_workflows </code>
-<code class="code-block"> export EXT_URL=URL of Concert instance instance WITHOUT port </code>
-<code class="code-block"> export WORKFLOW_APIKEY= Workflows API Key from get_concert_info.sh </code>
-
-Run the tether to hub script. <br/> <code class="code-block"> ./bin/tethering/tether-to-hub.sh --concert-hub-url="$CONCERT_HUB_URL" --concert-hub-key="$CONCERT_HUB_KEY" --extn-dir="$EXTNS_DIR" --provider="$ADDON_NAME" --external-url="$EXT_URL" </code>
-
-<br/>
+This script takes on average 20 minutes to run. <br/> <code class="code-block"> ./bin/setup --license-acceptance=y --instance-address=$INSTANCE_ADDRESS --concert-user=$CONCERT_USER --concert-url=$CONCERT_URL --c-api-key=$CONCERT_API_KEY  --namespace=$CW_NAMESPACE --registry=$IMAGE_REGISTRY --registry-user=$REGISTRY_USER  --registry-password=$REGISTRY_PWD  </code>
 
 ### View updates in Concert UI
 
