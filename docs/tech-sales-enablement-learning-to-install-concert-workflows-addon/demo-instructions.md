@@ -111,9 +111,6 @@ Set the Concert Workflows registry user:<br/>
 Set the Concert Workflows registry password:<br/>
 <code class="code-block"> REGISTRY_USER=Password used in step 1.3 </code> <br/>
 
-Set the Concert Workflows registry password:<br/>
-<code class="code-block"> REGISTRY_USER=Password used in step 1.3 </code> <br/>
-
 <br/>
 
 ### 3 - Install Concert Workflows
