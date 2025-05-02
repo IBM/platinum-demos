@@ -109,7 +109,7 @@ Set the Concert Workflows registry user:<br/>
 <code class="code-block"> REGISTRY_USER=cp </code> <br/>
 
 Set the Concert Workflows registry password:<br/>
-<code class="code-block"> REGISTRY_USER=Password used in step 1.3 </code> <br/>
+<code class="code-block"> REGISTRY_PWD=Password used in step 1.3 </code> <br/>
 
 <br/>
 
