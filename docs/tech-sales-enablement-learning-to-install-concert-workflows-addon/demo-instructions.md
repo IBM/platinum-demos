@@ -7,11 +7,11 @@ layout: resources
 
 This document is intended to provide guidance on the Concert Workflow add-on install, click <a href="https://www.ibm.com/docs/en/concert?topic=workflows-installing-concert-vm" target="_blank" rel="noreferrer">here</a> for the official install steps.
 
-Click <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-watsonx" target="_blank" rel="noreferrer">here</a> to access the IBM Concert 1.0.5 TechZone VM.<br/>
+Click <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-watsonx" target="_blank" rel="noreferrer">here</a> to access the IBM Concert 1.1.0 TechZone VM.<br/>
 
 ### Introduction
 
-In this demo, we’ll learn how to install the Concert Workflows add-on within an IBM Concert 1.0.4.1 TechZone VM.
+In this demo, we’ll learn how to install the Concert Workflows add-on within an IBM Concert 1.1.0 TechZone VM.
 
 Concert Workflows is available as an add-on service for on-premises deployments of Concert to an OCP cluster or virtual machine (VM). The add-on embeds workflow definition and automation capabilities so you can define, manage and automate workflows within the Concert UI.
 
