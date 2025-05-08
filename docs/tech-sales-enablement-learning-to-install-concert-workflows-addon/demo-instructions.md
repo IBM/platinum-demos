@@ -83,7 +83,7 @@ Run the script using this command, replacing 'concert-url' and 'concert-api' wit
 
 This will output a CONCERT_HUB_KEY value. Take note of this.
 
-**2.2: Edit the Concert Workflows values file**
+**2.2: Set the local environment variables**
 
 Set the following values: <br/>
 
