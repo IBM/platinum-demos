@@ -7,7 +7,7 @@ layout: resources
 
 ## Overview
 
-In this document , you will learn how to install the Concert Workflows add-on within an IBM Concert 1.1.0 TechZone VM, click <a href="https://www.ibm.com/docs/en/concert?topic=workflows-installing-concert-vm" target="_blank" rel="noreferrer">here</a> for the official install steps.
+In this document, you will learn how to install the Concert Workflows add-on within an IBM Concert 1.1.0 TechZone VM. Click <a href="https://www.ibm.com/docs/en/concert?topic=workflows-installing-concert-vm" target="_blank" rel="noreferrer">here</a> for the official install steps.
 
 Click <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-images/journey-watsonx" target="_blank" rel="noreferrer">here</a> to access the IBM Concert 1.1.0 TechZone VM.<br/>
 
@@ -15,15 +15,15 @@ Click <a href="https://techzone.ibm.com/collection/tech-zone-certified-base-imag
 ## Why is Workflows needed?
 Concert Workflows is an add-on workflow automation service for Concert which ensures the user can:
 
-1. Import and manage data relevent to the <a href="https://www.ibm.com/docs/en/concert?topic=posture-importing-resilience-data-using-concert-workflows"> Resilence </a> dimension.
+1. Import and manage data relevent to the <a href="https://www.ibm.com/docs/en/concert?topic=posture-importing-resilience-data-using-concert-workflows">Resilence</a> dimension.
 
-2. Automate and orchestrate complex workflows through an API-driven approach which supports IT and network infrastructure tasks<a href="https://www.ibm.com/docs/en/concert?topic=workflows-concert-in-automation-library"></a>.
+2. Automate and orchestrate complex workflows through an API-driven approach which supports IT and network infrastructure tasks <a href="https://www.ibm.com/docs/en/concert?topic=workflows-concert-in-automation-library"></a>.
 
 ## Why does Workflows need to use Kubernetes to be deployed?
 
-Concert Workflows is available as an add-on service for on-premises deployments of Concert to an Openshift (OCP) cluster or virtual machine (VM). This add-on embeds workflow definition and automation capabilities so you can define, manage and automate workflows within the Concert UI.
+Concert Workflows is available as an add-on service for on-premises deployments of Concert to an OpenShift (OCP) cluster or virtual machine (VM). This add-on embeds workflow definition and automation capabilities so you can define, manage and automate workflows within the Concert UI.
 
-><strong>Note:</strong> The Concert Workflows add-on must be deployed via Kubernetes shown below it is via <a href="https://k3s.io/"> K3S </a>.This requirement exists because Kubernetes provides the scalability and lifecycle management needed to run and orchestrate workflows efficiently. Each workflow instance runs as an isolated <a href="https://kubernetes.io/docs/concepts/workloads/pods/"> Kubernetes pod </a>.
+><strong>Note:</strong> The Concert Workflows add-on must be deployed via Kubernetes shown below (via <a href="https://k3s.io/">K3S</a>).This requirement exists because Kubernetes provides the scalability and lifecycle management needed to run and orchestrate workflows efficiently. Each workflow instance runs as an isolated <a href="https://kubernetes.io/docs/concepts/workloads/pods/">Kubernetes pod</a>.
 
 
 ## Steps
@@ -43,7 +43,7 @@ We will use this to log in to the virtual machine. <br/> <code class="code-block
 
 Change to the root user. <br/> <code class="code-block"> sudo su </code> <br/>
 
-Change to the workflow directory <br/> <code class="code-block"> cd workflows/ </code>
+Change to the workflow directory. <br/> <code class="code-block"> cd workflows/ </code>
 
 Open a port in the firewall on which Concert Workflows will run. <br/> <code class="code-block"> sudo iptables -A INPUT -p tcp --dport 3000 -j ACCEPT </code>
 
@@ -99,12 +99,11 @@ This will output a CONCERT_HUB_KEY value. Take note of this.
 
 **2.2: Set the local environment variables**
 
-Set the following values as environmental variables or add them to your bashrc or zshrc : <br/>
+Set the following values as environmental variables or add them to your bashrc or zshrc: <br/>
 
-<inline-notification text="Environment variables set using export only apply to the current shell session. To ensure they persist, add them to your ~/.bashrc, ~/.bash_profile, or ~/.zshrc file."></inline-notification>
+<inline-notification text="Environment variables set using export only apply to the current shell session. To ensure they persist, add them to your ~/.bashrc, ~/.bash_profile or ~/.zshrc file."></inline-notification>
 
-
-Set the IP address of your VM with:<br/>
+Set the IP address of your VM with: <br/>
 <code class="code-block"> export INSTANCE_ADDRESS=9.30.214.214 </code> <br/>
 
 Set the Concert User:<br/>
@@ -116,7 +115,7 @@ Set the Concert URL:<br/>
 Set the Concert API Key:<br/>
 <code class="code-block"> export CONCERT_API_KEY=safddfdsgdsfgdfasffhtrtefd= </code> <br/>
 
-Set the Concert Workflows Namespace:<br/>
+Set the Concert Workflows namespace:<br/>
 <code class="code-block"> export CW_NAMESPACE=concert-workflows </code> <br/>
 
 Set the Concert Workflows registry:<br/>
@@ -128,13 +127,13 @@ Set the Concert Workflows registry user:<br/>
 Set the Concert Workflows registry password:<br/>
 <code class="code-block"> export REGISTRY_PWD=Password used in step 1.3 </code> <br/>
 
-Check envirnmental variables are correctly set :<br/>
+Check that the environmental variables are set correctly:<br/>
 <code class="code-block"> echo -e "INSTANCE_ADDRESS=$INSTANCE_ADDRESS\nCONCERT_USER=$CONCERT_USER\nCONCERT_URL=$CONCERT_URL\nCONCERT_API_KEY=$CONCERT_API_KEY\nCW_NAMESPACE=$CW_NAMESPACE\nIMAGE_REGISTRY=$IMAGE_REGISTRY\nREGISTRY_USER=$REGISTRY_USER\nREGISTRY_PWD=$REGISTRY_PWD" </code> <br/>
 <img src="images/envvar-check.png" width="800" />
 
 ### 3 - Install Concert Workflows
 
-**3.1: Create a namespace in kubernetes for Concert Workflows**
+**3.1: Create a namespace in Kubernetes for Concert Workflows**
 
 <code class="code-block"> CW_NAMESPACE=concert-workflows </code>
 <code class="code-block"> kubectl create namespace concert-workflows </code>
@@ -154,7 +153,7 @@ Note: The docker password used in this command is the same IBM entitlement key u
 
 Log in to the Concert instance to ensure all data was uploaded successfully.
 
-<inline-notification text="If you were already logged in to Concert, doing a refresh in the browser."></inline-notification>
+<inline-notification text="If you were already logged in to Concert, do a refresh in the browser."></inline-notification>
 
 <img src="images/confirm.png" width="800" />
 
