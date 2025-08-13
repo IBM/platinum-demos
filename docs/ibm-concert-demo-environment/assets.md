@@ -7,6 +7,7 @@ Includes:
 - A complete sample dataset
 - watsonx connectivity
 - Concert Workflows connectivity
+- Connected OpenShift environment
 - GitHub ticketing
 - Automation rules
 - Pre-built workflows
