@@ -1,5 +1,5 @@
 ---
-title: IBM Concert v1.1.0 Tech Sales demo environment
+title: IBM Concert v2.0.0.1 Tech Sales demo environment
 layout: resources
 ---
 
@@ -10,7 +10,6 @@ Includes:
 - GitHub ticketing
 - Automation rules
 - Pre-built workflows
-- z/OS data
 - AI-Powered Remediation with Concert Workflows (public preview) <br/> *Note: AI-Powered Remediation is in public preview and is currently only trained on actions that involve cloud providers (e.g., AWS, Azure, GCP, IBM Cloud).*
 
 Important notes about the demo environment:
@@ -26,6 +25,6 @@ Credentials:
 - Username: concertuser
 - Password: password
 
-<a href="https://9.30.213.68:12443/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here to access the Concert v1.1.0 Tech Sales demo environment</button></a>
+<a href="https://9.30.213.68:12443/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here to access the Concert v2.0.0.1 Tech Sales demo environment</button></a>
 
 **Please bookmark this page. The demo environment URL will change with each version update.**
