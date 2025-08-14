@@ -9,31 +9,19 @@ layout: resources
 
 In this demo, we will prepare a customer's environment for a Compliance PoV and start the ingestion of regular compliance assessments.
 
-For our demo, we will create an environment within Concert to assign the Compliance assessments too. Then, we will use the Concert toolkit to create a compliance catalog, add that catalog to Concert and create a profile based on that catalog.
+For our demo, we will create an environment within Concert to assign the Compliance assessments too. Then, we will create a CIS catalog and profile. 
+Finally we will configure a workflow to run a compliance assessment against an Openshift environment.
 
 ### **Pre-requisites**
 
 Below is a list of pre-requisites that need to be setup prior to beginning this PoV.
 
-* Continuous compliance scanning tool that outputs OSCAL formatted assessments such as:
-    * DRTConfidence
-    * CyberArk 
-    * RegScale
-    * IBM Compliance Trestle 
-    * OpenShift Compliance Operator 
-* Compliance catalog which the customer is using - Concert provides the following: 
-    * NIST Special Publication 800-53 Revision 4 HIGH IMPACT BASELINE
-    * NIST Special Publication 800-53 Revision 5.1.1 HIGH IMPACT BASELINE
-    * NIST Special Publication 800-53 Revision 5.1.1 LOW IMPACT BASELINE
-    * NIST Special Publication 800-53 Revision 5.1.1 MODERATE IMPACT BASELINE
-    * IBM Cloud SOC2
+* One of the following runtime environments:
+    * Redhat Openshift
+    * Redhat Enterprise Linux
+* Compliance catalog which the customer is using: 
     * CIS Controls
-    * Australian Cyber Security Centre ISM All Baseline
-    * PCI DSS v4.0.0
-    * FedRAMP Rev 5 High Baseline
-    * Acceptable Risk Safeguards (ARS) Revision 5.1
-    * If the catalogs provided don't cover the customer's use case, the instructions will include how to create one
-* Name of the customer's environment
+* Concert Workflows installed
 
 ### 1 - Defining an environment within Concert
 
@@ -46,9 +34,9 @@ The first step is to define an environment within Concert. When a Compliance ass
 **1.3:** Define the environment
 
 Assign the following for the environment: 
-- Name 
-- Type
-- Purpose
+- Name - ocp4-cis-api-checks-pod
+- Type - Redhat Openshift Container Platform
+- Purpose - Staging
 
 <img src="images/1-3.png" width="600" />
 
@@ -56,7 +44,7 @@ Assign the following for the environment:
 
 <br/>
 
-### 2 - Creating a compliance catalog
+### 2 - Create a compliance catalog
 
 **2.1:** Navigate to the **Compliance** dimension within Concert <br/> <img src="images/2-1.png" width="400" />
 
@@ -64,29 +52,14 @@ Assign the following for the environment:
 
 **2.3:** Click **Add catalog** and then **From standards library** <br/> <img src="images/2-3.png" width="400" />
 
-**2.4:** If the customer needs a pre-defined compliance catalog from Concert, select one from this list: <br/> <img src="images/2-4.png" width="800" />
+**2.4:** Select the CIS Controls catalog<br/> <img src="images/2-4.png" width="800" />
 
-**2.5:** If the customers compliance catalog is not listed, create one with the Concert toolkit.
+**2.5:** Click Add <br/> <img src="images/2-4.png" width="800" />
 
-Define a CSV to Excel file with the following format: <br/> <img src="images/2-5-1.png" width="800" />
-
-Click <a href="./images/DORA_Compliance_Controls.csv" target="_blank" rel="noreferrer">here</a> for an example CSV from DORA Compliance.
-
-Define a config file for the Concert toolkit in the following format: <br/> <img src="images/2-5-2.png" width="800" />
-
-Click <a href="./images/config.yaml" target="_blank" rel="noreferrer">here</a> for an example YAML file.
-
-Run the Concert toolkit with the following command:
-
-<code>docker run -v .:/data/src -v ./toolkit-data:/toolkit-data icr.io/cpopen/ibm-concert-toolkit:latest /bin/bash -c "compliance-catalog" --input-file ./toolkit-data/DORA_Compliance_Controls.csv --config-file /toolkit-data/config.yaml"</code>
-
-The output will be a compliance catalog OSCAL json: <br/> <img src="images/2-5-3.png" width="800" />
-
-**2.6:** In the Concert UI, click **Add catalog**, then **From file** and upload the json file which was created <br/> <img src="images/2-6.png" width="800" />
 
 <br/>
 
-### 3 - Creating a compliance profile
+### 3 - Create a compliance profile
 
 **3.1:** Navigate to the **Profiles** tab within Concert <br/> <img src="images/3-1.png" width="400" />
 
@@ -94,24 +67,52 @@ The output will be a compliance catalog OSCAL json: <br/> <img src="images/2-5-3
 
 **3.3:** Fill in the profile details:
 
-- Define a **Name** for the profile
-- Select the catalog which was uploaded
-- Select the controls against which the customer wants to be assessed
+- Define a **Name** for the profile as profile_cis
+- Select the CIS catalog
+- Select the following controls:
 
 <img src="images/3-3.png" width="800" /> <br/>
 
 <br/>
 
-### 4 - Uploading a compliance assessment
+### 4 - Configuring the Concert Workflow
 
-**4.1:** Navigate to the **Assessments** tab within Concert <br/> <img src="images/4-1.png" width="400" />
+**4.1:** Navigate to the Concert Workflows <br/>
 
-**4.2:** Click **Upload compliance scan**
+**4.2:** Download the CIS OCP4 OSCO Compliance Scan Workflow
 
-Select the file format in which the assessment was completed:
+ - https://automation-library.ibm.com/workflows/CIS%20OCP4%20OSCO%20Compliance%20Scan
 
-- Use XCCDF for OpenShift Operator compliance assessments
-- Use OSCAL for any other compliance assessments
-- Upload the assessment created by the continuous compliance scanner here: <br/> <img src="images/4-2.png" width="400" />
+**4.2** Drag the downloaded zip file onto the Workflows screen to upload it
+
+**4.3** Navigate to the Authentications page within Workflows
+
+**4.4** Create an authentication with type Ansible authentication in the following format: <br/> <img src="images/4-1.png" width="400" />
+
+**4.5** Create another authentication using Concert API type
+
+**4.6** Copy the names of these authentications into the uploaded workflow from step 4.2 <br/> <img src="images/4-2.png" width="400" />
+
+**4.7** Run the workflow, this will perform a CIS compliance scan against the customers instance
+
+### 4 - Review
+
+**4.1:** Navigate to the Concert Workflows <br/>
+
+**4.2:** Download the CIS OCP4 OSCO Compliance Scan Workflow
+
+ - https://automation-library.ibm.com/workflows/CIS%20OCP4%20OSCO%20Compliance%20Scan
+
+**4.2** Drag the downloaded zip file onto the Workflows screen to upload it
+
+**4.3** Navigate to the Authentications page within Workflows
+
+**4.4** Create an authentication with type Ansible authentication in the following format: <br/> <img src="images/4-1.png" width="400" />
+
+**4.5** Create another authentication using Concert API type
+
+**4.6** Copy the names of these authentications into the uploaded workflow from step 4.2 <br/> <img src="images/4-2.png" width="400" />
+
+**4.7** Run the workflow, this will perform a CIS compliance scan against the customers instance
 
 **[Go to top](#top)**
