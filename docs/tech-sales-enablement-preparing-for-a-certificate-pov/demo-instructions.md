@@ -7,7 +7,7 @@ layout: resources
 
 ### Introduction
 
-In this demo, we will build and run a Concert Workflow to understand how a customer will automate the certificate discovery and ingestion process directly from a runtime environment. This method can then be used for ingesting certificates during a Proof of Value with a customer.
+In this demo, we will set up a Concert integration to understand how a customer will automate the certificate discovery and ingestion process directly from a runtime environment. This method can then be used for ingesting certificates during a Proof of Value with a customer.
 
 ### Pre-requisites
 
