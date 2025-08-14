@@ -71,7 +71,7 @@ Assign the following for the environment:
 - Select the CIS catalog
 - Select the following controls:
 
-<img src="images/3-3.png" width="800" /> <br/>
+<img src="images/3-3.png" width="200" /> <br/>
 
 <br/>
 
