@@ -54,7 +54,7 @@ Assign the following for the environment:
 
 **2.4:** Select the CIS Controls catalog<br/> <img src="images/2-4.png" width="800" />
 
-**2.5:** Click Add <br/> <img src="images/2-4.png" width="800" />
+**2.5:** Click Add 
 
 
 <br/>
@@ -71,7 +71,7 @@ Assign the following for the environment:
 - Select the CIS catalog
 - Select the following controls:
 
-<img src="images/3-3.png" width="200" /> <br/>
+<img src="images/3-3.png" width="150" /> <br/>
 
 <br/>
 
@@ -91,27 +91,7 @@ Assign the following for the environment:
 
 **4.5** Create another authentication using Concert API type
 
-**4.6** Copy the names of these authentications into the uploaded workflow from step 4.2 <br/> <img src="images/4-2.png" width="400" />
-
-**4.7** Run the workflow, this will perform a CIS compliance scan against the customers instance
-
-### 4 - Review
-
-**4.1:** Navigate to the Concert Workflows <br/>
-
-**4.2:** Download the CIS OCP4 OSCO Compliance Scan Workflow
-
- - https://automation-library.ibm.com/workflows/CIS%20OCP4%20OSCO%20Compliance%20Scan
-
-**4.2** Drag the downloaded zip file onto the Workflows screen to upload it
-
-**4.3** Navigate to the Authentications page within Workflows
-
-**4.4** Create an authentication with type Ansible authentication in the following format: <br/> <img src="images/4-1.png" width="400" />
-
-**4.5** Create another authentication using Concert API type
-
-**4.6** Copy the names of these authentications into the uploaded workflow from step 4.2 <br/> <img src="images/4-2.png" width="400" />
+**4.6** Copy the names of these authentications into the uploaded workflow from step 4.2 <br/> <img src="images/4-2.png" width="800" />
 
 **4.7** Run the workflow, this will perform a CIS compliance scan against the customers instance
 
