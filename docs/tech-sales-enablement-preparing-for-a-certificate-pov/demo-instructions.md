@@ -1,5 +1,5 @@
 ---
-title: Using a Concert Workflow to automate certificate discovery and ingestion into IBM Concert <br/> <small> <i> Tech Sales enablement </i> </small>
+title: Using a Concert integration to automate certificate discovery and ingestion into IBM Concert <br/> <small> <i> Tech Sales enablement </i> </small>
 layout: resources
 ---
 
