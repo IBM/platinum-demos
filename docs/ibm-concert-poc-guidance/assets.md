@@ -6,8 +6,8 @@ layout: resources
 <br/>
 
 ## Auto-patching
-- <a href="https://ibm.box.com/s/u2br8hok2ik0meqk2e1bzzkfygny45d2" target="_blank" rel="noreferrer">OS auto-remediation ROI Calculator</a>
 - <a href="https://ibm.box.com/s/tx26zioxfca08psqvo36by1qnbrz6e93" target="_blank" rel="noreferrer">Proof of Concept guidance</a>
+- <a href="https://ibm.box.com/s/u2br8hok2ik0meqk2e1bzzkfygny45d2" target="_blank" rel="noreferrer">OS auto-remediation ROI Calculator</a>
 
 
 ***
