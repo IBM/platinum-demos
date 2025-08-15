@@ -95,4 +95,28 @@ Assign the following for the environment:
 
 **4.7** Run the workflow, this will perform a CIS compliance scan against the customers instance
 
+### 5 - Reviewing the compliance action plan
+
+**5.1:** Navigate to the Compliance dimension <br/>
+
+**5.2:** The new assessment from the workflow will now be ingested. <br/> <img src="images/5-1.png" width="400" />
+
+**5.3** Navigate within the assessment, and then to the Recommended actions tab. <br/> <img src="images/5-2.png" width="400" />
+
+**5.4** This page displays Non-compliant controls, and options to Generate action plans to resolve them.
+
+**5.5** Click "Generate action plan". This will generate a plan on how to resolve a specific control. <br/> <img src="images/5-3.png" width="400" />
+
+**5.6** Copy the commands from the action plan and run them against the environment where this compliance scan was created. <br/>
+
+
+
+### Summary
+
+In this demo, we saw how to create a direct integration to discover and ingest compliance details from a openshift cluster. 
+
+Once the action plan is implemented, Concert workflows will run the compliance scan on a schedule and detect that the compliance control is now resolved. The value in this is that Concert is not only tracking compliance for a customer, but also offering remediation for each control.
+
+**5.7** 
+
 **[Go to top](#top)**
