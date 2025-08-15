@@ -117,6 +117,4 @@ In this demo, we saw how to create a direct integration to discover and ingest c
 
 Once the action plan is implemented, Concert workflows will run the compliance scan on a schedule and detect that the compliance control is now resolved. The value in this is that Concert is not only tracking compliance for a customer, but also offering remediation for each control.
 
-**5.7** 
-
 **[Go to top](#top)**
