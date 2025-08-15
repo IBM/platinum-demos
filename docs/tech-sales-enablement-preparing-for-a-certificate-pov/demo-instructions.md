@@ -64,7 +64,7 @@ One of the following runtime environments:
 
 **4.1:** Navigate to Concert > Operations <br/> 
 
-**4.2:** Here there will no longer be any expired certificates, or certificates expiring within the next 7 days. This is because Concert Workflows has rotated those certificates <br/> <img src="images/4-1.png" width="200" />
+**4.2:** Here there will no longer be any expired certificates, or certificates expiring within the next 7 days. This is because Concert Workflows has rotated those certificates <br/> <img src="images/4-1.png" width="800" />
 
 <br/>
 
