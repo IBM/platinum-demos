@@ -21,6 +21,7 @@ layout: resources
 ## Certificates
 - <a href="https://ibm.box.com/s/lqq2fu4r5gz0lm9axyr7kca48pq642db" target="_blank" rel="noreferrer">Proof of Concept overview</a>
 - <a href="https://ibm.github.io/platinum-demos/tech-sales-enablement-preparing-for-a-certificate-pov/demo-instructions" target="_blank" rel="noreferrer">Certificates Proof of Concept steps</a>
+- <a href="https://ibm.box.com/s/03hc23ea6n7oadactmi2ko9xnhixcmw5" target="_blank" rel="noreferrer">Certificates ROI Calculator</a>
 
 ***
 
