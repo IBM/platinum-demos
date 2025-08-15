@@ -54,7 +54,7 @@ One of the following runtime environments:
 
 **2.2:** Click "Create automation rule" <br/> <img src="images/3-2.png" width="400" />
 
-**2.3:** Enter the following details: <br/> Name: Rotate kubernetes certificates <br/> Take this action: Trigger a workflow <br/> Using this references: Workflow uploaded above  <br/> When this condition occurs: An expired or expiring certificate is detected <br/> Certificates expiring wihtin: 7 days <img src="images/2-3.png" width="200" />
+**2.3:** Enter the following details: <br/> Name: Rotate kubernetes certificates <br/> Take this action: Trigger a workflow <br/> Using this references: Workflow uploaded above <br/> When this condition occurs: An expired or expiring certificate is detected <br/> Certificates expiring within: 7 days <br/> <img src="images/2-3.png" width="200" />
 
 **2.4:** Click create, this will create a rule to rotate all expired and expiring certificates. 
 
