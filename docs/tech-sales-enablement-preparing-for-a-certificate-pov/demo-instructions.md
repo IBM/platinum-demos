@@ -44,19 +44,19 @@ One of the following runtime environments:
 
 **2.3:** Find and download a renew certificates workflow specific to the environment the certificates were discovered from. <br/> <img src="images/2-3.png" width="400" />
 
-**2.4:** Navigate back to Concert Workflows, then drag and drop the downloaded ZIP file to upload the workflow. <br/> <img src="images/2-4.png" width="200" />
+**2.4:** Navigate back to Concert Workflows, then drag and drop the downloaded ZIP file to upload the workflow. <br/> <img src="images/2-4.png" width="400" />
 
 <br/>
 
 ### 3 - Creating an automation rule
 
-**2.1:** Navigate to Concert > Administration > Integrations. Then click on the Automation rules tab. <br/> <img src="images/3-1.png" width="300" />
+**3.1:** Navigate to Concert > Administration > Integrations. Then click on the Automation rules tab. <br/> <img src="images/3-1.png" width="300" />
 
-**2.2:** Click "Create automation rule" <br/> <img src="images/3-2.png" width="400" />
+**3.2:** Click "Create automation rule" <br/> <img src="images/3-2.png" width="400" />
 
-**2.3:** Enter the following details: <br/> Name: Rotate kubernetes certificates <br/> Take this action: Trigger a workflow <br/> Using this references: Workflow uploaded above <br/> When this condition occurs: An expired or expiring certificate is detected <br/> Certificates expiring within: 7 days <br/> <img src="images/2-3.png" width="200" />
+**3.3:** Enter the following details: <br/> Name: Rotate kubernetes certificates <br/> Take this action: Trigger a workflow <br/> Using this references: Workflow uploaded above <br/> When this condition occurs: An expired or expiring certificate is detected <br/> Certificates expiring within: 7 days <br/> <img src="images/2-3.png" width="200" />
 
-**2.4:** Click create, this will create a rule to rotate all expired and expiring certificates. 
+**3.4:** Click create, this will create a rule to rotate all expired and expiring certificates. 
 
 <br/>
 
