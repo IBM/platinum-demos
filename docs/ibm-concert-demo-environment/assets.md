@@ -4,13 +4,13 @@ layout: resources
 ---
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NVXNQ06EF5"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6CXMCGJF0K"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-NVXNQ06EF5');
+  gtag('config', 'G-6CXMCGJF0K');
 </script>
 
 Includes:
