@@ -26,6 +26,6 @@ Credentials:
 - Username: concertuser
 - Password: password
 
-<a href="https://9.30.57.104:12443/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here to access the Concert v2.0.0.1 Tech Sales demo environment</button></a>
+<a href="https://9.30.213.68:12443/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here to access the Concert v2.0.0.1 Tech Sales demo environment</button></a>
 
 **Please bookmark this page. The demo environment URL will change with each version update.**
