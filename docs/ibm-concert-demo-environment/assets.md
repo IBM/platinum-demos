@@ -3,12 +3,14 @@ title: IBM Concert v2.0.0.1 Tech Sales demo environments
 layout: resources
 ---
 
-**Please bookmark this page. The demo environment URLs will change with each version update.**
+### Please bookmark this page. The demo environment URLs will change with each version update.
 
 There are currently 3 demo environments:
 - Read-only environment in SVL (US West Coast)
 - Read-only environment in RTP (US East Coast)
 - Reservable environment for demos that require read/write access
+
+<br/>
 
 ### Read-only environments include:
 - A complete sample dataset
