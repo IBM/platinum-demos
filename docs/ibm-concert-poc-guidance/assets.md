@@ -33,5 +33,5 @@ layout: resources
 ***
 
 ## Vulnerability
-- <a href="https://ibm.box.com/s/4k5931swavs1amz2zw0m08zfh56o3le4" target="_blank" rel="noreferrer">Proof of Concept overview</a>
+- <a href="https://ibm.box.com/s/4k5931swavs1amz2zw0m08zfh56o3le4" target="_blank" rel="noreferrer">Proof of Concept Overview</a>
 - <a href="https://ibm.box.com/s/j4nhfavkeeo1vdyzfsr787yxioc5y0hs" target="_blank" rel="noreferrer">Vulnerability ROI Calculator</a>
