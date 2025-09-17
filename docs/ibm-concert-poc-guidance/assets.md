@@ -15,6 +15,7 @@ layout: resources
 ## Compliance
 - <a href="https://ibm.box.com/s/3hh6d1ezao5y5ecs3qf8xnuqynsaqhvt" target="_blank" rel="noreferrer">Proof of Concept overview</a>
 - <a href="https://ibm.github.io/platinum-demos/tech-sales-enablement-preparing-for-a-compliance-pov/demo-instructions" target="_blank" rel="noreferrer">Compliance Proof of Concept steps</a>
+- <a href="https://ibm.box.com/s/pvzh0u2v3kxggn4svwz4kw9ssw1vghi0" target="_blank" rel="noreferrer">Compliance ROI Calculator</a>
 
 ***
 
@@ -27,8 +28,10 @@ layout: resources
 
 ## Resilience
 - <a href="https://ibm.box.com/s/yosd248mkzr8n4sgtv0f09u4yfw2f5ay" target="_blank" rel="noreferrer">Proof of Concept overview</a>
+- <a href="https://ibm.box.com/s/xqqhl04e8k1l3fypbs2g7x2d0t72ux7a" target="_blank" rel="noreferrer">Resilience ROI Calculator</a>
 
 ***
 
 ## Vulnerability
 - <a href="https://ibm.box.com/s/4k5931swavs1amz2zw0m08zfh56o3le4" target="_blank" rel="noreferrer">Proof of Concept overview</a>
+- <a href="https://ibm.box.com/s/j4nhfavkeeo1vdyzfsr787yxioc5y0hs" target="_blank" rel="noreferrer">Vulnerability ROI Calculator</a>
