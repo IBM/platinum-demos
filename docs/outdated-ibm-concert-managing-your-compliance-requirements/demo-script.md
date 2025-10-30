@@ -106,23 +106,6 @@ Today, we’ll dive into how IBM Concert supports the compliance manager in stre
 
 <details markdown="1">
 
-<summary><strong>5 - Compliance assessments</strong>: Uploading a new compliance scan</summary>
-
-<br/>
-
-| **4.1** | |
-| :--- | :--- |
-| **Narration** | This is just a placeholder until we put the scripts in place. |
-
-**[Go to top](#top)**
-
-<br/><br/>
-
-</details>
-
-<p/>
-
-<details markdown="1">
 
 <summary><strong>5 - WatsonX</strong>: Recieving guidance on how to resolve controls</summary>
 
