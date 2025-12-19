@@ -1,5 +1,5 @@
 ---
-title: IBM Concert v2.1 Tech Sales demo environments
+title: IBM Concert Tech Sales demo environments
 layout: resources
 ---
 
@@ -35,9 +35,9 @@ Credentials:
 - Username: concertuser
 - Password: password
 
-<a href="https://9.30.57.104:12443/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here for Concert v2.1 SVL read-only environment (US West Coast)</button></a>
+<a href="https://9.30.57.104:12443/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here for Concert SVL read-only environment (US West Coast)</button></a>
 
-<a href="https://9.46.81.132:12443/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here for Concert v2.1 RTP read-only environment (US East Coast)</button></a>
+<a href="https://9.46.81.132:12443/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here for Concert RTP read-only environment (US East Coast)</button></a>
 
 <br/>
 
@@ -61,4 +61,4 @@ Demo scripts that use the reservable demo environment:
 - <a href="https://ibm.box.com/s/sgxspj8k4jt13o8owku5rs0fpfuqc7kj" target="_blank" rel="noreferrer">Auto-resilience demo instructions</a>
 - <a href="https://ibm.box.com/s/jncfao4s4xfx70qgciz6xnlgjebzskmh" target="_blank" rel="noreferrer">Certificate rotation demo instructions</a>
 
-<a href="https://ibm.box.com/s/ibtdcuf9t4bug4znvtjv0ryppe1vmtft" target="_blank" rel="noreferrer"><button class="ibm-button">Click here for the Concert v2.1 reservable demo environment sign-up page</button></a>
+<a href="https://ibm.box.com/s/ibtdcuf9t4bug4znvtjv0ryppe1vmtft" target="_blank" rel="noreferrer"><button class="ibm-button">Click here for the Concert reservable demo environment sign-up page</button></a>
