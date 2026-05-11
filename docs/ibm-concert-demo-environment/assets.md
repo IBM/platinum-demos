@@ -41,7 +41,7 @@ Credentials:
 
 <br/>
 
-### Reservable environment for auto-x demos (read/write access)
+### Reservable environment for auto-x demos
 
 Important notes about the demo environment:
 - Demo is reservable in specific 4-hour time slots. **It is important to honor your timeslot exactly, as not doing so will disrupt other demoers and opportunities.**
@@ -55,10 +55,14 @@ Important notes about the demo environment:
     - If you want to manually run the automatic reset, you can do so by following the directions in each demo script.
 
 
-Demo scripts that use the reservable demo environment:
+This demo environment is set up to follow a strict set of demo scripts:
 - <a href="https://ibm.box.com/s/ki9izsl0cmwwzzw85ji4b5lab617i2c8" target="_blank" rel="noreferrer">OS CVE auto-remediation demo instructions</a>
 - <a href="https://ibm.box.com/s/107q1h22x95dv3gxyvufika8fel5lre5" target="_blank" rel="noreferrer">Image CVE auto-discovery demo instructions</a>
 - <a href="https://ibm.box.com/s/sgxspj8k4jt13o8owku5rs0fpfuqc7kj" target="_blank" rel="noreferrer">Auto-resilience demo instructions</a>
 - <a href="https://ibm.box.com/s/jncfao4s4xfx70qgciz6xnlgjebzskmh" target="_blank" rel="noreferrer">Certificate rotation demo instructions</a>
+
+- <strong>Do not</strong> add new workflows or extra data, doing so will mess up existing demo flows for other sellers.
+- <strong>Do not</strong> edit existing workflows.
+- <strong>Do not</strong> reset the API key, doing so will break existing workflows.
 
 <a href="https://ibm.box.com/s/ibtdcuf9t4bug4znvtjv0ryppe1vmtft" target="_blank" rel="noreferrer"><button class="ibm-button">Click here for the Concert reservable demo environment sign-up page</button></a>
