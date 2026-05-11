@@ -65,4 +65,4 @@ This demo environment is set up to follow a strict set of demo scripts:
 - <strong>Do not</strong> edit existing workflows.
 - <strong>Do not</strong> reset the API key, doing so will break existing workflows.
 
-<a href="https://ibm.box.com/s/ibtdcuf9t4bug4znvtjv0ryppe1vmtft" target="_blank" rel="noreferrer"><button class="ibm-button">Click here for the Concert reservable demo environment sign-up page</button></a>
+<a href="https://ibm.box.com/s/ibtdcuf9t4bug4znvtjv0ryppe1vmtft" target="_blank" rel="noreferrer"><button class="ibm-button">Click here for the Concert reservable demo environment sign-up page</button></a> 
