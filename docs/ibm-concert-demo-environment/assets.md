@@ -1,13 +1,14 @@
 ---
-title: IBM Concert Tech Sales demo environments
+title: IBM Concert Protect Tech Sales demo environments
 layout: resources
 ---
 
 ### Please bookmark this page. The demo environment URLs will change with each version update.
 
-There are currently 3 demo environments:
+### Please DO NOT load your own data into these demo environments. 
+
+There are currently 2 demo environments:
 - Read-only environment in SVL (US West Coast)
-- Read-only environment in RTP (US East Coast)
 - Reservable environment for demos that require read/write access
 
 <br/>
@@ -17,27 +18,20 @@ There are currently 3 demo environments:
 - watsonx connectivity
 - Concert Workflows connectivity
 - Connected OpenShift environment
-- GitHub ticketing
-- Automation rules
-- Pre-built workflows
-- AI-Powered Remediation with Concert Workflows (public preview) <br/> *Note: AI-Powered Remediation is in public preview and is currently only trained on actions that involve cloud providers (e.g., AWS, Azure, GCP, IBM Cloud).*
 
 Important notes about the demo environment:
 - **Purpose**: This environment is only for demos and self-education. It should not be used for PoCs.
 - **Workflows**: You are free to create your own workflows in this environment, but please only put them in the 'Workflows sandbox' folder. Because this is a shared environment, workflows in any other location will be deleted.
-- **Ticketing**: This environment is connected to GitHub. While we ask you to not make other changes to the environment, creating tickets is permitted. <br/> - To create tickets, use the *ibm-concert-platinum-demos* organization and *concert-tickets* repository.
 - **Shared environment**: This is a shared environment. Please DO NOT import data or create automation rules.
 - **Sample data**: The environment contains a complete set of sample data. If you open the tour, DO NOT load the default sample data (click <font color="red"> <strong>Not now</strong></font>). <br/> <img src="images/tour-screen.png" width="500" /> <br/>
 
 <inline-notification text="In order to access the demo environment, you MUST be logged into the IBM VPN."></inline-notification>
 
 Credentials:
-- Username: concertuser
-- Password: password
+- Username: ibmconcert
+- Password: GTMteam
 
-<a href="https://9.30.57.104:12443/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here for Concert SVL read-only environment (US West Coast)</button></a>
-
-<a href="https://9.46.81.132:12443/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here for Concert RTP read-only environment (US East Coast)</button></a>
+<a href="https://9.60.228.149:12443/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here for Concert SVL read-only environment (US West Coast)</button></a>
 
 <br/>
 
@@ -58,7 +52,6 @@ Important notes about the demo environment:
 This demo environment is set up to follow a strict set of demo scripts:
 - <a href="https://ibm.box.com/s/ki9izsl0cmwwzzw85ji4b5lab617i2c8" target="_blank" rel="noreferrer">OS CVE auto-remediation demo instructions</a>
 - <a href="https://ibm.box.com/s/107q1h22x95dv3gxyvufika8fel5lre5" target="_blank" rel="noreferrer">Image CVE auto-discovery demo instructions</a>
-- <a href="https://ibm.box.com/s/sgxspj8k4jt13o8owku5rs0fpfuqc7kj" target="_blank" rel="noreferrer">Auto-resilience demo instructions</a>
 - <a href="https://ibm.box.com/s/jncfao4s4xfx70qgciz6xnlgjebzskmh" target="_blank" rel="noreferrer">Certificate rotation demo instructions</a>
 
 - <strong>Do not</strong> add new workflows or extra data, doing so will mess up existing demo flows for other sellers.
