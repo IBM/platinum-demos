@@ -27,11 +27,22 @@ Important notes about the demo environment:
 
 <inline-notification text="In order to access the demo environment, you MUST be logged into the IBM VPN."></inline-notification>
 
+3.0.1 Demo Environment
+
 Credentials:
 - Username: ibmconcert
 - Password: GTMteam
 
 <a href="https://9.60.228.149:12443/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here for Concert SVL read-only environment (US West Coast)</button></a>
+
+
+2.3.1 Demo Environment
+
+Credentials:
+- Username: concertuser
+- Password: password
+
+<a href="https://9.46.81.132:12443/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here for Concert SVL read-only environment (US East Coast)</button></a>
 
 <br/>
 
