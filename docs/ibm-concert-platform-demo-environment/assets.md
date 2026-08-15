@@ -28,6 +28,6 @@ Credentials:
 - Username: ibmconcert
 - Password: GTMteam
 
-<a href="https://concert-concert-protect.apps.concert-platform-demo.cp.fyre.ibm.com/platform/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here for Concert Platform read-only environment</button></a>
+<a href="https://concert-concert-protect.apps.platform-demo.cp.fyre.ibm.com/platform/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here for Concert Platform read-only environment</button></a>
 
 <br/>
