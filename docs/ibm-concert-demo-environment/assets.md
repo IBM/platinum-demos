@@ -44,6 +44,14 @@ Credentials:
 
 <a href="https://9.46.81.132:12443/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here for Concert SVL read-only environment (US East Coast)</button></a>
 
+Proof of Exploitability Demo Environment
+
+Credentials:
+- Username: ibmconcert
+- Password: password
+
+<a href="https://veias1.fyre.ibm.com:12443/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here for Concert Proof of Exploitability READ ONLY environment (US East Coast)</button></a>
+
 <br/>
 
 ### Reservable environment for auto-x demos
