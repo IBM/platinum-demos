@@ -50,7 +50,7 @@ Credentials:
 - Username: ibmconcert
 - Password: password
 
-<a href="https://veias1.fyre.ibm.com:12443/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here for Concert Proof of Exploitability READ ONLY environment (US East Coast)</button></a>
+<a href="https://bpdev1.fyre.ibm.com:12443/concert/" target="_blank" rel="noreferrer"><button class="ibm-button">Click here for Concert Proof of Exploitability READ ONLY environment (US East Coast)</button></a>
 
 <br/>
 
